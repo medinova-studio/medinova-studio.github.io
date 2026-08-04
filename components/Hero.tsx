@@ -56,7 +56,7 @@ export default function Hero() {
             style={{ animationDelay: "0.45s", opacity: 0 }}
           >
             <a
-              href="#offers"
+              href="#services"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-cyan text-ink-950 font-semibold text-sm hover:bg-cyan/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-cyan/20"
             >
               {t.hero.cta1}

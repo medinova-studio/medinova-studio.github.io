@@ -1,11 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/LanguageContext";
 import { LANGS, LANG_LABELS, Lang } from "@/lib/i18n";
 
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -18,11 +21,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: "#offers", label: t.nav.offers },
-    { href: "#games", label: t.nav.games },
-    { href: "#academy", label: t.nav.academy },
-    { href: "#faq", label: t.nav.faq },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/agency", label: t.nav.offers },
+    { href: "/games", label: t.nav.games },
+    { href: "/academy", label: t.nav.academy },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   return (
@@ -36,27 +38,36 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
-          <a href="#" className="flex items-center gap-2.5 group flex-shrink-0" aria-label="Medinova Studio">
+          <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0" aria-label="Medinova Studio">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan to-violet flex items-center justify-center shadow-lg shadow-cyan/20">
               <span className="text-ink-950 font-bold text-sm font-display">M</span>
             </div>
             <span className="font-display font-bold text-white text-sm sm:text-base tracking-tight whitespace-nowrap">
               MEDINOVA <span className="text-cyan">STUDIO</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-6 lg:gap-7">
-            {navLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="nav-link relative text-sm text-slate-400 hover:text-cyan transition-colors duration-200 whitespace-nowrap"
-              >
-                {l.label}
-                <span className="nav-underline absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-cyan rounded-full transition-all duration-300" />
-              </a>
-            ))}
+            {navLinks.map((l) => {
+              const active = l.href.startsWith("/") && !l.href.includes("#") && pathname === l.href;
+              return (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className={`nav-link relative text-sm transition-colors duration-200 whitespace-nowrap ${
+                    active ? "text-cyan" : "text-slate-400 hover:text-cyan"
+                  }`}
+                >
+                  {l.label}
+                  <span
+                    className={`absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 bg-cyan rounded-full transition-all duration-300 ${
+                      active ? "w-full" : "w-0"
+                    }`}
+                  />
+                </Link>
+              );
+            })}
 
             {/* Language switcher */}
             <div className="relative">
@@ -95,12 +106,12 @@ export default function Navbar() {
               )}
             </div>
 
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan/10 border border-cyan/20 text-cyan text-sm font-medium hover:bg-cyan/20 hover:border-cyan/40 transition-all duration-200 whitespace-nowrap"
             >
               {t.nav.cta}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -142,22 +153,22 @@ export default function Navbar() {
         <div className="md:hidden px-5 sm:px-6 pb-4 border-t border-white/5 pt-4 bg-ink-950/95 backdrop-blur-xl">
           <div className="flex flex-col gap-1">
             {navLinks.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="text-sm text-slate-400 hover:text-cyan hover:bg-white/5 rounded-lg px-3 py-2.5 transition-all"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={() => setOpen(false)}
               className="inline-flex items-center gap-2 px-4 py-2.5 mt-2 rounded-lg bg-cyan/10 border border-cyan/20 text-cyan text-sm font-medium hover:bg-cyan/20 transition-all w-fit"
             >
               {t.nav.cta}
-            </a>
+            </Link>
           </div>
         </div>
       )}

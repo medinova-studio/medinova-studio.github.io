@@ -1,21 +1,17 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Packages from "@/components/Packages";
-import FAQ from "@/components/FAQ";
+import ServiceCards from "@/components/ServiceCards";
+import Credentials from "@/components/Credentials";
+import ContactSummary from "@/components/ContactSummary";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Packages />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
+      <Hero />
+      <ServiceCards />
+      <Credentials />
+      <ContactSummary />
+      <Contact />
     </>
   );
 }

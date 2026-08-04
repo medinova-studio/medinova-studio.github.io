@@ -28,6 +28,31 @@ export type Translation = {
     cta2: string;
     scroll: string;
   };
+  home: {
+    servicesBadge: string;
+    servicesTitle: string;
+    servicesSubtitle: string;
+    cards: {
+      key: "agency" | "games" | "academy";
+      title: string;
+      desc: string;
+      points: string[];
+      cta: string;
+      href: string;
+    }[];
+    credBadge: string;
+    credTitle: string;
+    credSubtitle: string;
+    stats: { value: string; label: string }[];
+    testimonials: { quote: string; name: string; role: string }[];
+    contactSummaryBadge: string;
+    contactSummaryTitle: string;
+    contactSummaryText: string;
+    contactSummaryCta: string;
+    responseTime: string;
+    explore: string;
+    backHome: string;
+  };
   pillars: {
     agency: string;
     agencyTitle: string;
@@ -104,9 +129,79 @@ export const translations: Record<Lang, Translation> = {
       headline2: "Games & Tech Education",
       subheadline:
         "360° B2B Growth Systems, Cross-Platform Game Development, and Next-Gen Coding Academies.",
-      cta1: "Explore Packages",
+      cta1: "Explore Services",
       cta2: "Book a Consultation",
       scroll: "Scroll",
+    },
+    home: {
+      servicesBadge: "What We Do",
+      servicesTitle: "Three Studios, One Engineering Team",
+      servicesSubtitle:
+        "Pick the track that fits your goal — each one is a dedicated practice with its own pricing and process.",
+      cards: [
+        {
+          key: "agency",
+          title: "B2B Agency Services",
+          desc: "360° growth systems — content, paid ads, and AI-powered WhatsApp routing that turn attention into qualified leads.",
+          points: ["Full-funnel marketing", "Video & content production", "AI WhatsApp agents"],
+          cta: "View agency packages",
+          href: "/agency",
+        },
+        {
+          key: "games",
+          title: "Game Dev & Custom Software",
+          desc: "Cross-platform games, interactive AR/VR experiences, and bespoke software engineered to ship and scale.",
+          points: ["Playable prototypes", "PC · Web · Mobile builds", "AR/VR & enterprise apps"],
+          cta: "View game dev quotes",
+          href: "/games",
+        },
+        {
+          key: "academy",
+          title: "Medinova Academy",
+          desc: "A project-based coding academy for ages 7 to adults — from visual logic to professional full-stack and AI development.",
+          points: ["Ages 7 to adults", "Real portfolio projects", "Taught in FR · EN · AR"],
+          cta: "View academy tracks",
+          href: "/academy",
+        },
+      ],
+      credBadge: "Studio Credentials",
+      credTitle: "Built by Engineers Who Ship",
+      credSubtitle:
+        "A multidisciplinary Moroccan studio blending marketing, game engineering, and education under one roof.",
+      stats: [
+        { value: "40+", label: "Projects delivered" },
+        { value: "3", label: "Countries served" },
+        { value: "3", label: "Languages supported" },
+        { value: "48h", label: "Response time" },
+      ],
+      testimonials: [
+        {
+          quote:
+            "Medinova rebuilt our funnel and the AI WhatsApp agent alone doubled our qualified leads within two months.",
+          name: "Yassine B.",
+          role: "Founder, Retail Brand — Casablanca",
+        },
+        {
+          quote:
+            "They took our game concept from a rough idea to a polished cross-platform build. Genuinely rare engineering quality.",
+          name: "Sara M.",
+          role: "Indie Studio Lead",
+        },
+        {
+          quote:
+            "My daughter went from zero to building her own game in Unity. The instructors are patient and truly skilled.",
+          name: "Nadia R.",
+          role: "Parent — Academy",
+        },
+      ],
+      contactSummaryBadge: "Quick Contact",
+      contactSummaryTitle: "Have a project in mind?",
+      contactSummaryText:
+        "Tell us what you're building — an agency package, a game, or an academy enrollment. We reply within 48 hours.",
+      contactSummaryCta: "Start a conversation",
+      responseTime: "Replies within 48 hours",
+      explore: "Explore",
+      backHome: "Back to home",
     },
     pillars: {
       agency: "B2B Digital Agency",
@@ -208,9 +303,79 @@ export const translations: Record<Lang, Translation> = {
       headline2: "Jeux & Éducation Tech",
       subheadline:
         "Systèmes de croissance B2B 360°, développement de jeux multi-plateformes, et académies de codage nouvelle génération.",
-      cta1: "Explorer les Packs",
+      cta1: "Explorer les Services",
       cta2: "Réserver une Consultation",
       scroll: "Défiler",
+    },
+    home: {
+      servicesBadge: "Ce Que Nous Faisons",
+      servicesTitle: "Trois Studios, Une Équipe d'Ingénierie",
+      servicesSubtitle:
+        "Choisissez le parcours adapté à votre objectif — chacun est une pratique dédiée avec ses propres tarifs et processus.",
+      cards: [
+        {
+          key: "agency",
+          title: "Services Agence B2B",
+          desc: "Systèmes de croissance 360° — contenu, publicités payantes et routage WhatsApp par IA qui transforment l'attention en leads qualifiés.",
+          points: ["Marketing plein entonnoir", "Production vidéo & contenu", "Agents IA WhatsApp"],
+          cta: "Voir les packs agence",
+          href: "/agency",
+        },
+        {
+          key: "games",
+          title: "Game Dev & Logiciels Sur-Mesure",
+          desc: "Jeux multi-plateformes, expériences AR/VR interactives et logiciels sur-mesure conçus pour livrer et évoluer.",
+          points: ["Prototypes jouables", "Builds PC · Web · Mobile", "Apps AR/VR & entreprise"],
+          cta: "Voir les devis game dev",
+          href: "/games",
+        },
+        {
+          key: "academy",
+          title: "Académie Medinova",
+          desc: "Une académie de code basée sur projets, de 7 ans aux adultes — de la logique visuelle au développement full-stack et IA professionnel.",
+          points: ["De 7 ans aux adultes", "Vrais projets portfolio", "Enseigné en FR · EN · AR"],
+          cta: "Voir les parcours",
+          href: "/academy",
+        },
+      ],
+      credBadge: "Références du Studio",
+      credTitle: "Conçu par des Ingénieurs Qui Livrent",
+      credSubtitle:
+        "Un studio marocain pluridisciplinaire alliant marketing, ingénierie de jeux et éducation sous un même toit.",
+      stats: [
+        { value: "40+", label: "Projets livrés" },
+        { value: "3", label: "Pays servis" },
+        { value: "3", label: "Langues supportées" },
+        { value: "48h", label: "Temps de réponse" },
+      ],
+      testimonials: [
+        {
+          quote:
+            "Medinova a reconstruit notre tunnel et l'agent IA WhatsApp a à lui seul doublé nos leads qualifiés en deux mois.",
+          name: "Yassine B.",
+          role: "Fondateur, Marque Retail — Casablanca",
+        },
+        {
+          quote:
+            "Ils ont transformé notre concept de jeu d'une idée brute à un build multi-plateformes soigné. Une qualité d'ingénierie vraiment rare.",
+          name: "Sara M.",
+          role: "Directrice de Studio Indé",
+        },
+        {
+          quote:
+            "Ma fille est passée de zéro à créer son propre jeu sur Unity. Les instructeurs sont patients et vraiment compétents.",
+          name: "Nadia R.",
+          role: "Parent — Académie",
+        },
+      ],
+      contactSummaryBadge: "Contact Rapide",
+      contactSummaryTitle: "Un projet en tête ?",
+      contactSummaryText:
+        "Dites-nous ce que vous construisez — un pack agence, un jeu ou une inscription à l'académie. Nous répondons sous 48 heures.",
+      contactSummaryCta: "Démarrer une conversation",
+      responseTime: "Réponse sous 48 heures",
+      explore: "Explorer",
+      backHome: "Retour à l'accueil",
     },
     pillars: {
       agency: "Agence Digitale B2B",
@@ -312,9 +477,79 @@ export const translations: Record<Lang, Translation> = {
       headline2: "ألعاب وتعليم تقني",
       subheadline:
         "أنظمة نمو B2B شاملة 360°، تطوير ألعاب متعدد المنصات، وأكاديميات برمجة من الجيل القادم.",
-      cta1: "استكشف الباقات",
+      cta1: "استكشف الخدمات",
       cta2: "احجز استشارة",
       scroll: "تمرير",
+    },
+    home: {
+      servicesBadge: "ماذا نقدم",
+      servicesTitle: "ثلاثة استوديوهات، فريق هندسي واحد",
+      servicesSubtitle:
+        "اختر المسار المناسب لهدفك — كل مسار ممارسة مخصصة بتسعيرها وعمليتها الخاصة.",
+      cards: [
+        {
+          key: "agency",
+          title: "خدمات الوكالة B2B",
+          desc: "أنظمة نمو 360° — محتوى، إعلانات مدفوعة، وتوجيه واتساب بالذكاء الاصطناعي يحوّل الاهتمام إلى عملاء مؤهلين.",
+          points: ["تسويق شامل", "إنتاج فيديو ومحتوى", "وكلاء واتساب بالذكاء الاصطناعي"],
+          cta: "عرض باقات الوكالة",
+          href: "/agency",
+        },
+        {
+          key: "games",
+          title: "تطوير الألعاب والبرمجيات المخصصة",
+          desc: "ألعاب متعددة المنصات، تجارب AR/VR تفاعلية، وبرمجيات مخصصة مصممة للإطلاق والتوسع.",
+          points: ["نماذج أولية قابلة للعب", "منصات PC · ويب · موبايل", "تطبيقات AR/VR وللمؤسسات"],
+          cta: "عرض أسعار تطوير الألعاب",
+          href: "/games",
+        },
+        {
+          key: "academy",
+          title: "أكاديمية مدينوفا",
+          desc: "أكاديمية برمجة قائمة على المشاريع من 7 سنوات إلى البالغين — من المنطق المرئي إلى التطوير الاحترافي والذكاء الاصطناعي.",
+          points: ["من 7 سنوات إلى البالغين", "مشاريع معرض أعمال حقيقية", "تُدرّس بالـ FR · EN · AR"],
+          cta: "عرض المسارات",
+          href: "/academy",
+        },
+      ],
+      credBadge: "اعتمادات الاستوديو",
+      credTitle: "مبني على يد مهندسين ينجزون",
+      credSubtitle:
+        "استوديو مغربي متعدد التخصصات يجمع التسويق وهندسة الألعاب والتعليم تحت سقف واحد.",
+      stats: [
+        { value: "+40", label: "مشروع منجز" },
+        { value: "3", label: "دول مخدومة" },
+        { value: "3", label: "لغات مدعومة" },
+        { value: "48h", label: "وقت الاستجابة" },
+      ],
+      testimonials: [
+        {
+          quote:
+            "أعادت مدينوفا بناء قمع المبيعات لدينا، ووكيل واتساب بالذكاء الاصطناعي وحده ضاعف عملاءنا المؤهلين خلال شهرين.",
+          name: "ياسين ب.",
+          role: "مؤسس، علامة تجارية للتجزئة — الدار البيضاء",
+        },
+        {
+          quote:
+            "حوّلوا فكرة لعبتنا من مجرد فكرة أولية إلى إصدار متعدد المنصات متقن. جودة هندسية نادرة حقاً.",
+          name: "سارة م.",
+          role: "قائدة استوديو مستقل",
+        },
+        {
+          quote:
+            "انتقلت ابنتي من الصفر إلى بناء لعبتها الخاصة على Unity. المدرّبون صبورون ومهرة حقاً.",
+          name: "نادية ر.",
+          role: "ولي أمر — الأكاديمية",
+        },
+      ],
+      contactSummaryBadge: "تواصل سريع",
+      contactSummaryTitle: "لديك مشروع في ذهنك؟",
+      contactSummaryText:
+        "أخبرنا بما تبنيه — باقة وكالة، لعبة، أو تسجيل في الأكاديمية. نرد خلال 48 ساعة.",
+      contactSummaryCta: "ابدأ محادثة",
+      responseTime: "الرد خلال 48 ساعة",
+      explore: "استكشف",
+      backHome: "العودة للرئيسية",
     },
     pillars: {
       agency: "الوكالة الرقمية B2B",
