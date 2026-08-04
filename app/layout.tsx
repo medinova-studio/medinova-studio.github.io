@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 export const metadata: Metadata = {
   title: "Medinova Studio — Engineering Interactive Experiences & Digital Growth",
   description:
-    "Cross-platform game development, custom software engineering, and 360° AI-powered growth systems for businesses.",
+    "Cross-platform game development, custom software engineering, 360° AI-powered growth systems, and next-gen coding academies.",
 };
 
 export const viewport = {
@@ -31,7 +32,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-ink-950 text-slate-400 font-sans antialiased overflow-x-hidden">
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

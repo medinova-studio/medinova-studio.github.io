@@ -1,4 +1,10 @@
+"use client";
+
+import { useLang } from "@/lib/LanguageContext";
+
 export default function Hero() {
+  const { t } = useLang();
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Glow background */}
@@ -23,7 +29,7 @@ export default function Hero() {
           <div className="animate-fade-up">
             <span className="shimmer-badge relative inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-6 overflow-hidden">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse" />
-              Digital Agency &amp; Game Studio — Morocco
+              {t.hero.badge}
             </span>
           </div>
 
@@ -32,8 +38,8 @@ export default function Hero() {
             className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight animate-fade-up"
             style={{ animationDelay: "0.15s", opacity: 0 }}
           >
-            Engineering Interactive Experiences &amp;{" "}
-            <span className="gradient-text">Modern Digital Solutions</span>
+            {t.hero.headline1}{" "}
+            <span className="gradient-text">{t.hero.headline2}</span>
           </h1>
 
           {/* Subheadline */}
@@ -41,8 +47,7 @@ export default function Hero() {
             className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl animate-fade-up"
             style={{ animationDelay: "0.3s", opacity: 0 }}
           >
-            Cross-platform game development, custom software engineering, and
-            360° AI-powered growth systems for businesses.
+            {t.hero.subheadline}
           </p>
 
           {/* CTAs */}
@@ -51,25 +56,25 @@ export default function Hero() {
             style={{ animationDelay: "0.45s", opacity: 0 }}
           >
             <a
-              href="#packages"
+              href="#offers"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-cyan text-ink-950 font-semibold text-sm hover:bg-cyan/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-cyan/20"
             >
-              View Growth Packages
+              {t.hero.cta1}
             </a>
             <a
               href="#contact"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white/5 border border-white/10 text-white font-semibold text-sm hover:bg-white/10 hover:border-white/20 active:scale-[0.98] transition-all duration-200"
             >
-              Contact Us
+              {t.hero.cta2}
             </a>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 hidden sm:flex">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-40 hidden sm:flex">
         <span className="text-[10px] text-slate-500 tracking-[0.2em] uppercase">
-          Scroll
+          {t.hero.scroll}
         </span>
         <div className="w-5 h-8 rounded-full border border-slate-600 flex justify-center pt-1.5">
           <div className="w-1 h-2 rounded-full bg-slate-500 animate-bounce" />
