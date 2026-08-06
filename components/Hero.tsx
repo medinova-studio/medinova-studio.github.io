@@ -6,80 +6,40 @@ export default function Hero() {
   const { t } = useLang();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Glow background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-cyan/10 rounded-full blur-[120px] opacity-40" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-violet/10 rounded-full blur-[100px] opacity-30" />
-      </div>
-
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(34,211,238,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.5) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
-      <div className="relative max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-40 w-full">
+    <section className="relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
         <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="animate-fade-up">
-            <span className="shimmer-badge relative inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-6 overflow-hidden">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse" />
-              {t.hero.badge}
-            </span>
-          </div>
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
+            {t.hero.badge}
+          </span>
 
-          {/* Headline */}
-          <h1
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight animate-fade-up"
-            style={{ animationDelay: "0.15s", opacity: 0 }}
-          >
-            {t.hero.headline1}{" "}
-            <span className="gradient-text">{t.hero.headline2}</span>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-ink leading-[1.08] tracking-tight">
+            {t.hero.headline}
           </h1>
 
-          {/* Subheadline */}
-          <p
-            className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl animate-fade-up"
-            style={{ animationDelay: "0.3s", opacity: 0 }}
-          >
+          <p className="mt-6 text-base sm:text-lg text-ink-subtle leading-relaxed max-w-2xl">
             {t.hero.subheadline}
           </p>
 
-          {/* CTAs */}
-          <div
-            className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up"
-            style={{ animationDelay: "0.45s", opacity: 0 }}
-          >
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
-              href="#offers"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-cyan text-ink-950 font-semibold text-sm hover:bg-cyan/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-cyan/20"
+              href="#portfolio"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-md bg-primary text-white font-medium text-sm hover:bg-primary-hover active:scale-[0.98] transition-all duration-200"
             >
-              {t.hero.cta1}
+              {t.hero.ctaPlay}
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white/5 border border-white/10 text-white font-semibold text-sm hover:bg-white/10 hover:border-white/20 active:scale-[0.98] transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-md bg-surface-1 text-ink border border-hairline font-medium text-sm hover:bg-surface-2 hover:border-hairline-strong active:scale-[0.98] transition-all duration-200"
             >
-              {t.hero.cta2}
+              {t.hero.ctaHire}
             </a>
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-40 hidden sm:flex">
-        <span className="text-[10px] text-slate-500 tracking-[0.2em] uppercase">
-          {t.hero.scroll}
-        </span>
-        <div className="w-5 h-8 rounded-full border border-slate-600 flex justify-center pt-1.5">
-          <div className="w-1 h-2 rounded-full bg-slate-500 animate-bounce" />
-        </div>
-      </div>
+      <div className="h-px bg-gradient-to-r from-transparent via-hairline-strong to-transparent" />
     </section>
   );
 }

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Medinova Studio — Engineering Interactive Experiences & Digital Growth",
+  title: "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub",
   description:
-    "Cross-platform game development, custom software engineering, 360° AI-powered growth systems, and next-gen coding academies.",
+    "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production.",
 };
-
 export const viewport = {
-  themeColor: "#070a12",
+  themeColor: "#010102",
 };
-
 export default function RootLayout({
   children,
 }: {
@@ -31,8 +31,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-ink-950 text-slate-400 font-sans antialiased overflow-x-hidden">
-        <LanguageProvider>{children}</LanguageProvider>
+      <body className="bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden">
+        <LanguageProvider>
+          <Navbar />
+          <div className="pt-14">{children}</div>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -2,62 +2,78 @@
 
 import { useState, FormEvent } from "react";
 import { useLang } from "@/lib/LanguageContext";
-import { LANGS, LANG_LABELS } from "@/lib/i18n";
 
 export default function Contact() {
   const { t } = useLang();
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const name = data.get("name") as string;
-    const email = data.get("email") as string;
-    const phone = data.get("phone") as string;
-    const service = data.get("service") as string;
-    const langPref = data.get("langPref") as string;
-    const message = data.get("message") as string;
 
-    setStatus("sending");
-    const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0ALanguage: ${langPref}%0A%0A${encodeURIComponent(message)}`;
-    window.location.href = `mailto:mounir@medinovastudio.com?subject=${encodeURIComponent(
-      `New Inquiry — ${service}`
-    )}&body=${body}`;
+    const payload = {
+      name: String(data.get("name") ?? "").trim(),
+      email: String(data.get("email") ?? "").trim(),
+      projectType: String(data.get("projectType") ?? "").trim(),
+      budget: String(data.get("budget") ?? "").trim(),
+      readiness: String(data.get("readiness") ?? "").trim(),
+      message: String(data.get("message") ?? "").trim(),
+    };
 
-    setTimeout(() => {
-      setStatus("sent");
+    setIsSubmitting(true);
+    setSubmitError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || !json.success) {
+        throw new Error(json.error || "Request failed.");
+      }
+      setIsSubmitted(true);
       form.reset();
-      setTimeout(() => setStatus("idle"), 4000);
-    }, 800);
+      setTimeout(() => setIsSubmitted(false), 10000);
+    } catch (err) {
+      setSubmitError(
+        err instanceof Error ? err.message : "Request failed."
+      );
+      setTimeout(() => setSubmitError(null), 10000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  return (
-    <section id="contact" className="relative py-20 sm:py-28 lg:py-32">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-cyan/5 rounded-full blur-[120px] pointer-events-none" />
+  const selectClass =
+    "form-input w-full px-3 py-2 rounded-md text-sm text-ink appearance-none cursor-pointer";
 
-      <div className="relative max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+  return (
+    <section id="contact" className="relative py-20 sm:py-28 lg:py-32 border-t border-hairline">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Info */}
           <div>
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
               {t.contact.badge}
             </span>
-            <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5">
+            <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink mb-5 tracking-tight">
               {t.contact.title}
             </h2>
-            <p className="text-sm sm:text-base text-slate-400 leading-relaxed mb-8">
+            <p className="text-sm sm:text-base text-ink-subtle leading-relaxed mb-8">
               {t.contact.subtitle}
             </p>
 
             <div className="space-y-4">
               <a
-                href="mailto:mounir@medinovastudio.com"
-                className="flex items-center gap-3 text-sm text-slate-400 hover:text-cyan transition-colors group"
+                href="mailto:contact@medinovastudio.com"
+                className="flex items-center gap-3 text-sm text-ink-subtle hover:text-ink transition-colors group"
               >
-                <div className="w-10 h-10 rounded-lg bg-cyan/10 border border-cyan/20 flex items-center justify-center flex-shrink-0 group-hover:bg-cyan/20 transition-colors">
-                  <svg className="w-4 h-4 text-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-md bg-surface-2 border border-hairline flex items-center justify-center flex-shrink-0 group-hover:border-hairline-strong transition-colors">
+                  <svg className="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -67,26 +83,21 @@ export default function Contact() {
                   </svg>
                 </div>
                 <span>
-                  <span className="block text-[11px] text-slate-500">{t.contact.emailLabel}</span>
-                  mounir@medinovastudio.com
+                  <span className="block text-[11px] text-ink-tertiary">{t.contact.emailLabel}</span>
+                  contact@medinovastudio.com
                 </span>
               </a>
 
-              <div className="flex items-center gap-3 text-sm text-slate-400">
-                <div className="w-10 h-10 rounded-lg bg-cyan/10 border border-cyan/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-4 h-4 text-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-3 text-sm text-ink-subtle">
+                <div className="w-10 h-10 rounded-md bg-surface-2 border border-hairline flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                     />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 {t.contact.location}
@@ -95,11 +106,11 @@ export default function Contact() {
           </div>
 
           {/* Right: Form */}
-          <div>
+          <div className="rounded-xl border border-hairline bg-surface-1 p-6 sm:p-8">
             <form onSubmit={onSubmit} className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-xs font-medium text-slate-500 mb-1.5">
+                  <label htmlFor="name" className="block text-xs font-medium text-ink-tertiary mb-1.5">
                     {t.contact.name}
                   </label>
                   <input
@@ -108,11 +119,11 @@ export default function Contact() {
                     id="name"
                     required
                     placeholder={t.contact.namePh}
-                    className="form-input w-full px-4 py-3 rounded-lg text-sm text-white"
+                    className="form-input w-full px-3 py-2 rounded-md text-sm text-ink"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-xs font-medium text-slate-500 mb-1.5">
+                  <label htmlFor="email" className="block text-xs font-medium text-ink-tertiary mb-1.5">
                     {t.contact.email}
                   </label>
                   <input
@@ -121,40 +132,54 @@ export default function Contact() {
                     id="email"
                     required
                     placeholder={t.contact.emailPh}
-                    className="form-input w-full px-4 py-3 rounded-lg text-sm text-white"
+                    className="form-input w-full px-3 py-2 rounded-md text-sm text-ink"
                   />
                 </div>
               </div>
 
+              <div>
+                <label htmlFor="projectType" className="block text-xs font-medium text-ink-tertiary mb-1.5">
+                  {t.contact.service}
+                </label>
+                <select name="projectType" id="projectType" required defaultValue="" className={selectClass}>
+                  <option value="" disabled className="bg-surface-1">
+                    {t.contact.servicePh}
+                  </option>
+                  {t.contact.services.map((s) => (
+                    <option key={s} value={s} className="bg-surface-1">
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-xs font-medium text-slate-500 mb-1.5">
-                    {t.contact.phone}
+                  <label htmlFor="budget" className="block text-xs font-medium text-ink-tertiary mb-1.5">
+                    {t.contact.budget}
                   </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder={t.contact.phonePh}
-                    className="form-input w-full px-4 py-3 rounded-lg text-sm text-white"
-                  />
+                  <select name="budget" id="budget" required defaultValue="" className={selectClass}>
+                    <option value="" disabled className="bg-surface-1">
+                      {t.contact.budgetPh}
+                    </option>
+                    {t.contact.budgets.map((b) => (
+                      <option key={b} value={b} className="bg-surface-1">
+                        {b}
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 <div>
-                  <label htmlFor="langPref" className="block text-xs font-medium text-slate-500 mb-1.5">
-                    {t.contact.langPref}
+                  <label htmlFor="readiness" className="block text-xs font-medium text-ink-tertiary mb-1.5">
+                    {t.contact.readiness}
                   </label>
-                  <select
-                    name="langPref"
-                    id="langPref"
-                    defaultValue=""
-                    className="form-input w-full px-4 py-3 rounded-lg text-sm text-white appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled className="bg-ink-800">
-                      {t.contact.langPrefPh}
+                  <select name="readiness" id="readiness" required defaultValue="" className={selectClass}>
+                    <option value="" disabled className="bg-surface-1">
+                      {t.contact.readinessPh}
                     </option>
-                    {LANGS.map((l) => (
-                      <option key={l} value={l} className="bg-ink-800">
-                        {LANG_LABELS[l]}
+                    {t.contact.readinessOptions.map((r) => (
+                      <option key={r} value={r} className="bg-surface-1">
+                        {r}
                       </option>
                     ))}
                   </select>
@@ -162,29 +187,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-xs font-medium text-slate-500 mb-1.5">
-                  {t.contact.service}
-                </label>
-                <select
-                  name="service"
-                  id="service"
-                  required
-                  defaultValue=""
-                  className="form-input w-full px-4 py-3 rounded-lg text-sm text-white appearance-none cursor-pointer"
-                >
-                  <option value="" disabled className="bg-ink-800">
-                    {t.contact.servicePh}
-                  </option>
-                  {t.contact.services.map((s) => (
-                    <option key={s} value={s} className="bg-ink-800">
-                      {s}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-xs font-medium text-slate-500 mb-1.5">
+                <label htmlFor="message" className="block text-xs font-medium text-ink-tertiary mb-1.5">
                   {t.contact.message}
                 </label>
                 <textarea
@@ -193,24 +196,34 @@ export default function Contact() {
                   rows={5}
                   required
                   placeholder={t.contact.messagePh}
-                  className="form-input w-full px-4 py-3 rounded-lg text-sm text-white resize-none"
+                  className="form-input w-full px-3 py-2 rounded-md text-sm text-ink resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                disabled={status === "sending"}
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 rounded-lg bg-cyan text-ink-950 font-semibold text-sm hover:bg-cyan/90 active:scale-[0.98] transition-all duration-200 shadow-lg shadow-cyan/20 disabled:opacity-60"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 rounded-md bg-primary text-white font-medium text-sm hover:bg-primary-hover active:scale-[0.98] transition-all duration-200 disabled:opacity-60"
               >
-                {status === "sending"
-                  ? t.contact.sending
-                  : status === "sent"
-                  ? t.contact.sent
-                  : t.contact.send}
+                {isSubmitting && (
+                  <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
+                )}
+                {isSubmitting ? t.contact.sending : t.contact.send}
               </button>
 
-              {status === "sent" && (
-                <p className="text-xs text-emerald-400">{t.contact.sentNote}</p>
+              {isSubmitted && (
+                <p className="text-xs text-success">{t.contact.sent}</p>
+              )}
+              {submitError && (
+                <p className="text-xs text-[#ff3b30]">
+                  {submitError}{" "}
+                  <a href="mailto:contact@medinovastudio.com" className="underline hover:text-ink">
+                    contact@medinovastudio.com
+                  </a>
+                </p>
               )}
             </form>
           </div>

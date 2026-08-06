@@ -1,21 +1,19 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Packages from "@/components/Packages";
-import FAQ from "@/components/FAQ";
+import TechStackBar from "@/components/TechStackBar";
+import Founder from "@/components/Founder";
+import Portfolio from "@/components/Portfolio";
+import GameServices from "@/components/GameServices";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Packages />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <Hero />
+      <TechStackBar />
+      <Founder />
+      <Portfolio />
+      <GameServices />
+      <Contact />
+    </main>
   );
 }

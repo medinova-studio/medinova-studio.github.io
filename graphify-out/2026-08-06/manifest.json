@@ -1,0 +1,222 @@
+{
+  ".opencode/opencode.json": {
+    "mtime": 1786026848.0466723,
+    "ast_hash": "e5f74d14a81702b55bdf53b33ec991d7",
+    "semantic_hash": ""
+  },
+  ".opencode/plugins/graphify.js": {
+    "mtime": 1786026326.3681407,
+    "ast_hash": "3ea725724bc8ebe483c9f13d6aa1124f",
+    "semantic_hash": "3ea725724bc8ebe483c9f13d6aa1124f"
+  },
+  "app/academy/page.tsx": {
+    "mtime": 1786025199.0285432,
+    "ast_hash": "7b6e12e38b93fec2ac0aa2349ac01bb9",
+    "semantic_hash": "7b6e12e38b93fec2ac0aa2349ac01bb9"
+  },
+  "app/agency/page.tsx": {
+    "mtime": 1786021490.3762007,
+    "ast_hash": "8d095b0c5053afb2eede1b3f77e5f6fa",
+    "semantic_hash": "8d095b0c5053afb2eede1b3f77e5f6fa"
+  },
+  "app/layout.tsx": {
+    "mtime": 1786038362.8121638,
+    "ast_hash": "4994d227946f3ccadc2a39e52ec6da5e",
+    "semantic_hash": ""
+  },
+  "app/page.tsx": {
+    "mtime": 1786044097.6731062,
+    "ast_hash": "b58cae3003f10833b1bb8692823b4a85",
+    "semantic_hash": ""
+  },
+  "components/AcademyPricing.tsx": {
+    "mtime": 1786025172.6767852,
+    "ast_hash": "58c54ecbf22466b7d868a2a919a3284d",
+    "semantic_hash": "58c54ecbf22466b7d868a2a919a3284d"
+  },
+  "components/Contact.tsx": {
+    "mtime": 1786044072.6573124,
+    "ast_hash": "c0fe875788a6bdf6c83968d12f62278a",
+    "semantic_hash": ""
+  },
+  "components/FAQ.tsx": {
+    "mtime": 1786038362.8773246,
+    "ast_hash": "ea3323b2e0b9d5d155df22c50bd11ca8",
+    "semantic_hash": "ea3323b2e0b9d5d155df22c50bd11ca8"
+  },
+  "components/Footer.tsx": {
+    "mtime": 1786038362.8970878,
+    "ast_hash": "d06640dd8ab07ea11285a4026231b289",
+    "semantic_hash": ""
+  },
+  "components/Hero.tsx": {
+    "mtime": 1786038362.9143064,
+    "ast_hash": "443ebc3c245df7c5de749979c0534442",
+    "semantic_hash": ""
+  },
+  "components/Navbar.tsx": {
+    "mtime": 1786044089.8283627,
+    "ast_hash": "2974d99b11eff929da9211cca67f7665",
+    "semantic_hash": ""
+  },
+  "components/Portfolio.tsx": {
+    "mtime": 1786044016.8664901,
+    "ast_hash": "d2f2d8744d67716b1d206cbb04af6e6e",
+    "semantic_hash": ""
+  },
+  "lib/LanguageContext.tsx": {
+    "mtime": 1786038362.951997,
+    "ast_hash": "492d40bb46ff69e7ec5020b07f252b96",
+    "semantic_hash": "492d40bb46ff69e7ec5020b07f252b96"
+  },
+  "lib/i18n.ts": {
+    "mtime": 1786043945.9848607,
+    "ast_hash": "43146fa0fd036a3bf3e34fc2eeded4e0",
+    "semantic_hash": ""
+  },
+  "next-env.d.ts": {
+    "mtime": 1786038363.0025473,
+    "ast_hash": "da547da2ebeb322abd0257ae82d0f1bf",
+    "semantic_hash": "da547da2ebeb322abd0257ae82d0f1bf"
+  },
+  "next.config.mjs": {
+    "mtime": 1786038363.0221102,
+    "ast_hash": "f53bf377566882e87c2a1687e6c30d77",
+    "semantic_hash": "f53bf377566882e87c2a1687e6c30d77"
+  },
+  "package.json": {
+    "mtime": 1786038363.0589774,
+    "ast_hash": "0ccd727b271e704b90a1a06a67bbe097",
+    "semantic_hash": "0ccd727b271e704b90a1a06a67bbe097"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1786038363.0754373,
+    "ast_hash": "d1283e7566e136247b268494a6a545eb",
+    "semantic_hash": "d1283e7566e136247b268494a6a545eb"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1786038363.105654,
+    "ast_hash": "2c3d336943c70944fe633e3ea1deaf05",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1786038363.121074,
+    "ast_hash": "a91a6bdac865397a8af6fdc55c8f924a",
+    "semantic_hash": "a91a6bdac865397a8af6fdc55c8f924a"
+  },
+  "vercel.json": {
+    "mtime": 1786038363.14583,
+    "ast_hash": "4a4e976aa10e5854d62962ddb1288a24",
+    "semantic_hash": "4a4e976aa10e5854d62962ddb1288a24"
+  },
+  "components/GameServices.tsx": {
+    "mtime": 1786029380.9594703,
+    "ast_hash": "61f30b9c6084c06e2c2399eb11d9338e",
+    "semantic_hash": ""
+  },
+  "components/TechStackBar.tsx": {
+    "mtime": 1786029360.021208,
+    "ast_hash": "b728c26641f6351725da721fe8c90fa6",
+    "semantic_hash": ""
+  },
+  ".roo/skills/web-deployment-diagnostics/SKILL.md": {
+    "mtime": 1786018520.1158233,
+    "ast_hash": "d89b8558cbf17e907995aba847d6a15c",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1786027517.2196054,
+    "ast_hash": "28ce6f289cd66459d4ab37811f467229",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1786027407.2374394,
+    "ast_hash": "243cb825cfd1dad7bb88f61109f62d33",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1786014576.2116911,
+    "ast_hash": "14c9adc72fca92e0ef1dfbeb1d9869d5",
+    "semantic_hash": ""
+  },
+  "opencode.ai/DESIGN.md": {
+    "mtime": 1786027453.4938302,
+    "ast_hash": "8bcaac95d14fa9a64d7c936d7024f729",
+    "semantic_hash": ""
+  },
+  "components/Founder.tsx": {
+    "mtime": 1786043970.1261346,
+    "ast_hash": "530d4153f20ed853b39ca39e0731dc89",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot (3).png": {
+    "mtime": 1739378425.9615486,
+    "ast_hash": "bbf5f935cbc52e5923fc8f80561b61c7",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot (4).png": {
+    "mtime": 1739378427.8991432,
+    "ast_hash": "ad2c6af46b04a638ece44e16e066758f",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot.jpg": {
+    "mtime": 1739379414.76625,
+    "ast_hash": "953fe66b34d745c06fc9ffab314eec01",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/1284x2778-screenshot (5).jpeg": {
+    "mtime": 1782678237.5912642,
+    "ast_hash": "d02c80d580fb6f1bd1432a6ed97e0667",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/1284x2778-screenshot (6).jpeg": {
+    "mtime": 1782678258.2673206,
+    "ast_hash": "00b1840263a4d6d564d310ee1a21bf71",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/2064x2752-screenshot (10).jpeg": {
+    "mtime": 1782678433.144793,
+    "ast_hash": "03315e25b230fb50ce42843acc074fe4",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (1).jpeg": {
+    "mtime": 1742050276.3129332,
+    "ast_hash": "f89a17ce74183ccc7ed1f86fcf1123c2",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (2).jpeg": {
+    "mtime": 1742050295.0165098,
+    "ast_hash": "69932b51104f28f8d521a0d445e7ff38",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (6).jpeg": {
+    "mtime": 1742050388.9016967,
+    "ast_hash": "c6c36dbffe30a8ee04f47abc0caf76ff",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot.jpeg": {
+    "mtime": 1742057346.2714567,
+    "ast_hash": "9fced28dcf7ac14636c380308020c279",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot1.png": {
+    "mtime": 1786043240.4353,
+    "ast_hash": "4ace8fce363d62f0ac7d262b97ad8192",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot2.png": {
+    "mtime": 1786043261.4539244,
+    "ast_hash": "2ab9f4721171a1bc5232fd8ee5bf8809",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot3.png": {
+    "mtime": 1786043274.269909,
+    "ast_hash": "6b4839e20ee2e107819efc6398ee4a46",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot4.png": {
+    "mtime": 1786043290.917812,
+    "ast_hash": "c992176753077b21ada7b535d3f6c3ab",
+    "semantic_hash": ""
+  }
+}

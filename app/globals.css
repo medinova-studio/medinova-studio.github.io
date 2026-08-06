@@ -12,27 +12,27 @@ html {
 }
 
 body {
-  background: #070a12;
-  color: #94a3b8;
+  background: #010102;
+  color: #8a8f98;
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.3);
-  color: #f1f5f9;
+  background: rgba(94, 106, 210, 0.35);
+  color: #f7f8f8;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #070a12;
+  background: #010102;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1b2738;
+  background: #23252a;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a3a52;
+  background: #34343a;
 }
 
 .gradient-text {
@@ -45,17 +45,17 @@ body {
 }
 
 .form-input {
-  background: rgba(18, 26, 38, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0f1011;
+  border: 1px solid #23252a;
   transition: all 0.3s ease;
 }
 .form-input:focus {
   outline: none;
-  border-color: rgba(34, 211, 238, 0.4);
-  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
+  border-color: #5e69d1;
+  box-shadow: 0 0 0 3px rgba(94, 106, 210, 0.25);
 }
 .form-input::placeholder {
-  color: #475569;
+  color: #62666d;
 }
 
 .shimmer-badge::after {
