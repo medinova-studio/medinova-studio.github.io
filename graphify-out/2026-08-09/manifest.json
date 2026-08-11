@@ -60,8 +60,8 @@
     "semantic_hash": "492d40bb46ff69e7ec5020b07f252b96"
   },
   "lib/i18n.ts": {
-    "mtime": 1786296199.5679858,
-    "ast_hash": "7bf47e6ebfd9b78417c86f402e3f6bdf",
+    "mtime": 1786295061.379898,
+    "ast_hash": "864f1a551ca51dfdf0dc7956a4aecbdb",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "components/academy/Pricing.tsx": {
-    "mtime": 1786296218.6347866,
-    "ast_hash": "e3c9f659401eebbfba166de744bddb8f",
+    "mtime": 1786295085.6459556,
+    "ast_hash": "e3b1938a38037690a2a981878d1a1b54",
     "semantic_hash": ""
   },
   "components/academy/Proof.tsx": {

@@ -1,11 +1,11 @@
 # Graph Report - medinova-studio.github.io  (2026-08-09)
 
 ## Corpus Check
-- 39 files · ~449,521 words
+- 39 files · ~449,301 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 250 nodes · 319 edges · 19 communities (12 shown, 7 thin omitted)
+- 248 nodes · 316 edges · 20 communities (13 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -21,6 +21,7 @@
 - DESIGN.md
 - devDependencies
 - useLang
+- Components
 - vercel.json
 - graphify.js
 - next.config.mjs
@@ -41,11 +42,11 @@
 3. `Components` - 8 edges
 4. `Components` - 8 edges
 5. `include` - 6 edges
-6. `Pricing()` - 5 edges
-7. `academyWhatsAppUrl()` - 5 edges
-8. `scripts` - 5 edges
-9. `Colors` - 5 edges
-10. `Typography` - 5 edges
+6. `academyWhatsAppUrl()` - 5 edges
+7. `scripts` - 5 edges
+8. `Colors` - 5 edges
+9. `Typography` - 5 edges
+10. `Responsive Behavior` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `AgencyPage()` --calls--> `useLang()`  [EXTRACTED]
@@ -62,7 +63,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (19 total, 7 thin omitted)
+## Communities (20 total, 7 thin omitted)
 
 ### Community 0 - "app/page.tsx"
 Cohesion: 0.16
@@ -85,16 +86,20 @@ Cohesion: 0.13
 Nodes (15): autoprefixer, devDependencies, autoprefixer, postcss, tailwindcss, @types/node, @types/react, @types/react-dom (+7 more)
 
 ### Community 5 - "useLang"
-Cohesion: 0.11
-Nodes (23): metadata, AgencyPage(), AnnouncementBar(), Certification(), highlightIcons, Community(), featureIcons, FAQ() (+15 more)
+Cohesion: 0.12
+Nodes (21): metadata, AgencyPage(), AnnouncementBar(), Certification(), highlightIcons, Community(), featureIcons, FAQ() (+13 more)
+
+### Community 6 - "Components"
+Cohesion: 0.25
+Nodes (8): Badges & Chips, Buttons, Cards & Containers, Components, Footer, Inline, Inputs & Forms, Navigation
 
 ### Community 7 - "vercel.json"
 Cohesion: 0.40
 Nodes (4): buildCommand, framework, installCommand, outputDirectory
 
 ### Community 13 - "opencode.ai/DESIGN.md"
-Cohesion: 0.05
-Nodes (38): Badges & Chips, Border Radius Scale, Brand & Accent, Breakpoints, Buttons, Cards & Containers, Collapsing Strategy, Colors (+30 more)
+Cohesion: 0.06
+Nodes (30): Border Radius Scale, Brand & Accent, Breakpoints, Collapsing Strategy, Colors, Decorative Depth, Do, Do's and Don'ts (+22 more)
 
 ### Community 14 - "SKILL.md"
 Cohesion: 0.40
@@ -113,7 +118,7 @@ Cohesion: 0.67
 Nodes (3): escapeHtml(), POST(), runtime
 
 ## Knowledge Gaps
-- **135 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `metadata`, `runtime`, `metadata` (+130 more)
+- **134 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `metadata`, `runtime`, `metadata` (+129 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -121,11 +126,11 @@ Nodes (3): escapeHtml(), POST(), runtime
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `useLang()` connect `useLang` to `app/page.tsx`, `LanguageContext.tsx`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `devDependencies` to `dependencies`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `.opencode/plugins/graphify.js`, `metadata` to the rest of the system?**
-  _135 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _134 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**

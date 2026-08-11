@@ -1,11 +1,32 @@
-import AcademyPricing from "@/components/AcademyPricing";
-import FAQ from "@/components/FAQ";
+import type { Metadata } from "next";
+import AnnouncementBar from "@/components/academy/AnnouncementBar";
+import Hero from "@/components/academy/Hero";
+import Proof from "@/components/academy/Proof";
+import Tracks from "@/components/academy/Tracks";
+import Community from "@/components/academy/Community";
+import Certification from "@/components/academy/Certification";
+import Pricing from "@/components/academy/Pricing";
+import FAQ from "@/components/academy/FAQ";
+import FloatingWhatsApp from "@/components/academy/FloatingWhatsApp";
+
+export const metadata: Metadata = {
+  title: "Medinova Academy — تعلّم ألعاب الفيديو والبرمجة بالمغرب",
+  description:
+    "كورسات أونلاين فـ البرمجة، Unity 3D، والـ Vibe Coding للأطفال والكبار.",
+};
 
 export default function AcademyPage() {
   return (
     <div className="min-h-screen">
-      <AcademyPricing />
+      <AnnouncementBar />
+      <Hero />
+      <Proof />
+      <Tracks />
+      <Community />
+      <Certification />
+      <Pricing />
       <FAQ />
+      <FloatingWhatsApp />
     </div>
   );
 }

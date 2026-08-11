@@ -10,9 +10,9 @@
     "semantic_hash": "3ea725724bc8ebe483c9f13d6aa1124f"
   },
   "app/academy/page.tsx": {
-    "mtime": 1786295142.435433,
-    "ast_hash": "1469f34b05adc6715ce7fb11fbd15b77",
-    "semantic_hash": ""
+    "mtime": 1786025199.0285432,
+    "ast_hash": "7b6e12e38b93fec2ac0aa2349ac01bb9",
+    "semantic_hash": "7b6e12e38b93fec2ac0aa2349ac01bb9"
   },
   "app/agency/page.tsx": {
     "mtime": 1786021490.3762007,
@@ -29,14 +29,24 @@
     "ast_hash": "b58cae3003f10833b1bb8692823b4a85",
     "semantic_hash": ""
   },
+  "components/AcademyPricing.tsx": {
+    "mtime": 1786025172.6767852,
+    "ast_hash": "58c54ecbf22466b7d868a2a919a3284d",
+    "semantic_hash": "58c54ecbf22466b7d868a2a919a3284d"
+  },
   "components/Contact.tsx": {
     "mtime": 1786046407.212517,
     "ast_hash": "595ca69e1c4671222a39a86b0c27b052",
     "semantic_hash": ""
   },
+  "components/FAQ.tsx": {
+    "mtime": 1786038362.8773246,
+    "ast_hash": "ea3323b2e0b9d5d155df22c50bd11ca8",
+    "semantic_hash": "ea3323b2e0b9d5d155df22c50bd11ca8"
+  },
   "components/Footer.tsx": {
-    "mtime": 1786104476.9422903,
-    "ast_hash": "0567c81b817a6624cfb52dbaf43be94b",
+    "mtime": 1786038362.8970878,
+    "ast_hash": "d06640dd8ab07ea11285a4026231b289",
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
@@ -45,8 +55,8 @@
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1786104470.8069694,
-    "ast_hash": "6f42520bd1c5a569ab6f8b7ccb3cc7bb",
+    "mtime": 1786044089.8283627,
+    "ast_hash": "2974d99b11eff929da9211cca67f7665",
     "semantic_hash": ""
   },
   "components/Portfolio.tsx": {
@@ -60,12 +70,12 @@
     "semantic_hash": "492d40bb46ff69e7ec5020b07f252b96"
   },
   "lib/i18n.ts": {
-    "mtime": 1786296199.5679858,
-    "ast_hash": "7bf47e6ebfd9b78417c86f402e3f6bdf",
+    "mtime": 1786046478.1989558,
+    "ast_hash": "5dd443b3af471f6d13cced6bfe66a18f",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1786291078.296992,
+    "mtime": 1786046547.2358289,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -75,8 +85,8 @@
     "semantic_hash": "f53bf377566882e87c2a1687e6c30d77"
   },
   "package.json": {
-    "mtime": 1786290734.0317643,
-    "ast_hash": "c1e7f58c454ef2acbd87b88cd686ff36",
+    "mtime": 1786046068.0834792,
+    "ast_hash": "060e1feab60e42c0aa831454c4b5dd90",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -135,8 +145,8 @@
     "semantic_hash": ""
   },
   "components/Founder.tsx": {
-    "mtime": 1786104492.6477323,
-    "ast_hash": "b8b37edf2ff7b8b5ef5a31f8e091d125",
+    "mtime": 1786043970.1261346,
+    "ast_hash": "530d4153f20ed853b39ca39e0731dc89",
     "semantic_hash": ""
   },
   "public/images/games/blitz-combat/2064x2752-screenshot (3).png": {
@@ -210,113 +220,8 @@
     "semantic_hash": ""
   },
   "app/api/contact/route.ts": {
-    "mtime": 1786046927.3268738,
-    "ast_hash": "ecfff0df586a81de43e01f2cf546df7d",
-    "semantic_hash": ""
-  },
-  "public/images/Founder.jpg": {
-    "mtime": 1786104010.5454285,
-    "ast_hash": "9a07fc1865f767c5534977805964d092",
-    "semantic_hash": ""
-  },
-  "public/images/logo.svg": {
-    "mtime": 1786104989.0247471,
-    "ast_hash": "43b44eee273487d418f3d476a4f0e7d1",
-    "semantic_hash": ""
-  },
-  "components/academy/AnnouncementBar.tsx": {
-    "mtime": 1786292394.1171591,
-    "ast_hash": "40528280cf419e9a8f823da76e78badb",
-    "semantic_hash": ""
-  },
-  "components/academy/Certification.tsx": {
-    "mtime": 1786292522.9529498,
-    "ast_hash": "b621b48a6c3320fa23252d13faac0f5c",
-    "semantic_hash": ""
-  },
-  "components/academy/Community.tsx": {
-    "mtime": 1786292437.1870933,
-    "ast_hash": "d1f95c43d262c1192723ba21fc3f9dc0",
-    "semantic_hash": ""
-  },
-  "components/academy/FAQ.tsx": {
-    "mtime": 1786292566.8448207,
-    "ast_hash": "7b0963c7a4f7b9f96b3f6f4a7769753f",
-    "semantic_hash": ""
-  },
-  "components/academy/FloatingWhatsApp.tsx": {
-    "mtime": 1786292570.31179,
-    "ast_hash": "c044e9d211bcf0b3d16a8abf90d95902",
-    "semantic_hash": ""
-  },
-  "components/academy/Hero.tsx": {
-    "mtime": 1786292398.3253825,
-    "ast_hash": "e8dd6d51fb5177711ef62e3b0f683821",
-    "semantic_hash": ""
-  },
-  "components/academy/Pricing.tsx": {
-    "mtime": 1786296218.6347866,
-    "ast_hash": "e3c9f659401eebbfba166de744bddb8f",
-    "semantic_hash": ""
-  },
-  "components/academy/Proof.tsx": {
-    "mtime": 1786292414.2105935,
-    "ast_hash": "fb022d77526a81433aa52ed013a2d845",
-    "semantic_hash": ""
-  },
-  "components/academy/Tracks.tsx": {
-    "mtime": 1786295099.5400083,
-    "ast_hash": "ca95411fde1f17e4ee4820febfe28324",
-    "semantic_hash": ""
-  },
-  "lib/academy.ts": {
-    "mtime": 1786292100.115888,
-    "ast_hash": "141ab5bb17bf43f3e5483ed93ac4f6aa",
-    "semantic_hash": ""
-  },
-  "public/images/academy/founder.jpg": {
-    "mtime": 1786104010.5454285,
-    "ast_hash": "9a07fc1865f767c5534977805964d092",
-    "semantic_hash": ""
-  },
-  "public/images/academy/mge-booth.jpg": {
-    "mtime": 1786284733.6767566,
-    "ast_hash": "fd5e9e5d8d056e67f78ecb29b4f03446",
-    "semantic_hash": ""
-  },
-  "public/images/games/blitz-combat/screenshot1.webp": {
-    "mtime": 1786290745.382963,
-    "ast_hash": "c5f2c2a327de36b8c30e1cb2d3f11d87",
-    "semantic_hash": ""
-  },
-  "public/images/games/chameleon-outbreak/screenshot1.webp": {
-    "mtime": 1786290744.747477,
-    "ast_hash": "3624e7f169ca2fd2b6bd51f5f9ef2151",
-    "semantic_hash": ""
-  },
-  "public/images/games/pharaohs-guardian/screenshot1.webp": {
-    "mtime": 1786290744.3954093,
-    "ast_hash": "cfb95cbbe82f77df2ccb338379709228",
-    "semantic_hash": ""
-  },
-  "public/images/games/sniper-elimination/screenshot1.webp": {
-    "mtime": 1786290744.939769,
-    "ast_hash": "8964b2beffa310264b96301f03fccb7c",
-    "semantic_hash": ""
-  },
-  "public/images/games/zombies-warzone/screenshot1.webp": {
-    "mtime": 1786290167.7710576,
-    "ast_hash": "498e7dd2f67cd7a88a8739078956ddf4",
-    "semantic_hash": ""
-  },
-  "public/images/games/zombies-warzone/screenshot2.webp": {
-    "mtime": 1786290180.9289558,
-    "ast_hash": "403170483c7626ebdba6de5cdc12258f",
-    "semantic_hash": ""
-  },
-  "public/images/games/zombies-warzone/screenshot3.webp": {
-    "mtime": 1786290192.6745443,
-    "ast_hash": "7d079b28eec3700be522b898386ce351",
+    "mtime": 1786046356.2823813,
+    "ast_hash": "3a3d370938231c1273a68d13b1ea62de",
     "semantic_hash": ""
   }
 }

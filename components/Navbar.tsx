@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
 import { LANGS, LANG_LABELS, Lang } from "@/lib/i18n";
 
@@ -33,14 +34,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Brand */}
-          <a href="#" className="flex items-center gap-2.5 group flex-shrink-0" aria-label="Medinova Studio">
-            <div className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
-              <span className="text-white font-bold text-sm font-display">M</span>
-            </div>
-            <span className="font-display font-semibold text-ink text-sm sm:text-base tracking-tight whitespace-nowrap">
-              MEDINOVA <span className="text-primary">STUDIO</span>
-            </span>
-          </a>
+          <Link href="/" className="flex items-center flex-shrink-0" aria-label="Medinova Studio">
+            <img
+              src="/images/logo.svg"
+              alt="Medinova Studio logo"
+              className="h-9 w-auto object-contain"
+            />
+          </Link>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-6 lg:gap-7">

@@ -10,6 +10,92 @@ export const LANG_LABELS: Record<Lang, string> = {
 
 export const RTL_LANGS: Lang[] = ["ar"];
 
+export type AcademyTranslation = {
+  announcement: string;
+  announcementCta: string;
+  hero: {
+    badge: string;
+    headline: string;
+    subheadline: string;
+    pills: string[];
+    pillAges: string[];
+    trust: { title: string; desc: string }[];
+  };
+  proof: {
+    badge: string;
+    title: string;
+    founderCaption: string;
+    boothCaption: string;
+    robloxBadge: string;
+    robloxTitle: string;
+    robloxCta: string;
+    showcaseLabel: string;
+    games: string[];
+  };
+  tracks: {
+    badge: string;
+    title: string;
+    programLabel: string;
+    resultLabel: string;
+    levels: {
+      level: string;
+      title: string;
+      programTitle?: string;
+      levelName: string;
+      target: string;
+      focus: string[];
+      outcome: string;
+    }[];
+  };
+  community: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    features: { title: string; desc: string }[];
+  };
+  certification: {
+    badge: string;
+    title: string;
+    diplomasTitle: string;
+    diplomasSubtitle: string;
+    levels: string[];
+    diplomas: string[];
+    includedTitle: string;
+    highlights: { title: string; desc: string }[];
+    recognition: string;
+  };
+  pricing: {
+    badge: string;
+    title: string;
+    pacingOptions: string[];
+    periodOptions: string[];
+    tierDesc: string[];
+    monthlyLabel: string;
+    quarterlyLabel: string;
+    levelLabels: string[];
+    rates: { monthly: number; intensive: number; quarterly: number }[];
+    billedMonthly: string;
+    billedQuarterly: string;
+    featuredBadge: string;
+    features: string[];
+    cta: string;
+    guaranteeStrong: string;
+    guarantee: string;
+  };
+  faq: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    items: { q: string; a: string; category?: string }[];
+  };
+  whatsapp: {
+    message: string;
+    online: string;
+    aria: string;
+    registerMessage: string;
+  };
+};
+
 export type Translation = {
   nav: {
     solutions: string;
@@ -157,6 +243,7 @@ export type Translation = {
   footer: {
     rights: string;
   };
+  academy: AcademyTranslation;
 };
 
 export const translations: Record<Lang, Translation> = {
@@ -457,6 +544,229 @@ export const translations: Record<Lang, Translation> = {
       ],
       getStarted: "Get Started"
     },
+    academy: {
+      announcement:
+        "💻 100% Online • Learn from home (PC + Internet Connection) | Classes available in English or Arabic",
+      announcementCta: "Register / Learn More",
+      hero: {
+        badge:
+          "● Live Cohorts | Led by the Studio Founder | 100% Satisfaction or Money Back",
+        headline:
+          "Learn to Code, Create Video Games & Master AI — Whatever Your Age or Level",
+        subheadline:
+          "From visual blocks (Scratch) to C#, Unity 3D, Web development and Vibe Coding. 100% online programs for kids, teens, women and beginner adults, taught by a studio engineer.",
+        pills: ["For Kids", "For Teens & Beginner Adults"],
+        pillAges: ["7–12 years", "13+"],
+        trust: [
+          {
+            title: "100% Satisfaction or Money Back",
+            desc: "after the 1st session",
+          },
+          {
+            title: "Creator of a Roblox game",
+            desc: "with 1,000,000+ plays",
+          },
+          { title: "Small groups", desc: "Max 6–8 students" },
+        ],
+      },
+      proof: {
+        badge: "The Studio Behind the Academy",
+        title:
+          "Your classes aren't taught by a generic tutor, but by an Engineer & Studio Founder",
+        founderCaption: "Mounir Abbotti — Founder of Medinova Studio & Lead Dev.",
+        boothCaption:
+          "Booth C38 — Morocco Gaming Expo (Showcasing our games to the public).",
+        robloxBadge: "Roblox Social Proof",
+        robloxTitle:
+          "Creator of 'Zombies WarZone' on Roblox — Over 1,000,000 games played worldwide.",
+        robloxCta: "Play on Roblox",
+        showcaseLabel:
+          "Studio Mini Showcase — Games published on the App Store",
+        games: [
+          "Pharaoh's Guardian: Mummies",
+          "Chameleon Outbreak: Camo Hunt",
+          "Sniper Elimination Challenge",
+          "Blitz Combat Race",
+        ],
+      },
+      tracks: {
+        badge: "3 Inclusive Progressive Tracks",
+        title:
+          "A Clear Path from Absolute Beginner to Professional Mastery — No Age Limit",
+        programLabel: "Program",
+        resultLabel: "Outcome",
+        levels: [
+          {
+            level: "LEVEL 1",
+            title: "START",
+            programTitle: "Absolute Beginner & Coding Logic",
+            levelName: "Beginner",
+            target:
+              "Beginners, Kids (7–9), Adults/Women getting into code",
+            focus: [
+              "Visual Logic",
+              "Scratch",
+              "Graphic Design",
+              "Digital Literacy & AI Intro",
+            ],
+            outcome:
+              "Interactive 2D games, animated stories and algorithmic logic foundations without syntax constraints.",
+          },
+          {
+            level: "LEVEL 2",
+            title: "BUILD",
+            programTitle: "Scripting, Web & 3D",
+            levelName: "Intermediate",
+            target:
+              "Kids (10–12), Teens & Adults ready for textual code",
+            focus: [
+              "Roblox Studio (Lua 3D Scripting)",
+              "Web Basics (HTML & CSS)",
+              "Python Fundamentals",
+              "Video Editing & Devlogs",
+            ],
+            outcome:
+              "A 3D game published on Roblox, custom web pages and standalone Python scripts.",
+          },
+          {
+            level: "LEVEL 3",
+            title: "MASTER",
+            programTitle: "3D Game Engineering & AI",
+            levelName: "Advanced / Pro",
+            target: "Teens (13+), Students & Adults",
+            focus: [
+              "Unity C# Engine (Mobile & PC)",
+              "3D Modeling (Blender)",
+              "Advanced Web (JavaScript)",
+              "Vibe Coding Workflows & AI Tools",
+            ],
+            outcome:
+              "A complete 3D game on Unity, original 3D assets and mastery of AI-assisted coding tools.",
+          },
+        ],
+      },
+      community: {
+        badge: "● Moderated & Secure Environment",
+        title: "A Safe & Supervised Community",
+        subtitle:
+          "Learning is more effective and more fun within an accompanied community.",
+        features: [
+          {
+            title: "Private help space",
+            desc: "A dedicated Q&A where every learner asks freely.",
+          },
+          {
+            title: "Project feedback channels",
+            desc: "Regular reviews of your Roblox, Unity, Blender & Web creations.",
+          },
+          {
+            title: "24/7 supervision, no toxicity",
+            desc: "A moderated, kind and judgment-free environment.",
+          },
+          {
+            title: "Monthly mini-challenges",
+            desc: "Fun challenges to progress while having fun.",
+          },
+        ],
+      },
+      certification: {
+        badge: "Certification",
+        title:
+          "An Official & Verifiable Diploma at Every Level",
+        diplomasTitle: "Diplomas by Level",
+        diplomasSubtitle:
+          "Official recognition at every step of the journey.",
+        levels: ["Level 1", "Level 2", "Level 3"],
+        diplomas: [
+          "Certificate in Algorithmic Logic & Digital Creation",
+          "Diploma in 3D Scripting & Web Development",
+          "Diploma in 3D Game Engineering, Web & AI Technologies",
+        ],
+        includedTitle: "What's included",
+        highlights: [
+          {
+            title: "Printable validated modules",
+            desc: "Every validated module is certified and printable.",
+          },
+          {
+            title: "Verification QR Code",
+            desc: "Verify each diploma towards your online portfolio.",
+          },
+          {
+            title: "Monthly WhatsApp reports",
+            desc: "Detailed progress sent to parents & learners.",
+          },
+        ],
+        recognition: "Recognized by our industry partners",
+      },
+      pricing: {
+        badge: "Pricing & Plans",
+        title: "Flexible Plans, a Pace That Suits You",
+        pacingOptions: ["1 Session / Week", "2 Sessions / Week (Intensive)"],
+        periodOptions: ["Monthly", "Quarterly (-15%)"],
+        tierDesc: [
+          "Beginner · Kids, Teens & Adults",
+          "Intermediate · Textual code & 3D",
+          "Advanced / Pro · Unity, Web & AI",
+        ],
+        monthlyLabel: "MAD / month",
+        quarterlyLabel: "MAD / quarter",
+        levelLabels: ["Level 1", "Level 2", "Level 3"],
+        rates: [
+          { monthly: 590, intensive: 990, quarterly: 1500 },
+          { monthly: 790, intensive: 1290, quarterly: 2000 },
+          { monthly: 990, intensive: 1690, quarterly: 2500 },
+        ],
+        billedMonthly: "Billed monthly · {sessions} session(s) / week",
+        billedQuarterly: "Billed {total} MAD / quarter (-15%)",
+        featuredBadge: "Most Complete",
+        features: [
+          "Small groups (Max 6–8 students)",
+          "100% live online classes",
+          "Access to the secure community",
+          "Personalized tracking & devlogs",
+        ],
+        cta: "Register",
+        guaranteeStrong: "100% Satisfaction or Money Back",
+        guarantee: " after the 1st session — no questions asked.",
+      },
+      faq: {
+        badge: "Frequently Asked Questions",
+        title: "Have questions?",
+        subtitle:
+          "Answers to the most asked questions from parents and learners.",
+        items: [
+          {
+            q: "What do my child or I need to attend the classes?",
+            a: "A simple PC or Mac and an Internet connection. No expensive hardware required — we guide every learner on the free software to install depending on the track.",
+            category: "equipment",
+          },
+          {
+            q: "In which language are the classes taught?",
+            a: "Classes are available in English or Arabic, with bilingual support and French explanations depending on the learner's needs.",
+            category: "language",
+          },
+          {
+            q: "Can beginner adults enroll in Level 1?",
+            a: "Yes, absolutely. Level 1 is designed to teach algorithmic logic to all ages, without intimidation and without technical prerequisites.",
+            category: "adults",
+          },
+          {
+            q: "How does the satisfaction-or-money-back guarantee work?",
+            a: "If the 1st session isn't right for you, we refund 100% without justification. It's our commitment to the quality of our classes.",
+            category: "pricing",
+          },
+        ],
+      },
+      whatsapp: {
+        message:
+          "Hello Medinova Academy 👋 I'd like to know more about the classes.",
+        online: "Online — Fast reply",
+        aria: "Chat on WhatsApp",
+        registerMessage:
+          "Hello Medinova Academy 👋 I'd like to register for {level} ({name}) — {pacing}, {period}.",
+      },
+    },
   },
   fr: {
     nav: {
@@ -755,15 +1065,241 @@ export const translations: Record<Lang, Translation> = {
       ],
       getStarted: "Commencer"
     },
+    academy: {
+      announcement:
+        "💻 100% En Ligne • Apprenez depuis chez vous (PC + Connexion Internet) | Cours disponibles en Anglais ou Arabe",
+      announcementCta: "S'inscrire / En Savoir Plus",
+      hero: {
+        badge:
+          "● Live Cohorts | Dirigé par le Fondateur du Studio | 100% Satisfait ou Remboursé",
+        headline:
+          "Apprenez à Coder, Créer des Jeux Vidéo & Maîtriser l'IA — Quel que soit votre Âge ou votre Niveau",
+        subheadline:
+          "Du bloc visuel (Scratch) jusqu'au développement C#, Unity 3D, Web et Vibe Coding. Des programmes 100% en ligne pour enfants, ados, femmes et adultes débutants animés par un ingénieur de studio.",
+        pills: ["Pour Enfants", "Pour Ados & Adultes Débutants"],
+        pillAges: ["7–12 ans", "13+"],
+        trust: [
+          {
+            title: "100% Satisfait ou Remboursé",
+            desc: "après la 1ère séance",
+          },
+          {
+            title: "Créateur d'un jeu Roblox",
+            desc: "à +1 000 000 de parties",
+          },
+          { title: "Groupes réduits", desc: "Max 6–8 élèves" },
+        ],
+      },
+      proof: {
+        badge: "Le Studio Derrière l'Académie",
+        title:
+          "Vos cours ne sont pas animés par un tuteur générique, mais par un Ingénieur & Fondateur de Studio",
+        founderCaption:
+          "Mounir Abbotti — Fondateur de Medinova Studio & Lead Dev.",
+        boothCaption:
+          "Stand C38 — Morocco Gaming Expo (Présentation de nos jeux au grand public).",
+        robloxBadge: "Preuve Sociale Roblox",
+        robloxTitle:
+          "Créateur de \"Zombies WarZone\" sur Roblox — Plus de 1,000,000 de parties jouées dans le monde.",
+        robloxCta: "Jouer sur Roblox",
+        showcaseLabel:
+          "Mini Vitrine du Studio — Des jeux publiés sur l'App Store",
+        games: [
+          "Pharaoh's Guardian: Mummies",
+          "Chameleon Outbreak: Camo Hunt",
+          "Sniper Elimination Challenge",
+          "Blitz Combat Race",
+        ],
+      },
+      tracks: {
+        badge: "3 Parcours Progressifs & Inclusifs",
+        title:
+          "Un Chemin Clair du Débutant Absolu à la Maîtrise Professionnelle — Sans Limite d'Âge",
+        programLabel: "Au Programme",
+        resultLabel: "Résultat",
+        levels: [
+          {
+            level: "LEVEL 1",
+            title: "START",
+            programTitle: "Débutant absolu & logique de programmation",
+            levelName: "Débutant",
+            target:
+              "Débutants, Enfants (7–9 ans), Adultes/Femmes s'initiant au code",
+            focus: [
+              "Logique Visuelle",
+              "Scratch",
+              "Design Graphique",
+              "Culture Numérique & Initiation IA",
+            ],
+            outcome:
+              "Jeux 2D interactifs, histoires animées et bases de la logique algorithmique sans contrainte de syntaxe.",
+          },
+          {
+            level: "LEVEL 2",
+            title: "BUILD",
+            programTitle: "Programmation, Web & 3D",
+            levelName: "Intermédiaire",
+            target:
+              "Enfants (10–12 ans), Ados & Adultes prêt pour le code textuel",
+            focus: [
+              "Roblox Studio (Scripting Lua 3D)",
+              "Bases du Web (HTML & CSS)",
+              "Python Fundamentals",
+              "Montage Vidéo & Devlogs",
+            ],
+            outcome:
+              "Un jeu 3D publié sur Roblox, des pages Web personnalisées et des scripts Python autonomes.",
+          },
+          {
+            level: "LEVEL 3",
+            title: "MASTER",
+            programTitle: "Ingénierie de jeux 3D & IA",
+            levelName: "Avancé / Pro",
+            target: "Ados (13+), Étudiants & Adultes",
+            focus: [
+              "Moteur Unity C# (Mobile & PC)",
+              "Modélisation 3D (Blender)",
+              "Web Avancé (JavaScript)",
+              "Workflows Vibe Coding & Outils IA",
+            ],
+            outcome:
+              "Un jeu 3D complet sur Unity, des assets 3D originaux et la maîtrise des outils de codage assisté par IA.",
+          },
+        ],
+      },
+      community: {
+        badge: "● Environnement Modéré & Sécurisé",
+        title: "Une Communauté Sûre & Supervisée",
+        subtitle:
+          "Apprendre est plus efficace et plus joyeux au sein d'une communauté accompagnée.",
+        features: [
+          {
+            title: "Espace privé d'entraide",
+            desc: "Un Q&A dédié où chaque apprenant pose ses questions librement.",
+          },
+          {
+            title: "Canaux de feedback projets",
+            desc: "Revues régulières de vos créations Roblox, Unity, Blender & Web.",
+          },
+          {
+            title: "Supervision 24/7 sans toxicité",
+            desc: "Un environnement modéré, bienveillant et sans jugement.",
+          },
+          {
+            title: "Mini-défis mensuels",
+            desc: "Des challenges ludiques pour progresser tout en s'amusant.",
+          },
+        ],
+      },
+      certification: {
+        badge: "Certification",
+        title: "Un Diplôme Officiel & Vérifiable à Chaque Niveau",
+        diplomasTitle: "Diplômes par Niveau",
+        diplomasSubtitle:
+          "Reconnaissance officielle à chaque étape du parcours.",
+        levels: ["Niveau 1", "Niveau 2", "Niveau 3"],
+        diplomas: [
+          "Certificat en Logique Algorithmique & Création Numérique",
+          "Diplôme en Scripting 3D & Développement Web",
+          "Diplôme d'Ingénierie de Jeux 3D, Web & Technologies IA",
+        ],
+        includedTitle: "Ce qui est inclus",
+        highlights: [
+          {
+            title: "Modules validés imprimables",
+            desc: "Chaque module validé est certifié et imprimable.",
+          },
+          {
+            title: "QR Code de vérification",
+            desc: "Vérifiez chaque diplôme vers votre portfolio en ligne.",
+          },
+          {
+            title: "Rapports mensuels WhatsApp",
+            desc: "Progression détaillée envoyée aux parents & apprenants.",
+          },
+        ],
+        recognition: "Reconnaissance par nos partenaires de l'industrie",
+      },
+      pricing: {
+        badge: "Tarifs & Formules",
+        title: "Des Formules Flexibles, un Rythme Qui Vous Convient",
+        pacingOptions: [
+          "1 Séance / Semaine",
+          "2 Séances / Semaine (Intensif)",
+        ],
+        periodOptions: ["Mensuel", "Trimestriel (-15%)"],
+        tierDesc: [
+          "Débutant · Enfants, Ados & Adultes",
+          "Intermédiaire · Code textuel & 3D",
+          "Avancé / Pro · Unity, Web & IA",
+        ],
+        monthlyLabel: "MAD / mois",
+        quarterlyLabel: "MAD / trimestre",
+        levelLabels: ["Niveau 1", "Niveau 2", "Niveau 3"],
+        rates: [
+          { monthly: 590, intensive: 990, quarterly: 1500 },
+          { monthly: 790, intensive: 1290, quarterly: 2000 },
+          { monthly: 990, intensive: 1690, quarterly: 2500 },
+        ],
+        billedMonthly: "Facturé mensuellement · {sessions} séance(s) / semaine",
+        billedQuarterly: "Facturé {total} MAD / trimestre (-15%)",
+        featuredBadge: "Le Plus Complet",
+        features: [
+          "Groupes réduits (Max 6–8 élèves)",
+          "Cours 100% en ligne, en direct",
+          "Accès à la communauté sécurisée",
+          "Suivi personnalisé & devlogs",
+        ],
+        cta: "S'inscrire",
+        guaranteeStrong: "100% Satisfait ou Remboursé",
+        guarantee: " après la 1ère séance — sans justification.",
+      },
+      faq: {
+        badge: "Questions Fréquentes",
+        title: "Vous avez des questions ?",
+        subtitle:
+          "Les réponses aux questions les plus posées par les parents et les apprenants.",
+        items: [
+          {
+            q: "De quoi mon enfant ou moi-même avons-nous besoin pour suivre les cours ?",
+            a: "Un simple PC ou Mac avec une connexion Internet suffit. Aucun matériel coûteux n'est requis — nous guidons chaque apprenant sur les logiciels gratuits à installer selon le parcours.",
+            category: "equipement",
+          },
+          {
+            q: "Dans quelle langue les cours sont-ils dispensés ?",
+            a: "Les cours sont disponibles en Anglais ou en Arabe, avec un support bilingue et des explications en français selon le besoin de l'apprenant.",
+            category: "langue",
+          },
+          {
+            q: "Les adultes débutants peuvent-ils s'inscrire au Niveau 1 ?",
+            a: "Oui, absolument. Le Niveau 1 est conçu pour enseigner la logique algorithmique à tout âge, sans aucune intimidation et sans prérequis technique.",
+            category: "adultes",
+          },
+          {
+            q: "Comment fonctionne la garantie satisfait ou remboursé ?",
+            a: "Si la 1ère séance ne vous convient pas, nous procédons à un remboursement à 100% sans justification. C'est notre engagement envers la qualité de nos cours.",
+            category: "tarifs",
+          },
+        ],
+      },
+      whatsapp: {
+        message:
+          "Bonjour Medinova Academy 👋 Je souhaite en savoir plus sur les cours.",
+        online: "En ligne — Réponse rapide",
+        aria: "Discuter sur WhatsApp",
+        registerMessage:
+          "Bonjour Medinova Academy 👋 Je souhaite m'inscrire au {level} ({name}) — {pacing}, {period}.",
+      },
+    },
   },
   ar: {
     nav: {
-      solutions: "حلولنا",
+      solutions: "الخدمات ديالنا",
       about: "عن المؤسس",
-      portfolio: "الألعاب والمحفظة",
+      portfolio: "الألعاب والبورطفيليو",
       services: "خدمات تطوير الألعاب",
       contact: "تواصل",
-      hireStudio: "استأجر الاستوديو",
+      hireStudio: "تواصل مع الاستوديو",
       subGameDev: "تطوير الألعاب والتقنيات المكانية",
       subGameDevDesc: "ألعاب مخصصة، بوابات WebGL وهندسة AR/VR",
       subAgency: "وكالة نمو B2B",
@@ -1049,6 +1585,231 @@ export const translations: Record<Lang, Translation> = {
         }
       ],
       getStarted: "ابدأ الآن"
+    },
+    academy: {
+      announcement:
+        "💻 100% أونلاين • قرى من الدار (حاسوب + أنترنيت) | القراية بالإنجليزية أولا بالعربية حسب الإختيار",
+      announcementCta: "تسجل دابا / اكتشف المزيد",
+      hero: {
+        badge:
+          "● كورس حي أونلاين | كايأطروا مؤسس الاستوديو | 100% مضمون أولا نرجعوا ليك فلوسك",
+        headline:
+          "تعلم الكود، صاوب ألعاب الفيديو وإتقن الذكاء الاصطناعي — كيفما كان سنك أولا مستواك",
+        subheadline:
+          "من البداية بالتكوييد البصري (Scratch) حتى لـ C#، Unity 3D، الويب و Vibe Coding. برامج 100% أونلاين للدراري الصغار، الشباب، النساء، والمبتدئين الكبار، تحت إشراف مهندس ومطور ألعاب.",
+        pills: ["للأطفال", "للشباب والكبار المبتدئين"],
+        pillAges: ["من 7 حتى لـ 12 سنة", "+13 سنة"],
+        trust: [
+          {
+            title: "100% مضمون أولا نرجعوا ليك فلوسك",
+            desc: "بعد أول حصة",
+          },
+          {
+            title: "مطور لعبة على Roblox",
+            desc: "فايتة 1,000,000 لعب",
+          },
+          {
+            title: "كليكات صغار",
+            desc: "أقصى حد 6 حتى لـ 8 ديال التلامذ",
+          },
+        ],
+      },
+      proof: {
+        badge: "الاستوديو اللي ورا الأكاديمية",
+        title:
+          "القراية ديالك ماشي مع أستاذ عادي، ولكن مع مهندس ومؤسس استوديو ألعاب",
+        founderCaption:
+          "منير عبوتي — مؤسس Medinova Studio والمطور الرئيسي.",
+        boothCaption:
+          "ستاند C38 — المعرض المغربي للألعاب Morocco Gaming Expo (عرض الألعاب ديالنا للجمهور).",
+        robloxBadge: "دليل على Roblox",
+        robloxTitle:
+          "صانع لعبة 'Zombies WarZone' على Roblox — فايتة 1,000,000 ملعوبة عالمياً.",
+        robloxCta: "جرب اللعبة على Roblox",
+        showcaseLabel: "نماذج من الألعاب ديال الاستوديو",
+        games: [
+          "Pharaoh's Guardian: Mummies",
+          "Chameleon Outbreak: Camo Hunt",
+          "Sniper Elimination Challenge",
+          "Blitz Combat Race",
+        ],
+      },
+      tracks: {
+        badge: "3 ديال المسارات متدرجة",
+        title:
+          "من المبتدئ كلياً حتى للـ الاحتراف (بدون حدود سنية)",
+        programLabel: "البرنامج",
+        resultLabel: "النتيجة",
+        levels: [
+          {
+            level: "LEVEL 1",
+            title: "START",
+            programTitle: "المبتدئ المطلق واللوجيك البرمجي",
+            levelName: "مبتدئ",
+            target:
+              "الدراري الصغار (7–9 سنوات)، والكبار والنساء اللي باغين يبداو الكود من الزيرو",
+            focus: [
+              "المنطق البصري",
+              "Scratch",
+              "التصميم الجرافيكي",
+              "الثقافة الرقمية ومدخل إلى الذكاء الاصطناعي",
+            ],
+            outcome:
+              "صناعة ألعاب 2D تفاعلية، قصص متحركة، وفهم المنطق البرمجي بلا تعقيدات السنتاكس.",
+          },
+          {
+            level: "LEVEL 2",
+            title: "BUILD",
+            programTitle: "البرمجة النصية وتطوير الويب و 3D",
+            levelName: "متوسط",
+            target:
+              "الأطفال (10–12 سنة)، الشباب والكبار اللي واجدين للكود المكتوب",
+            focus: [
+              "استوديو Roblox (برمجة Lua ثلاثية الأبعاد)",
+              "أساسيات الويب (HTML & CSS)",
+              "أساسيات Python",
+              "تحرير الفيديو وسجلات التطوير",
+            ],
+            outcome:
+              "لعبة 3D محطوطة على Roblox، مواقع ويب ديالك، وسكريبتات بـ Python.",
+          },
+          {
+            level: "LEVEL 3",
+            title: "MASTER",
+            programTitle: "هندسة الألعاب 3D والذكاء الاصطناعي",
+            levelName: "متقدم / محترف",
+            target: "الشباب (+13 سنة)، الطلبة والكبار",
+            focus: [
+              "محرك Unity C# (الجوال والكمبيوتر)",
+              "النمذجة ثلاثية الأبعاد (Blender)",
+              "الويب المتقدم (JavaScript)",
+              "سير عمل Vibe Coding وأدوات الذكاء الاصطناعي",
+            ],
+            outcome:
+              "لعبة 3D متكاملة بـ Unity، مجسمات 3D بـ Blender، وإتقان أدوات الـ Vibe Coding والذكاء الاصطناعي.",
+          },
+        ],
+      },
+      community: {
+        badge: "● مجتمع آمن ومأطر 100%",
+        title: "التعلُم كيكون أسرع وأمتع فاش كتقرى وسط مجتمع كايشجعك.",
+        subtitle:
+          "فضاء خاص ومحمّي للتواصل والتطوير المستمر خارج أوقات المباشر.",
+        features: [
+          {
+            title: "مساحة خاصة للمساعدة",
+            desc: "أسئلة وأجوبة باش تجيب الحل لأي مشكل ف الكود من عند التلامذ والـ Instructors.",
+          },
+          {
+            title: "قنوات لمشاركة المشاريع",
+            desc: "مراجعات دورية وأخد أراء وملاحظات على خدمة ديالك فـ Roblox، Unity، و Blender.",
+          },
+          {
+            title: "تأطير ومراقبة دائمة 24/7",
+            desc: "بيئة نقية، محترمة، وبلا سمية أولا تنمر أولا روابط مشبوهة.",
+          },
+          {
+            title: "تحديات شهرية",
+            desc: "مسابقات خفيفة وممتعة باش تطور مستواك وتنافس فـ جو حماسي.",
+          },
+        ],
+      },
+      certification: {
+        badge: "● اعتماد Medinova Studio",
+        title: "شهادة رسمية وقابلة للتحقق فكل مستوى",
+        diplomasTitle: "الدبلومات حسب المستوى",
+        diplomasSubtitle:
+          "اعتراف رسمي بالمهارات والمشاريع اللي كايصاوبها المتعلم.",
+        levels: ["المستوى 1", "المستوى 2", "المستوى 3"],
+        diplomas: [
+          "شهادة فـ المنطق البرمجي والإبداع الرقمي",
+          "دبلوم فـ برمجة الألعاب 3D وتطوير الويب",
+          "دبلوم فـ هندسة الألعاب 3D، الويب وتقنيات الذكاء الاصطناعي",
+        ],
+        includedTitle: "شنو اللي كيتضمن؟",
+        highlights: [
+          {
+            title: "شهادة مطبوعة",
+            desc: "شهادة رسمية مخرجة ومطبوعة بأسماء الدروس والمهارات المتفوق فيها.",
+          },
+          {
+            title: "كود QR للتأكد",
+            desc: "تحقق مباشر عبر البورطفيليو الإلكتروني للمتعلم.",
+          },
+          {
+            title: "تقارير فالواتساب",
+            desc: "متابعة شهرية كتوصل مباشرة فالواتساب للوالدين أولا المتعلم.",
+          },
+        ],
+        recognition: "معترف بها من الشركاء ديالنا فالصناعة",
+      },
+      pricing: {
+        badge: "الأسعار والباقات",
+        title: "باقات مرنة، إيقاع كيناسبك",
+        pacingOptions: ["حصة واحدة فالسيمانة", "جوج حصص فالسيمانة (مكثف)"],
+        periodOptions: ["شهري", "كل 3 أشهر (خصم 15%)"],
+        tierDesc: [
+          "مبتدئ · دراري وشباب وكبار",
+          "متوسط · كود مكتوب و3D",
+          "متقدم / محترف · Unity والويب والذكاء الاصطناعي",
+        ],
+        monthlyLabel: "درهم / للشهر",
+        quarterlyLabel: "درهم / كل 3 أشهر",
+        levelLabels: ["المستوى 1", "المستوى 2", "المستوى 3"],
+        rates: [
+          { monthly: 590, intensive: 990, quarterly: 1500 },
+          { monthly: 790, intensive: 1290, quarterly: 2000 },
+          { monthly: 990, intensive: 1690, quarterly: 2500 },
+        ],
+        billedMonthly: "كتخلص شهرياً · {sessions} فالسيمانة",
+        billedQuarterly: "كتخلص {total} درهم / كل 3 أشهر (خصم 15%)",
+        featuredBadge: "الأكثر اكتمالاً",
+        features: [
+          "كليكات صغار (أقصى حد 6 حتى 8 ديال التلامذ)",
+          "حصص مباشرة 100% أونلاين",
+          "ولوج للمجتمع الآمن",
+          "متابعة فردية وسجلات ديال التقدم",
+        ],
+        cta: "تسجل دابا",
+        guaranteeStrong: "100% مضمون أولا نرجعوا ليك فلوسك",
+        guarantee: " بعد أول حصة — بلا ما تسولك حتى سؤال.",
+      },
+      faq: {
+        badge: "الأسئلة الشائعة",
+        title: "عندك شي تساؤل؟",
+        subtitle:
+          "أجوبة على أكثر الأسئلة اللي كايطرحوها الوالدين والمتعلمين.",
+        items: [
+          {
+            q: "شنو حتاج أنا أولا ولدي باش نبداو القراية؟",
+            a: "حاسوب عادي (PC أولا Mac) وأنترنيت فقط. ماشي بالضرورة يكون بيسي غالي — حنا كنعاونوك تثبت البرامج المجانية اللي غنحتاجو.",
+            category: "equipment",
+          },
+          {
+            q: "بأينا لغة كايتقراو الدروس؟",
+            a: "الدروس كاينين بالإنجليزية أولا بالدارجة/العربية حسب الإختيار، مع الشرح والمساعدة بالفرنسية باش كلشي يفهم مزيان.",
+            category: "language",
+          },
+          {
+            q: "واش الكبار المبتدئين يقدروا يتسجلوا فـ المستوى 1؟",
+            a: "أكيد! المستوى 1 مديور باش يعلم منطق البرمجة للجميع وبطريقة ساهلة وممتعة وبلا تعقيدات.",
+            category: "adults",
+          },
+          {
+            q: "كيفاش كاتجري ضمانة إرجاع الفلوس؟",
+            a: "إلا حضرتي للحصة الأولى وماعجبكش الحال، كترجع ليك فلوسك 100% مباشرة وبلا تعقيد.",
+            category: "pricing",
+          },
+        ],
+      },
+      whatsapp: {
+        message:
+          "سلام أكاديمية مدينوفا 👋 بغيت نعرف المزيد على القراية.",
+        online: "متصل — جواب سريع فـ الواتساب",
+        aria: "تواصل معنا عبر واتساب",
+        registerMessage:
+          "سلام أكاديمية مدينوفا 👋 بغيت نتسجل فـ {level} ({name}) — {pacing}، {period}.",
+      },
     },
   },
 };
