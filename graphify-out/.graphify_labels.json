@@ -1,10 +1,11 @@
 {
-  "0": "app/page.tsx",
+  "0": "useLang",
   "1": "compilerOptions",
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "useLang",
+  "5": "academy/page.tsx",
+  "6": "package.json",
   "7": "vercel.json",
   "8": "graphify.js",
   "9": "next.config.mjs",
@@ -17,5 +18,9 @@
   "16": "AGENTS.md",
   "17": "README.md",
   "18": "LanguageContext.tsx",
-  "20": "route.ts"
+  "19": "Pricing.tsx",
+  "20": "route.ts",
+  "21": "eslint.config.mjs",
+  "22": "next-sitemap.config.js",
+  "23": "Components"
 }

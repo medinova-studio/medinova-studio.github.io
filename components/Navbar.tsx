@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
 import { LANGS, LANG_LABELS, Lang } from "@/lib/i18n";
+import Button from "@/components/ui/Button";
 
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
@@ -139,12 +140,9 @@ export default function Navbar() {
               )}
             </div>
 
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-white text-sm font-medium hover:bg-primary-hover transition-all duration-200 whitespace-nowrap"
-            >
+            <Button href="#contact" size="sm" className="whitespace-nowrap">
               {t.nav.hireStudio}
-            </a>
+            </Button>
           </div>
 
           {/* Mobile toggle */}
@@ -214,13 +212,13 @@ export default function Navbar() {
             >
               {t.nav.about}
             </a>
-            <a
+            <Button
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 mt-2 rounded-md bg-primary text-white text-sm font-medium hover:bg-primary-hover transition-all w-fit"
+              className="mt-2 w-fit"
             >
               {t.nav.hireStudio}
-            </a>
+            </Button>
           </div>
         </div>
       )}

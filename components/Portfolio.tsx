@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useLang } from "@/lib/LanguageContext";
+import Button from "@/components/ui/Button";
+import Reveal from "@/components/ui/Reveal";
 
 type Game = {
   title: string;
@@ -191,41 +193,50 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="relative py-20 sm:py-28 lg:py-32">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
-            {t.portfolio.badge}
-          </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink mb-4 tracking-tight text-balance">
-            {t.portfolio.title}
-          </h2>
-          <p className="text-sm sm:text-base text-ink-subtle max-w-xl mx-auto">
-            {t.portfolio.subtitle}
-          </p>
-        </div>
+        <Reveal>
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
+              {t.portfolio.badge}
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink mb-4 tracking-tight text-balance">
+              {t.portfolio.title}
+            </h2>
+            <p className="text-sm sm:text-base text-ink-subtle max-w-xl mx-auto">
+              {t.portfolio.subtitle}
+            </p>
+          </div>
+        </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 items-stretch">
-          {t.portfolio.games.map((game) => (
-            <GameCard key={game.title} game={game as Game} />
+          {t.portfolio.games.map((game, i) => (
+            <Reveal key={game.title} delay={i * 0.1} className="flex">
+              <div className="w-full">
+                <GameCard game={game as Game} />
+              </div>
+            </Reveal>
           ))}
         </div>
 
         {/* itch.io banner */}
-        <div className="mt-5 lg:mt-6 rounded-lg border border-hairline bg-surface-1 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm sm:text-base text-ink-muted text-center sm:text-left">
-            {t.portfolio.banner.cta}
-          </p>
-          <a
-            href={t.portfolio.banner.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-surface-1 text-ink border border-hairline font-medium text-sm hover:bg-surface-2 hover:border-hairline-strong active:scale-[0.98] transition-all duration-200 whitespace-nowrap"
-          >
-            medinova.itch.io
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-        </div>
+        <Reveal>
+          <div className="mt-5 lg:mt-6 rounded-lg border border-hairline bg-surface-1 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm sm:text-base text-ink-muted text-center sm:text-left">
+              {t.portfolio.banner.cta}
+            </p>
+            <Button
+              href={t.portfolio.banner.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+              className="whitespace-nowrap"
+            >
+              medinova.itch.io
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Button>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

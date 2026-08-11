@@ -239,6 +239,15 @@ export type Translation = {
     sent: string;
     emailLabel: string;
     location: string;
+    errors: {
+      requiredName: string;
+      requiredEmail: string;
+      invalidEmail: string;
+      requiredService: string;
+      requiredBudget: string;
+      requiredReadiness: string;
+      requiredMessage: string;
+    };
   };
   footer: {
     rights: string;
@@ -488,6 +497,15 @@ export const translations: Record<Lang, Translation> = {
       sent: "Thank you! Your project brief has been sent to contact@medinovastudio.com. We will respond within 24 hours.",
       emailLabel: "Email Us",
       location: "Morocco, North Africa",
+      errors: {
+        requiredName: "Please enter your name.",
+        requiredEmail: "Please enter your email.",
+        invalidEmail: "Please enter a valid email address.",
+        requiredService: "Please select a project type.",
+        requiredBudget: "Please select an estimated budget.",
+        requiredReadiness: "Please select your project readiness.",
+        requiredMessage: "Please enter a message.",
+      },
     },
     footer: {
       rights: "All rights reserved.",
@@ -1009,6 +1027,15 @@ export const translations: Record<Lang, Translation> = {
       sent: "Merci ! Votre brief de projet a été envoyé à contact@medinovastudio.com. Nous vous répondrons sous 24 heures.",
       emailLabel: "Écrivez-nous",
       location: "Maroc, Afrique du Nord",
+      errors: {
+        requiredName: "Veuillez saisir votre nom.",
+        requiredEmail: "Veuillez saisir votre email.",
+        invalidEmail: "Veuillez saisir une adresse email valide.",
+        requiredService: "Veuillez sélectionner un type de projet.",
+        requiredBudget: "Veuillez sélectionner un budget estimé.",
+        requiredReadiness: "Veuillez sélectionner l'avancement de votre projet.",
+        requiredMessage: "Veuillez saisir un message.",
+      },
     },
     footer: {
       rights: "Tous droits réservés.",
@@ -1294,9 +1321,9 @@ export const translations: Record<Lang, Translation> = {
   },
   ar: {
     nav: {
-      solutions: "الخدمات ديالنا",
+      solutions: "خدماتنا",
       about: "عن المؤسس",
-      portfolio: "الألعاب والبورطفيليو",
+      portfolio: "الألعاب والمعرض",
       services: "خدمات تطوير الألعاب",
       contact: "تواصل",
       hireStudio: "تواصل مع الاستوديو",
@@ -1530,6 +1557,15 @@ export const translations: Record<Lang, Translation> = {
       sent: "شكراً لك! تم إرسال موجز مشروعك إلى contact@medinovastudio.com. سنرد خلال 24 ساعة.",
       emailLabel: "راسلنا",
       location: "المغرب، شمال أفريقيا",
+      errors: {
+        requiredName: "يرجى إدخال اسمك.",
+        requiredEmail: "يرجى إدخال بريدك الإلكتروني.",
+        invalidEmail: "يرجى إدخال بريد إلكتروني صالح.",
+        requiredService: "يرجى اختيار نوع المشروع.",
+        requiredBudget: "يرجى اختيار ميزانية تقديرية.",
+        requiredReadiness: "يرجى اختيار جاهزية مشروعك.",
+        requiredMessage: "يرجى إدخال رسالة.",
+      },
     },
     footer: {
       rights: "جميع الحقوق محفوظة.",
@@ -1588,45 +1624,45 @@ export const translations: Record<Lang, Translation> = {
     },
     academy: {
       announcement:
-        "💻 100% أونلاين • قرى من الدار (حاسوب + أنترنيت) | القراية بالإنجليزية أولا بالعربية حسب الإختيار",
-      announcementCta: "تسجل دابا / اكتشف المزيد",
+        "💻 100% عبر الإنترنت • تعلّم من المنزل (حاسوب + اتصال بالإنترنت) | الدراسة باللغة الإنجليزية أو العربية حسب الاختيار",
+      announcementCta: "سجّل الآن / اكتشف المزيد",
       hero: {
         badge:
-          "● كورس حي أونلاين | كايأطروا مؤسس الاستوديو | 100% مضمون أولا نرجعوا ليك فلوسك",
+          "● دورات مباشرة عبر الإنترنت | تحت إشراف مؤسس الاستوديو | ضمان استرجاع المبالغ بنسبة 100%",
         headline:
-          "تعلم الكود، صاوب ألعاب الفيديو وإتقن الذكاء الاصطناعي — كيفما كان سنك أولا مستواك",
+          "تعلّم البرمجة، صمّم ألعاب الفيديو وأتقن الذكاء الاصطناعي — مهما كان عمرك أو مستواك",
         subheadline:
-          "من البداية بالتكوييد البصري (Scratch) حتى لـ C#، Unity 3D، الويب و Vibe Coding. برامج 100% أونلاين للدراري الصغار، الشباب، النساء، والمبتدئين الكبار، تحت إشراف مهندس ومطور ألعاب.",
+          "من البداية بالبرمجة المرئية (Scratch) وصولاً إلى C# وUnity 3D وتطوير الويب وVibe Coding. برامج 100% عبر الإنترنت للأطفال، الشباب، النساء، والمبتدئين الكبار، تحت إشراف مهندس ومطور ألعاب.",
         pills: ["للأطفال", "للشباب والكبار المبتدئين"],
-        pillAges: ["من 7 حتى لـ 12 سنة", "+13 سنة"],
+        pillAges: ["من سن 7 إلى 12 سنة", "(+13 سنة)"],
         trust: [
           {
-            title: "100% مضمون أولا نرجعوا ليك فلوسك",
-            desc: "بعد أول حصة",
+            title: "ضمان استرجاع الأموال بنسبة 100%",
+            desc: "بعد الحصة الأولى",
           },
           {
             title: "مطور لعبة على Roblox",
-            desc: "فايتة 1,000,000 لعب",
+            desc: "تجاوزت 1,000,000 زيارة",
           },
           {
-            title: "كليكات صغار",
-            desc: "أقصى حد 6 حتى لـ 8 ديال التلامذ",
+            title: "مجموعات مصغرة",
+            desc: "أقصى حد 6 إلى 8 طلاب",
           },
         ],
       },
       proof: {
-        badge: "الاستوديو اللي ورا الأكاديمية",
+        badge: "الاستوديو الداعم للأكاديمية",
         title:
-          "القراية ديالك ماشي مع أستاذ عادي، ولكن مع مهندس ومؤسس استوديو ألعاب",
+          "تعلمك لن يكون مع أستاذ تقليدي، بل مع مهندس ومؤسس استوديو ألعاب",
         founderCaption:
           "منير عبوتي — مؤسس Medinova Studio والمطور الرئيسي.",
         boothCaption:
-          "ستاند C38 — المعرض المغربي للألعاب Morocco Gaming Expo (عرض الألعاب ديالنا للجمهور).",
+          "الجناح C38 — المعرض المغربي للألعاب Morocco Gaming Expo (عرض ألعابنا للجمهور).",
         robloxBadge: "دليل على Roblox",
         robloxTitle:
-          "صانع لعبة 'Zombies WarZone' على Roblox — فايتة 1,000,000 ملعوبة عالمياً.",
-        robloxCta: "جرب اللعبة على Roblox",
-        showcaseLabel: "نماذج من الألعاب ديال الاستوديو",
+          "مطور لعبة 'Zombies WarZone' على Roblox — تجاوزت 1,000,000 زيارة عالمياً.",
+        robloxCta: "تجربة اللعبة على Roblox",
+        showcaseLabel: "نماذج من ألعاب الاستوديو",
         games: [
           "Pharaoh's Guardian: Mummies",
           "Chameleon Outbreak: Camo Hunt",
@@ -1635,19 +1671,19 @@ export const translations: Record<Lang, Translation> = {
         ],
       },
       tracks: {
-        badge: "3 ديال المسارات متدرجة",
+        badge: "3 مسارات متدرجة",
         title:
-          "من المبتدئ كلياً حتى للـ الاحتراف (بدون حدود سنية)",
+          "من المبتدئ المطلق إلى الاحتراف (بدون حدود للسن)",
         programLabel: "البرنامج",
         resultLabel: "النتيجة",
         levels: [
           {
             level: "LEVEL 1",
             title: "START",
-            programTitle: "المبتدئ المطلق واللوجيك البرمجي",
+            programTitle: "المبتدئ المطلق والمنطق البرمجي",
             levelName: "مبتدئ",
             target:
-              "الدراري الصغار (7–9 سنوات)، والكبار والنساء اللي باغين يبداو الكود من الزيرو",
+              "الأطفال (7–9 سنوات)، والكبار والنساء الراغبين في تعلم البرمجة من الصفر",
             focus: [
               "المنطق البصري",
               "Scratch",
@@ -1655,7 +1691,7 @@ export const translations: Record<Lang, Translation> = {
               "الثقافة الرقمية ومدخل إلى الذكاء الاصطناعي",
             ],
             outcome:
-              "صناعة ألعاب 2D تفاعلية، قصص متحركة، وفهم المنطق البرمجي بلا تعقيدات السنتاكس.",
+              "تطوير ألعاب 2D تفاعلية وقصص متحركة، وفهم المنطق البرمجي بدون تعقيدات البرمجة النصية.",
           },
           {
             level: "LEVEL 2",
@@ -1663,7 +1699,7 @@ export const translations: Record<Lang, Translation> = {
             programTitle: "البرمجة النصية وتطوير الويب و 3D",
             levelName: "متوسط",
             target:
-              "الأطفال (10–12 سنة)، الشباب والكبار اللي واجدين للكود المكتوب",
+              "الأطفال (10–12 سنة)، والشباب والكبار المستعدين للبرمجة النصية",
             focus: [
               "استوديو Roblox (برمجة Lua ثلاثية الأبعاد)",
               "أساسيات الويب (HTML & CSS)",
@@ -1671,7 +1707,7 @@ export const translations: Record<Lang, Translation> = {
               "تحرير الفيديو وسجلات التطوير",
             ],
             outcome:
-              "لعبة 3D محطوطة على Roblox، مواقع ويب ديالك، وسكريبتات بـ Python.",
+              "لعبة 3D منشورة على Roblox، مواقع إلكترونية خاصة بك، وسكريبتات بلغة Python.",
           },
           {
             level: "LEVEL 3",
@@ -1692,25 +1728,25 @@ export const translations: Record<Lang, Translation> = {
       },
       community: {
         badge: "● مجتمع آمن ومأطر 100%",
-        title: "التعلُم كيكون أسرع وأمتع فاش كتقرى وسط مجتمع كايشجعك.",
+        title: "يكون التعلم أسرع وأكثر متعة عند التواجد ضمن مجتمع مشجع.",
         subtitle:
-          "فضاء خاص ومحمّي للتواصل والتطوير المستمر خارج أوقات المباشر.",
+          "مساحة خاصة وآمنة للتواصل والتطوير المستمر خارج أوقات الحصص المباشرة.",
         features: [
           {
             title: "مساحة خاصة للمساعدة",
-            desc: "أسئلة وأجوبة باش تجيب الحل لأي مشكل ف الكود من عند التلامذ والـ Instructors.",
+            desc: "قسم للأسئلة والأجوبة للحصول على حلول سريعة لأي مشكلة في الكود من الطلاب والمؤطرين.",
           },
           {
             title: "قنوات لمشاركة المشاريع",
-            desc: "مراجعات دورية وأخد أراء وملاحظات على خدمة ديالك فـ Roblox، Unity، و Blender.",
+            desc: "مراجعات دورية وتقييمات لمشاريعك في Roblox وUnity وBlender.",
           },
           {
-            title: "تأطير ومراقبة دائمة 24/7",
-            desc: "بيئة نقية، محترمة، وبلا سمية أولا تنمر أولا روابط مشبوهة.",
+            title: "إشراف ومراقبة مستمرة على مدار الساعة",
+            desc: "بيئة آمنة ومحترمة خالية من التنمر أو الروابط المشبوهة.",
           },
           {
             title: "تحديات شهرية",
-            desc: "مسابقات خفيفة وممتعة باش تطور مستواك وتنافس فـ جو حماسي.",
+            desc: "تحديات ممتعة لتطوير مستواك والمنافسة في أجواء حماسية.",
           },
         ],
       },
@@ -1719,37 +1755,37 @@ export const translations: Record<Lang, Translation> = {
         title: "شهادة رسمية وقابلة للتحقق فكل مستوى",
         diplomasTitle: "الدبلومات حسب المستوى",
         diplomasSubtitle:
-          "اعتراف رسمي بالمهارات والمشاريع اللي كايصاوبها المتعلم.",
+          "توثيق رسمي للمهارات والمشاريع التي ينجزها المتعلم.",
         levels: ["المستوى 1", "المستوى 2", "المستوى 3"],
         diplomas: [
           "شهادة فـ المنطق البرمجي والإبداع الرقمي",
           "دبلوم فـ برمجة الألعاب 3D وتطوير الويب",
           "دبلوم فـ هندسة الألعاب 3D، الويب وتقنيات الذكاء الاصطناعي",
         ],
-        includedTitle: "شنو اللي كيتضمن؟",
+        includedTitle: "ماذا يتضمن؟",
         highlights: [
           {
             title: "شهادة مطبوعة",
-            desc: "شهادة رسمية مخرجة ومطبوعة بأسماء الدروس والمهارات المتفوق فيها.",
+            desc: "شهادة مطبوعة موثقة توضح المساقات والمهارات المكتسبة.",
           },
           {
             title: "كود QR للتأكد",
-            desc: "تحقق مباشر عبر البورطفيليو الإلكتروني للمتعلم.",
+            desc: "تحقق مباشر عبر ملف الأعمال الإلكتروني للمتعلم.",
           },
           {
-            title: "تقارير فالواتساب",
-            desc: "متابعة شهرية كتوصل مباشرة فالواتساب للوالدين أولا المتعلم.",
+            title: "تقارير عبر الواتساب",
+            desc: "متابعة شهرية تصل مباشرة لأولياء الأمور أو المتعلم.",
           },
         ],
-        recognition: "معترف بها من الشركاء ديالنا فالصناعة",
+        recognition: "مشهود بها لدى شركائنا في المجال",
       },
       pricing: {
         badge: "الأسعار والباقات",
-        title: "باقات مرنة، إيقاع كيناسبك",
-        pacingOptions: ["حصة واحدة فالسيمانة", "جوج حصص فالسيمانة (مكثف)"],
+        title: "باقات مرنة، بالإيقاع الذي يناسبك",
+        pacingOptions: ["حصة واحدة في الأسبوع", "حصتان في الأسبوع (مكثف)"],
         periodOptions: ["شهري", "كل 3 أشهر (خصم 15%)"],
         tierDesc: [
-          "مبتدئ · دراري وشباب وكبار",
+          "مبتدئ · أطفال وشباب وكبار",
           "متوسط · كود مكتوب و3D",
           "متقدم / محترف · Unity والويب والذكاء الاصطناعي",
         ],
@@ -1761,54 +1797,54 @@ export const translations: Record<Lang, Translation> = {
           { monthly: 790, intensive: 1290, quarterly: 2000 },
           { monthly: 990, intensive: 1690, quarterly: 2500 },
         ],
-        billedMonthly: "كتخلص شهرياً · {sessions} فالسيمانة",
-        billedQuarterly: "كتخلص {total} درهم / كل 3 أشهر (خصم 15%)",
+        billedMonthly: "الدفع شهري · {sessions} في الأسبوع",
+        billedQuarterly: "الدفع {total} درهم / كل 3 أشهر (خصم 15%)",
         featuredBadge: "الأكثر اكتمالاً",
         features: [
-          "كليكات صغار (أقصى حد 6 حتى 8 ديال التلامذ)",
-          "حصص مباشرة 100% أونلاين",
-          "ولوج للمجتمع الآمن",
-          "متابعة فردية وسجلات ديال التقدم",
+          "مجموعات مصغرة (أقصى حد 6 إلى 8 طلاب)",
+          "حصص مباشرة 100% عبر الإنترنت",
+          "الوصول إلى المجتمع الآمن",
+          "متابعة فردية وسجلات التقدم",
         ],
-        cta: "تسجل دابا",
-        guaranteeStrong: "100% مضمون أولا نرجعوا ليك فلوسك",
-        guarantee: " بعد أول حصة — بلا ما تسولك حتى سؤال.",
+        cta: "سجّل الآن",
+        guaranteeStrong: "ضمان استرجاع الأموال بنسبة 100%",
+        guarantee: " بعد الحصة الأولى — دون الحاجة لتقديم أي أسباب.",
       },
       faq: {
         badge: "الأسئلة الشائعة",
-        title: "عندك شي تساؤل؟",
+        title: "هل لديك أي استفسار؟",
         subtitle:
-          "أجوبة على أكثر الأسئلة اللي كايطرحوها الوالدين والمتعلمين.",
+          "إجابات عن أكثر الأسئلة شائعة بين أولياء الأمور والمتعلمين.",
         items: [
           {
-            q: "شنو حتاج أنا أولا ولدي باش نبداو القراية؟",
-            a: "حاسوب عادي (PC أولا Mac) وأنترنيت فقط. ماشي بالضرورة يكون بيسي غالي — حنا كنعاونوك تثبت البرامج المجانية اللي غنحتاجو.",
+            q: "ما الذي أحتاجه أو يحتاجه طفلي للبدء؟",
+            a: "حاسوب عادي (PC أو Mac) واتصال بالإنترنت فقط. لا يشترط جهاز عالي المواصفات — سنساعدك في تثبيت كافة البرامج المجانية المطلوبة.",
             category: "equipment",
           },
           {
-            q: "بأينا لغة كايتقراو الدروس؟",
-            a: "الدروس كاينين بالإنجليزية أولا بالدارجة/العربية حسب الإختيار، مع الشرح والمساعدة بالفرنسية باش كلشي يفهم مزيان.",
+            q: "ما هي لغة تقديم الدروس؟",
+            a: "الدروس متاحة باللغة الإنجليزية أو العربية حسب الاختيار، مع الشرح والمساعدة بالفرنسية لضمان فهم الجميع.",
             category: "language",
           },
           {
-            q: "واش الكبار المبتدئين يقدروا يتسجلوا فـ المستوى 1؟",
-            a: "أكيد! المستوى 1 مديور باش يعلم منطق البرمجة للجميع وبطريقة ساهلة وممتعة وبلا تعقيدات.",
+            q: "هل يمكن للمبتدئين الكبار التسجيل في المستوى 1؟",
+            a: "بالتأكيد! المستوى 1 مصمم لتعليم منطق البرمجة للجميع بطريقة سهلة وممتعة وبدون تعقيدات.",
             category: "adults",
           },
           {
-            q: "كيفاش كاتجري ضمانة إرجاع الفلوس؟",
-            a: "إلا حضرتي للحصة الأولى وماعجبكش الحال، كترجع ليك فلوسك 100% مباشرة وبلا تعقيد.",
+            q: "كيف تعمل آلية ضمان استرجاع الأموال؟",
+            a: "إذا حضرت الحصة الأولى ولم تناسبك، يتم استرجاع كامل المبلغ مباشرة ودون تعقيد.",
             category: "pricing",
           },
         ],
       },
       whatsapp: {
         message:
-          "سلام أكاديمية مدينوفا 👋 بغيت نعرف المزيد على القراية.",
-        online: "متصل — جواب سريع فـ الواتساب",
+          "مرحباً أكاديمية مدينوفا 👋 أود معرفة المزيد عن الدورات التدريبية.",
+        online: "متصل — رد سريع عبر الواتساب",
         aria: "تواصل معنا عبر واتساب",
         registerMessage:
-          "سلام أكاديمية مدينوفا 👋 بغيت نتسجل فـ {level} ({name}) — {pacing}، {period}.",
+          "مرحباً بأكاديمية مدينوفا 👋 أود التسجيل في {level} ({name}) — {pacing}، {period}.",
       },
     },
   },
