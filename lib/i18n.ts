@@ -17,8 +17,8 @@ export type AcademyTranslation = {
     badge: string;
     headline: string;
     subheadline: string;
-    pills: string[];
-    pillAges: string[];
+    targetAudience: string;
+    secondaryCta: string;
     trust: { title: string; desc: string }[];
   };
   proof: {
@@ -92,7 +92,9 @@ export type AcademyTranslation = {
     message: string;
     online: string;
     aria: string;
-    registerMessage: string;
+    levelMessages: string[];
+    quickQuestion: string;
+    registerCta: string;
   };
 };
 
@@ -104,6 +106,7 @@ export type Translation = {
     services: string;
     contact: string;
     hireStudio: string;
+    discoverTracks: string;
     subGameDev: string;
     subGameDevDesc: string;
     subAgency: string;
@@ -264,6 +267,7 @@ export const translations: Record<Lang, Translation> = {
       services: "Game Dev Services",
       contact: "Contact",
       hireStudio: "Hire Studio",
+      discoverTracks: "Discover the Tracks",
       subGameDev: "Game Dev & Spatial Tech",
       subGameDevDesc: "Custom games, WebGL portals & AR/VR engineering",
       subAgency: "B2B Growth Agency",
@@ -573,8 +577,9 @@ export const translations: Record<Lang, Translation> = {
           "Learn to Code, Create Video Games & Master AI — Whatever Your Age or Level",
         subheadline:
           "From visual blocks (Scratch) to C#, Unity 3D, Web development and Vibe Coding. 100% online programs for kids, teens, women and beginner adults, taught by a studio engineer.",
-        pills: ["For Kids", "For Teens & Beginner Adults"],
-        pillAges: ["7–12 years", "13+"],
+        targetAudience:
+          "Suitable for All Ages & Skill Levels — From 7 Years & Up",
+        secondaryCta: "See Plans & Pricing",
         trust: [
           {
             title: "100% Satisfaction or Money Back",
@@ -778,11 +783,16 @@ export const translations: Record<Lang, Translation> = {
       },
       whatsapp: {
         message:
-          "Hello Medinova Academy 👋 I'd like to know more about the classes.",
-        online: "Online — Fast reply",
+          "Hello, I have a question about registering for Medinova Academy.",
+        online: "Online — Quick WhatsApp Reply",
         aria: "Chat on WhatsApp",
-        registerMessage:
-          "Hello Medinova Academy 👋 I'd like to register for {level} ({name}) — {pacing}, {period}.",
+        levelMessages: [
+          "Hello, I have a question about registering for Level 1 (START).",
+          "Hello, I have a question about registering for Level 2 (BUILD).",
+          "Hello, I have a question about the advanced Level 3 (MASTER) and Vibe Coding.",
+        ],
+        quickQuestion: "Quick question via WhatsApp",
+        registerCta: "Register via WhatsApp",
       },
     },
   },
@@ -794,6 +804,7 @@ export const translations: Record<Lang, Translation> = {
       services: "Services Game Dev",
       contact: "Contact",
       hireStudio: "Engager le Studio",
+      discoverTracks: "Découvrir les Parcours",
       subGameDev: "Développement de Jeux & Tech Spatiale",
       subGameDevDesc: "Jeux sur mesure, portails WebGL & ingénierie AR/VR",
       subAgency: "Agence de Croissance B2B",
@@ -1103,8 +1114,8 @@ export const translations: Record<Lang, Translation> = {
           "Apprenez à Coder, Créer des Jeux Vidéo & Maîtriser l'IA — Quel que soit votre Âge ou votre Niveau",
         subheadline:
           "Du bloc visuel (Scratch) jusqu'au développement C#, Unity 3D, Web et Vibe Coding. Des programmes 100% en ligne pour enfants, ados, femmes et adultes débutants animés par un ingénieur de studio.",
-        pills: ["Pour Enfants", "Pour Ados & Adultes Débutants"],
-        pillAges: ["7–12 ans", "13+"],
+        targetAudience: "Adapté à tous les âges et niveaux — Dès 7 ans",
+        secondaryCta: "Voir les Tarifs",
         trust: [
           {
             title: "100% Satisfait ou Remboursé",
@@ -1311,11 +1322,16 @@ export const translations: Record<Lang, Translation> = {
       },
       whatsapp: {
         message:
-          "Bonjour Medinova Academy 👋 Je souhaite en savoir plus sur les cours.",
-        online: "En ligne — Réponse rapide",
+          "Bonjour, j'ai une question concernant l'inscription à Medinova Academy.",
+        online: "En ligne — Réponse rapide via WhatsApp",
         aria: "Discuter sur WhatsApp",
-        registerMessage:
-          "Bonjour Medinova Academy 👋 Je souhaite m'inscrire au {level} ({name}) — {pacing}, {period}.",
+        levelMessages: [
+          "Bonjour, j'ai une question concernant l'inscription au Level 1 (START).",
+          "Bonjour, j'ai une question concernant l'inscription au Level 2 (BUILD).",
+          "Bonjour, j'ai une question concernant le Level 3 (MASTER) avancé et le Vibe Coding.",
+        ],
+        quickQuestion: "Question rapide via WhatsApp",
+        registerCta: "S'inscrire via WhatsApp",
       },
     },
   },
@@ -1327,6 +1343,7 @@ export const translations: Record<Lang, Translation> = {
       services: "خدمات تطوير الألعاب",
       contact: "تواصل",
       hireStudio: "تواصل مع الاستوديو",
+      discoverTracks: "اكتشف المسارات",
       subGameDev: "تطوير الألعاب والتقنيات المكانية",
       subGameDevDesc: "ألعاب مخصصة، بوابات WebGL وهندسة AR/VR",
       subAgency: "وكالة نمو B2B",
@@ -1633,8 +1650,9 @@ export const translations: Record<Lang, Translation> = {
           "تعلّم البرمجة، صمّم ألعاب الفيديو وأتقن الذكاء الاصطناعي — مهما كان عمرك أو مستواك",
         subheadline:
           "من البداية بالبرمجة المرئية (Scratch) وصولاً إلى C# وUnity 3D وتطوير الويب وVibe Coding. برامج 100% عبر الإنترنت للأطفال، الشباب، النساء، والمبتدئين الكبار، تحت إشراف مهندس ومطور ألعاب.",
-        pills: ["للأطفال", "للشباب والكبار المبتدئين"],
-        pillAges: ["من سن 7 إلى 12 سنة", "(+13 سنة)"],
+        targetAudience:
+          "مناسب لجميع الأعمار والمستويات — من 7 سنوات فما فوق",
+        secondaryCta: "اطّلع على الأسعار",
         trust: [
           {
             title: "ضمان استرجاع الأموال بنسبة 100%",
@@ -1840,11 +1858,16 @@ export const translations: Record<Lang, Translation> = {
       },
       whatsapp: {
         message:
-          "مرحباً أكاديمية مدينوفا 👋 أود معرفة المزيد عن الدورات التدريبية.",
+          "السلام عليكم، عندي استفسار حول التسجيل في Medinova Academy.",
         online: "متصل — رد سريع عبر الواتساب",
         aria: "تواصل معنا عبر واتساب",
-        registerMessage:
-          "مرحباً بأكاديمية مدينوفا 👋 أود التسجيل في {level} ({name}) — {pacing}، {period}.",
+        levelMessages: [
+          "السلام عليكم، عندي استفسار حول التسجيل في Level 1 (START).",
+          "السلام عليكم، عندي استفسار حول التسجيل في Level 2 (BUILD).",
+          "السلام عليكم، عندي استفسار حول المستوى المتقدم Level 3 (MASTER) و Vibe Coding.",
+        ],
+        quickQuestion: "سؤال سريع عبر الواتساب",
+        registerCta: "سجّل عبر واتساب",
       },
     },
   },

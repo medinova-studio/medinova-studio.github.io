@@ -1,0 +1,312 @@
+{
+  "communities": {
+    "0": [
+      "app_layout",
+      "app_layout_metadata",
+      "app_layout_rootlayout",
+      "app_layout_viewport",
+      "components_contact",
+      "components_footer",
+      "components_footer_footer",
+      "components_navbar",
+      "components_navbar_navbar",
+      "lib_i18n",
+      "lib_i18n_lang",
+      "lib_i18n_lang_labels",
+      "lib_i18n_langs",
+      "lib_i18n_rtl_langs",
+      "lib_i18n_translation",
+      "lib_i18n_translations",
+      "lib_languagecontext",
+      "lib_languagecontext_langcontext",
+      "lib_languagecontext_langcontextvalue",
+      "lib_languagecontext_languageprovider"
+    ],
+    "1": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target"
+    ],
+    "2": [
+      "netlify_plugin_nextjs",
+      "next",
+      "package",
+      "package_dependencies",
+      "package_dependencies_netlify_plugin_nextjs",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version",
+      "react",
+      "react_dom"
+    ],
+    "3": [
+      "app_agency_page",
+      "app_agency_page_agencypage",
+      "app_page",
+      "app_page_home",
+      "components_contact_contact",
+      "components_gamepricing",
+      "components_gamepricing_checkicon",
+      "components_gamepricing_gamepackages",
+      "components_gamepricing_gamepkg",
+      "components_gamepricing_gamepricing",
+      "components_gamepricing_sectionheader",
+      "components_hero",
+      "components_hero_hero",
+      "components_portfolio",
+      "components_portfolio_portfolio",
+      "lib_languagecontext_uselang"
+    ],
+    "4": [
+      "autoprefixer",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "postcss",
+      "tailwindcss",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "5": [
+      "app_academy_page",
+      "app_academy_page_academypage",
+      "components_academypricing",
+      "components_academypricing_academypackages",
+      "components_academypricing_academypkg",
+      "components_academypricing_academypricing",
+      "components_academypricing_checkicon",
+      "components_faq",
+      "components_faq_faq"
+    ],
+    "6": [
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_ts",
+      "ref_tsx",
+      "tsconfig",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "7": [
+      "vercel",
+      "vercel_buildcommand",
+      "vercel_framework",
+      "vercel_installcommand",
+      "vercel_outputdirectory"
+    ],
+    "8": [
+      "opencode_plugins_graphify",
+      "opencode_plugins_graphify_graphifyplugin",
+      "opencode_plugins_graphify_rationale_4"
+    ],
+    "9": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "10": [
+      "next_env_d",
+      "next_env_d_rationale_4"
+    ],
+    "11": [
+      "postcss_config",
+      "postcss_config_config"
+    ],
+    "12": [
+      "tailwind_config",
+      "tailwind_config_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18947368421052632,
+    "1": 0.10526315789473684,
+    "2": 0.1111111111111111,
+    "3": 0.20833333333333334,
+    "4": 0.13333333333333333,
+    "5": 0.2777777777777778,
+    "6": 0.25,
+    "7": 0.4,
+    "8": 0.6666666666666666,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "lib_languagecontext_uselang",
+      "label": "useLang()",
+      "degree": 19
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "tsconfig_include",
+      "label": "include",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "tsconfig_compileroptions_lib",
+      "label": "lib",
+      "degree": 4
+    },
+    {
+      "id": "components_academypricing_academypricing",
+      "label": "AcademyPricing()",
+      "degree": 3
+    },
+    {
+      "id": "components_contact_contact",
+      "label": "Contact()",
+      "degree": 3
+    },
+    {
+      "id": "components_faq_faq",
+      "label": "FAQ()",
+      "degree": 3
+    },
+    {
+      "id": "components_footer_footer",
+      "label": "Footer()",
+      "degree": 3
+    },
+    {
+      "id": "components_gamepricing_gamepricing",
+      "label": "GamePricing()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AgencyPage()",
+      "target": "useLang()",
+      "source_files": [
+        "app/agency/page.tsx",
+        "lib/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `AgencyPage()` unexpectedly reaches hub `useLang()`"
+    },
+    {
+      "source": "AcademyPricing()",
+      "target": "useLang()",
+      "source_files": [
+        "components/AcademyPricing.tsx",
+        "lib/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "FAQ()",
+      "target": "useLang()",
+      "source_files": [
+        "components/FAQ.tsx",
+        "lib/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Footer()",
+      "target": "useLang()",
+      "source_files": [
+        "components/Footer.tsx",
+        "lib/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Navbar()",
+      "target": "useLang()",
+      "source_files": [
+        "components/Navbar.tsx",
+        "lib/LanguageContext.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.047) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `useLang()` connect `useLang` to `LanguageContext.tsx`, `AcademyPricing.tsx`?",
+      "why": "High betweenness centrality (0.046) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `compilerOptions` connect `compilerOptions` to `include`?",
+      "why": "High betweenness centrality (0.041) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `metadata`, `viewport`, `AcademyPkg` to the rest of the system?",
+      "why": "55 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

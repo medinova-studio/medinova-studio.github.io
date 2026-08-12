@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, Sparkles, ShieldCheck } from "lucide-react";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { useLang } from "@/lib/LanguageContext";
 import { academyWhatsAppUrl } from "@/lib/academy";
 
@@ -24,17 +25,17 @@ export default function Pricing() {
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
             {pricing.badge}
           </span>
-          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight text-balance max-w-3xl mx-auto">
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight text-balance max-w-3xl mx-auto">
             {pricing.title}
           </h2>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <div
               role="group"
-              className="flex flex-wrap items-center justify-center rounded-full border border-white/10 bg-ink-800/60 p-1"
+              className="flex flex-wrap items-center justify-center rounded-full border border-hairline bg-surface-1 p-1"
             >
               {pricing.pacingOptions.map((option, idx) => {
                 const active = pacing === idx;
@@ -46,8 +47,8 @@ export default function Pricing() {
                     onClick={() => setPacing(idx as 0 | 1)}
                     className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${
                       active
-                        ? "bg-primary text-white shadow-sm"
-                        : "text-slate-400 hover:text-white"
+                        ? "bg-surface-2 text-ink"
+                        : "text-ink-subtle hover:text-ink"
                     }`}
                   >
                     {option}
@@ -58,7 +59,7 @@ export default function Pricing() {
 
             <div
               role="group"
-              className="flex flex-wrap items-center justify-center rounded-full border border-white/10 bg-ink-800/60 p-1"
+              className="flex flex-wrap items-center justify-center rounded-full border border-hairline bg-surface-1 p-1"
             >
               {pricing.periodOptions.map((option, idx) => {
                 const active = billing === idx;
@@ -70,8 +71,8 @@ export default function Pricing() {
                     onClick={() => setBilling(idx as 0 | 1)}
                     className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${
                       active
-                        ? "bg-primary text-white shadow-sm"
-                        : "text-slate-400 hover:text-white"
+                        ? "bg-surface-2 text-ink"
+                        : "text-ink-subtle hover:text-ink"
                     }`}
                   >
                     {option}
@@ -109,36 +110,36 @@ export default function Pricing() {
             return (
               <div
                 key={level}
-                className={`relative flex flex-col rounded-2xl border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
+                className={`relative flex flex-col rounded-lg border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
                   featured
-                    ? "border-cyan/30 bg-ink-800/70 shadow-lg shadow-cyan/10"
-                    : "border-white/10 bg-ink-800/50 hover:border-cyan/30"
+                    ? "border-hairline-strong bg-surface-2"
+                    : "border-hairline bg-surface-1 hover:border-hairline-strong hover:bg-surface-2"
                 }`}
               >
                 {featured && (
-                  <div className="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan/15 border border-cyan/25 text-cyan text-[10px] font-bold tracking-wide uppercase">
+                  <div className="absolute top-4 right-4 rtl:right-auto rtl:left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-3 border border-hairline-strong text-ink text-[10px] font-bold tracking-wide uppercase">
                     <Sparkles className="w-3.5 h-3.5" />
                     {pricing.featuredBadge}
                   </div>
                 )}
 
                 <div className="mb-6">
-                  <p className="text-xs font-bold tracking-wider text-cyan uppercase mb-1">
+                  <p className="text-xs font-bold tracking-wider text-ink-muted uppercase mb-1">
                     {level} — {name}
                   </p>
-                  <p className="text-sm text-slate-400 leading-relaxed">
+                  <p className="text-sm text-ink-subtle leading-relaxed">
                     {pricing.tierDesc[i]}
                   </p>
                 </div>
 
                 <div className="mb-6">
-                  <p className="font-display text-4xl font-bold text-white tracking-tight">
+                  <p className="font-display text-4xl font-semibold text-ink tracking-tight">
                     {formatPrice(price)}
-                    <span className="text-lg font-medium text-slate-400 ml-1.5">
+                    <span className="text-lg font-medium text-ink-subtle ml-1.5 rtl:ml-0 rtl:mr-1.5">
                       {unitLabel}
                     </span>
                   </p>
-                  <p className="mt-1.5 text-xs text-slate-500">{subtext}</p>
+                  <p className="mt-1.5 text-xs text-ink-tertiary">{subtext}</p>
                 </div>
 
                 <div className="mb-6">
@@ -146,9 +147,9 @@ export default function Pricing() {
                     {pricing.features.map((f) => (
                       <li
                         key={f}
-                        className="flex items-start gap-2.5 text-sm text-slate-300 leading-snug"
+                        className="flex items-start gap-2.5 text-sm text-ink-muted leading-snug"
                       >
-                        <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-cyan" />
+                        <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-success" />
                         {f}
                       </li>
                     ))}
@@ -158,25 +159,22 @@ export default function Pricing() {
                 <div className="mt-auto">
                   <a
                     href={academyWhatsAppUrl(
-                      t.academy.whatsapp.registerMessage
-                        .replace("{level}", level)
-                        .replace("{name}", name)
-                        .replace("{pacing}", pricing.pacingOptions[pacing])
-                        .replace("{period}", pricing.periodOptions[billing])
+                      t.academy.whatsapp.levelMessages[i]
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-medium transition-all active:scale-[0.98] ${
+                    className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold transition-all active:scale-[0.98] ${
                       featured
-                        ? "bg-primary text-white hover:bg-primary-hover"
-                        : "bg-white/5 border border-white/10 text-white hover:bg-white/10"
+                        ? "bg-whatsapp text-white shadow-lg shadow-whatsapp/25 hover:bg-whatsapp-hover"
+                        : "bg-whatsapp/10 border border-whatsapp/40 text-whatsapp hover:bg-whatsapp/15"
                     }`}
                   >
-                    {pricing.cta}
+                    <WhatsAppIcon className="w-4 h-4" />
+                    {t.academy.whatsapp.registerCta}
                   </a>
-                  <p className="mt-4 flex items-center justify-center gap-1.5 text-xs text-slate-400 text-center">
+                  <p className="mt-4 flex items-center justify-center gap-1.5 text-xs text-ink-subtle text-center">
                     <ShieldCheck className="w-4 h-4 text-success" />
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-ink">
                       {pricing.guaranteeStrong}
                     </span>
                     {pricing.guarantee}

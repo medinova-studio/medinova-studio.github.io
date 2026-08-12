@@ -2,12 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Gamepad2, GraduationCap, TrendingUp } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 import { LANGS, LANG_LABELS, Lang } from "@/lib/i18n";
 import Button from "@/components/ui/Button";
 
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
+  const pathname = usePathname();
+  const isAcademy = pathname?.startsWith("/academy");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -21,9 +25,9 @@ export default function Navbar() {
   }, []);
 
   const solutions = [
-    { href: "#services", emoji: "🎮", label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
-    { href: "/agency", emoji: "📈", label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
-    { href: "/academy", emoji: "🎓", label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
+    { href: "#services", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+    { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
+    { href: "/academy", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
   ];
 
   return (
@@ -67,23 +71,30 @@ export default function Navbar() {
               {solutionsOpen && (
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setSolutionsOpen(false)} />
-                  <div className="absolute top-full mt-1.5 left-0 z-50 flex flex-col gap-0.5 p-1.5 rounded-md bg-surface-2 border border-hairline-strong min-w-[240px]">
-                    {solutions.map((s) => (
-                      <a
-                        key={s.href}
-                        href={s.href}
-                        onClick={() => setSolutionsOpen(false)}
-                        className="flex items-start gap-2.5 px-3 py-2 rounded-md transition-colors hover:bg-surface-3"
-                      >
-                        <span className="text-base leading-snug" aria-hidden="true">
-                          {s.emoji}
-                        </span>
-                        <span className="flex flex-col">
-                          <span className="text-sm font-medium text-ink">{s.label}</span>
-                          <span className="text-xs text-ink-muted">{s.desc}</span>
-                        </span>
-                      </a>
-                    ))}
+                  <div className="absolute top-full mt-2 left-0 rtl:left-auto rtl:right-0 z-50 flex flex-col gap-1.5 p-2.5 rounded-md bg-surface-2 border border-hairline-strong w-80 max-w-[90vw]">
+                    {solutions.map((s) => {
+                      const Icon = s.icon;
+                      return (
+                        <a
+                          key={s.href}
+                          href={s.href}
+                          onClick={() => setSolutionsOpen(false)}
+                          className="group flex items-start gap-3.5 rounded-xl p-3 transition-all duration-200 hover:bg-surface-3"
+                        >
+                          <span className="h-9 w-9 shrink-0 flex items-center justify-center rounded-lg bg-surface-3 border border-hairline text-ink-muted transition-colors duration-200 group-hover:border-primary/40 group-hover:bg-primary/10 group-hover:text-primary">
+                            <Icon className="w-5 h-5" strokeWidth={1.75} />
+                          </span>
+                          <span className="flex flex-col pt-0.5">
+                            <span className="text-sm font-semibold text-ink">
+                              {s.label}
+                            </span>
+                            <span className="mt-0.5 text-xs leading-relaxed text-ink-subtle group-hover:text-ink-muted">
+                              {s.desc}
+                            </span>
+                          </span>
+                        </a>
+                      );
+                    })}
                   </div>
                 </>
               )}
@@ -118,7 +129,7 @@ export default function Navbar() {
               {langOpen && (
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setLangOpen(false)} />
-                  <div className="absolute top-full mt-1.5 right-0 z-50 flex flex-col gap-0.5 p-1.5 rounded-md bg-surface-2 border border-hairline-strong min-w-[80px]">
+                  <div className="absolute top-full mt-1.5 right-0 rtl:left-0 rtl:right-auto z-50 flex flex-col gap-0.5 p-1.5 rounded-md bg-surface-2 border border-hairline-strong min-w-[80px]">
                     {LANGS.map((l: Lang) => (
                       <button
                         key={l}
@@ -140,9 +151,15 @@ export default function Navbar() {
               )}
             </div>
 
-            <Button href="#contact" size="sm" className="whitespace-nowrap">
-              {t.nav.hireStudio}
-            </Button>
+            {isAcademy ? (
+              <Button href="#tracks" size="sm" className="whitespace-nowrap">
+                {t.nav.discoverTracks}
+              </Button>
+            ) : (
+              <Button href="#contact" size="sm" className="whitespace-nowrap">
+                {t.nav.hireStudio}
+              </Button>
+            )}
           </div>
 
           {/* Mobile toggle */}
@@ -185,19 +202,22 @@ export default function Navbar() {
             <span className="px-3 pt-1 pb-1 text-[11px] font-semibold uppercase tracking-wider text-ink-tertiary">
               {t.nav.solutions}
             </span>
-            {solutions.map((s) => (
-              <a
-                key={s.href}
-                href={s.href}
-                onClick={() => setOpen(false)}
-                className="flex items-center gap-2.5 text-sm text-ink-subtle hover:text-ink hover:bg-surface-2 rounded-md px-3 py-2.5 transition-all"
-              >
-                <span className="text-base" aria-hidden="true">
-                  {s.emoji}
-                </span>
-                {s.label}
-              </a>
-            ))}
+            {solutions.map((s) => {
+              const Icon = s.icon;
+              return (
+                <a
+                  key={s.href}
+                  href={s.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-3 text-sm text-ink-subtle hover:text-ink hover:bg-surface-2 rounded-md px-3 py-2.5 transition-all"
+                >
+                  <span className="h-8 w-8 shrink-0 flex items-center justify-center rounded-md bg-surface-2 border border-hairline text-ink-muted">
+                    <Icon className="w-4 h-4" strokeWidth={1.75} />
+                  </span>
+                  {s.label}
+                </a>
+              );
+            })}
             <a
               href="#portfolio"
               onClick={() => setOpen(false)}
@@ -212,13 +232,23 @@ export default function Navbar() {
             >
               {t.nav.about}
             </a>
-            <Button
-              href="#contact"
-              onClick={() => setOpen(false)}
-              className="mt-2 w-fit"
-            >
-              {t.nav.hireStudio}
-            </Button>
+            {isAcademy ? (
+              <Button
+                href="#tracks"
+                onClick={() => setOpen(false)}
+                className="mt-2 w-fit"
+              >
+                {t.nav.discoverTracks}
+              </Button>
+            ) : (
+              <Button
+                href="#contact"
+                onClick={() => setOpen(false)}
+                className="mt-2 w-fit"
+              >
+                {t.nav.hireStudio}
+              </Button>
+            )}
           </div>
         </div>
       )}

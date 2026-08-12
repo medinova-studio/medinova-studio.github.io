@@ -16,10 +16,10 @@ export default function Tracks() {
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
             {tracks.badge}
           </span>
-          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight text-balance max-w-3xl mx-auto">
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight text-balance max-w-3xl mx-auto">
             {tracks.title}
           </h2>
         </div>
@@ -31,17 +31,17 @@ export default function Tracks() {
             return (
               <div
                 key={track.level}
-                className={`group relative flex flex-col rounded-2xl border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
+                className={`group relative flex flex-col rounded-lg border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
                   featured
-                    ? "border-cyan/30 bg-ink-800/70 shadow-lg shadow-cyan/10"
-                    : "border-white/10 bg-ink-800/50 hover:border-cyan/30"
+                    ? "border-hairline-strong bg-surface-2"
+                    : "border-hairline bg-surface-1 hover:border-hairline-strong hover:bg-surface-2"
                 }`}
               >
                 <div
                   className={`absolute top-0 left-0 right-0 h-px ${
                     featured
-                      ? "bg-gradient-to-r from-transparent via-cyan to-transparent"
-                      : "bg-gradient-to-r from-transparent via-white/15 to-transparent"
+                      ? "bg-gradient-to-r from-transparent via-hairline-strong to-transparent"
+                      : "bg-gradient-to-r from-transparent via-hairline to-transparent"
                   }`}
                 />
 
@@ -49,8 +49,8 @@ export default function Tracks() {
                   <div
                     className={`w-11 h-11 rounded-xl flex items-center justify-center ${
                       featured
-                        ? "bg-cyan/15 border border-cyan/25 text-cyan"
-                        : "bg-white/5 border border-white/10 text-slate-300"
+                        ? "bg-surface-3 border border-hairline-strong text-ink"
+                        : "bg-surface-2 border border-hairline text-ink-muted"
                     }`}
                   >
                     <Icon className="w-5 h-5" />
@@ -58,8 +58,8 @@ export default function Tracks() {
                   <span
                     className={`px-2.5 py-1 rounded-md text-[10px] font-bold tracking-wider uppercase ${
                       featured
-                        ? "bg-cyan/15 border border-cyan/25 text-cyan"
-                        : "bg-white/5 border border-white/10 text-slate-400"
+                        ? "bg-surface-3 border border-hairline-strong text-ink"
+                        : "bg-surface-2 border border-hairline text-ink-muted"
                     }`}
                   >
                     {track.level} — {track.title}
@@ -67,49 +67,49 @@ export default function Tracks() {
                 </div>
 
                 {track.programTitle && (
-                  <h3 className="font-display text-lg sm:text-xl font-semibold text-white mb-3 leading-snug">
+                  <h3 className="font-display text-lg sm:text-xl font-semibold text-ink mb-3 leading-snug">
                     {track.programTitle}
                   </h3>
                 )}
 
-                <p className="text-xs text-slate-400 mb-5 leading-relaxed">
-                  <span className="text-slate-200 font-medium">
+                <p className="text-xs text-ink-subtle mb-5 leading-relaxed">
+                  <span className="text-ink-muted font-medium">
                     {track.levelName}
                     {" · "}
                   </span>
                   {track.target}
                 </p>
 
-                <div className="pb-5 border-b border-white/5 mb-5">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-cyan mb-3">
+                <div className="pb-5 border-b border-hairline mb-5">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-ink-tertiary mb-3">
                     {tracks.programLabel}
                   </p>
                   <ul className="space-y-2">
                     {track.focus.map((f) => (
                       <li
                         key={f}
-                        className="flex items-start gap-2.5 text-sm text-slate-300 leading-snug"
+                        className="flex items-start gap-2.5 text-sm text-ink-muted leading-snug"
                       >
-                        <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-cyan" />
+                        <Check className="w-4 h-4 mt-0.5 flex-shrink-0 text-success" />
                         {f}
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="rounded-lg bg-cyan/8 border border-cyan/15 p-4 flex-1">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-cyan mb-1.5">
+                <div className="rounded-lg bg-surface-2 border border-hairline p-4 flex-1">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-ink-tertiary mb-1.5">
                     {tracks.resultLabel}
                   </p>
-                  <p className="text-sm text-slate-300 leading-relaxed">
+                  <p className="text-sm text-ink-muted leading-relaxed">
                     {track.outcome}
                   </p>
                 </div>
 
                 {i < tracks.levels.length - 1 && (
-                  <div className="hidden lg:flex absolute top-1/2 -right-[26px] -translate-y-1/2 z-10">
-                    <span className="w-9 h-9 rounded-full bg-ink-800 border border-white/15 flex items-center justify-center">
-                      <ArrowRight className="w-4 h-4 text-cyan rtl:rotate-180" />
+                  <div className="hidden lg:flex absolute top-1/2 -right-[26px] rtl:right-auto rtl:-left-[26px] -translate-y-1/2 z-10">
+                    <span className="w-9 h-9 rounded-full bg-canvas border border-hairline-strong flex items-center justify-center">
+                      <ArrowRight className="w-4 h-4 text-ink-muted rtl:rotate-180" />
                     </span>
                   </div>
                 )}

@@ -24,16 +24,16 @@ export default function Proof() {
     <section id="proof" className="relative py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-medium mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
             {proof.badge}
           </span>
-          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight text-balance max-w-3xl mx-auto">
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight text-balance max-w-3xl mx-auto">
             {proof.title}
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-6">
-          <figure className="group rounded-2xl border border-white/10 bg-ink-800/50 overflow-hidden transition-all duration-300 hover:border-cyan/30">
+          <figure className="group rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-all duration-300 hover:border-hairline-strong">
             <div className="relative aspect-[3/4] sm:aspect-[4/3] overflow-hidden">
               <Image
                 src={ROLE_IMAGES[0]}
@@ -43,12 +43,12 @@ export default function Proof() {
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
-            <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">
+            <figcaption className="px-5 py-4 text-sm text-ink-muted leading-relaxed">
               {proof.founderCaption}
             </figcaption>
           </figure>
 
-          <figure className="group rounded-2xl border border-white/10 bg-ink-800/50 overflow-hidden transition-all duration-300 hover:border-cyan/30">
+          <figure className="group rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-all duration-300 hover:border-hairline-strong">
             <div className="relative aspect-[3/4] sm:aspect-[4/3] overflow-hidden">
               <Image
                 src={ROLE_IMAGES[1]}
@@ -58,13 +58,13 @@ export default function Proof() {
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
-            <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">
+            <figcaption className="px-5 py-4 text-sm text-ink-muted leading-relaxed">
               {proof.boothCaption}
             </figcaption>
           </figure>
         </div>
 
-        <div className="mt-5 lg:mt-6 grid lg:grid-cols-[1.1fr_1fr] rounded-2xl border border-white/10 bg-ink-800/50 overflow-hidden transition-colors duration-300 hover:border-cyan/30">
+        <div className="mt-5 lg:mt-6 grid lg:grid-cols-[1.1fr_1fr] rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-colors duration-300 hover:border-hairline-strong">
           <div className="relative aspect-video lg:aspect-auto lg:min-h-[280px]">
             <Image
               src="/images/games/zombies-warzone/screenshot1.webp"
@@ -75,11 +75,11 @@ export default function Proof() {
             />
           </div>
           <div className="flex flex-col justify-center p-6 sm:p-8">
-            <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-cyan/10 border border-cyan/20 text-cyan text-xs font-semibold mb-4">
+            <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-semibold mb-4">
               <Trophy className="w-3.5 h-3.5" />
               {proof.robloxBadge}
             </div>
-            <h3 className="font-display text-xl sm:text-2xl font-bold text-white leading-snug mb-3">
+            <h3 className="font-display text-xl sm:text-2xl font-semibold text-ink leading-snug mb-3">
               {proof.robloxTitle}
             </h3>
             <a
@@ -102,7 +102,7 @@ export default function Proof() {
             {GAME_IMAGES.map((src, i) => (
               <div
                 key={src}
-                className="group rounded-xl border border-white/10 bg-ink-800/40 overflow-hidden transition-all duration-300 hover:border-cyan/30 hover:-translate-y-0.5"
+                className="group rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-all duration-300 hover:border-hairline-strong hover:-translate-y-0.5"
               >
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <Image
@@ -113,7 +113,7 @@ export default function Proof() {
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
                   />
                 </div>
-                <p className="px-4 py-3 text-xs sm:text-sm text-slate-300 font-medium leading-snug">
+                <p className="px-4 py-3 text-xs sm:text-sm text-ink-muted font-medium leading-snug">
                   {proof.games[i]}
                 </p>
               </div>

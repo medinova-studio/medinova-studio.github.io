@@ -39,6 +39,11 @@ const config: Config = {
           600: "#2a3a52",
         },
         success: "#27a644",
+        whatsapp: {
+          DEFAULT: "#25d366",
+          hover: "#1fb458",
+          deep: "#128c7e",
+        },
         cyan: {
           DEFAULT: "#22d3ee",
           glow: "#0891b2",

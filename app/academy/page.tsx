@@ -7,7 +7,7 @@ import Community from "@/components/academy/Community";
 import Certification from "@/components/academy/Certification";
 import Pricing from "@/components/academy/Pricing";
 import FAQ from "@/components/academy/FAQ";
-import FloatingWhatsApp from "@/components/academy/FloatingWhatsApp";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 export const metadata: Metadata = {
   title: "Medinova Academy — تعلّم ألعاب الفيديو والبرمجة بالمغرب",
@@ -26,7 +26,7 @@ export default function AcademyPage() {
       <Certification />
       <Pricing />
       <FAQ />
-      <FloatingWhatsApp />
+      <WhatsAppWidget />
     </div>
   );
 }

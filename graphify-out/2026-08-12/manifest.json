@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1786538064.417482,
-    "ast_hash": "6c67c8ea1ce8fb00183e3e320ed1f1c4",
+    "mtime": 1786533283.0488164,
+    "ast_hash": "808602f98b14aaa4dcdccb45a1099eee",
     "semantic_hash": ""
   },
   "components/Portfolio.tsx": {
@@ -330,7 +330,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1786538097.0096488,
+    "mtime": 1786536290.87953,
     "ast_hash": "1a102bed084570204dee853aa30ed313",
     "semantic_hash": ""
   },

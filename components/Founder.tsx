@@ -20,7 +20,7 @@ export default function Founder() {
                 alt={t.founder.subtitle}
                 width={800}
                 height={1001}
-                className="w-full h-auto rounded-2xl border border-hairline bg-surface-1 object-cover"
+                className="w-full h-auto rounded-xl border border-hairline bg-surface-1 object-cover"
               />
             </div>
           </Reveal>
