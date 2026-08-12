@@ -33,7 +33,10 @@ export default function Proof() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-6">
-          <figure className="group rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-all duration-300 hover:border-hairline-strong">
+          <figure
+            id="instructor"
+            className="group scroll-mt-28 rounded-lg border border-hairline bg-surface-1 overflow-hidden transition-all duration-300 hover:border-hairline-strong"
+          >
             <div className="relative aspect-[3/4] sm:aspect-[4/3] overflow-hidden">
               <Image
                 src={ROLE_IMAGES[0]}
@@ -94,7 +97,7 @@ export default function Proof() {
           </div>
         </div>
 
-        <div className="mt-14 sm:mt-16">
+        <div id="student-projects" className="mt-14 sm:mt-16 scroll-mt-28">
           <p className="text-center text-xs font-medium uppercase tracking-[0.15em] text-ink-tertiary mb-6">
             {proof.showcaseLabel}
           </p>

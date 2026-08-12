@@ -32,8 +32,8 @@ export default function Hero() {
 
           <Reveal delay={0.3}>
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button href="#portfolio">{t.hero.ctaPlay}</Button>
-              <Button href="#contact" variant="secondary">
+              <Button href="/#portfolio">{t.hero.ctaPlay}</Button>
+              <Button href="/#contact" variant="secondary">
                 {t.hero.ctaHire}
               </Button>
             </div>

@@ -24,11 +24,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const solutions = [
-    { href: "#services", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
-    { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
-    { href: "/academy", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
-  ];
+  const portfolioHref = isAcademy ? "#student-projects" : "/#portfolio";
+  const aboutHref = isAcademy ? "#instructor" : "/#about";
+
+  const solutions = isAcademy
+    ? [
+        { href: "#tracks", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+        { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
+        { href: "#pricing", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
+      ]
+    : [
+        { href: "/#services", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+        { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
+        { href: "/academy", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
+      ];
 
   return (
     <nav
@@ -75,7 +84,7 @@ export default function Navbar() {
                     {solutions.map((s) => {
                       const Icon = s.icon;
                       return (
-                        <a
+                        <Link
                           key={s.href}
                           href={s.href}
                           onClick={() => setSolutionsOpen(false)}
@@ -92,7 +101,7 @@ export default function Navbar() {
                               {s.desc}
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       );
                     })}
                   </div>
@@ -100,19 +109,19 @@ export default function Navbar() {
               )}
             </div>
 
-            <a
-              href="#portfolio"
+            <Link
+              href={portfolioHref}
               className="text-sm text-ink-subtle hover:text-ink transition-colors duration-200 whitespace-nowrap"
             >
               {t.nav.portfolio}
-            </a>
+            </Link>
 
-            <a
-              href="#about"
+            <Link
+              href={aboutHref}
               className="text-sm text-ink-subtle hover:text-ink transition-colors duration-200 whitespace-nowrap"
             >
               {t.nav.about}
-            </a>
+            </Link>
 
             {/* Language switcher */}
             <div className="relative">
@@ -156,7 +165,7 @@ export default function Navbar() {
                 {t.nav.discoverTracks}
               </Button>
             ) : (
-              <Button href="#contact" size="sm" className="whitespace-nowrap">
+              <Button href="/#contact" size="sm" className="whitespace-nowrap">
                 {t.nav.hireStudio}
               </Button>
             )}
@@ -205,7 +214,7 @@ export default function Navbar() {
             {solutions.map((s) => {
               const Icon = s.icon;
               return (
-                <a
+                <Link
                   key={s.href}
                   href={s.href}
                   onClick={() => setOpen(false)}
@@ -215,23 +224,23 @@ export default function Navbar() {
                     <Icon className="w-4 h-4" strokeWidth={1.75} />
                   </span>
                   {s.label}
-                </a>
+                </Link>
               );
             })}
-            <a
-              href="#portfolio"
+            <Link
+              href={portfolioHref}
               onClick={() => setOpen(false)}
               className="text-sm text-ink-subtle hover:text-ink hover:bg-surface-2 rounded-md px-3 py-2.5 transition-all"
             >
               {t.nav.portfolio}
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href={aboutHref}
               onClick={() => setOpen(false)}
               className="text-sm text-ink-subtle hover:text-ink hover:bg-surface-2 rounded-md px-3 py-2.5 transition-all"
             >
               {t.nav.about}
-            </a>
+            </Link>
             {isAcademy ? (
               <Button
                 href="#tracks"
@@ -242,7 +251,7 @@ export default function Navbar() {
               </Button>
             ) : (
               <Button
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 w-fit"
               >

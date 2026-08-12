@@ -1,4 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
+import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 export const buttonVariants = cva(
@@ -43,13 +44,13 @@ export default function Button({
   const classes = cn(buttonVariants({ variant, size }), className);
   if (href) {
     return (
-      <a
+      <Link
         href={href}
         className={classes}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
-      </a>
+      </Link>
     );
   }
   return (

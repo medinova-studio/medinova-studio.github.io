@@ -35,18 +35,18 @@
     "semantic_hash": ""
   },
   "components/Footer.tsx": {
-    "mtime": 1786472758.6378553,
-    "ast_hash": "938db711aeb45116a9642dbbf5a72e22",
+    "mtime": 1786538408.7857692,
+    "ast_hash": "43ef3933bb30e004da227e005f122eaf",
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
-    "mtime": 1786478349.4210594,
-    "ast_hash": "a88224a18cb9ff0b1bb866e1cd2e499b",
+    "mtime": 1786538426.8530838,
+    "ast_hash": "2335d60062b9994c067f717a402664fd",
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1786538064.417482,
-    "ast_hash": "6c67c8ea1ce8fb00183e3e320ed1f1c4",
+    "mtime": 1786539895.3005667,
+    "ast_hash": "05e613e2fcbb3dd0dff6acf3eaf623f9",
     "semantic_hash": ""
   },
   "components/Portfolio.tsx": {
@@ -100,8 +100,8 @@
     "semantic_hash": "4a4e976aa10e5854d62962ddb1288a24"
   },
   "components/GameServices.tsx": {
-    "mtime": 1786478385.2371833,
-    "ast_hash": "94d086ac84b36716489f7b3f2814a859",
+    "mtime": 1786538433.7896543,
+    "ast_hash": "77a8eaa01f0b18f60781904de543d0fe",
     "semantic_hash": ""
   },
   "components/TechStackBar.tsx": {
@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "components/academy/Proof.tsx": {
-    "mtime": 1786536230.0357037,
-    "ast_hash": "73926bfc51704963781407b7923fd7e9",
+    "mtime": 1786539931.2496595,
+    "ast_hash": "a4d3f9cab34f3dd1da4c44656bb33540",
     "semantic_hash": ""
   },
   "components/academy/Tracks.tsx": {
@@ -330,13 +330,13 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1786538097.0096488,
+    "mtime": 1786539963.5883844,
     "ast_hash": "1a102bed084570204dee853aa30ed313",
     "semantic_hash": ""
   },
   "components/ui/Button.tsx": {
-    "mtime": 1786478335.205381,
-    "ast_hash": "bab1152b9a982acd728f18697d11fd24",
+    "mtime": 1786538379.206745,
+    "ast_hash": "11b387528a98f872c4cf432d82733bfb",
     "semantic_hash": ""
   },
   "components/ui/Reveal.tsx": {

@@ -55,7 +55,7 @@ export default function GameServices() {
                 </p>
 
                 <Button
-                  href="#contact"
+                  href="/#contact"
                   variant="secondary"
                   className="mt-6 w-full"
                 >

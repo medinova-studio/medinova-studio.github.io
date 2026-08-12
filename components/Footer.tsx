@@ -18,12 +18,12 @@ export default function Footer() {
           </Link>
 
           <div className="flex items-center gap-4 text-xs text-ink-tertiary flex-wrap justify-center">
-            <a href="#portfolio" className="hover:text-ink transition-colors">{t.nav.portfolio}</a>
-            <a href="#services" className="hover:text-ink transition-colors">{t.nav.services}</a>
-            <a href="#contact" className="hover:text-ink transition-colors">{t.nav.contact}</a>
+            <Link href="/#portfolio" className="hover:text-ink transition-colors">{t.nav.portfolio}</Link>
+            <Link href="/#services" className="hover:text-ink transition-colors">{t.nav.services}</Link>
+            <Link href="/#contact" className="hover:text-ink transition-colors">{t.nav.contact}</Link>
             <span className="opacity-40">·</span>
-            <a href="/academy" className="hover:text-ink transition-colors">Academy</a>
-            <a href="/agency" className="hover:text-ink transition-colors">Agency</a>
+            <Link href="/academy" className="hover:text-ink transition-colors">Academy</Link>
+            <Link href="/agency" className="hover:text-ink transition-colors">Agency</Link>
           </div>
 
           <p className="text-[11px] text-ink-tertiary">
