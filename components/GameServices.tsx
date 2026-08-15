@@ -27,7 +27,7 @@ export default function GameServices() {
         <div className="grid lg:grid-cols-3 gap-4 lg:gap-5 items-stretch">
           {t.services.cards.map((card, i) => (
             <Reveal key={i} delay={i * 0.1} className="flex">
-              <div className="group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-6 lg:p-8 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2 w-full">
+              <article className="group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-6 lg:p-8 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2 w-full">
                 <h3 className="font-display text-lg font-medium text-ink mb-4 leading-snug">
                   {card.title}
                 </h3>
@@ -61,7 +61,7 @@ export default function GameServices() {
                 >
                   {t.services.cta}
                 </Button>
-              </div>
+              </article>
             </Reveal>
           ))}
         </div>

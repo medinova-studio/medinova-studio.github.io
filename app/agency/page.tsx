@@ -8,11 +8,14 @@ import Terms from "@/components/growth/Terms";
 import FAQ from "@/components/growth/FAQ";
 import CTABanner from "@/components/growth/CTABanner";
 import ContactSection from "@/components/growth/ContactSection";
+import JsonLd from "@/components/JsonLd";
+import { serviceSchema, faqSchema } from "@/lib/jsonLd";
+import { translations } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Growth Agency — 360° Digital Growth & AI Automation",
   description:
-    "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — Medinova Growth engineers your customer acquisition from click to conversion.",
+    "High-converting web platforms, AI acquisition systems, and digital growth engines.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -20,13 +23,16 @@ export const metadata: Metadata = {
     siteName: "Medinova Studio",
     title: "Medinova Growth — 360° Digital Growth & AI Automation Agency",
     description:
-      "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — engineered acquisition from click to conversion.",
+      "High-converting web platforms, AI acquisition systems, and digital growth engines.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Medinova Growth — 360° Digital Growth & AI Automation Agency",
     description:
-      "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — engineered acquisition from click to conversion.",
+      "High-converting web platforms, AI acquisition systems, and digital growth engines.",
+  },
+  alternates: {
+    canonical: "/agency",
   },
 };
 
@@ -42,6 +48,8 @@ export default function AgencyPage() {
       <FAQ />
       <CTABanner />
       <ContactSection />
+      <JsonLd data={serviceSchema()} />
+      <JsonLd data={faqSchema(translations.en.agency.faq.items)} />
     </main>
   );
 }

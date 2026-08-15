@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import Hero from "@/components/Hero";
+import HomeHero from "@/components/HomeHero";
 import TechStackBar from "@/components/TechStackBar";
-import Founder from "@/components/Founder";
+import Hub from "@/components/Hub";
 import Portfolio from "@/components/Portfolio";
-import GameServices from "@/components/GameServices";
 import Contact from "@/components/Contact";
+import JsonLd from "@/components/JsonLd";
+import { faqSchema } from "@/lib/jsonLd";
+import { translations } from "@/lib/i18n";
 
 const title =
-  "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub";
+  "Medinova Studio — Game Development Studio & Coding Academy in Kenitra, Morocco";
 const description =
-  "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production — from Kenitra, Morocco.";
+  "Medinova Studio is an active game development studio & coding academy in Kenitra, Morocco — custom Unity C# game development, AR/VR & WebGL experiences, AI growth systems, and certified coding tracks in Scratch, Python, and Unity C#.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -25,17 +27,20 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HomeHero />
       <TechStackBar />
-      <Founder />
+      <Hub />
       <Portfolio />
-      <GameServices />
       <Contact />
+      <JsonLd data={faqSchema(translations.en.faq.items)} />
     </main>
   );
 }

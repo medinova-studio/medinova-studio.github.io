@@ -28,7 +28,7 @@ export default function Pillars() {
           {pillars.cards.map((card, i) => {
             const Icon = pillarIcons[i % pillarIcons.length];
             return (
-              <div
+              <article
                 key={card.title}
                 className="group relative overflow-hidden rounded-xl border border-hairline bg-surface-1/70 p-6 sm:p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-2"
               >
@@ -42,7 +42,7 @@ export default function Pillars() {
                 <p className="mt-2 text-sm text-ink-subtle leading-relaxed">
                   {card.desc}
                 </p>
-              </div>
+              </article>
             );
           })}
         </div>

@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   const portfolioHref = isAcademy ? "#student-projects" : "/#portfolio";
-  const aboutHref = isAcademy ? "#instructor" : "/#about";
+  const aboutHref = "/who-we-are";
 
   const solutions = isAcademy
     ? [
@@ -34,7 +34,7 @@ export default function Navbar() {
         { href: "#pricing", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
       ]
     : [
-        { href: "/#services", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+        { href: "/game-development", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
         { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
         { href: "/academy", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
       ];

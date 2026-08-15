@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import SiteChrome from "@/components/layout/SiteChrome";
+import JsonLd from "@/components/JsonLd";
+import { graphSchema } from "@/lib/jsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,9 +19,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 const siteTitle =
-  "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub";
+  "Medinova Studio — Game Development Studio & Coding Academy in Kenitra, Morocco";
 const siteDescription =
-  "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production.";
+  "Medinova Studio is an active game development studio & coding academy in Kenitra, Morocco — custom Unity C# game development, AR/VR & WebGL experiences, AI growth systems, and certified coding tracks in Scratch, Python, and Unity C#.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://medinovastudio.com"),
@@ -50,6 +52,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export const viewport = {
@@ -69,6 +74,7 @@ export default function RootLayout({
         <LanguageProvider>
           <SiteChrome>{children}</SiteChrome>
         </LanguageProvider>
+        <JsonLd data={graphSchema()} />
       </body>
     </html>
   );

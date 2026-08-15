@@ -29,7 +29,7 @@ export default function Pricing() {
             const badgeLabel = plan.badge;
 
             return (
-              <div
+              <article
                 key={plan.name}
                 className={
                   isFeatured
@@ -115,7 +115,7 @@ export default function Pricing() {
                     {plan.cta}
                   </Button>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>

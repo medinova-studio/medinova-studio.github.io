@@ -29,7 +29,7 @@ export default function Tracks() {
             const Icon = trackIcons[i % trackIcons.length];
             const featured = i === tracks.levels.length - 1;
             return (
-              <div
+              <article
                 key={track.level}
                 className={`group relative flex flex-col rounded-lg border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
                   featured
@@ -113,7 +113,7 @@ export default function Tracks() {
                     </span>
                   </div>
                 )}
-              </div>
+              </article>
             );
           })}
         </div>

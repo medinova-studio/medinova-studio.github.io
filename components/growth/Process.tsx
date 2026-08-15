@@ -23,7 +23,7 @@ export default function Process() {
           <div className="pointer-events-none absolute top-7 left-[12%] right-[12%] hidden lg:block h-px bg-gradient-to-r from-transparent via-hairline-strong to-transparent" />
 
           {process.steps.map((step, i) => (
-            <div
+            <article
               key={step.title}
               className="group relative flex flex-col rounded-xl border border-hairline bg-surface-1/70 p-6 sm:p-7 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-2"
             >
@@ -44,7 +44,7 @@ export default function Process() {
               <p className="mt-2 text-sm text-ink-subtle leading-relaxed">
                 {step.desc}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

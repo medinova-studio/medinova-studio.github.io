@@ -4,8 +4,9 @@ import { useLang } from "@/lib/LanguageContext";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
 
-export default function Hero() {
+export default function HomeHero() {
   const { t } = useLang();
+  const { hero } = t.hub;
 
   return (
     <section className="relative overflow-hidden">
@@ -14,27 +15,27 @@ export default function Hero() {
           <Reveal>
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-              {t.hero.badge}
+              {hero.badge}
             </span>
           </Reveal>
 
           <Reveal delay={0.1}>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-ink leading-[1.08] tracking-tight">
-              {t.hero.headline}
+              {hero.headline}
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-6 text-base sm:text-lg text-ink-subtle leading-relaxed max-w-2xl">
-              {t.hero.subheadline}
+              {hero.subheadline}
             </p>
           </Reveal>
 
           <Reveal delay={0.3}>
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button href="#portfolio">{t.hero.ctaPlay}</Button>
-              <Button href="#contact" variant="secondary">
-                {t.hero.ctaHire}
+              <Button href="/#solutions">{hero.ctaPrimary}</Button>
+              <Button href="/#contact" variant="secondary">
+                {hero.ctaSecondary}
               </Button>
             </div>
           </Reveal>

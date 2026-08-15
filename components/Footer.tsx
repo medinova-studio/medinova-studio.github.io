@@ -12,10 +12,10 @@ const AGENCY_HREFS = [
 ] as const;
 
 const GAME_DEV_HREFS = [
-  "/#portfolio",
-  "/#services",
-  "/#services",
-  "/#portfolio",
+  "/game-development#portfolio",
+  "/game-development#services",
+  "/game-development#services",
+  "/game-development#portfolio",
 ] as const;
 
 const ACADEMY_HREFS = [

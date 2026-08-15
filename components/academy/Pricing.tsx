@@ -108,7 +108,7 @@ export default function Pricing() {
                 );
 
             return (
-              <div
+              <article
                 key={level}
                 className={`relative flex flex-col rounded-lg border p-6 lg:p-8 transition-all duration-300 hover:-translate-y-1 ${
                   featured
@@ -180,7 +180,7 @@ export default function Pricing() {
                     {pricing.guarantee}
                   </p>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>

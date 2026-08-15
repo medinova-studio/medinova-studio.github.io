@@ -1,16 +1,16 @@
 # Graph Report - medinova-studio.github.io  (2026-08-15)
 
 ## Corpus Check
-- 63 files · ~583,020 words
+- 74 files · ~586,192 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 360 nodes · 542 edges · 25 communities (17 shown, 8 thin omitted)
+- 417 nodes · 672 edges · 26 communities (18 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `593c1309`
+- Built from commit: `c021f2c9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,8 +20,8 @@
 - dependencies
 - DESIGN.md
 - devDependencies
-- ContactSection.tsx
-- scripts
+- jsonLd.ts
+- useLang
 - vercel.json
 - graphify.js
 - next.config.mjs
@@ -33,51 +33,52 @@
 - opencode.json
 - AGENTS.md
 - privacy/page.tsx
-- LanguageContext.tsx
-- useLang
+- i18n.ts
+- agency/page.tsx
 - agency-contact/route.ts
 - terms/page.tsx
+- og.tsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `useLang()` - 53 edges
-2. `compilerOptions` - 16 edges
-3. `Button()` - 14 edges
-4. `academyWhatsAppUrl()` - 9 edges
-5. `Reveal()` - 8 edges
-6. `Components` - 8 edges
-7. `Medinova Studio` - 8 edges
-8. `Components` - 8 edges
-9. `cn()` - 7 edges
-10. `scripts` - 7 edges
+1. `useLang()` - 59 edges
+2. `Button()` - 16 edges
+3. `compilerOptions` - 16 edges
+4. `Reveal()` - 11 edges
+5. `academyWhatsAppUrl()` - 9 edges
+6. `ogFonts()` - 8 edges
+7. `Components` - 8 edges
+8. `Medinova Studio` - 8 edges
+9. `Components` - 8 edges
+10. `cn()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Contact()` --calls--> `useLang()`  [EXTRACTED]
-  components/Contact.tsx → lib/LanguageContext.tsx
-- `Footer()` --calls--> `useLang()`  [EXTRACTED]
-  components/Footer.tsx → lib/LanguageContext.tsx
-- `Founder()` --calls--> `useLang()`  [EXTRACTED]
-  components/Founder.tsx → lib/LanguageContext.tsx
-- `GameServices()` --calls--> `useLang()`  [EXTRACTED]
-  components/GameServices.tsx → lib/LanguageContext.tsx
-- `Hero()` --calls--> `useLang()`  [EXTRACTED]
-  components/Hero.tsx → lib/LanguageContext.tsx
+- `Home()` --calls--> `faqSchema()`  [EXTRACTED]
+  app/page.tsx → lib/jsonLd.ts
+- `OpengraphImage()` --calls--> `ogFonts()`  [EXTRACTED]
+  app/academy/opengraph-image.tsx → lib/og.tsx
+- `AcademyPage()` --calls--> `faqSchema()`  [EXTRACTED]
+  app/academy/page.tsx → lib/jsonLd.ts
+- `OpengraphImage()` --calls--> `ogFonts()`  [EXTRACTED]
+  app/agency/opengraph-image.tsx → lib/og.tsx
+- `RootLayout()` --calls--> `graphSchema()`  [EXTRACTED]
+  app/layout.tsx → lib/jsonLd.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (25 total, 8 thin omitted)
+## Communities (26 total, 8 thin omitted)
 
 ### Community 0 - "Button.tsx"
-Cohesion: 0.14
-Nodes (16): buildSchema(), Contact(), FormValues, Founder(), GameServices(), Hero(), Game, Portfolio() (+8 more)
+Cohesion: 0.09
+Nodes (30): GameDevelopmentPage(), metadata, Home(), metadata, metadata, About(), buildSchema(), Contact() (+22 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.07
 Nodes (27): dom, dom.iterable, esnext, .next/dev/types/**/*.ts, next-env.d.ts, .next/types/**/*.ts, node_modules, **/*.ts (+19 more)
 
 ### Community 2 - "dependencies"
-Cohesion: 0.07
-Nodes (27): class-variance-authority, clsx, @hookform/resolvers, lucide-react, motion, @netlify/plugin-nextjs, next, dependencies (+19 more)
+Cohesion: 0.05
+Nodes (37): class-variance-authority, clsx, @hookform/resolvers, lucide-react, motion, @netlify/plugin-nextjs, next, dependencies (+29 more)
 
 ### Community 3 - "DESIGN.md"
 Cohesion: 0.04
@@ -87,13 +88,13 @@ Nodes (46): Border Radius Scale, Brand & Accent, Breakpoints, Buttons, Cards & C
 Cohesion: 0.07
 Nodes (27): autoprefixer, eslint, eslint-config-next, next-sitemap, devDependencies, autoprefixer, eslint, eslint-config-next (+19 more)
 
-### Community 5 - "ContactSection.tsx"
-Cohesion: 0.19
-Nodes (14): FAQ(), Hero(), trustIcons, formatPrice(), LEVEL_NAMES, Pricing(), buildSchema(), ContactSection() (+6 more)
+### Community 5 - "jsonLd.ts"
+Cohesion: 0.14
+Nodes (18): inter, metadata, RootLayout(), spaceGrotesk, viewport, JsonLd(), JsonLdProps, ACADEMY_ID (+10 more)
 
-### Community 6 - "scripts"
-Cohesion: 0.18
-Nodes (10): name, private, scripts, build, dev, lint, postbuild, start (+2 more)
+### Community 6 - "useLang"
+Cohesion: 0.11
+Nodes (29): metadata, AnnouncementBar(), Certification(), highlightIcons, Community(), featureIcons, FAQ(), Hero() (+21 more)
 
 ### Community 7 - "vercel.json"
 Cohesion: 0.40
@@ -111,37 +112,41 @@ Nodes (4): Capabilities & Workflows, Instructions, Purpose, Web Deployment Diagn
 Cohesion: 0.40
 Nodes (4): lsp, plugin, $schema, .opencode/plugins/graphify.js
 
-### Community 18 - "LanguageContext.tsx"
-Cohesion: 0.11
-Nodes (23): inter, metadata, spaceGrotesk, viewport, ACADEMY_HREFS, AGENCY_HREFS, Footer(), GAME_DEV_HREFS (+15 more)
+### Community 18 - "i18n.ts"
+Cohesion: 0.14
+Nodes (15): ACADEMY_HREFS, AGENCY_HREFS, Footer(), GAME_DEV_HREFS, LEGAL_HREFS, SOCIAL_LINKS, LandingHeader(), sectionLinks (+7 more)
 
-### Community 19 - "useLang"
-Cohesion: 0.10
-Nodes (24): metadata, metadata, AnnouncementBar(), Certification(), highlightIcons, Community(), featureIcons, GAME_IMAGES (+16 more)
+### Community 19 - "agency/page.tsx"
+Cohesion: 0.17
+Nodes (13): AcademyPage(), AgencyPage(), metadata, CTABanner(), FAQ(), pillarIcons, Pillars(), Pricing() (+5 more)
 
 ### Community 20 - "agency-contact/route.ts"
 Cohesion: 0.21
 Nodes (12): getClientIp(), ipHits, isRateLimited(), POST(), row(), runtime, getClientIp(), ipHits (+4 more)
 
+### Community 25 - "og.tsx"
+Cohesion: 0.12
+Nodes (21): alt, contentType, OpengraphImage(), runtime, size, alt, contentType, OpengraphImage() (+13 more)
+
 ## Knowledge Gaps
-- **180 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `lsp`, `metadata`, `metadata` (+175 more)
+- **203 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `lsp`, `runtime`, `alt` (+198 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `useLang()` connect `useLang` to `Button.tsx`, `LanguageContext.tsx`, `ContactSection.tsx`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `dependencies` to `scripts`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `scripts`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `useLang()` connect `useLang` to `Button.tsx`, `i18n.ts`, `agency/page.tsx`?**
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `devDependencies` to `dependencies`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **What connects `$schema`, `.opencode/plugins/graphify.js`, `lsp` to the rest of the system?**
-  _180 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _203 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Button.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.13763440860215054 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08549019607843138 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
+- **Should `DESIGN.md` be split into smaller, more focused modules?**
+  _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._

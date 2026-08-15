@@ -8,13 +8,16 @@ import Certification from "@/components/academy/Certification";
 import Pricing from "@/components/academy/Pricing";
 import FAQ from "@/components/academy/FAQ";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import JsonLd from "@/components/JsonLd";
+import { faqSchema } from "@/lib/jsonLd";
+import { translations } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Medinova Academy — تعلّم ألعاب الفيديو والبرمجة بالمغرب",
+    absolute: "Medinova Academy — Learn to Code, Create Video Games & Master AI",
   },
   description:
-    "كورسات أونلاين فـ البرمجة، Unity 3D، والـ Vibe Coding للأطفال والكبار.",
+    "Learn Scratch, Python, and Unity C# directly from active game engineering professionals.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -22,13 +25,16 @@ export const metadata: Metadata = {
     siteName: "Medinova Studio",
     title: "Medinova Academy — Learn to Code, Create Video Games & Master AI",
     description:
-      "Live online tracks for kids, teens & adults — Scratch to Python, Unity C# and Vibe Coding.",
+      "Learn Scratch, Python, and Unity C# directly from active game engineering professionals.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Medinova Academy — Learn to Code, Create Video Games & Master AI",
     description:
-      "Live online tracks for kids, teens & adults — Scratch to Python, Unity C# and Vibe Coding.",
+      "Learn Scratch, Python, and Unity C# directly from active game engineering professionals.",
+  },
+  alternates: {
+    canonical: "/academy",
   },
 };
 
@@ -44,6 +50,7 @@ export default function AcademyPage() {
       <Pricing />
       <FAQ />
       <WhatsAppWidget />
+      <JsonLd data={faqSchema(translations.en.academy.faq.items)} />
     </div>
   );
 }

@@ -184,6 +184,24 @@ export type Translation = {
       description: string;
     }[];
   };
+  hub: {
+    hero: {
+      badge: string;
+      headline: string;
+      subheadline: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+    };
+    section: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      cta: string;
+    };
+    gameDev: { title: string; desc: string };
+    agency: { title: string; desc: string };
+    academy: { title: string; desc: string };
+  };
   agency: {
     nav: {
       links: {
@@ -351,7 +369,7 @@ export const translations: Record<Lang, Translation> = {
   en: {
     nav: {
       solutions: "Our Solutions",
-      about: "About Founder",
+      about: "Who We Are",
       portfolio: "Games & Portfolio",
       services: "Game Dev Services",
       contact: "Contact",
@@ -511,6 +529,36 @@ export const translations: Record<Lang, Translation> = {
         { title: "B2B Growth Agency", description: "Full-funnel marketing, content and AI-powered growth packages." },
         { title: "Medinova Academy", description: "Coding tracks that take learners from visual logic to professional development." },
       ],
+    },
+    hub: {
+      hero: {
+        badge: "Active Game Development Studio & Certified Coding Academy in Kenitra, Morocco",
+        headline:
+          "We Build Games, Grow Brands & Teach the Next Generation of Developers.",
+        subheadline:
+          "Medinova Studio is an independent Moroccan studio engineering Unity C# games, AR/VR & WebGL experiences, B2B growth systems, and certified coding tracks in Scratch, Python, and Unity C# — from Kenitra, Morocco.",
+        ctaPrimary: "Explore Our Work",
+        ctaSecondary: "Hire Our Studio",
+      },
+      section: {
+        badge: "One Studio, Three Engines",
+        title: "What We Do",
+        subtitle:
+          "Three specialised divisions under one roof — game development, B2B growth, and coding education.",
+        cta: "Explore",
+      },
+      gameDev: {
+        title: "Game Development Studio",
+        desc: "Custom Unity C# games, WebGL portals, AR/VR & spatial simulations shipped across mobile, PC and web.",
+      },
+      agency: {
+        title: "B2B Growth Agency",
+        desc: "High-converting web platforms, AI acquisition systems, and digital growth engines.",
+      },
+      academy: {
+        title: "Medinova Academy",
+        desc: "Certified coding tracks in Scratch, Python, and Unity C# with verifiable QR-code diplomas.",
+      },
     },
     pillars: {
       games: "Game Development",
@@ -1084,7 +1132,7 @@ export const translations: Record<Lang, Translation> = {
   fr: {
     nav: {
       solutions: "Nos Solutions",
-      about: "À Propos du Fondateur",
+      about: "Qui Sommes-Nous",
       portfolio: "Jeux & Portfolio",
       services: "Services Game Dev",
       contact: "Contact",
@@ -1244,6 +1292,36 @@ export const translations: Record<Lang, Translation> = {
         { title: "Agence de Croissance B2B", description: "Marketing plein entonnoir, contenu et croissance propulsée par l'IA." },
         { title: "Académie Medinova", description: "Des parcours de code qui mènent de la logique visuelle au développement professionnel." },
       ],
+    },
+    hub: {
+      hero: {
+        badge: "Studio actif de développement de jeux & académie de code certifiée à Kénitra, Maroc",
+        headline:
+          "Nous créons des jeux, faisons grandir les marques & formons la prochaine génération de développeurs.",
+        subheadline:
+          "Medinova Studio est un studio marocain indépendant qui conçoit des jeux Unity C#, des expériences AR/VR & WebGL, des systèmes de croissance B2B et des parcours de code certifiés en Scratch, Python et Unity C# — depuis Kénitra, Maroc.",
+        ctaPrimary: "Découvrir Notre Travail",
+        ctaSecondary: "Engager le Studio",
+      },
+      section: {
+        badge: "Un Studio, Trois Moteurs",
+        title: "Ce Que Nous Faisons",
+        subtitle:
+          "Trois divisions spécialisées sous un même toit — développement de jeux, croissance B2B et éducation au code.",
+        cta: "Explorer",
+      },
+      gameDev: {
+        title: "Studio de Développement de Jeux",
+        desc: "Jeux Unity C# sur mesure, portails WebGL, AR/VR et simulations spatiales pour mobile, PC et web.",
+      },
+      agency: {
+        title: "Agence de Croissance B2B",
+        desc: "Plateformes web à forte conversion, systèmes d'acquisition IA et moteurs de croissance numérique.",
+      },
+      academy: {
+        title: "Académie Medinova",
+        desc: "Parcours de code certifiés en Scratch, Python et Unity C# avec diplômes vérifiables par QR code.",
+      },
     },
     pillars: {
       games: "Développement de Jeux",
@@ -1819,7 +1897,7 @@ export const translations: Record<Lang, Translation> = {
   ar: {
     nav: {
       solutions: "خدماتنا",
-      about: "عن المؤسس",
+      about: "من نحن",
       portfolio: "الألعاب والمعرض",
       services: "خدمات تطوير الألعاب",
       contact: "تواصل",
@@ -1977,6 +2055,34 @@ export const translations: Record<Lang, Translation> = {
         { title: "وكالة نمو B2B", description: "تسويق شامل ومحتوى ونمو مدعوم بالذكاء الاصطناعي." },
         { title: "أكاديمية مدينوفا", description: "مسارات برمجة تنقل المتعلمين من المنطق المرئي إلى التطوير الاحترافي." },
       ],
+    },
+    hub: {
+      hero: {
+        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة معتمدة في القنيطرة، المغرب",
+        headline: "نصنع الألعاب، ننمّي العلامات التجارية ونعلّم الجيل القادم من المطورين.",
+        subheadline:
+          "استوديو مدينوفا استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ومسارات برمجة معتمدة في سكراتش وبايثون وUnity C# — من القنيطرة، المغرب.",
+        ctaPrimary: "استكشف أعمالنا",
+        ctaSecondary: "تواصل مع الاستوديو",
+      },
+      section: {
+        badge: "استوديو واحد، ثلاثة محركات",
+        title: "ماذا نقدم",
+        subtitle: "ثلاثة أقسام متخصصة تحت سقف واحد — تطوير الألعاب، نمو B2B، وتعليم البرمجة.",
+        cta: "استكشف",
+      },
+      gameDev: {
+        title: "استوديو تطوير الألعاب",
+        desc: "ألعاب Unity C# مخصصة وبوابات WebGL وتجارب AR/VR ومحاكاة مكانية للجوال والحاسوب والويب.",
+      },
+      agency: {
+        title: "وكالة نمو B2B",
+        desc: "منصات ويب عالية التحويل وأنظمة اكتساب بالذكاء الاصطناعي ومحركات نمو رقمية.",
+      },
+      academy: {
+        title: "أكاديمية مدينوفا",
+        desc: "مسارات برمجة معتمدة في سكراتش وبايثون وUnity C# مع شهادات قابلة للتحقق عبر رمز QR.",
+      },
     },
     pillars: {
       games: "تطوير الألعاب",

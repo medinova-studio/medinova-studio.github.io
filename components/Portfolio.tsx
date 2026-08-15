@@ -110,7 +110,7 @@ function GameCard({ game }: { game: Game }) {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   return (
-    <div className="group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-5 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2">
+    <article className="group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-5 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2">
       <div className="flex flex-wrap gap-1.5 mb-4">
         {game.badges.map((b) => (
           <span
@@ -196,7 +196,7 @@ function GameCard({ game }: { game: Game }) {
           setIndex={setLightboxIndex}
         />
       )}
-    </div>
+    </article>
   );
 }
 
