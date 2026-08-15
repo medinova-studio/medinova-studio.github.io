@@ -22,7 +22,7 @@ const siteDescription =
   "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://medinova-studio.github.io"),
+  metadataBase: new URL("https://medinovastudio.com"),
   title: {
     default: siteTitle,
     template: "%s | Medinova Studio",
@@ -41,23 +41,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://medinovastudio.com",
     siteName: "Medinova Studio",
     title: siteTitle,
     description: siteDescription,
-    images: [
-      {
-        url: "/images/Founder.jpg",
-        width: 800,
-        height: 1001,
-        alt: "Mounir — Founder & Principal Systems Engineer at Medinova Studio",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteTitle,
-    description: siteDescription,
-    images: ["/images/Founder.jpg"],
   },
   robots: { index: true, follow: true },
 };

@@ -4,6 +4,26 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms governing the use of Medinova Studio's website, game development services, growth agency, and Medinova Academy.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://medinovastudio.com/terms",
+    siteName: "Medinova Studio",
+    title: "Terms of Service — Medinova Studio",
+    description:
+      "Terms governing the use of Medinova Studio's website, game development services, growth agency, and Medinova Academy.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 const sections = [

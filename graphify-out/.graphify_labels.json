@@ -4,7 +4,7 @@
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "ContactSection.tsx",
+  "5": "academy/page.tsx",
   "6": "scripts",
   "7": "vercel.json",
   "8": "graphify.js",
@@ -23,5 +23,6 @@
   "21": "eslint.config.mjs",
   "22": "next-sitemap.config.js",
   "23": "terms/page.tsx",
-  "24": "vitest.config.ts"
+  "24": "vitest.config.ts",
+  "25": "og.tsx"
 }

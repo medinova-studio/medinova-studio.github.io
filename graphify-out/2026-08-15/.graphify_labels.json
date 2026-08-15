@@ -4,8 +4,8 @@
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "academy/page.tsx",
-  "6": "package.json",
+  "5": "ContactSection.tsx",
+  "6": "scripts",
   "7": "vercel.json",
   "8": "graphify.js",
   "9": "next.config.mjs",
@@ -16,10 +16,12 @@
   "14": "SKILL.md",
   "15": "opencode.json",
   "16": "AGENTS.md",
-  "17": "README.md",
+  "17": "privacy/page.tsx",
   "18": "LanguageContext.tsx",
   "19": "useLang",
-  "20": "route.ts",
+  "20": "agency-contact/route.ts",
   "21": "eslint.config.mjs",
-  "22": "next-sitemap.config.js"
+  "22": "next-sitemap.config.js",
+  "23": "terms/page.tsx",
+  "24": "vitest.config.ts"
 }

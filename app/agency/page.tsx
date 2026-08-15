@@ -15,17 +15,18 @@ export const metadata: Metadata = {
     "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — Medinova Growth engineers your customer acquisition from click to conversion.",
   openGraph: {
     type: "website",
+    locale: "en_US",
+    url: "https://medinovastudio.com/agency",
+    siteName: "Medinova Studio",
     title: "Medinova Growth — 360° Digital Growth & AI Automation Agency",
     description:
       "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — engineered acquisition from click to conversion.",
-    images: [
-      {
-        url: "/images/Founder.jpg",
-        width: 800,
-        height: 1001,
-        alt: "Medinova Studio",
-      },
-    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medinova Growth — 360° Digital Growth & AI Automation Agency",
+    description:
+      "Custom high-converting websites, cinematic media production, performance paid ads, and AI WhatsApp automation — engineered acquisition from click to conversion.",
   },
 };
 

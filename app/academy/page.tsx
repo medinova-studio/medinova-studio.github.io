@@ -15,6 +15,21 @@ export const metadata: Metadata = {
   },
   description:
     "كورسات أونلاين فـ البرمجة، Unity 3D، والـ Vibe Coding للأطفال والكبار.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://medinovastudio.com/academy",
+    siteName: "Medinova Studio",
+    title: "Medinova Academy — Learn to Code, Create Video Games & Master AI",
+    description:
+      "Live online tracks for kids, teens & adults — Scratch to Python, Unity C# and Vibe Coding.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medinova Academy — Learn to Code, Create Video Games & Master AI",
+    description:
+      "Live online tracks for kids, teens & adults — Scratch to Python, Unity C# and Vibe Coding.",
+  },
 };
 
 export default function AcademyPage() {
