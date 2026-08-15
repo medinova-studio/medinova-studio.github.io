@@ -17,12 +17,11 @@
   "15": "opencode.json",
   "16": "AGENTS.md",
   "17": "privacy/page.tsx",
-  "18": "i18n.ts",
-  "19": "agency/page.tsx",
+  "19": "LanguageContext.tsx",
   "20": "agency-contact/route.ts",
   "21": "eslint.config.mjs",
   "22": "next-sitemap.config.js",
   "23": "terms/page.tsx",
   "24": "vitest.config.ts",
-  "25": "og.tsx"
+  "25": "ogFonts"
 }

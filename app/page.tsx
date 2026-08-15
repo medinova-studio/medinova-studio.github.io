@@ -4,9 +4,6 @@ import TechStackBar from "@/components/TechStackBar";
 import Hub from "@/components/Hub";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
-import JsonLd from "@/components/JsonLd";
-import { faqSchema } from "@/lib/jsonLd";
-import { translations } from "@/lib/i18n";
 
 const title =
   "Medinova Studio — Game Development Studio & Coding Academy in Kenitra, Morocco";
@@ -40,7 +37,6 @@ export default function Home() {
       <Hub />
       <Portfolio />
       <Contact />
-      <JsonLd data={faqSchema(translations.en.faq.items)} />
     </main>
   );
 }

@@ -12,19 +12,8 @@ export const metadata: Metadata = {
     url: "https://medinovastudio.com/who-we-are",
     siteName: "Medinova Studio",
     title: "Who We Are — Medinova Studio",
-    description:
+description:
       "Medinova Studio is an active game development studio and certified coding academy in Kenitra, Morocco — Unity C# games, AR/VR & WebGL experiences, B2B growth systems, and certified coding tracks in Scratch, Python, and Unity C#.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Medinova Studio — Game Development Studio & Coding Academy in Kenitra, Morocco",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
   },
   alternates: {
     canonical: "/who-we-are",

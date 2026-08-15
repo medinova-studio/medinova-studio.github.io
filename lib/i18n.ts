@@ -306,12 +306,6 @@ export type Translation = {
     getStarted: string;
     requestQuote: string;
   };
-  faq: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    items: { q: string; a: string }[];
-  };
   contact: {
     badge: string;
     title: string;
@@ -575,34 +569,6 @@ export const translations: Record<Lang, Translation> = {
       ht: "DHS HT",
       getStarted: "Get Started",
       requestQuote: "Request Quote",
-    },
-    faq: {
-      badge: "Parent FAQ",
-      title: "Answers for Parents",
-      subtitle:
-        "Everything you need to know before enrolling your child in Medinova Academy.",
-      items: [
-        {
-          q: "My child has never coded before. Can they still join?",
-          a: "Absolutely. Our Junior Explorers track starts from zero — no prior experience needed. We begin with visual block-based programming (Scratch) that teaches logic and problem-solving through fun, game-like exercises. Every student learns at their own pace with instructor guidance.",
-        },
-        {
-          q: "How is this different from computer classes at school?",
-          a: "School computer classes cover general digital literacy. Medinova Academy is a project-based coding studio where students build real games, apps, and software. They learn industry tools (Python, Unity, React) and develop a professional portfolio — not just theory.",
-        },
-        {
-          q: "What equipment does my child need?",
-          a: "Students need a laptop (Windows or Mac) with a stable internet connection. For game development tracks, we'll guide you on any free software installations. No expensive hardware is required — we design our curriculum to run on standard family laptops.",
-        },
-        {
-          q: "Are classes taught in multiple languages?",
-          a: "Yes. Our instructors teach in French, English, and Arabic. We match each student group with an instructor who speaks their preferred language. All course materials are available in all three languages.",
-        },
-        {
-          q: "Do students receive certificates or build a portfolio?",
-          a: "Yes. Every student completes hands-on projects (games, apps, interactive media) that form a personal portfolio they can showcase. Upon completing a track, students receive a Medinova Academy certificate of completion recognized by our industry partners.",
-        },
-      ],
     },
     contact: {
       badge: "Get in Touch",
@@ -1112,6 +1078,21 @@ export const translations: Record<Lang, Translation> = {
             a: "If the 1st session isn't right for you, we refund 100% without justification. It's our commitment to the quality of our classes.",
             category: "pricing",
           },
+          {
+            q: "My child has never coded before. Can they still join?",
+            a: "Absolutely. Our Junior Explorers track starts from zero — no prior experience needed. We begin with visual block-based programming (Scratch) that teaches logic and problem-solving through fun, game-like exercises. Every student learns at their own pace with instructor guidance.",
+            category: "beginners",
+          },
+          {
+            q: "How is this different from computer classes at school?",
+            a: "School computer classes cover general digital literacy. Medinova Academy is a project-based coding studio where students build real games, apps, and software. They learn industry tools (Python, Unity, React) and develop a professional portfolio — not just theory.",
+            category: "beginners",
+          },
+          {
+            q: "Do students receive certificates or build a portfolio?",
+            a: "Yes. Every student completes hands-on projects (games, apps, interactive media) that form a personal portfolio they can showcase. Upon completing a track, students receive a Medinova Academy certificate of completion recognized by our industry partners.",
+            category: "certification",
+          },
         ],
       },
       whatsapp: {
@@ -1338,34 +1319,6 @@ export const translations: Record<Lang, Translation> = {
       ht: "DHS HT",
       getStarted: "Commencer",
       requestQuote: "Demander un Devis",
-    },
-    faq: {
-      badge: "FAQ Parents",
-      title: "Réponses pour les Parents",
-      subtitle:
-        "Tout ce qu'il faut savoir avant d'inscrire votre enfant à l'Académie Medinova.",
-      items: [
-        {
-          q: "Mon enfant n'a jamais codé. Peut-il quand même s'inscrire ?",
-          a: "Absolument. Le parcours Junior Explorers part de zéro — aucune expérience préalable requise. Nous commençons par la programmation visuelle par blocs (Scratch) qui enseigne la logique et la résolution de problèmes à travers des exercices ludiques. Chaque élève apprend à son rythme avec l'accompagnement d'un instructeur.",
-        },
-        {
-          q: "Comment cela diffère-t-il des cours d'informatique à l'école ?",
-          a: "Les cours d'informatique à l'école couvrent la culture numérique générale. L'Académie Medinova est un studio de codage basé sur des projets où les élèves construisent de vrais jeux, applications et logiciels. Ils apprennent les outils de l'industrie (Python, Unity, React) et développent un portfolio professionnel — pas seulement de la théorie.",
-        },
-        {
-          q: "De quel équipement mon enfant a-t-il besoin ?",
-          a: "Les élèves ont besoin d'un ordinateur portable (Windows ou Mac) avec une connexion internet stable. Pour les parcours de développement de jeux, nous vous guidons sur les logiciels gratuits à installer. Aucun matériel coûteux n'est requis — nos programmes sont conçus pour fonctionner sur des ordinateurs familiaux standards.",
-        },
-        {
-          q: "Les cours sont-ils dispensés en plusieurs langues ?",
-          a: "Oui. Nos instructeurs enseignent en français, anglais et arabe. Nous associons chaque groupe d'élèves à un instructeur parlant leur langue préférée. Tout le matériel de cours est disponible dans les trois langues.",
-        },
-        {
-          q: "Les élèves reçoivent-ils des certificats ou construisent-ils un portfolio ?",
-          a: "Oui. Chaque élève complète des projets pratiques (jeux, applications, médias interactifs) qui forment un portfolio personnel qu'il peut présenter. À la fin d'un parcours, les élèves reçoivent un certificat de completion de l'Académie Medinova reconnu par nos partenaires industriels.",
-        },
-      ],
     },
     contact: {
       badge: "Contactez-nous",
@@ -1877,6 +1830,21 @@ export const translations: Record<Lang, Translation> = {
             a: "Si la 1ère séance ne vous convient pas, nous procédons à un remboursement à 100% sans justification. C'est notre engagement envers la qualité de nos cours.",
             category: "tarifs",
           },
+          {
+            q: "Mon enfant n'a jamais codé. Peut-il quand même s'inscrire ?",
+            a: "Absolument. Le parcours Junior Explorers part de zéro — aucune expérience préalable requise. Nous commençons par la programmation visuelle par blocs (Scratch) qui enseigne la logique et la résolution de problèmes à travers des exercices ludiques. Chaque élève apprend à son rythme avec l'accompagnement d'un instructeur.",
+            category: "débutants",
+          },
+          {
+            q: "Comment cela diffère-t-il des cours d'informatique à l'école ?",
+            a: "Les cours d'informatique à l'école couvrent la culture numérique générale. L'Académie Medinova est un studio de codage basé sur des projets où les élèves construisent de vrais jeux, applications et logiciels. Ils apprennent les outils de l'industrie (Python, Unity, React) et développent un portfolio professionnel — pas seulement de la théorie.",
+            category: "débutants",
+          },
+          {
+            q: "Les élèves reçoivent-ils des certificats ou construisent-ils un portfolio ?",
+            a: "Oui. Chaque élève complète des projets pratiques (jeux, applications, médias interactifs) qui forment un portfolio personnel qu'il peut présenter. À la fin d'un parcours, les élèves reçoivent un certificat de completion de l'Académie Medinova reconnu par nos partenaires industriels.",
+            category: "certification",
+          },
         ],
       },
       whatsapp: {
@@ -2099,34 +2067,6 @@ export const translations: Record<Lang, Translation> = {
       ht: "درهم (HT)",
       getStarted: "ابدأ الآن",
       requestQuote: "طلب عرض سعر",
-    },
-    faq: {
-      badge: "أسئلة الآباء",
-      title: "إجابات للآباء",
-      subtitle:
-        "كل ما تحتاج معرفته قبل تسجيل طفلك في أكاديمية مدينوفا.",
-      items: [
-        {
-          q: "طفلي لم يسبق له البرمجة. هل يمكنه الانضمام؟",
-          a: "بالتأكيد. مسار المستكشفين الصغار يبدأ من الصفر — لا حاجة لأي خبرة سابقة. نبدأ بالبرمجة المرئية بالكتل (Scratch) التي تعلم المنطق وحل المشكلات عبر تمارين ممتعة. كل طالب يتعلم بوتيرته الخاصة مع إشراف المدرب.",
-        },
-        {
-          q: "كيف يختلف هذا عن حصص المعلوماتية في المدرسة؟",
-          a: "حصص المدرسة تغطي الثقافة الرقمية العامة. أكاديمية مدينوفا استوديو برمجة قائم على المشاريع حيث يبني الطلاب ألعاباً وتطبيقات وبرمجيات حقيقية. يتعلمون أدوات الصناعة (Python، Unity، React) ويطورون معرض أعمال احترافي — وليس مجرد نظريات.",
-        },
-        {
-          q: "ما المعدات التي يحتاجها طفلي؟",
-          a: "يحتاج الطلاب إلى حاسوب محمول (Windows أو Mac) مع اتصال إنترنت مستقر. لمسارات تطوير الألعاب، نرشدك لتثبيت البرامج المجانية. لا حاجة لأي معدات باهظة — صممنا مناهجنا لتعمل على حواسيب عائلية عادية.",
-        },
-        {
-          q: "هل تُدرّس الحصص بلغات متعددة؟",
-          a: "نعم. مدرسونا يدرّسون بالفرنسية والإنجليزية والعربية. نطابق كل مجموعة طلاب مع مدرس يتحدث لغتهم المفضلة. جميع المواد الدراسية متاحة باللغات الثلاث.",
-        },
-        {
-          q: "هل يتلقى الطلاب شهادات أو يبنون معرض أعمال؟",
-          a: "نعم. كل طالب يكمل مشاريع عملية (ألعاب، تطبيقات، وسائط تفاعلية) تشكل معرض أعمال شخصي يمكنه عرضه. عند إكمال المسار، يتلقى الطلاب شهادة إتمام من أكاديمية مدينوفا معترف بها من شركائنا في الصناعة.",
-        },
-      ],
     },
     contact: {
       badge: "تواصل معنا",
@@ -2635,6 +2575,21 @@ export const translations: Record<Lang, Translation> = {
             q: "كيف تعمل آلية ضمان استرجاع الأموال؟",
             a: "إذا حضرت الحصة الأولى ولم تناسبك، يتم استرجاع كامل المبلغ مباشرة ودون تعقيد.",
             category: "pricing",
+          },
+          {
+            q: "طفلي لم يسبق له البرمجة. هل يمكنه الانضمام؟",
+            a: "بالتأكيد. مسار المستكشفين الصغار يبدأ من الصفر — لا حاجة لأي خبرة سابقة. نبدأ بالبرمجة المرئية بالكتل (Scratch) التي تعلم المنطق وحل المشكلات عبر تمارين ممتعة. كل طالب يتعلم بوتيرته الخاصة مع إشراف المدرب.",
+            category: "beginners",
+          },
+          {
+            q: "كيف يختلف هذا عن حصص المعلوماتية في المدرسة؟",
+            a: "حصص المدرسة تغطي الثقافة الرقمية العامة. أكاديمية مدينوفا استوديو برمجة قائم على المشاريع حيث يبني الطلاب ألعاباً وتطبيقات وبرمجيات حقيقية. يتعلمون أدوات الصناعة (Python، Unity، React) ويطورون معرض أعمال احترافي — وليس مجرد نظريات.",
+            category: "beginners",
+          },
+          {
+            q: "هل يتلقى الطلاب شهادات أو يبنون معرض أعمال؟",
+            a: "نعم. كل طالب يكمل مشاريع عملية (ألعاب، تطبيقات، وسائط تفاعلية) تشكل معرض أعمال شخصي يمكنه عرضه. عند إكمال المسار، يتلقى الطلاب شهادة إتمام من أكاديمية مدينوفا معترف بها من شركائنا في الصناعة.",
+            category: "certification",
           },
         ],
       },

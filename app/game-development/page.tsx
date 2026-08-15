@@ -20,17 +20,6 @@ export const metadata: Metadata = {
     title: "Game Development Agency — Medinova Studio",
     description:
       "Custom Unity C# game development, AR/VR & WebGL experiences, and cross-platform game production — an active game development studio based in Kenitra, Morocco.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Medinova Studio — Game Development Agency in Kenitra, Morocco",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
   },
   alternates: {
     canonical: "/game-development",

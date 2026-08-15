@@ -96,25 +96,10 @@ function webSiteNode() {
   };
 }
 
-function videoGameNode() {
-  return {
-    "@type": "VideoGame",
-    name: "Blocks Evolution",
-    url: SITE_URL,
-    description:
-      "Signature block-based puzzle video game developed by Medinova Studio.",
-    author: { "@id": ORG_ID },
-    applicationCategory: "Game",
-    genre: "Puzzle",
-    gamePlatform: ["WebGL", "PC", "Mobile"],
-    inLanguage: "en",
-  };
-}
-
 export function graphSchema() {
   return {
     "@context": "https://schema.org",
-    "@graph": [orgNode(), academyNode(), webSiteNode(), videoGameNode()],
+    "@graph": [orgNode(), academyNode(), webSiteNode()],
   };
 }
 
