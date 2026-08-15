@@ -1,17 +1,71 @@
 import type { Metadata } from "next";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteChrome from "@/components/layout/SiteChrome";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space",
+  display: "swap",
+});
+
+const siteTitle =
+  "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub";
+const siteDescription =
+  "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production.";
 
 export const metadata: Metadata = {
-  title: "Medinova Studio — Moroccan Independent Game Studio & Interactive Tech Hub",
-  description:
-    "Custom Unity C# gameplay mechanics, immersive AR/VR simulations, high-performance WebGL browser portals, and cross-platform game production.",
+  metadataBase: new URL("https://medinova-studio.github.io"),
+  title: {
+    default: siteTitle,
+    template: "%s | Medinova Studio",
+  },
+  description: siteDescription,
+  keywords: [
+    "game studio Morocco",
+    "Unity development",
+    "C# gameplay mechanics",
+    "mobile games",
+    "WebGL",
+    "AR/VR simulations",
+    "game development agency",
+    "Medinova Studio",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Medinova Studio",
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/images/Founder.jpg",
+        width: 800,
+        height: 1001,
+        alt: "Mounir — Founder & Principal Systems Engineer at Medinova Studio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/Founder.jpg"],
+  },
+  robots: { index: true, follow: true },
 };
+
 export const viewport = {
   themeColor: "#010102",
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -19,23 +73,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden">
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
+      >
         <LanguageProvider>
-          <Navbar />
-          <div className="pt-14">{children}</div>
-          <Footer />
+          <SiteChrome>{children}</SiteChrome>
         </LanguageProvider>
       </body>
     </html>

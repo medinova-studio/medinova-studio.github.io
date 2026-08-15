@@ -30,6 +30,7 @@ const buildSchema = (errors: {
     budget: z.string().min(1, errors.requiredBudget),
     readiness: z.string().min(1, errors.requiredReadiness),
     message: z.string().min(1, errors.requiredMessage),
+    website: z.string().optional(),
   });
 
 export default function Contact() {
@@ -54,6 +55,7 @@ export default function Contact() {
       budget: "",
       readiness: "",
       message: "",
+      website: "",
     },
   });
 
@@ -150,6 +152,15 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <div className="rounded-xl border border-hairline bg-surface-1 p-6 sm:p-8">
               <form onSubmit={onSubmit} noValidate className="space-y-4">
+                {/* Honeypot — hidden from real users, catches bots */}
+                <input
+                  type="text"
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="hidden"
+                  {...register("website")}
+                />
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-xs font-medium text-ink-tertiary mb-1.5">

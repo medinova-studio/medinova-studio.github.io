@@ -5,7 +5,7 @@ import { escapeHtml } from "@/lib/escapeHtml";
 export const runtime = "nodejs";
 
 const TO_EMAIL = "contact@medinovastudio.com";
-const FROM_EMAIL = "Medinova Studio <onboarding@resend.dev>";
+const FROM_EMAIL = "Medinova Growth <onboarding@resend.dev>";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -38,6 +38,12 @@ function isRateLimited(ip: string): boolean {
   return entry.count > RATE_LIMIT_MAX;
 }
 
+const row = (label: string, value: string) =>
+  `<tr>
+    <td style="padding:8px 0;color:#71717a;font-size:13px;width:140px;"><strong>${label}</strong></td>
+    <td style="padding:8px 0;color:#18181b;font-size:14px;">${value}</td>
+  </tr>`;
+
 export async function POST(request: Request) {
   if (!process.env.RESEND_API_KEY) {
     return NextResponse.json(
@@ -48,11 +54,9 @@ export async function POST(request: Request) {
 
   let body: {
     name?: unknown;
+    company?: unknown;
     email?: unknown;
-    projectType?: unknown;
-    budget?: unknown;
-    readiness?: unknown;
-    message?: unknown;
+    scope?: unknown;
     website?: unknown;
   };
   try {
@@ -75,17 +79,13 @@ export async function POST(request: Request) {
   }
 
   const name = typeof body.name === "string" ? body.name.trim() : "";
+  const company = typeof body.company === "string" ? body.company.trim() : "";
   const email = typeof body.email === "string" ? body.email.trim() : "";
-  const projectType =
-    typeof body.projectType === "string" ? body.projectType.trim() : "";
-  const budget = typeof body.budget === "string" ? body.budget.trim() : "";
-  const readiness =
-    typeof body.readiness === "string" ? body.readiness.trim() : "";
-  const message = typeof body.message === "string" ? body.message.trim() : "";
+  const scope = typeof body.scope === "string" ? body.scope.trim() : "";
 
-  if (!name || !email || !message) {
+  if (!name || !email || !scope) {
     return NextResponse.json(
-      { error: "Missing required fields: name, email, message." },
+      { error: "Missing required fields: name, email, scope." },
       { status: 400 }
     );
   }
@@ -96,10 +96,8 @@ export async function POST(request: Request) {
 
   if (
     name.length > MAX_FIELD_LENGTH ||
-    email.length > MAX_FIELD_LENGTH ||
-    projectType.length > MAX_FIELD_LENGTH ||
-    budget.length > MAX_FIELD_LENGTH ||
-    readiness.length > MAX_FIELD_LENGTH
+    company.length > MAX_FIELD_LENGTH ||
+    email.length > MAX_FIELD_LENGTH
   ) {
     return NextResponse.json(
       { error: "One or more fields exceed the maximum allowed length." },
@@ -107,7 +105,7 @@ export async function POST(request: Request) {
     );
   }
 
-  if (message.length > MAX_MESSAGE_LENGTH) {
+  if (scope.length > MAX_MESSAGE_LENGTH) {
     return NextResponse.json(
       { error: "Message exceeds the maximum allowed length." },
       { status: 400 }
@@ -124,36 +122,22 @@ export async function POST(request: Request) {
           <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e4e4e7;">
             <tr>
               <td style="background-color:#5e6ad2;padding:20px 28px;">
-                <h1 style="margin:0;color:#ffffff;font-size:20px;font-family:Arial,Helvetica,sans-serif;">&#127918; New Game Dev Inquiry</h1>
+                <h1 style="margin:0;color:#ffffff;font-size:20px;font-family:Arial,Helvetica,sans-serif;">&#128200; New Growth Partnership Inquiry</h1>
               </td>
             </tr>
             <tr>
               <td style="padding:28px;">
-                <p style="margin:0 0 20px;color:#52525b;font-size:14px;line-height:1.6;">A new project brief was submitted from the Medinova Studio website.</p>
+                <p style="margin:0 0 20px;color:#52525b;font-size:14px;line-height:1.6;">A B2B growth inquiry was submitted from the Medinova Growth website.</p>
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
-                  <tr>
-                    <td style="padding:8px 0;color:#71717a;font-size:13px;width:120px;"><strong>Name</strong></td>
-                    <td style="padding:8px 0;color:#18181b;font-size:14px;">${escapeHtml(name)}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#71717a;font-size:13px;width:120px;"><strong>Email</strong></td>
-                    <td style="padding:8px 0;color:#18181b;font-size:14px;"><a href="mailto:${escapeHtml(email)}" style="color:#5e6ad2;">${escapeHtml(email)}</a></td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#71717a;font-size:13px;width:120px;"><strong>Project Type</strong></td>
-                    <td style="padding:8px 0;color:#18181b;font-size:14px;">${escapeHtml(projectType || "—")}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#71717a;font-size:13px;width:120px;"><strong>Budget Range</strong></td>
-                    <td style="padding:8px 0;color:#18181b;font-size:14px;">${escapeHtml(budget || "—")}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#71717a;font-size:13px;width:120px;"><strong>Readiness</strong></td>
-                    <td style="padding:8px 0;color:#18181b;font-size:14px;">${escapeHtml(readiness || "—")}</td>
-                  </tr>
+                  ${row("Name", escapeHtml(name))}
+                  ${row("Company", escapeHtml(company || "—"))}
+                  ${row(
+                    "Email",
+                    `<a href="mailto:${escapeHtml(email)}" style="color:#5e6ad2;">${escapeHtml(email)}</a>`
+                  )}
                 </table>
-                <h2 style="margin:0 0 8px;color:#18181b;font-size:15px;">Message</h2>
-                <p style="margin:0;color:#3f3f46;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(message)}</p>
+                <h2 style="margin:0 0 8px;color:#18181b;font-size:15px;">Project Scope</h2>
+                <p style="margin:0;color:#3f3f46;font-size:14px;line-height:1.7;white-space:pre-wrap;">${escapeHtml(scope)}</p>
               </td>
             </tr>
             <tr>
@@ -175,7 +159,7 @@ export async function POST(request: Request) {
       from: FROM_EMAIL,
       to: [TO_EMAIL],
       replyTo: email,
-      subject: `🎮 New Game Dev Inquiry: ${name}`,
+      subject: `📈 New Growth Partnership Inquiry: ${company || name}`,
       html,
     });
 

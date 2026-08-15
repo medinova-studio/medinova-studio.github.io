@@ -10,7 +10,9 @@ import FAQ from "@/components/academy/FAQ";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 export const metadata: Metadata = {
-  title: "Medinova Academy — تعلّم ألعاب الفيديو والبرمجة بالمغرب",
+  title: {
+    absolute: "Medinova Academy — تعلّم ألعاب الفيديو والبرمجة بالمغرب",
+  },
   description:
     "كورسات أونلاين فـ البرمجة، Unity 3D، والـ Vibe Coding للأطفال والكبار.",
 };

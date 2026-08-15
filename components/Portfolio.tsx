@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useLang } from "@/lib/LanguageContext";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
@@ -73,11 +74,14 @@ function Lightbox({
         </svg>
       </button>
 
-      <img
+      <Image
         src={images[index]}
         alt={`${title} screenshot ${index + 1}`}
+        width={900}
+        height={1200}
+        priority
         onClick={(e) => e.stopPropagation()}
-        className="max-h-[82vh] max-w-[90vw] rounded-lg object-contain shadow-2xl bg-black"
+        className="max-h-[82vh] max-w-[90vw] w-auto h-auto rounded-lg object-contain shadow-2xl bg-black"
       />
 
       <button
@@ -127,10 +131,12 @@ function GameCard({ game }: { game: Game }) {
           className="block w-full h-full"
           aria-label={`View ${game.title} screenshots`}
         >
-          <img
+          <Image
             src={game.gallery[active]}
             alt={`${game.title} screenshot ${active + 1}`}
-            loading="lazy"
+            width={500}
+            height={667}
+            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 280px"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
           />
         </button>
@@ -148,7 +154,14 @@ function GameCard({ game }: { game: Game }) {
             }`}
             aria-label={`Show screenshot ${i + 1}`}
           >
-            <img src={src} alt="" loading="lazy" className="w-full h-full object-cover" />
+            <Image
+              src={src}
+              alt=""
+              width={44}
+              height={44}
+              sizes="44px"
+              className="w-full h-full object-cover"
+            />
           </button>
         ))}
         <span className="ml-auto text-[11px] text-ink-tertiary font-medium">

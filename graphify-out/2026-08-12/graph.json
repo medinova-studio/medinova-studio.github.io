@@ -133,7 +133,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_agency_page",
-      "community": 0,
+      "community": 19,
       "community_name": "useLang",
       "norm_label": "agency/page.tsx"
     },
@@ -141,11 +141,11 @@
       "label": "AgencyPage()",
       "file_type": "code",
       "source_file": "app/agency/page.tsx",
-      "source_location": "L7",
+      "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
       "id": "app_agency_page_agencypage",
-      "community": 0,
+      "community": 19,
       "community_name": "useLang",
       "norm_label": "agencypage()"
     },
@@ -248,7 +248,7 @@
       "_origin": "ast",
       "id": "app_page",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "app/page.tsx"
     },
     {
@@ -260,7 +260,7 @@
       "_origin": "ast",
       "id": "app_page_home",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "home()"
     },
     {
@@ -271,7 +271,7 @@
       "_origin": "ast",
       "id": "components_contact",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "contact.tsx"
     },
     {
@@ -284,7 +284,7 @@
       "_origin": "ast",
       "id": "components_contact_formvalues",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "formvalues"
     },
     {
@@ -296,7 +296,7 @@
       "_origin": "ast",
       "id": "components_contact_buildschema",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "buildschema()"
     },
     {
@@ -308,7 +308,7 @@
       "_origin": "ast",
       "id": "components_contact_contact",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "contact()"
     },
     {
@@ -342,7 +342,7 @@
       "_origin": "ast",
       "id": "components_founder",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "founder.tsx"
     },
     {
@@ -354,7 +354,7 @@
       "_origin": "ast",
       "id": "components_founder_founder",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "founder()"
     },
     {
@@ -365,7 +365,7 @@
       "_origin": "ast",
       "id": "components_gameservices",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "gameservices.tsx"
     },
     {
@@ -377,7 +377,7 @@
       "_origin": "ast",
       "id": "components_gameservices_gameservices",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "gameservices()"
     },
     {
@@ -388,7 +388,7 @@
       "_origin": "ast",
       "id": "components_hero",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "components/hero.tsx"
     },
     {
@@ -400,7 +400,7 @@
       "_origin": "ast",
       "id": "components_hero_hero",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "hero()"
     },
     {
@@ -434,7 +434,7 @@
       "_origin": "ast",
       "id": "components_portfolio",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "portfolio.tsx"
     },
     {
@@ -447,7 +447,7 @@
       "_origin": "ast",
       "id": "components_portfolio_game",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "game"
     },
     {
@@ -459,7 +459,7 @@
       "_origin": "ast",
       "id": "components_portfolio_lightbox",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "lightbox()"
     },
     {
@@ -471,7 +471,7 @@
       "_origin": "ast",
       "id": "components_portfolio_gamecard",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "gamecard()"
     },
     {
@@ -483,7 +483,7 @@
       "_origin": "ast",
       "id": "components_portfolio_portfolio",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "portfolio()"
     },
     {
@@ -494,7 +494,7 @@
       "_origin": "ast",
       "id": "components_techstackbar",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "techstackbar.tsx"
     },
     {
@@ -506,7 +506,7 @@
       "_origin": "ast",
       "id": "components_techstackbar_techstackbar",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "techstackbar()"
     },
     {
@@ -647,7 +647,7 @@
       "norm_label": "community()"
     },
     {
-      "label": "FAQ.tsx",
+      "label": "academy/FAQ.tsx",
       "file_type": "code",
       "source_file": "components/academy/FAQ.tsx",
       "source_location": "L1",
@@ -655,7 +655,7 @@
       "id": "components_academy_faq",
       "community": 5,
       "community_name": "academy/page.tsx",
-      "norm_label": "faq.tsx"
+      "norm_label": "academy/faq.tsx"
     },
     {
       "label": "FAQ()",
@@ -704,7 +704,7 @@
       "norm_label": "hero()"
     },
     {
-      "label": "Pricing.tsx",
+      "label": "academy/Pricing.tsx",
       "file_type": "code",
       "source_file": "components/academy/Pricing.tsx",
       "source_location": "L1",
@@ -712,7 +712,7 @@
       "id": "components_academy_pricing",
       "community": 5,
       "community_name": "academy/page.tsx",
-      "norm_label": "pricing.tsx"
+      "norm_label": "academy/pricing.tsx"
     },
     {
       "label": "LEVEL_NAMES",
@@ -829,6 +829,237 @@
       "norm_label": "tracks()"
     },
     {
+      "label": "CTABanner.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_ctabanner",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "ctabanner.tsx"
+    },
+    {
+      "label": "CTABanner()",
+      "file_type": "code",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_ctabanner_ctabanner",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "ctabanner()"
+    },
+    {
+      "label": "Comparison.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_comparison",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "comparison.tsx"
+    },
+    {
+      "label": "Comparison()",
+      "file_type": "code",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_comparison_comparison",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "comparison()"
+    },
+    {
+      "label": "growth/FAQ.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_faq",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "growth/faq.tsx"
+    },
+    {
+      "label": "FAQ()",
+      "file_type": "code",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_faq_faq",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "faq()"
+    },
+    {
+      "label": "growth/Hero.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_hero",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "growth/hero.tsx"
+    },
+    {
+      "label": "clientLogos",
+      "file_type": "code",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_growth_hero_clientlogos",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "clientlogos"
+    },
+    {
+      "label": "LogoMark()",
+      "file_type": "code",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_hero_logomark",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "logomark()"
+    },
+    {
+      "label": "Hero()",
+      "file_type": "code",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_hero_hero",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "hero()"
+    },
+    {
+      "label": "Pillars.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_pillars",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "pillars.tsx"
+    },
+    {
+      "label": "pillarIcons",
+      "file_type": "code",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "components_growth_pillars_pillaricons",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "pillaricons"
+    },
+    {
+      "label": "Pillars()",
+      "file_type": "code",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_pillars_pillars",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "pillars()"
+    },
+    {
+      "label": "growth/Pricing.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_pricing",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "growth/pricing.tsx"
+    },
+    {
+      "label": "Pricing()",
+      "file_type": "code",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_pricing_pricing",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "pricing()"
+    },
+    {
+      "label": "Process.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_process",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "process.tsx"
+    },
+    {
+      "label": "Process()",
+      "file_type": "code",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_process_process",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "process()"
+    },
+    {
+      "label": "SectionHeader.tsx",
+      "file_type": "code",
+      "source_file": "components/growth/SectionHeader.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_growth_sectionheader",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "sectionheader.tsx"
+    },
+    {
+      "label": "SectionHeaderProps",
+      "file_type": "code",
+      "source_file": "components/growth/SectionHeader.tsx",
+      "source_location": "L3",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "components_growth_sectionheader_sectionheaderprops",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "sectionheaderprops"
+    },
+    {
+      "label": "SectionHeader()",
+      "file_type": "code",
+      "source_file": "components/growth/SectionHeader.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "components_growth_sectionheader_sectionheader",
+      "community": 19,
+      "community_name": "useLang",
+      "norm_label": "sectionheader()"
+    },
+    {
       "label": "Button.tsx",
       "file_type": "code",
       "source_file": "components/ui/Button.tsx",
@@ -836,56 +1067,56 @@
       "_origin": "ast",
       "id": "components_ui_button",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "button.tsx"
     },
     {
       "label": "buttonVariants",
       "file_type": "code",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "components_ui_button_buttonvariants",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "buttonvariants"
     },
     {
       "label": "ButtonOwnProps",
       "file_type": "code",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L26",
+      "source_location": "L27",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "components_ui_button_buttonownprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "buttonownprops"
     },
     {
       "label": "ButtonProps",
       "file_type": "code",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L31",
+      "source_location": "L32",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "components_ui_button_buttonprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "buttonprops"
     },
     {
       "label": "Button()",
       "file_type": "code",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L35",
+      "source_location": "L36",
       "_callable": true,
       "_origin": "ast",
       "id": "components_ui_button_button",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "button()"
     },
     {
@@ -896,7 +1127,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "reveal.tsx"
     },
     {
@@ -909,7 +1140,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal_revealprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "revealprops"
     },
     {
@@ -921,7 +1152,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal_reveal",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "reveal()"
     },
     {
@@ -990,7 +1221,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_languagecontext_uselang",
-      "community": 0,
+      "community": 19,
       "community_name": "useLang",
       "norm_label": "uselang()"
     },
@@ -1047,7 +1278,7 @@
       "_origin": "ast",
       "id": "lib_cn",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "cn.ts"
     },
     {
@@ -1059,7 +1290,7 @@
       "_origin": "ast",
       "id": "lib_cn_cn",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "Button.tsx",
       "norm_label": "cn()"
     },
     {
@@ -1149,7 +1380,7 @@
       "label": "translations",
       "file_type": "code",
       "source_file": "lib/i18n.ts",
-      "source_location": "L261",
+      "source_location": "L303",
       "_origin": "ast",
       "id": "lib_i18n_translations",
       "community": 18,
@@ -2626,8 +2857,8 @@
       "source_location": "L409",
       "_origin": "ast",
       "id": "design_components",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "components"
     },
     {
@@ -2637,8 +2868,8 @@
       "source_location": "L411",
       "_origin": "ast",
       "id": "design_buttons",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "buttons"
     },
     {
@@ -2648,8 +2879,8 @@
       "source_location": "L427",
       "_origin": "ast",
       "id": "design_pricing_tabs",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "pricing tabs"
     },
     {
@@ -2659,8 +2890,8 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "design_cards_containers",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "cards & containers"
     },
     {
@@ -2670,8 +2901,8 @@
       "source_location": "L456",
       "_origin": "ast",
       "id": "design_inputs_forms",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "inputs & forms"
     },
     {
@@ -2681,8 +2912,8 @@
       "source_location": "L462",
       "_origin": "ast",
       "id": "design_status_build_page",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "status & build page"
     },
     {
@@ -2692,8 +2923,8 @@
       "source_location": "L470",
       "_origin": "ast",
       "id": "design_navigation",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "navigation"
     },
     {
@@ -2703,8 +2934,8 @@
       "source_location": "L475",
       "_origin": "ast",
       "id": "design_footer",
-      "community": 19,
-      "community_name": "Components",
+      "community": 3,
+      "community_name": "DESIGN.md",
       "norm_label": "footer"
     },
     {
@@ -3077,8 +3308,8 @@
       "source_location": "L363",
       "_origin": "ast",
       "id": "opencode_ai_design_components",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "components"
     },
     {
@@ -3088,8 +3319,8 @@
       "source_location": "L367",
       "_origin": "ast",
       "id": "opencode_ai_design_buttons",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "buttons"
     },
     {
@@ -3099,8 +3330,8 @@
       "source_location": "L386",
       "_origin": "ast",
       "id": "opencode_ai_design_badges_chips",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "badges & chips"
     },
     {
@@ -3110,8 +3341,8 @@
       "source_location": "L396",
       "_origin": "ast",
       "id": "opencode_ai_design_inputs_forms",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "inputs & forms"
     },
     {
@@ -3121,8 +3352,8 @@
       "source_location": "L411",
       "_origin": "ast",
       "id": "opencode_ai_design_cards_containers",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "cards & containers"
     },
     {
@@ -3132,8 +3363,8 @@
       "source_location": "L437",
       "_origin": "ast",
       "id": "opencode_ai_design_navigation",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "navigation"
     },
     {
@@ -3143,8 +3374,8 @@
       "source_location": "L446",
       "_origin": "ast",
       "id": "opencode_ai_design_footer",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "footer"
     },
     {
@@ -3154,8 +3385,8 @@
       "source_location": "L453",
       "_origin": "ast",
       "id": "opencode_ai_design_inline",
-      "community": 23,
-      "community_name": "Components",
+      "community": 13,
+      "community_name": "opencode.ai/DESIGN.md",
       "norm_label": "inline"
     },
     {
@@ -3579,7 +3810,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/agency/page.tsx",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_agency_page",
@@ -3591,11 +3822,131 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/agency/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_comparison_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_ctabanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_ctabanner_ctabanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_faq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_faq_faq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_hero_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_pillars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_agency_page",
+      "target": "components_growth_pillars_pillars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/agency/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_agency_page",
-      "target": "components_ui_button",
+      "target": "components_growth_pricing",
       "confidence_score": 1.0
     },
     {
@@ -3607,7 +3958,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_agency_page",
-      "target": "components_ui_button_button",
+      "target": "components_growth_pricing_pricing",
       "confidence_score": 1.0
     },
     {
@@ -3619,7 +3970,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_agency_page",
-      "target": "lib_languagecontext",
+      "target": "components_growth_process",
       "confidence_score": 1.0
     },
     {
@@ -3631,20 +3982,8 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_agency_page",
-      "target": "lib_languagecontext_uselang",
+      "target": "components_growth_process_process",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/agency/page.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_agency_page_agencypage",
-      "target": "lib_languagecontext_uselang"
     },
     {
       "relation": "contains",
@@ -5543,8 +5882,560 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner",
+      "target": "components_growth_ctabanner_ctabanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner",
+      "target": "components_ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/CTABanner.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_ctabanner_ctabanner",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison",
+      "target": "components_growth_comparison_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison",
+      "target": "components_growth_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/Comparison.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_comparison_comparison",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq",
+      "target": "components_growth_faq_faq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq",
+      "target": "components_growth_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/FAQ.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_faq_faq",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero",
+      "target": "components_growth_hero_clientlogos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero",
+      "target": "components_growth_hero_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero",
+      "target": "components_growth_hero_logomark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/Hero.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_hero_hero",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "components_growth_pillars_pillaricons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "components_growth_pillars_pillars",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "components_growth_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/Pillars.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pillars_pillars",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "components_growth_pricing_pricing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "components_growth_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "components_ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/Pricing.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_pricing_pricing",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process",
+      "target": "components_growth_process_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process",
+      "target": "components_growth_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process",
+      "target": "lib_languagecontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/growth/Process.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_process_process",
+      "target": "lib_languagecontext_uselang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/SectionHeader.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_sectionheader",
+      "target": "components_growth_sectionheader_sectionheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/growth/SectionHeader.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_growth_sectionheader",
+      "target": "components_growth_sectionheader_sectionheaderprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5555,7 +6446,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5566,7 +6457,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5577,7 +6468,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5589,7 +6480,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5601,7 +6492,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button",
@@ -5613,7 +6504,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button_button",
@@ -5626,7 +6517,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/ui/Button.tsx",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_ui_button_button",
@@ -5884,7 +6775,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/i18n.ts",
-      "source_location": "L261",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_i18n",
@@ -7896,5 +8787,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "41e874f5446a41c387b9c62ed02db05643a8c48c"
+  "built_at_commit": "593c1309f8c98801749034512ea04f9d62db172a"
 }

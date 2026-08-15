@@ -72,6 +72,21 @@ body {
   animation: shimmer 3s ease-in-out infinite;
 }
 
+.reveal {
+  animation: revealUp 0.7s ease-out both;
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 24px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

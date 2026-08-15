@@ -185,18 +185,94 @@ export type Translation = {
     }[];
   };
   agency: {
-    badge: string;
-    title: string;
-    subtitle: string;
-    tiers: {
-      name: string;
-      price: string;
-      setup: string;
-      features: string[];
+    nav: {
+      links: {
+        framework: string;
+        solutions: string;
+        packages: string;
+        faq: string;
+      };
       cta: string;
-      recommended?: boolean;
-    }[];
-    getStarted: string;
+    };
+    hero: {
+      badge: string;
+      headline: string;
+      subheadline: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+      trust: string;
+    };
+    pillars: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      cards: { title: string; desc: string }[];
+    };
+    process: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      steps: { phase: string; title: string; window: string; desc: string }[];
+    };
+    pricing: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      setupLabel: string;
+      retainerLabel: string;
+      perMonth: string;
+      mostPopular: string;
+      plans: {
+        name: string;
+        tagline: string;
+        setup: string;
+        retainer: string;
+        badge?: string;
+        featured?: boolean;
+        features: string[];
+        cta: string;
+      }[];
+    };
+    terms: {
+      title: string;
+      items: { label: string; text: string }[];
+    };
+    faq: {
+      badge: string;
+      title: string;
+      items: { q: string; a: string }[];
+    };
+    cta: {
+      headline: string;
+      subheadline: string;
+      button: string;
+    };
+    contact: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      emailLabel: string;
+      whatsappLabel: string;
+      whatsappMessage: string;
+      form: {
+        name: string;
+        namePh: string;
+        company: string;
+        companyPh: string;
+        email: string;
+        emailPh: string;
+        scope: string;
+        scopePh: string;
+        submit: string;
+        submitting: string;
+        sent: string;
+        error: string;
+      };
+    };
+    footer: {
+      tagline: string;
+      rights: string;
+    };
   };
   pillars: {
     games: string;
@@ -253,6 +329,19 @@ export type Translation = {
     };
   };
   footer: {
+    mission: string;
+    location: string;
+    support: string;
+    colAgency: string;
+    colGameDev: string;
+    colAcademy: string;
+    colLegal: string;
+    cta: string;
+    agencyLinks: [string, string, string, string];
+    gameDevLinks: [string, string, string, string];
+    academyLinks: [string, string, string, string];
+    legalLinks: [string, string];
+    taxDisclaimer: string;
     rights: string;
   };
   academy: AcademyTranslation;
@@ -512,59 +601,255 @@ export const translations: Record<Lang, Translation> = {
       },
     },
     footer: {
+      mission:
+        "High-converting digital systems, custom game development, and tech education.",
+      location: "Kenitra, Morocco 🇲🇦",
+      support: "Contact & Support",
+      colAgency: "B2B Growth Agency",
+      colGameDev: "Game Dev & Interactive Tech",
+      colAcademy: "Medinova Academy",
+      colLegal: "Trust, Legal & Compliance",
+      cta: "Book a Strategy Call",
+      agencyLinks: [
+        "High-Converting Web Platforms",
+        "AI & Autonomous Acquisition Systems",
+        "Meta Ads & Performance Marketing",
+        "Diagnostic Frameworks & Retainers",
+      ],
+      gameDevLinks: [
+        "Commercial Titles & WebGL Games",
+        "Custom AR/VR & Spatial Tech",
+        "Serious Games & Educational Simulations",
+        "Web Portal Publishing",
+      ],
+      academyLinks: [
+        "Youth & Adult Coding Tracks",
+        "Scratch, Python & Unity C# Curricula",
+        "Printable Certified Modules & QR Verification",
+        "Student Project Showcase",
+      ],
+      legalLinks: ["Privacy Policy", "Terms of Service"],
+      taxDisclaimer:
+        "Tarifs indiqués Hors Taxes (HT). TVA (20%) applicable selon la réglementation en vigueur.",
       rights: "All rights reserved.",
     },
     agency: {
-      badge: "B2B Growth Agency",
-      title: "Agency Growth Packages",
-      subtitle: "Full-funnel marketing, content production, paid ads, and AI WhatsApp routing — a 360° growth engine for your brand.",
-      tiers: [
-        {
-          name: "Foundation",
-          price: "2,500",
-          setup: "1,500",
-          features: [
-            "Strategy & KPI Blueprint",
-            "Content Calendar (12 posts/mo)",
-            "Meta/Google Ads Management",
-            "Monthly Performance Report",
-            "Dedicated Slack Channel"
-          ],
-          cta: "Get Started",
-          recommended: false
+      nav: {
+        links: {
+          framework: "Growth Framework",
+          solutions: "Core Solutions",
+          packages: "Packages & Offers",
+          faq: "FAQ",
         },
-        {
-          name: "Scale & Convert",
-          price: "5,000",
-          setup: "2,500",
-          features: [
-            "Everything in Foundation",
-            "Content Production (24 posts/mo + 4 Reels)",
-            "Advanced Funnel & Email Automation",
-            "AI WhatsApp Lead Routing",
-            "Weekly Optimization Calls",
-            "Quarterly Strategy Review"
-          ],
-          cta: "Get Started",
-          recommended: true
+        cta: "Book a Strategy Call",
+      },
+      hero: {
+        badge: "360° Digital Growth & AI Automation Engine",
+        headline:
+          "We Build High-Converting Websites & Autonomous Acquisition Systems for Growing Businesses.",
+        subheadline:
+          "From custom responsive web design and cinematic media production to precision paid ads and smart AI WhatsApp routing — we engineer your customer acquisition from click to conversion.",
+        ctaPrimary: "Explore Growth Packages",
+        ctaSecondary: "Book a Free Brand Audit",
+        trust:
+          "Empowering ambitious brands with high-performance digital presence, automated lead pipelines, and AI systems.",
+      },
+      pillars: {
+        badge: "Core Solutions",
+        title: "The 360° Growth Architecture",
+        subtitle:
+          "Four interconnected systems engineered to capture market share and scale your revenue.",
+        cards: [
+          {
+            title: "Custom Web & Digital Assets",
+            desc: "Fast, mobile-first responsive sites optimized for maximum conversion and local SEO (Google Business Profile).",
+          },
+          {
+            title: "High-Impact Media Production",
+            desc: "Professional promo videos, dynamic viral Reels/TikToks with high-retention hooks, and premium brand copy.",
+          },
+          {
+            title: "Performance Paid Media",
+            desc: "Precision Meta, Google, and TikTok ad campaigns engineered for low CAC and direct WhatsApp lead volume.",
+          },
+          {
+            title: "Intelligent AI WhatsApp Automation",
+            desc: "24/7 instant lead qualification, automated objection handling, and seamless CRM synchronization.",
+          },
+        ],
+      },
+      process: {
+        badge: "Our Process",
+        title: "Our Proven Growth Framework",
+        subtitle:
+          "How we move your business from initial diagnosis to market dominance in 14 days.",
+        steps: [
+          {
+            phase: "Phase 1",
+            title: "Business Audit & Bottleneck Diagnosis",
+            window: "Days 1–3",
+            desc: "Deep-dive audit into your current sales funnels, traffic drop-offs, mobile page speeds, and lead response times.",
+          },
+          {
+            phase: "Phase 2",
+            title: "Competitor Benchmarking & Offer Positioning",
+            window: "Days 4–7",
+            desc: "Analyzing competitor ad hooks, scraping market offers, and engineering your unique value proposition.",
+          },
+          {
+            phase: "Phase 3",
+            title: "Setup & Asset Deployment",
+            window: "Days 8–14",
+            desc: "Building/redesigning your web assets, producing initial promo videos, configuring ad pixels, and training your custom AI WhatsApp agent.",
+          },
+          {
+            phase: "Phase 4",
+            title: "Sprint Launch & Continuous Growth Engine",
+            window: "Ongoing",
+            desc: "A/B ad creative testing, weekly AI bot optimization, real-time lead routing, and executive analytics reports.",
+          },
+        ],
+      },
+      pricing: {
+        badge: "Offers & Packages",
+        title: "Transparent Growth Packages",
+        subtitle:
+          "Clear setup deliverables paired with predictable monthly acquisition retainers.",
+        setupLabel: "Setup Fee (One-Time)",
+        retainerLabel: "Monthly Retainer",
+        perMonth: "/ month",
+        mostPopular: "MOST POPULAR",
+        plans: [
+          {
+            name: "Pack ESSENTIEL",
+            tagline:
+              "Complete digital presence, fast showcase website, and automated conversion for your first prospects.",
+            setup: "4,500 DHS HT",
+            retainer: "6,000 DHS HT",
+            features: [
+              "Social Media: 2 Platforms (Facebook & Instagram), 8–10 Posts/mo (Graphics, Carousels, Copy)",
+              "Video Production: 4 Dynamic Reels/TikToks (Vertical format, hooks, animated subtitles, sound design)",
+              "Paid Ads: 1 Active Meta Campaign (Lead Generation or WhatsApp traffic) + Monthly Report",
+              "Website Deliverable: 1 to 3 Pages, 100% Mobile Responsive, Direct WhatsApp CTA, Basic SEO & Google Maps Setup",
+              "AI Automation: Custom Welcome Message, 10-Question FAQ Bot, Prospect Routing",
+            ],
+            cta: "Start with Essential Pack",
+          },
+          {
+            name: "Pack PRO GROWTH",
+            tagline:
+              "The ultimate solution for high-growth businesses looking to dominate their market and automate client acquisition.",
+            setup: "7,500 DHS HT",
+            retainer: "12,000 DHS HT",
+            badge: "MOST POPULAR",
+            featured: true,
+            features: [
+              "Social Media: 3 Platforms (FB, IG + TikTok or LinkedIn), 15 Posts/mo, Active DM & Comment Moderation",
+              "Video Production: 10 High-End Reels/TikToks (Sales scripts, dynamic editing, stylized subtitles)",
+              "Paid Ads: Multi-Campaign Management (Meta Ads + Google Search/Retargeting), Continuous A/B Testing, Pixel & CAPI Setup",
+              "Website Deliverable: Complete 5–7 Page Web Site, Guaranteed 85%+ Speed Score, UX/UI & Keyword SEO Audit",
+              "AI Automation: Smart AI Agent trained on your knowledge base, Automated Qualification (Name, Need, Budget, Phone), Automated Follow-ups",
+            ],
+            cta: "Scale with Pro Growth",
+          },
+          {
+            name: "Pack ENTERPRISE",
+            tagline:
+              "Bespoke 360° marketing infrastructure, cinematic video production, and autonomous AI CRM integration.",
+            setup: "14,000 DHS HT",
+            retainer: "22,000 DHS HT",
+            badge: "CUSTOM 360° INFRASTRUCTURE",
+            features: [
+              "Social Media: Omnichannel (FB, IG, LinkedIn, TikTok, YouTube), Art Direction, Real-time Dashboard",
+              "Video Production: 18–20 High-Retention Viral Reels/Shorts with Scriptwriting & Motion Design",
+              "Paid Ads: Full-Funnel Omnichannel Campaigns (Meta, Google, TikTok, YouTube) + CRO Optimization",
+              "Website Deliverable: Multi-Lingual Design (Arabic, French, English), Micro-interactions, Advanced Technical SEO",
+              "AI Automation & CRM: Custom LLM Autonomous AI Agent, Calendar Sync for Appointments, Full CRM/Webhook Integrations (HubSpot, Zapier, Make, Sheets)",
+            ],
+            cta: "Request Enterprise Consultation",
+          },
+        ],
+      },
+      terms: {
+        title: "Billing & Terms",
+        items: [
+          {
+            label: "Facturation",
+            text: "Prices shown are exclusive of tax (HT). VAT (20%) applies per regulations.",
+          },
+          {
+            label: "Ad Spend",
+            text: "Media buying budgets (Meta, Google, TikTok) are the sole responsibility of the client.",
+          },
+          {
+            label: "Third-Party API Fees",
+            text: "Direct consumption costs (WhatsApp Business API, OpenAI tokens) are settled by the client.",
+          },
+          {
+            label: "Commitment",
+            text: "An initial 3-month commitment is required on all monthly subscriptions.",
+          },
+        ],
+      },
+      faq: {
+        badge: "FAQ",
+        title: "Frequently Asked Questions",
+        items: [
+          {
+            q: "How quickly can we complete the setup phase and launch?",
+            a: "Our setup phase (website build, initial promo video recording/editing, ad account setup, and AI training) takes 7 to 14 days.",
+          },
+          {
+            q: "How does the AI WhatsApp Agent qualify incoming leads?",
+            a: "The AI agent engages traffic instantly 24/7, answers questions based on your business knowledge base, collects key qualification data (budget, timeline, needs), and routes ready-to-buy leads straight to your sales team.",
+          },
+          {
+            q: "Why is an initial 3-month commitment required for monthly retainers?",
+            a: "Marketing algorithms, Meta/Google ad pixel optimization, and organic video momentum require a minimum 90-day window to deliver consistent, compounding ROI.",
+          },
+          {
+            q: "Can we upgrade our package level as our business grows?",
+            a: "Yes, you can upgrade your monthly retainer tier at any time as your content volume and ad spend scale.",
+          },
+        ],
+      },
+      cta: {
+        headline: "Ready to Automate & Scale Your Customer Acquisition?",
+        subheadline:
+          "Book a 20-minute strategy call to audit your digital presence, review competitor gaps, and select your Medinova growth system.",
+        button: "Book Strategy Session Now",
+      },
+      contact: {
+        badge: "Book a Strategy Call",
+        title: "Let's Engineer Your Growth",
+        subtitle:
+          "Tell us about your business and we'll map out a high-converting growth system built around your goals — websites, paid media, and AI automation.",
+        emailLabel: "Email us",
+        whatsappLabel: "Contact us via WhatsApp",
+        whatsappMessage:
+          "Hello Medinova Growth, I'd like to book a strategy call.",
+        form: {
+          name: "Your Name",
+          namePh: "Jane Doe",
+          company: "Company",
+          companyPh: "Acme Inc.",
+          email: "Work Email",
+          emailPh: "jane@company.com",
+          scope: "Project Scope",
+          scopePh:
+            "Briefly describe your goals: website, ads, AI automation...",
+          submit: "Book Strategy Call",
+          submitting: "Sending...",
+          sent: "Thanks! Your inquiry was sent to contact@medinovastudio.com. We'll reply within 24 hours.",
+          error:
+            "Something went wrong. Please try again or email us directly.",
         },
-        {
-          name: "Enterprise",
-          price: "Custom",
-          setup: "Custom",
-          features: [
-            "Everything in Scale & Convert",
-            "Unlimited Content & Creative",
-            "Multi-Channel Attribution Modeling",
-            "Custom AI Agent Development",
-            "Dedicated Growth Team",
-            "SLA & Revenue Share Options"
-          ],
-          cta: "Request Quote",
-          recommended: false
-        }
-      ],
-      getStarted: "Get Started"
+      },
+      footer: {
+        tagline:
+          "Medinova Growth — high-converting websites, AI automation, and digital growth that compounds.",
+        rights: "Medinova Growth. All rights reserved.",
+      },
     },
     academy: {
       announcement:
@@ -1049,59 +1334,255 @@ export const translations: Record<Lang, Translation> = {
       },
     },
     footer: {
+      mission:
+        "Systèmes digitaux à forte conversion, développement de jeux sur mesure et éducation tech.",
+      location: "Kénitra, Maroc 🇲🇦",
+      support: "Contact & Support",
+      colAgency: "Agence de Croissance B2B",
+      colGameDev: "Game Dev & Tech Interactive",
+      colAcademy: "Académie Medinova",
+      colLegal: "Confiance, Légal & Conformité",
+      cta: "Réserver un appel stratégique",
+      agencyLinks: [
+        "Plateformes Web à forte conversion",
+        "Systèmes d'acquisition autonomes par IA",
+        "Méta Ads & Performance Marketing",
+        "Cadres de diagnostic & Retainers",
+      ],
+      gameDevLinks: [
+        "Titres commerciaux & Jeux WebGL",
+        "AR/VR sur mesure & Tech spatiale",
+        "Serious Games & Simulations éducatives",
+        "Publication de portails web",
+      ],
+      academyLinks: [
+        "Parcours de code pour jeunes & adultes",
+        "Curriculums Scratch, Python & Unity C#",
+        "Modules certifiés imprimables & QR",
+        "Vitrine des projets étudiants",
+      ],
+      legalLinks: ["Politique de confidentialité", "Conditions d'utilisation"],
+      taxDisclaimer:
+        "Tarifs indiqués Hors Taxes (HT). TVA (20%) applicable selon la réglementation en vigueur.",
       rights: "Tous droits réservés.",
     },
     agency: {
-      badge: "Croissance Agence",
-      title: "Packs de Croissance Agence",
-      subtitle: "Marketing plein entonnoir, production de contenu, publicités payantes et routage IA WhatsApp — un moteur de croissance 360° pour votre marque.",
-      tiers: [
-        {
-          name: "Foundation",
-          price: "2,500",
-          setup: "1,500",
-          features: [
-            "Stratégie & Tableau de KPI",
-            "Calendrier de Contenu (12 posts/mo)",
-            "Gestion des Publicités Meta/Google",
-            "Rapport de Performance Mensuel",
-            "Canal Slack Dédié"
-          ],
-          cta: "Commencer",
-          recommended: false
+      nav: {
+        links: {
+          framework: "Cadre de Croissance",
+          solutions: "Solutions Clés",
+          packages: "Forfaits & Offres",
+          faq: "FAQ",
         },
-        {
-          name: "Scale & Convert",
-          price: "5,000",
-          setup: "2,500",
-          features: [
-            "Tout ce qui est dans Foundation",
-            "Production de Contenu (24 posts/mo + 4 Reels)",
-            "Funnel Avancé & Automatisation Email",
-            "Routage IA WhatsApp",
-            "Appels d'Optimisation Hebdomadaires",
-            "Revue Stratégique Quartrielle"
-          ],
-          cta: "Commencer",
-          recommended: true
+        cta: "Réserver un appel stratégique",
+      },
+      hero: {
+        badge: "Moteur de Croissance Digitale & Automatisation IA 360°",
+        headline:
+          "Nous concevons des sites web à forte conversion et des systèmes d'acquisition autonomes pour les entreprises en croissance.",
+        subheadline:
+          "Du design web responsive sur mesure et de la production média cinématographique aux publicités payantes de précision et au routage intelligent IA WhatsApp — nous orchestrons votre acquisition client du clic à la conversion.",
+        ctaPrimary: "Explorer les forfaits de croissance",
+        ctaSecondary: "Réserver un audit de marque gratuit",
+        trust:
+          "Nous accompagnons les marques ambitieuses avec une présence digitale haute performance, des pipelines de leads automatisés et des systèmes IA.",
+      },
+      pillars: {
+        badge: "Solutions Clés",
+        title: "L'Architecture de Croissance 360°",
+        subtitle:
+          "Quatre systèmes interconnectés conçus pour capturer les parts de marché et développer votre chiffre d'affaires.",
+        cards: [
+          {
+            title: "Sites Web & Actifs Numériques Sur Mesure",
+            desc: "Des sites rapides, mobile-first et responsives optimisés pour la conversion maximale et le SEO local (Google Business Profile).",
+          },
+          {
+            title: "Production Média à Fort Impact",
+            desc: "Vidéos promo professionnelles, Reels/TikToks viraux dynamiques à accroches à forte rétention, et copy premium.",
+          },
+          {
+            title: "Médias Payants Performants",
+            desc: "Campagnes précises Meta, Google et TikTok conçues pour un CAC faible et un volume de leads WhatsApp direct.",
+          },
+          {
+            title: "Automatisation IA WhatsApp Intelligente",
+            desc: "Qualification instantanée des leads 24/7, traitement automatique des objections, et synchronisation CRM fluide.",
+          },
+        ],
+      },
+      process: {
+        badge: "Notre Process",
+        title: "Notre Cadre de Croissance Eprouvé",
+        subtitle:
+          "Comment nous passons du diagnostic initial à la domination du marché en 14 jours.",
+        steps: [
+          {
+            phase: "Phase 1",
+            title: "Audit Métier & Diagnostic des Goulots",
+            window: "Jours 1–3",
+            desc: "Audit approfondi de vos tunnels de vente, chutes de trafic, vitesses mobiles et temps de réponse des leads.",
+          },
+          {
+            phase: "Phase 2",
+            title: "Benchmark Concurrentiel & Positionnement Offre",
+            window: "Jours 4–7",
+            desc: "Analyse des accroches publicitaires concurrentes, extraction des offres du marché, et ingénierie de votre proposition de valeur unique.",
+          },
+          {
+            phase: "Phase 3",
+            title: "Déploiement & Mise en Place",
+            window: "Jours 8–14",
+            desc: "Construction/refonte de vos actifs web, production des vidéos promo initiales, configuration des pixels et entraînement de votre agent IA WhatsApp sur mesure.",
+          },
+          {
+            phase: "Phase 4",
+            title: "Lancement Sprint & Moteur de Croissance Continu",
+            window: "En continu",
+            desc: "Tests A/B créatifs, optimisation hebdomadaire du bot IA, routage des leads en temps réel, et rapports analytiques exécutifs.",
+          },
+        ],
+      },
+      pricing: {
+        badge: "Offres & Forfaits",
+        title: "Forfaits de Croissance Transparents",
+        subtitle:
+          "Livrables de setup clairs associés à des rétentions mensuelles d'acquisition prévisibles.",
+        setupLabel: "Frais de mise en place (Unique)",
+        retainerLabel: "Rétention Mensuelle",
+        perMonth: "/ mois",
+        mostPopular: "LE PLUS POPULAIRE",
+        plans: [
+          {
+            name: "Pack ESSENTIEL",
+            tagline:
+              "Présence digitale complète, site vitrine rapide, et conversion automatisée pour vos premiers prospects.",
+            setup: "4 500 DHS HT",
+            retainer: "6 000 DHS HT",
+            features: [
+              "Réseaux Sociaux : 2 Plateformes (Facebook & Instagram), 8–10 Posts/mois (Visuels, Carrousels, Copy)",
+              "Production Vidéo : 4 Reels/TikToks Dynamiques (Format vertical, accroches, sous-titres animés, sound design)",
+              "Ads Payants : 1 Campagne Meta Active (Génération de leads ou trafic WhatsApp) + Rapport Mensuel",
+              "Livrable Site Web : 1 à 3 Pages, 100% Responsive Mobile, CTA WhatsApp Direct, SEO de Base & Setup Google Maps",
+              "Automatisation IA : Message de Bienvenue Personnalisé, Bot FAQ 10 Questions, Routage des Prospects",
+            ],
+            cta: "Démarrer avec le Pack Essentiel",
+          },
+          {
+            name: "Pack PRO GROWTH",
+            tagline:
+              "La solution ultime pour les entreprises à forte croissance qui veulent dominer leur marché et automatiser l'acquisition client.",
+            setup: "7 500 DHS HT",
+            retainer: "12 000 DHS HT",
+            badge: "LE PLUS POPULAIRE",
+            featured: true,
+            features: [
+              "Réseaux Sociaux : 3 Plateformes (FB, IG + TikTok ou LinkedIn), 15 Posts/mois, Modération active DM & Commentaires",
+              "Production Vidéo : 10 Reels/TikToks Haut de Gamme (Scripts de vente, montage dynamique, sous-titres stylisés)",
+              "Ads Payants : Gestion Multi-Campagnes (Ads Meta + Search/Retargeting Google), Tests A/B continus, Setup Pixel & CAPI",
+              "Livrable Site Web : Site Web Complet 5–7 Pages, Score de Vitesse 85%+ Garanti, Audit UX/UI & SEO par Mots-clés",
+              "Automatisation IA : Agent IA Intelligent entraîné sur votre base de connaissances, Qualification Automatisée (Nom, Besoin, Budget, Téléphone), Suivis Automatisés",
+            ],
+            cta: "Passez au Pro Growth",
+          },
+          {
+            name: "Pack ENTERPRISE",
+            tagline:
+              "Infrastructure marketing 360° sur mesure, production vidéo cinématographique, et intégration CRM IA autonome.",
+            setup: "14 000 DHS HT",
+            retainer: "22 000 DHS HT",
+            badge: "INFRASTRUCTURE 360° SUR MESURE",
+            features: [
+              "Réseaux Sociaux : Omnicanal (FB, IG, LinkedIn, TikTok, YouTube), Direction Artistique, Dashboard Temps Réel",
+              "Production Vidéo : 18–20 Reels/Shorts Viraux à Haute Rétention avec Écriture de Scripts & Motion Design",
+              "Ads Payants : Campagnes Omnicanales Full-Funnel (Meta, Google, TikTok, YouTube) + Optimisation CRO",
+              "Livrable Site Web : Design Multi-Langues (Arabe, Français, Anglais), Micro-interactions, SEO Technique Avancé",
+              "Automatisation IA & CRM : Agent IA Autonome LLM Sur Mesure, Sync Calendrier pour Rendez-vous, Intégrations CRM/Webhook Complètes (HubSpot, Zapier, Make, Sheets)",
+            ],
+            cta: "Demander une Consultation Enterprise",
+          },
+        ],
+      },
+      terms: {
+        title: "Facturation & Conditions",
+        items: [
+          {
+            label: "Facturation",
+            text: "Tarifs indiqués Hors Taxes (HT). TVA (20%) applicable selon la réglementation.",
+          },
+          {
+            label: "Budget Publicitaire",
+            text: "Les budgets d'achat d'espace (Meta, Google, TikTok) sont à la charge exclusive du client.",
+          },
+          {
+            label: "Frais API Tiers",
+            text: "Coûts de consommation directes (WhatsApp Business API, OpenAI tokens) réglés par le client.",
+          },
+          {
+            label: "Engagement",
+            text: "Engagement initial de 3 mois requis sur l'ensemble des abonnements mensuels.",
+          },
+        ],
+      },
+      faq: {
+        badge: "FAQ",
+        title: "Questions Fréquentes",
+        items: [
+          {
+            q: "En combien de temps pouvons-nous finaliser la phase de setup et lancer ?",
+            a: "Notre phase de setup (construction du site, tournage/montage de la vidéo promo initiale, configuration du compte publicitaire, et entraînement IA) prend de 7 à 14 jours.",
+          },
+          {
+            q: "Comment l'agent IA WhatsApp qualifie-t-il les leads entrants ?",
+            a: "L'agent IA engage le trafic instantanément 24/7, répond selon votre base de connaissances, collecte les données de qualification clés (budget, délai, besoins), et route les leads prêts à acheter directement à votre équipe commerciale.",
+          },
+          {
+            q: "Pourquoi un engagement initial de 3 mois est-il requis pour les rétentions mensuelles ?",
+            a: "Les algorithmes marketing, l'optimisation des pixels Meta/Google et l'élan des vidéos organiques nécessitent une fenêtre minimale de 90 jours pour générer un ROI cohérent et composé.",
+          },
+          {
+            q: "Pouvons-nous passer à un niveau de forfait supérieur à mesure que notre activité grandit ?",
+            a: "Oui, vous pouvez passer à un palier de rétention mensuelle supérieur à tout moment selon votre volume de contenu et votre dépense publicitaire.",
+          },
+        ],
+      },
+      cta: {
+        headline: "Prêt à Automatiser & Développer Votre Acquisition Client ?",
+        subheadline:
+          "Réservez un appel stratégique de 20 minutes pour auditer votre présence digitale, analyser les écarts concurrentiels, et choisir votre système de croissance Medinova.",
+        button: "Réserver une Session Stratégique",
+      },
+      contact: {
+        badge: "Réserver un appel stratégique",
+        title: "Ingénierons Votre Croissance",
+        subtitle:
+          "Parlez-nous de votre entreprise et nous concevrons un système de croissance à haute conversion adapté à vos objectifs — sites web, médias payants et automatisation IA.",
+        emailLabel: "Écrivez-nous",
+        whatsappLabel: "Contactez-nous via WhatsApp",
+        whatsappMessage:
+          "Bonjour Medinova Growth, je souhaite réserver un appel stratégique.",
+        form: {
+          name: "Votre Nom",
+          namePh: "Alex Martin",
+          company: "Entreprise",
+          companyPh: "Votre société",
+          email: "Email Professionnel",
+          emailPh: "alex@entreprise.com",
+          scope: "Périmètre du Projet",
+          scopePh:
+            "Décrivez brièvement vos objectifs : site web, publicités, automatisation IA...",
+          submit: "Réserver un appel stratégique",
+          submitting: "Envoi...",
+          sent: "Merci ! Votre demande a été envoyée à contact@medinovastudio.com. Nous vous répondrons sous 24 heures.",
+          error:
+            "Une erreur est survenue. Réessayez ou écrivez-nous directement.",
         },
-        {
-          name: "Enterprise",
-          price: "Custom",
-          setup: "Custom",
-          features: [
-            "Tout ce qui est dans Scale & Convert",
-            "Contenu & Créativité Illimités",
-            "Modélisation d'Attribution Multi-Canaux",
-            "Développement d'Agent IA Sur-Mesure",
-            "Équipe de Croissance Dédiée",
-            "SLA & Options de Partage de Revenus"
-          ],
-          cta: "Demander un Devis",
-          recommended: false
-        }
-      ],
-      getStarted: "Commencer"
+      },
+      footer: {
+        tagline:
+          "Medinova Growth — sites web à haute conversion, automatisation IA et croissance digitale qui génère des résultats.",
+        rights: "Medinova Growth. Tous droits réservés.",
+      },
     },
     academy: {
       announcement:
@@ -1585,59 +2066,254 @@ export const translations: Record<Lang, Translation> = {
       },
     },
     footer: {
+      mission:
+        "أنظمة رقمية عالية التحويل، تطوير ألعاب مخصصة، وتعليم تقني.",
+      location: "القنيطرة، المغرب 🇲🇦",
+      support: "تواصل ودعم",
+      colAgency: "وكالة النمو B2B",
+      colGameDev: "تطوير الألعاب والتقنية التفاعلية",
+      colAcademy: "أكاديمية ميدينوفا",
+      colLegal: "الثقة، القانون والامتثال",
+      cta: "احجز مكالمة استراتيجية",
+      agencyLinks: [
+        "منصات ويب عالية التحويل",
+        "أنظمة اكتساب ذاتية بالذكاء الاصطناعي",
+        "إعلانات ميتا والتسويق بالأداء",
+        "أطر التشخيص والاشتراكات الشهرية",
+      ],
+      gameDevLinks: [
+        "ألعاب تجارية وألعاب WebGL",
+        "تقنية AR/VR مخصصة وتقنيات مكانية",
+        "ألعاب تعليمية ومحاكاة تربوية",
+        "نشر بوابات الويب",
+      ],
+      academyLinks: [
+        "مسارات برمجة للأطفال والكبار",
+        "مناهج Scratch وPython وUnity C#",
+        "وحدات معتمدة قابلة للطباعة وQR",
+        "معرض مشاريع الطلاب",
+      ],
+      legalLinks: ["سياسة الخصوصية", "شروط الخدمة"],
+      taxDisclaimer:
+        "الأسعار المعروضة خارج الضريبة (HT). تُطبَّق ضريبة القيمة المضافة (20%) وفقاً للأنظمة المعمول بها.",
       rights: "جميع الحقوق محفوظة.",
     },
     agency: {
-      badge: "وكالة النمو B2B",
-      title: "باقات نمو الوكالة",
-      subtitle: "تسويق شامل، إنتاج محتوى، إعلانات مدفوعة، وتوجيه الذكاء الاصطناعي عبر واتساب — محرك نمو 360° لعلامتك التجارية.",
-      tiers: [
-        {
-          name: "Foundation",
-          price: "2,500",
-          setup: "1,500",
-          features: [
-            "استراتيجية و مخطط KPI",
-            "تقويم محتوى (12 منشور/شهر)",
-            "إدارة إعلانات Meta/Google",
-            "تقرير أداء شهري",
-            "قناة Slack مخصصة"
-          ],
-          cta: "ابدأ الآن",
-          recommended: false
+      nav: {
+        links: {
+          framework: "إطار النمو",
+          solutions: "الحلول الأساسية",
+          packages: "الباقات والعروض",
+          faq: "الأسئلة الشائعة",
         },
-        {
-          name: "Scale & Convert",
-          price: "5,000",
-          setup: "2,500",
-          features: [
-            "كل ما في Foundation",
-            "إنتاج محتوى (24 منشور/شهر + 4 Reels)",
-            "قمع متقدم و أتمتة البريد الإلكتروني",
-            "توجيه WhatsApp بالذكاء الاصطناعي",
-            "مكالمات تحسين أسبوعية",
-            "مراجعة استراتيجية ربع سنوية"
-          ],
-          cta: "ابدأ الآن",
-          recommended: true
+        cta: "احجز مكالمة استراتيجية",
+      },
+      hero: {
+        badge: "محرك النمو الرقمي 360° وأتمتة الذكاء الاصطناعي",
+        headline:
+          "نصمّم مواقع عالية التحويل وأنظمة اكتساب مستقلة للشركات النامية.",
+        subheadline:
+          "من تصميم مواقع ويب متجاوبة مخصّصة وإنتاج وسائط سينمائي إلى إعلانات مدفوعة دقيقة وتوجيه ذكي عبر واتساب — نحن نهندس اكتساب عملائك من النقرة إلى التحويل.",
+        ctaPrimary: "استكشف باقات النمو",
+        ctaSecondary: "احجز تدقيق علامة تجارية مجاني",
+        trust:
+          "نمكّن العلامات التجارية الطموحة بحضور رقمي عالي الأداء، ومسارات عملاء آلية، وأنظمة ذكاء اصطناعي.",
+      },
+      pillars: {
+        badge: "الحلول الأساسية",
+        title: "بنية النمو 360°",
+        subtitle:
+          "أربعة أنظمة مترابطة مصمّمة لاقتناص حصة السوق وتوسيع إيراداتك.",
+        cards: [
+          {
+            title: "مواقع ويب وأصول رقمية مخصّصة",
+            desc: "مواقع سريعة ومتجاوبة للجوال أولاً، محسّنة لأقصى تحويل وتحسين محلي (Google Business Profile).",
+          },
+          {
+            title: "إنتاج وسائط عالي التأثير",
+            desc: "فيديوهات ترويجية احترافية، ريلز/تيك توكس ديناميكية بعوامل جذب عالية البقاء، ونسخ براند متميزة.",
+          },
+          {
+            title: "إعلانات مدفوعة عالية الأداء",
+            desc: "حملات دقيقة على Meta وGoogle وTikTok مصمّمة لتكلفة اكتساب منخفضة وحجم leads واتساب مباشر.",
+          },
+          {
+            title: "أتمتة ذكاء اصطناعي ذكية عبر واتساب",
+            desc: "تأهيل فوري للعملاء 24/7، معالجة تلقائية للاعتراضات، ومزامنة سلسة مع CRM.",
+          },
+        ],
+      },
+      process: {
+        badge: "عمليتنا",
+        title: "إطار النمو الموثوق لدينا",
+        subtitle:
+          "كيف ننتقل بنشاطك من التشخيص الأولي إلى سيادة السوق في 14 يومًا.",
+        steps: [
+          {
+            phase: "المرحلة 1",
+            title: "التدقيق المétierي وتشخيص الاختناقات",
+            window: "الأيام 1–3",
+            desc: "تدقيق معمّق في مسارات المبيعات الحالية، وهبوط الزيارات، وسرعات الجوال، وأوقات استجابة العملاء.",
+          },
+          {
+            phase: "المرحلة 2",
+            title: "التحليل التنافسي وتموضع العرض",
+            window: "الأيام 4–7",
+            desc: "تحليل عوامل الجذب الإعلانية للمنافسين، واستخراج عروض السوق، وهندسة قيمتك الفريدة.",
+          },
+          {
+            phase: "المرحلة 3",
+            title: "الإعداد ونشر الأصول",
+            window: "الأيام 8–14",
+            desc: "بناء/تطوير أصول الويب، وإنتاج الفيديوهات الترويجية الأولية، وإعداد البكسلات، وتدريب وكيل واتساب الذكي المخصص.",
+          },
+          {
+            phase: "المرحلة 4",
+            title: "إطلاق سبرينت ومحرك نمو مستمر",
+            window: "مستمر",
+            desc: "اختبارات A/B إبداعية، تحسين أسبوعي للبوت، توجيه فوري للعملاء، وتقارير تحليلية تنفيذية.",
+          },
+        ],
+      },
+      pricing: {
+        badge: "العروض والباقات",
+        title: "باقات نمو شفافة",
+        subtitle:
+          "تسليمات إعداد واضحة مقترنة باشتراكات اكتساب شهرية يمكن التنبؤ بها.",
+        setupLabel: "رسوم الإعداد (دفعة واحدة)",
+        retainerLabel: "الاشتراك الشهري",
+        perMonth: "/ شهر",
+        mostPopular: "الأكثر شيوعًا",
+        plans: [
+          {
+            name: "Pack ESSENTIEL",
+            tagline:
+              "حضور رقمي كامل، موقع عرض سريع، وتحويل آلي لعملائك الأوائل.",
+            setup: "4,500 DHS HT",
+            retainer: "6,000 DHS HT",
+            features: [
+              "وسائل التواصل: منصتان (Facebook وInstagram)، 8–10 منشورات/شهر (رسومات، كاروسيل، نصوص)",
+              "إنتاج الفيديو: 4 ريلز/تيك توكس ديناميكية (تنسيق عمودي، عوامل جذب، ترجمة متحركة، تصميم صوتي)",
+              "إعلانات مدفوعة: حملة Meta نشطة واحدة (توليد leads أو Trafic WhatsApp) + تقرير شهري",
+              "مخرجات الموقع: 1 إلى 3 صفحات، متجاوبة 100% للجوال، زر واتساب مباشر، SEO أساسي وإعداد Google Maps",
+              "أتمتة IA: رسالة ترحيب مخصّصة، بوت أسئلة شائعة 10 أسئلة، توجيه العملاء",
+            ],
+            cta: "ابدأ بباقة Essentiel",
+          },
+          {
+            name: "Pack PRO GROWTH",
+            tagline:
+              "الحل النهائي للشركات سريعة النمو التي تسعى لسيادة سوقها وأتمتة اكتساب العملاء.",
+            setup: "7,500 DHS HT",
+            retainer: "12,000 DHS HT",
+            badge: "الأكثر شيوعًا",
+            featured: true,
+            features: [
+              "وسائل التواصل: 3 منصات (FB وIG + TikTok أو LinkedIn)، 15 منشورًا/شهر، إشراف نشط على الرسائل والتعليقات",
+              "إنتاج الفيديو: 10 ريلز/تيك توكس راقية (سكربتات بيع، مونتاج ديناميكي، ترجمة متحركة أنيقة)",
+              "إعلانات مدفوعة: إدارة متعددة الحملات (إعلانات Meta + بحث/إعادة استهداف Google)، اختبارات A/B مستمرة، إعداد Pixel وCAPI",
+              "مخرجات الموقع: موقع ويب كامل 5–7 صفحات، ضمان سرعة 85%+، تدقيق UX/UI وSEO بالكلمات المفتاحية",
+              "أتمتة IA: وكيل IA ذكي مدرب على قاعدة معرفتك، تأهيل تلقائي (الاسم، الحاجة، الميزانية، الهاتف)، متابعة آلية",
+            ],
+            cta: "انطلق مع Pro Growth",
+          },
+          {
+            name: "Pack ENTERPRISE",
+            tagline:
+              "بنية تسويقية 360° مخصّصة، إنتاج فيديو سينمائي، وتكامل CRM ذكي مستقل.",
+            setup: "14,000 DHS HT",
+            retainer: "22,000 DHS HT",
+            badge: "بنية 360° مخصّصة",
+            features: [
+              "وسائل التواصل: Omnicanal (FB وIG وLinkedIn وTikTok وYouTube)، إخراج فني، لوحة تحكم لحظية",
+              "إنتاج الفيديو: 18–20 ريلز/شورتس عالية البقاء مع كتابة سكربتات وتصميم حركة",
+              "إعلانات مدفوعة: حملات Omnicanale Full-Funnel (Meta وGoogle وTikTok وYouTube) + تحسين CRO",
+              "مخرجات الموقع: تصميم متعدد اللغات (عربي، فرنسي، إنجليزي)، تفاعلات دقيقة، SEO تقني متقدم",
+              "أتمتة IA وCRM: وكيل LLM مستقل مخصص، مزامنة التقويم للمواعيد، تكاملات CRM/Webhook كاملة (HubSpot وZapier وMake وSheets)",
+            ],
+            cta: "اطلب استشارة Enterprise",
+          },
+        ],
+      },
+      terms: {
+        title: "الفوترة والشروط",
+        items: [
+          {
+            label: "الفوترة",
+            text: "الأسعار المذكورة غير شاملة للضريبة (HT). تُطبَّق ضريبة القيمة المضافة (20%) وفق التنظيمات.",
+          },
+          {
+            label: "ميزانية الإعلانات",
+            text: "ميزانيات شراء المساحات الإعلانية (Meta وGoogle وTikTok) تقع على عاتق العميل حصريًا.",
+          },
+          {
+            label: "رسوم واجهات الطرف الثالث",
+            text: "تكاليف الاستهلاك المباشر (WhatsApp Business API، رموز OpenAI) يسددها العميل.",
+          },
+          {
+            label: "الالتزام",
+            text: "يلزم التزام أولي مدته 3 أشهر على جميع الاشتراكات الشهرية.",
+          },
+        ],
+      },
+      faq: {
+        badge: "الأسئلة الشائعة",
+        title: "الأسئلة الشائعة",
+        items: [
+          {
+            q: "بمدى السرعة يمكننا إنهاء مرحلة الإعداد والإطلاق؟",
+            a: "تستغرق مرحلة الإعداد لدينا (بناء الموقع، تصوير/مونتاج الفيديو الترويجي الأول، إعداد حساب الإعلانات، وتدريب الذكاء الاصطناعي) من 7 إلى 14 يومًا.",
+          },
+          {
+            q: "كيف يؤهل وكيل الذكاء الاصطناعي عبر واتساب العملاء الواردين؟",
+            a: "يتفاعل الوكيل فورًا مع الزيارات على مدار 24/7، ويجيب استنادًا إلى قاعدة معرفتك، ويجمع بيانات التأهيل الأساسية (الميزانية، الإطار الزمني، الاحتياجات)، ويرسل العملاء الجاهزين للشراء مباشرةً إلى فريق المبيعات.",
+          },
+          {
+            q: "لماذا يلزم التزام أولي مدته 3 أشهر للاشتراكات الشهرية؟",
+            a: "تحتاج خوارزميات التسويق وتحسين بكسلات Meta/Google وزخم الفيديو العضوي إلى نافذة 90 يومًا كحد أدنى لتحقيق عائد استثمار مركّب ومستمر.",
+          },
+          {
+            q: "هل يمكننا ترقية مستوى الباقة مع نمو نشاطنا؟",
+            a: "نعم، يمكنك ترقية مستوى اشتراكك الشهري في أي وقت مع نمو حجم محتواك وإنفاقك الإعلاني.",
+          },
+        ],
+      },
+      cta: {
+        headline: "جاهز لأتمتة وتوسيع اكتساب عملائك؟",
+        subheadline:
+          "احجز مكالمة استراتيجية مدتها 20 دقيقة لتدقيق حضورك الرقمي، ومراجعة الفجوات التنافسية، واختيار نظام نمو Medinova.",
+        button: "احجز جلسة استراتيجية الآن",
+      },
+      contact: {
+        badge: "احجز مكالمة استراتيجية",
+        title: "لنصمّم نموّك",
+        subtitle:
+          "أخبرنا عن عملك وسنرسم لك نظام نموّ عالي التحويل مصمّماً لأهدافك — مواقع ويب، إعلانات مدفوعة، وأتمتة بالذكاء الاصطناعي.",
+        emailLabel: "راسلنا",
+        whatsappLabel: "تواصل معنا عبر واتساب",
+        whatsappMessage:
+          "مرحباً Medinova Growth، أودّ حجز مكالمة استراتيجية.",
+        form: {
+          name: "الاسم الكامل",
+          namePh: "اسمك",
+          company: "الشركة",
+          companyPh: "اسم الشركة",
+          email: "البريد المهني",
+          emailPh: "you@company.com",
+          scope: "مجال المشروع",
+          scopePh:
+            "صِف أهدافك بإيجاز: موقع ويب، إعلانات، أتمتة بالذكاء الاصطناعي...",
+          submit: "احجز مكالمة استراتيجية",
+          submitting: "جارٍ الإرسال...",
+          sent: "شكراً! تم إرسال طلبك إلى contact@medinovastudio.com. سنردّ خلال 24 ساعة.",
+          error: "حدث خطأ ما. حاول مجدداً أو راسلنا مباشرة.",
         },
-        {
-          name: "Enterprise",
-          price: "Custom",
-          setup: "Custom",
-          features: [
-            "كل ما في Scale & Convert",
-            "محتوى و إبداع غير محدود",
-            "نمذجة إسناد متعددة القنوات",
-            "تطوير وكيل ذكاء اصطناعي مخصص",
-            "فريق نمو مخصص",
-            "SLA و خيارات مشاركة الإيرادات"
-          ],
-          cta: "طلب عرض سعر",
-          recommended: false
-        }
-      ],
-      getStarted: "ابدأ الآن"
+      },
+      footer: {
+        tagline:
+          "Medinova Growth — مواقع ويب عالية التحويل، أتمتة بالذكاء الاصطناعي، ونموّ رقمي متواصل.",
+        rights: "Medinova Growth. جميع الحقوق محفوظة.",
+      },
     },
     academy: {
       announcement:
