@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --font-inter: "Inter", system-ui, sans-serif;
-  --font-space: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
 }
 
 html {
@@ -12,31 +13,31 @@ html {
 }
 
 body {
-  background: #010102;
-  color: #8a8f98;
+  background: #f0f5ff;
+  color: #6b6f7a;
 }
 
 ::selection {
-  background: rgba(94, 106, 210, 0.35);
-  color: #f7f8f8;
+  background: rgba(36, 85, 230, 0.18);
+  color: #14151a;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #010102;
+  background: #f0f5ff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #23252a;
+  background: #c6d2e9;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #34343a;
+  background: #b3c1dd;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #22d3ee 0%, #8b5cf6 50%, #22d3ee 100%);
+  background: linear-gradient(135deg, #22d3ee 0%, #2455e6 50%, #22d3ee 100%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,17 +46,17 @@ body {
 }
 
 .form-input {
-  background: #0f1011;
-  border: 1px solid #23252a;
+  background: #ffffff;
+  border: 1px solid #dce4f2;
   transition: all 0.3s ease;
 }
 .form-input:focus {
   outline: none;
-  border-color: #5e69d1;
-  box-shadow: 0 0 0 3px rgba(94, 106, 210, 0.25);
+  border-color: #2455e6;
+  box-shadow: 0 0 0 3px rgba(36, 85, 230, 0.18);
 }
 .form-input::placeholder {
-  color: #62666d;
+  color: #9ca0a8;
 }
 
 .shimmer-badge::after {
@@ -74,6 +75,23 @@ body {
 
 .reveal {
   animation: revealUp 0.7s ease-out both;
+}
+
+/* Algorithmics-style mono uppercase section eyebrow */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* 3px colored accent top-border for cards */
+.card-accent {
+  border-top: 3px solid #2455e6;
+}
+.card-accent-yellow {
+  border-top: 3px solid #ffd749;
 }
 
 @keyframes revealUp {

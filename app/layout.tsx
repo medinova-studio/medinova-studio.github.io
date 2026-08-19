@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import SiteChrome from "@/components/layout/SiteChrome";
 import JsonLd from "@/components/JsonLd";
 import { graphSchema } from "@/lib/jsonLd";
 
-const inter = Inter({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-display",
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-space",
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -58,7 +64,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  themeColor: "#010102",
+  themeColor: "#F0F5FF",
 };
 
 export default function RootLayout({
@@ -69,7 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
+        className={`${geist.variable} ${jakarta.variable} ${geistMono.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
       >
         <LanguageProvider>
           <SiteChrome>{children}</SiteChrome>

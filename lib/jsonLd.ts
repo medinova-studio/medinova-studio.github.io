@@ -59,27 +59,22 @@ function academyNode() {
     url: `${SITE_URL}/academy`,
     parentOrganization: { "@id": ORG_ID },
     description:
-      "Educational institution and coding academy in Morocco offering certified tracks in Scratch, Python, and Unity C# with verifiable QR-code diplomas.",
+      "Practical technology and coding education for learners aged 7+, taught through real projects by the founder of Medinova Studio. Courses in digital essentials, Scratch, Python, Roblox, Unity & C#, web development and creative design.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Kenitra",
       addressCountry: "MA",
     },
     areaServed: "MA",
-    hasCourse: t.tracks.levels.map((level) => ({
+    hasCourse: t.courses.items.map((course) => ({
       "@type": "Course",
-      name: `${level.level} ${level.title} — ${level.programTitle || level.levelName}`,
-      description: `${level.target}. ${level.outcome}`,
+      name: course.name,
+      description: course.desc,
       provider: { "@id": ORG_ID },
-      offers: {
-        "@type": "Offer",
-        category: level.levelName,
-        priceCurrency: "MAD",
-      },
     })),
-    hasCredential: t.certification.diplomas.map((diploma) => ({
+    hasCredential: t.courses.items.map((course) => ({
       "@type": "EducationalOccupationalCredential",
-      name: diploma,
+      name: `Certificate of Completion — ${course.name}`,
       credentialCategory: "certificate",
     })),
   };

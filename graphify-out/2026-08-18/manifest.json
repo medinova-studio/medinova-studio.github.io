@@ -65,7 +65,7 @@
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1787079810.8529413,
+    "mtime": 1786531487.9636092,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -450,8 +450,8 @@
     "semantic_hash": ""
   },
   "lib/jsonLd.ts": {
-    "mtime": 1787079451.1588583,
-    "ast_hash": "4caca44a00db81db8d9864a88c7b642e",
+    "mtime": 1786820179.7478473,
+    "ast_hash": "49c9467d4f6d3993326f7ed80fbbb40a",
     "semantic_hash": ""
   },
   "app/game-development/page.tsx": {

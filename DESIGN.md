@@ -1,122 +1,137 @@
 ---
-version: alpha
-name: Linear-design-analysis
-description: "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color."
+version: beta
+name: Algorithmics-light-blue-yellow
+description: "A light, playful product-and-education marketing system built around an icy blue-white canvas (#F0F5FF), a royal-blue primary (#2455E6), and a single yellow accent (#FFD749). The system echoes the warmth of ed-tech playgrounds (Algorithmics) while staying tuned to Medinova's cool blue/cyan globe logo. Headings run Plus Jakarta Sans at 600–800 with tight tracking; body runs Geist; uppercase micro-labels run Geist Mono at 11px with 0.14em letter-spacing. Cards are pure white with hairline borders, soft shadows, and a 3px colored top border; dark moments (footer, social cards) sit on deep navy (#101A33)."
 
 colors:
-  primary: "#5e6ad2"
-  on-primary: "#ffffff"
-  primary-hover: "#828fff"
-  primary-focus: "#5e69d1"
-  ink: "#f7f8f8"
-  ink-muted: "#d0d6e0"
-  ink-subtle: "#8a8f98"
-  ink-tertiary: "#62666d"
-  canvas: "#010102"
-  surface-1: "#0f1011"
-  surface-2: "#141516"
-  surface-3: "#18191a"
-  surface-4: "#191a1b"
-  hairline: "#23252a"
-  hairline-strong: "#34343a"
-  hairline-tertiary: "#3e3e44"
-  inverse-canvas: "#ffffff"
-  inverse-surface-1: "#f5f6f6"
-  inverse-surface-2: "#f6f7f7"
-  inverse-ink: "#000000"
-  brand-secure: "#7a7fad"
+  primary: "#2455E6"
+  primary-hover: "#1D46C6"
+  primary-focus: "#1634A8"
+  primary-soft: "#E8EEFF"
+  accent: "#FFD749"
+  accent-ink: "#7A5C00"
+  accent-soft: "#FFF3C4"
+  ink: "#14151A"
+  ink-muted: "#3E4049"
+  ink-subtle: "#6B6F7A"
+  ink-tertiary: "#9CA0A8"
+  canvas: "#F0F5FF"
+  surface-1: "#FFFFFF"
+  surface-2: "#EAF0FB"
+  surface-3: "#E1E9F7"
+  surface-4: "#D9E4F4"
+  hairline: "#DCE4F2"
+  hairline-strong: "#C6D2E9"
+  hairline-tertiary: "#B3C1DD"
+  navy: "#101A33"
+  navy-1: "#16223F"
+  navy-2: "#27365C"
+  navy-ink: "#B9C6DE"
+  navy-muted: "#C9D4EA"
+  navy-tertiary: "#8FA1C4"
+  navy-accent: "#6E8CFF"
+  whatsapp: "#25d366"
+  whatsapp-hover: "#1fb458"
+  whatsapp-deep: "#128c7e"
+  whatsapp-text: "#0E7A46"
+  whatsapp-border: "#B5E3C9"
   semantic-success: "#27a644"
-  semantic-overlay: "#000000"
+  semantic-error: "#ff3b30"
+  logo-blue: "#0050A0"
+  logo-sky: "#00A0F0"
+  logo-cyan: "#22D3EE"
 
 typography:
   display-xl:
-    fontFamily: Linear Display
-    fontSize: 80px
-    fontWeight: 600
-    lineHeight: 1.05
-    letterSpacing: -3.0px
-  display-lg:
-    fontFamily: Linear Display
-    fontSize: 56px
-    fontWeight: 600
-    lineHeight: 1.10
-    letterSpacing: -1.8px
-  display-md:
-    fontFamily: Linear Display
-    fontSize: 40px
-    fontWeight: 600
-    lineHeight: 1.15
+    fontFamily: Plus Jakarta Sans
+    fontSize: 54px
+    fontWeight: 800
+    lineHeight: 1.08
     letterSpacing: -1.0px
-  headline:
-    fontFamily: Linear Display
-    fontSize: 28px
-    fontWeight: 600
-    lineHeight: 1.20
+  display-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 1.12
     letterSpacing: -0.6px
-  card-title:
-    fontFamily: Linear Display
-    fontSize: 22px
-    fontWeight: 500
-    lineHeight: 1.25
+  display-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 30px
+    fontWeight: 700
+    lineHeight: 1.15
     letterSpacing: -0.4px
-  subhead:
-    fontFamily: Linear Display
-    fontSize: 20px
-    fontWeight: 400
-    lineHeight: 1.40
-    letterSpacing: -0.2px
-  body-lg:
-    fontFamily: Linear Text
-    fontSize: 18px
-    fontWeight: 400
-    lineHeight: 1.50
-    letterSpacing: -0.1px
-  body:
-    fontFamily: Linear Text
+  headline:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.25
+    letterSpacing: -0.3px
+  card-title:
+    fontFamily: Plus Jakarta Sans
     fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.30
+    letterSpacing: 0
+  subhead:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.35
+    letterSpacing: 0
+  body-lg:
+    fontFamily: Geist
+    fontSize: 17px
     fontWeight: 400
-    lineHeight: 1.50
-    letterSpacing: -0.05px
+    lineHeight: 1.55
+    letterSpacing: 0
+  body:
+    fontFamily: Geist
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.55
+    letterSpacing: 0
   body-sm:
-    fontFamily: Linear Text
+    fontFamily: Geist
     fontSize: 14px
     fontWeight: 400
-    lineHeight: 1.50
+    lineHeight: 1.55
     letterSpacing: 0
   caption:
-    fontFamily: Linear Text
-    fontSize: 12px
-    fontWeight: 400
+    fontFamily: Geist
+    fontSize: 12.5px
+    fontWeight: 500
     lineHeight: 1.40
     letterSpacing: 0
   button:
-    fontFamily: Linear Text
+    fontFamily: Plus Jakarta Sans
     fontSize: 14px
-    fontWeight: 500
+    fontWeight: 700
     lineHeight: 1.20
     letterSpacing: 0
   eyebrow:
-    fontFamily: Linear Text
-    fontSize: 13px
-    fontWeight: 500
+    fontFamily: Geist Mono
+    fontSize: 11px
+    fontWeight: 600
     lineHeight: 1.30
-    letterSpacing: 0.4px
+    letterSpacing: 0.14em
   mono:
-    fontFamily: Linear Mono
-    fontSize: 13px
+    fontFamily: Geist Mono
+    fontSize: 12px
     fontWeight: 400
     lineHeight: 1.50
-    letterSpacing: 0
+    letterSpacing: 0.05em
 
 rounded:
-  xs: 4px
-  sm: 6px
-  md: 8px
-  lg: 12px
+  xs: 6px
+  sm: 8px
+  md: 11px
+  lg: 14px
   xl: 16px
-  xxl: 24px
+  xxl: 20px
+  xxxl: 24px
   pill: 9999px
   full: 9999px
+  photo: 34px
 
 spacing:
   xxs: 4px
@@ -126,423 +141,258 @@ spacing:
   lg: 24px
   xl: 32px
   xxl: 48px
-  section: 96px
+  section: 80px
 
 components:
   button-primary:
     backgroundColor: "{colors.primary}"
-    textColor: "{colors.on-primary}"
+    textColor: "#ffffff"
     typography: "{typography.button}"
     rounded: "{rounded.md}"
-    padding: 8px 14px
-  button-primary-pressed:
-    backgroundColor: "{colors.primary-focus}"
-    textColor: "{colors.on-primary}"
-    typography: "{typography.button}"
-    rounded: "{rounded.md}"
+    padding: 10px 18px
+    shadow: 0 4px 14px rgba(36,85,230,0.28)
   button-primary-hover:
     backgroundColor: "{colors.primary-hover}"
-    textColor: "{colors.on-primary}"
-    typography: "{typography.button}"
-    rounded: "{rounded.md}"
   button-secondary:
     backgroundColor: "{colors.surface-1}"
     textColor: "{colors.ink}"
-    typography: "{typography.button}"
+    border: 1px {colors.hairline}
     rounded: "{rounded.md}"
-    padding: 8px 14px
-  button-tertiary:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
+    padding: 10px 18px
+  button-whatsapp:
+    backgroundColor: "{colors.whatsapp}"
+    textColor: "#ffffff"
     rounded: "{rounded.md}"
-    padding: 8px 14px
-  button-inverse:
-    backgroundColor: "{colors.inverse-canvas}"
-    textColor: "{colors.inverse-ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.md}"
-    padding: 8px 14px
-  pricing-card:
-    backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.lg}"
-    padding: 24px
-  pricing-card-featured:
-    backgroundColor: "{colors.surface-2}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.lg}"
-    padding: 24px
+    shadow: 0 10px 28px rgba(20,21,26,0.18)
+  button-whatsapp-hover:
+    backgroundColor: "{colors.whatsapp-hover}"
   feature-card:
     backgroundColor: "{colors.surface-1}"
     textColor: "{colors.ink}"
-    typography: "{typography.body}"
     rounded: "{rounded.lg}"
     padding: 24px
-  product-screenshot-card:
+    border: 1px {colors.hairline}
+    top-border: 3px {colors.primary}
+    shadow: 0 12px 32px rgba(20,21,26,0.06)
+  feature-card-yellow:
     backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.xl}"
-    padding: 24px
-  testimonial-card:
-    backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-lg}"
-    rounded: "{rounded.lg}"
-    padding: 32px
-  customer-logo-tile:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink-subtle}"
-    typography: "{typography.caption}"
-    rounded: "{rounded.xs}"
-    padding: 16px
-  text-input:
-    backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.md}"
-    padding: 8px 12px
-  text-input-focused:
-    backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.md}"
-    padding: 8px 12px
-  pricing-tab-default:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink-subtle}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: 6px 14px
-  pricing-tab-selected:
-    backgroundColor: "{colors.surface-2}"
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: 6px 14px
-  cta-banner:
-    backgroundColor: "{colors.surface-1}"
-    textColor: "{colors.ink}"
-    typography: "{typography.headline}"
-    rounded: "{rounded.lg}"
-    padding: 48px
-  changelog-row:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.xs}"
-    padding: 24px 0
+    top-border: 3px {colors.accent}
   status-badge:
     backgroundColor: "{colors.surface-2}"
     textColor: "{colors.ink-muted}"
-    typography: "{typography.caption}"
     rounded: "{rounded.pill}"
-    padding: 2px 8px
+    padding: 6px 14px
+  eyebrow-badge:
+    backgroundColor: "{colors.primary-soft}"
+    textColor: "{colors.primary}"
+    border: 1px rgba(36,85,230,0.20)
+    typography: "{typography.eyebrow}"
+    rounded: "{rounded.pill}"
+    padding: 6px 12px
   top-nav:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-sm}"
-    rounded: "{rounded.xs}"
-    height: 56px
-  footer:
-    backgroundColor: "{colors.canvas}"
+    backgroundColor: "rgba(240,245,255,0.94)"
     textColor: "{colors.ink-subtle}"
-    typography: "{typography.caption}"
-    rounded: "{rounded.xs}"
-    padding: 64px 32px
+    height: 56px
+    border-bottom: 1px {colors.hairline}
+  footer:
+    backgroundColor: "{colors.navy}"
+    textColor: "{colors.navy-muted}"
+    typography: "{typography.body-sm}"
+    padding: 56px 32px
+    footer-heading:
+      color: "{colors.accent}"
+      typography: "{typography.eyebrow}"
+  hero-photo:
+    rounded: "{rounded.photo}"
+    shadow: 0 20px 48px rgba(20,21,26,0.14)
+  input:
+    backgroundColor: "{colors.surface-1}"
+    border: 1px {colors.hairline}
+    focus-border: "{colors.primary}"
+    focus-ring: 3px rgba(36,85,230,0.18)
+    rounded: "{rounded.md}"
+    padding: 10px 12px
+  stat-number:
+    fontFamily: Plus Jakarta Sans
+    color: "{colors.primary}"
+    fontSize: 40px
+    fontWeight: 800
 ---
 
 ## Overview
 
-Linear's marketing canvas is the deepest dark surface in this collection — `{colors.canvas}` is #010102, essentially pure black with a faint blue tint. On top sits a four-step surface ladder (`{colors.surface-1}` through `{colors.surface-4}`) for cards, panels, and lifted tiles, with hairline borders running from `{colors.hairline}` (#23252a) up through `{colors.hairline-strong}` and `{colors.hairline-tertiary}`. Light gray text (`{colors.ink}` #f7f8f8) carries the body and headlines.
+Medinova's light redesign replaces the former near-black Linear-style canvas with a **light, airy, blue-and-yellow** system. The page canvas is an icy blue-white (`{colors.canvas}` #F0F5FF) chosen to sit inside the logo's own cool blue/cyan family (`{colors.logo-sky}`, `{colors.logo-cyan}`). Cards lift onto pure white (`{colors.surface-1}`) with hairline borders (`{colors.hairline}` #DCE4F2) and soft neutral shadows — depth is carried by the white-on-blue lift plus a **3px colored top border** (`{colors.primary}` royal blue, or `{colors.accent}` yellow for featured cards), echoing Algorithmics' card treatment.
 
-The single chromatic accent is **Linear lavender-blue** `{colors.primary}` (#5e6ad2) — used on the brand mark, focus rings, and the primary CTA button. A lighter hover state (`{colors.primary-hover}` #828fff) and a focus-tinted variant (`{colors.primary-focus}` #5e69d1) extend the same hue. Linear avoids saturated greens, oranges, reds, etc. on the marketing canvas — the only semantic color is `{colors.semantic-success}` (#27a644) for status pills and the rare success indicator.
+The single warm accent is **yellow** (`{colors.accent}` #FFD749): used for the eyebrow dot, featured-card top borders, footer column headings, "New" badges, and the occasional stat highlight. The primary action color is **royal blue** (`{colors.primary}` #2455E6) with a darker hover (`{colors.primary-hover}`). WhatsApp CTAs stay **green** (`{colors.whatsapp}` #25d366) as the recognizable contact affordance.
 
-Display type runs Linear's custom sans (with `SF Pro Display` fallback) at weight 500–700 with negative letter-spacing scaling from -3.0px at 80px down to 0 at body. The body family is Linear's text cut, and a Linear Mono is reserved for code snippets in product screenshots.
-
-The page rhythm is **dense product screenshots** — Linear's marketing leads with high-fidelity captures of the product UI (issue list, project view, dashboard) framed in `{colors.surface-1}` panels with `{rounded.xl}` 16px corners. The chrome is intentionally minimal so the app screenshots can do the heavy lifting.
+Dark moments are reserved and intentional: the **footer** and **social/OG cards** sit on deep navy (`{colors.navy}` #101A33), which matches the logo's darkest tones. Everything else lives on the light canvas.
 
 **Key Characteristics:**
-- **Dark-canvas marketing system** — `{colors.canvas}` (#010102) is the deepest dark in this collection.
-- **Lavender-blue brand accent** (`{colors.primary}` #5e6ad2) — used scarcely on brand mark, focus, and the primary CTA.
-- Four-step surface ladder (canvas → surface-1 → surface-2 → surface-3 → surface-4) carries hierarchy without shadow.
-- Display tracking pulls aggressively negative (-3.0px at 80px); body holds at -0.05px.
-- Cards use `{rounded.lg}` 12px corners with 1px hairline borders — never pill, rarely 16px.
-- **Product UI screenshots** dominate the page. The marketing chrome is a dark frame for the app.
-- No second chromatic color. No atmospheric gradients. No spotlight cards.
+- **Light blue-white canvas** — `{colors.canvas}` #F0F5FF, cool-toned to match the logo.
+- **Royal-blue primary** `{colors.primary}` #2455E6 + **yellow accent** `{colors.accent}` #FFD749.
+- **Playful rounded geometry** — buttons 11px, cards 14–20px, hero photos 34px.
+- **Mono uppercase eyebrows** — Geist Mono 11px / 0.14em tracking, the signature editorial rhythm.
+- **White cards + 3px colored top borders** carry hierarchy (no drop-shadow stacking).
+- **Navy footer & social cards** as the only dark surfaces.
+- **WhatsApp stays green** (`{colors.whatsapp}`) everywhere it appears.
+- Subtle **zellige watermark** (blue geometric pattern, `public/images/zellige.svg`) at low opacity in heroes for Moroccan identity.
 
 ## Colors
 
-> Source pages: linear.app (home), /intake, /pricing, /contact/sales, /build.
-
 ### Brand & Accent
-- **Lavender-Blue** ({colors.primary}): The signature Linear accent — primary CTA, brand mark, link emphasis.
-- **Lavender Hover** ({colors.primary-hover}): Lighter lavender (#828fff) — hovered state of the primary CTA.
-- **Lavender Focus** ({colors.primary-focus}): Focus-ring tint (#5e69d1) — focused inputs, focused buttons.
-- **Brand Secure** ({colors.brand-secure}): Muted lavender-gray (#7a7fad) — used in "Linear Security" surfaces.
+- **Royal Blue** (`{colors.primary}`): primary CTA, links, eyebrow text, metric numbers, featured borders.
+- **Blue Hover** (`{colors.primary-hover}`): hovered primary CTA.
+- **Blue Focus** (`{colors.primary-focus}`): focus ring tint.
+- **Blue Soft** (`{colors.primary-soft}`): pill/chip backgrounds behind blue text.
+- **Yellow** (`{colors.accent}`): eyebrow dots, featured card top-borders, footer headings, "New" badges, highlights. Never a full-section fill.
+- **Yellow Ink** (`{colors.accent-ink}`): dark text guaranteed readable on yellow.
 
 ### Surface
-- **Canvas** ({colors.canvas}): Default page background — #010102, near-pure black with a faint blue tint.
-- **Surface 1** ({colors.surface-1}): One step above canvas — feature cards, pricing cards, product screenshot panels.
-- **Surface 2** ({colors.surface-2}): Two steps above — featured pricing card, hovered cards.
-- **Surface 3** ({colors.surface-3}): Three steps above — line-tertiary backgrounds, sub-nav.
-- **Surface 4** ({colors.surface-4}): Four steps above — bg-level-3, deepest lifted surface.
-- **Hairline** ({colors.hairline}): 1px borders on cards and dividers.
-- **Hairline Strong** ({colors.hairline-strong}): Stronger 1px borders — input focus rings.
-- **Hairline Tertiary** ({colors.hairline-tertiary}): Tertiary borders for nested surfaces.
-- **Inverse Canvas** ({colors.inverse-canvas}): Pure white — surface of the inverse pill CTA on a small set of section openers.
-- **Inverse Surface 1** ({colors.inverse-surface-1}): One step above inverse canvas.
-- **Inverse Surface 2** ({colors.inverse-surface-2}): Two steps above inverse canvas.
+- **Canvas** (`{colors.canvas}`): default page background — icy blue-white #F0F5FF.
+- **Surface 1** (`{colors.surface-1}`): pure white cards.
+- **Surface 2** (`{colors.surface-2}`): one step down (hover cards, chips, dropdowns).
+- **Surface 3 / 4**: two/three steps down — nested panels.
+- **Hairline** family: 1px borders on cards, inputs, dividers.
+- **Navy** (`{colors.navy}` + `navy-1/2`): footer, social cards, dark OG. `navy-muted`/`navy-tertiary`/`navy-accent` are its light-on-dark text tokens.
+- **Logo blues**: `logo-blue`/`logo-sky`/`logo-cyan` — reserved for logo-adjacent graphics and hero fills.
 
 ### Text
-- **Ink** ({colors.ink}): All headlines and emphasized body type — light gray #f7f8f8.
-- **Ink Muted** ({colors.ink-muted}): Secondary type at #d0d6e0 — meta info on hero panels.
-- **Ink Subtle** ({colors.ink-subtle}): Tertiary type at #8a8f98 — deselected pricing tabs, footer columns.
-- **Ink Tertiary** ({colors.ink-tertiary}): Quaternary at #62666d — disabled, footnotes.
+- **Ink** (`{colors.ink}`): headlines — near-black #14151A.
+- **Ink Muted** (`{colors.ink-muted}`): emphasized secondary #3E4049.
+- **Ink Subtle** (`{colors.ink-subtle}`): default body #6B6F7A.
+- **Ink Tertiary** (`{colors.ink-tertiary}`): captions, meta #9CA0A8.
 
 ### Semantic
-- **Success Green** ({colors.semantic-success}): Status pills, success indicators. The only semantic color on marketing.
-- **Overlay** ({colors.semantic-overlay}): Pure black overlay scrim for modals.
+- **Success Green** (`{colors.semantic-success}`): success states.
+- **Error** (`{colors.semantic-error}` #ff3b30): form validation.
+- **WhatsApp** family: the green contact color (`{colors.whatsapp}` solid, `whatsapp-hover`, `whatsapp-deep`, `whatsapp-text`/`whatsapp-border` for outline variants).
 
 ## Typography
 
 ### Font Family
+- **Plus Jakarta Sans** — headings and buttons; fallback `system-ui, sans-serif`. Carries `display-xl` → `card-title`, `button`.
+- **Geist** — body text and UI labels.
+- **Geist Mono** — `eyebrow`, `mono` captions, meta, stat footnotes.
 
-- **Linear Display** — Linear's custom display sans; fallback `SF Pro Display, -apple-system, system-ui, Segoe UI, Roboto`. Carries display-xl through subhead.
-- **Linear Text** — Linear's custom text sans (a slightly different cut tuned for body sizes); same fallback stack. Carries body sizes, button labels, captions.
-- **Linear Mono** — Linear's custom mono; fallback `ui-monospace, SF Mono, Menlo`. Used for code snippets in product screenshots and for status / ID tokens.
-
-The marketing surface treats Display and Text as one continuous voice; the family change is silent.
+All three ship via `next/font/google` (`Plus_Jakarta_Sans`, `Geist`, `Geist_Mono`) as CSS vars `--font-display`, `--font-sans`, `--font-mono`.
 
 ### Hierarchy
 
-| Token | Size | Weight | Line Height | Letter Spacing | Use |
-|---|---|---|---|---|---|
-| `{typography.display-xl}` | 80px | 600 | 1.05 | -3.0px | Largest hero headline |
-| `{typography.display-lg}` | 56px | 600 | 1.10 | -1.8px | Section opener headlines |
-| `{typography.display-md}` | 40px | 600 | 1.15 | -1.0px | Sub-section headlines |
-| `{typography.headline}` | 28px | 600 | 1.20 | -0.6px | Pricing tier titles, CTA banner heading |
-| `{typography.card-title}` | 22px | 500 | 1.25 | -0.4px | Feature card title |
-| `{typography.subhead}` | 20px | 400 | 1.40 | -0.2px | Lead body, intro paragraphs |
-| `{typography.body-lg}` | 18px | 400 | 1.50 | -0.1px | Hero subhead, lead paragraphs |
-| `{typography.body}` | 16px | 400 | 1.50 | -0.05px | Default body |
-| `{typography.body-sm}` | 14px | 400 | 1.50 | 0 | Card body, footer columns |
-| `{typography.caption}` | 12px | 400 | 1.40 | 0 | Captions, meta, status |
-| `{typography.button}` | 14px | 500 | 1.20 | 0 | All button labels |
-| `{typography.eyebrow}` | 13px | 500 | 1.30 | 0.4px | Section eyebrow (slight positive tracking) |
-| `{typography.mono}` | 13px | 400 | 1.50 | 0 | Linear Mono for code in product screenshots |
+| Token | Size | Weight | Line Height | Use |
+|---|---|---|---|---|
+| `{typography.display-xl}` | 54px | 800 | 1.08 | Hero headline |
+| `{typography.display-lg}` | 40px | 700 | 1.12 | Section openers |
+| `{typography.display-md}` | 30px | 700 | 1.15 | Sub-section headlines |
+| `{typography.headline}` | 22px | 700 | 1.25 | Card / pricing titles |
+| `{typography.card-title}` | 16px | 700 | 1.30 | Feature card titles |
+| `{typography.body}` | 15px | 400 | 1.55 | Default body |
+| `{typography.body-sm}` | 14px | 400 | 1.55 | Card body, footer |
+| `{typography.caption}` | 12.5px | 500 | 1.40 | Meta, captions |
+| `{typography.button}` | 14px | 700 | 1.20 | Button labels |
+| `{typography.eyebrow}` | 11px | 600 | 1.30 | Mono section eyebrows (0.14em) |
+| `{typography.mono}` | 12px | 400 | 1.50 | Mono captions (0.05em) |
 
 ### Principles
-
-- **Aggressive negative tracking on display** (-3.0px at 80px ≈ 4% of size).
-- **Single voice from display to body.** Display-xl at 600 → body at 400 — same family, narrower weights.
-- **Eyebrow uses positive tracking** (+0.4px) — contrast against the negative-tracked display marks the eyebrow as taxonomy.
-- **Mono only in code contexts.** Linear Mono lives inside product screenshots — not on marketing chrome.
-
-### Note on Font Substitutes
-
-Linear's custom typeface isn't publicly distributed; the documented fallback `SF Pro Display, -apple-system, system-ui` is the recommended substitute on macOS. For cross-platform implementation, **Inter** at weight 500 / 600 / 700 is the closest free substitute. **Geist Sans** is also viable. For mono, **JetBrains Mono** or **Geist Mono** at weight 400 closely approximates Linear Mono.
+- Display at weight 700–800, tight but not extreme negative tracking (−1px at 54px).
+- Body at weight 400, generous 1.55 line height, `text-balance` on display lines.
+- Eyebrows are **always** mono uppercase with wide tracking — they are the taxonomic voice, set in blue (`{colors.primary}`) on `{colors.primary-soft}`, usually with a small yellow `{colors.accent}` dot.
 
 ## Layout
 
-### Spacing System
-
-- **Base unit**: 4px.
-- **Tokens (front matter)**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.
-- Card interior padding: `{spacing.lg}` 24px on feature/pricing cards; `{spacing.xl}` 32px on testimonial cards; `{spacing.xxl}` 48px on CTA banners.
-- Pill button padding: 8px vertical · 14px horizontal — Linear's compact button spec.
-- Form input padding: 8px vertical · 12px horizontal.
+### Spacing
+- Base unit 4px. Tokens: `{spacing.xxs}` 4 · `{spacing.xs}` 8 · `{spacing.sm}` 12 · `{spacing.md}` 16 · `{spacing.lg}` 24 · `{spacing.xl}` 32 · `{spacing.xxl}` 48 · `{spacing.section}` 80px.
+- Card padding: 24px. CTA banners: 48px. Section rhythm: 80–96px.
 
 ### Grid & Container
-
-- Max content width sits around 1280px.
-- Card grids are 3-up at desktop, 2-up at tablet, 1-up at mobile.
-- Pricing tier grid is 3-up; comparison strip below shows checkmarks per tier.
-- Product screenshot panels span full content width — they're the protagonist.
-
-### Whitespace Philosophy
-
-The dark canvas IS the whitespace. Sections separate by lift onto surface-1 panels, not by gaps in white. Within a panel, generous `{spacing.lg}` 24px gaps between content blocks; `{spacing.section}` 96px between sections.
+- Max content width ~1200px (matches the reference); horizontal padding 24px.
+- Card grids: 3-up desktop, 2-up tablet, 1-up mobile.
+- Hero photo frames `clamp()` fluid heights.
 
 ## Elevation & Depth
+Light theme depth is carried by the **white-on-blue lift** + hairline borders + a soft neutral shadow:
 
 | Level | Treatment | Use |
 |---|---|---|
-| 0 (flat) | No shadow, no border | Default for body type, hero text, footer |
-| 1 (charcoal lift) | `{colors.surface-1}` background on canvas, 1px `{colors.hairline}` | Default cards, product panels |
-| 2 (surface-2 lift) | `{colors.surface-2}` background, 1px `{colors.hairline-strong}` | Featured pricing card, hovered cards |
-| 3 (surface-3 lift) | `{colors.surface-3}` background | Sub-nav, dropdown menus |
-| 4 (focus ring) | 2px `{colors.primary-focus}` outline at 50% opacity | Focused input, focused button |
+| 0 | Flat on canvas | Hero text, footers, page chrome |
+| 1 | White `{colors.surface-1}` card, 1px hairline, 3px colored top-border | Feature cards, pricing cards |
+| 2 | `{colors.surface-2}` + stronger hairline | Hovered cards, dropdowns |
+| 3 | Focus ring | Focused inputs/buttons |
+| Dark | Navy `{colors.navy}` | Footer, social cards, OG |
 
-Linear's depth is carried by surface ladder + hairline borders. The brand resists drop shadows on dark almost entirely.
-
-### Decorative Depth
-
-- **Product UI screenshots** dominate as decorative depth.
-- **No atmospheric gradients, no spotlight cards.**
-- **Subtle white edge highlight** on the top edge of lifted panels — gives the dark surface a faint "pixel rendered" feel.
+No stacked multi-layer shadows; the 3px top border is the signature hierarchy cue.
 
 ## Shapes
 
-### Border Radius Scale
-
 | Token | Value | Use |
 |---|---|---|
-| `{rounded.xs}` | 4px | Small chips, status badges |
-| `{rounded.sm}` | 6px | Inline tags |
-| `{rounded.md}` | 8px | All buttons, form inputs |
-| `{rounded.lg}` | 12px | Pricing cards, feature cards, testimonial cards |
-| `{rounded.xl}` | 16px | Product screenshot panels |
-| `{rounded.xxl}` | 24px | Oversized CTA banners (rare) |
-| `{rounded.pill}` | 9999px | Pricing tab toggles, status pills |
-| `{rounded.full}` | 9999px | Avatar circles |
-
-### Photography & Illustration Geometry
-
-- Product UI screenshots dominate; they sit in `{rounded.xl}` 16px tiles with `{spacing.lg}` 24px outer padding.
-- Customer logo tiles render at small sizes (~24px logo height) on `{colors.canvas}` with no border.
-- Avatar circles in testimonial cards use `{rounded.full}` at 32–40px sizes.
+| `{rounded.xs}` | 6px | tiny chips |
+| `{rounded.sm}` | 8px | check chips |
+| `{rounded.md}` | 11px | buttons, inputs, icon tiles |
+| `{rounded.lg}` | 14px | feature cards |
+| `{rounded.xl}` | 16px | primary card radius |
+| `{rounded.xxl}` | 20px | larger panels |
+| `{rounded.xxxl}` | 24px | CTA banners, hero frames |
+| `{rounded.photo}` | 34px | hero photographs |
+| `{rounded.pill}` | 9999px | pills, badges, avatars |
 
 ## Components
 
 ### Buttons
+- **Primary**: royal blue, white text, radius 11px, padding 10px 18px, soft blue shadow. Hover `{colors.primary-hover}`.
+- **Secondary**: white, ink text, 1px hairline border. Hover surface-2.
+- **WhatsApp**: solid `{colors.whatsapp}` green, white text — **keep green**; hover `{colors.whatsapp-hover}`. Outline variant uses `whatsapp-text`/`whatsapp-border`.
 
-**`button-primary`** — Lavender CTA. The default primary CTA across all pages.
-- Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}`, padding 8px 14px, rounded `{rounded.md}`.
-- Pressed state lives in `button-primary-pressed` (background shifts to `{colors.primary-focus}`).
-- Hover state lives in `button-primary-hover` (background shifts to `{colors.primary-hover}` lighter lavender).
+### Eyebrow Badge
+Mono uppercase pill: `{colors.primary-soft}` bg, `{colors.primary}` text, 1px `rgba(36,85,230,0.2)` border, radius pill, with a small yellow `{colors.accent}` dot. Used at every section opener.
 
-**`button-secondary`** — Charcoal button. Used for secondary CTAs ("Sign in", "Read changelog").
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.button}`, padding 8px 14px, rounded `{rounded.md}`. 1px `{colors.hairline}` border.
+### Feature Card
+White, radius 14–16px, 1px hairline, **3px `{colors.primary}` top border** (`{colors.accent}` for featured). Soft shadow. Hover lifts to surface-2.
 
-**`button-tertiary`** — Plain text button.
-- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.button}`, rounded `{rounded.md}`, padding 8px 14px.
+### Stat Number
+Plus Jakarta Sans 40px/800 in `{colors.primary}` with a caption beneath.
 
-**`button-inverse`** — White-on-dark inverse CTA.
-- Background `{colors.inverse-canvas}`, text `{colors.inverse-ink}`, type `{typography.button}`, rounded `{rounded.md}`, padding 8px 14px.
-
-### Pricing Tabs
-
-**`pricing-tab-default`** + **`pricing-tab-selected`** — Pill-toggle on `/pricing`.
-- Default: `{colors.canvas}` background, `{colors.ink-subtle}` text, rounded `{rounded.pill}`, padding 6px 14px.
-- Selected: `{colors.surface-2}` background, `{colors.ink}` text — selected = surface lift.
-
-### Cards & Containers
-
-**`pricing-card`** — Each tier on `/pricing`.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 24px. 1px `{colors.hairline}` border.
-
-**`pricing-card-featured`** — Recommended tier — surface lift to surface-2.
-- Background `{colors.surface-2}`, otherwise identical structure.
-
-**`feature-card`** — Generic feature highlight tile.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.lg}`, padding 24px.
-
-**`product-screenshot-card`** — The dominant card type — frames a high-fidelity Linear app UI screenshot.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.xl}`, padding 24px.
-
-**`testimonial-card`** — Customer quote with avatar + name + role.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body-lg}`, rounded `{rounded.lg}`, padding 32px.
-
-**`customer-logo-tile`** — Small tile in the customer marquee.
-- Background `{colors.canvas}`, text `{colors.ink-subtle}`, type `{typography.caption}`, rounded `{rounded.xs}`, padding 16px.
-
-**`cta-banner`** — Closing CTA panel near page bottom.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.headline}`, rounded `{rounded.lg}`, padding 48px.
-
-### Inputs & Forms
-
-**`text-input`** + **`text-input-focused`** — Form fields on `/contact/sales` and signup overlays.
-- Background `{colors.surface-1}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.md}`, padding 8px 12px.
-- Focused state retains the same surface; the focus ring is a 2px `{colors.primary-focus}` outline at 50% opacity.
-
-### Status & Build Page
-
-**`changelog-row`** — Each row in `/build` (changelog page) listing version, date, and changes.
-- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body}`, rounded `{rounded.xs}`, padding 24px 0. 1px `{colors.hairline}` bottom rule.
-
-**`status-badge`** — Small status pill.
-- Background `{colors.surface-2}`, text `{colors.ink-muted}`, type `{typography.caption}`, rounded `{rounded.pill}`, padding 2px 8px.
-
-### Navigation
-
-**`top-nav`** — Sticky dark bar with the Linear wordmark left, primary nav links centered, and a `button-secondary` ("Sign in") + `button-primary` ("Get started") pair right.
-- Background `{colors.canvas}`, text `{colors.ink}`, type `{typography.body-sm}`, height 56px.
+### Top Nav
+Sticky, translucent `rgba(240,245,255,0.94)` + backdrop blur, 56px, hairline bottom border. Logo left, links + language switcher center/right, blue primary CTA.
 
 ### Footer
+Deep navy `{colors.navy}`, text `{colors.navy-muted}`. Column headings mono uppercase **yellow** `{colors.accent}`. Links hover white. Social tiles `white/10`. Bottom bar `white/10` border.
 
-**`footer`** — Dense link grid on `{colors.canvas}` with the Linear wordmark left.
-- Background `{colors.canvas}`, text `{colors.ink-subtle}`, type `{typography.caption}`, padding 64px 32px.
+### Inputs
+White, 1px hairline, radius 11px; focus = `{colors.primary}` border + 3px blue-tinted ring.
 
 ## Do's and Don'ts
 
 ### Do
-
-- Reserve `{colors.canvas}` (#010102) as the system's anchor surface — the faint blue tint is intentional.
-- Use `{colors.primary}` lavender ONLY for: brand mark, primary CTA, focus ring, link emphasis.
-- Use the four-step surface ladder for hierarchy. Avoid skipping levels.
-- Pair display weight 600 with body weight 400 — Linear resists 700+ display weights.
-- Apply negative letter-spacing aggressively on display.
-- Use product UI screenshots as the protagonist of every section.
-- Compose CTAs as `{rounded.md}` 8px corners.
+- Keep the canvas cool/blue — it matches the logo (`{colors.canvas}`).
+- Use royal blue for primary actions and yellow as the single warm accent.
+- Use mono uppercase eyebrows at every section opener.
+- Use the 3px colored top-border to color-code cards.
+- Keep WhatsApp CTAs green.
+- Reserve navy for footer and dark social/OG surfaces.
+- Use `{colors.surface-1}` white for cards on the blue canvas.
 
 ### Don't
-
-- Don't ship a light-mode marketing page.
-- Don't use lavender as a section background or card fill.
-- Don't introduce a second chromatic accent (orange, pink, green for marketing).
-- Don't add atmospheric gradients or spotlight cards.
-- Don't pill-round CTAs.
-- Don't use `#000000` true black as the canvas.
-- Don't combine multiple bright accents in product screenshot mockups.
+- Don't reintroduce the dark canvas as the default surface.
+- Don't add purple/lavender anywhere (logo family is blue/cyan).
+- Don't make yellow a section background or card fill.
+- Don't pill-round CTAs (buttons stay 11px).
+- Don't use pure `#000000` or pure `#FFFFFF` as full canvases.
+- Don't introduce a second warm accent alongside yellow.
 
 ## Responsive Behavior
-
-### Breakpoints
-
-| Name | Width | Key Changes |
-|---|---|---|
-| Desktop-XL | 1440px | Default desktop layout |
-| Desktop | 1280px | Card grid 3-up maintained |
-| Tablet | 1024px | Card grid 3-up → 2-up |
-| Mobile-Lg | 768px | Pricing comparison becomes accordion; nav hamburger |
-| Mobile | 480px | Single-column; display-xl scales 80px → ~36px |
-
-### Touch Targets
-
-- CTAs hold ≥40px tap height across viewports.
-- Pricing tab pills hold ≥36px tap height; touch viewports grow to ≥44px.
-- Form inputs hold ≥44px tap target on touch.
-
-### Collapsing Strategy
-
-- **Top nav**: links collapse to hamburger below 768px.
-- **Card grids**: 3-up → 2-up at 1024px → 1-up below 768px.
-- **Pricing comparison**: per-tier accordion below 768px.
-- **Display type**: `{typography.display-xl}` 80px scales toward `{typography.display-md}` 40px on mobile.
-
-### Image Behavior
-
-- Product UI screenshots maintain aspect ratio and never crop.
-- Customer logos in the marquee may collapse from 6-up to 3-up below 768px.
+- Breakpoints: Desktop-XL 1440 / Desktop 1280 / Tablet 1024 (3-up → 2-up) / Mobile-Lg 768 (nav hamburger) / Mobile 480 (single column; display-xl scales 54px → ~36px).
+- Touch targets: CTAs ≥ 40px tall; pills ≥ 36px; inputs ≥ 44px on touch.
+- Eyebrow badges may drop the dot on small screens but never lose the mono tracking.
 
 ## Iteration Guide
-
-1. Focus on ONE component at a time and reference it by its `components:` token name.
-2. When introducing a section, decide first which surface lift it lives on.
-3. Default body to `{typography.body}` at weight 400.
+1. Reference components by their token names above before restyling.
+2. Every section opener: eyebrow badge + display-lg title + subtitle.
+3. Cards default to `{colors.surface-1}` white with the 3px top border.
 4. Run `npx @google/design.md lint DESIGN.md` after edits.
-5. Add new variants as separate component entries.
-6. Treat lavender as scarce: brand mark, primary CTA, focus, link emphasis.
-7. Lead every section with a product UI screenshot.
+5. Keep `{colors.primary}` blue and `{colors.accent}` yellow as the only chromatic pair.
+6. Verify any dark surface is one of the `{colors.navy}` tokens.
 
 ## Known Gaps
-
-- The four-step surface ladder values are extracted directly from Linear's `--color-bg-level-3`, `--color-line-tint`, etc. CSS variables; they are Linear's canonical surface spec.
-- Form-field error and validation styling is not visible on the inspected pages.
-- Light mode is not documented because the marketing site does not ship a light theme.
-- Linear's actual product UI uses a richer color-tag palette (red, orange, yellow, green, blue, purple) for issue priorities and project labels — those colors live in the in-product surfaces shown in mockups.
-- The custom display, text, and mono families are proprietary; an open-source substitute is acceptable.
+- Hero photographs: the live site currently has no large hero photos; `{rounded.photo}` is defined for when real product/team photos are added.
+- The zellige watermark (`public/images/zellige.svg`) is decorative; replace with a higher-fidelity asset if desired.
+- Plus Jakarta Sans caps at weight 800 — `font-black` (900) is not available; use 800.

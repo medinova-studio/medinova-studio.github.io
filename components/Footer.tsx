@@ -45,7 +45,7 @@ export default function Footer() {
   const f = t.footer;
 
   return (
-    <footer className="relative border-t border-hairline bg-canvas">
+    <footer className="relative border-t border-white/10 bg-navy">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16 lg:px-8">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 lg:grid-cols-6">
           {/* Brand & parent company */}
@@ -57,25 +57,25 @@ export default function Footer() {
                 className="h-9 w-auto object-contain"
               />
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-subtle">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#B9C6DE]">
               {f.mission}
             </p>
-            <p className="mt-4 flex items-center gap-1.5 text-sm text-ink-subtle">
-              <MapPin className="h-4 w-4 text-ink-tertiary" aria-hidden="true" />
+            <p className="mt-4 flex items-center gap-1.5 text-sm text-[#B9C6DE]">
+              <MapPin className="h-4 w-4 text-[#8FA1C4]" aria-hidden="true" />
               {f.location}
             </p>
             <a
               href="mailto:contact@medinovastudio.com"
-              className="mt-2 inline-flex items-center gap-1.5 text-sm text-ink-subtle transition-colors hover:text-ink"
+              className="mt-2 inline-flex items-center gap-1.5 text-sm text-[#B9C6DE] transition-colors hover:text-white"
             >
-              <Mail className="h-4 w-4 text-ink-tertiary" aria-hidden="true" />
+              <Mail className="h-4 w-4 text-[#8FA1C4]" aria-hidden="true" />
               {f.support}: contact@medinovastudio.com
             </a>
           </div>
 
           {/* B2B Growth Agency */}
           <div className="col-span-1">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+            <h3 className="eyebrow text-accent">
               {f.colAgency}
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -83,7 +83,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={AGENCY_HREFS[i]}
-                    className="text-sm text-ink-subtle transition-colors hover:text-ink"
+                    className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
             </ul>
             <Link
               href="/agency#contact"
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#6E8CFF] transition-colors hover:text-[#9DB2FF]"
             >
               {f.cta}
               <ArrowRight
@@ -104,7 +104,7 @@ export default function Footer() {
 
           {/* Game Dev & Interactive Tech */}
           <div className="col-span-1">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+            <h3 className="eyebrow text-accent">
               {f.colGameDev}
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -112,7 +112,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={GAME_DEV_HREFS[i]}
-                    className="text-sm text-ink-subtle transition-colors hover:text-ink"
+                    className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
@@ -123,7 +123,7 @@ export default function Footer() {
 
           {/* Medinova Academy */}
           <div className="col-span-1">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+            <h3 className="eyebrow text-accent">
               {f.colAcademy}
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -131,7 +131,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={ACADEMY_HREFS[i]}
-                    className="text-sm text-ink-subtle transition-colors hover:text-ink"
+                    className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
@@ -142,7 +142,7 @@ export default function Footer() {
 
           {/* Trust, Legal & Compliance */}
           <div className="col-span-1">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+            <h3 className="eyebrow text-accent">
               {f.colLegal}
             </h3>
             <ul className="mt-4 space-y-2.5">
@@ -150,14 +150,14 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={LEGAL_HREFS[i]}
-                    className="text-sm text-ink-subtle transition-colors hover:text-ink"
+                    className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <p className="mt-6 border-t border-hairline pt-4 text-xs leading-relaxed text-ink-tertiary">
+            <p className="mt-6 border-t border-white/10 pt-4 text-xs leading-relaxed text-[#8FA1C4]">
               {f.taxDisclaimer}
             </p>
             <div className="mt-4 flex items-center gap-2.5">
@@ -168,7 +168,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-md border border-hairline bg-surface-1 text-ink-subtle transition-colors hover:border-hairline-strong hover:text-ink"
+                  className="flex h-9 w-9 items-center justify-center rounded-md border border-white/15 bg-white/10 text-[#C9D4EA] transition-colors hover:border-white/40 hover:text-white"
                 >
                   <svg
                     viewBox="0 0 24 24"
@@ -186,8 +186,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-hairline">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-5 py-6 text-[11px] text-ink-tertiary sm:flex-row sm:px-6 lg:px-8">
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-5 py-6 text-[11px] text-[#8FA1C4] sm:flex-row sm:px-6 lg:px-8">
           <p>
             &copy; {new Date().getFullYear()} Medinova Studio. {f.rights}
           </p>

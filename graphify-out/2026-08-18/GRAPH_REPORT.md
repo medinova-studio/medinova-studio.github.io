@@ -1,7 +1,7 @@
 # Graph Report - medinova-studio.github.io  (2026-08-18)
 
 ## Corpus Check
-- 77 files · ~661,594 words
+- 77 files · ~661,591 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

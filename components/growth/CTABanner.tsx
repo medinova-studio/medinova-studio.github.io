@@ -24,7 +24,7 @@ export default function CTABanner() {
               </p>
               <Button
                 href="#contact"
-                className="group mt-9 px-8 py-4 shadow-lg shadow-primary/30 hover:shadow-[0_0_45px_-6px_rgba(130,143,255,0.75)]"
+                className="group mt-9 px-8 py-4 shadow-lg shadow-primary/30 hover:shadow-[0_0_45px_-6px_rgba(36,85,230,0.75)]"
               >
                 {cta.button}
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5" />

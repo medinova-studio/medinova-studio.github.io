@@ -68,8 +68,8 @@ export function BrandCard({
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#010102",
-        color: "#f7f8f8",
+        backgroundColor: "#101A33",
+        color: "#F7FAFF",
         fontFamily: "Inter",
         padding: "72px",
         position: "relative",
@@ -85,7 +85,7 @@ export function BrandCard({
           height: "640px",
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(94,106,210,0.30) 0%, rgba(94,106,210,0) 70%)",
+            "radial-gradient(circle, rgba(36,85,230,0.35) 0%, rgba(36,85,230,0) 70%)",
         }}
       />
       <div
@@ -97,7 +97,7 @@ export function BrandCard({
           height: "560px",
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(94,106,210,0.16) 0%, rgba(94,106,210,0) 70%)",
+            "radial-gradient(circle, rgba(0,160,240,0.16) 0%, rgba(0,160,240,0) 70%)",
         }}
       />
 
@@ -124,7 +124,7 @@ export function BrandCard({
               fontWeight: 600,
               fontSize: "22px",
               letterSpacing: "3px",
-              color: "#f7f8f8",
+              color: "#F7FAFF",
             }}
           >
             MEDINOVA STUDIO
@@ -135,7 +135,7 @@ export function BrandCard({
             fontSize: "15px",
             fontWeight: 600,
             letterSpacing: "3px",
-            color: "#62666d",
+            color: "#7D8DB0",
           }}
         >
           KENTIRA · MOROCCO
@@ -158,8 +158,8 @@ export function BrandCard({
             alignItems: "center",
             gap: "10px",
             alignSelf: "flex-start",
-            border: "1px solid #34343a",
-            backgroundColor: "#141516",
+            border: "1px solid #2A3A63",
+            backgroundColor: "#16223F",
             borderRadius: "9999px",
             padding: "8px 18px",
           }}
@@ -169,7 +169,7 @@ export function BrandCard({
               width: "8px",
               height: "8px",
               borderRadius: "50%",
-              backgroundColor: "#5e6ad2",
+              backgroundColor: "#FFD749",
             }}
           />
           <span
@@ -177,7 +177,7 @@ export function BrandCard({
               fontSize: "15px",
               fontWeight: 600,
               letterSpacing: "2.5px",
-              color: "#d0d6e0",
+              color: "#C9D6F0",
             }}
           >
             {badge}
@@ -191,7 +191,7 @@ export function BrandCard({
             fontSize: "50px",
             lineHeight: 1.15,
             letterSpacing: "-1px",
-            color: "#f7f8f8",
+            color: "#F7FAFF",
           }}
         >
           {title}
@@ -201,7 +201,7 @@ export function BrandCard({
             marginTop: "24px",
             fontSize: "21px",
             lineHeight: 1.55,
-            color: "#8a8f98",
+            color: "#A8B8D8",
             maxWidth: "720px",
           }}
         >
@@ -214,7 +214,7 @@ export function BrandCard({
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          borderTop: "1px solid #23252a",
+          borderTop: "1px solid #1E2C4D",
           paddingTop: "24px",
           position: "relative",
         }}
@@ -224,7 +224,7 @@ export function BrandCard({
             fontSize: "16px",
             fontWeight: 600,
             letterSpacing: "1px",
-            color: "#d0d6e0",
+            color: "#C9D6F0",
           }}
         >
           {site}
@@ -234,7 +234,7 @@ export function BrandCard({
             fontSize: "15px",
             fontWeight: 600,
             letterSpacing: "2px",
-            color: "#62666d",
+            color: "#7D8DB0",
           }}
         >
           GAMES · GROWTH · EDUCATION

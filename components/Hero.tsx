@@ -9,11 +9,12 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+      <div className="pointer-events-none absolute inset-0 bg-[url('/images/zellige.svg')] bg-[size:280px] opacity-70 [mask-image:radial-gradient(ellipse_90%_85%_at_50%_0%,#000_15%,transparent_78%)]" />
+      <div className="relative max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
         <div className="max-w-3xl">
           <Reveal>
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
               {t.hero.badge}
             </span>
           </Reveal>

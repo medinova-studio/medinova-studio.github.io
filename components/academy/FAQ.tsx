@@ -15,7 +15,7 @@ export default function FAQ() {
     <section id="faq" className="relative py-20 sm:py-28 border-t border-hairline">
       <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-4">
             {faq.badge}
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight text-balance">

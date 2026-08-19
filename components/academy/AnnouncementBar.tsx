@@ -11,10 +11,10 @@ export default function AnnouncementBar() {
           {t.academy.announcement}
         </p>
         <a
-          href="#tracks"
+          href="#courses"
           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md bg-primary text-white text-[11px] font-semibold hover:bg-primary-hover active:scale-[0.98] transition-all whitespace-nowrap"
         >
-          {t.nav.discoverTracks}
+          {t.academy.announcementCta}
         </a>
       </div>
     </div>

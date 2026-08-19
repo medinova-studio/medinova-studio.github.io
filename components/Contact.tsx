@@ -99,7 +99,7 @@ export default function Contact() {
           {/* Left: Info */}
           <Reveal>
             <div>
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-4">
                 {t.contact.badge}
               </span>
               <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink mb-5 tracking-tight">

@@ -79,7 +79,7 @@ export default function LandingHeader() {
           <Button
             href="#contact"
             size="sm"
-            className="hidden whitespace-nowrap shadow-lg shadow-primary/25 hover:shadow-[0_0_32px_-6px_rgba(130,143,255,0.6)] sm:inline-flex"
+            className="hidden whitespace-nowrap shadow-lg shadow-primary/25 hover:shadow-[0_0_32px_-6px_rgba(36,85,230,0.6)] sm:inline-flex"
           >
             {nav.cta}
           </Button>

@@ -33,7 +33,7 @@ export default function Pricing() {
                 key={plan.name}
                 className={
                   isFeatured
-                    ? "rounded-2xl bg-gradient-to-b from-primary/60 via-primary/20 to-transparent p-px shadow-[0_0_60px_-18px_rgba(94,106,210,0.55)] md:scale-[1.03]"
+                    ? "rounded-2xl bg-gradient-to-b from-primary/60 via-primary/20 to-transparent p-px shadow-[0_0_60px_-18px_rgba(36,85,230,0.55)] md:scale-[1.03]"
                     : ""
                 }
               >
@@ -108,7 +108,7 @@ export default function Pricing() {
                     variant={isFeatured ? "primary" : "secondary"}
                     className={`mt-7 w-full ${
                       isFeatured
-                        ? "shadow-lg shadow-primary/30 hover:shadow-[0_0_40px_-6px_rgba(130,143,255,0.7)]"
+                        ? "shadow-lg shadow-primary/30 hover:shadow-[0_0_40px_-6px_rgba(36,85,230,0.7)]"
                         : ""
                     }`}
                   >

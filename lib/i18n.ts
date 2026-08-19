@@ -17,84 +17,71 @@ export type AcademyTranslation = {
     badge: string;
     headline: string;
     subheadline: string;
-    targetAudience: string;
-    secondaryCta: string;
+    cta: string;
     trust: { title: string; desc: string }[];
   };
-  proof: {
+  why: {
     badge: string;
     title: string;
-    founderCaption: string;
-    boothCaption: string;
-    robloxBadge: string;
-    robloxTitle: string;
-    robloxCta: string;
-    showcaseLabel: string;
-    games: string[];
+    items: { title: string; desc: string }[];
   };
-  tracks: {
+  founder: {
     badge: string;
     title: string;
-    programLabel: string;
-    resultLabel: string;
-    levels: {
-      level: string;
-      title: string;
-      programTitle?: string;
-      levelName: string;
-      target: string;
-      focus: string[];
-      outcome: string;
-    }[];
+    text: string;
+    caption: string;
   };
-  community: {
+  work: {
     badge: string;
     title: string;
     subtitle: string;
-    features: { title: string; desc: string }[];
+    robloxBadge: string;
+    robloxTitle: string;
+    robloxCta: string;
+    mgeBadge: string;
+    mgeTitle: string;
+    mgeDesc: string;
+    gamesLabel: string;
+    games: string[];
+    studioLink: string;
   };
-  certification: {
+  courses: {
     badge: string;
     title: string;
-    diplomasTitle: string;
-    diplomasSubtitle: string;
-    levels: string[];
-    diplomas: string[];
-    includedTitle: string;
-    highlights: { title: string; desc: string }[];
-    recognition: string;
+    intro: string;
+    agesLabel: string;
+    progressionLabel: string;
+    items: {
+      name: string;
+      age: string;
+      desc: string;
+      levels?: { label: string; topics: string[] }[];
+    }[];
   };
-  pricing: {
+  teaching: {
     badge: string;
     title: string;
-    pacingOptions: string[];
-    periodOptions: string[];
-    tierDesc: string[];
-    monthlyLabel: string;
-    quarterlyLabel: string;
-    levelLabels: string[];
-    rates: { monthly: number; intensive: number; quarterly: number }[];
-    billedMonthly: string;
-    billedQuarterly: string;
-    featuredBadge: string;
-    features: string[];
+    modelTitle: string;
+    steps: { title: string; desc: string }[];
+    model: string[];
+  };
+  finalCta: {
+    title: string;
+    subtitle: string;
     cta: string;
-    guaranteeStrong: string;
-    guarantee: string;
   };
   faq: {
     badge: string;
     title: string;
     subtitle: string;
-    items: { q: string; a: string; category?: string }[];
+    items: { q: string; a: string }[];
   };
   whatsapp: {
     message: string;
     online: string;
     aria: string;
-    levelMessages: string[];
     quickQuestion: string;
-    registerCta: string;
+    cta: string;
   };
 };
 
@@ -867,190 +854,172 @@ export const translations: Record<Lang, Translation> = {
     },
     academy: {
       announcement:
-        "💻 100% Online • Learn from home (PC + Internet Connection) | Classes available in English or Arabic",
-      announcementCta: "Register / Learn More",
+        "Live instructor-led classes for learners aged 7+ · English, French & Arabic",
+      announcementCta: "Book a Free Trial",
       hero: {
-        badge:
-          "● Live Cohorts | Led by the Studio Founder | 100% Satisfaction or Money Back",
-        headline:
-          "Learn to Code, Create Video Games & Master AI — Whatever Your Age or Level",
+        badge: "A Program by Medinova Studio",
+        headline: "Build Skills. Create Projects. Shape the Future.",
         subheadline:
-          "From visual blocks (Scratch) to C#, Unity 3D, Web development and Vibe Coding. 100% online programs for kids, teens, women and beginner adults, taught by a studio engineer.",
-        targetAudience:
-          "Suitable for All Ages & Skill Levels — From 7 Years & Up",
-        secondaryCta: "See Plans & Pricing",
+          "Practical technology and coding education for learners aged 7+, taught through real projects by the founder of Medinova Studio.",
+        cta: "Book a Free Trial",
         trust: [
           {
-            title: "100% Satisfaction or Money Back",
-            desc: "after the 1st session",
+            title: "Learners aged 7+",
+            desc: "Courses matched to every age and level",
           },
           {
-            title: "Creator of a Roblox game",
-            desc: "with 1,000,000+ plays",
+            title: "English · French · Arabic",
+            desc: "Classes in three languages",
           },
-          { title: "Small groups", desc: "Max 6–8 students" },
+          {
+            title: "Live & project-based",
+            desc: "Instructor-led with real projects",
+          },
         ],
       },
-      proof: {
-        badge: "The Studio Behind the Academy",
-        title:
-          "Your classes aren't taught by a generic tutor, but by an Engineer & Studio Founder",
-        founderCaption: "Mounir Abbotti — Founder of Medinova Studio & Lead Dev.",
-        boothCaption:
-          "Booth C38 — Morocco Gaming Expo (Showcasing our games to the public).",
-        robloxBadge: "Roblox Social Proof",
+      why: {
+        badge: "Why Medinova Academy",
+        title: "A learning experience built around real projects",
+        items: [
+          {
+            title: "Learn by Doing",
+            desc: "Build real projects instead of only following lessons.",
+          },
+          {
+            title: "Build Your Portfolio",
+            desc: "Turn what you learn into projects you can keep and showcase.",
+          },
+          {
+            title: "Learn From a Real Studio",
+            desc: "Learn directly from the founder of Medinova Studio.",
+          },
+        ],
+      },
+      founder: {
+        badge: "The Founder",
+        title: "Learn directly from the founder of Medinova Studio",
+        text:
+          "Learners are taught by Mounir Abbotti, founder and lead developer of Medinova Studio — an active game development and technology studio with published games and real projects. Instead of following pre-recorded lessons, learners learn from someone who designs, builds and ships technology every day.",
+        caption: "Mounir Abbotti — Founder of Medinova Studio & Lead Developer.",
+      },
+      work: {
+        badge: "Our Work",
+        title: "Backed by a real studio that ships real projects",
+        subtitle:
+          "Medinova Academy is a program by Medinova Studio, an active game development and technology studio. The projects below are Medinova Studio projects — real published work, not student projects.",
+        robloxBadge: "Medinova Studio on Roblox",
         robloxTitle:
-          "Creator of 'Zombies WarZone' on Roblox — Over 1,000,000 games played worldwide.",
+          "Creator of 'Zombies WarZone' on Roblox — over 1,000,000 games played worldwide.",
         robloxCta: "Play on Roblox",
-        showcaseLabel:
-          "Studio Mini Showcase — Games published on the App Store",
+        mgeBadge: "Morocco Gaming Expo",
+        mgeTitle: "Booth C38 — Morocco Gaming Expo",
+        mgeDesc:
+          "Showcasing our published games to the public at Morocco's national gaming event.",
+        gamesLabel: "Medinova Studio projects — Published on the App Store",
         games: [
           "Pharaoh's Guardian: Mummies",
           "Chameleon Outbreak: Camo Hunt",
           "Sniper Elimination Challenge",
           "Blitz Combat Race",
         ],
+        studioLink: "Explore the studio's full portfolio",
       },
-      tracks: {
-        badge: "3 Inclusive Progressive Tracks",
-        title:
-          "A Clear Path from Absolute Beginner to Professional Mastery — No Age Limit",
-        programLabel: "Program",
-        resultLabel: "Outcome",
-        levels: [
+      courses: {
+        badge: "Explore Our Courses",
+        title: "Explore Our Courses",
+        intro:
+          "From digital skills and coding to game development, web development and creative design, learners can explore technology through practical, project-based learning.",
+        agesLabel: "Recommended age",
+        progressionLabel: "Progression",
+        items: [
           {
-            level: "LEVEL 1",
-            title: "START",
-            programTitle: "Absolute Beginner & Coding Logic",
-            levelName: "Beginner",
-            target:
-              "Beginners, Kids (7–9), Adults/Women getting into code",
-            focus: [
-              "Visual Logic",
-              "Scratch",
-              "Graphic Design",
-              "Digital Literacy & AI Intro",
-            ],
-            outcome:
-              "Interactive 2D games, animated stories and algorithmic logic foundations without syntax constraints.",
+            name: "Digital Essentials",
+            age: "7+",
+            desc:
+              "Build essential digital skills for everyday life, including computer basics, Word, Excel, PowerPoint, internet use and more.",
           },
           {
-            level: "LEVEL 2",
-            title: "BUILD",
-            programTitle: "Scripting, Web & 3D",
-            levelName: "Intermediate",
-            target:
-              "Kids (10–12), Teens & Adults ready for textual code",
-            focus: [
-              "Roblox Studio (Lua 3D Scripting)",
-              "Web Basics (HTML & CSS)",
-              "Python Fundamentals",
-              "Video Editing & Devlogs",
-            ],
-            outcome:
-              "A 3D game published on Roblox, custom web pages and standalone Python scripts.",
+            name: "Scratch",
+            age: "7+",
+            desc:
+              "Build logical thinking and problem-solving skills through visual programming. Children learn the fundamentals of algorithms, sequencing, mathematics and computational thinking while creating their own interactive stories, animations and games.",
           },
           {
-            level: "LEVEL 3",
-            title: "MASTER",
-            programTitle: "3D Game Engineering & AI",
-            levelName: "Advanced / Pro",
-            target: "Teens (13+), Students & Adults",
-            focus: [
-              "Unity C# Engine (Mobile & PC)",
-              "3D Modeling (Blender)",
-              "Advanced Web (JavaScript)",
-              "Vibe Coding Workflows & AI Tools",
+            name: "Python",
+            age: "11+",
+            desc:
+              "Develop structured thinking, problem-solving and programming skills through Python. Learners turn ideas into working programs, games and practical applications while building a strong foundation for more advanced technology.",
+          },
+          {
+            name: "Roblox Game Development",
+            age: "9+",
+            desc:
+              "Develop creativity, spatial thinking and problem-solving skills by designing and building interactive 3D worlds. Learners explore game design and programming while creating their own Roblox experiences.",
+          },
+          {
+            name: "Unity & C# Game Development",
+            age: "12+",
+            desc:
+              "Develop advanced problem-solving, logical thinking and programming skills through professional game development. Learners use Unity and C# to design mechanics, build 2D and 3D games, and turn their ideas into playable projects.",
+          },
+          {
+            name: "Web Development",
+            age: "11+",
+            desc:
+              "Learn how websites work while developing creativity, logical thinking and problem-solving skills. Learners start with HTML, CSS and JavaScript, then progress to PHP and MySQL to build websites connected to real databases.",
+            levels: [
+              {
+                label: "Starter",
+                topics: ["HTML", "CSS", "JavaScript"],
+              },
+              {
+                label: "Pro",
+                topics: ["PHP", "MySQL", "Backend & databases"],
+              },
             ],
-            outcome:
-              "A complete 3D game on Unity, original 3D assets and mastery of AI-assisted coding tools.",
+          },
+          {
+            name: "Creative Design",
+            age: "10+",
+            desc:
+              "Develop creativity, visual communication and digital production skills. Learners explore 3D creation, photo editing and video editing while turning their ideas into original digital projects.",
           },
         ],
       },
-      community: {
-        badge: "● Moderated & Secure Environment",
-        title: "A Safe & Supervised Community",
+      teaching: {
+        badge: "How We Teach",
+        title: "How We Teach",
+        modelTitle: "A complete learning experience",
+        steps: [
+          {
+            title: "Learn",
+            desc: "Live instruction with practical explanations and demonstrations.",
+          },
+          {
+            title: "Practice",
+            desc: "Exercises and guided activities help learners apply each new concept.",
+          },
+          {
+            title: "Create",
+            desc: "Learners build real projects throughout the course.",
+          },
+          {
+            title: "Showcase",
+            desc: "Complete projects become part of their portfolio, followed by a certificate after course completion.",
+          },
+        ],
+        model: [
+          "Live classes",
+          "Learning materials",
+          "Exercises",
+          "Community support",
+        ],
+      },
+      finalCta: {
+        title: "Ready to Start Learning?",
         subtitle:
-          "Learning is more effective and more fun within an accompanied community.",
-        features: [
-          {
-            title: "Private help space",
-            desc: "A dedicated Q&A where every learner asks freely.",
-          },
-          {
-            title: "Project feedback channels",
-            desc: "Regular reviews of your Roblox, Unity, Blender & Web creations.",
-          },
-          {
-            title: "24/7 supervision, no toxicity",
-            desc: "A moderated, kind and judgment-free environment.",
-          },
-          {
-            title: "Monthly mini-challenges",
-            desc: "Fun challenges to progress while having fun.",
-          },
-        ],
-      },
-      certification: {
-        badge: "Certification",
-        title:
-          "An Official & Verifiable Diploma at Every Level",
-        diplomasTitle: "Diplomas by Level",
-        diplomasSubtitle:
-          "Official recognition at every step of the journey.",
-        levels: ["Level 1", "Level 2", "Level 3"],
-        diplomas: [
-          "Certificate in Algorithmic Logic & Digital Creation",
-          "Diploma in 3D Scripting & Web Development",
-          "Diploma in 3D Game Engineering, Web & AI Technologies",
-        ],
-        includedTitle: "What's included",
-        highlights: [
-          {
-            title: "Printable validated modules",
-            desc: "Every validated module is certified and printable.",
-          },
-          {
-            title: "Verification QR Code",
-            desc: "Verify each diploma towards your online portfolio.",
-          },
-          {
-            title: "Monthly WhatsApp reports",
-            desc: "Detailed progress sent to parents & learners.",
-          },
-        ],
-        recognition: "Recognized by our industry partners",
-      },
-      pricing: {
-        badge: "Pricing & Plans",
-        title: "Flexible Plans, a Pace That Suits You",
-        pacingOptions: ["1 Session / Week", "2 Sessions / Week (Intensive)"],
-        periodOptions: ["Monthly", "Quarterly (-15%)"],
-        tierDesc: [
-          "Beginner · Kids, Teens & Adults",
-          "Intermediate · Textual code & 3D",
-          "Advanced / Pro · Unity, Web & AI",
-        ],
-        monthlyLabel: "MAD / month",
-        quarterlyLabel: "MAD / quarter",
-        levelLabels: ["Level 1", "Level 2", "Level 3"],
-        rates: [
-          { monthly: 590, intensive: 990, quarterly: 1500 },
-          { monthly: 790, intensive: 1290, quarterly: 2000 },
-          { monthly: 990, intensive: 1690, quarterly: 2500 },
-        ],
-        billedMonthly: "Billed monthly · {sessions} session(s) / week",
-        billedQuarterly: "Billed {total} MAD / quarter (-15%)",
-        featuredBadge: "Most Complete",
-        features: [
-          "Small groups (Max 6–8 students)",
-          "100% live online classes",
-          "Access to the secure community",
-          "Personalized tracking & devlogs",
-        ],
-        cta: "Register",
-        guaranteeStrong: "100% Satisfaction or Money Back",
-        guarantee: " after the 1st session — no questions asked.",
+          "Book a free trial and discover which learning path is right for you.",
+        cta: "Book a Free Trial",
       },
       faq: {
         badge: "Frequently Asked Questions",
@@ -1059,54 +1028,54 @@ export const translations: Record<Lang, Translation> = {
           "Answers to the most asked questions from parents and learners.",
         items: [
           {
-            q: "What do my child or I need to attend the classes?",
-            a: "A simple PC or Mac and an Internet connection. No expensive hardware required — we guide every learner on the free software to install depending on the track.",
-            category: "equipment",
+            q: "What age can my child start?",
+            a: "Our Academy starts from age 7+. Each course has its own recommended age range, so learners can choose a program suited to their age and experience.",
           },
           {
-            q: "In which language are the classes taught?",
-            a: "Classes are available in English or Arabic, with bilingual support and French explanations depending on the learner's needs.",
-            category: "language",
+            q: "Does my child need previous experience?",
+            a: "No. Several courses are designed for complete beginners. For more advanced courses, previous knowledge may be recommended.",
           },
           {
-            q: "Can beginner adults enroll in Level 1?",
-            a: "Yes, absolutely. Level 1 is designed to teach algorithmic logic to all ages, without intimidation and without technical prerequisites.",
-            category: "adults",
+            q: "Which languages are the classes available in?",
+            a: "Classes are available in English, French and Arabic, depending on the learner's language level and the course group.",
           },
           {
-            q: "How does the satisfaction-or-money-back guarantee work?",
-            a: "If the 1st session isn't right for you, we refund 100% without justification. It's our commitment to the quality of our classes.",
-            category: "pricing",
+            q: "Are the classes online or in person?",
+            a: "Classes are conducted live with an instructor. We can offer online learning, with the exact format depending on the group and schedule.",
           },
           {
-            q: "My child has never coded before. Can they still join?",
-            a: "Absolutely. Our Junior Explorers track starts from zero — no prior experience needed. We begin with visual block-based programming (Scratch) that teaches logic and problem-solving through fun, game-like exercises. Every student learns at their own pace with instructor guidance.",
-            category: "beginners",
+            q: "Can my child try a class before enrolling?",
+            a: "Yes. We offer a free trial lesson before enrollment. This allows the learner and parent to see how the class works before making a commitment.",
           },
           {
-            q: "How is this different from computer classes at school?",
-            a: "School computer classes cover general digital literacy. Medinova Academy is a project-based coding studio where students build real games, apps, and software. They learn industry tools (Python, Unity, React) and develop a professional portfolio — not just theory.",
-            category: "beginners",
+            q: "What will my child actually learn?",
+            a: "Our courses focus on practical technology skills, problem-solving, logical thinking and creativity. Students learn by building projects rather than simply watching lessons.",
           },
           {
-            q: "Do students receive certificates or build a portfolio?",
-            a: "Yes. Every student completes hands-on projects (games, apps, interactive media) that form a personal portfolio they can showcase. Upon completing a track, students receive a Medinova Academy certificate of completion recognized by our industry partners.",
-            category: "certification",
+            q: "Will my child receive a certificate?",
+            a: "Yes. Students receive a Certificate of Completion after successfully completing their course and final project.",
+          },
+          {
+            q: "Will my child have projects to show?",
+            a: "Yes. Students build projects throughout their course and finish with work they can keep as part of their digital portfolio.",
+          },
+          {
+            q: "What support is available outside the live class?",
+            a: "Students receive learning materials, exercises and support through the Academy community, where they can ask questions and receive guidance.",
+          },
+          {
+            q: "How do I book a trial?",
+            a: "Click Book a Free Trial and contact us through WhatsApp. We'll discuss the learner's age, interests and language before arranging the appropriate trial session.",
           },
         ],
       },
       whatsapp: {
         message:
-          "Hello, I have a question about registering for Medinova Academy.",
+          "Hello, I would like to book a free trial lesson at Medinova Academy.",
         online: "Online — Quick WhatsApp Reply",
         aria: "Chat on WhatsApp",
-        levelMessages: [
-          "Hello, I have a question about registering for Level 1 (START).",
-          "Hello, I have a question about registering for Level 2 (BUILD).",
-          "Hello, I have a question about the advanced Level 3 (MASTER) and Vibe Coding.",
-        ],
         quickQuestion: "Quick question via WhatsApp",
-        registerCta: "Register via WhatsApp",
+        cta: "Book a Free Trial",
       },
     },
   },
@@ -1617,192 +1586,174 @@ export const translations: Record<Lang, Translation> = {
     },
     academy: {
       announcement:
-        "💻 100% En Ligne • Apprenez depuis chez vous (PC + Connexion Internet) | Cours disponibles en Anglais ou Arabe",
-      announcementCta: "S'inscrire / En Savoir Plus",
+        "Cours en direct pour les apprenants dès 7 ans · Anglais, Français & Arabe",
+      announcementCta: "Réserver un Essai Gratuit",
       hero: {
-        badge:
-          "● Live Cohorts | Dirigé par le Fondateur du Studio | 100% Satisfait ou Remboursé",
+        badge: "Un Programme de Medinova Studio",
         headline:
-          "Apprenez à Coder, Créer des Jeux Vidéo & Maîtriser l'IA — Quel que soit votre Âge ou votre Niveau",
+          "Développer des compétences. Créer des projets. Construire l'avenir.",
         subheadline:
-          "Du bloc visuel (Scratch) jusqu'au développement C#, Unity 3D, Web et Vibe Coding. Des programmes 100% en ligne pour enfants, ados, femmes et adultes débutants animés par un ingénieur de studio.",
-        targetAudience: "Adapté à tous les âges et niveaux — Dès 7 ans",
-        secondaryCta: "Voir les Tarifs",
+          "Une formation pratique en technologie et en programmation pour les apprenants dès 7 ans, enseignée à travers de vrais projets par le fondateur de Medinova Studio.",
+        cta: "Réserver un Essai Gratuit",
         trust: [
           {
-            title: "100% Satisfait ou Remboursé",
-            desc: "après la 1ère séance",
+            title: "Apprenants dès 7 ans",
+            desc: "Des cours adaptés à chaque âge et niveau",
           },
           {
-            title: "Créateur d'un jeu Roblox",
-            desc: "à +1 000 000 de parties",
+            title: "Anglais · Français · Arabe",
+            desc: "Des cours en trois langues",
           },
-          { title: "Groupes réduits", desc: "Max 6–8 élèves" },
+          {
+            title: "En direct & par projets",
+            desc: "Animés par un instructeur avec de vrais projets",
+          },
         ],
       },
-      proof: {
-        badge: "Le Studio Derrière l'Académie",
-        title:
-          "Vos cours ne sont pas animés par un tuteur générique, mais par un Ingénieur & Fondateur de Studio",
-        founderCaption:
-          "Mounir Abbotti — Fondateur de Medinova Studio & Lead Dev.",
-        boothCaption:
-          "Stand C38 — Morocco Gaming Expo (Présentation de nos jeux au grand public).",
-        robloxBadge: "Preuve Sociale Roblox",
+      why: {
+        badge: "Pourquoi Medinova Academy",
+        title: "Une expérience d'apprentissage construite autour de vrais projets",
+        items: [
+          {
+            title: "Apprendre en Faisant",
+            desc: "Construire de vrais projets au lieu de suivre de simples leçons.",
+          },
+          {
+            title: "Construire Son Portfolio",
+            desc: "Transformer ce que vous apprenez en projets à garder et à montrer.",
+          },
+          {
+            title: "Apprendre d'un Vrai Studio",
+            desc: "Apprendre directement du fondateur de Medinova Studio.",
+          },
+        ],
+      },
+      founder: {
+        badge: "Le Fondateur",
+        title: "Apprendre directement du fondateur de Medinova Studio",
+        text:
+          "Les apprenants sont accompagnés par Mounir Abbotti, fondateur et développeur principal de Medinova Studio — un studio actif de développement de jeux et de technologies avec des jeux publiés et des projets réels. Plutôt que de suivre des leçons préenregistrées, les apprenants apprennent auprès de quelqu'un qui conçoit, construit et livre de la technologie chaque jour.",
+        caption:
+          "Mounir Abbotti — Fondateur de Medinova Studio & Développeur principal.",
+      },
+      work: {
+        badge: "Notre Travail",
+        title: "Soutenu par un vrai studio qui livre de vrais projets",
+        subtitle:
+          "Medinova Academy est un programme de Medinova Studio, un studio actif de développement de jeux et de technologies. Les projets ci-dessous sont des projets de Medinova Studio — un travail réel publié, pas des projets d'élèves.",
+        robloxBadge: "Medinova Studio sur Roblox",
         robloxTitle:
-          "Créateur de \"Zombies WarZone\" sur Roblox — Plus de 1,000,000 de parties jouées dans le monde.",
+          "Créateur de \"Zombies WarZone\" sur Roblox — plus de 1,000,000 de parties jouées dans le monde.",
         robloxCta: "Jouer sur Roblox",
-        showcaseLabel:
-          "Mini Vitrine du Studio — Des jeux publiés sur l'App Store",
+        mgeBadge: "Morocco Gaming Expo",
+        mgeTitle: "Stand C38 — Morocco Gaming Expo",
+        mgeDesc:
+          "Présentation de nos jeux publiés au public lors de l'événement national du jeu vidéo au Maroc.",
+        gamesLabel: "Projets de Medinova Studio — Publiés sur l'App Store",
         games: [
           "Pharaoh's Guardian: Mummies",
           "Chameleon Outbreak: Camo Hunt",
           "Sniper Elimination Challenge",
           "Blitz Combat Race",
         ],
+        studioLink: "Découvrir le portfolio complet du studio",
       },
-      tracks: {
-        badge: "3 Parcours Progressifs & Inclusifs",
-        title:
-          "Un Chemin Clair du Débutant Absolu à la Maîtrise Professionnelle — Sans Limite d'Âge",
-        programLabel: "Au Programme",
-        resultLabel: "Résultat",
-        levels: [
+      courses: {
+        badge: "Découvrir Nos Cours",
+        title: "Découvrir Nos Cours",
+        intro:
+          "Des compétences numériques et de la programmation au développement de jeux, au développement web et au design créatif, les apprenants peuvent explorer la technologie grâce à un apprentissage pratique basé sur des projets.",
+        agesLabel: "Âge recommandé",
+        progressionLabel: "Progression",
+        items: [
           {
-            level: "LEVEL 1",
-            title: "START",
-            programTitle: "Débutant absolu & logique de programmation",
-            levelName: "Débutant",
-            target:
-              "Débutants, Enfants (7–9 ans), Adultes/Femmes s'initiant au code",
-            focus: [
-              "Logique Visuelle",
-              "Scratch",
-              "Design Graphique",
-              "Culture Numérique & Initiation IA",
-            ],
-            outcome:
-              "Jeux 2D interactifs, histoires animées et bases de la logique algorithmique sans contrainte de syntaxe.",
+            name: "Essentiels Numériques",
+            age: "7+",
+            desc:
+              "Acquérir les compétences numériques essentielles du quotidien : informatique de base, Word, Excel, PowerPoint, navigation sur Internet et plus encore.",
           },
           {
-            level: "LEVEL 2",
-            title: "BUILD",
-            programTitle: "Programmation, Web & 3D",
-            levelName: "Intermédiaire",
-            target:
-              "Enfants (10–12 ans), Ados & Adultes prêt pour le code textuel",
-            focus: [
-              "Roblox Studio (Scripting Lua 3D)",
-              "Bases du Web (HTML & CSS)",
-              "Python Fundamentals",
-              "Montage Vidéo & Devlogs",
-            ],
-            outcome:
-              "Un jeu 3D publié sur Roblox, des pages Web personnalisées et des scripts Python autonomes.",
+            name: "Scratch",
+            age: "7+",
+            desc:
+              "Développer la logique et la résolution de problèmes grâce à la programmation visuelle. Les enfants apprennent les bases des algorithmes, du séquencement, des mathématiques et de la pensée informatique tout en créant leurs propres histoires interactives, animations et jeux.",
           },
           {
-            level: "LEVEL 3",
-            title: "MASTER",
-            programTitle: "Ingénierie de jeux 3D & IA",
-            levelName: "Avancé / Pro",
-            target: "Ados (13+), Étudiants & Adultes",
-            focus: [
-              "Moteur Unity C# (Mobile & PC)",
-              "Modélisation 3D (Blender)",
-              "Web Avancé (JavaScript)",
-              "Workflows Vibe Coding & Outils IA",
+            name: "Python",
+            age: "11+",
+            desc:
+              "Développer une pensée structurée, la résolution de problèmes et des compétences de programmation grâce à Python. Les apprenants transforment leurs idées en programmes fonctionnels, en jeux et en applications pratiques, tout en construisant des bases solides pour des technologies plus avancées.",
+          },
+          {
+            name: "Développement de Jeux Roblox",
+            age: "9+",
+            desc:
+              "Développer la créativité, la pensée spatiale et la résolution de problèmes en concevant et en construisant des mondes 3D interactifs. Les apprenants explorent le game design et la programmation tout en créant leurs propres expériences Roblox.",
+          },
+          {
+            name: "Développement de Jeux Unity & C#",
+            age: "12+",
+            desc:
+              "Développer des compétences avancées de résolution de problèmes, de logique et de programmation grâce au développement de jeux professionnel. Les apprenants utilisent Unity et C# pour concevoir des mécaniques, créer des jeux 2D et 3D et transformer leurs idées en projets jouables.",
+          },
+          {
+            name: "Développement Web",
+            age: "11+",
+            desc:
+              "Comprendre le fonctionnement des sites web tout en développant créativité, logique et résolution de problèmes. Les apprenants commencent par HTML, CSS et JavaScript, puis progressent vers PHP et MySQL pour construire des sites connectés à de vraies bases de données.",
+            levels: [
+              {
+                label: "Starter",
+                topics: ["HTML", "CSS", "JavaScript"],
+              },
+              {
+                label: "Pro",
+                topics: ["PHP", "MySQL", "Backend & bases de données"],
+              },
             ],
-            outcome:
-              "Un jeu 3D complet sur Unity, des assets 3D originaux et la maîtrise des outils de codage assisté par IA.",
+          },
+          {
+            name: "Design Créatif",
+            age: "10+",
+            desc:
+              "Développer la créativité, la communication visuelle et les compétences de production numérique. Les apprenants explorent la création 3D, la retouche photo et le montage vidéo tout en transformant leurs idées en projets numériques originaux.",
           },
         ],
       },
-      community: {
-        badge: "● Environnement Modéré & Sécurisé",
-        title: "Une Communauté Sûre & Supervisée",
+      teaching: {
+        badge: "Comment Nous Enseignons",
+        title: "Comment Nous Enseignons",
+        modelTitle: "Une expérience d'apprentissage complète",
+        steps: [
+          {
+            title: "Apprendre",
+            desc: "Des cours en direct avec des explications pratiques et des démonstrations.",
+          },
+          {
+            title: "Pratiquer",
+            desc: "Des exercices et des activités guidées aident les apprenants à appliquer chaque nouvelle notion.",
+          },
+          {
+            title: "Créer",
+            desc: "Les apprenants construisent de vrais projets tout au long du cours.",
+          },
+          {
+            title: "Présenter",
+            desc: "Les projets terminés rejoignent leur portfolio, suivis d'un certificat à la fin du cours.",
+          },
+        ],
+        model: [
+          "Cours en direct",
+          "Supports de cours",
+          "Exercices",
+          "Accompagnement communautaire",
+        ],
+      },
+      finalCta: {
+        title: "Prêt à Commencer ?",
         subtitle:
-          "Apprendre est plus efficace et plus joyeux au sein d'une communauté accompagnée.",
-        features: [
-          {
-            title: "Espace privé d'entraide",
-            desc: "Un Q&A dédié où chaque apprenant pose ses questions librement.",
-          },
-          {
-            title: "Canaux de feedback projets",
-            desc: "Revues régulières de vos créations Roblox, Unity, Blender & Web.",
-          },
-          {
-            title: "Supervision 24/7 sans toxicité",
-            desc: "Un environnement modéré, bienveillant et sans jugement.",
-          },
-          {
-            title: "Mini-défis mensuels",
-            desc: "Des challenges ludiques pour progresser tout en s'amusant.",
-          },
-        ],
-      },
-      certification: {
-        badge: "Certification",
-        title: "Un Diplôme Officiel & Vérifiable à Chaque Niveau",
-        diplomasTitle: "Diplômes par Niveau",
-        diplomasSubtitle:
-          "Reconnaissance officielle à chaque étape du parcours.",
-        levels: ["Niveau 1", "Niveau 2", "Niveau 3"],
-        diplomas: [
-          "Certificat en Logique Algorithmique & Création Numérique",
-          "Diplôme en Scripting 3D & Développement Web",
-          "Diplôme d'Ingénierie de Jeux 3D, Web & Technologies IA",
-        ],
-        includedTitle: "Ce qui est inclus",
-        highlights: [
-          {
-            title: "Modules validés imprimables",
-            desc: "Chaque module validé est certifié et imprimable.",
-          },
-          {
-            title: "QR Code de vérification",
-            desc: "Vérifiez chaque diplôme vers votre portfolio en ligne.",
-          },
-          {
-            title: "Rapports mensuels WhatsApp",
-            desc: "Progression détaillée envoyée aux parents & apprenants.",
-          },
-        ],
-        recognition: "Reconnaissance par nos partenaires de l'industrie",
-      },
-      pricing: {
-        badge: "Tarifs & Formules",
-        title: "Des Formules Flexibles, un Rythme Qui Vous Convient",
-        pacingOptions: [
-          "1 Séance / Semaine",
-          "2 Séances / Semaine (Intensif)",
-        ],
-        periodOptions: ["Mensuel", "Trimestriel (-15%)"],
-        tierDesc: [
-          "Débutant · Enfants, Ados & Adultes",
-          "Intermédiaire · Code textuel & 3D",
-          "Avancé / Pro · Unity, Web & IA",
-        ],
-        monthlyLabel: "MAD / mois",
-        quarterlyLabel: "MAD / trimestre",
-        levelLabels: ["Niveau 1", "Niveau 2", "Niveau 3"],
-        rates: [
-          { monthly: 590, intensive: 990, quarterly: 1500 },
-          { monthly: 790, intensive: 1290, quarterly: 2000 },
-          { monthly: 990, intensive: 1690, quarterly: 2500 },
-        ],
-        billedMonthly: "Facturé mensuellement · {sessions} séance(s) / semaine",
-        billedQuarterly: "Facturé {total} MAD / trimestre (-15%)",
-        featuredBadge: "Le Plus Complet",
-        features: [
-          "Groupes réduits (Max 6–8 élèves)",
-          "Cours 100% en ligne, en direct",
-          "Accès à la communauté sécurisée",
-          "Suivi personnalisé & devlogs",
-        ],
-        cta: "S'inscrire",
-        guaranteeStrong: "100% Satisfait ou Remboursé",
-        guarantee: " après la 1ère séance — sans justification.",
+          "Réservez un essai gratuit et découvrez quel parcours d'apprentissage vous convient.",
+        cta: "Réserver un Essai Gratuit",
       },
       faq: {
         badge: "Questions Fréquentes",
@@ -1811,54 +1762,54 @@ export const translations: Record<Lang, Translation> = {
           "Les réponses aux questions les plus posées par les parents et les apprenants.",
         items: [
           {
-            q: "De quoi mon enfant ou moi-même avons-nous besoin pour suivre les cours ?",
-            a: "Un simple PC ou Mac avec une connexion Internet suffit. Aucun matériel coûteux n'est requis — nous guidons chaque apprenant sur les logiciels gratuits à installer selon le parcours.",
-            category: "equipement",
+            q: "À quel âge mon enfant peut-il commencer ?",
+            a: "Notre Académie accueille les apprenants dès 7 ans. Chaque cours a sa propre tranche d'âge recommandée, afin que chacun choisisse un programme adapté à son âge et à son expérience.",
           },
           {
-            q: "Dans quelle langue les cours sont-ils dispensés ?",
-            a: "Les cours sont disponibles en Anglais ou en Arabe, avec un support bilingue et des explications en français selon le besoin de l'apprenant.",
-            category: "langue",
+            q: "Mon enfant a-t-il besoin d'une expérience préalable ?",
+            a: "Non. Plusieurs cours sont conçus pour les grands débutants. Pour les cours plus avancés, des connaissances préalables peuvent être recommandées.",
           },
           {
-            q: "Les adultes débutants peuvent-ils s'inscrire au Niveau 1 ?",
-            a: "Oui, absolument. Le Niveau 1 est conçu pour enseigner la logique algorithmique à tout âge, sans aucune intimidation et sans prérequis technique.",
-            category: "adultes",
+            q: "Dans quelles langues sont dispensés les cours ?",
+            a: "Les cours sont disponibles en anglais, en français et en arabe, selon le niveau de langue de l'apprenant et le groupe du cours.",
           },
           {
-            q: "Comment fonctionne la garantie satisfait ou remboursé ?",
-            a: "Si la 1ère séance ne vous convient pas, nous procédons à un remboursement à 100% sans justification. C'est notre engagement envers la qualité de nos cours.",
-            category: "tarifs",
+            q: "Les cours sont-ils en ligne ou en présentiel ?",
+            a: "Les cours sont dispensés en direct avec un instructeur. Nous pouvons proposer un apprentissage en ligne, le format exact dépendant du groupe et de l'emploi du temps.",
           },
           {
-            q: "Mon enfant n'a jamais codé. Peut-il quand même s'inscrire ?",
-            a: "Absolument. Le parcours Junior Explorers part de zéro — aucune expérience préalable requise. Nous commençons par la programmation visuelle par blocs (Scratch) qui enseigne la logique et la résolution de problèmes à travers des exercices ludiques. Chaque élève apprend à son rythme avec l'accompagnement d'un instructeur.",
-            category: "débutants",
+            q: "Mon enfant peut-il essayer un cours avant de s'inscrire ?",
+            a: "Oui. Nous proposons un cours d'essai gratuit avant l'inscription. Cela permet à l'apprenant et au parent de voir comment se déroule le cours avant de s'engager.",
           },
           {
-            q: "Comment cela diffère-t-il des cours d'informatique à l'école ?",
-            a: "Les cours d'informatique à l'école couvrent la culture numérique générale. L'Académie Medinova est un studio de codage basé sur des projets où les élèves construisent de vrais jeux, applications et logiciels. Ils apprennent les outils de l'industrie (Python, Unity, React) et développent un portfolio professionnel — pas seulement de la théorie.",
-            category: "débutants",
+            q: "Qu'est-ce que mon enfant va réellement apprendre ?",
+            a: "Nos cours se concentrent sur les compétences technologiques pratiques, la résolution de problèmes, la logique et la créativité. Les élèves apprennent en construisant des projets plutôt qu'en regardant simplement des leçons.",
           },
           {
-            q: "Les élèves reçoivent-ils des certificats ou construisent-ils un portfolio ?",
-            a: "Oui. Chaque élève complète des projets pratiques (jeux, applications, médias interactifs) qui forment un portfolio personnel qu'il peut présenter. À la fin d'un parcours, les élèves reçoivent un certificat de completion de l'Académie Medinova reconnu par nos partenaires industriels.",
-            category: "certification",
+            q: "Mon enfant recevra-t-il un certificat ?",
+            a: "Oui. Les élèves reçoivent un certificat de réussite après avoir terminé avec succès leur cours et leur projet final.",
+          },
+          {
+            q: "Mon enfant aura-t-il des projets à montrer ?",
+            a: "Oui. Les élèves construisent des projets tout au long de leur cours et terminent avec des travaux qu'ils peuvent garder dans leur portfolio numérique.",
+          },
+          {
+            q: "Quel accompagnement est disponible en dehors des cours en direct ?",
+            a: "Les élèves reçoivent des supports de cours, des exercices et un accompagnement via la communauté de l'Académie, où ils peuvent poser des questions et recevoir des conseils.",
+          },
+          {
+            q: "Comment réserver un essai ?",
+            a: "Cliquez sur Réserver un Essai Gratuit et contactez-nous via WhatsApp. Nous discuterons de l'âge, des centres d'intérêt et de la langue de l'apprenant avant d'organiser la séance d'essai adaptée.",
           },
         ],
       },
       whatsapp: {
         message:
-          "Bonjour, j'ai une question concernant l'inscription à Medinova Academy.",
+          "Bonjour, je souhaite réserver un cours d'essai gratuit à Medinova Academy.",
         online: "En ligne — Réponse rapide via WhatsApp",
         aria: "Discuter sur WhatsApp",
-        levelMessages: [
-          "Bonjour, j'ai une question concernant l'inscription au Level 1 (START).",
-          "Bonjour, j'ai une question concernant l'inscription au Level 2 (BUILD).",
-          "Bonjour, j'ai une question concernant le Level 3 (MASTER) avancé et le Vibe Coding.",
-        ],
         quickQuestion: "Question rapide via WhatsApp",
-        registerCta: "S'inscrire via WhatsApp",
+        cta: "Réserver un Essai Gratuit",
       },
     },
   },
@@ -2363,248 +2314,227 @@ export const translations: Record<Lang, Translation> = {
     },
     academy: {
       announcement:
-        "💻 100% عبر الإنترنت • تعلّم من المنزل (حاسوب + اتصال بالإنترنت) | الدراسة باللغة الإنجليزية أو العربية حسب الاختيار",
-      announcementCta: "سجّل الآن / اكتشف المزيد",
+        "حصص مباشرة للمتعلمين من سن 7 سنوات فما فوق · الإنجليزية، الفرنسية والعربية",
+      announcementCta: "احجز حصة تجريبية مجانية",
       hero: {
-        badge:
-          "● دورات مباشرة عبر الإنترنت | تحت إشراف مؤسس الاستوديو | ضمان استرجاع المبالغ بنسبة 100%",
-        headline:
-          "تعلّم البرمجة، صمّم ألعاب الفيديو وأتقن الذكاء الاصطناعي — مهما كان عمرك أو مستواك",
+        badge: "برنامج من Medinova Studio",
+        headline: "ابنِ المهارات. أنشئ المشاريع. شكّل المستقبل.",
         subheadline:
-          "من البداية بالبرمجة المرئية (Scratch) وصولاً إلى C# وUnity 3D وتطوير الويب وVibe Coding. برامج 100% عبر الإنترنت للأطفال، الشباب، النساء، والمبتدئين الكبار، تحت إشراف مهندس ومطور ألعاب.",
-        targetAudience:
-          "مناسب لجميع الأعمار والمستويات — من 7 سنوات فما فوق",
-        secondaryCta: "اطّلع على الأسعار",
+          "تعليم عملي في التقنية والبرمجة للمتعلمين من سن 7 سنوات فما فوق، من خلال مشاريع حقيقية بإشراف مؤسس Medinova Studio.",
+        cta: "احجز حصة تجريبية مجانية",
         trust: [
           {
-            title: "ضمان استرجاع الأموال بنسبة 100%",
-            desc: "بعد الحصة الأولى",
+            title: "متعلمون من 7 سنوات",
+            desc: "دورات تناسب كل الأعمار والمستويات",
           },
           {
-            title: "مطور لعبة على Roblox",
-            desc: "تجاوزت 1,000,000 زيارة",
+            title: "الإنجليزية · الفرنسية · العربية",
+            desc: "حصص بثلاث لغات",
           },
           {
-            title: "مجموعات مصغرة",
-            desc: "أقصى حد 6 إلى 8 طلاب",
+            title: "مباشرة وقائمة على المشاريع",
+            desc: "بإشراف مدرب مع مشاريع حقيقية",
           },
         ],
       },
-      proof: {
-        badge: "الاستوديو الداعم للأكاديمية",
-        title:
-          "تعلمك لن يكون مع أستاذ تقليدي، بل مع مهندس ومؤسس استوديو ألعاب",
-        founderCaption:
-          "منير عبوتي — مؤسس Medinova Studio والمطور الرئيسي.",
-        boothCaption:
-          "الجناح C38 — المعرض المغربي للألعاب Morocco Gaming Expo (عرض ألعابنا للجمهور).",
-        robloxBadge: "دليل على Roblox",
+      why: {
+        badge: "لماذا أكاديمية مدينوفا",
+        title: "تجربة تعلّم مبنية على المشاريع الحقيقية",
+        items: [
+          {
+            title: "التعلّم بالممارسة",
+            desc: "بناء مشاريع حقيقية بدلاً من مجرد متابعة الدروس.",
+          },
+          {
+            title: "بناء معرض أعمالك",
+            desc: "تحويل ما تتعلمه إلى مشاريع تحتفظ بها وتعرضها.",
+          },
+          {
+            title: "التعلّم من استوديو حقيقي",
+            desc: "تعلّم مباشرة من مؤسس Medinova Studio.",
+          },
+        ],
+      },
+      founder: {
+        badge: "المؤسس",
+        title: "تعلّم مباشرة من مؤسس Medinova Studio",
+        text:
+          "يتعلم المتعلمون بإشراف منير عبوتي، مؤسس والمطور الرئيسي لاستوديو Medinova Studio — استوديو نشط في تطوير الألعاب والتقنيات بألعاب منشورة ومشاريع حقيقية. بدلاً من متابعة دروس مسجلة، يتعلم المتعلمون من شخص يصمم ويبني ويُطلق التقنية كل يوم.",
+        caption: "منير عبوتي — مؤسس Medinova Studio والمطور الرئيسي.",
+      },
+      work: {
+        badge: "أعمالنا",
+        title: "مدعومون باستوديو حقيقي ينجز مشاريع حقيقية",
+        subtitle:
+          "أكاديمية مدينوفا برنامج من Medinova Studio، استوديو نشط في تطوير الألعاب والتقنيات. المشاريع أدناه هي مشاريع Medinova Studio — أعمال حقيقية منشورة، وليست مشاريع طلاب.",
+        robloxBadge: "Medinova Studio على Roblox",
         robloxTitle:
-          "مطور لعبة 'Zombies WarZone' على Roblox — تجاوزت 1,000,000 زيارة عالمياً.",
-        robloxCta: "تجربة اللعبة على Roblox",
-        showcaseLabel: "نماذج من ألعاب الاستوديو",
+          "مطوّر لعبة 'Zombies WarZone' على Roblox — تجاوزت 1,000,000 زيارة عالمياً.",
+        robloxCta: "جرّب اللعبة على Roblox",
+        mgeBadge: "المعرض المغربي للألعاب",
+        mgeTitle: "الجناح C38 — المعرض المغربي للألعاب",
+        mgeDesc:
+          "عرض ألعابنا المنشورة للجمهور في فعالية الألعاب الوطنية بالمغرب.",
+        gamesLabel: "مشاريع Medinova Studio — منشورة على App Store",
         games: [
           "Pharaoh's Guardian: Mummies",
           "Chameleon Outbreak: Camo Hunt",
           "Sniper Elimination Challenge",
           "Blitz Combat Race",
         ],
+        studioLink: "اكتشف معرض أعمال الاستوديو الكامل",
       },
-      tracks: {
-        badge: "3 مسارات متدرجة",
-        title:
-          "من المبتدئ المطلق إلى الاحتراف (بدون حدود للسن)",
-        programLabel: "البرنامج",
-        resultLabel: "النتيجة",
-        levels: [
+      courses: {
+        badge: "استكشف دوراتنا",
+        title: "استكشف دوراتنا",
+        intro:
+          "من المهارات الرقمية والبرمجة إلى تطوير الألعاب وتطوير الويب والتصميم الإبداعي، يمكن للمتعلمين استكشاف التقنية من خلال تعلّم عملي قائم على المشاريع.",
+        agesLabel: "العمر الموصى به",
+        progressionLabel: "التدرج",
+        items: [
           {
-            level: "LEVEL 1",
-            title: "START",
-            programTitle: "المبتدئ المطلق والمنطق البرمجي",
-            levelName: "مبتدئ",
-            target:
-              "الأطفال (7–9 سنوات)، والكبار والنساء الراغبين في تعلم البرمجة من الصفر",
-            focus: [
-              "المنطق البصري",
-              "Scratch",
-              "التصميم الجرافيكي",
-              "الثقافة الرقمية ومدخل إلى الذكاء الاصطناعي",
+            name: "المهارات الرقمية الأساسية",
+            age: "7+",
+            desc:
+              "بناء مهارات رقمية أساسية للحياة اليومية، بما فيها أساسيات الحاسوب وWord وExcel وPowerPoint واستخدام الإنترنت والمزيد.",
+          },
+          {
+            name: "Scratch",
+            age: "7+",
+            desc:
+              "تطوير التفكير المنطقي ومهارات حل المشكلات عبر البرمجة المرئية. يتعلم الأطفال أساسيات الخوارزميات والتسلسل والرياضيات والتفكير الحاسوبي أثناء إنشاء قصص تفاعلية ورسوم متحركة وألعاب خاصة بهم.",
+          },
+          {
+            name: "Python",
+            age: "11+",
+            desc:
+              "تطوير التفكير المنظم وحل المشكلات ومهارات البرمجة عبر لغة Python. يحوّل المتعلمون أفكارهم إلى برامج وألعاب وتطبيقات عملية مع بناء أساس متين لتقنيات أكثر تقدماً.",
+          },
+          {
+            name: "تطوير ألعاب Roblox",
+            age: "9+",
+            desc:
+              "تطوير الإبداع والتفكير المكاني وحل المشكلات من خلال تصميم وبناء عوالم 3D تفاعلية. يستكشف المتعلمون تصميم الألعاب والبرمجة أثناء إنشاء تجارب Roblox خاصة بهم.",
+          },
+          {
+            name: "تطوير ألعاب Unity وC#",
+            age: "12+",
+            desc:
+              "تطوير مهارات متقدمة في حل المشكلات والتفكير المنطقي والبرمجة عبر تطوير ألعاب احترافي. يستخدم المتعلمون Unity وC# لتصميم آليات اللعب وبناء ألعاب 2D و3D وتحويل أفكارهم إلى مشاريع قابلة للعب.",
+          },
+          {
+            name: "تطوير الويب",
+            age: "11+",
+            desc:
+              "فهم كيفية عمل المواقع الإلكترونية مع تطوير الإبداع والتفكير المنطقي ومهارات حل المشكلات. يبدأ المتعلمون بـ HTML وCSS وJavaScript ثم يتقدمون إلى PHP وMySQL لبناء مواقع مرتبطة بقواعد بيانات حقيقية.",
+            levels: [
+              {
+                label: "Starter",
+                topics: ["HTML", "CSS", "JavaScript"],
+              },
+              {
+                label: "Pro",
+                topics: ["PHP", "MySQL", "الواجهة الخلفية وقواعد البيانات"],
+              },
             ],
-            outcome:
-              "تطوير ألعاب 2D تفاعلية وقصص متحركة، وفهم المنطق البرمجي بدون تعقيدات البرمجة النصية.",
           },
           {
-            level: "LEVEL 2",
-            title: "BUILD",
-            programTitle: "البرمجة النصية وتطوير الويب و 3D",
-            levelName: "متوسط",
-            target:
-              "الأطفال (10–12 سنة)، والشباب والكبار المستعدين للبرمجة النصية",
-            focus: [
-              "استوديو Roblox (برمجة Lua ثلاثية الأبعاد)",
-              "أساسيات الويب (HTML & CSS)",
-              "أساسيات Python",
-              "تحرير الفيديو وسجلات التطوير",
-            ],
-            outcome:
-              "لعبة 3D منشورة على Roblox، مواقع إلكترونية خاصة بك، وسكريبتات بلغة Python.",
-          },
-          {
-            level: "LEVEL 3",
-            title: "MASTER",
-            programTitle: "هندسة الألعاب 3D والذكاء الاصطناعي",
-            levelName: "متقدم / محترف",
-            target: "الشباب (+13 سنة)، الطلبة والكبار",
-            focus: [
-              "محرك Unity C# (الجوال والكمبيوتر)",
-              "النمذجة ثلاثية الأبعاد (Blender)",
-              "الويب المتقدم (JavaScript)",
-              "سير عمل Vibe Coding وأدوات الذكاء الاصطناعي",
-            ],
-            outcome:
-              "لعبة 3D متكاملة بـ Unity، مجسمات 3D بـ Blender، وإتقان أدوات الـ Vibe Coding والذكاء الاصطناعي.",
+            name: "التصميم الإبداعي",
+            age: "10+",
+            desc:
+              "تطوير الإبداع والتواصل البصري ومهارات الإنتاج الرقمي. يستكشف المتعلمون الإنشاء ثلاثي الأبعاد وتحرير الصور ومونتاج الفيديو مع تحويل أفكارهم إلى مشاريع رقمية أصلية.",
           },
         ],
       },
-      community: {
-        badge: "● مجتمع آمن ومأطر 100%",
-        title: "يكون التعلم أسرع وأكثر متعة عند التواجد ضمن مجتمع مشجع.",
-        subtitle:
-          "مساحة خاصة وآمنة للتواصل والتطوير المستمر خارج أوقات الحصص المباشرة.",
-        features: [
+      teaching: {
+        badge: "كيف نعلّم",
+        title: "كيف نعلّم",
+        modelTitle: "تجربة تعلّم متكاملة",
+        steps: [
           {
-            title: "مساحة خاصة للمساعدة",
-            desc: "قسم للأسئلة والأجوبة للحصول على حلول سريعة لأي مشكلة في الكود من الطلاب والمؤطرين.",
+            title: "التعلّم",
+            desc: "حصص مباشرة مع شروحات عملية وعروض توضيحية.",
           },
           {
-            title: "قنوات لمشاركة المشاريع",
-            desc: "مراجعات دورية وتقييمات لمشاريعك في Roblox وUnity وBlender.",
+            title: "التطبيق",
+            desc: "تمارين وأنشطة موجّهة تساعد المتعلمين على تطبيق كل مفهوم جديد.",
           },
           {
-            title: "إشراف ومراقبة مستمرة على مدار الساعة",
-            desc: "بيئة آمنة ومحترمة خالية من التنمر أو الروابط المشبوهة.",
+            title: "الإنشاء",
+            desc: "يبني المتعلمون مشاريع حقيقية طوال الدورة.",
           },
           {
-            title: "تحديات شهرية",
-            desc: "تحديات ممتعة لتطوير مستواك والمنافسة في أجواء حماسية.",
+            title: "العرض",
+            desc: "تصبح المشاريع المكتملة جزءاً من معرض أعمالهم، تليها شهادة عند إتمام الدورة.",
           },
+        ],
+        model: [
+          "حصص مباشرة",
+          "مواد تعليمية",
+          "تمارين",
+          "دعم مجتمعي",
         ],
       },
-      certification: {
-        badge: "● اعتماد Medinova Studio",
-        title: "شهادة رسمية وقابلة للتحقق فكل مستوى",
-        diplomasTitle: "الدبلومات حسب المستوى",
-        diplomasSubtitle:
-          "توثيق رسمي للمهارات والمشاريع التي ينجزها المتعلم.",
-        levels: ["المستوى 1", "المستوى 2", "المستوى 3"],
-        diplomas: [
-          "شهادة فـ المنطق البرمجي والإبداع الرقمي",
-          "دبلوم فـ برمجة الألعاب 3D وتطوير الويب",
-          "دبلوم فـ هندسة الألعاب 3D، الويب وتقنيات الذكاء الاصطناعي",
-        ],
-        includedTitle: "ماذا يتضمن؟",
-        highlights: [
-          {
-            title: "شهادة مطبوعة",
-            desc: "شهادة مطبوعة موثقة توضح المساقات والمهارات المكتسبة.",
-          },
-          {
-            title: "كود QR للتأكد",
-            desc: "تحقق مباشر عبر ملف الأعمال الإلكتروني للمتعلم.",
-          },
-          {
-            title: "تقارير عبر الواتساب",
-            desc: "متابعة شهرية تصل مباشرة لأولياء الأمور أو المتعلم.",
-          },
-        ],
-        recognition: "مشهود بها لدى شركائنا في المجال",
-      },
-      pricing: {
-        badge: "الأسعار والباقات",
-        title: "باقات مرنة، بالإيقاع الذي يناسبك",
-        pacingOptions: ["حصة واحدة في الأسبوع", "حصتان في الأسبوع (مكثف)"],
-        periodOptions: ["شهري", "كل 3 أشهر (خصم 15%)"],
-        tierDesc: [
-          "مبتدئ · أطفال وشباب وكبار",
-          "متوسط · كود مكتوب و3D",
-          "متقدم / محترف · Unity والويب والذكاء الاصطناعي",
-        ],
-        monthlyLabel: "درهم / للشهر",
-        quarterlyLabel: "درهم / كل 3 أشهر",
-        levelLabels: ["المستوى 1", "المستوى 2", "المستوى 3"],
-        rates: [
-          { monthly: 590, intensive: 990, quarterly: 1500 },
-          { monthly: 790, intensive: 1290, quarterly: 2000 },
-          { monthly: 990, intensive: 1690, quarterly: 2500 },
-        ],
-        billedMonthly: "الدفع شهري · {sessions} في الأسبوع",
-        billedQuarterly: "الدفع {total} درهم / كل 3 أشهر (خصم 15%)",
-        featuredBadge: "الأكثر اكتمالاً",
-        features: [
-          "مجموعات مصغرة (أقصى حد 6 إلى 8 طلاب)",
-          "حصص مباشرة 100% عبر الإنترنت",
-          "الوصول إلى المجتمع الآمن",
-          "متابعة فردية وسجلات التقدم",
-        ],
-        cta: "سجّل الآن",
-        guaranteeStrong: "ضمان استرجاع الأموال بنسبة 100%",
-        guarantee: " بعد الحصة الأولى — دون الحاجة لتقديم أي أسباب.",
+      finalCta: {
+        title: "مستعد للبدء؟",
+        subtitle: "احجز حصة تجريبية مجانية واكتشف مسار التعلم المناسب لك.",
+        cta: "احجز حصة تجريبية مجانية",
       },
       faq: {
         badge: "الأسئلة الشائعة",
         title: "هل لديك أي استفسار؟",
         subtitle:
-          "إجابات عن أكثر الأسئلة شائعة بين أولياء الأمور والمتعلمين.",
+          "إجابات عن أكثر الأسئلة شيوعاً بين أولياء الأمور والمتعلمين.",
         items: [
           {
-            q: "ما الذي أحتاجه أو يحتاجه طفلي للبدء؟",
-            a: "حاسوب عادي (PC أو Mac) واتصال بالإنترنت فقط. لا يشترط جهاز عالي المواصفات — سنساعدك في تثبيت كافة البرامج المجانية المطلوبة.",
-            category: "equipment",
+            q: "من أي عمر يمكن لطفلي البدء؟",
+            a: "أكاديميتنا تستقبل المتعلمين من سن 7 سنوات فما فوق. لكل دورة نطاق عمري موصى به، حتى يتمكن المتعلمون من اختيار برنامج يناسب عمرهم وخبرتهم.",
           },
           {
-            q: "ما هي لغة تقديم الدروس؟",
-            a: "الدروس متاحة باللغة الإنجليزية أو العربية حسب الاختيار، مع الشرح والمساعدة بالفرنسية لضمان فهم الجميع.",
-            category: "language",
+            q: "هل يحتاج طفلي إلى خبرة سابقة؟",
+            a: "لا. عدة دورات مصممة للمبتدئين تماماً. أما بالنسبة للدورات الأكثر تقدماً فقد يُنصح ببعض المعرفة السابقة.",
           },
           {
-            q: "هل يمكن للمبتدئين الكبار التسجيل في المستوى 1؟",
-            a: "بالتأكيد! المستوى 1 مصمم لتعليم منطق البرمجة للجميع بطريقة سهلة وممتعة وبدون تعقيدات.",
-            category: "adults",
+            q: "بأي لغات تتوفر الحصص؟",
+            a: "الحصص متاحة باللغة الإنجليزية والفرنسية والعربية، حسب مستوى المتعلم اللغوي ومجموعة الدورة.",
           },
           {
-            q: "كيف تعمل آلية ضمان استرجاع الأموال؟",
-            a: "إذا حضرت الحصة الأولى ولم تناسبك، يتم استرجاع كامل المبلغ مباشرة ودون تعقيد.",
-            category: "pricing",
+            q: "هل الحصص عبر الإنترنت أم حضورياً؟",
+            a: "الحصص تُعقد مباشرة مع مدرب. يمكننا تقديم التعلّم عبر الإنترنت، ويعتمد الشكل الدقيق على المجموعة والجدول الزمني.",
           },
           {
-            q: "طفلي لم يسبق له البرمجة. هل يمكنه الانضمام؟",
-            a: "بالتأكيد. مسار المستكشفين الصغار يبدأ من الصفر — لا حاجة لأي خبرة سابقة. نبدأ بالبرمجة المرئية بالكتل (Scratch) التي تعلم المنطق وحل المشكلات عبر تمارين ممتعة. كل طالب يتعلم بوتيرته الخاصة مع إشراف المدرب.",
-            category: "beginners",
+            q: "هل يمكن لطفلي تجربة حصة قبل التسجيل؟",
+            a: "نعم. نقدم حصة تجريبية مجانية قبل التسجيل. وهذا يتيح للمتعلم وولي الأمر رؤية طريقة عمل الحصة قبل الالتزام.",
           },
           {
-            q: "كيف يختلف هذا عن حصص المعلوماتية في المدرسة؟",
-            a: "حصص المدرسة تغطي الثقافة الرقمية العامة. أكاديمية مدينوفا استوديو برمجة قائم على المشاريع حيث يبني الطلاب ألعاباً وتطبيقات وبرمجيات حقيقية. يتعلمون أدوات الصناعة (Python، Unity، React) ويطورون معرض أعمال احترافي — وليس مجرد نظريات.",
-            category: "beginners",
+            q: "ماذا سيتعلم طفلي فعلياً؟",
+            a: "تركز دوراتنا على المهارات التقنية العملية وحل المشكلات والتفكير المنطقي والإبداع. يتعلم الطلاب من خلال بناء المشاريع بدلاً من مجرد مشاهدة الدروس.",
           },
           {
-            q: "هل يتلقى الطلاب شهادات أو يبنون معرض أعمال؟",
-            a: "نعم. كل طالب يكمل مشاريع عملية (ألعاب، تطبيقات، وسائط تفاعلية) تشكل معرض أعمال شخصي يمكنه عرضه. عند إكمال المسار، يتلقى الطلاب شهادة إتمام من أكاديمية مدينوفا معترف بها من شركائنا في الصناعة.",
-            category: "certification",
+            q: "هل سيحصل طفلي على شهادة؟",
+            a: "نعم. يحصل الطلاب على شهادة إتمام بعد إكمال دورتهم ومشروعهم النهائي بنجاح.",
+          },
+          {
+            q: "هل سيكون لدى طفلي مشاريع يعرضها؟",
+            a: "نعم. يبني الطلاب مشاريع طوال دورتهم وينهون بأعمال يمكنهم الاحتفاظ بها ضمن معرض أعمالهم الرقمي.",
+          },
+          {
+            q: "ما الدعم المتاح خارج الحصة المباشرة؟",
+            a: "يحصل الطلاب على مواد تعليمية وتمارين ودعم عبر مجتمع الأكاديمية، حيث يمكنهم طرح الأسئلة وتلقي الإرشادات.",
+          },
+          {
+            q: "كيف أحجز حصة تجريبية؟",
+            a: "اضغط على احجز حصة تجريبية مجانية وتواصل معنا عبر واتساب. سنناقش عمر المتعلم واهتماماته ولغته قبل ترتيب الحصة التجريبية المناسبة.",
           },
         ],
       },
       whatsapp: {
         message:
-          "السلام عليكم، عندي استفسار حول التسجيل في Medinova Academy.",
+          "السلام عليكم، أود حجز حصة تجريبية مجانية في Medinova Academy.",
         online: "متصل — رد سريع عبر الواتساب",
         aria: "تواصل معنا عبر واتساب",
-        levelMessages: [
-          "السلام عليكم، عندي استفسار حول التسجيل في Level 1 (START).",
-          "السلام عليكم، عندي استفسار حول التسجيل في Level 2 (BUILD).",
-          "السلام عليكم، عندي استفسار حول المستوى المتقدم Level 3 (MASTER) و Vibe Coding.",
-        ],
         quickQuestion: "سؤال سريع عبر الواتساب",
-        registerCta: "سجّل عبر واتساب",
+        cta: "احجز حصة تجريبية مجانية",
       },
     },
   },

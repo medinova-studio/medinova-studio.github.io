@@ -121,7 +121,7 @@ export async function POST(request: Request) {
         <td align="center">
           <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e4e4e7;">
             <tr>
-              <td style="background-color:#5e6ad2;padding:20px 28px;">
+              <td style="background-color:#2455e6;padding:20px 28px;">
                 <h1 style="margin:0;color:#ffffff;font-size:20px;font-family:Arial,Helvetica,sans-serif;">&#128200; New Growth Partnership Inquiry</h1>
               </td>
             </tr>
@@ -133,7 +133,7 @@ export async function POST(request: Request) {
                   ${row("Company", escapeHtml(company || "—"))}
                   ${row(
                     "Email",
-                    `<a href="mailto:${escapeHtml(email)}" style="color:#5e6ad2;">${escapeHtml(email)}</a>`
+                    `<a href="mailto:${escapeHtml(email)}" style="color:#2455e6;">${escapeHtml(email)}</a>`
                   )}
                 </table>
                 <h2 style="margin:0 0 8px;color:#18181b;font-size:15px;">Project Scope</h2>

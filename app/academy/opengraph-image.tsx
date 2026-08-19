@@ -4,7 +4,7 @@ import { BrandCard, ogFonts } from "@/lib/og";
 export const runtime = "nodejs";
 
 export const alt =
-  "Medinova Academy — Learn to Code, Create Video Games & Master AI";
+  "Medinova Academy — Build Skills, Create Projects, Shape the Future";
 
 export const size = {
   width: 1200,
@@ -16,9 +16,9 @@ export const contentType = "image/png";
 export default function OpengraphImage() {
   return new ImageResponse(
     <BrandCard
-      badge="CODING & GAME DEVELOPMENT ACADEMY"
-      title="Learn to Code, Create Video Games & Master AI"
-      sub="Live online tracks for kids, teens & adults — from Scratch to Python, Unity C# and Vibe Coding."
+      badge="A PROGRAM BY MEDINOVA STUDIO"
+      title="Build Skills. Create Projects. Shape the Future."
+      sub="Practical technology and coding education for learners aged 7+, taught through real projects by the founder of Medinova Studio."
       site="medinovastudio.com/academy"
     />,
     { ...size, fonts: ogFonts() }

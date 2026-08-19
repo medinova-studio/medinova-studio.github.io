@@ -31,7 +31,7 @@ export default function Hub() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center mb-12 sm:mb-16">
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-2 border border-hairline text-ink-muted text-xs font-medium mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-4">
               {t.hub.section.badge}
             </span>
             <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink mb-4 tracking-tight text-balance">
@@ -49,7 +49,7 @@ export default function Hub() {
             const data = t.hub[h.key];
             return (
               <Reveal key={h.key} delay={i * 0.1} className="flex">
-                <article className="group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-6 lg:p-8 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2 w-full">
+                <article className="card-accent group relative flex flex-col rounded-lg border border-hairline bg-surface-1 p-6 lg:p-8 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2 w-full">
                   <span className="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-surface-3 border border-hairline text-ink-muted transition-colors duration-200 group-hover:border-primary/40 group-hover:bg-primary/10 group-hover:text-primary mb-6">
                     <Icon className="w-5 h-5" strokeWidth={1.75} />
                   </span>
