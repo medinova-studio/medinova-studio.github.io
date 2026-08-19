@@ -18,6 +18,7 @@ export type AcademyTranslation = {
     headline: string;
     subheadline: string;
     cta: string;
+    scarcity: string;
     trust: { title: string; desc: string }[];
   };
   why: {
@@ -69,6 +70,7 @@ export type AcademyTranslation = {
     title: string;
     subtitle: string;
     cta: string;
+    scarcity: string;
   };
   faq: {
     badge: string;
@@ -858,10 +860,11 @@ export const translations: Record<Lang, Translation> = {
       announcementCta: "Book a Free Trial",
       hero: {
         badge: "A Program by Medinova Studio",
-        headline: "Build Skills. Create Projects. Shape the Future.",
+        headline: "Is What You Know Today Enough for Tomorrow?",
         subheadline:
-          "Practical technology and coding education for learners aged 7+, taught through real projects by the founder of Medinova Studio.",
+          "Technology is evolving faster than ever, and AI is reshaping how we work, learn and create. Build practical skills in modern technology and learn through real projects with Medinova Studio.",
         cta: "Book a Free Trial",
+        scarcity: "Limited spots — book early",
         trust: [
           {
             title: "Learners aged 7+",
@@ -879,19 +882,19 @@ export const translations: Record<Lang, Translation> = {
       },
       why: {
         badge: "Why Medinova Academy",
-        title: "A learning experience built around real projects",
+        title: "Learn Through Application and Real Projects",
         items: [
           {
-            title: "Learn by Doing",
-            desc: "Build real projects instead of only following lessons.",
+            title: "Learn by Doing, Not Just Watching",
+            desc: "Don't just watch lessons. Apply what you learn, experiment with your ideas, and build real projects that sharpen your skills.",
           },
           {
-            title: "Build Your Portfolio",
-            desc: "Turn what you learn into projects you can keep and showcase.",
+            title: "Turn Knowledge Into Projects",
+            desc: "Every new skill is a chance to build something. Keep and grow your work to shape a portfolio that shows what you can actually do.",
           },
           {
-            title: "Learn From a Real Studio",
-            desc: "Learn directly from the founder of Medinova Studio.",
+            title: "Learn From Real Industry Experience",
+            desc: "Learn directly from the founder of Medinova Studio and gain from the experience of a studio that actively develops games, digital technology and shipped projects.",
           },
         ],
       },
@@ -1020,6 +1023,7 @@ export const translations: Record<Lang, Translation> = {
         subtitle:
           "Book a free trial and discover which learning path is right for you.",
         cta: "Book a Free Trial",
+        scarcity: "Next cohort starts soon — only a few spots left.",
       },
       faq: {
         badge: "Frequently Asked Questions",
@@ -1591,10 +1595,11 @@ export const translations: Record<Lang, Translation> = {
       hero: {
         badge: "Un Programme de Medinova Studio",
         headline:
-          "Développer des compétences. Créer des projets. Construire l'avenir.",
+          "Ce que vous savez aujourd'hui sera-t-il suffisant demain ?",
         subheadline:
-          "Une formation pratique en technologie et en programmation pour les apprenants dès 7 ans, enseignée à travers de vrais projets par le fondateur de Medinova Studio.",
+          "La technologie évolue à une vitesse sans précédent et l'IA transforme déjà notre façon de travailler, d'apprendre et de créer. Développez des compétences concrètes en technologies modernes grâce à des projets pratiques avec Medinova Studio.",
         cta: "Réserver un Essai Gratuit",
+        scarcity: "Places limitées — réservez tôt",
         trust: [
           {
             title: "Apprenants dès 7 ans",
@@ -1612,19 +1617,19 @@ export const translations: Record<Lang, Translation> = {
       },
       why: {
         badge: "Pourquoi Medinova Academy",
-        title: "Une expérience d'apprentissage construite autour de vrais projets",
+        title: "Apprendre en pratiquant, grâce à de vrais projets",
         items: [
           {
-            title: "Apprendre en Faisant",
-            desc: "Construire de vrais projets au lieu de suivre de simples leçons.",
+            title: "Apprendre en pratiquant, pas en regardant",
+            desc: "Ne vous contentez pas de regarder des cours. Appliquez ce que vous apprenez, expérimentez vos idées et réalisez de vrais projets pour faire progresser vos compétences.",
           },
           {
-            title: "Construire Son Portfolio",
-            desc: "Transformer ce que vous apprenez en projets à garder et à montrer.",
+            title: "Transformer le savoir en projets",
+            desc: "Chaque nouvelle compétence est une occasion de construire un projet. Conservez et faites évoluer vos réalisations pour constituer un portfolio qui reflète ce que vous savez vraiment faire.",
           },
           {
-            title: "Apprendre d'un Vrai Studio",
-            desc: "Apprendre directement du fondateur de Medinova Studio.",
+            title: "Apprendre d'une expérience concrète du métier",
+            desc: "Apprenez directement auprès du fondateur de Medinova Studio et bénéficiez de l'expérience d'un studio qui développe réellement des jeux, des technologies numériques et des projets lancés.",
           },
         ],
       },
@@ -1754,6 +1759,7 @@ export const translations: Record<Lang, Translation> = {
         subtitle:
           "Réservez un essai gratuit et découvrez quel parcours d'apprentissage vous convient.",
         cta: "Réserver un Essai Gratuit",
+        scarcity: "La prochaine cohorte commence bientôt — il ne reste que quelques places.",
       },
       faq: {
         badge: "Questions Fréquentes",
@@ -1826,8 +1832,8 @@ export const translations: Record<Lang, Translation> = {
       subGameDevDesc: "ألعاب مخصصة، بوابات WebGL وهندسة AR/VR",
       subAgency: "وكالة نمو B2B",
       subAgencyDesc: "باقات تسويق ونمو",
-      subAcademy: "أكاديمية مدينوفا",
-      subAcademyDesc: "مسارات برمجة للأطفال والكبار",
+      subAcademy: "أكاديمية Medinova",
+      subAcademyDesc: "دورات برمجة وتقنية من سن 7 سنوات",
     },
     hero: {
       badge: "متاحون لعقود Unity C# وAR/VR وتطوير الألعاب",
@@ -1962,25 +1968,25 @@ export const translations: Record<Lang, Translation> = {
       ],
     },
     about: {
-      badge: "عن استوديو مدينوفا",
+      badge: "عن استوديو Medinova",
       title: "الاستوديو وراء الألعاب",
       subtitle:
         "استوديو ألعاب مغربي مستقل يصمم تجارب تفاعلية وأدوات تعلم ومحركات نمو B2B.",
       introTitle: "من نحن",
       intro:
-        "استوديو مدينوفا استوديو مغربي مستقل يبتكر ألعاباً عالية الإثارة وتجارب مكانية غامرة ومنتجات رقمية موجهة للنمو من قلب شمال أفريقيا.",
+        "استوديو Medinova استوديو مغربي مستقل يبتكر ألعاباً عالية الإثارة وتجارب مكانية غامرة ومنتجات رقمية موجهة للنمو من قلب شمال أفريقيا.",
       pillars: [
         { title: "تطوير الألعاب والتقنيات المكانية", description: "ألعاب متعددة المنصات وAR/VR و3D تفاعلية مبنية بـ Unity." },
         { title: "وكالة نمو B2B", description: "تسويق شامل ومحتوى ونمو مدعوم بالذكاء الاصطناعي." },
-        { title: "أكاديمية مدينوفا", description: "مسارات برمجة تنقل المتعلمين من المنطق المرئي إلى التطوير الاحترافي." },
+        { title: "أكاديمية Medinova", description: "دورات برمجة تنقل المتعلمين من الأساسيات إلى تطوير الألعاب والمواقع." },
       ],
     },
     hub: {
       hero: {
-        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة معتمدة في القنيطرة، المغرب",
+        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة في القنيطرة، المغرب",
         headline: "نصنع الألعاب، ننمّي العلامات التجارية ونعلّم الجيل القادم من المطورين.",
         subheadline:
-          "استوديو مدينوفا استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ومسارات برمجة معتمدة في سكراتش وبايثون وUnity C# — من القنيطرة، المغرب.",
+          "استوديو Medinova استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ودورات برمجة في Scratch وPython وUnity وC# — من القنيطرة، المغرب.",
         ctaPrimary: "استكشف أعمالنا",
         ctaSecondary: "تواصل مع الاستوديو",
       },
@@ -1999,8 +2005,8 @@ export const translations: Record<Lang, Translation> = {
         desc: "منصات ويب عالية التحويل وأنظمة اكتساب بالذكاء الاصطناعي ومحركات نمو رقمية.",
       },
       academy: {
-        title: "أكاديمية مدينوفا",
-        desc: "مسارات برمجة معتمدة في سكراتش وبايثون وUnity C# مع شهادات قابلة للتحقق عبر رمز QR.",
+        title: "أكاديمية Medinova",
+        desc: "دورات برمجة وتقنية في Scratch وPython وUnity وC#، بحصص مباشرة وتعلّم قائم على المشاريع.",
       },
     },
     pillars: {
@@ -2008,10 +2014,10 @@ export const translations: Record<Lang, Translation> = {
       gamesTitle: "تطوير الألعاب والهندسة المخصصة",
       gamesSubtitle:
         "ألعاب متعددة المنصات، تجارب AR/VR تفاعلية، وبرمجيات مخصصة مبنية للتوسع.",
-      academy: "أكاديمية مدينوفا",
-      academyTitle: "أكاديمية البرمجة — من 7 سنوات إلى البالغين",
+      academy: "أكاديمية Medinova",
+      academyTitle: "أكاديمية البرمجة والتقنية — من سن 7 سنوات",
       academySubtitle:
-        "من المنطق المرئي إلى التطوير الاحترافي — مسارات منظمة لكل عمر وطموح.",
+        "من الأساسيات إلى تطوير الألعاب والمواقع — مسارات منظمة لكل مستوى.",
       from: "ابتداءً من",
       enterpriseQuote: "عرض سعر",
       perMonth: "/ شهر",
@@ -2064,31 +2070,31 @@ export const translations: Record<Lang, Translation> = {
     },
     footer: {
       mission:
-        "أنظمة رقمية عالية التحويل، تطوير ألعاب مخصصة، وتعليم تقني.",
+        "منصات ويب مصممة لزيادة التحويلات، وتطوير ألعاب مخصصة، وتعليم تقني.",
       location: "القنيطرة، المغرب 🇲🇦",
       support: "تواصل ودعم",
       colAgency: "وكالة النمو B2B",
       colGameDev: "تطوير الألعاب والتقنية التفاعلية",
-      colAcademy: "أكاديمية ميدينوفا",
+      colAcademy: "أكاديمية Medinova",
       colLegal: "الثقة، القانون والامتثال",
       cta: "احجز مكالمة استراتيجية",
       agencyLinks: [
-        "منصات ويب عالية التحويل",
+        "منصات ويب مصممة لزيادة التحويلات",
         "أنظمة اكتساب ذاتية بالذكاء الاصطناعي",
         "إعلانات ميتا والتسويق بالأداء",
-        "أطر التشخيص والاشتراكات الشهرية",
+        "تحليل الأداء وخطط النمو والاشتراكات الشهرية",
       ],
       gameDevLinks: [
         "ألعاب تجارية وألعاب WebGL",
         "تقنية AR/VR مخصصة وتقنيات مكانية",
         "ألعاب تعليمية ومحاكاة تربوية",
-        "نشر بوابات الويب",
+        "تطوير ونشر بوابات الويب",
       ],
       academyLinks: [
-        "مسارات برمجة للأطفال والكبار",
-        "مناهج Scratch وPython وUnity C#",
-        "وحدات معتمدة قابلة للطباعة وQR",
-        "معرض مشاريع الطلاب",
+        "دورات البرمجة والتقنية من سن 7 سنوات",
+        "مسارات البرمجة باستخدام Scratch وPython وUnity وC#",
+        "شهادة إتمام الدورة",
+        "ملف أعمال المتعلمين",
       ],
       legalLinks: ["سياسة الخصوصية", "شروط الخدمة"],
       taxDisclaimer:
@@ -2318,40 +2324,41 @@ export const translations: Record<Lang, Translation> = {
       announcementCta: "احجز حصة تجريبية مجانية",
       hero: {
         badge: "برنامج من Medinova Studio",
-        headline: "ابنِ المهارات. أنشئ المشاريع. شكّل المستقبل.",
+        headline: "هل ما تعرفه اليوم يكفي لعالم الغد؟",
         subheadline:
-          "تعليم عملي في التقنية والبرمجة للمتعلمين من سن 7 سنوات فما فوق، من خلال مشاريع حقيقية بإشراف مؤسس Medinova Studio.",
+          "التكنولوجيا تتغير بسرعة، والذكاء الاصطناعي يعيد تشكيل طريقة عملنا وتعلّمنا وإبداعنا. تعلّم أحدث التقنيات وطوّر مهاراتك من خلال التطبيق والمشاريع العملية، لتبقى قادرًا على فهم هذا التغيير والاستفادة منه.",
         cta: "احجز حصة تجريبية مجانية",
+        scarcity: "",
         trust: [
           {
-            title: "متعلمون من 7 سنوات",
-            desc: "دورات تناسب كل الأعمار والمستويات",
+            title: "من سن 7 سنوات فما فوق",
+            desc: "مسارات تناسب مختلف الأعمار والمستويات",
           },
           {
             title: "الإنجليزية · الفرنسية · العربية",
             desc: "حصص بثلاث لغات",
           },
           {
-            title: "مباشرة وقائمة على المشاريع",
-            desc: "بإشراف مدرب مع مشاريع حقيقية",
+            title: "حصص مباشرة ومشاريع عملية",
+            desc: "تعلّم بالممارسة بإشراف المدرّب",
           },
         ],
       },
       why: {
-        badge: "لماذا أكاديمية مدينوفا",
-        title: "تجربة تعلّم مبنية على المشاريع الحقيقية",
+        badge: "لماذا أكاديمية Medinova",
+        title: "تعلّم من خلال التطبيق والمشاريع",
         items: [
           {
-            title: "التعلّم بالممارسة",
-            desc: "بناء مشاريع حقيقية بدلاً من مجرد متابعة الدروس.",
+            title: "تعلّم بالممارسة، لا بالمشاهدة",
+            desc: "لا تكتفِ بمشاهدة الدروس. طبّق ما تتعلمه، وجرّب أفكارك، وأنشئ مشاريع حقيقية تساعدك على تطوير مهاراتك.",
           },
           {
-            title: "بناء معرض أعمالك",
-            desc: "تحويل ما تتعلمه إلى مشاريع تحتفظ بها وتعرضها.",
+            title: "حوّل المعرفة إلى مشاريع",
+            desc: "كل مهارة جديدة هي فرصة لإنشاء مشروع. احتفظ بأعمالك وطوّرها لتشكّل ملف أعمال يعكس ما تستطيع فعليًا.",
           },
           {
-            title: "التعلّم من استوديو حقيقي",
-            desc: "تعلّم مباشرة من مؤسس Medinova Studio.",
+            title: "تعلّم من خبرة حقيقية في المجال",
+            desc: "تعلّم مباشرة من مؤسس Medinova Studio، واستفد من خبرة استوديو يعمل فعليًا في تطوير الألعاب والتقنيات الرقمية وإطلاق منتجات ومشاريع حقيقية.",
           },
         ],
       },
@@ -2359,17 +2366,17 @@ export const translations: Record<Lang, Translation> = {
         badge: "المؤسس",
         title: "تعلّم مباشرة من مؤسس Medinova Studio",
         text:
-          "يتعلم المتعلمون بإشراف منير عبوتي، مؤسس والمطور الرئيسي لاستوديو Medinova Studio — استوديو نشط في تطوير الألعاب والتقنيات بألعاب منشورة ومشاريع حقيقية. بدلاً من متابعة دروس مسجلة، يتعلم المتعلمون من شخص يصمم ويبني ويُطلق التقنية كل يوم.",
-        caption: "منير عبوتي — مؤسس Medinova Studio والمطور الرئيسي.",
+          "يتعلم المتعلمون بإشراف مباشر من منير عبوطي، مؤسس Medinova Studio والمطور الرئيسي فيها. Medinova Studio استوديو يعمل فعليًا في تطوير الألعاب والتقنيات الرقمية، وله ألعاب منشورة ومشاريع حقيقية. وبدلًا من الاعتماد على دروس مسجلة فقط، يتعلم المتعلمون من شخص يعمل فعليًا على تصميم وتطوير وإطلاق الألعاب والتقنيات.",
+        caption: "منير عبوطي — مؤسس Medinova Studio والمطور الرئيسي.",
       },
       work: {
         badge: "أعمالنا",
-        title: "مدعومون باستوديو حقيقي ينجز مشاريع حقيقية",
+        title: "تعلّم داخل استوديو حقيقي ينفّذ مشاريع حقيقية",
         subtitle:
-          "أكاديمية مدينوفا برنامج من Medinova Studio، استوديو نشط في تطوير الألعاب والتقنيات. المشاريع أدناه هي مشاريع Medinova Studio — أعمال حقيقية منشورة، وليست مشاريع طلاب.",
+          "أكاديمية Medinova هي برنامج تعليمي من Medinova Studio، وهو استوديو يعمل فعليًا في تطوير الألعاب والتقنيات التفاعلية. المشاريع المعروضة أدناه هي مشاريع Medinova Studio — أعمال حقيقية منشورة، وليست مشاريع طلاب.",
         robloxBadge: "Medinova Studio على Roblox",
         robloxTitle:
-          "مطوّر لعبة 'Zombies WarZone' على Roblox — تجاوزت 1,000,000 زيارة عالمياً.",
+          "مطوّر لعبة Zombies WarZone على Roblox — أكثر من مليون زيارة للعبة حول العالم.",
         robloxCta: "جرّب اللعبة على Roblox",
         mgeBadge: "المعرض المغربي للألعاب",
         mgeTitle: "الجناح C38 — المعرض المغربي للألعاب",
@@ -2382,58 +2389,58 @@ export const translations: Record<Lang, Translation> = {
           "Sniper Elimination Challenge",
           "Blitz Combat Race",
         ],
-        studioLink: "اكتشف معرض أعمال الاستوديو الكامل",
+        studioLink: "استكشف معرض أعمال الاستوديو بالكامل",
       },
       courses: {
         badge: "استكشف دوراتنا",
         title: "استكشف دوراتنا",
         intro:
           "من المهارات الرقمية والبرمجة إلى تطوير الألعاب وتطوير الويب والتصميم الإبداعي، يمكن للمتعلمين استكشاف التقنية من خلال تعلّم عملي قائم على المشاريع.",
-        agesLabel: "العمر الموصى به",
-        progressionLabel: "التدرج",
+        agesLabel: "الفئة العمرية المقترحة",
+        progressionLabel: "مسار التعلّم",
         items: [
           {
             name: "المهارات الرقمية الأساسية",
             age: "7+",
             desc:
-              "بناء مهارات رقمية أساسية للحياة اليومية، بما فيها أساسيات الحاسوب وWord وExcel وPowerPoint واستخدام الإنترنت والمزيد.",
+              "بناء المهارات الرقمية الأساسية للحياة اليومية: أساسيات استخدام الحاسوب وWord وExcel وPowerPoint والإنترنت وغيرها من المهارات الرقمية الأساسية.",
           },
           {
             name: "Scratch",
             age: "7+",
             desc:
-              "تطوير التفكير المنطقي ومهارات حل المشكلات عبر البرمجة المرئية. يتعلم الأطفال أساسيات الخوارزميات والتسلسل والرياضيات والتفكير الحاسوبي أثناء إنشاء قصص تفاعلية ورسوم متحركة وألعاب خاصة بهم.",
+              "تطوير التفكير المنطقي ومهارات حل المشكلات عبر البرمجة المرئية. يتعلم المتعلمون أساسيات الخوارزميات والتسلسل والتفكير الحاسوبي، مع إنشاء قصص تفاعلية ورسوم متحركة وألعاب خاصة بهم.",
           },
           {
             name: "Python",
             age: "11+",
             desc:
-              "تطوير التفكير المنظم وحل المشكلات ومهارات البرمجة عبر لغة Python. يحوّل المتعلمون أفكارهم إلى برامج وألعاب وتطبيقات عملية مع بناء أساس متين لتقنيات أكثر تقدماً.",
+              "تطوير التفكير المنطقي ومهارات حل المشكلات والبرمجة عبر لغة Python. يحوّل المتعلمون أفكارهم إلى برامج وألعاب وتطبيقات عملية، مع بناء أساس متين للمستويات الأكثر تقدمًا.",
           },
           {
             name: "تطوير ألعاب Roblox",
             age: "9+",
             desc:
-              "تطوير الإبداع والتفكير المكاني وحل المشكلات من خلال تصميم وبناء عوالم 3D تفاعلية. يستكشف المتعلمون تصميم الألعاب والبرمجة أثناء إنشاء تجارب Roblox خاصة بهم.",
+              "تطوير الإبداع والتفكير المكاني ومهارات حل المشكلات من خلال تصميم وبناء عوالم ثلاثية الأبعاد تفاعلية. يستكشف المتعلمون تصميم الألعاب والبرمجة أثناء إنشاء تجارب Roblox خاصة بهم.",
           },
           {
-            name: "تطوير ألعاب Unity وC#",
+            name: "تطوير الألعاب باستخدام Unity وC#",
             age: "12+",
             desc:
-              "تطوير مهارات متقدمة في حل المشكلات والتفكير المنطقي والبرمجة عبر تطوير ألعاب احترافي. يستخدم المتعلمون Unity وC# لتصميم آليات اللعب وبناء ألعاب 2D و3D وتحويل أفكارهم إلى مشاريع قابلة للعب.",
+              "تطوير مهارات متقدمة في البرمجة والتفكير المنطقي وحل المشكلات من خلال تطوير الألعاب بطريقة احترافية. يستخدم المتعلمون Unity وC# لتصميم آليات اللعب وبناء ألعاب ثنائية وثلاثية الأبعاد، وتحويل أفكارهم إلى مشاريع تفاعلية.",
           },
           {
             name: "تطوير الويب",
             age: "11+",
             desc:
-              "فهم كيفية عمل المواقع الإلكترونية مع تطوير الإبداع والتفكير المنطقي ومهارات حل المشكلات. يبدأ المتعلمون بـ HTML وCSS وJavaScript ثم يتقدمون إلى PHP وMySQL لبناء مواقع مرتبطة بقواعد بيانات حقيقية.",
+              "فهم كيفية عمل المواقع الإلكترونية مع تطوير الإبداع والتفكير المنطقي ومهارات حل المشكلات. يبدأ المتعلمون بـ HTML وCSS وJavaScript، ثم يتقدمون إلى PHP وMySQL لبناء مواقع مرتبطة بقواعد بيانات حقيقية.",
             levels: [
               {
-                label: "Starter",
+                label: "المستوى الأساسي",
                 topics: ["HTML", "CSS", "JavaScript"],
               },
               {
-                label: "Pro",
+                label: "المستوى المتقدم",
                 topics: ["PHP", "MySQL", "الواجهة الخلفية وقواعد البيانات"],
               },
             ],
@@ -2442,98 +2449,99 @@ export const translations: Record<Lang, Translation> = {
             name: "التصميم الإبداعي",
             age: "10+",
             desc:
-              "تطوير الإبداع والتواصل البصري ومهارات الإنتاج الرقمي. يستكشف المتعلمون الإنشاء ثلاثي الأبعاد وتحرير الصور ومونتاج الفيديو مع تحويل أفكارهم إلى مشاريع رقمية أصلية.",
+              "تطوير الإبداع والتواصل البصري ومهارات الإنتاج الرقمي. يستكشف المتعلمون النمذجة ثلاثية الأبعاد وتحرير الصور ومونتاج الفيديو، مع تحويل أفكارهم إلى مشاريع رقمية أصلية.",
           },
         ],
       },
       teaching: {
         badge: "كيف نعلّم",
-        title: "كيف نعلّم",
+        title: "كيف نعلّم؟",
         modelTitle: "تجربة تعلّم متكاملة",
         steps: [
           {
             title: "التعلّم",
-            desc: "حصص مباشرة مع شروحات عملية وعروض توضيحية.",
+            desc: "حصص مباشرة تجمع بين الشرح الواضح والتطبيق العملي والأمثلة التوضيحية.",
           },
           {
             title: "التطبيق",
-            desc: "تمارين وأنشطة موجّهة تساعد المتعلمين على تطبيق كل مفهوم جديد.",
+            desc: "تمارين وأنشطة عملية تساعد المتعلم على تطبيق كل مفهوم جديد.",
           },
           {
-            title: "الإنشاء",
-            desc: "يبني المتعلمون مشاريع حقيقية طوال الدورة.",
+            title: "تطوير المشاريع",
+            desc: "يستخدم المتعلم ما تعلّمه لبناء مشاريع حقيقية وتطوير أفكاره الخاصة.",
           },
           {
-            title: "العرض",
-            desc: "تصبح المشاريع المكتملة جزءاً من معرض أعمالهم، تليها شهادة عند إتمام الدورة.",
+            title: "ملف الأعمال",
+            desc: "يحتفظ المتعلم بمشاريعه ويطوّرها ضمن ملف أعماله، ويحصل على شهادة إتمام الدورة بعد إكمال البرنامج والمشروع النهائي.",
           },
         ],
         model: [
           "حصص مباشرة",
           "مواد تعليمية",
           "تمارين",
-          "دعم مجتمعي",
+          "دعم ومتابعة",
         ],
       },
       finalCta: {
-        title: "مستعد للبدء؟",
-        subtitle: "احجز حصة تجريبية مجانية واكتشف مسار التعلم المناسب لك.",
+        title: "هل أنت مستعد للبدء؟",
+        subtitle: "احجز حصة تجريبية مجانية وتعرّف على المسار التعليمي الأنسب لك.",
         cta: "احجز حصة تجريبية مجانية",
+        scarcity: "",
       },
       faq: {
         badge: "الأسئلة الشائعة",
-        title: "هل لديك أي استفسار؟",
+        title: "هل لديك استفسار؟",
         subtitle:
-          "إجابات عن أكثر الأسئلة شيوعاً بين أولياء الأمور والمتعلمين.",
+          "إجابات عن الأسئلة الأكثر شيوعًا لدى أولياء الأمور والمتعلمين.",
         items: [
           {
-            q: "من أي عمر يمكن لطفلي البدء؟",
-            a: "أكاديميتنا تستقبل المتعلمين من سن 7 سنوات فما فوق. لكل دورة نطاق عمري موصى به، حتى يتمكن المتعلمون من اختيار برنامج يناسب عمرهم وخبرتهم.",
+            q: "في أي عمر يمكن البدء؟",
+            a: "تبدأ برامج الأكاديمية من سن 7 سنوات فما فوق، مع اختلاف الفئة العمرية المقترحة حسب الدورة ومستوى المتعلم.",
           },
           {
-            q: "هل يحتاج طفلي إلى خبرة سابقة؟",
-            a: "لا. عدة دورات مصممة للمبتدئين تماماً. أما بالنسبة للدورات الأكثر تقدماً فقد يُنصح ببعض المعرفة السابقة.",
+            q: "هل أحتاج إلى خبرة سابقة؟",
+            a: "لا، تتوفر دورات للمبتدئين تمامًا، بينما قد تتطلب الدورات الأكثر تقدمًا بعض المعرفة السابقة.",
           },
           {
             q: "بأي لغات تتوفر الحصص؟",
-            a: "الحصص متاحة باللغة الإنجليزية والفرنسية والعربية، حسب مستوى المتعلم اللغوي ومجموعة الدورة.",
+            a: "الحصص متاحة باللغة الإنجليزية والفرنسية والعربية، وتُقدم بلغة المتعلم ووليّ أمره.",
           },
           {
             q: "هل الحصص عبر الإنترنت أم حضورياً؟",
-            a: "الحصص تُعقد مباشرة مع مدرب. يمكننا تقديم التعلّم عبر الإنترنت، ويعتمد الشكل الدقيق على المجموعة والجدول الزمني.",
+            a: "الحصص مباشرة مع مدرّب. يمكن التعلّم عن بُعد، ويعتمد الشكل الدقيق على المجموعة والجدول الزمني المتفق عليه.",
           },
           {
-            q: "هل يمكن لطفلي تجربة حصة قبل التسجيل؟",
-            a: "نعم. نقدم حصة تجريبية مجانية قبل التسجيل. وهذا يتيح للمتعلم وولي الأمر رؤية طريقة عمل الحصة قبل الالتزام.",
+            q: "هل يمكنني تجربة حصة قبل التسجيل؟",
+            a: "نعم. نقدم حصة تجريبية مجانية قبل التسجيل، ليتعرف المتعلم ووليّ الأمر على طريقة عمل الحصة قبل اتخاذ القرار.",
           },
           {
-            q: "ماذا سيتعلم طفلي فعلياً؟",
-            a: "تركز دوراتنا على المهارات التقنية العملية وحل المشكلات والتفكير المنطقي والإبداع. يتعلم الطلاب من خلال بناء المشاريع بدلاً من مجرد مشاهدة الدروس.",
+            q: "ماذا سيتعلم المتعلم فعليًا؟",
+            a: "تتمحور دوراتنا حول المهارات التقنية العملية، وحل المشكلات، والتفكير المنطقي، والإبداع، عبر مشاريع حقيقية وليس مجرد متابعة الدروس.",
           },
           {
-            q: "هل سيحصل طفلي على شهادة؟",
-            a: "نعم. يحصل الطلاب على شهادة إتمام بعد إكمال دورتهم ومشروعهم النهائي بنجاح.",
+            q: "هل يحصل المتعلم على شهادة؟",
+            a: "نعم. يحصل المتعلم على شهادة إتمام الدورة بعد إكمالها والمشروع النهائي بنجاح.",
           },
           {
-            q: "هل سيكون لدى طفلي مشاريع يعرضها؟",
-            a: "نعم. يبني الطلاب مشاريع طوال دورتهم وينهون بأعمال يمكنهم الاحتفاظ بها ضمن معرض أعمالهم الرقمي.",
+            q: "هل سيكون لدى المتعلم مشاريع يعرضها؟",
+            a: "نعم. يبني المتعلم مشاريع طوال الدورة ويضيفها إلى ملف أعماله، ليعرضها كإنجازات حقيقية.",
           },
           {
             q: "ما الدعم المتاح خارج الحصة المباشرة؟",
-            a: "يحصل الطلاب على مواد تعليمية وتمارين ودعم عبر مجتمع الأكاديمية، حيث يمكنهم طرح الأسئلة وتلقي الإرشادات.",
+            a: "يحصل المتعلمون على مواد تعليمية وتمارين عملية ومتابعة منتظمة، لمساعدتهم على التقدم خارج أوقات الحصص.",
           },
           {
             q: "كيف أحجز حصة تجريبية؟",
-            a: "اضغط على احجز حصة تجريبية مجانية وتواصل معنا عبر واتساب. سنناقش عمر المتعلم واهتماماته ولغته قبل ترتيب الحصة التجريبية المناسبة.",
+            a: "اضغط على «احجز حصة تجريبية مجانية» وتواصل معنا عبر WhatsApp. سنناقش عمر المتعلم واهتماماته ولغته قبل ترتيب الحصة المناسبة.",
           },
         ],
       },
       whatsapp: {
         message:
           "السلام عليكم، أود حجز حصة تجريبية مجانية في Medinova Academy.",
-        online: "متصل — رد سريع عبر الواتساب",
-        aria: "تواصل معنا عبر واتساب",
-        quickQuestion: "سؤال سريع عبر الواتساب",
+        online: "متاح الآن — تواصل معنا عبر WhatsApp",
+        aria: "تواصل معنا عبر WhatsApp",
+        quickQuestion: "سؤال سريع عبر WhatsApp",
         cta: "احجز حصة تجريبية مجانية",
       },
     },

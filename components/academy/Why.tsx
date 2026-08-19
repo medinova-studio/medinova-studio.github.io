@@ -12,34 +12,34 @@ export default function Why() {
   return (
     <section
       id="why"
-      className="relative py-20 sm:py-28 border-t border-hairline"
+      className="relative py-16 sm:py-20 border-t border-hairline"
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-4">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-14">
+          <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft border border-primary/20 eyebrow text-primary mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             {why.badge}
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl font-semibold text-ink tracking-tight text-balance max-w-3xl mx-auto">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-ink tracking-tight text-balance max-w-3xl mx-auto">
             {why.title}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5 lg:gap-6">
+        <div className="grid md:grid-cols-3 gap-10 md:gap-8 lg:gap-12 md:divide-x md:divide-hairline">
           {why.items.map((item, i) => {
             const Icon = itemIcons[i % itemIcons.length];
             return (
               <div
                 key={item.title}
-                className="card-accent group rounded-lg border border-hairline bg-surface-1 p-6 lg:p-8 transition-all duration-300 hover:border-hairline-strong hover:bg-surface-2"
+                className="text-center md:text-start"
               >
-                <div className="w-11 h-11 rounded-xl bg-surface-2 border border-hairline flex items-center justify-center mb-4 transition-colors group-hover:border-hairline-strong">
-                  <Icon className="w-5 h-5 text-ink-muted" />
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-soft border border-primary/20">
+                  <Icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-ink mb-2 leading-snug">
+                <h3 className="mt-6 font-display text-2xl lg:text-3xl font-bold text-ink tracking-tight text-balance">
                   {item.title}
                 </h3>
-                <p className="text-sm text-ink-subtle leading-relaxed">
+                <p className="mt-3 text-base lg:text-lg text-ink-muted leading-relaxed">
                   {item.desc}
                 </p>
               </div>

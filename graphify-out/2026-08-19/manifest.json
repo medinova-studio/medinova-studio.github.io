@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "app/academy/page.tsx": {
-    "mtime": 1787152193.9856298,
-    "ast_hash": "f284eb0c4d69d44c7123f54ecb4960ed",
+    "mtime": 1787146498.839387,
+    "ast_hash": "297d1ec93659eb33f043b73569a161b9",
     "semantic_hash": ""
   },
   "app/agency/page.tsx": {
@@ -60,12 +60,12 @@
     "semantic_hash": "492d40bb46ff69e7ec5020b07f252b96"
   },
   "lib/i18n.ts": {
-    "mtime": 1787154320.070917,
-    "ast_hash": "5e132dbf13df5723af8042d966ec2037",
+    "mtime": 1787146373.8883033,
+    "ast_hash": "f2064e2cc029200571c229c68dcdb238",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1787153094.740386,
+    "mtime": 1787146783.9579303,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -225,18 +225,18 @@
     "semantic_hash": ""
   },
   "components/academy/AnnouncementBar.tsx": {
-    "mtime": 1787148443.0046618,
-    "ast_hash": "a1ad45b58632f8d1ff4903a4bbec2a40",
+    "mtime": 1787146380.3963869,
+    "ast_hash": "fac521b3268d3826780315bb38bc66cd",
     "semantic_hash": ""
   },
   "components/academy/FAQ.tsx": {
-    "mtime": 1787152315.5194573,
-    "ast_hash": "553c22376775b3074c45e0c0b25add7a",
+    "mtime": 1787146478.3298328,
+    "ast_hash": "d7deb6946f34869aee8fa2fa382164f9",
     "semantic_hash": ""
   },
   "components/academy/Hero.tsx": {
-    "mtime": 1787152199.5029988,
-    "ast_hash": "56d7fcdce50da262f5ac49483f3c718b",
+    "mtime": 1787146406.414543,
+    "ast_hash": "95e4f8e862240e3ffeb917df77b503e8",
     "semantic_hash": ""
   },
   "lib/academy.ts": {
@@ -305,7 +305,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787154392.9064906,
+    "mtime": 1787066191.8138835,
     "ast_hash": "4e2b729a4ffb0d6e53811939282a0ac6",
     "semantic_hash": ""
   },
@@ -485,33 +485,33 @@
     "semantic_hash": ""
   },
   "components/academy/Courses.tsx": {
-    "mtime": 1787152295.2048922,
-    "ast_hash": "032a2225c1ee3bb06a2ace581704836b",
+    "mtime": 1787146443.8967366,
+    "ast_hash": "b6eeeddf00801e871ef42a98a6bd5dd6",
     "semantic_hash": ""
   },
   "components/academy/FinalCta.tsx": {
-    "mtime": 1787148434.7114165,
-    "ast_hash": "10d52bc1f967f0e0086942ed26cfa709",
+    "mtime": 1787146491.0079339,
+    "ast_hash": "b6f1f0de28e2735f384ba20d70fb2d74",
     "semantic_hash": ""
   },
   "components/academy/Founder.tsx": {
-    "mtime": 1787152246.3139822,
-    "ast_hash": "67233fece63d95d11dca989cf5ac0393",
+    "mtime": 1787146417.7916746,
+    "ast_hash": "43e74eb68263fe5c22472b156a5cedf2",
     "semantic_hash": ""
   },
   "components/academy/Teaching.tsx": {
-    "mtime": 1787152979.0449557,
-    "ast_hash": "5da3ca583fd396836586ee93f901bd2a",
+    "mtime": 1787146466.5486035,
+    "ast_hash": "49e531a1bc4392205809f860e4c7b89e",
     "semantic_hash": ""
   },
   "components/academy/Why.tsx": {
-    "mtime": 1787153049.114692,
-    "ast_hash": "2dd9c99f8ffa5503031eb0764677cb15",
+    "mtime": 1787146425.5106375,
+    "ast_hash": "abaf31919916fe5c92c09824ca66d47f",
     "semantic_hash": ""
   },
   "components/academy/Work.tsx": {
-    "mtime": 1787152985.8286502,
-    "ast_hash": "311967208b38c33e7b1d4c64f8344fd9",
+    "mtime": 1787146450.5236888,
+    "ast_hash": "40bd7494fd227b6d14ce050a83f8b434",
     "semantic_hash": ""
   },
   "public/images/academy/creative-design.webp": {

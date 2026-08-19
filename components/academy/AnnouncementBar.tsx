@@ -5,9 +5,9 @@ import { useLang } from "@/lib/LanguageContext";
 export default function AnnouncementBar() {
   const { t } = useLang();
   return (
-    <div className="sticky top-14 z-40 bg-canvas/80 backdrop-blur-xl border-b border-hairline">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-5 text-center">
-        <p className="text-xs sm:text-[13px] text-ink-muted leading-relaxed">
+    <div className="bg-primary-soft border-b border-primary/20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-5 text-center">
+        <p className="text-xs sm:text-[13px] font-medium text-primary leading-relaxed">
           {t.academy.announcement}
         </p>
         <a
