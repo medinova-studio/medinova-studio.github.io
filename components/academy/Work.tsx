@@ -13,7 +13,7 @@ const GAME_IMAGES = [
 ];
 
 export default function Work() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const { work } = t.academy;
 
   return (
@@ -80,7 +80,7 @@ export default function Work() {
           </div>
           <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[460px] bg-navy order-1 lg:order-2">
             <Image
-              src="/images/academy/mge-booth.jpg"
+              src="/images/academy/mge-booth.webp"
               alt={work.mgeTitle}
               fill
               sizes="(min-width:1024px) 55vw, 100vw"
@@ -115,7 +115,7 @@ export default function Work() {
 
         <div className="mt-10 text-center">
           <Link
-            href="/game-development"
+            href={`/${lang}/game-development`}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-surface-1 border border-hairline text-ink text-sm font-medium hover:bg-surface-2 hover:border-hairline-strong active:scale-[0.98] transition-all"
           >
             {work.studioLink}

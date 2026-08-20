@@ -15,7 +15,8 @@ export default function SiteChrome({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const isAgency = pathname?.startsWith("/agency") ?? false;
+  const segments = pathname.split("/");
+  const isAgency = segments[2] === "agency" || segments[1] === "agency";
 
   if (isAgency) {
     return (

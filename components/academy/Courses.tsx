@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, CalendarClock } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
+import { COURSE_SLUGS } from "@/lib/courses";
+import { trackEvent } from "@/lib/analytics";
 
 const COURSE_IMAGES = [
   "/images/academy/digital-essentials.webp",
@@ -15,7 +18,7 @@ const COURSE_IMAGES = [
 ];
 
 export default function Courses() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const { courses } = t.academy;
 
   return (
@@ -47,7 +50,16 @@ export default function Courses() {
                   isLast ? "sm:col-span-2 lg:col-span-1 lg:col-start-2" : ""
                 }`}
               >
-                <div className="relative aspect-video overflow-hidden">
+                <Link
+                  href={`/${lang}/academy/courses/${COURSE_SLUGS[i]}`}
+                  className="relative aspect-video overflow-hidden"
+                  onClick={() =>
+                    trackEvent("view_course", {
+                      course: COURSE_SLUGS[i],
+                      lang,
+                    })
+                  }
+                >
                   <Image
                     src={COURSE_IMAGES[i]}
                     alt={course.name}
@@ -55,12 +67,21 @@ export default function Courses() {
                     sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
                   />
-                </div>
+                </Link>
                 <div className="flex flex-col flex-1 p-6 lg:p-7">
                   <div className="flex items-start justify-between gap-3 mb-3">
-                    <h3 className="font-display text-xl font-bold text-ink leading-snug">
+                    <Link
+                      href={`/${lang}/academy/courses/${COURSE_SLUGS[i]}`}
+                      className="font-display text-xl font-bold text-ink leading-snug transition-colors hover:text-primary"
+                      onClick={() =>
+                        trackEvent("view_course", {
+                          course: COURSE_SLUGS[i],
+                          lang,
+                        })
+                      }
+                    >
                       {course.name}
-                    </h3>
+                    </Link>
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-primary-soft border border-primary/20 text-xs font-semibold text-primary whitespace-nowrap">
                       <CalendarClock className="w-3.5 h-3.5" />
                       {courses.agesLabel} {course.age}
@@ -108,6 +129,22 @@ export default function Courses() {
                       </div>
                     </div>
                   )}
+
+                  <div className="mt-6 pt-5 border-t border-hairline">
+                    <Link
+                      href={`/${lang}/academy/courses/${COURSE_SLUGS[i]}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary-hover"
+                      onClick={() =>
+                        trackEvent("view_course", {
+                          course: COURSE_SLUGS[i],
+                          lang,
+                        })
+                      }
+                    >
+                      {courses.viewLabel}
+                      <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                    </Link>
+                  </div>
                 </div>
               </article>
             );

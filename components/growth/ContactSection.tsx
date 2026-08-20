@@ -11,6 +11,7 @@ import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeader from "@/components/growth/SectionHeader";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { trackEvent, trackLead } from "@/lib/analytics";
 
 const AGENCY_WHATSAPP_NUMBER = "212703702976";
 
@@ -80,6 +81,8 @@ export default function ContactSection() {
         throw new Error(json.error || "Request failed.");
       }
       setIsSubmitted(true);
+      trackEvent("agency_contact_submit", { form: "growth-contact" });
+      trackLead({ form: "growth-contact" });
       reset();
       setTimeout(() => setIsSubmitted(false), 10000);
     } catch (err) {
@@ -134,6 +137,10 @@ export default function ContactSection() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    trackEvent("whatsapp_click", { source: "growth-contact" });
+                    trackLead({ source: "growth-contact" });
+                  }}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-whatsapp text-white text-sm font-semibold shadow-lg shadow-whatsapp/25 hover:bg-whatsapp-hover active:scale-[0.98] transition-all"
                 >
                   <WhatsAppIcon className="w-5 h-5" />

@@ -2,8 +2,8 @@
 
 import { Languages, MonitorPlay, Users } from "lucide-react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import WhatsAppCta from "@/components/analytics/WhatsAppCta";
 import { useLang } from "@/lib/LanguageContext";
-import { academyWhatsAppUrl } from "@/lib/academy";
 
 const trustIcons = [Users, Languages, MonitorPlay];
 
@@ -30,15 +30,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href={academyWhatsAppUrl(t.academy.whatsapp.message)}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppCta
+              message={t.academy.whatsapp.message}
+              source="academy-hero"
               className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-md bg-whatsapp text-white text-[15px] font-semibold shadow-lg shadow-whatsapp/25 hover:bg-whatsapp-hover active:scale-[0.98] transition-all"
             >
               <WhatsAppIcon className="w-5 h-5" />
               {hero.cta}
-            </a>
+            </WhatsAppCta>
           </div>
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 max-w-2xl mx-auto">

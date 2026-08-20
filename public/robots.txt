@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://medinovastudio.com
+Host: https://www.medinovastudio.com
 
 # Sitemaps
-Sitemap: https://medinovastudio.com/sitemap.xml
+Sitemap: https://www.medinovastudio.com/sitemap.xml

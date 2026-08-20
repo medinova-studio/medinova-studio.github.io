@@ -8,6 +8,7 @@ import {
   useEffect,
   ReactNode,
 } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Lang,
   Translation,
@@ -24,31 +25,45 @@ type LangContextValue = {
 
 const LangContext = createContext<LangContextValue | null>(null);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+export function LanguageProvider({
+  children,
+  lang: initialLang,
+}: {
+  children: ReactNode;
+  lang: Lang;
+}) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const [lang, setLangState] = useState<Lang>(initialLang);
 
   useEffect(() => {
-    const saved = typeof localStorage !== "undefined"
-      ? (localStorage.getItem("medinova-lang") as Lang | null)
-      : null;
-    if (saved && ["fr", "en", "ar"].includes(saved)) {
-      setLangState(saved);
-    }
-  }, []);
+    setLangState(initialLang);
+    document.documentElement.lang = initialLang;
+    document.documentElement.dir = RTL_LANGS.includes(initialLang)
+      ? "rtl"
+      : "ltr";
+  }, [initialLang]);
 
-  const setLang = useCallback((l: Lang) => {
-    setLangState(l);
-    if (typeof localStorage !== "undefined") {
-      localStorage.setItem("medinova-lang", l);
-    }
-  }, []);
+  const setLang = useCallback(
+    (l: Lang) => {
+      setLangState(l);
+      if (typeof localStorage !== "undefined") {
+        localStorage.setItem("medinova-lang", l);
+      }
+      document.cookie = `medinova-lang=${l}; path=/; max-age=31536000; samesite=lax`;
+      const segments = pathname.split("/");
+      const hasLocalePrefix = /^\/(en|fr|ar)(\/|$)/.test(pathname);
+      if (hasLocalePrefix && segments.length >= 2) {
+        segments[1] = l;
+        router.push(segments.join("/") || `/${l}`);
+      } else {
+        router.push(`/${l}${pathname === "/" ? "" : pathname}`);
+      }
+    },
+    [pathname, router]
+  );
 
   const isRTL = RTL_LANGS.includes(lang);
-
-  useEffect(() => {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = isRTL ? "rtl" : "ltr";
-  }, [lang, isRTL]);
 
   return (
     <LangContext.Provider

@@ -4,28 +4,29 @@ import Link from "next/link";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 
-const AGENCY_HREFS = [
-  "/agency#solutions",
-  "/agency#solutions",
-  "/agency#solutions",
-  "/agency#growth-framework",
+const AGENCY_HREFS = (lang: string) => [
+  `/${lang}/agency#solutions`,
+  `/${lang}/agency#solutions`,
+  `/${lang}/agency#solutions`,
+  `/${lang}/agency#growth-framework`,
 ] as const;
 
-const GAME_DEV_HREFS = [
-  "/game-development#portfolio",
-  "/game-development#services",
-  "/game-development#services",
-  "/game-development#portfolio",
+const GAME_DEV_HREFS = (lang: string) => [
+  `/${lang}/game-development#portfolio`,
+  `/${lang}/game-development#services`,
+  `/${lang}/game-development#services`,
+  `/${lang}/game-development#portfolio`,
 ] as const;
 
-const ACADEMY_HREFS = [
-  "/academy#tracks",
-  "/academy#tracks",
-  "/academy#certification",
-  "/academy#student-projects",
+const ACADEMY_HREFS = (lang: string) => [
+  `/${lang}/academy#courses`,
+  `/${lang}/academy#courses`,
+  `/${lang}/academy#cta`,
+  `/${lang}/academy#work`,
+  `/${lang}/blog`,
 ] as const;
 
-const LEGAL_HREFS = ["/privacy", "/terms"] as const;
+const LEGAL_HREFS = (lang: string) => [`/${lang}/privacy`, `/${lang}/terms`] as const;
 
 const SOCIAL_LINKS = [
   {
@@ -41,8 +42,13 @@ const SOCIAL_LINKS = [
 ];
 
 export default function Footer() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const f = t.footer;
+
+  const agencyHrefs = AGENCY_HREFS(lang);
+  const gameDevHrefs = GAME_DEV_HREFS(lang);
+  const academyHrefs = ACADEMY_HREFS(lang);
+  const legalHrefs = LEGAL_HREFS(lang);
 
   return (
     <footer className="relative border-t border-white/10 bg-navy">
@@ -50,7 +56,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 lg:grid-cols-6">
           {/* Brand & parent company */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            <Link href="/" aria-label="Medinova Studio" className="inline-block">
+            <Link href={`/${lang}`} aria-label="Medinova Studio" className="inline-block">
               <img
                 src="/images/logo.svg"
                 alt="Medinova Studio logo"
@@ -82,7 +88,7 @@ export default function Footer() {
               {f.agencyLinks.map((label, i) => (
                 <li key={label}>
                   <Link
-                    href={AGENCY_HREFS[i]}
+                    href={agencyHrefs[i]}
                     className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
@@ -91,7 +97,7 @@ export default function Footer() {
               ))}
             </ul>
             <Link
-              href="/agency#contact"
+              href={`/${lang}/agency#contact`}
               className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#6E8CFF] transition-colors hover:text-[#9DB2FF]"
             >
               {f.cta}
@@ -111,7 +117,7 @@ export default function Footer() {
               {f.gameDevLinks.map((label, i) => (
                 <li key={label}>
                   <Link
-                    href={GAME_DEV_HREFS[i]}
+                    href={gameDevHrefs[i]}
                     className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
@@ -130,7 +136,7 @@ export default function Footer() {
               {f.academyLinks.map((label, i) => (
                 <li key={label}>
                   <Link
-                    href={ACADEMY_HREFS[i]}
+                    href={academyHrefs[i]}
                     className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}
@@ -149,7 +155,7 @@ export default function Footer() {
               {f.legalLinks.map((label, i) => (
                 <li key={label}>
                   <Link
-                    href={LEGAL_HREFS[i]}
+                    href={legalHrefs[i]}
                     className="text-sm text-[#C9D4EA] transition-colors hover:text-white"
                   >
                     {label}

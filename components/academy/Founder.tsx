@@ -19,7 +19,7 @@ export default function Founder() {
             <figure className="max-w-sm sm:max-w-md mx-auto w-full lg:max-w-none rounded-3xl border border-hairline bg-surface-1 p-3 shadow-[0_24px_60px_rgba(20,21,26,0.08)] transition-colors duration-300 hover:border-hairline-strong">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-surface-2">
                 <Image
-                  src="/images/academy/founder.jpg"
+                  src="/images/academy/founder.webp"
                   alt={founder.caption}
                   fill
                   sizes="(min-width:1024px) 40vw, (min-width:640px) 50vw, 100vw"

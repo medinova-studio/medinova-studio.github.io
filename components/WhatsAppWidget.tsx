@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { useLang } from "@/lib/LanguageContext";
 import { academyWhatsAppUrl } from "@/lib/academy";
+import { trackEvent, trackLead } from "@/lib/analytics";
 
 const SCROLL_THRESHOLD = 500;
 
@@ -25,6 +26,10 @@ export default function WhatsAppWidget() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={whatsapp.aria}
+      onClick={() => {
+        trackEvent("whatsapp_click", { source: "widget" });
+        trackLead({ source: "widget" });
+      }}
       className={`group fixed bottom-6 right-6 rtl:right-auto rtl:left-6 z-50 flex items-center gap-3 transition-all duration-300 ${
         visible
           ? "opacity-100 translate-y-0 pointer-events-auto"

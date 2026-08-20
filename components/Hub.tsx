@@ -5,26 +5,27 @@ import { useLang } from "@/lib/LanguageContext";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
 
-const HUBS = [
+const HUBS = (lang: string) => [
   {
     key: "gameDev",
-    href: "/game-development",
+    href: `/${lang}/game-development`,
     icon: Gamepad2,
   },
   {
     key: "agency",
-    href: "/agency",
+    href: `/${lang}/agency`,
     icon: TrendingUp,
   },
   {
     key: "academy",
-    href: "/academy",
+    href: `/${lang}/academy`,
     icon: GraduationCap,
   },
 ] as const;
 
 export default function Hub() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const hubs = HUBS(lang);
 
   return (
     <section id="solutions" className="relative py-20 sm:py-28 lg:py-32 border-t border-hairline">
@@ -44,7 +45,7 @@ export default function Hub() {
         </Reveal>
 
         <div className="grid md:grid-cols-3 gap-4 lg:gap-5 items-stretch">
-          {HUBS.map((h, i) => {
+          {hubs.map((h, i) => {
             const Icon = h.icon;
             const data = t.hub[h.key];
             return (

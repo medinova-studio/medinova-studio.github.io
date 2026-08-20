@@ -8,6 +8,7 @@ import { useLang } from "@/lib/LanguageContext";
 import { cn } from "@/lib/cn";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
+import { trackEvent, trackLead } from "@/lib/analytics";
 
 type FormValues = z.infer<ReturnType<typeof buildSchema>>;
 
@@ -73,6 +74,8 @@ export default function Contact() {
         throw new Error(json.error || "Request failed.");
       }
       setIsSubmitted(true);
+      trackEvent("contact_submit", { form: "home-contact" });
+      trackLead({ form: "home-contact" });
       reset();
       setTimeout(() => setIsSubmitted(false), 10000);
     } catch (err) {

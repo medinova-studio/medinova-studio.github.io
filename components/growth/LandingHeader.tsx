@@ -38,7 +38,7 @@ export default function LandingHeader() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-6 lg:px-8">
         <Link
-          href="/"
+          href={`/${lang}`}
           className="flex items-center"
           aria-label="Medinova Studio"
         >

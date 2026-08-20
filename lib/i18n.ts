@@ -52,6 +52,7 @@ export type AcademyTranslation = {
     intro: string;
     agesLabel: string;
     progressionLabel: string;
+    viewLabel: string;
     items: {
       name: string;
       age: string;
@@ -59,6 +60,12 @@ export type AcademyTranslation = {
       levels?: { label: string; topics: string[] }[];
     }[];
   };
+  breadcrumb: { home: string; academy: string };
+  onlineLabel: string;
+  viewAllLabel: string;
+  outcomesTitle: string;
+  courseDetailsTitle: string;
+  moreCoursesTitle: string;
   teaching: {
     badge: string;
     title: string;
@@ -102,6 +109,17 @@ export type Translation = {
     subAgencyDesc: string;
     subAcademy: string;
     subAcademyDesc: string;
+    blog: string;
+  };
+  blog: {
+    metaTitle: string;
+    metaDescription: string;
+    badge: string;
+    title: string;
+    subtitle: string;
+    readMore: string;
+    backLabel: string;
+    breadcrumbHome: string;
   };
   hero: {
     badge: string;
@@ -340,7 +358,7 @@ export type Translation = {
     cta: string;
     agencyLinks: [string, string, string, string];
     gameDevLinks: [string, string, string, string];
-    academyLinks: [string, string, string, string];
+    academyLinks: [string, string, string, string, string];
     legalLinks: [string, string];
     taxDisclaimer: string;
     rights: string;
@@ -364,6 +382,19 @@ export const translations: Record<Lang, Translation> = {
       subAgencyDesc: "Marketing & growth packages",
       subAcademy: "Medinova Academy",
       subAcademyDesc: "Coding tracks for kids & adults",
+      blog: "Blog",
+    },
+    blog: {
+      metaTitle: "Coding Blog for Kids & Parents | Medinova Studio",
+      metaDescription:
+        "Guides on kids' coding, Scratch vs Python, Unity vs Roblox, and coding courses in Morocco — from the team at Medinova Studio.",
+      badge: "The Medinova Blog",
+      title: "Guides for Parents, Learners & the Curious",
+      subtitle:
+        "Practical articles on kids' coding, game development and digital skills — written by the people who build and teach every day.",
+      readMore: "Read article",
+      backLabel: "Back to blog",
+      breadcrumbHome: "Home",
     },
     hero: {
       badge: "Available for Unity C#, AR/VR & Game Dev Contracts",
@@ -418,9 +449,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "View on App Store",
           link: "https://apps.apple.com/us/app/pharaohs-guardian-mummies/id6743336811",
           gallery: [
-            "/images/games/pharaohs-guardian/2752x2064-screenshot.jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).jpeg",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot.webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).webp",
           ],
         },
         {
@@ -431,9 +462,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "View on App Store",
           link: "https://apps.apple.com/us/app/sniper-elimination-challenge/id6747273149",
           gallery: [
-            "/images/games/sniper-elimination/screenshot1.png",
-            "/images/games/sniper-elimination/screenshot2.png",
-            "/images/games/sniper-elimination/screenshot3.png",
+            "/images/games/sniper-elimination/screenshot1.webp",
+            "/images/games/sniper-elimination/screenshot2.webp",
+            "/images/games/sniper-elimination/screenshot3.webp",
           ],
         },
         {
@@ -444,9 +475,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "View on App Store",
           link: "https://apps.apple.com/us/app/chameleon-outbreak-camo-hunt/id6785619522",
           gallery: [
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).jpeg",
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).jpeg",
-            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).jpeg",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).webp",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).webp",
+            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).webp",
           ],
         },
         {
@@ -457,9 +488,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "View on App Store",
           link: "https://apps.apple.com/us/app/blitz-combat-race/id6741860986",
           gallery: [
-            "/images/games/blitz-combat/2064x2752-screenshot (3).png",
-            "/images/games/blitz-combat/2064x2752-screenshot (4).png",
-            "/images/games/blitz-combat/2064x2752-screenshot.jpg",
+            "/images/games/blitz-combat/2064x2752-screenshot (3).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot (4).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot.webp",
           ],
         },
       ],
@@ -515,11 +546,11 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "Active Game Development Studio & Certified Coding Academy in Kenitra, Morocco",
+        badge: "Active Game Development Studio & Online Coding Academy — Rabat, Morocco",
         headline:
           "We Build Games, Grow Brands & Teach the Next Generation of Developers.",
         subheadline:
-          "Medinova Studio is an independent Moroccan studio engineering Unity C# games, AR/VR & WebGL experiences, B2B growth systems, and certified coding tracks in Scratch, Python, and Unity C# — from Kenitra, Morocco.",
+          "Medinova Studio is an independent Moroccan studio engineering Unity C# games, AR/VR & WebGL experiences, B2B growth systems, and live online coding tracks in Scratch, Python, and Unity C# — taught remotely from Rabat, Morocco.",
         ctaPrimary: "Explore Our Work",
         ctaSecondary: "Hire Our Studio",
       },
@@ -606,7 +637,7 @@ export const translations: Record<Lang, Translation> = {
     footer: {
       mission:
         "High-converting digital systems, custom game development, and tech education.",
-      location: "Kenitra, Morocco 🇲🇦",
+      location: "Rabat, Morocco 🇲🇦",
       support: "Contact & Support",
       colAgency: "B2B Growth Agency",
       colGameDev: "Game Dev & Interactive Tech",
@@ -630,6 +661,7 @@ export const translations: Record<Lang, Translation> = {
         "Scratch, Python & Unity C# Curricula",
         "Printable Certified Modules & QR Verification",
         "Student Project Showcase",
+        "Blog",
       ],
       legalLinks: ["Privacy Policy", "Terms of Service"],
       taxDisclaimer:
@@ -859,10 +891,11 @@ export const translations: Record<Lang, Translation> = {
         "Live instructor-led classes for learners aged 7+ · English, French & Arabic",
       announcementCta: "Book a Free Trial",
       hero: {
-        badge: "A Program by Medinova Studio",
-        headline: "Is What You Know Today Enough for Tomorrow?",
+        badge: "Online Coding Academy · Ages 7+ · Rabat, Morocco",
+        headline:
+          "Online Coding & Game Development Courses for Kids in Morocco",
         subheadline:
-          "Technology is evolving faster than ever, and AI is reshaping how we work, learn and create. Build practical skills in modern technology and learn through real projects with Medinova Studio.",
+          "Learn coding, game development and digital skills live online with Medinova Studio — from Rabat, Casablanca and everywhere in Morocco. Practical, project-based classes for learners aged 7+, taught by the founder of an active game studio.",
         cta: "Book a Free Trial",
         scarcity: "Limited spots — book early",
         trust: [
@@ -934,6 +967,7 @@ export const translations: Record<Lang, Translation> = {
           "From digital skills and coding to game development, web development and creative design, learners can explore technology through practical, project-based learning.",
         agesLabel: "Recommended age",
         progressionLabel: "Progression",
+        viewLabel: "View course details",
         items: [
           {
             name: "Digital Essentials",
@@ -989,6 +1023,12 @@ export const translations: Record<Lang, Translation> = {
           },
         ],
       },
+      breadcrumb: { home: "Home", academy: "Medinova Academy" },
+      onlineLabel: "Live online classes",
+      viewAllLabel: "View all courses",
+      outcomesTitle: "What You'll Learn",
+      courseDetailsTitle: "Course Details",
+      moreCoursesTitle: "Explore More Courses",
       teaching: {
         badge: "How We Teach",
         title: "How We Teach",
@@ -1098,6 +1138,19 @@ export const translations: Record<Lang, Translation> = {
       subAgencyDesc: "Packages marketing & croissance",
       subAcademy: "Académie Medinova",
       subAcademyDesc: "Parcours de code pour enfants & adultes",
+      blog: "Blog",
+    },
+    blog: {
+      metaTitle: "Blog Code pour Enfants & Parents | Medinova Studio",
+      metaDescription:
+        "Guides sur le code pour enfants, Scratch vs Python, Unity vs Roblox et les cours de code au Maroc — par l'équipe de Medinova Studio.",
+      badge: "Le Blog Medinova",
+      title: "Des Guides pour les Parents, Apprenants & Curieux",
+      subtitle:
+        "Des articles pratiques sur le code, le développement de jeux et les compétences numériques — écrits par ceux qui construisent et enseignent chaque jour.",
+      readMore: "Lire l'article",
+      backLabel: "Retour au blog",
+      breadcrumbHome: "Accueil",
     },
     hero: {
       badge: "Disponible pour contrats Unity C#, AR/VR & Game Dev",
@@ -1152,9 +1205,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "Voir sur l'App Store",
           link: "https://apps.apple.com/us/app/pharaohs-guardian-mummies/id6743336811",
           gallery: [
-            "/images/games/pharaohs-guardian/2752x2064-screenshot.jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).jpeg",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot.webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).webp",
           ],
         },
         {
@@ -1165,9 +1218,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "Voir sur l'App Store",
           link: "https://apps.apple.com/us/app/sniper-elimination-challenge/id6747273149",
           gallery: [
-            "/images/games/sniper-elimination/screenshot1.png",
-            "/images/games/sniper-elimination/screenshot2.png",
-            "/images/games/sniper-elimination/screenshot3.png",
+            "/images/games/sniper-elimination/screenshot1.webp",
+            "/images/games/sniper-elimination/screenshot2.webp",
+            "/images/games/sniper-elimination/screenshot3.webp",
           ],
         },
         {
@@ -1178,9 +1231,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "Voir sur l'App Store",
           link: "https://apps.apple.com/us/app/chameleon-outbreak-camo-hunt/id6785619522",
           gallery: [
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).jpeg",
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).jpeg",
-            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).jpeg",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).webp",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).webp",
+            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).webp",
           ],
         },
         {
@@ -1191,9 +1244,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "Voir sur l'App Store",
           link: "https://apps.apple.com/us/app/blitz-combat-race/id6741860986",
           gallery: [
-            "/images/games/blitz-combat/2064x2752-screenshot (3).png",
-            "/images/games/blitz-combat/2064x2752-screenshot (4).png",
-            "/images/games/blitz-combat/2064x2752-screenshot.jpg",
+            "/images/games/blitz-combat/2064x2752-screenshot (3).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot (4).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot.webp",
           ],
         },
       ],
@@ -1249,11 +1302,11 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "Studio actif de développement de jeux & académie de code certifiée à Kénitra, Maroc",
+        badge: "Studio actif de développement de jeux & académie de code en ligne — Rabat, Maroc",
         headline:
           "Nous créons des jeux, faisons grandir les marques & formons la prochaine génération de développeurs.",
         subheadline:
-          "Medinova Studio est un studio marocain indépendant qui conçoit des jeux Unity C#, des expériences AR/VR & WebGL, des systèmes de croissance B2B et des parcours de code certifiés en Scratch, Python et Unity C# — depuis Kénitra, Maroc.",
+          "Medinova Studio est un studio marocain indépendant qui conçoit des jeux Unity C#, des expériences AR/VR & WebGL, des systèmes de croissance B2B et des parcours de code en ligne en Scratch, Python et Unity C# — enseignés à distance depuis Rabat, Maroc.",
         ctaPrimary: "Découvrir Notre Travail",
         ctaSecondary: "Engager le Studio",
       },
@@ -1340,7 +1393,7 @@ export const translations: Record<Lang, Translation> = {
     footer: {
       mission:
         "Systèmes digitaux à forte conversion, développement de jeux sur mesure et éducation tech.",
-      location: "Kénitra, Maroc 🇲🇦",
+      location: "Rabat, Maroc 🇲🇦",
       support: "Contact & Support",
       colAgency: "Agence de Croissance B2B",
       colGameDev: "Game Dev & Tech Interactive",
@@ -1364,6 +1417,7 @@ export const translations: Record<Lang, Translation> = {
         "Curriculums Scratch, Python & Unity C#",
         "Modules certifiés imprimables & QR",
         "Vitrine des projets étudiants",
+        "Blog",
       ],
       legalLinks: ["Politique de confidentialité", "Conditions d'utilisation"],
       taxDisclaimer:
@@ -1593,11 +1647,11 @@ export const translations: Record<Lang, Translation> = {
         "Cours en direct pour les apprenants dès 7 ans · Anglais, Français & Arabe",
       announcementCta: "Réserver un Essai Gratuit",
       hero: {
-        badge: "Un Programme de Medinova Studio",
+        badge: "Académie de code en ligne · dès 7 ans · Rabat, Maroc",
         headline:
-          "Ce que vous savez aujourd'hui sera-t-il suffisant demain ?",
+          "Cours de codage et de développement de jeux pour enfants — en ligne au Maroc",
         subheadline:
-          "La technologie évolue à une vitesse sans précédent et l'IA transforme déjà notre façon de travailler, d'apprendre et de créer. Développez des compétences concrètes en technologies modernes grâce à des projets pratiques avec Medinova Studio.",
+          "Apprenez le codage, le développement de jeux et les compétences numériques en direct avec Medinova Studio — depuis Rabat, Casablanca et partout au Maroc. Des classes pratiques et basées sur des projets pour les apprenants dès 7 ans, animées par le fondateur d'un studio de jeux actif.",
         cta: "Réserver un Essai Gratuit",
         scarcity: "Places limitées — réservez tôt",
         trust: [
@@ -1670,6 +1724,7 @@ export const translations: Record<Lang, Translation> = {
           "Des compétences numériques et de la programmation au développement de jeux, au développement web et au design créatif, les apprenants peuvent explorer la technologie grâce à un apprentissage pratique basé sur des projets.",
         agesLabel: "Âge recommandé",
         progressionLabel: "Progression",
+        viewLabel: "Voir le détail du cours",
         items: [
           {
             name: "Essentiels Numériques",
@@ -1725,6 +1780,12 @@ export const translations: Record<Lang, Translation> = {
           },
         ],
       },
+      breadcrumb: { home: "Accueil", academy: "Medinova Academy" },
+      onlineLabel: "Cours en ligne en direct",
+      viewAllLabel: "Voir tous les cours",
+      outcomesTitle: "Ce Que Vous Allez Apprendre",
+      courseDetailsTitle: "Détails du Cours",
+      moreCoursesTitle: "Explorer Plus de Cours",
       teaching: {
         badge: "Comment Nous Enseignons",
         title: "Comment Nous Enseignons",
@@ -1834,6 +1895,19 @@ export const translations: Record<Lang, Translation> = {
       subAgencyDesc: "باقات تسويق ونمو",
       subAcademy: "أكاديمية Medinova",
       subAcademyDesc: "دورات برمجة وتقنية من سن 7 سنوات",
+      blog: "المدونة",
+    },
+    blog: {
+      metaTitle: "مدونة البرمجة للأطفال والآباء | Medinova Studio",
+      metaDescription:
+        "أدلة حول برمجة الأطفال، سكراتش مقابل بايثون، Unity مقابل Roblox، ودورات البرمجة في المغرب — من فريق استوديو Medinova.",
+      badge: "مدونة Medinova",
+      title: "أدلة للآباء والمتعلمين والمهتمين",
+      subtitle:
+        "مقالات عملية حول برمجة الأطفال وتطوير الألعاب والمهارات الرقمية — بقلم من يبنون ويعلّمون كل يوم.",
+      readMore: "اقرأ المقال",
+      backLabel: "العودة إلى المدونة",
+      breadcrumbHome: "الرئيسية",
     },
     hero: {
       badge: "متاحون لعقود Unity C# وAR/VR وتطوير الألعاب",
@@ -1886,9 +1960,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "عرض على App Store",
           link: "https://apps.apple.com/us/app/pharaohs-guardian-mummies/id6743336811",
           gallery: [
-            "/images/games/pharaohs-guardian/2752x2064-screenshot.jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).jpeg",
-            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).jpeg",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot.webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (1).webp",
+            "/images/games/pharaohs-guardian/2752x2064-screenshot (2).webp",
           ],
         },
         {
@@ -1899,9 +1973,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "عرض على App Store",
           link: "https://apps.apple.com/us/app/sniper-elimination-challenge/id6747273149",
           gallery: [
-            "/images/games/sniper-elimination/screenshot1.png",
-            "/images/games/sniper-elimination/screenshot2.png",
-            "/images/games/sniper-elimination/screenshot3.png",
+            "/images/games/sniper-elimination/screenshot1.webp",
+            "/images/games/sniper-elimination/screenshot2.webp",
+            "/images/games/sniper-elimination/screenshot3.webp",
           ],
         },
         {
@@ -1912,9 +1986,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "عرض على App Store",
           link: "https://apps.apple.com/us/app/chameleon-outbreak-camo-hunt/id6785619522",
           gallery: [
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).jpeg",
-            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).jpeg",
-            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).jpeg",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (5).webp",
+            "/images/games/chameleon-outbreak/1284x2778-screenshot (6).webp",
+            "/images/games/chameleon-outbreak/2064x2752-screenshot (10).webp",
           ],
         },
         {
@@ -1925,9 +1999,9 @@ export const translations: Record<Lang, Translation> = {
           cta: "عرض على App Store",
           link: "https://apps.apple.com/us/app/blitz-combat-race/id6741860986",
           gallery: [
-            "/images/games/blitz-combat/2064x2752-screenshot (3).png",
-            "/images/games/blitz-combat/2064x2752-screenshot (4).png",
-            "/images/games/blitz-combat/2064x2752-screenshot.jpg",
+            "/images/games/blitz-combat/2064x2752-screenshot (3).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot (4).webp",
+            "/images/games/blitz-combat/2064x2752-screenshot.webp",
           ],
         },
       ],
@@ -1983,10 +2057,10 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة في القنيطرة، المغرب",
+        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة عبر الإنترنت — الرباط، المغرب",
         headline: "نصنع الألعاب، ننمّي العلامات التجارية ونعلّم الجيل القادم من المطورين.",
         subheadline:
-          "استوديو Medinova استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ودورات برمجة في Scratch وPython وUnity وC# — من القنيطرة، المغرب.",
+          "استوديو Medinova استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ودورات برمجة عبر الإنترنت في Scratch وPython وUnity وC# — تُدرَّس عن بُعد من الرباط، المغرب.",
         ctaPrimary: "استكشف أعمالنا",
         ctaSecondary: "تواصل مع الاستوديو",
       },
@@ -2071,7 +2145,7 @@ export const translations: Record<Lang, Translation> = {
     footer: {
       mission:
         "منصات ويب مصممة لزيادة التحويلات، وتطوير ألعاب مخصصة، وتعليم تقني.",
-      location: "القنيطرة، المغرب 🇲🇦",
+      location: "الرباط، المغرب 🇲🇦",
       support: "تواصل ودعم",
       colAgency: "وكالة النمو B2B",
       colGameDev: "تطوير الألعاب والتقنية التفاعلية",
@@ -2095,6 +2169,7 @@ export const translations: Record<Lang, Translation> = {
         "مسارات البرمجة باستخدام Scratch وPython وUnity وC#",
         "شهادة إتمام الدورة",
         "ملف أعمال المتعلمين",
+        "المدونة",
       ],
       legalLinks: ["سياسة الخصوصية", "شروط الخدمة"],
       taxDisclaimer:
@@ -2323,10 +2398,10 @@ export const translations: Record<Lang, Translation> = {
         "حصص مباشرة للمتعلمين من سن 7 سنوات فما فوق · الإنجليزية، الفرنسية والعربية",
       announcementCta: "احجز حصة تجريبية مجانية",
       hero: {
-        badge: "برنامج من Medinova Studio",
-        headline: "هل ما تعرفه اليوم يكفي لعالم الغد؟",
+        badge: "أكاديمية برمجة عبر الإنترنت · من سن 7 سنوات · الرباط، المغرب",
+        headline: "دورات برمجة وتطوير ألعاب للأطفال — عبر الإنترنت في المغرب",
         subheadline:
-          "التكنولوجيا تتغير بسرعة، والذكاء الاصطناعي يعيد تشكيل طريقة عملنا وتعلّمنا وإبداعنا. تعلّم أحدث التقنيات وطوّر مهاراتك من خلال التطبيق والمشاريع العملية، لتبقى قادرًا على فهم هذا التغيير والاستفادة منه.",
+          "تعلّم البرمجة وتطوير الألعاب والمهارات الرقمية مباشرة عبر الإنترنت مع Medinova Studio — من الرباط والدار البيضاء وكل مكان في المغرب. حصص عملية قائمة على المشاريع للمتعلمين من سن 7 سنوات، يدرّسها مؤسس استوديو ألعاب نشط.",
         cta: "احجز حصة تجريبية مجانية",
         scarcity: "",
         trust: [
@@ -2398,6 +2473,7 @@ export const translations: Record<Lang, Translation> = {
           "من المهارات الرقمية والبرمجة إلى تطوير الألعاب وتطوير الويب والتصميم الإبداعي، يمكن للمتعلمين استكشاف التقنية من خلال تعلّم عملي قائم على المشاريع.",
         agesLabel: "الفئة العمرية المقترحة",
         progressionLabel: "مسار التعلّم",
+        viewLabel: "عرض تفاصيل الدورة",
         items: [
           {
             name: "المهارات الرقمية الأساسية",
@@ -2453,6 +2529,12 @@ export const translations: Record<Lang, Translation> = {
           },
         ],
       },
+      breadcrumb: { home: "الرئيسية", academy: "أكاديمية Medinova" },
+      onlineLabel: "فصول مباشرة عبر الإنترنت",
+      viewAllLabel: "عرض جميع الدورات",
+      outcomesTitle: "ماذا ستتعلم",
+      courseDetailsTitle: "تفاصيل الدورة",
+      moreCoursesTitle: "استكشف المزيد من الدورات",
       teaching: {
         badge: "كيف نعلّم",
         title: "كيف نعلّم؟",

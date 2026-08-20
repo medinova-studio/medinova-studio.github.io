@@ -1,8 +1,8 @@
 "use client";
 
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import WhatsAppCta from "@/components/analytics/WhatsAppCta";
 import { useLang } from "@/lib/LanguageContext";
-import { academyWhatsAppUrl } from "@/lib/academy";
 
 export default function FinalCta() {
   const { t } = useLang();
@@ -33,15 +33,14 @@ export default function FinalCta() {
             {finalCta.subtitle}
           </p>
           <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href={academyWhatsAppUrl(t.academy.whatsapp.message)}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppCta
+              message={t.academy.whatsapp.message}
+              source="final-cta"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-md bg-whatsapp text-white text-sm font-semibold shadow-lg shadow-black/20 hover:bg-whatsapp-hover active:scale-[0.98] transition-all"
             >
               <WhatsAppIcon className="w-5 h-5" />
               {finalCta.cta}
-            </a>
+            </WhatsAppCta>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Founder() {
           <Reveal>
             <div className="max-w-sm sm:max-w-md mx-auto w-full lg:max-w-none">
               <Image
-                src="/images/Founder.jpg"
+                src="/images/Founder.webp"
                 alt={t.founder.subtitle}
                 width={800}
                 height={1001}

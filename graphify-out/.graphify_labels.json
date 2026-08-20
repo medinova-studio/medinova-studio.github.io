@@ -1,5 +1,5 @@
 {
-  "0": "Button.tsx",
+  "0": "useLang",
   "1": "compilerOptions",
   "2": "dependencies",
   "3": "DESIGN.md",
@@ -16,12 +16,14 @@
   "14": "SKILL.md",
   "15": "opencode.json",
   "16": "AGENTS.md",
-  "17": "privacy/page.tsx",
-  "19": "useLang",
+  "17": "i18n.ts",
+  "18": "middleware.ts",
+  "19": "layout.tsx",
   "20": "agency-contact/route.ts",
   "21": "eslint.config.mjs",
   "22": "next-sitemap.config.js",
-  "23": "terms/page.tsx",
+  "23": "fix-sitemap.mjs",
   "24": "vitest.config.ts",
-  "25": "ogFonts"
+  "25": "og.tsx",
+  "26": "optimize-images.mjs"
 }

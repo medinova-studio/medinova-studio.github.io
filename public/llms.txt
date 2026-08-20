@@ -1,0 +1,91 @@
+# Medinova Studio
+
+> Medinova Studio is an independent Moroccan game development studio and online coding academy based in Kenitra, Morocco, serving students and clients across Rabat, Casablanca and all of Morocco. Founded in 2026, the studio ships custom Unity C# games, AR/VR and WebGL experiences, AI-driven growth systems, and live online coding tracks for kids and adults.
+
+## About
+
+- **Name:** Medinova Studio
+- **Legal name:** Medinova Studio
+- **Also known as:** Medinova Growth (agency division), Medinova Academy (education division)
+- **Founded:** 2026
+- **Location:** Kenitra, Morocco (Rabat-Salé-Kénitra region) — teaching and delivering remotely nationwide
+- **Serves:** Rabat, Casablanca, Morocco, North Africa, worldwide
+- **Email:** contact@medinovastudio.com
+- **Phone:** +212703702976
+- **Founder:** Mounir Abbotti — founder & lead systems engineer
+
+## What we do
+
+Medinova Studio operates three divisions under one roof:
+
+1. **Game Development & Spatial Tech** — Custom Unity C# games, mobile (iOS/Android) and PC games, WebGL portals, AR/VR simulations, serious games and educational simulations.
+2. **B2B Growth Agency (Medinova Growth)** — High-converting web platforms, AI & autonomous acquisition systems, Meta ads & performance marketing, diagnostic frameworks and retainers.
+3. **Coding Academy (Medinova Academy)** — Live online coding and game development courses for learners aged 7+, taught by the founder of the studio in English, French and Arabic.
+
+## Key pages
+
+- Home: https://www.medinovastudio.com/
+- Medinova Academy (coding courses): https://www.medinovastudio.com/academy
+- Growth Agency: https://www.medinovastudio.com/agency
+- Game Development Agency: https://www.medinovastudio.com/game-development
+- Who We Are: https://www.medinovastudio.com/who-we-are
+- Blog (guides for parents & learners): https://www.medinovastudio.com/blog
+- Privacy Policy: https://www.medinovastudio.com/privacy
+- Terms of Service: https://www.medinovastudio.com/terms
+
+The site is available in English, French and Arabic. Every page has a localized version under a language prefix: `/en`, `/fr`, `/ar`. For example, the Scratch course page is at https://www.medinovastudio.com/en/academy/courses/scratch (and the French and Arabic equivalents under `/fr` and `/ar`).
+
+## Academy courses
+
+All courses are live, instructor-led and project-based, available in English, French and Arabic. Each course has a dedicated page:
+
+- **Digital Essentials** (ages 7+): Computer basics, Word, Excel, PowerPoint, internet use. https://www.medinovastudio.com/en/academy/courses/digital-essentials
+- **Scratch** (ages 7+): Visual programming, algorithms, sequencing, math and computational thinking through interactive stories, animations and games. https://www.medinovastudio.com/en/academy/courses/scratch
+- **Python** (ages 11+): Structured thinking, problem-solving and programming; learners build working programs, games and practical applications. https://www.medinovastudio.com/en/academy/courses/python
+- **Roblox Game Development** (ages 9+): Game design and programming while building interactive 3D worlds in Roblox. https://www.medinovastudio.com/en/academy/courses/roblox
+- **Unity & C# Game Development** (ages 12+): Professional game development — mechanics, 2D and 3D games, playable projects using Unity and C#. https://www.medinovastudio.com/en/academy/courses/unity-csharp
+- **Web Development** (ages 11+): HTML, CSS, JavaScript (Starter), then PHP and MySQL (Pro) for database-connected websites. https://www.medinovastudio.com/en/academy/courses/web-development
+- **Creative Design** (ages 10+): 3D creation, photo editing and video editing. https://www.medinovastudio.com/en/academy/courses/creative-design
+
+Learners receive a Certificate of Completion and build a portfolio of real projects. A free trial lesson is available before enrollment.
+
+## Blog
+
+Medinova Studio publishes practical guides on kids' coding, game development and digital skills (English, French and Arabic):
+
+- What Age Should Kids Start Coding? https://www.medinovastudio.com/en/blog/what-age-should-kids-start-coding
+- Scratch vs Python: Where Should Beginners Start? https://www.medinovastudio.com/en/blog/scratch-vs-python-where-should-beginners-start
+- Unity vs Roblox: Which Should Kids Learn? https://www.medinovastudio.com/en/blog/unity-vs-roblox-which-should-kids-learn
+- Coding Courses for Kids in Morocco — Online & Live https://www.medinovastudio.com/en/blog/coding-courses-for-kids-in-morocco-online-and-live
+- How We Published 4 Games on the App Store https://www.medinovastudio.com/en/blog/how-we-published-4-games-on-the-app-store
+
+## Published games
+
+Medinova Studio has published games on the Apple App Store:
+
+- **Pharaoh's Guardian: Mummies** — Ancient Egypt action survival defender with horde wave mechanics.
+- **Sniper Elimination Challenge** — Precision ballistics, stealth tactical elimination.
+- **Chameleon Outbreak: Camo Hunt** — Dynamic camouflage visual detection with adaptive shaders.
+- **Blitz Combat Race** — High-speed combat vehicle racing with physics-based drifting.
+
+Medinova Studio is also the creator of **Zombies WarZone** on Roblox, with over 1,000,000 games played worldwide, and has exhibited at the Morocco Gaming Expo (Booth C38).
+
+## Facts and figures
+
+- 4+ games published on the App Store
+- 1,000,000+ plays of Zombies WarZone on Roblox
+- Courses for ages 7+ in 3 languages
+- Free trial lesson before enrollment
+- Founder teaches every course from an active game studio
+- Pricing: published game-dev packages from 8,000 DHS HT (prototyping) and 25,000 DHS HT (full production). Academy pricing varies by cohort and is shared on request.
+
+## Contact
+
+- Email: contact@medinovastudio.com
+- Phone / WhatsApp: +212703702976
+- LinkedIn: https://www.linkedin.com/company/medinova-studio/
+- X: https://x.com/medinovastudio
+- YouTube: https://www.youtube.com/@MedinovaStudio
+- GitHub: https://github.com/medinova-studio
+- Instagram: https://www.instagram.com/medinova.studio
+- Itch.io: https://medinova.itch.io/

@@ -11,7 +11,7 @@ import Button from "@/components/ui/Button";
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
   const pathname = usePathname();
-  const isAcademy = pathname?.startsWith("/academy");
+  const isAcademy = pathname?.split("/")[2] === "academy";
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -24,19 +24,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const portfolioHref = isAcademy ? "#student-projects" : "/#portfolio";
-  const aboutHref = "/who-we-are";
+  const portfolioHref = isAcademy
+    ? "#student-projects"
+    : `/${lang}/#portfolio`;
+  const aboutHref = `/${lang}/who-we-are`;
 
   const solutions = isAcademy
     ? [
-        { href: "#tracks", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
-        { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
-        { href: "#pricing", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
+        { href: `/${lang}/game-development`, icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+        { href: `/${lang}/agency`, icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
+        { href: "#courses", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
       ]
     : [
-        { href: "/game-development", icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
-        { href: "/agency", icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
-        { href: "/academy", icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
+        { href: `/${lang}/game-development`, icon: Gamepad2, label: t.nav.subGameDev, desc: t.nav.subGameDevDesc },
+        { href: `/${lang}/agency`, icon: TrendingUp, label: t.nav.subAgency, desc: t.nav.subAgencyDesc },
+        { href: `/${lang}/academy`, icon: GraduationCap, label: t.nav.subAcademy, desc: t.nav.subAcademyDesc },
       ];
 
   return (
@@ -48,7 +50,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Brand */}
-          <Link href="/" className="flex items-center flex-shrink-0" aria-label="Medinova Studio">
+          <Link href={`/${lang}`} className="flex items-center flex-shrink-0" aria-label="Medinova Studio">
             <img
               src="/images/logo.svg"
               alt="Medinova Studio logo"
@@ -123,6 +125,13 @@ export default function Navbar() {
               {t.nav.about}
             </Link>
 
+            <Link
+              href={`/${lang}/blog`}
+              className="text-sm text-ink-subtle hover:text-ink transition-colors duration-200 whitespace-nowrap"
+            >
+              {t.nav.blog}
+            </Link>
+
             {/* Language switcher */}
             <div className="relative">
               <button
@@ -161,11 +170,11 @@ export default function Navbar() {
             </div>
 
             {isAcademy ? (
-              <Button href="#tracks" size="sm" className="whitespace-nowrap">
+              <Button href="#courses" size="sm" className="whitespace-nowrap">
                 {t.nav.discoverTracks}
               </Button>
             ) : (
-              <Button href="/#contact" size="sm" className="whitespace-nowrap">
+              <Button href={`/${lang}/#contact`} size="sm" className="whitespace-nowrap">
                 {t.nav.hireStudio}
               </Button>
             )}
@@ -241,9 +250,16 @@ export default function Navbar() {
             >
               {t.nav.about}
             </Link>
+            <Link
+              href={`/${lang}/blog`}
+              onClick={() => setOpen(false)}
+              className="text-sm text-ink-subtle hover:text-ink hover:bg-surface-2 rounded-md px-3 py-2.5 transition-all"
+            >
+              {t.nav.blog}
+            </Link>
             {isAcademy ? (
               <Button
-                href="#tracks"
+                href="#courses"
                 onClick={() => setOpen(false)}
                 className="mt-2 w-fit"
               >
@@ -251,7 +267,7 @@ export default function Navbar() {
               </Button>
             ) : (
               <Button
-                href="/#contact"
+                href={`/${lang}/#contact`}
                 onClick={() => setOpen(false)}
                 className="mt-2 w-fit"
               >
