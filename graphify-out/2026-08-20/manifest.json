@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "components/Contact.tsx": {
-    "mtime": 1787062448.5725362,
-    "ast_hash": "cb39a2ea17f995195f5a4db3ce395d47",
+    "mtime": 1787243442.9435132,
+    "ast_hash": "3ed0af735745dd21e84126c74992e0a0",
     "semantic_hash": ""
   },
   "components/Footer.tsx": {
@@ -45,7 +45,7 @@
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1787153094.740386,
+    "mtime": 1787243620.024265,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -55,8 +55,8 @@
     "semantic_hash": "f53bf377566882e87c2a1687e6c30d77"
   },
   "package.json": {
-    "mtime": 1787237605.140781,
-    "ast_hash": "87ac0157358df510a4ce32826d6259be",
+    "mtime": 1787242627.5527325,
+    "ast_hash": "3e4c28623cc755f478cd8bca7f4032cb",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "components/academy/Hero.tsx": {
-    "mtime": 1787152199.5029988,
-    "ast_hash": "56d7fcdce50da262f5ac49483f3c718b",
+    "mtime": 1787243366.5341818,
+    "ast_hash": "9fe03d25f3dba3a999ab26fb344c61a0",
     "semantic_hash": ""
   },
   "lib/academy.ts": {
@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787239554.9940963,
+    "mtime": 1787243891.9605148,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "components/WhatsAppWidget.tsx": {
-    "mtime": 1786536269.960621,
-    "ast_hash": "efc16b236ad2f689b2daa572c0e82661",
+    "mtime": 1787243341.970409,
+    "ast_hash": "2453524eb9c5795ec02e729e3f0494e9",
     "semantic_hash": ""
   },
   "components/growth/CTABanner.tsx": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "components/growth/ContactSection.tsx": {
-    "mtime": 1786811802.0684407,
-    "ast_hash": "c343e761c7ca435fd97282ddbe8807bc",
+    "mtime": 1787243465.2366407,
+    "ast_hash": "087b6dd491be287954b4c0ce6a844066",
     "semantic_hash": ""
   },
   "components/layout/SiteChrome.tsx": {
@@ -330,13 +330,13 @@
     "semantic_hash": ""
   },
   "components/academy/Courses.tsx": {
-    "mtime": 1787238561.2935123,
-    "ast_hash": "e8e600fe96d2ac759476df11f172c607",
+    "mtime": 1787243533.7214134,
+    "ast_hash": "29c5743e35e92c92c2fa92f6ca824150",
     "semantic_hash": ""
   },
   "components/academy/FinalCta.tsx": {
-    "mtime": 1787159412.4585905,
-    "ast_hash": "a985c930e9afb2c343133a7c35fef93e",
+    "mtime": 1787243354.7244394,
+    "ast_hash": "0d430160af5affb715e64486aae27d3d",
     "semantic_hash": ""
   },
   "components/academy/Founder.tsx": {
@@ -430,8 +430,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/layout.tsx": {
-    "mtime": 1787235961.7430048,
-    "ast_hash": "ba51aecabcb703bf9e8a8a23a8736c0e",
+    "mtime": 1787243034.9806912,
+    "ast_hash": "ecf4145f41af9301a66ced94726164a1",
     "semantic_hash": ""
   },
   "app/[lang]/not-found.tsx": {
@@ -450,8 +450,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/privacy/page.tsx": {
-    "mtime": 1787236090.7717934,
-    "ast_hash": "5ba891974d2be4040d2dbc6bfd8b6746",
+    "mtime": 1787243552.487502,
+    "ast_hash": "f6a9392d94d948995af6aa9dbbee29db",
     "semantic_hash": ""
   },
   "app/[lang]/terms/page.tsx": {
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/academy/courses/[slug]/page.tsx": {
-    "mtime": 1787238814.7198527,
-    "ast_hash": "5bdb46a23147ddc3ae754db84a48f252",
+    "mtime": 1787243431.988992,
+    "ast_hash": "b052a689c7b7c485ba4a9c10d1c07b51",
     "semantic_hash": ""
   },
   "app/[lang]/blog/[slug]/page.tsx": {
@@ -597,6 +597,21 @@
   "lib/courses.ts": {
     "mtime": 1787238523.599103,
     "ast_hash": "4af674fbf848d57eced8d050d9abf020",
+    "semantic_hash": ""
+  },
+  "components/FacebookPixel.tsx": {
+    "mtime": 1787243851.6133244,
+    "ast_hash": "69ae4084fb8112b8853de2cfc1114c87",
+    "semantic_hash": ""
+  },
+  "components/analytics/WhatsAppCta.tsx": {
+    "mtime": 1787243179.5866694,
+    "ast_hash": "a245edee35e4d42a5a968b63ce755c09",
+    "semantic_hash": ""
+  },
+  "lib/analytics.ts": {
+    "mtime": 1787242882.4019413,
+    "ast_hash": "dad76311d5f574a7e9a0391c2e1bc0b9",
     "semantic_hash": ""
   }
 }

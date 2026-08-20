@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "components/Contact.tsx": {
-    "mtime": 1787243442.9435132,
-    "ast_hash": "3ed0af735745dd21e84126c74992e0a0",
+    "mtime": 1787247386.496575,
+    "ast_hash": "757ee5dd9dfc0140f70f9af92700793b",
     "semantic_hash": ""
   },
   "components/Footer.tsx": {
@@ -40,12 +40,12 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1787239324.9218006,
-    "ast_hash": "1a64a8fd528691b52d0ad220f1574f6c",
+    "mtime": 1787250753.8067815,
+    "ast_hash": "47523392f36bf3bf82bc02173e7d63c3",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1787243620.024265,
+    "mtime": 1787250768.2778785,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "components/academy/FAQ.tsx": {
-    "mtime": 1787152315.5194573,
-    "ast_hash": "553c22376775b3074c45e0c0b25add7a",
+    "mtime": 1787247399.760235,
+    "ast_hash": "cfb598b52512253b89dfb2f7ef6ef96c",
     "semantic_hash": ""
   },
   "components/academy/Hero.tsx": {
@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787243891.9605148,
+    "mtime": 1787250787.2959602,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "components/WhatsAppWidget.tsx": {
-    "mtime": 1787243341.970409,
-    "ast_hash": "2453524eb9c5795ec02e729e3f0494e9",
+    "mtime": 1787247334.046121,
+    "ast_hash": "cd89f0234f506f10b8a4d9b908447547",
     "semantic_hash": ""
   },
   "components/growth/CTABanner.tsx": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "components/growth/ContactSection.tsx": {
-    "mtime": 1787243465.2366407,
-    "ast_hash": "087b6dd491be287954b4c0ce6a844066",
+    "mtime": 1787247370.008363,
+    "ast_hash": "0199df1da67ef92ce09d465f76d10ad2",
     "semantic_hash": ""
   },
   "components/layout/SiteChrome.tsx": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "components/HomeHero.tsx": {
-    "mtime": 1787065694.9577897,
-    "ast_hash": "477f5b27d0ee47510f72091d475eccf6",
+    "mtime": 1787250703.9767673,
+    "ast_hash": "dcf75ac1d9a5769c41479b28e7732f11",
     "semantic_hash": ""
   },
   "components/Hub.tsx": {
@@ -605,13 +605,13 @@
     "semantic_hash": ""
   },
   "components/analytics/WhatsAppCta.tsx": {
-    "mtime": 1787243179.5866694,
-    "ast_hash": "a245edee35e4d42a5a968b63ce755c09",
+    "mtime": 1787247321.3025012,
+    "ast_hash": "cd5687d85f513e24b59576e5aea58f4a",
     "semantic_hash": ""
   },
   "lib/analytics.ts": {
-    "mtime": 1787242882.4019413,
-    "ast_hash": "dad76311d5f574a7e9a0391c2e1bc0b9",
+    "mtime": 1787247302.463754,
+    "ast_hash": "d540bc565d17c0e6f2ce802cde35fc50",
     "semantic_hash": ""
   }
 }
