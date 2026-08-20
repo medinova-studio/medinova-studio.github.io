@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787253834.0988321,
+    "mtime": 1787254389.5288458,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/academy/courses/[slug]/page.tsx": {
-    "mtime": 1787243431.988992,
-    "ast_hash": "b052a689c7b7c485ba4a9c10d1c07b51",
+    "mtime": 1787254353.8508358,
+    "ast_hash": "7959a11ddc2583406e8272675c6493b6",
     "semantic_hash": ""
   },
   "app/[lang]/blog/[slug]/page.tsx": {

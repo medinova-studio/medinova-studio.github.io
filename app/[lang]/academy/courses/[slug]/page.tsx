@@ -88,8 +88,8 @@ export default async function CoursePage({ params }: PageProps) {
 
   const t = translations[l].academy;
   const detail = COURSE_CATALOG[l][slug];
-  const course = t.courses.items.find((c) => c.name) ?? t.courses.items[0];
   const index = COURSE_SLUGS.indexOf(slug);
+  const course = t.courses.items[index];
   const localizedName = t.courses.items[index]?.name ?? slug;
 
   const crumb = `/${l}/academy/courses/${slug}`;
