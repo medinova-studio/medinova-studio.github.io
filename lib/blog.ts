@@ -24,7 +24,7 @@ const HERO = {
   "scratch-vs-python-where-should-beginners-start": "/images/academy/scratch.webp",
   "unity-vs-roblox-which-should-kids-learn": "/images/academy/roblox.webp",
   "coding-courses-for-kids-in-morocco-online-and-live":
-    "/images/academy/mge-booth.webp",
+    "/images/academy/python.webp",
   "how-we-published-4-games-on-the-app-store":
     "/images/games/zombies-warzone/screenshot1.webp",
   "what-is-scratch": "/images/academy/scratch.webp",

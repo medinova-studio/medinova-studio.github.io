@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787252610.76784,
+    "mtime": 1787253834.0988321,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "lib/blog.ts": {
-    "mtime": 1787252468.4565876,
-    "ast_hash": "7983ab9d94cacb0afb614e2056d7989b",
+    "mtime": 1787253807.1895297,
+    "ast_hash": "152d75961ab00a0e842e1b7f0f877037",
     "semantic_hash": ""
   },
   "lib/courses.ts": {
