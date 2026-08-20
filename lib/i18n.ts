@@ -120,6 +120,8 @@ export type Translation = {
     readMore: string;
     backLabel: string;
     breadcrumbHome: string;
+    courseTitle: string;
+    relatedTitle: string;
   };
   hero: {
     badge: string;
@@ -394,6 +396,8 @@ export const translations: Record<Lang, Translation> = {
       readMore: "Read article",
       backLabel: "Back to blog",
       breadcrumbHome: "Home",
+      courseTitle: "Related course",
+      relatedTitle: "Keep reading",
     },
     hero: {
       badge: "Available for Unity C#, AR/VR & Game Dev Contracts",
@@ -1149,6 +1153,8 @@ export const translations: Record<Lang, Translation> = {
       readMore: "Lire l'article",
       backLabel: "Retour au blog",
       breadcrumbHome: "Accueil",
+      courseTitle: "Cours associé",
+      relatedTitle: "À lire ensuite",
     },
     hero: {
       badge: "Disponible pour contrats Unity C#, AR/VR & Game Dev",
@@ -1905,6 +1911,8 @@ export const translations: Record<Lang, Translation> = {
       readMore: "اقرأ المقال",
       backLabel: "العودة إلى المدونة",
       breadcrumbHome: "الرئيسية",
+      courseTitle: "الدورة المرتبطة",
+      relatedTitle: "اقرأ أيضاً",
     },
     hero: {
       badge: "متاحون لعقود Unity C# وAR/VR وتطوير الألعاب",

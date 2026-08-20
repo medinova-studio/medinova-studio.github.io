@@ -1,7 +1,7 @@
 # Graph Report - medinova-studio.github.io  (2026-08-20)
 
 ## Corpus Check
-- 89 files · ~207,070 words
+- 89 files · ~214,735 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e35119b4`
+- Built from commit: `74cc947d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

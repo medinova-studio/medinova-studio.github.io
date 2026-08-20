@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1787250753.8067815,
-    "ast_hash": "47523392f36bf3bf82bc02173e7d63c3",
+    "mtime": 1787252500.2140818,
+    "ast_hash": "13162b386a1c1c15f5f02d6886875013",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787250787.2959602,
+    "mtime": 1787252610.76784,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/blog/[slug]/page.tsx": {
-    "mtime": 1787239181.070815,
-    "ast_hash": "0717249c77fde0efc5db67f3acd4f2d3",
+    "mtime": 1787252518.4745061,
+    "ast_hash": "625d8bedfa4cdf63e2519f44346c254f",
     "semantic_hash": ""
   },
   "app/[lang]/blog/page.tsx": {
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "lib/blog.ts": {
-    "mtime": 1787239007.2302117,
-    "ast_hash": "7febbcd26454bf8a416a77d55adc8f2d",
+    "mtime": 1787252468.4565876,
+    "ast_hash": "7983ab9d94cacb0afb614e2056d7989b",
     "semantic_hash": ""
   },
   "lib/courses.ts": {

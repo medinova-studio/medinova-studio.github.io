@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, CalendarDays, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarDays, Clock } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import FinalCta from "@/components/academy/FinalCta";
 import { articleSchema, breadcrumbSchema } from "@/lib/jsonLd";
@@ -120,6 +120,51 @@ export default async function BlogPostPage({ params }: PageProps) {
               </section>
             ))}
           </div>
+
+          {post.course && (
+            <div className="mt-12 rounded-2xl border border-hairline bg-surface-1 p-6 sm:p-8 shadow-[0_12px_32px_rgba(20,21,26,0.05)]">
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                {t.courseTitle}
+              </span>
+              <h2 className="mt-2 font-display text-xl sm:text-2xl font-bold text-ink tracking-tight">
+                {post.course.label}
+              </h2>
+              <p className="mt-3 text-base text-ink-subtle leading-relaxed">
+                {post.course.body}
+              </p>
+              <Link
+                href={`/${l}/academy/courses/${post.course.slug}`}
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-ink"
+              >
+                {t.readMore}
+                <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+              </Link>
+            </div>
+          )}
+
+          {post.related && post.related.length > 0 && (
+            <div className="mt-12">
+              <h2 className="font-display text-lg font-bold text-ink">
+                {t.relatedTitle}
+              </h2>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {post.related.map((slug) => {
+                  const related = blogPostBySlug(l, slug);
+                  if (!related) return null;
+                  return (
+                    <Link
+                      key={slug}
+                      href={`/${l}/blog/${slug}`}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-surface-1 px-4 py-2 text-sm font-semibold text-ink-subtle transition-colors hover:border-primary/40 hover:text-ink"
+                    >
+                      {related.title}
+                      <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </article>
 
