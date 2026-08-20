@@ -193,7 +193,6 @@ export type Translation = {
   };
   hub: {
     hero: {
-      badge: string;
       headline: string;
       subheadline: string;
       ctaPrimary: string;
@@ -546,7 +545,6 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "Active Game Development Studio & Online Coding Academy",
         headline:
           "We Build Games, Grow Brands & Teach the Next Generation of Developers.",
         subheadline:
@@ -1302,7 +1300,6 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "Studio actif de développement de jeux & académie de code en ligne",
         headline:
           "Nous créons des jeux, faisons grandir les marques & formons la prochaine génération de développeurs.",
         subheadline:
@@ -2057,7 +2054,6 @@ export const translations: Record<Lang, Translation> = {
     },
     hub: {
       hero: {
-        badge: "استوديو تطوير ألعاب نشط وأكاديمية برمجة عبر الإنترنت",
         headline: "نصنع الألعاب، ننمّي العلامات التجارية ونعلّم الجيل القادم من المطورين.",
         subheadline:
           "استوديو Medinova استوديو مغربي مستقل يصمم ألعاب Unity C# وتجارب AR/VR وWebGL وأنظمة نمو B2B ودورات برمجة عبر الإنترنت في Scratch وPython وUnity وC# — تُدرَّس عن بُعد من الرباط، المغرب.",
