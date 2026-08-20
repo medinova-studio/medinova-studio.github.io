@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { useLang } from "@/lib/LanguageContext";
 import { academyWhatsAppUrl } from "@/lib/academy";
+import { trackEvent, trackLeadOnce } from "@/lib/analytics";
 
 export default function FAQ() {
   const { t } = useLang();
@@ -62,7 +63,11 @@ export default function FAQ() {
                         href={academyWhatsAppUrl(item.q)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mb-5 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-2 border border-hairline text-xs font-medium text-ink-muted hover:border-hairline-strong hover:text-ink transition-all"
+                        onClick={() => {
+                          trackEvent("whatsapp_click", { source: "faq" });
+                          trackLeadOnce({ source: "faq" });
+                        }}
+                        className="mb-5 ms-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-surface-2 border border-hairline text-xs font-medium text-ink-muted hover:border-hairline-strong hover:text-ink transition-all"
                       >
                         <WhatsAppIcon className="w-3.5 h-3.5" />
                         {t.academy.whatsapp.quickQuestion}
