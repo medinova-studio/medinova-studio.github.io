@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1787486621.9842434,
-    "ast_hash": "bae12819f7a61e822e5f1d7d36391a88",
+    "mtime": 1787252500.2140818,
+    "ast_hash": "13162b386a1c1c15f5f02d6886875013",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1787487204.2913113,
-    "ast_hash": "e474f7bab4130ac521e4625f412567de",
+    "mtime": 1786621792.2957945,
+    "ast_hash": "197885d5cba963360f79e525ec4fa33a",
     "semantic_hash": ""
   },
   "opencode.ai/DESIGN.md": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "app/api/contact/route.ts": {
-    "mtime": 1787486427.7939155,
-    "ast_hash": "af0beb637ba0463d699f9df89e105784",
+    "mtime": 1787060125.472192,
+    "ast_hash": "0d8cb3d74b9454fe4bfb0230ffddc972",
     "semantic_hash": ""
   },
   "public/images/logo.svg": {
@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787487418.4692285,
+    "mtime": 1787254389.5288458,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   "app/api/agency-contact/route.ts": {
-    "mtime": 1787486500.530172,
-    "ast_hash": "e2370cafac52efb1b220f8e7b2906489",
+    "mtime": 1787060125.5092201,
+    "ast_hash": "2d545ac9cd2acf2b2bf41b1e8ca25af4",
     "semantic_hash": ""
   },
   "components/growth/ContactSection.tsx": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/game-development/page.tsx": {
-    "mtime": 1787486511.470784,
-    "ast_hash": "dd563996c357c955ca59eb07a7d5481e",
+    "mtime": 1787236063.5238998,
+    "ast_hash": "66abadbb067ae03ef014c9dc53b7a57f",
     "semantic_hash": ""
   },
   "app/[lang]/layout.tsx": {
@@ -450,13 +450,13 @@
     "semantic_hash": ""
   },
   "app/[lang]/privacy/page.tsx": {
-    "mtime": 1787487052.536763,
-    "ast_hash": "d012d2d6367cde14d0d5e305b48fc032",
+    "mtime": 1787243552.487502,
+    "ast_hash": "f6a9392d94d948995af6aa9dbbee29db",
     "semantic_hash": ""
   },
   "app/[lang]/terms/page.tsx": {
-    "mtime": 1787487076.3478944,
-    "ast_hash": "5e1c7b2b5e88bc2a2df9530bd52c81f5",
+    "mtime": 1787236105.2094283,
+    "ast_hash": "3eccdde608138eb8203f44f5100565ce",
     "semantic_hash": ""
   },
   "app/[lang]/who-we-are/opengraph-image.tsx": {
@@ -465,8 +465,8 @@
     "semantic_hash": ""
   },
   "app/[lang]/who-we-are/page.tsx": {
-    "mtime": 1787486634.3697932,
-    "ast_hash": "036c01b7cab551ec3c6cafdd7decbc1a",
+    "mtime": 1787237128.494099,
+    "ast_hash": "3a08cf14b7cd31339640f5031f804fb9",
     "semantic_hash": ""
   },
   "lib/metadata.ts": {
@@ -612,16 +612,6 @@
   "lib/analytics.ts": {
     "mtime": 1787247302.463754,
     "ast_hash": "d540bc565d17c0e6f2ce802cde35fc50",
-    "semantic_hash": ""
-  },
-  "lib/dataIntegrity.test.ts": {
-    "mtime": 1787487129.3435779,
-    "ast_hash": "cbd880cdd6ff5563190ac9389dc40f2e",
-    "semantic_hash": ""
-  },
-  "lib/legal.ts": {
-    "mtime": 1787486980.7264085,
-    "ast_hash": "3589a98a86ce242538c1e4f4404997bd",
     "semantic_hash": ""
   }
 }

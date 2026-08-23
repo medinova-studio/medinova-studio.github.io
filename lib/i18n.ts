@@ -193,6 +193,10 @@ export type Translation = {
       description: string;
     }[];
   };
+  whoWeAre: {
+    title: string;
+    subtitle: string;
+  };
   hub: {
     hero: {
       headline: string;
@@ -546,6 +550,10 @@ export const translations: Record<Lang, Translation> = {
         { title: "B2B Growth Agency", description: "Full-funnel marketing, content and AI-powered growth packages." },
         { title: "Medinova Academy", description: "Coding tracks that take learners from visual logic to professional development." },
       ],
+    },
+    whoWeAre: {
+      title: "Who We Are",
+      subtitle: "The story, people, and mission behind Medinova Studio.",
     },
     hub: {
       hero: {
@@ -1304,6 +1312,11 @@ export const translations: Record<Lang, Translation> = {
         { title: "Académie Medinova", description: "Des parcours de code qui mènent de la logique visuelle au développement professionnel." },
       ],
     },
+    whoWeAre: {
+      title: "Qui Sommes-Nous",
+      subtitle:
+        "L'histoire, l'équipe et la mission qui animent Medinova Studio.",
+    },
     hub: {
       hero: {
         headline:
@@ -2059,6 +2072,11 @@ export const translations: Record<Lang, Translation> = {
         { title: "وكالة نمو B2B", description: "تسويق شامل ومحتوى ونمو مدعوم بالذكاء الاصطناعي." },
         { title: "أكاديمية Medinova", description: "دورات برمجة تنقل المتعلمين من الأساسيات إلى تطوير الألعاب والمواقع." },
       ],
+    },
+    whoWeAre: {
+      title: "من نحن",
+      subtitle:
+        "قصة Medinova Studio وفريقها والرسالة التي تقود عملها.",
     },
     hub: {
       hero: {

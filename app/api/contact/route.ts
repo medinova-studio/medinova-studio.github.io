@@ -5,7 +5,7 @@ import { escapeHtml } from "@/lib/escapeHtml";
 export const runtime = "nodejs";
 
 const TO_EMAIL = "contact@medinovastudio.com";
-const FROM_EMAIL = "Medinova Studio <onboarding@resend.dev>";
+const FROM_EMAIL = "Medinova Studio <contact@medinovastudio.com>";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
