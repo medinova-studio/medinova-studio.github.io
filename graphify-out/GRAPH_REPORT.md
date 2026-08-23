@@ -1,16 +1,16 @@
-# Graph Report - medinova-studio.github.io  (2026-08-23)
+# Graph Report - medinova-studio.github.io  (2026-08-20)
 
 ## Corpus Check
-- 91 files · ~217,136 words
+- 89 files · ~214,735 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 515 nodes · 968 edges · 27 communities (21 shown, 6 thin omitted)
+- 509 nodes · 941 edges · 27 communities (21 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bc8e514d`
+- Built from commit: `74cc947d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,7 +34,7 @@
 - AGENTS.md
 - i18n.ts
 - middleware.ts
-- Footer.tsx
+- blog/[slug]/page.tsx
 - agency-contact/route.ts
 - fix-sitemap.mjs
 - og.tsx
@@ -42,8 +42,8 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `useLang()` - 61 edges
-2. `Lang` - 20 edges
-3. `buildPageMetadata()` - 19 edges
+2. `buildPageMetadata()` - 19 edges
+3. `Lang` - 18 edges
 4. `Button()` - 16 edges
 5. `compilerOptions` - 16 edges
 6. `trackEvent()` - 13 edges
@@ -55,14 +55,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `generateMetadata()` --calls--> `alternatesFor()`  [EXTRACTED]
   app/[lang]/academy/courses/[slug]/page.tsx → lib/metadata.ts
+- `CoursePage()` --calls--> `breadcrumbSchema()`  [EXTRACTED]
+  app/[lang]/academy/courses/[slug]/page.tsx → lib/jsonLd.ts
 - `generateMetadata()` --calls--> `buildPageMetadata()`  [EXTRACTED]
   app/[lang]/academy/page.tsx → lib/metadata.ts
 - `generateMetadata()` --calls--> `buildPageMetadata()`  [EXTRACTED]
-  app/[lang]/game-development/page.tsx → lib/metadata.ts
-- `generateMetadata()` --calls--> `buildPageMetadata()`  [EXTRACTED]
-  app/[lang]/layout.tsx → lib/metadata.ts
-- `generateMetadata()` --calls--> `buildPageMetadata()`  [EXTRACTED]
-  app/[lang]/page.tsx → lib/metadata.ts
+  app/[lang]/agency/page.tsx → lib/metadata.ts
+- `BlogPostPage()` --calls--> `breadcrumbSchema()`  [EXTRACTED]
+  app/[lang]/blog/[slug]/page.tsx → lib/jsonLd.ts
 
 ## Import Cycles
 - None detected.
@@ -70,8 +70,8 @@
 ## Communities (27 total, 6 thin omitted)
 
 ### Community 0 - "useLang"
-Cohesion: 0.10
-Nodes (32): generateMetadata(), FormValues, buildSchema(), ContactSection(), FormValues, CTABanner(), FAQ(), Hero() (+24 more)
+Cohesion: 0.08
+Nodes (40): About(), AnnouncementBar(), Founder(), buildSchema(), Contact(), FormValues, Founder(), GameServices() (+32 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.07
@@ -90,12 +90,12 @@ Cohesion: 0.05
 Nodes (39): autoprefixer, eslint, eslint-config-next, next-sitemap, devDependencies, autoprefixer, eslint, eslint-config-next (+31 more)
 
 ### Community 5 - "jsonLd.ts"
-Cohesion: 0.07
-Nodes (40): AgencyPage(), GameDevelopmentPage(), generateMetadata(), geist, geistMono, generateMetadata(), jakarta, RootLayout() (+32 more)
+Cohesion: 0.12
+Nodes (27): AcademyPage(), AgencyPage(), GameDevelopmentPage(), Home(), WhoWeArePage(), ACADEMY_ID, academyNode(), academySchema() (+19 more)
 
 ### Community 6 - "academy/page.tsx"
 Cohesion: 0.08
-Nodes (38): COURSE_ACCENTS, COURSE_IMAGES, CoursePage(), generateMetadata(), PageProps, AcademyPage(), generateMetadata(), AnnouncementBar() (+30 more)
+Nodes (37): COURSE_ACCENTS, COURSE_IMAGES, CoursePage(), PageProps, COURSE_IMAGES, Courses(), FAQ(), FinalCta() (+29 more)
 
 ### Community 7 - "vercel.json"
 Cohesion: 0.40
@@ -114,16 +114,16 @@ Cohesion: 0.40
 Nodes (4): lsp, plugin, $schema, .opencode/plugins/graphify.js
 
 ### Community 17 - "i18n.ts"
-Cohesion: 0.06
-Nodes (49): generateMetadata(), BlogPage(), generateMetadata(), PageProps, BlogPostPage(), generateMetadata(), PageProps, generateMetadata() (+41 more)
+Cohesion: 0.07
+Nodes (36): generateMetadata(), generateMetadata(), generateMetadata(), geist, geistMono, generateMetadata(), jakarta, RootLayout() (+28 more)
 
 ### Community 18 - "middleware.ts"
 Cohesion: 0.50
 Nodes (4): config, getPreferredLocale(), LOCALES, middleware()
 
-### Community 19 - "Footer.tsx"
-Cohesion: 0.31
-Nodes (8): ACADEMY_HREFS(), AGENCY_HREFS(), Footer(), GAME_DEV_HREFS(), LEGAL_HREFS(), SOCIAL_LINKS, SiteChrome(), Navbar()
+### Community 19 - "blog/[slug]/page.tsx"
+Cohesion: 0.11
+Nodes (21): generateMetadata(), BlogPage(), generateMetadata(), PageProps, BlogPostPage(), generateMetadata(), PageProps, JsonLd() (+13 more)
 
 ### Community 20 - "agency-contact/route.ts"
 Cohesion: 0.21
@@ -149,16 +149,16 @@ Nodes (3): raws, results, ROOT
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `useLang()` connect `useLang` to `i18n.ts`, `Footer.tsx`, `jsonLd.ts`, `academy/page.tsx`?**
-  _High betweenness centrality (0.031) - this node is a cross-community bridge._
-- **Why does `Lang` connect `i18n.ts` to `useLang`, `jsonLd.ts`, `academy/page.tsx`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `useLang()` connect `useLang` to `i18n.ts`, `academy/page.tsx`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Why does `Lang` connect `i18n.ts` to `useLang`, `blog/[slug]/page.tsx`, `jsonLd.ts`, `academy/page.tsx`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `devDependencies`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `$schema`, `.opencode/plugins/graphify.js`, `lsp` to the rest of the system?**
   _227 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `useLang` be split into smaller, more focused modules?**
-  _Cohesion score 0.09508196721311475 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08329979879275654 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
