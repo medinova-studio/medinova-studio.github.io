@@ -200,7 +200,7 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1787497511.4097703,
+    "mtime": 1787494151.0212011,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "components/LanguageSuggestion.tsx": {
-    "mtime": 1787497413.3811011,
-    "ast_hash": "12ae4c5476dfe5c45f31304fc1d22d97",
+    "mtime": 1787493895.5237334,
+    "ast_hash": "d7e1650058b09f7872306ecda7a43c4f",
     "semantic_hash": ""
   },
   "scripts/generate-icons.mjs": {
@@ -632,21 +632,6 @@
   "app/icon.png": {
     "mtime": 1787493662.645,
     "ast_hash": "dd94458969dd7041cec99e1540b08c23",
-    "semantic_hash": ""
-  },
-  "public/images/flags/fr.svg": {
-    "mtime": 1787497300.431665,
-    "ast_hash": "348ad62f3469cdf68fae460f38fbb05a",
-    "semantic_hash": ""
-  },
-  "public/images/flags/gb.svg": {
-    "mtime": 1787497300.2839298,
-    "ast_hash": "f0487cd502c5e2dbdee5be26ffa835c9",
-    "semantic_hash": ""
-  },
-  "public/images/flags/sa.svg": {
-    "mtime": 1787497300.59686,
-    "ast_hash": "17dafda32905cd26662c3e0ea0cdf5a2",
     "semantic_hash": ""
   }
 }
