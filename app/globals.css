@@ -94,6 +94,14 @@ body {
   border-top: 3px solid #ffd749;
 }
 
+/* Hide scrollbars on mobile carousels while keeping them scrollable */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes revealUp {
   from {
     opacity: 0;

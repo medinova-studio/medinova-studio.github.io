@@ -40,7 +40,7 @@ export function middleware(request: NextRequest) {
   }
 
   const locale = getPreferredLocale(request);
-  const newPath = `/${locale}${pathname === "/" ? "" : pathname}`;
+  const newPath = `/${locale}${pathname === "/" ? "" : pathname}${request.nextUrl.search}`;
   return NextResponse.redirect(new URL(newPath, request.url));
 }
 

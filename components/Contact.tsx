@@ -89,9 +89,9 @@ export default function Contact() {
   });
 
   const fieldClass =
-    "form-input w-full px-3 py-2 rounded-md text-sm text-ink";
+    "form-input w-full px-3 py-2 rounded-md text-base sm:text-sm text-ink";
   const selectClass =
-    "form-input w-full px-3 py-2 rounded-md text-sm text-ink appearance-none cursor-pointer";
+    "form-input w-full px-3 py-2 rounded-md text-base sm:text-sm text-ink appearance-none cursor-pointer";
   const inputErrorClass = "!border-[#ff3b30]";
   const errorTextClass = "mt-1.5 text-xs text-[#ff3b30]";
 

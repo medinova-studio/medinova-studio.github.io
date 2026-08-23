@@ -98,7 +98,7 @@ export default function ContactSection() {
   )}`;
 
   const fieldClass =
-    "form-input w-full px-3 py-2.5 rounded-md text-sm text-ink bg-surface-1 border border-hairline placeholder:text-ink-tertiary";
+    "form-input w-full px-3 py-2.5 rounded-md text-base sm:text-sm text-ink bg-surface-1 border border-hairline placeholder:text-ink-tertiary";
   const inputErrorClass = "!border-[#ff3b30]";
   const errorTextClass = "mt-1.5 text-xs text-[#ff3b30]";
 

@@ -24,6 +24,29 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll while the mobile menu is open.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
+
+  // Close menus on Escape.
+  useEffect(() => {
+    if (!open && !langOpen && !solutionsOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      setOpen(false);
+      setLangOpen(false);
+      setSolutionsOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, langOpen, solutionsOpen]);
+
   const portfolioHref = isAcademy
     ? "#student-projects"
     : `/${lang}/#portfolio`;
@@ -182,13 +205,15 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <div className="flex md:hidden items-center gap-2">
-            <div className="flex items-center gap-1 px-1.5 py-1 rounded-md bg-surface-2 border border-hairline">
+            <div className="flex items-center gap-1 p-1 rounded-md bg-surface-2 border border-hairline">
               {LANGS.map((l: Lang) => (
                 <button
                   key={l}
                   onClick={() => setLang(l)}
-                  className={`px-2 py-0.5 rounded text-[11px] font-bold transition-colors ${
-                    lang === l ? "bg-primary text-white" : "text-ink-tertiary"
+                  aria-label={`Switch to ${LANG_LABELS[l]}`}
+                  aria-current={lang === l || undefined}
+                  className={`flex min-w-[36px] h-8 items-center justify-center rounded text-[11px] font-bold transition-colors ${
+                    lang === l ? "bg-primary text-white" : "text-ink-tertiary hover:text-ink"
                   }`}
                 >
                   {LANG_LABELS[l]}
@@ -200,6 +225,7 @@ export default function Navbar() {
               onClick={() => setOpen((v) => !v)}
               aria-label="Toggle menu"
               aria-expanded={open}
+              aria-controls="mobile-menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {open ? (
@@ -215,7 +241,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden px-5 sm:px-6 pb-4 border-t border-hairline pt-3 bg-canvas/95 backdrop-blur-xl">
+        <div
+          id="mobile-menu"
+          className="md:hidden fixed inset-x-0 top-14 bottom-0 overflow-y-auto px-5 sm:px-6 pb-6 border-t border-hairline pt-3 bg-canvas/95 backdrop-blur-xl"
+        >
           <div className="flex flex-col gap-1">
             <span className="px-3 pt-1 pb-1 text-[11px] font-semibold uppercase tracking-wider text-ink-tertiary">
               {t.nav.solutions}

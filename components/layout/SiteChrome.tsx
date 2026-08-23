@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LanguageSuggestion from "@/components/LanguageSuggestion";
 
 /**
  * Renders the shared site chrome (global studio nav + footer) on every page
@@ -23,6 +24,7 @@ export default function SiteChrome({
       <>
         {children}
         <Footer />
+        <LanguageSuggestion />
       </>
     );
   }
@@ -32,6 +34,7 @@ export default function SiteChrome({
       <Navbar />
       <div className="pt-14">{children}</div>
       <Footer />
+      <LanguageSuggestion />
     </>
   );
 }

@@ -220,9 +220,10 @@ export default function Portfolio() {
           </div>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 items-stretch">
+        {/* Mobile: horizontal snap carousel · sm+: grid */}
+        <div className="-mx-5 px-5 sm:mx-0 sm:px-0 flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 items-stretch overflow-x-auto sm:overflow-visible snap-x snap-mandatory sm:snap-none scrollbar-none pb-2 sm:pb-0">
           {t.portfolio.games.map((game, i) => (
-            <Reveal key={game.title} delay={i * 0.1} className="flex">
+            <Reveal key={game.title} delay={i * 0.1} className="flex shrink-0 snap-start w-[78vw] max-w-[300px] sm:w-auto sm:max-w-none">
               <div className="w-full">
                 <GameCard game={game as Game} />
               </div>

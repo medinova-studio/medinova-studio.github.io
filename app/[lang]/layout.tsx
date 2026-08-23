@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
@@ -33,6 +33,10 @@ const geistMono = Geist_Mono({
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
 }
+
+export const viewport: Viewport = {
+  themeColor: "#F0F5FF",
+};
 
 export async function generateMetadata({
   params,
