@@ -10,6 +10,12 @@ export const LANG_LABELS: Record<Lang, string> = {
 
 export const RTL_LANGS: Lang[] = ["ar"];
 
+export const DATE_LOCALES: Record<Lang, string> = {
+  en: "en-US",
+  fr: "fr-FR",
+  ar: "ar-MA",
+};
+
 export type AcademyTranslation = {
   announcement: string;
   announcementCta: string;
@@ -363,6 +369,37 @@ export type Translation = {
     legalLinks: [string, string];
     taxDisclaimer: string;
     rights: string;
+  };
+  common: {
+    home: string;
+  };
+  whoWeArePage: {
+    title: string;
+    subtitle: string;
+  };
+  legal: {
+    kicker: string;
+    termsTitle: string;
+    privacyTitle: string;
+    lastUpdated: string;
+    contactHeading: string;
+    contactTermsPrefix: string;
+    contactPrivacyPrefix: string;
+    breadcrumbLabel: string;
+    termsSections: { title: string; body: string }[];
+    privacySections: { title: string; body: string }[];
+  };
+  portfolioAria: {
+    closeGallery: string;
+    prevScreenshot: string;
+    nextScreenshot: string;
+    viewScreenshots: string;
+    showScreenshot: string;
+  };
+  languagePrompt: {
+    dialogLabel: string;
+    continueIn: string;
+    helper: string;
   };
   academy: AcademyTranslation;
 };
@@ -1124,6 +1161,95 @@ export const translations: Record<Lang, Translation> = {
         cta: "Book a Free Trial",
       },
     },
+    common: {
+      home: "Home",
+    },
+    whoWeArePage: {
+      title: "Who We Are",
+      subtitle: "The story, people, and mission behind Medinova Studio.",
+    },
+    legal: {
+      kicker: "Legal",
+      termsTitle: "Terms of Service",
+      privacyTitle: "Privacy Policy",
+      lastUpdated: "Last updated:",
+      contactHeading: "Contact Us",
+      contactTermsPrefix: "Questions about these terms? Email us at",
+      contactPrivacyPrefix: "For any privacy questions, reach us at",
+      breadcrumbLabel: "Breadcrumb",
+      termsSections: [
+        {
+          title: "Acceptance of Terms",
+          body: "By accessing this website, engaging Medinova Studio for services, or enrolling in Medinova Academy, you agree to these Terms of Service. If you do not agree, please discontinue use of our services.",
+        },
+        {
+          title: "Our Services",
+          body: "Medinova Studio operates three divisions: custom game development and interactive technology, a B2B growth agency (websites, paid media, and AI automation), and Medinova Academy (online coding and game development courses). Each engagement is governed by its own written agreement or enrollment terms.",
+        },
+        {
+          title: "Pricing, Billing & Taxes",
+          body: "All published prices are exclusive of tax and are indicated Hors Taxes (HT). Value Added Tax (TVA) of 20% applies in accordance with Moroccan regulations in force. Setup fees are invoiced at engagement start; monthly retainers require an initial 3-month commitment. Ad spend budgets and third-party API fees are the client's responsibility.",
+        },
+        {
+          title: "Intellectual Property",
+          body: "Upon full payment, clients receive the rights to deliverables specified in their agreement. Medinova Studio retains rights to our underlying tools, frameworks, and pre-existing assets. Students retain ownership of the projects they build in Medinova Academy.",
+        },
+        {
+          title: "Acceptable Use",
+          body: "You agree not to misuse our website, attempt unauthorized access, or use our services for unlawful purposes. Academy learners must follow our community guidelines and maintain a respectful, moderated environment.",
+        },
+        {
+          title: "Limitation of Liability",
+          body: "Medinova Studio's liability is limited to the amounts paid for the specific service giving rise to the claim. We are not liable for indirect damages, lost profits, or interruptions caused by third-party platforms (e.g., ad networks, WhatsApp, hosting providers).",
+        },
+        {
+          title: "Governing Law",
+          body: "These terms are governed by the laws of the Kingdom of Morocco. Any dispute shall be subject to the exclusive jurisdiction of the courts of Kenitra, Morocco.",
+        },
+      ],
+      privacySections: [
+        {
+          title: "Information We Collect",
+          body: "We only collect the personal information you voluntarily provide through our contact forms (name, email, company, project details) and through direct communications such as email or WhatsApp. We also collect anonymous usage and performance data to understand how visitors use our site. We never sell personal data.",
+        },
+        {
+          title: "How We Use Your Information",
+          body: "Your information is used solely to respond to inquiries, prepare quotes, deliver contracted services (game development, growth agency, and academy programs), and send progress updates. We may contact you by email or WhatsApp regarding your project or enrollment.",
+        },
+        {
+          title: "Analytics & Advertising",
+          body: "We use Google Analytics 4 and Vercel Analytics to measure traffic, engagement, and website performance (Core Web Vitals via Vercel Speed Insights). We use the Meta Pixel (Facebook/Meta) to measure the performance of our Facebook advertising campaigns and optimize ad delivery. These tools collect aggregated, anonymized data such as pages visited, device type, approximate location, and conversion actions (e.g., clicking a WhatsApp link or submitting a contact form). To support our advertising and analytics, these providers may set cookies on your device. You can opt out of Google Analytics via the Google Analytics opt-out browser add-on and control advertising cookies through your browser and platform settings.",
+        },
+        {
+          title: "Data Storage & Third Parties",
+          body: "Form submissions are transmitted via Resend, our email delivery provider, to contact@medinovastudio.com. Analytics data is processed by Google LLC and Vercel Inc.; Facebook ads data is processed by Meta Platforms. WhatsApp conversations are handled by Meta's WhatsApp platform. We retain correspondence only as long as necessary to deliver our services or as required by Moroccan law.",
+        },
+        {
+          title: "Local Storage & Preferences",
+          body: "We use your browser's local storage to remember your preferred language (medinova-lang). This setting never leaves your device and can be cleared at any time through your browser settings.",
+        },
+        {
+          title: "Children's Privacy",
+          body: "Medinova Academy is designed for learners of all ages, including children. Parent or guardian consent is required before a child's data is submitted. We only collect the minimum data needed to manage enrollment and communicate with parents.",
+        },
+        {
+          title: "Your Rights",
+          body: "You may request access to, correction of, or deletion of your personal data at any time by emailing contact@medinovastudio.com. We respond to all requests within 30 days.",
+        },
+      ],
+    },
+    portfolioAria: {
+      closeGallery: "Close gallery",
+      prevScreenshot: "Previous screenshot",
+      nextScreenshot: "Next screenshot",
+      viewScreenshots: "View {name} screenshots",
+      showScreenshot: "Show screenshot {n}",
+    },
+    languagePrompt: {
+      dialogLabel: "Choose your language",
+      continueIn: "Continue in {name}",
+      helper: "You can change it anytime from the menu.",
+    },
   },
   fr: {
     nav: {
@@ -1882,6 +2008,96 @@ export const translations: Record<Lang, Translation> = {
         cta: "Réserver un Essai Gratuit",
       },
     },
+    common: {
+      home: "Accueil",
+    },
+    whoWeArePage: {
+      title: "Qui Sommes-Nous",
+      subtitle: "L'histoire, l'équipe et la mission derrière Medinova Studio.",
+    },
+    legal: {
+      kicker: "Légal",
+      termsTitle: "Conditions Générales de Service",
+      privacyTitle: "Politique de Confidentialité",
+      lastUpdated: "Dernière mise à jour :",
+      contactHeading: "Nous contacter",
+      contactTermsPrefix: "Des questions sur ces conditions ? Écrivez-nous à",
+      contactPrivacyPrefix:
+        "Pour toute question de confidentialité, contactez-nous à",
+      breadcrumbLabel: "Fil d'Ariane",
+      termsSections: [
+        {
+          title: "Acceptation des conditions",
+          body: "En accédant à ce site, en confiant vos projets à Medinova Studio ou en vous inscrivant à Medinova Academy, vous acceptez les présentes Conditions Générales de Service. Si vous n'êtes pas d'accord, veuillez cesser d'utiliser nos services.",
+        },
+        {
+          title: "Nos services",
+          body: "Medinova Studio comprend trois pôles : le développement de jeux et technologies interactives sur mesure, une agence de croissance B2B (sites web, publicité payante et automatisation par IA) et Medinova Academy (cours en ligne de codage et de game development). Chaque prestation est régie par son propre contrat écrit ou ses conditions d'inscription.",
+        },
+        {
+          title: "Tarifs, facturation et taxes",
+          body: "Tous les prix affichés s'entendent hors taxes (HT). La TVA de 20 % s'applique conformément à la réglementation marocaine en vigueur. Les frais de mise en service sont facturés au démarrage de la mission ; les forfaits mensuels exigent un engagement initial de 3 mois. Les budgets publicitaires et les frais d'API tiers restent à la charge du client.",
+        },
+        {
+          title: "Propriété intellectuelle",
+          body: "Après paiement intégral, les clients obtiennent les droits sur les livrables prévus dans leur contrat. Medinova Studio conserve les droits sur ses outils, frameworks et ressources préexistantes. Les étudiants conservent la propriété des projets réalisés dans Medinova Academy.",
+        },
+        {
+          title: "Utilisation acceptable",
+          body: "Vous vous engagez à ne pas utiliser abusivement notre site, à ne pas tenter d'accès non autorisé ni à utiliser nos services à des fins illicites. Les apprenants de l'Academy doivent respecter nos règles communautaires et contribuer à un environnement respectueux et modéré.",
+        },
+        {
+          title: "Limitation de responsabilité",
+          body: "La responsabilité de Medinova Studio se limite aux montants versés pour le service concerné par la réclamation. Nous ne saurions être tenus responsables des dommages indirects, pertes de profits ou interruptions causés par des plateformes tierces (réseaux publicitaires, WhatsApp, hébergeurs, etc.).",
+        },
+        {
+          title: "Droit applicable",
+          body: "Les présentes conditions sont régies par les lois du Royaume du Maroc. Tout litige relève de la compétence exclusive des tribunaux de Kénitra, Maroc.",
+        },
+      ],
+      privacySections: [
+        {
+          title: "Informations collectées",
+          body: "Nous collectons uniquement les informations personnelles que vous nous communiquez volontairement via nos formulaires (nom, e-mail, société, détails du projet) ou lors d'échanges directs par e-mail ou WhatsApp. Nous collectons également des données d'utilisation anonymes pour comprendre comment les visiteurs utilisent notre site. Nous ne vendons jamais de données personnelles.",
+        },
+        {
+          title: "Utilisation de vos informations",
+          body: "Vos informations servent exclusivement à répondre aux demandes, préparer des devis, fournir les services contractualisés (jeux vidéo, agence de croissance et programmes de l'Academy) et envoyer des mises à jour d'avancement. Nous pouvons vous contacter par e-mail ou WhatsApp concernant votre projet ou votre inscription.",
+        },
+        {
+          title: "Analyses et publicité",
+          body: "Nous utilisons Google Analytics 4 et Vercel Analytics pour mesurer le trafic, l'engagement et les performances du site (Core Web Vitals via Vercel Speed Insights). Nous utilisons le Meta Pixel (Facebook/Meta) pour mesurer l'efficacité de nos campagnes publicitaires Facebook et optimiser la diffusion des annonces. Ces outils collectent des données agrégées et anonymisées : pages visitées, type d'appareil, localisation approximative, actions de conversion (clic sur un lien WhatsApp, envoi d'un formulaire, etc.). Pour nos besoins publicitaires et analytiques, ces fournisseurs peuvent déposer des cookies sur votre appareil. Vous pouvez désactiver Google Analytics via le module complémentaire dédié et gérer les cookies publicitaires dans les paramètres de votre navigateur et de vos plateformes.",
+        },
+        {
+          title: "Stockage des données et tiers",
+          body: "Les soumissions de formulaires sont transmises via Resend, notre fournisseur d'envoi d'e-mails, à contact@medinovastudio.com. Les données d'analyse sont traitées par Google LLC et Vercel Inc. ; les données publicitaires Facebook par Meta Platforms. Les conversations WhatsApp passent par la plateforme WhatsApp de Meta. Nous ne conservons les échanges que le temps nécessaire à la fourniture de nos services ou selon ce qu'exige la loi marocaine.",
+        },
+        {
+          title: "Stockage local et préférences",
+          body: "Nous utilisons le stockage local de votre navigateur pour mémoriser votre langue préférée (medinova-lang). Ce paramètre ne quitte jamais votre appareil et peut être effacé à tout moment dans les réglages de votre navigateur.",
+        },
+        {
+          title: "Confidentialité des enfants",
+          body: "Medinova Academy s'adresse aux apprenants de tous âges, y compris les enfants. Le consentement d'un parent ou tuteur est requis avant toute transmission des données d'un enfant. Nous ne collectons que le minimum nécessaire à la gestion des inscriptions et à la communication avec les parents.",
+        },
+        {
+          title: "Vos droits",
+          body: "Vous pouvez demander l'accès à vos données personnelles, leur rectification ou leur suppression à tout moment en écrivant à contact@medinovastudio.com. Nous répondons à toutes les demandes sous 30 jours.",
+        },
+      ],
+    },
+    portfolioAria: {
+      closeGallery: "Fermer la galerie",
+      prevScreenshot: "Capture d'écran précédente",
+      nextScreenshot: "Capture d'écran suivante",
+      viewScreenshots: "Voir les captures d'écran de {name}",
+      showScreenshot: "Afficher la capture d'écran {n}",
+    },
+    languagePrompt: {
+      dialogLabel: "Choisissez votre langue",
+      continueIn: "Continuer en {name}",
+      helper: "Vous pouvez la modifier à tout moment depuis le menu.",
+    },
   },
   ar: {
     nav: {
@@ -2630,6 +2846,95 @@ export const translations: Record<Lang, Translation> = {
         quickQuestion: "سؤال سريع عبر WhatsApp",
         cta: "احجز حصة تجريبية مجانية",
       },
+    },
+    common: {
+      home: "الرئيسية",
+    },
+    whoWeArePage: {
+      title: "من نحن",
+      subtitle: "قصة وفريق ورسالة Medinova Studio.",
+    },
+    legal: {
+      kicker: "قانوني",
+      termsTitle: "شروط الخدمة",
+      privacyTitle: "سياسة الخصوصية",
+      lastUpdated: "آخر تحديث:",
+      contactHeading: "تواصل معنا",
+      contactTermsPrefix: "أسئلة حول هذه الشروط؟ راسلنا على",
+      contactPrivacyPrefix: "لأي سؤال يتعلق بالخصوصية، تواصل معنا على",
+      breadcrumbLabel: "مسار التنقل",
+      termsSections: [
+        {
+          title: "قبول الشروط",
+          body: "باستخدامك هذا الموقع أو تعاملك مع Medinova Studio للحصول على خدماته أو التسجيل في Medinova Academy، فإنك توافق على شروط الخدمة هذه. إذا كنت غير موافق، يُرجى التوقف عن استخدام خدماتنا.",
+        },
+        {
+          title: "خدماتنا",
+          body: "تدير Medinova Studio ثلاثة أقسام: تطوير ألعاب وتقنيات تفاعلية مخصصة، ووكالة نمو للأعمال B2B (مواقع الويب، والإعلانات المدفوعة، وأتمتة الذكاء الاصطناعي)، وMedinova Academy (دورات برمجة وتطوير ألعاب عبر الإنترنت). تخضع كل مهمة لاتفاقية كتابية خاصة بها أو لشروط التسجيل.",
+        },
+        {
+          title: "الأسعار والفواتير والضرائب",
+          body: "جميع الأسعار المعروضة لا تشمل الضرائب ويُشار إليها بصيغة خارج الرسوم (HT). تُطبق ضريبة القيمة المضافة (TVA) بنسبة 20% وفقًا للأنظمة المغربية السارية. تُفوتر رسوم التجهيز عند بدء المهمة؛ وتتطلب الاشتراكات الشهرية التزامًا أوليًا لمدة 3 أشهر. وتظل ميزانيات الإعلانات ورسوم واجهات برمجة التطبيقات الخارجية على مسؤولية العميل.",
+        },
+        {
+          title: "الملكية الفكرية",
+          body: "عند السداد الكامل، يحصل العملاء على حقوق التسليمات المنصوص عليها في اتفاقيتهم. تحتفظ Medinova Studio بحقوقها في أدواتها وأطر عملها وموجوداتها الجاهزة. يحتفظ الطلاب بملكية المشاريع التي ينجزونها في Medinova Academy.",
+        },
+        {
+          title: "الاستخدام المقبول",
+          body: "تتعهد بعدم إساءة استخدام موقعنا أو محاولة الوصول غير المصرح به أو استخدام خدماتنا لأغراض غير قانونية. يجب على متعلمي الأكاديمية اتباع إرشادات المجتمع والحفاظ على بيئة محترمة وخاضعة للإشراف.",
+        },
+        {
+          title: "حدود المسؤولية",
+          body: "تقتصر مسؤولية Medinova Studio على المبالغ المدفوعة مقابل الخدمة موضوع النزاع. ولا نتحمل أي مسؤولية عن الأضرار غير المباشرة أو الأرباح الفائتة أو الانقطاعات الناجمة عن منصات خارجية (مثل الشبكات الإعلانية وWhatsApp ومزودي الاستضافة).",
+        },
+        {
+          title: "القانون الحاكم",
+          body: "تخضع هذه الشروط لقوانين المملكة المغربية. وتختص محاكم القنيطرة بالمغرب، على سبيل الحصر، بالبت في أي نزاع ينشأ عنها.",
+        },
+      ],
+      privacySections: [
+        {
+          title: "المعلومات التي نجمعها",
+          body: "نجمع فقط المعلومات الشخصية التي تقدمها طوعًا عبر نماذج التواصل لدينا (الاسم، البريد الإلكتروني، الشركة، تفاصيل المشروع) ومن خلال التواصل المباشر كالبريد الإلكتروني أو WhatsApp. كما نجمع بيانات استخدام وأداء مجهولة الهوية لفهم كيفية استخدام الزوار لموقعنا. نحن لا نبيع البيانات الشخصية إطلاقًا.",
+        },
+        {
+          title: "كيف نستخدم معلوماتك",
+          body: "تُستخدم معلوماتك حصريًا للرد على الاستفسارات وإعداد عروض الأسعار وتقديم الخدمات المتعاقد عليها (تطوير الألعاب، وخدمات وكالة النمو، وبرامج الأكاديمية) وإرسال تحديثات سير العمل. وقد نتواصل معك عبر البريد الإلكتروني أو WhatsApp بخصوص مشروعك أو تسجيلك.",
+        },
+        {
+          title: "التحليلات والإعلانات",
+          body: "نستخدم Google Analytics 4 وVercel Analytics لقياس حركة الزوار والتفاعل وأداء الموقع (مؤشرات Core Web Vitals عبر Vercel Speed Insights)، ونستخدم Meta Pixel (فيسبوك/ميتا) لقياس أداء حملاتنا الإعلانية وتحسين استهداف الإعلانات. تجمع هذه الأدوات بيانات مجمعة ومجهولة الهوية مثل الصفحات المزارة ونوع الجهاز والموقع التقريبي وإجراءات التحويل (مثل النقر على رابط WhatsApp أو إرسال نموذج تواصل). ولدعم إعلاناتنا وتحليلاتنا، قد يخزّن هؤلاء المزودون ملفات تعريف ارتباط (Cookies) على جهازك. يمكنك تعطيل Google Analytics عبر إضافة الاستبعاد الخاصة بها في المتصفح، والتحكم في ملفات تعريف الارتباط الإعلانية من إعدادات متصفحك ومنصاتك.",
+        },
+        {
+          title: "تخزين البيانات والأطراف الثالثة",
+          body: "تُرسل بيانات النماذج عبر Resend، مزود خدمة البريد لدينا، إلى contact@medinovastudio.com. وتُعالج بيانات التحليلات بواسطة Google LLC وVercel Inc.؛ بينما تُعالج بيانات إعلانات فيسبوك بواسطة Meta Platforms. وتُدار محادثات WhatsApp عبر منصة WhatsApp التابعة لميتا. نحتفظ بالمراسلات فقط للمدة اللازمة لتقديم خدماتنا أو وفق ما يقتضيه القانون المغربي.",
+        },
+        {
+          title: "التخزين المحلي والتفضيلات",
+          body: "نستخدم التخزين المحلي في متصفحك لتذكر لغتك المفضلة (medinova-lang). هذا الإعداد لا يترك جهازك أبدًا ويمكن مسحه في أي وقت من إعدادات المتصفح.",
+        },
+        {
+          title: "خصوصية الأطفال",
+          body: "صُممت Medinova Academy للمتعلمين من جميع الأعمار بما في ذلك الأطفال. يُشترط موافقة أحد الوالدين أو ولي الأمر قبل إرسال بيانات الطفل. نجمع الحد الأدنى فقط من البيانات اللازمة لإدارة التسجيل والتواصل مع أولياء الأمور.",
+        },
+        {
+          title: "حقوقك",
+          body: "يمكنك في أي وقت طلب الوصول إلى بياناتك الشخصية أو تصحيحها أو حذفها بمراسلة contact@medinovastudio.com. نرد على جميع الطلبات خلال 30 يومًا.",
+        },
+      ],
+    },
+    portfolioAria: {
+      closeGallery: "إغلاق المعرض",
+      prevScreenshot: "لقطة الشاشة السابقة",
+      nextScreenshot: "لقطة الشاشة التالية",
+      viewScreenshots: "عرض لقطات شاشة {name}",
+      showScreenshot: "عرض لقطة الشاشة {n}",
+    },
+    languagePrompt: {
+      dialogLabel: "اختر لغتك",
+      continueIn: "تابع بـ{name}",
+      helper: "يمكنك تغييرها في أي وقت من القائمة.",
     },
   },
 };

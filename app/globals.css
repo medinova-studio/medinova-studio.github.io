@@ -55,6 +55,12 @@ body {
   border-color: #2455e6;
   box-shadow: 0 0 0 3px rgba(36, 85, 230, 0.18);
 }
+
+/* Keyboard focus ring for interactive elements (design token: focus-ring) */
+:focus-visible {
+  outline: 3px solid rgba(36, 85, 230, 0.18);
+  outline-offset: 2px;
+}
 .form-input::placeholder {
   color: #9ca0a8;
 }

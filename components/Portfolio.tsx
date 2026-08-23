@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useLang } from "@/lib/LanguageContext";
 import Button from "@/components/ui/Button";
@@ -28,15 +28,55 @@ function Lightbox({
   onClose: () => void;
   setIndex: (i: number) => void;
 }) {
+  const { t } = useLang();
+  const aria = t.portfolioAria;
   const count = images.length;
   const prev = () => setIndex((index - 1 + count) % count);
   const next = () => setIndex((index + 1) % count);
+  const dialogRef = useRef<HTMLDivElement>(null);
+
+  // Scroll lock + initial focus + focus restore on unmount.
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    const previouslyFocused =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    dialog?.focus();
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      previouslyFocused?.focus();
+    };
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "ArrowLeft") prev();
       if (e.key === "ArrowRight") next();
+      if (e.key === "Tab") {
+        // Trap focus inside the dialog.
+        const dialog = dialogRef.current;
+        if (!dialog) return;
+        const focusables = Array.from(
+          dialog.querySelectorAll<HTMLElement>("button")
+        );
+        if (focusables.length === 0) return;
+        e.preventDefault();
+        const idx = focusables.indexOf(
+          document.activeElement as HTMLElement
+        );
+        let nextIdx: number;
+        if (e.shiftKey) {
+          nextIdx = idx <= 0 ? focusables.length - 1 : idx - 1;
+        } else {
+          nextIdx = idx === -1 || idx === focusables.length - 1 ? 0 : idx + 1;
+        }
+        focusables[nextIdx].focus();
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -45,7 +85,9 @@ function Lightbox({
 
   return (
     <div
-      className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+      ref={dialogRef}
+      tabIndex={-1}
+      className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 outline-none"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -54,7 +96,7 @@ function Lightbox({
       <button
         onClick={onClose}
         className="absolute top-4 right-4 p-2 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-        aria-label="Close gallery"
+        aria-label={aria.closeGallery}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -67,7 +109,7 @@ function Lightbox({
           prev();
         }}
         className="absolute left-2 sm:left-6 p-2.5 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-        aria-label="Previous screenshot"
+        aria-label={aria.prevScreenshot}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -90,7 +132,7 @@ function Lightbox({
           next();
         }}
         className="absolute right-2 sm:right-6 p-2.5 rounded-md text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-        aria-label="Next screenshot"
+        aria-label={aria.nextScreenshot}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -105,6 +147,7 @@ function Lightbox({
 }
 
 function GameCard({ game }: { game: Game }) {
+  const { t } = useLang();
   const [active, setActive] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -129,7 +172,10 @@ function GameCard({ game }: { game: Game }) {
             setLightbox(true);
           }}
           className="block w-full h-full"
-          aria-label={`View ${game.title} screenshots`}
+          aria-label={t.portfolioAria.viewScreenshots.replace(
+            "{name}",
+            game.title
+          )}
         >
           <Image
             src={game.gallery[active]}
@@ -152,7 +198,10 @@ function GameCard({ game }: { game: Game }) {
                 ? "border-primary ring-1 ring-primary"
                 : "border-hairline opacity-70 hover:opacity-100"
             }`}
-            aria-label={`Show screenshot ${i + 1}`}
+            aria-label={t.portfolioAria.showScreenshot.replace(
+              "{n}",
+              String(i + 1)
+            )}
           >
             <Image
               src={src}

@@ -92,8 +92,8 @@ export default function Contact() {
     "form-input w-full px-3 py-2 rounded-md text-base sm:text-sm text-ink";
   const selectClass =
     "form-input w-full px-3 py-2 rounded-md text-base sm:text-sm text-ink appearance-none cursor-pointer";
-  const inputErrorClass = "!border-[#ff3b30]";
-  const errorTextClass = "mt-1.5 text-xs text-[#ff3b30]";
+  const inputErrorClass = "!border-danger";
+  const errorTextClass = "mt-1.5 text-xs text-danger";
 
   return (
     <section id="contact" className="relative py-20 sm:py-28 lg:py-32 border-t border-hairline">
@@ -314,10 +314,12 @@ export default function Contact() {
               </Button>
 
               {isSubmitted && (
-                <p className="text-xs text-success">{t.contact.sent}</p>
+                <p role="status" className="text-xs text-success">
+                  {t.contact.sent}
+                </p>
               )}
               {submitError && (
-                <p className="text-xs text-[#ff3b30]">
+                <p role="alert" className="text-xs text-danger">
                   {submitError}{" "}
                   <a href="mailto:contact@medinovastudio.com" className="underline hover:text-ink">
                     contact@medinovastudio.com

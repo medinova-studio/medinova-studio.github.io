@@ -36,7 +36,7 @@ colors:
   whatsapp-text: "#0E7A46"
   whatsapp-border: "#B5E3C9"
   semantic-success: "#27a644"
-  semantic-error: "#ff3b30"
+  semantic-error: "#c92a22"
   logo-blue: "#0050A0"
   logo-sky: "#00A0F0"
   logo-cyan: "#22D3EE"
@@ -264,7 +264,7 @@ Dark moments are reserved and intentional: the **footer** and **social/OG cards*
 
 ### Semantic
 - **Success Green** (`{colors.semantic-success}`): success states.
-- **Error** (`{colors.semantic-error}` #ff3b30): form validation.
+- **Error** (`{colors.semantic-error}` #c92a22): form validation — tuned to ≥4.5:1 contrast on light surfaces (WCAG AA).
 - **WhatsApp** family: the green contact color (`{colors.whatsapp}` solid, `whatsapp-hover`, `whatsapp-deep`, `whatsapp-text`/`whatsapp-border` for outline variants).
 
 ## Typography

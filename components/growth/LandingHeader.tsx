@@ -27,6 +27,16 @@ export default function LandingHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll while the mobile menu is open.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
+
   return (
     <header
       id="top"
@@ -68,6 +78,8 @@ export default function LandingHeader() {
                 key={l}
                 type="button"
                 onClick={() => setLang(l)}
+                aria-label={`Switch to ${LANG_LABELS[l]}`}
+                aria-current={lang === l || undefined}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-colors ${
                   lang === l ? "bg-primary text-white" : "text-ink-tertiary hover:text-ink"
                 }`}
@@ -88,6 +100,7 @@ export default function LandingHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-label="Toggle menu"
             aria-expanded={open}
+            aria-controls="landing-mobile-menu"
             className="flex h-9 w-9 items-center justify-center rounded-md border border-hairline bg-surface-1 text-ink-muted transition-colors hover:text-ink md:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -96,15 +109,20 @@ export default function LandingHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-hairline bg-canvas/95 px-5 py-4 backdrop-blur-xl md:hidden">
+        <div
+          id="landing-mobile-menu"
+          className="border-t border-hairline bg-canvas/95 px-5 py-4 backdrop-blur-xl md:hidden"
+        >
           <div className="mb-3 flex w-fit items-center gap-1 rounded-md bg-surface-2 border border-hairline px-1 py-1">
             {LANGS.map((l: Lang) => (
               <button
                 key={l}
                 type="button"
                 onClick={() => setLang(l)}
+                aria-label={`Switch to ${LANG_LABELS[l]}`}
+                aria-current={lang === l || undefined}
                 className={`px-2 py-0.5 rounded text-[11px] font-bold transition-colors ${
-                  lang === l ? "bg-primary text-white" : "text-ink-tertiary"
+                  lang === l ? "bg-primary text-white" : "text-ink-tertiary hover:text-ink"
                 }`}
               >
                 {LANG_LABELS[l]}

@@ -12,7 +12,7 @@ import {
   breadcrumbSchema,
 } from "@/lib/jsonLd";
 import { buildPageMetadata } from "@/lib/metadata";
-import { Lang } from "@/lib/i18n";
+import { translations, Lang } from "@/lib/i18n";
 
 export async function generateMetadata({
   params,
@@ -23,7 +23,13 @@ export async function generateMetadata({
   return buildPageMetadata(lang as Lang, "/game-development");
 }
 
-export default async function GameDevelopmentPage() {
+export default async function GameDevelopmentPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const l = lang as Lang;
   return (
     <main>
       <Hero />
@@ -36,8 +42,8 @@ export default async function GameDevelopmentPage() {
       <JsonLd data={gameListSchema()} />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Game Development Agency", path: "/game-development" },
+          { name: translations[l].common.home, path: `/${l}` },
+          { name: "Game Development Agency", path: `/${l}/game-development` },
         ])}
       />
     </main>

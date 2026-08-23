@@ -39,6 +39,9 @@ export default function FAQ() {
                   <button
                     type="button"
                     onClick={() => setOpen(isOpen ? null : i)}
+                    aria-expanded={isOpen}
+                    aria-controls={`academy-faq-panel-${i}`}
+                    id={`academy-faq-trigger-${i}`}
                     className="w-full flex items-center justify-between gap-4 px-6 py-5 text-start"
                   >
                     <span className="text-base sm:text-lg font-semibold text-ink leading-snug">
@@ -51,6 +54,9 @@ export default function FAQ() {
                     />
                   </button>
                   <div
+                    id={`academy-faq-panel-${i}`}
+                    role="region"
+                    aria-labelledby={`academy-faq-trigger-${i}`}
                     className={`grid transition-all duration-300 ease-in-out ${
                       isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                     }`}

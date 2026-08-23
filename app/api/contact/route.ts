@@ -11,8 +11,10 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const MAX_FIELD_LENGTH = 200;
 const MAX_MESSAGE_LENGTH = 5000;
+const MAX_SUBJECT_PART_LENGTH = 80;
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const IP_HITS_MAX = 10000;
 
 /**
  * Lightweight in-memory rate limiting. In serverless environments each
@@ -22,13 +24,34 @@ const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const ipHits = new Map<string, { count: number; windowStart: number }>();
 
 function getClientIp(request: Request): string {
+  // x-real-ip is set by the hosting edge and cannot be spoofed by clients.
+  const real = request.headers.get("x-real-ip");
+  if (real) return real.trim();
+  // In x-forwarded-for, entries closest to our server were appended by the
+  // trusted proxy chain, so the last entry is the most reliable.
   const forwarded = request.headers.get("x-forwarded-for");
-  if (forwarded) return forwarded.split(",")[0].trim();
-  return request.headers.get("x-real-ip") ?? "unknown";
+  if (forwarded) {
+    const parts = forwarded
+      .split(",")
+      .map((p) => p.trim())
+      .filter(Boolean);
+    if (parts.length > 0) return parts[parts.length - 1];
+  }
+  return "unknown";
+}
+
+/** Keep the in-memory hit map from growing without bound. */
+function pruneHits(now: number): void {
+  if (ipHits.size < IP_HITS_MAX) return;
+  for (const [key, entry] of ipHits) {
+    if (now - entry.windowStart >= RATE_LIMIT_WINDOW_MS) ipHits.delete(key);
+  }
+  if (ipHits.size >= IP_HITS_MAX) ipHits.clear();
 }
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
+  pruneHits(now);
   const entry = ipHits.get(ip);
   if (!entry || now - entry.windowStart >= RATE_LIMIT_WINDOW_MS) {
     ipHits.set(ip, { count: 1, windowStart: now });
@@ -38,11 +61,20 @@ function isRateLimited(ip: string): boolean {
   return entry.count > RATE_LIMIT_MAX;
 }
 
+/**
+ * Strip control characters (including newlines, which would break the email
+ * envelope) and cap length before interpolating into a subject line.
+ */
+function sanitizeSubjectPart(input: string): string {
+  return input.replace(/[\x00-\x1f\x7f]/g, " ").slice(0, MAX_SUBJECT_PART_LENGTH);
+}
+
 export async function POST(request: Request) {
   if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY is not configured.");
     return NextResponse.json(
-      { error: "Email service is not configured (RESEND_API_KEY missing)." },
-      { status: 500 }
+      { error: "Email service is temporarily unavailable. Please try again later." },
+      { status: 503 }
     );
   }
 
@@ -61,17 +93,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
-  // Honeypot: real users never fill the hidden field, bots sometimes do.
-  const website = typeof body.website === "string" ? body.website.trim() : "";
-  if (website) {
-    return NextResponse.json({ success: true });
-  }
-
+  // Rate limit first so automated honeypot hits are still counted.
   if (isRateLimited(getClientIp(request))) {
     return NextResponse.json(
       { error: "Too many requests. Please try again later." },
       { status: 429 }
     );
+  }
+
+  // Honeypot: real users never fill the hidden field, bots sometimes do.
+  const website = typeof body.website === "string" ? body.website.trim() : "";
+  if (website) {
+    return NextResponse.json({ success: true });
   }
 
   const name = typeof body.name === "string" ? body.name.trim() : "";
@@ -175,15 +208,15 @@ export async function POST(request: Request) {
       from: FROM_EMAIL,
       to: [TO_EMAIL],
       replyTo: email,
-      subject: `🎮 New Game Dev Inquiry: ${name}`,
+      subject: `🎮 New Game Dev Inquiry: ${sanitizeSubjectPart(name)}`,
       html,
     });
 
     if (error) {
       console.error("Resend send error:", error);
       return NextResponse.json(
-        { error: error.message ?? "Failed to send email." },
-        { status: 500 }
+        { error: "Failed to send your message. Please try again later." },
+        { status: 502 }
       );
     }
 
@@ -191,8 +224,8 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("Resend request failed:", err);
     return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Failed to send email." },
-      { status: 500 }
+      { error: "Failed to send your message. Please try again later." },
+      { status: 502 }
     );
   }
 }

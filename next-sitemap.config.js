@@ -4,6 +4,8 @@ module.exports = {
   generateRobotsTxt: true,
   exclude: [
     "/api/*",
+    "/icon.png",
+    "/apple-icon.png",
     "/en/opengraph-image",
     "/fr/opengraph-image",
     "/ar/opengraph-image",

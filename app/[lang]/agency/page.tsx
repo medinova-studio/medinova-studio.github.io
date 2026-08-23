@@ -48,7 +48,7 @@ export default async function AgencyPage({
       <JsonLd data={faqSchema(translations[l].agency.faq.items)} />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", path: `/${l}` },
+          { name: translations[l].common.home, path: `/${l}` },
           { name: "Medinova Growth Agency", path: `/${l}/agency` },
         ])}
       />

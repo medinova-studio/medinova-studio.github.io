@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   Award,
@@ -84,7 +85,7 @@ export default async function CoursePage({ params }: PageProps) {
   const { lang, slug } = await params;
   const l = lang as Lang;
 
-  if (!isCourseSlug(slug)) return null;
+  if (!isCourseSlug(slug)) notFound();
 
   const t = translations[l].academy;
   const detail = COURSE_CATALOG[l][slug];
@@ -106,7 +107,7 @@ export default async function CoursePage({ params }: PageProps) {
         />
         <div className="relative max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-12 sm:py-16">
           <nav
-            aria-label="Breadcrumb"
+            aria-label={translations[l].legal.breadcrumbLabel}
             className="mb-8 text-sm text-ink-tertiary"
           >
             <ol className="flex flex-wrap items-center gap-2">

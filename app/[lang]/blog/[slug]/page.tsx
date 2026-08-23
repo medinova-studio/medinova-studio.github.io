@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CalendarDays, Clock } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import FinalCta from "@/components/academy/FinalCta";
@@ -53,7 +54,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = blogPostBySlug(l, slug);
   const t = translations[l].blog;
 
-  if (!post) return null;
+  if (!post) notFound();
 
   const crumb = `/${l}/blog/${post.slug}`;
 

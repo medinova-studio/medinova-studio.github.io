@@ -45,6 +45,7 @@ const config: Config = {
           600: "#27365C",
         },
         success: "#27a644",
+        danger: "#c92a22",
         whatsapp: {
           DEFAULT: "#25d366",
           hover: "#1fb458",

@@ -50,7 +50,7 @@ export default async function AcademyPage({
       <JsonLd data={faqSchema(translations[l].academy.faq.items)} />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", path: `/${l}` },
+          { name: translations[l].common.home, path: `/${l}` },
           { name: "Medinova Academy", path: `/${l}/academy` },
         ])}
       />

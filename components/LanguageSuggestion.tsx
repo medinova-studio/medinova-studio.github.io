@@ -41,7 +41,7 @@ function hasLangCookie(): boolean {
  * The choice is persisted (cookie + localStorage flag) so it never nags again.
  */
 export default function LanguageSuggestion() {
-  const { lang, setLang } = useLang();
+  const { lang, setLang, t } = useLang();
   const [open, setOpen] = useState(false);
   const [suggested, setSuggested] = useState<Lang>("en");
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -116,7 +116,7 @@ export default function LanguageSuggestion() {
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Choose your language"
+        aria-label={t.languagePrompt.dialogLabel}
         tabIndex={-1}
         className="relative w-full max-w-[340px] sm:max-w-xl rounded-2xl border border-hairline bg-surface-1 shadow-2xl outline-none p-5 pt-4 sm:p-7"
       >
@@ -134,7 +134,7 @@ export default function LanguageSuggestion() {
           Choose your language · Choisissez votre langue · اختر لغتك
         </p>
         <p className="mt-1 text-xs text-ink-tertiary text-center">
-          You can change it anytime from the menu.
+          {t.languagePrompt.helper}
         </p>
 
         <div className="mt-5 flex flex-col gap-2.5 sm:grid sm:grid-cols-3 sm:gap-4">
@@ -144,7 +144,10 @@ export default function LanguageSuggestion() {
               <button
                 key={l}
                 onClick={() => choose(l)}
-                aria-label={`Continue in ${NATIVE_LABELS[l]}`}
+                aria-label={t.languagePrompt.continueIn.replace(
+                  "{name}",
+                  NATIVE_LABELS[l]
+                )}
                 className={`flex items-center gap-3 rounded-xl border p-3 text-start min-h-[56px] sm:flex-col sm:items-stretch sm:justify-start sm:min-h-0 sm:text-center transition-all active:scale-[0.98] ${
                   isActive
                     ? "bg-primary-soft border-primary/40"
