@@ -100,78 +100,78 @@
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courses/[slug]/page.tsx"
     },
     {
       "label": "COURSE_IMAGES",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_course_images",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "course_images"
     },
     {
       "label": "COURSE_ACCENTS",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_course_accents",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "course_accents"
     },
     {
       "label": "PageProps",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L44",
+      "source_location": "L45",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_pageprops",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "pageprops"
     },
     {
       "label": "generateStaticParams()",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L48",
+      "source_location": "L49",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_generatestaticparams",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "generatestaticparams()"
     },
     {
       "label": "generateMetadata()",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L55",
+      "source_location": "L56",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_generatemetadata",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "generatemetadata()"
     },
     {
       "label": "CoursePage()",
       "file_type": "code",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L83",
+      "source_location": "L84",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_academy_courses_slug_page_coursepage",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "coursepage()"
     },
     {
@@ -248,8 +248,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_academy_page",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "academy/page.tsx"
     },
     {
@@ -272,8 +272,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_academy_page_academypage",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "academypage()"
     },
     {
@@ -350,7 +350,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_agency_page",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "agency/page.tsx"
     },
@@ -374,8 +374,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_agency_page_agencypage",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "agencypage()"
     },
     {
@@ -386,56 +386,56 @@
       "_origin": "ast",
       "id": "app_lang_blog_slug_page",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blog/[slug]/page.tsx"
     },
     {
       "label": "PageProps",
       "file_type": "code",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "app_lang_blog_slug_page_pageprops",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "pageprops"
     },
     {
       "label": "generateStaticParams()",
       "file_type": "code",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_blog_slug_page_generatestaticparams",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "generatestaticparams()"
     },
     {
       "label": "generateMetadata()",
       "file_type": "code",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_blog_slug_page_generatemetadata",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "generatemetadata()"
     },
     {
       "label": "BlogPostPage()",
       "file_type": "code",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L50",
+      "source_location": "L51",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_blog_slug_page_blogpostpage",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogpostpage()"
     },
     {
@@ -446,7 +446,7 @@
       "_origin": "ast",
       "id": "app_lang_blog_page",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blog/page.tsx"
     },
     {
@@ -459,7 +459,7 @@
       "_origin": "ast",
       "id": "app_lang_blog_page_pageprops",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "pageprops"
     },
     {
@@ -471,7 +471,7 @@
       "_origin": "ast",
       "id": "app_lang_blog_page_generatemetadata",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "generatemetadata()"
     },
     {
@@ -483,7 +483,7 @@
       "_origin": "ast",
       "id": "app_lang_blog_page_blogpage",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogpage()"
     },
     {
@@ -560,7 +560,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_game_development_page",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "game-development/page.tsx"
     },
@@ -572,8 +572,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_game_development_page_generatemetadata",
-      "community": 29,
-      "community_name": "game-development/page.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "generatemetadata()"
     },
     {
@@ -584,7 +584,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_game_development_page_gamedevelopmentpage",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "gamedevelopmentpage()"
     },
@@ -595,8 +595,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_layout",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "layout.tsx"
     },
     {
@@ -606,8 +606,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "app_lang_layout_jakarta",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "jakarta"
     },
     {
@@ -617,8 +617,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "app_lang_layout_geist",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "geist"
     },
     {
@@ -628,8 +628,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "app_lang_layout_geistmono",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "geistmono"
     },
     {
@@ -640,8 +640,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_layout_generatestaticparams",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "generatestaticparams()"
     },
     {
@@ -651,8 +651,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "app_lang_layout_viewport",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "viewport"
     },
     {
@@ -675,8 +675,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_layout_rootlayout",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "rootlayout()"
     },
     {
@@ -687,7 +687,7 @@
       "_origin": "ast",
       "id": "app_lang_not_found",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "not-found.tsx"
     },
     {
@@ -699,7 +699,7 @@
       "_origin": "ast",
       "id": "app_lang_not_found_notfound",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "notfound()"
     },
     {
@@ -776,7 +776,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_page",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "[lang]/page.tsx"
     },
@@ -788,8 +788,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_page_generatemetadata",
-      "community": 29,
-      "community_name": "game-development/page.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "generatemetadata()"
     },
     {
@@ -800,7 +800,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_page_home",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "home()"
     },
@@ -828,21 +828,10 @@
       "norm_label": "generatemetadata()"
     },
     {
-      "label": "sections",
-      "file_type": "code",
-      "source_file": "app/[lang]/privacy/page.tsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "app_lang_privacy_page_sections",
-      "community": 28,
-      "community_name": "i18n.ts",
-      "norm_label": "sections"
-    },
-    {
       "label": "PrivacyPage()",
       "file_type": "code",
       "source_file": "app/[lang]/privacy/page.tsx",
-      "source_location": "L45",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_privacy_page_privacypage",
@@ -874,21 +863,10 @@
       "norm_label": "generatemetadata()"
     },
     {
-      "label": "sections",
-      "file_type": "code",
-      "source_file": "app/[lang]/terms/page.tsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "app_lang_terms_page_sections",
-      "community": 28,
-      "community_name": "i18n.ts",
-      "norm_label": "sections"
-    },
-    {
       "label": "TermsPage()",
       "file_type": "code",
       "source_file": "app/[lang]/terms/page.tsx",
-      "source_location": "L45",
+      "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_terms_page_termspage",
@@ -970,7 +948,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_lang_who_we_are_page",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "who-we-are/page.tsx"
     },
@@ -982,8 +960,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_who_we_are_page_generatemetadata",
-      "community": 5,
-      "community_name": "jsonLd.ts",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "generatemetadata()"
     },
     {
@@ -994,7 +972,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "app_lang_who_we_are_page_whowearepage",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "whowearepage()"
     },
@@ -1024,7 +1002,7 @@
       "label": "ipHits",
       "file_type": "code",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "app_api_agency_contact_route_iphits",
       "community": 20,
@@ -1035,7 +1013,7 @@
       "label": "getClientIp()",
       "file_type": "code",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_agency_contact_route_getclientip",
@@ -1044,10 +1022,22 @@
       "norm_label": "getclientip()"
     },
     {
+      "label": "pruneHits()",
+      "file_type": "code",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_api_agency_contact_route_prunehits",
+      "community": 20,
+      "community_name": "agency-contact/route.ts",
+      "norm_label": "prunehits()"
+    },
+    {
       "label": "isRateLimited()",
       "file_type": "code",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L30",
+      "source_location": "L52",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_agency_contact_route_isratelimited",
@@ -1056,10 +1046,22 @@
       "norm_label": "isratelimited()"
     },
     {
+      "label": "sanitizeSubjectPart()",
+      "file_type": "code",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_api_agency_contact_route_sanitizesubjectpart",
+      "community": 20,
+      "community_name": "agency-contact/route.ts",
+      "norm_label": "sanitizesubjectpart()"
+    },
+    {
       "label": "row()",
       "file_type": "code",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L41",
+      "source_location": "L72",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_agency_contact_route_row",
@@ -1071,7 +1073,7 @@
       "label": "POST()",
       "file_type": "code",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L47",
+      "source_location": "L78",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_agency_contact_route_post",
@@ -1105,7 +1107,7 @@
       "label": "ipHits",
       "file_type": "code",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "app_api_contact_route_iphits",
       "community": 20,
@@ -1116,7 +1118,7 @@
       "label": "getClientIp()",
       "file_type": "code",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_contact_route_getclientip",
@@ -1125,10 +1127,22 @@
       "norm_label": "getclientip()"
     },
     {
+      "label": "pruneHits()",
+      "file_type": "code",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_api_contact_route_prunehits",
+      "community": 20,
+      "community_name": "agency-contact/route.ts",
+      "norm_label": "prunehits()"
+    },
+    {
       "label": "isRateLimited()",
       "file_type": "code",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L30",
+      "source_location": "L52",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_contact_route_isratelimited",
@@ -1137,10 +1151,22 @@
       "norm_label": "isratelimited()"
     },
     {
+      "label": "sanitizeSubjectPart()",
+      "file_type": "code",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_api_contact_route_sanitizesubjectpart",
+      "community": 20,
+      "community_name": "agency-contact/route.ts",
+      "norm_label": "sanitizesubjectpart()"
+    },
+    {
       "label": "POST()",
       "file_type": "code",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L41",
+      "source_location": "L72",
       "_callable": true,
       "_origin": "ast",
       "id": "app_api_contact_route_post",
@@ -1156,7 +1182,7 @@
       "_origin": "ast",
       "id": "components_about",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "about.tsx"
     },
     {
@@ -1168,7 +1194,7 @@
       "_origin": "ast",
       "id": "components_about_about",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "about()"
     },
     {
@@ -1179,7 +1205,7 @@
       "_origin": "ast",
       "id": "components_contact",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "contact.tsx"
     },
     {
@@ -1192,7 +1218,7 @@
       "_origin": "ast",
       "id": "components_contact_formvalues",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "formvalues"
     },
     {
@@ -1204,7 +1230,7 @@
       "_origin": "ast",
       "id": "components_contact_buildschema",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "buildschema()"
     },
     {
@@ -1216,7 +1242,7 @@
       "_origin": "ast",
       "id": "components_contact_contact",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "contact()"
     },
     {
@@ -1226,8 +1252,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_facebookpixel",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "facebookpixel.tsx"
     },
     {
@@ -1238,8 +1264,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_facebookpixel_facebookpixel",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "facebookpixel()"
     },
     {
@@ -1250,7 +1276,7 @@
       "_origin": "ast",
       "id": "components_footer",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "footer.tsx"
     },
     {
@@ -1262,7 +1288,7 @@
       "_origin": "ast",
       "id": "components_footer_agency_hrefs",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "agency_hrefs()"
     },
     {
@@ -1274,7 +1300,7 @@
       "_origin": "ast",
       "id": "components_footer_game_dev_hrefs",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "game_dev_hrefs()"
     },
     {
@@ -1286,7 +1312,7 @@
       "_origin": "ast",
       "id": "components_footer_academy_hrefs",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "academy_hrefs()"
     },
     {
@@ -1298,7 +1324,7 @@
       "_origin": "ast",
       "id": "components_footer_legal_hrefs",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "legal_hrefs()"
     },
     {
@@ -1309,7 +1335,7 @@
       "_origin": "ast",
       "id": "components_footer_social_links",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "social_links"
     },
     {
@@ -1321,7 +1347,7 @@
       "_origin": "ast",
       "id": "components_footer_footer",
       "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community_name": "Footer.tsx",
       "norm_label": "footer()"
     },
     {
@@ -1332,7 +1358,7 @@
       "_origin": "ast",
       "id": "components_founder",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "components/founder.tsx"
     },
     {
@@ -1343,8 +1369,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_founder_founder",
-      "community": 5,
-      "community_name": "jsonLd.ts",
+      "community": 0,
+      "community_name": "game-development/page.tsx",
       "norm_label": "founder()"
     },
     {
@@ -1355,7 +1381,7 @@
       "_origin": "ast",
       "id": "components_gameservices",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "gameservices.tsx"
     },
     {
@@ -1366,7 +1392,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_gameservices_gameservices",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "gameservices()"
     },
@@ -1378,7 +1404,7 @@
       "_origin": "ast",
       "id": "components_hero",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "components/hero.tsx"
     },
     {
@@ -1389,7 +1415,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_hero_hero",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "hero()"
     },
@@ -1401,7 +1427,7 @@
       "_origin": "ast",
       "id": "components_homehero",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "homehero.tsx"
     },
     {
@@ -1413,7 +1439,7 @@
       "_origin": "ast",
       "id": "components_homehero_homehero",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "homehero()"
     },
     {
@@ -1424,7 +1450,7 @@
       "_origin": "ast",
       "id": "components_hub",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "hub.tsx"
     },
     {
@@ -1436,7 +1462,7 @@
       "_origin": "ast",
       "id": "components_hub_hubs",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "hubs()"
     },
     {
@@ -1448,7 +1474,7 @@
       "_origin": "ast",
       "id": "components_hub_hub",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "hub()"
     },
     {
@@ -1458,8 +1484,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_jsonld",
-      "community": 29,
-      "community_name": "game-development/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "jsonld.tsx"
     },
     {
@@ -1471,8 +1497,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "components_jsonld_jsonldprops",
-      "community": 29,
-      "community_name": "game-development/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "jsonldprops"
     },
     {
@@ -1483,8 +1509,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_jsonld_jsonld",
-      "community": 29,
-      "community_name": "game-development/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "jsonld()"
     },
     {
@@ -1494,8 +1520,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_languagesuggestion",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "languagesuggestion.tsx"
     },
     {
@@ -1505,8 +1531,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "components_languagesuggestion_native_labels",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "native_labels"
     },
     {
@@ -1516,8 +1542,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_languagesuggestion_flags",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "flags"
     },
     {
@@ -1528,8 +1554,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_languagesuggestion_detectlang",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "detectlang()"
     },
     {
@@ -1540,8 +1566,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_languagesuggestion_haslangcookie",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "haslangcookie()"
     },
     {
@@ -1552,8 +1578,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_languagesuggestion_languagesuggestion",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "languagesuggestion()"
     },
     {
@@ -1563,8 +1589,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_navbar",
-      "community": 0,
-      "community_name": "useLang",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "navbar.tsx"
     },
     {
@@ -1575,8 +1601,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_navbar_navbar",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "navbar()"
     },
     {
@@ -1587,7 +1613,7 @@
       "_origin": "ast",
       "id": "components_portfolio",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "portfolio.tsx"
     },
     {
@@ -1600,7 +1626,7 @@
       "_origin": "ast",
       "id": "components_portfolio_game",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "game"
     },
     {
@@ -1612,31 +1638,31 @@
       "_origin": "ast",
       "id": "components_portfolio_lightbox",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "lightbox()"
     },
     {
       "label": "GameCard()",
       "file_type": "code",
       "source_file": "components/Portfolio.tsx",
-      "source_location": "L107",
+      "source_location": "L149",
       "_callable": true,
       "_origin": "ast",
       "id": "components_portfolio_gamecard",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "gamecard()"
     },
     {
       "label": "Portfolio()",
       "file_type": "code",
       "source_file": "components/Portfolio.tsx",
-      "source_location": "L203",
+      "source_location": "L252",
       "_callable": true,
       "_origin": "ast",
       "id": "components_portfolio_portfolio",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "portfolio()"
     },
     {
@@ -1647,7 +1673,7 @@
       "_origin": "ast",
       "id": "components_techstackbar",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "techstackbar.tsx"
     },
     {
@@ -1658,7 +1684,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_techstackbar_techstackbar",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "techstackbar()"
     },
@@ -1670,7 +1696,7 @@
       "_origin": "ast",
       "id": "components_whatsappicon",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappicon.tsx"
     },
     {
@@ -1682,7 +1708,7 @@
       "_origin": "ast",
       "id": "components_whatsappicon_whatsappicon",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappicon()"
     },
     {
@@ -1693,7 +1719,7 @@
       "_origin": "ast",
       "id": "components_whatsappwidget",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappwidget.tsx"
     },
     {
@@ -1705,7 +1731,7 @@
       "_origin": "ast",
       "id": "components_whatsappwidget_whatsappwidget",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappwidget()"
     },
     {
@@ -1715,8 +1741,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_announcementbar",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "announcementbar.tsx"
     },
     {
@@ -1727,8 +1753,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_announcementbar_announcementbar",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "announcementbar()"
     },
     {
@@ -1739,7 +1765,7 @@
       "_origin": "ast",
       "id": "components_academy_courses",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courses.tsx"
     },
     {
@@ -1750,7 +1776,7 @@
       "_origin": "ast",
       "id": "components_academy_courses_course_images",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "course_images"
     },
     {
@@ -1762,7 +1788,7 @@
       "_origin": "ast",
       "id": "components_academy_courses_courses",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courses()"
     },
     {
@@ -1773,7 +1799,7 @@
       "_origin": "ast",
       "id": "components_academy_faq",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "academy/faq.tsx"
     },
     {
@@ -1785,7 +1811,7 @@
       "_origin": "ast",
       "id": "components_academy_faq_faq",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "faq()"
     },
     {
@@ -1796,7 +1822,7 @@
       "_origin": "ast",
       "id": "components_academy_finalcta",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "finalcta.tsx"
     },
     {
@@ -1808,7 +1834,7 @@
       "_origin": "ast",
       "id": "components_academy_finalcta_finalcta",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "finalcta()"
     },
     {
@@ -1818,7 +1844,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_founder",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "academy/founder.tsx"
     },
@@ -1830,8 +1856,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_founder_founder",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "founder()"
     },
     {
@@ -1841,8 +1867,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_hero",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "academy/hero.tsx"
     },
     {
@@ -1852,8 +1878,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_academy_hero_trusticons",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "trusticons"
     },
     {
@@ -1864,8 +1890,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_hero_hero",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "hero()"
     },
     {
@@ -1875,8 +1901,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_teaching",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "teaching.tsx"
     },
     {
@@ -1886,8 +1912,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_academy_teaching_stepicons",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "stepicons"
     },
     {
@@ -1898,8 +1924,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_teaching_teaching",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "teaching()"
     },
     {
@@ -1909,8 +1935,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_why",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "why.tsx"
     },
     {
@@ -1920,8 +1946,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "components_academy_why_itemicons",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "itemicons"
     },
     {
@@ -1932,8 +1958,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_why_why",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "why()"
     },
     {
@@ -1943,8 +1969,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_academy_work",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "work.tsx"
     },
     {
@@ -1954,8 +1980,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "components_academy_work_game_images",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "game_images"
     },
     {
@@ -1966,8 +1992,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_academy_work_work",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 5,
+      "community_name": "useLang",
       "norm_label": "work()"
     },
     {
@@ -1978,7 +2004,7 @@
       "_origin": "ast",
       "id": "components_analytics_whatsappcta",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappcta.tsx"
     },
     {
@@ -1990,7 +2016,7 @@
       "_origin": "ast",
       "id": "components_analytics_whatsappcta_whatsappcta",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "whatsappcta()"
     },
     {
@@ -2000,7 +2026,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_ctabanner",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "ctabanner.tsx"
     },
@@ -2012,7 +2038,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_ctabanner_ctabanner",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "ctabanner()"
     },
@@ -2024,7 +2050,7 @@
       "_origin": "ast",
       "id": "components_growth_contactsection",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "contactsection.tsx"
     },
     {
@@ -2037,7 +2063,7 @@
       "_origin": "ast",
       "id": "components_growth_contactsection_formvalues",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "formvalues"
     },
     {
@@ -2049,7 +2075,7 @@
       "_origin": "ast",
       "id": "components_growth_contactsection_buildschema",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "buildschema()"
     },
     {
@@ -2061,7 +2087,7 @@
       "_origin": "ast",
       "id": "components_growth_contactsection_contactsection",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "contactsection()"
     },
     {
@@ -2071,7 +2097,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_faq",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "growth/faq.tsx"
     },
@@ -2083,7 +2109,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_faq_faq",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "faq()"
     },
@@ -2094,7 +2120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_hero",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "growth/hero.tsx"
     },
@@ -2106,7 +2132,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_hero_hero",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "hero()"
     },
@@ -2117,8 +2143,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_landingheader",
-      "community": 0,
-      "community_name": "useLang",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "landingheader.tsx"
     },
     {
@@ -2128,8 +2154,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "components_growth_landingheader_sectionlinks",
-      "community": 0,
-      "community_name": "useLang",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "sectionlinks"
     },
     {
@@ -2140,7 +2166,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_landingheader_landingheader",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "landingheader()"
     },
@@ -2151,7 +2177,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_pillars",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "pillars.tsx"
     },
@@ -2162,7 +2188,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_growth_pillars_pillaricons",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "pillaricons"
     },
@@ -2174,7 +2200,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_pillars_pillars",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "pillars()"
     },
@@ -2185,7 +2211,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_pricing",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "pricing.tsx"
     },
@@ -2197,7 +2223,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_pricing_pricing",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "pricing()"
     },
@@ -2208,7 +2234,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_process",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "process.tsx"
     },
@@ -2220,7 +2246,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_process_process",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "process()"
     },
@@ -2231,7 +2257,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_sectionheader",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "sectionheader.tsx"
     },
@@ -2244,7 +2270,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "components_growth_sectionheader_sectionheaderprops",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "sectionheaderprops"
     },
@@ -2256,7 +2282,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_sectionheader_sectionheader",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "sectionheader()"
     },
@@ -2267,7 +2293,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_growth_terms",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "terms.tsx"
     },
@@ -2279,7 +2305,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_growth_terms_terms",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "terms()"
     },
@@ -2290,8 +2316,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_layout_sitechrome",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "sitechrome.tsx"
     },
     {
@@ -2302,8 +2328,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "components_layout_sitechrome_sitechrome",
-      "community": 19,
-      "community_name": "LanguageSuggestion.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "sitechrome()"
     },
     {
@@ -2314,7 +2340,7 @@
       "_origin": "ast",
       "id": "components_ui_button",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "button.tsx"
     },
     {
@@ -2325,7 +2351,7 @@
       "_origin": "ast",
       "id": "components_ui_button_buttonvariants",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "buttonvariants"
     },
     {
@@ -2338,7 +2364,7 @@
       "_origin": "ast",
       "id": "components_ui_button_buttonownprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "buttonownprops"
     },
     {
@@ -2351,7 +2377,7 @@
       "_origin": "ast",
       "id": "components_ui_button_buttonprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "buttonprops"
     },
     {
@@ -2363,7 +2389,7 @@
       "_origin": "ast",
       "id": "components_ui_button_button",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "button()"
     },
     {
@@ -2374,7 +2400,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "reveal.tsx"
     },
     {
@@ -2387,7 +2413,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal_revealprops",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "revealprops"
     },
     {
@@ -2399,7 +2425,7 @@
       "_origin": "ast",
       "id": "components_ui_reveal_reveal",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "reveal()"
     },
     {
@@ -2420,7 +2446,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_languagecontext",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "languagecontext.tsx"
     },
@@ -2433,7 +2459,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "lib_languagecontext_langcontextvalue",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "langcontextvalue"
     },
@@ -2444,7 +2470,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "lib_languagecontext_langcontext",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "langcontext"
     },
@@ -2456,8 +2482,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_languagecontext_languageprovider",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "languageprovider()"
     },
     {
@@ -2468,7 +2494,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_languagecontext_uselang",
-      "community": 0,
+      "community": 5,
       "community_name": "useLang",
       "norm_label": "uselang()"
     },
@@ -2480,7 +2506,7 @@
       "_origin": "ast",
       "id": "lib_academy",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "academy.ts"
     },
     {
@@ -2491,7 +2517,7 @@
       "_origin": "ast",
       "id": "lib_academy_academy_whatsapp_number",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "academy_whatsapp_number"
     },
     {
@@ -2502,7 +2528,7 @@
       "_origin": "ast",
       "id": "lib_academy_academy_whatsapp_message",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "academy_whatsapp_message"
     },
     {
@@ -2514,7 +2540,7 @@
       "_origin": "ast",
       "id": "lib_academy_academywhatsappurl",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "academywhatsappurl()"
     },
     {
@@ -2525,7 +2551,7 @@
       "_origin": "ast",
       "id": "lib_analytics",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "analytics.ts"
     },
     {
@@ -2538,7 +2564,7 @@
       "_origin": "ast",
       "id": "lib_analytics_analyticsevent",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "analyticsevent"
     },
     {
@@ -2550,7 +2576,7 @@
       "_origin": "ast",
       "id": "lib_analytics_getsessioneventid",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "getsessioneventid()"
     },
     {
@@ -2561,8 +2587,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_analytics_trackevent",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 0,
+      "community_name": "game-development/page.tsx",
       "norm_label": "trackevent()"
     },
     {
@@ -2574,7 +2600,7 @@
       "_origin": "ast",
       "id": "lib_analytics_trackleadonce",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "trackleadonce()"
     },
     {
@@ -2587,7 +2613,7 @@
       "_origin": "ast",
       "id": "lib_analytics_window",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "window"
     },
     {
@@ -2598,7 +2624,7 @@
       "_origin": "ast",
       "id": "lib_blog",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blog.ts"
     },
     {
@@ -2611,7 +2637,7 @@
       "_origin": "ast",
       "id": "lib_blog_blogsection",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogsection"
     },
     {
@@ -2624,7 +2650,7 @@
       "_origin": "ast",
       "id": "lib_blog_blogpost",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogpost"
     },
     {
@@ -2635,7 +2661,7 @@
       "_origin": "ast",
       "id": "lib_blog_hero",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "hero"
     },
     {
@@ -2646,7 +2672,7 @@
       "_origin": "ast",
       "id": "lib_blog_en",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "en"
     },
     {
@@ -2657,7 +2683,7 @@
       "_origin": "ast",
       "id": "lib_blog_fr",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "fr"
     },
     {
@@ -2668,7 +2694,7 @@
       "_origin": "ast",
       "id": "lib_blog_ar",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "ar"
     },
     {
@@ -2679,7 +2705,7 @@
       "_origin": "ast",
       "id": "lib_blog_blog_posts",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blog_posts"
     },
     {
@@ -2691,7 +2717,7 @@
       "_origin": "ast",
       "id": "lib_blog_blogpostsfor",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogpostsfor()"
     },
     {
@@ -2703,7 +2729,7 @@
       "_origin": "ast",
       "id": "lib_blog_blogpostbyslug",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "blogpostbyslug()"
     },
     {
@@ -2714,7 +2740,7 @@
       "_origin": "ast",
       "id": "lib_blog_all_blog_slugs",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "all_blog_slugs"
     },
     {
@@ -2725,7 +2751,7 @@
       "_origin": "ast",
       "id": "lib_cn",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "cn.ts"
     },
     {
@@ -2737,7 +2763,7 @@
       "_origin": "ast",
       "id": "lib_cn_cn",
       "community": 0,
-      "community_name": "useLang",
+      "community_name": "game-development/page.tsx",
       "norm_label": "cn()"
     },
     {
@@ -2748,7 +2774,7 @@
       "_origin": "ast",
       "id": "lib_courses",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courses.ts"
     },
     {
@@ -2759,7 +2785,7 @@
       "_origin": "ast",
       "id": "lib_courses_course_slugs",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "course_slugs"
     },
     {
@@ -2772,7 +2798,7 @@
       "_origin": "ast",
       "id": "lib_courses_courseslug",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courseslug"
     },
     {
@@ -2785,7 +2811,7 @@
       "_origin": "ast",
       "id": "lib_courses_coursedetail",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "coursedetail"
     },
     {
@@ -2798,7 +2824,7 @@
       "_origin": "ast",
       "id": "lib_courses_coursemap",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "coursemap"
     },
     {
@@ -2809,7 +2835,7 @@
       "_origin": "ast",
       "id": "lib_courses_en",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "en"
     },
     {
@@ -2820,7 +2846,7 @@
       "_origin": "ast",
       "id": "lib_courses_fr",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "fr"
     },
     {
@@ -2831,7 +2857,7 @@
       "_origin": "ast",
       "id": "lib_courses_ar",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "ar"
     },
     {
@@ -2842,7 +2868,7 @@
       "_origin": "ast",
       "id": "lib_courses_course_catalog",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "course_catalog"
     },
     {
@@ -2854,7 +2880,7 @@
       "_origin": "ast",
       "id": "lib_courses_iscourseslug",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "iscourseslug()"
     },
     {
@@ -2922,8 +2948,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "lib_i18n_langs",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "langs"
     },
     {
@@ -2933,8 +2959,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "lib_i18n_lang_labels",
-      "community": 0,
-      "community_name": "useLang",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "lang_labels"
     },
     {
@@ -2944,15 +2970,26 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "lib_i18n_rtl_langs",
-      "community": 30,
-      "community_name": "layout.tsx",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "rtl_langs"
+    },
+    {
+      "label": "DATE_LOCALES",
+      "file_type": "code",
+      "source_file": "lib/i18n.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "lib_i18n_date_locales",
+      "community": 28,
+      "community_name": "i18n.ts",
+      "norm_label": "date_locales"
     },
     {
       "label": "AcademyTranslation",
       "file_type": "code",
       "source_file": "lib/i18n.ts",
-      "source_location": "L13",
+      "source_location": "L19",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -2965,24 +3002,24 @@
       "label": "Translation",
       "file_type": "code",
       "source_file": "lib/i18n.ts",
-      "source_location": "L97",
+      "source_location": "L103",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "lib_i18n_translation",
-      "community": 0,
-      "community_name": "useLang",
+      "community": 28,
+      "community_name": "i18n.ts",
       "norm_label": "translation"
     },
     {
       "label": "translations",
       "file_type": "code",
       "source_file": "lib/i18n.ts",
-      "source_location": "L370",
+      "source_location": "L407",
       "_origin": "ast",
       "id": "lib_i18n_translations",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "translations"
     },
     {
@@ -2992,7 +3029,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lib_jsonld",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "jsonld.ts"
     },
@@ -3003,7 +3040,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "lib_jsonld_site_url",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "site_url"
     },
@@ -3014,7 +3051,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "lib_jsonld_org_id",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "org_id"
     },
@@ -3025,7 +3062,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "lib_jsonld_academy_id",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "academy_id"
     },
@@ -3036,7 +3073,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "lib_jsonld_founder_id",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "founder_id"
     },
@@ -3047,7 +3084,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "lib_jsonld_sameas",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "sameas"
     },
@@ -3058,7 +3095,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "lib_jsonld_course_slugs",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "course_slugs"
     },
@@ -3070,7 +3107,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_courseslug",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "courseslug()"
     },
@@ -3082,7 +3119,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_personnode",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "personnode()"
     },
@@ -3094,7 +3131,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_orgnode",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "orgnode()"
     },
@@ -3106,7 +3143,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_academynode",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "academynode()"
     },
@@ -3118,7 +3155,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_websitenode",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "websitenode()"
     },
@@ -3130,7 +3167,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_gamenode",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "gamenode()"
     },
@@ -3142,7 +3179,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_gamelistschema",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "gamelistschema()"
     },
@@ -3154,7 +3191,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_graphschema",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "graphschema()"
     },
@@ -3166,7 +3203,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_organizationschema",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "organizationschema()"
     },
@@ -3178,7 +3215,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_websiteschema",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "websiteschema()"
     },
@@ -3190,8 +3227,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_academyschema",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "academyschema()"
     },
     {
@@ -3202,7 +3239,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_personschema",
-      "community": 5,
+      "community": 17,
       "community_name": "jsonLd.ts",
       "norm_label": "personschema()"
     },
@@ -3215,7 +3252,7 @@
       "_origin": "ast",
       "id": "lib_jsonld_courseschema",
       "community": 6,
-      "community_name": "academy/page.tsx",
+      "community_name": "courses/[slug]/page.tsx",
       "norm_label": "courseschema()"
     },
     {
@@ -3227,7 +3264,7 @@
       "_origin": "ast",
       "id": "lib_jsonld_articleschema",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "articleschema()"
     },
     {
@@ -3238,8 +3275,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_serviceschema",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "serviceschema()"
     },
     {
@@ -3250,7 +3287,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_gamedevserviceschema",
-      "community": 29,
+      "community": 0,
       "community_name": "game-development/page.tsx",
       "norm_label": "gamedevserviceschema()"
     },
@@ -3263,7 +3300,7 @@
       "_origin": "ast",
       "id": "lib_jsonld_breadcrumbschema",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "breadcrumbschema()"
     },
     {
@@ -3274,8 +3311,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "lib_jsonld_faqschema",
-      "community": 6,
-      "community_name": "academy/page.tsx",
+      "community": 17,
+      "community_name": "jsonLd.ts",
       "norm_label": "faqschema()"
     },
     {
@@ -3357,7 +3394,7 @@
       "_origin": "ast",
       "id": "lib_metadata_alternatesfor",
       "community": 17,
-      "community_name": "blog/[slug]/page.tsx",
+      "community_name": "jsonLd.ts",
       "norm_label": "alternatesfor()"
     },
     {
@@ -3886,32 +3923,10 @@
       "norm_label": "lucide-react"
     },
     {
-      "label": "motion",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "package_dependencies_motion",
-      "community": 2,
-      "community_name": "dependencies",
-      "norm_label": "motion"
-    },
-    {
-      "label": "motion",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "motion",
-      "community": 2,
-      "community_name": "dependencies",
-      "norm_label": "motion"
-    },
-    {
       "label": "next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_next",
       "community": 2,
@@ -3922,7 +3937,7 @@
       "label": "next",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "next",
       "community": 2,
@@ -3933,7 +3948,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_react",
       "community": 2,
@@ -3944,7 +3959,7 @@
       "label": "react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "react",
       "community": 2,
@@ -3955,7 +3970,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
       "community": 2,
@@ -3966,7 +3981,7 @@
       "label": "react-dom",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "react_dom",
       "community": 2,
@@ -3977,7 +3992,7 @@
       "label": "react-hook-form",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_react_hook_form",
       "community": 2,
@@ -3988,7 +4003,7 @@
       "label": "react-hook-form",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "react_hook_form",
       "community": 2,
@@ -3999,7 +4014,7 @@
       "label": "resend",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_dependencies_resend",
       "community": 2,
@@ -4010,7 +4025,7 @@
       "label": "resend",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "resend",
       "community": 2,
@@ -4021,7 +4036,7 @@
       "label": "tailwind-merge",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_dependencies_tailwind_merge",
       "community": 2,
@@ -4032,7 +4047,7 @@
       "label": "tailwind-merge",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "tailwind_merge",
       "community": 2,
@@ -4043,7 +4058,7 @@
       "label": "zod",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "package_dependencies_zod",
       "community": 2,
@@ -4054,7 +4069,7 @@
       "label": "zod",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "zod",
       "community": 2,
@@ -4065,7 +4080,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 4,
@@ -4076,7 +4091,7 @@
       "label": "@tailwindcss/forms",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_forms",
       "community": 4,
@@ -4087,7 +4102,7 @@
       "label": "@tailwindcss/forms",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "tailwindcss_forms",
       "community": 4,
@@ -4098,7 +4113,7 @@
       "label": "@tailwindcss/typography",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_typography",
       "community": 4,
@@ -4109,7 +4124,7 @@
       "label": "@tailwindcss/typography",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "tailwindcss_typography",
       "community": 4,
@@ -4120,7 +4135,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
       "community": 4,
@@ -4131,7 +4146,7 @@
       "label": "@types/node",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "types_node",
       "community": 4,
@@ -4142,7 +4157,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 4,
@@ -4153,7 +4168,7 @@
       "label": "@types/react",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "types_react",
       "community": 4,
@@ -4164,7 +4179,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
       "community": 4,
@@ -4175,7 +4190,7 @@
       "label": "@types/react-dom",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "types_react_dom",
       "community": 4,
@@ -4186,7 +4201,7 @@
       "label": "autoprefixer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "package_devdependencies_autoprefixer",
       "community": 4,
@@ -4197,7 +4212,7 @@
       "label": "autoprefixer",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "autoprefixer",
       "community": 4,
@@ -4208,7 +4223,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 4,
@@ -4219,7 +4234,7 @@
       "label": "eslint",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "eslint",
       "community": 4,
@@ -4230,7 +4245,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_config_next",
       "community": 4,
@@ -4241,7 +4256,7 @@
       "label": "eslint-config-next",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "eslint_config_next",
       "community": 4,
@@ -4252,7 +4267,7 @@
       "label": "next-sitemap",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "package_devdependencies_next_sitemap",
       "community": 4,
@@ -4263,7 +4278,7 @@
       "label": "next-sitemap",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "next_sitemap",
       "community": 4,
@@ -4274,7 +4289,7 @@
       "label": "postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "package_devdependencies_postcss",
       "community": 4,
@@ -4285,7 +4300,7 @@
       "label": "postcss",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "postcss",
       "community": 4,
@@ -4296,7 +4311,7 @@
       "label": "sharp",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "package_devdependencies_sharp",
       "community": 4,
@@ -4307,7 +4322,7 @@
       "label": "sharp",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "sharp",
       "community": 4,
@@ -4318,7 +4333,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
       "community": 4,
@@ -4329,7 +4344,7 @@
       "label": "tailwindcss",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "tailwindcss",
       "community": 4,
@@ -4340,7 +4355,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
       "community": 4,
@@ -4351,7 +4366,7 @@
       "label": "typescript",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "typescript",
       "community": 4,
@@ -4362,7 +4377,7 @@
       "label": "vitest",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "package_devdependencies_vitest",
       "community": 4,
@@ -4373,7 +4388,7 @@
       "label": "vitest",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "vitest",
       "community": 4,
@@ -6006,7 +6021,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6017,7 +6032,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6028,7 +6043,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L83",
+      "source_location": "L84",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6039,7 +6054,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6050,7 +6065,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6061,7 +6076,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6073,7 +6088,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6085,7 +6100,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6097,7 +6112,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6109,7 +6124,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6121,7 +6136,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6133,7 +6148,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6145,7 +6160,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6157,7 +6172,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6169,7 +6184,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6181,7 +6196,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6193,7 +6208,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6205,7 +6220,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6217,7 +6232,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6229,7 +6244,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6241,7 +6256,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6253,7 +6268,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6265,7 +6280,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6277,7 +6292,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6289,7 +6304,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6301,7 +6316,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6313,7 +6328,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6325,7 +6340,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6337,7 +6352,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6349,7 +6364,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6361,7 +6376,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6373,7 +6388,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page",
@@ -6386,7 +6401,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page_generatemetadata",
@@ -6398,7 +6413,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L87",
+      "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page_coursepage",
@@ -6410,7 +6425,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L295",
+      "source_location": "L296",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page_coursepage",
@@ -6422,7 +6437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/academy/courses/[slug]/page.tsx",
-      "source_location": "L287",
+      "source_location": "L288",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_academy_courses_slug_page_coursepage",
@@ -7546,7 +7561,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7557,7 +7572,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7568,7 +7583,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7579,7 +7594,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7591,7 +7606,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7603,7 +7618,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7615,7 +7630,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7627,7 +7642,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7639,7 +7654,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7651,7 +7666,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7663,7 +7678,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7675,7 +7690,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7687,7 +7702,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7699,7 +7714,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7711,7 +7726,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7723,7 +7738,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7735,7 +7750,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7747,7 +7762,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7759,7 +7774,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page",
@@ -7772,7 +7787,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page_generatemetadata",
@@ -7784,7 +7799,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page_generatemetadata",
@@ -7796,7 +7811,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page_blogpostpage",
@@ -7808,7 +7823,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L174",
+      "source_location": "L175",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page_blogpostpage",
@@ -7820,7 +7835,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/blog/[slug]/page.tsx",
-      "source_location": "L183",
+      "source_location": "L184",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_blog_slug_page_blogpostpage",
@@ -8309,6 +8324,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/game-development/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_game_development_page",
+      "target": "lib_i18n_translations",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -8398,7 +8425,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/game-development/page.tsx",
-      "source_location": "L38",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_game_development_page_gamedevelopmentpage",
@@ -8410,7 +8437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/game-development/page.tsx",
-      "source_location": "L35",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_game_development_page_gamedevelopmentpage",
@@ -8422,7 +8449,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/game-development/page.tsx",
-      "source_location": "L36",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_game_development_page_gamedevelopmentpage",
@@ -9172,22 +9199,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/[lang]/privacy/page.tsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_lang_privacy_page",
-      "target": "app_lang_privacy_page_privacypage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/[lang]/privacy/page.tsx",
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_privacy_page",
-      "target": "app_lang_privacy_page_sections",
+      "target": "app_lang_privacy_page_privacypage",
       "confidence_score": 1.0
     },
     {
@@ -9211,7 +9227,31 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_privacy_page",
+      "target": "lib_i18n_date_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/privacy/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_privacy_page",
       "target": "lib_i18n_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/privacy/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_privacy_page",
+      "target": "lib_i18n_translations",
       "confidence_score": 1.0
     },
     {
@@ -9269,17 +9309,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_terms_page",
-      "target": "app_lang_terms_page_sections",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/[lang]/terms/page.tsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_lang_terms_page",
       "target": "app_lang_terms_page_termspage",
       "confidence_score": 1.0
     },
@@ -9304,7 +9333,31 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_terms_page",
+      "target": "lib_i18n_date_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/terms/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_terms_page",
       "target": "lib_i18n_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/terms/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_terms_page",
+      "target": "lib_i18n_translations",
       "confidence_score": 1.0
     },
     {
@@ -9589,6 +9642,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/[lang]/who-we-are/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_lang_who_we_are_page",
+      "target": "lib_i18n_translations",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9666,7 +9731,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/who-we-are/page.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_who_we_are_page_whowearepage",
@@ -9678,7 +9743,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/[lang]/who-we-are/page.tsx",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_lang_who_we_are_page_whowearepage",
@@ -9688,7 +9753,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route",
@@ -9699,7 +9764,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route",
@@ -9710,7 +9775,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L30",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route",
@@ -9721,7 +9786,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L47",
+      "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route",
@@ -9732,7 +9797,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L41",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_agency_contact_route",
+      "target": "app_api_agency_contact_route_prunehits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route",
@@ -9751,6 +9827,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_agency_contact_route",
+      "target": "app_api_agency_contact_route_sanitizesubjectpart",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9779,7 +9866,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L74",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route_post",
@@ -9791,7 +9878,19 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L74",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_agency_contact_route_isratelimited",
+      "target": "app_api_agency_contact_route_prunehits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route_post",
@@ -9803,7 +9902,19 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L132",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_agency_contact_route_post",
+      "target": "app_api_agency_contact_route_sanitizesubjectpart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/agency-contact/route.ts",
+      "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route_post",
@@ -9816,7 +9927,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/api/agency-contact/route.ts",
-      "source_location": "L132",
+      "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_agency_contact_route_post",
@@ -9826,7 +9937,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route",
@@ -9837,7 +9948,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route",
@@ -9848,7 +9959,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L30",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route",
@@ -9859,11 +9970,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L41",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route",
       "target": "app_api_contact_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_contact_route",
+      "target": "app_api_contact_route_prunehits",
       "confidence_score": 1.0
     },
     {
@@ -9878,6 +10000,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_contact_route",
+      "target": "app_api_contact_route_sanitizesubjectpart",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -9906,7 +10039,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L70",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route_post",
@@ -9918,7 +10051,19 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L70",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_contact_route_isratelimited",
+      "target": "app_api_contact_route_prunehits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route_post",
@@ -9929,9 +10074,21 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "source_file": "app/api/contact/route.ts",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_api_contact_route_post",
+      "target": "app_api_contact_route_sanitizesubjectpart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/api/contact/route.ts",
-      "source_location": "L136",
+      "source_location": "L169",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_api_contact_route_post",
@@ -11307,7 +11464,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/Portfolio.tsx",
-      "source_location": "L107",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_portfolio",
@@ -11329,7 +11486,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/Portfolio.tsx",
-      "source_location": "L203",
+      "source_location": "L252",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_portfolio",
@@ -11412,9 +11569,33 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "source_file": "components/Portfolio.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_portfolio_lightbox",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "components/Portfolio.tsx",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "components_portfolio_gamecard",
+      "target": "lib_languagecontext_uselang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Portfolio.tsx",
-      "source_location": "L204",
+      "source_location": "L253",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_portfolio_portfolio",
@@ -12031,7 +12212,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/academy/FAQ.tsx",
-      "source_location": "L63",
+      "source_location": "L69",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_academy_faq_faq",
@@ -12043,7 +12224,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/academy/FAQ.tsx",
-      "source_location": "L67",
+      "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_academy_faq_faq",
@@ -12055,7 +12236,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/academy/FAQ.tsx",
-      "source_location": "L68",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
       "source": "components_academy_faq_faq",
@@ -14111,11 +14292,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/i18n.ts",
-      "source_location": "L13",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_i18n",
       "target": "lib_i18n_academytranslation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/i18n.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lib_i18n",
+      "target": "lib_i18n_date_locales",
       "confidence_score": 1.0
     },
     {
@@ -14166,7 +14358,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/i18n.ts",
-      "source_location": "L97",
+      "source_location": "L103",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_i18n",
@@ -14177,7 +14369,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/i18n.ts",
-      "source_location": "L370",
+      "source_location": "L407",
       "weight": 1.0,
       "_origin": "ast",
       "source": "lib_i18n",
@@ -14899,7 +15091,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -15064,17 +15256,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "package_dependencies",
-      "target": "package_dependencies_motion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
@@ -15086,7 +15267,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15108,7 +15289,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15119,7 +15300,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15130,7 +15311,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15141,7 +15322,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15152,7 +15333,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15185,7 +15366,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -15296,18 +15477,6 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
-      "source": "package_dependencies_motion",
-      "target": "motion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
       "source": "package_dependencies_next",
       "target": "next",
       "confidence_score": 1.0
@@ -15316,7 +15485,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15328,7 +15497,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15340,7 +15509,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15352,7 +15521,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15364,7 +15533,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15376,7 +15545,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15388,7 +15557,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15399,7 +15568,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15410,7 +15579,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15421,7 +15590,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15432,7 +15601,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15443,7 +15612,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15454,7 +15623,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15465,7 +15634,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15476,7 +15645,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15487,7 +15656,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15498,7 +15667,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15509,7 +15678,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15520,7 +15689,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15531,7 +15700,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_devdependencies",
@@ -15542,7 +15711,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15554,7 +15723,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15566,7 +15735,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15578,7 +15747,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15590,7 +15759,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15602,7 +15771,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15614,7 +15783,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15626,7 +15795,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15638,7 +15807,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15650,7 +15819,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15662,7 +15831,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L41",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15674,7 +15843,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L42",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15686,7 +15855,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L43",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -15698,7 +15867,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L44",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -17136,5 +17305,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "13259c0f9c55b97c8ce82341c4168549939aecde"
+  "built_at_commit": "fc446e17d043cef2fa3abaf2402dde6d3c533040"
 }

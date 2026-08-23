@@ -5,7 +5,7 @@
   "3": "DESIGN.md",
   "4": "devDependencies",
   "5": "jsonLd.ts",
-  "6": "courses/[slug]/page.tsx",
+  "6": "academy/page.tsx",
   "7": "vercel.json",
   "8": "graphify.js",
   "9": "next.config.mjs",
@@ -16,7 +16,7 @@
   "14": "SKILL.md",
   "15": "opencode.json",
   "16": "AGENTS.md",
-  "17": "i18n.ts",
+  "17": "blog/[slug]/page.tsx",
   "18": "middleware.ts",
   "19": "LanguageSuggestion.tsx",
   "20": "agency-contact/route.ts",
@@ -26,5 +26,8 @@
   "24": "vitest.config.ts",
   "25": "og.tsx",
   "26": "optimize-images.mjs",
-  "27": "generate-icons.mjs"
+  "27": "generate-icons.mjs",
+  "28": "i18n.ts",
+  "29": "game-development/page.tsx",
+  "30": "layout.tsx"
 }
