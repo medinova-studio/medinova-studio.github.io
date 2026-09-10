@@ -5,34 +5,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LanguageSuggestion from "@/components/LanguageSuggestion";
 
-/**
- * Renders the shared site chrome (global studio nav + footer) on every page
- * EXCEPT the /agency landing, which is fully self-contained and provides its
- * own header/footer.
- */
-export default function SiteChrome({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const segments = pathname.split("/");
-  const isAgency = segments[2] === "agency" || segments[1] === "agency";
-
-  if (isAgency) {
-    return (
-      <>
-        {children}
-        <Footer />
-        <LanguageSuggestion />
-      </>
-    );
-  }
-
+  const segments = pathname?.split("/").filter(Boolean) ?? [];
+  const section = (["en", "fr", "ar"] as string[]).includes(segments[0]) ? segments[1] : segments[0];
+  const hasSubBar = section === "agency" || section === "academy" || section === "game-development";
   return (
     <>
       <Navbar />
-      <div className="pt-14">{children}</div>
+      <div className={hasSubBar ? "pt-24" : "pt-14"}>{children}</div>
       <Footer />
       <LanguageSuggestion />
     </>

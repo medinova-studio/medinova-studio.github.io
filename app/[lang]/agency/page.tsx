@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import LandingHeader from "@/components/growth/LandingHeader";
 import Hero from "@/components/growth/Hero";
 import Pillars from "@/components/growth/Pillars";
 import Process from "@/components/growth/Process";
@@ -35,7 +34,6 @@ export default async function AgencyPage({
   const l = lang as Lang;
   return (
     <main>
-      <LandingHeader />
       <Hero />
       <Pillars />
       <Process />
