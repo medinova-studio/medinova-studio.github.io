@@ -5,19 +5,19 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CalendarDays, Clock } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import FinalCta from "@/components/academy/FinalCta";
-import { articleSchema, breadcrumbSchema } from "@/lib/jsonLd";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/jsonLd";
 import { alternatesFor } from "@/lib/metadata";
 import { translations, type Lang } from "@/lib/i18n";
-import { ALL_BLOG_SLUGS, blogPostBySlug } from "@/lib/blog";
+import { BLOG_POSTS, blogPostBySlug } from "@/lib/blog";
 
 type PageProps = {
   params: Promise<{ lang: string; slug: string }>;
 };
 
 export async function generateStaticParams() {
-  const locales = ["en", "fr", "ar"];
+  const locales = ["en", "fr", "ar"] as const;
   return locales.flatMap((lang) =>
-    ALL_BLOG_SLUGS.map((slug) => ({ lang, slug }))
+    BLOG_POSTS[lang].map((p) => ({ lang, slug: p.slug }))
   );
 }
 
@@ -95,7 +95,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="relative aspect-video rounded-2xl border border-hairline bg-navy overflow-hidden shadow-[0_16px_40px_rgba(20,21,26,0.10)]">
             <Image
               src={post.hero}
-              alt={post.title}
+              alt={post.heroAlt ?? post.title}
               fill
               sizes="(min-width:1024px) 62vw, 100vw"
               className="object-cover object-center"
@@ -109,17 +109,107 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.intro}
           </p>
 
-          <div className="mt-10 space-y-10">
-            {post.sections.map((section, i) => (
-              <section key={i}>
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-ink tracking-tight leading-snug">
-                  {section.heading}
-                </h2>
-                <p className="mt-4 text-base sm:text-lg text-ink-subtle leading-relaxed">
-                  {section.body}
-                </p>
-              </section>
-            ))}
+          <div className="mt-12 space-y-12">
+            {post.sections.map((section, i) => {
+              const hasImage = Boolean(section.image);
+              if (hasImage) {
+                return (
+                  <section
+                    key={i}
+                    className="rounded-2xl border border-hairline bg-surface-1 overflow-hidden shadow-[0_12px_32px_rgba(20,21,26,0.05)]"
+                  >
+                    <div
+                      className={`flex flex-col ${section.imagePosition === "right" ? "md:flex-row-reverse" : "md:flex-row"} gap-0`}
+                    >
+                      <div className="w-full md:w-[42%] shrink-0 relative bg-surface-2 border-b md:border-b-0 md:border-r border-hairline last:border-r-0 last:border-b-0 overflow-hidden">
+                        <div className="relative aspect-[4/3] md:aspect-[4/3]">
+                          <Image
+                            src={section.image!}
+                            alt={section.imageAlt ?? section.heading}
+                            fill
+                            sizes="(min-width:768px) 30vw, 90vw"
+                            className="object-contain p-5 sm:p-6"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-1 p-6 sm:p-8 flex flex-col justify-center">
+                        <h2 className="font-display text-xl sm:text-2xl font-bold text-ink tracking-tight leading-snug">
+                          {section.heading}
+                        </h2>
+                        <p className="mt-3 text-[15px] sm:text-base text-ink-subtle leading-relaxed">
+                          {section.body}
+                        </p>
+                        {section.bullets && section.bullets.length > 0 && (
+                          <ul className="mt-4 space-y-1.5">
+                            {section.bullets.map((item, idx) => (
+                              <li key={idx} className="flex gap-2 text-[14px] sm:text-[15px] text-ink-subtle leading-relaxed">
+                                <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {section.bodyAfter && (
+                          <p className="mt-4 text-[15px] sm:text-base text-ink-subtle leading-relaxed">
+                            {section.bodyAfter}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </section>
+                );
+              }
+              const faqHeaderIndex = post.sections.findIndex((s) =>
+                ["Frequently Asked Questions", "Questions fréquentes", "الأسئلة الشائعة"].includes(s.heading.trim())
+              );
+              const isFaqQuestion =
+                faqHeaderIndex !== -1 &&
+                i > faqHeaderIndex &&
+                /[?؟]\s*$/.test(section.heading.trim());
+              return (
+                <section key={i} className={isFaqQuestion ? "rounded-xl border border-hairline bg-surface-1 p-5 sm:p-6" : ""}>
+                  <h2
+                    className={
+                      isFaqQuestion
+                        ? "font-display text-base sm:text-lg font-semibold text-ink tracking-tight leading-snug"
+                        : "font-display text-2xl sm:text-3xl font-bold text-ink tracking-tight leading-snug"
+                    }
+                  >
+                    {section.heading}
+                  </h2>
+                  <p className="mt-3 text-base sm:text-lg text-ink-subtle leading-relaxed">
+                    {section.body}
+                  </p>
+                  {section.bullets && section.bullets.length > 0 && (
+                    <ul className="mt-4 space-y-2">
+                      {section.bullets.map((item, idx) => (
+                        <li key={idx} className="flex gap-2.5 text-[15px] sm:text-base text-ink-subtle leading-relaxed">
+                          <span className="mt-[9px] w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {section.steps && section.steps.length > 0 && (
+                    <ol className="mt-4 space-y-2.5">
+                      {section.steps.map((step, idx) => (
+                        <li key={idx} className="flex gap-3 text-[15px] sm:text-base text-ink-subtle leading-relaxed">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-soft border border-primary/20 text-xs font-bold text-primary shrink-0 mt-0.5">
+                            {idx + 1}
+                          </span>
+                          <span className="flex-1">{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  {section.bodyAfter && (
+                    <p className="mt-4 text-base sm:text-lg text-ink-subtle leading-relaxed">
+                      {section.bodyAfter}
+                    </p>
+                  )}
+                </section>
+              );
+            })}
           </div>
 
           {post.course && (
@@ -187,6 +277,24 @@ export default async function BlogPostPage({ params }: PageProps) {
           { name: post.title, path: crumb },
         ])}
       />
+      {post.slug === "english-coding-classes-for-kids-in-morocco" &&
+        (() => {
+          const faqHeaderIndex = post.sections.findIndex((s) =>
+            ["Frequently Asked Questions", "Questions fréquentes", "الأسئلة الشائعة"].includes(s.heading.trim())
+          );
+          if (faqHeaderIndex === -1) return null;
+          const faqSections = post.sections
+            .slice(faqHeaderIndex + 1)
+            .filter((s) => /[?؟]\s*$/.test(s.heading.trim()));
+          if (faqSections.length === 0) return null;
+          return (
+            <JsonLd
+              data={faqSchema(
+                faqSections.map((s) => ({ q: s.heading, a: s.body }))
+              )}
+            />
+          );
+        })()}
     </main>
   );
 }

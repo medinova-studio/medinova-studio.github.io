@@ -3,6 +3,12 @@ import type { Lang } from "@/lib/i18n";
 export type BlogSection = {
   heading: string;
   body: string;
+  bodyAfter?: string;
+  bullets?: string[];
+  steps?: string[];
+  image?: string;
+  imageAlt?: string;
+  imagePosition?: "left" | "right";
 };
 
 export type BlogPost = {
@@ -13,6 +19,7 @@ export type BlogPost = {
   category: string;
   readingTime: string;
   hero: string;
+  heroAlt?: string;
   intro: string;
   sections: BlogSection[];
   course?: { slug: string; label: string; body: string };
@@ -34,6 +41,8 @@ const HERO = {
   "what-is-web-development": "/images/academy/web-development.webp",
   "what-is-creative-design": "/images/academy/creative-design.webp",
   "digital-skills-for-beginners": "/images/academy/digital-essentials.webp",
+  "english-coding-classes-for-kids-in-morocco":
+    "/images/academy/online-coding-classes-kids-english.jpg",
 } as const;
 
 const EN: BlogPost[] = [
@@ -468,6 +477,203 @@ const EN: BlogPost[] = [
       body: "Computer basics, Word, Excel, PowerPoint and safe internet use — the foundation for every other track (7+).",
     },
     related: ["what-age-should-kids-start-coding", "what-is-scratch"],
+  },
+  {
+    slug: "english-coding-classes-for-kids-in-morocco",
+    title: "English Coding Classes for Kids in Morocco & Worldwide | Medinova Academy",
+    description:
+      "Live online coding classes for kids aged 7+ in English. Learn Scratch, Roblox, Python, Web Development and Unity from Morocco or anywhere worldwide.",
+    date: "2026-09-16",
+    category: "Medinova Academy",
+    readingTime: "8 min read",
+    hero: HERO["english-coding-classes-for-kids-in-morocco"],
+    heroAlt: "Children attending live online coding classes in English",
+    intro:
+      "Looking for English coding classes for kids in Morocco or a live online program your child can join from anywhere in the world? Medinova Academy offers live online coding classes for children aged 7+, taught entirely in English. Whether your family lives in Rabat, Casablanca, Marrakech, Tangier, Kenitra, another Moroccan city, or outside Morocco, your child can learn coding remotely from home. Medinova Academy is part of Medinova Studio, a technology and game development studio based in Morocco. The Academy combines live instruction with practical exercises and projects, helping children move from learning programming concepts to creating things of their own.",
+    sections: [
+      {
+        heading: "Why Are Parents in Morocco Looking for Coding Classes in English?",
+        body: "Coding is becoming an increasingly accessible subject for children, but finding the right program can be more difficult for international and expatriate families. Families living in Morocco may be looking for extracurricular activities that fit their children's educational and language environment. For English-speaking families, this can mean looking specifically for coding classes taught in English, rather than having technical concepts explained in another language.",
+        bullets: [
+          "English-speaking expatriate families living in Morocco",
+          "International families and children attending international or bilingual schools",
+          "Moroccan families looking for English-medium technology education",
+          "Parents who want their children to develop programming skills from an early age",
+          "Families looking for an online alternative to a physical coding academy",
+        ],
+        bodyAfter:
+          "Medinova Academy provides live remote coding education in English, allowing children to learn from home without needing to travel to a physical classroom.",
+      },
+      {
+        heading: "Why Learn Coding in English?",
+        body: "For children who are already comfortable learning in English, studying coding directly in English can make the learning experience more natural. English is widely used throughout the technology industry. Programming documentation, software tools, tutorials, technical communities and many learning resources use English. Becoming familiar with technical vocabulary early can therefore help children navigate technology resources as they continue learning. At Medinova Academy, the goal is not to teach English through coding. The goal is to teach coding in English.",
+        bodyAfter:
+          "Children can therefore focus on programming concepts, problem-solving and creating projects while learning the terminology they will encounter in the wider technology world.",
+      },
+      {
+        heading: "Live Online Coding Classes From Home",
+        body: "Medinova Academy's coding courses are delivered remotely, allowing children to participate from home. The classes are live, rather than simply consisting of prerecorded videos. Students can follow explanations, practice new concepts and work on projects during the learning process. A typical learning process can involve: Learn then Practice then Create then Improve.",
+        bodyAfter:
+          "Children first learn a new concept, then apply it through exercises before using their knowledge to create a project. As their skills develop, projects can become more complex. Online learning also removes the need for families to travel to a coding school. This can be particularly useful for families with busy schedules or those living in areas where English-medium coding programs are limited.",
+      },
+      {
+        heading: "What Can Children Learn at Medinova Academy?",
+        body: "Medinova Academy offers several coding and technology learning paths for young learners. The appropriate course depends on the child's age, interests and previous experience. Below are the core tracks — each taught live online in English.",
+      },
+      {
+        heading: "Scratch for Kids",
+        body: "Scratch provides a visual introduction to programming and is an accessible starting point for younger learners. Instead of beginning with complicated programming syntax, children can use visual programming blocks to create interactive projects.",
+        bullets: [
+          "programming logic",
+          "sequences",
+          "loops",
+          "conditions",
+          "variables",
+          "problem-solving",
+          "interactive storytelling",
+          "game creation",
+        ],
+        bodyAfter:
+          "For children who are completely new to coding, Scratch can provide a practical way to discover how programming works while creating something they can interact with.",
+        image: "/images/academy/scratch.webp",
+        imageAlt: "Scratch coding classes for kids at Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Roblox Game Development",
+        body: "Children interested in games can learn programming through Roblox Studio. Roblox provides an environment where learners can combine creativity, game design and programming. Students can create environments and interactive experiences while learning how code controls objects and gameplay.",
+        bodyAfter:
+          "Depending on the course level, learners can explore Roblox Studio and Lua scripting while developing their own projects. For children who already spend time playing games, game development can provide a natural introduction to programming: instead of only playing a game, they begin to understand how games are created.",
+        image: "/images/academy/roblox.webp",
+        imageAlt: "Roblox game development classes for kids at Medinova Academy",
+        imagePosition: "right",
+      },
+      {
+        heading: "Python Programming",
+        body: "Python introduces children to text-based programming. As learners progress, they can move beyond visual programming and begin writing actual code. Python provides an accessible introduction to programming syntax and concepts such as variables, conditions, loops, functions and problem-solving.",
+        bodyAfter:
+          "Students can use these skills to create practical projects and games while developing a foundation for more advanced programming.",
+        image: "/images/academy/python.webp",
+        imageAlt: "Python programming classes for kids at Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Web Development",
+        body: "Children interested in websites can explore web development and learn how websites are built.",
+        bullets: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        bodyAfter:
+          "Rather than simply studying individual technologies, the focus is on using them to create practical web projects. This can help learners understand the relationship between what they see on a website and the code that makes it work.",
+        image: "/images/academy/web-development.webp",
+        imageAlt: "Web development classes for kids at Medinova Academy",
+        imagePosition: "right",
+      },
+      {
+        heading: "Unity & C#",
+        body: "Older learners interested in game development can progress into Unity and C#. Unity provides an environment for creating 2D and 3D games, while C# introduces learners to text-based programming and more structured software development concepts.",
+        bodyAfter:
+          "Students can explore areas such as gameplay programming, player interaction, game systems and project development while building their own playable games. The course is particularly relevant for learners who are interested in understanding how modern games are developed.",
+        image: "/images/academy/unity.webp",
+        imageAlt: "Unity and C# game development classes for kids at Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Learn Through Projects, Not Just Tutorials",
+        body: "Learning programming is more meaningful when children can use what they learn. At Medinova Academy, project-based learning gives students opportunities to apply programming concepts by building things.",
+        bodyAfter:
+          "A learner might create an interactive Scratch project, develop a Roblox experience, write a Python program, build a website or create a game with Unity. Projects also give children something tangible to look back on as their skills develop. The objective is not simply to complete lessons. It is to gradually develop the ability to understand a problem, experiment with solutions, write code and turn an idea into a working project.",
+      },
+      {
+        heading: "Learn Coding Through a Real Technology and Game Development Studio",
+        body: "Medinova Academy is operated by Medinova Studio, an active technology and game development studio based in Morocco. This connection gives the Academy a practical technology focus. Coding is taught in the context of things that developers actually create: games, websites, software and digital projects.",
+        bodyAfter:
+          "For children interested in technology, this can make the connection between learning programming and creating real digital products easier to understand. The Academy's courses are designed to give young learners a starting point from which they can continue exploring technology as their interests develop.",
+      },
+      {
+        heading: "Online Coding Classes for Kids in Morocco",
+        body: "Families searching for coding classes for kids in Morocco can join Medinova Academy remotely. Because the classes are online, children in Rabat, Casablanca, Marrakech, Tangier, Kenitra and other Moroccan cities can participate from home.",
+        bodyAfter:
+          "There is no need to travel to a physical coding academy. The learner needs an appropriate computer and internet connection and can attend the live lesson remotely. This format can be especially useful for families who want English-medium coding education but do not have a suitable local program nearby.",
+      },
+      {
+        heading: "Coding Classes for Expat and International Families",
+        body: "Medinova Academy is particularly relevant to families who want their children to learn technology in English. For expatriate families living in Morocco, the program provides access to live English-medium coding education without requiring the family to find a local English-language technology school.",
+        bodyAfter:
+          "The online format also means the program is not limited to Morocco. Families living outside Morocco can also join remotely, making the courses an option for internationally mobile families and English-speaking households looking for online coding education for their children. The main requirement is finding a suitable course and schedule for the learner.",
+      },
+      {
+        heading: "Does My Child Need Previous Coding Experience?",
+        body: "Not necessarily. Some Medinova Academy courses are designed for beginners, while other courses may be more appropriate for learners who already have some experience. The right starting point depends on several factors:",
+        bullets: [
+          "the child's age",
+          "previous coding experience",
+          "interests",
+          "preferred type of technology",
+          "the course requirements",
+        ],
+        bodyAfter:
+          "A child interested in creating games may prefer Roblox or Unity, while another learner may enjoy the creative introduction provided by Scratch or the structure of Python. Parents do not need to choose a course simply because it sounds more advanced. The appropriate starting point is the one that matches the learner.",
+      },
+      {
+        heading: "How Does the Free Trial Work?",
+        body: "Choosing an online coding class is easier when your child can experience the learning environment first. Medinova Academy offers a free trial session for interested learners. The process is straightforward:",
+        steps: [
+          "Contact Medinova Academy and provide your child's age and interests.",
+          "Discuss the learner's current experience and possible course.",
+          "Join a free trial session.",
+          "If the learner wants to continue, they can be added to the appropriate learner group.",
+          "Regular lessons can begin when the appropriate group is ready.",
+        ],
+        bodyAfter:
+          "This gives parents and children an opportunity to understand how the online classes work before committing to regular lessons.",
+      },
+      {
+        heading: "Frequently Asked Questions",
+        body: "Answers to the most common questions from parents about English coding classes in Morocco and worldwide.",
+      },
+      {
+        heading: "Are the coding classes taught in English?",
+        body: "Yes. The coding classes described in this program are taught in English, making them suitable for English-speaking and international families.",
+      },
+      {
+        heading: "Are the coding classes online?",
+        body: "Yes. Medinova Academy provides live remote coding classes that children can attend from home.",
+      },
+      {
+        heading: "Can children in Morocco join?",
+        body: "Yes. Children can join from Moroccan cities including Rabat, Casablanca, Marrakech, Tangier, Kenitra and other locations, provided the appropriate course and schedule are available.",
+      },
+      {
+        heading: "Can children outside Morocco join?",
+        body: "Yes. Because the classes are remote, families outside Morocco can also participate when the schedule and group availability are suitable.",
+      },
+      {
+        heading: "What age can children start coding?",
+        body: "Medinova Academy offers learning opportunities starting from age 7+, with different courses recommended for different age groups and experience levels.",
+      },
+      {
+        heading: "Does my child need previous coding experience?",
+        body: "Not necessarily. Beginner-friendly options are available, but the appropriate course depends on the child's age, interests and experience.",
+      },
+      {
+        heading: "Which coding language should my child start with?",
+        body: "There is no single answer for every child. Scratch, Roblox, Python, Web Development and Unity and C# serve different learning goals and age groups. The child's interests and previous experience should be considered when choosing a starting point.",
+      },
+      {
+        heading: "How can my child try a class?",
+        body: "Contact Medinova Academy to discuss the learner and arrange a free trial session.",
+      },
+      {
+        heading: "Start Learning Coding Online in English",
+        body: "Coding can be introduced to children through games, creative projects, websites and programming challenges. For families in Morocco looking for English coding classes for kids, Medinova Academy provides a live online option that children can access from home. The same remote format is also available to suitable learners outside Morocco. From Scratch and Roblox to Python, Web Development and Unity and C#, children can explore different areas of technology and discover what interests them.",
+        bodyAfter: "Explore Medinova Academy and book a free trial to find the right coding path for your child.",
+      },
+    ],
+    course: {
+      slug: "scratch",
+      label: "Scratch for Kids (7+)",
+      body: "Visual programming with Scratch for ages 7+ — build logic, stories and games in English, live online from Morocco or anywhere worldwide.",
+    },
+    related: ["coding-courses-for-kids-in-morocco-online-and-live", "what-age-should-kids-start-coding", "what-is-scratch"],
   },
 ];
 
@@ -904,6 +1110,172 @@ const FR: BlogPost[] = [
     },
     related: ["what-age-should-kids-start-coding", "what-is-scratch"],
   },
+  {
+    slug: "english-coding-classes-for-kids-in-morocco",
+    title: "Cours de programmation pour enfants au Maroc en anglais | Medinova Academy",
+    description:
+      "Cours de programmation pour enfants au Maroc, en anglais et en direct. Scratch, Roblox, Python, développement web et Unity avec Medinova Academy.",
+    date: "2026-09-16",
+    category: "Medinova Academy",
+    readingTime: "8 min de lecture",
+    hero: HERO["english-coding-classes-for-kids-in-morocco"],
+    heroAlt: "Enfants suivant des cours de programmation en ligne en anglais",
+    intro:
+      "Vous recherchez des cours de programmation pour enfants au Maroc, enseignés en anglais ? Medinova Academy propose des cours de programmation en ligne et en direct pour les enfants à partir de 7 ans. Les cours sont dispensés entièrement en anglais et peuvent être suivis depuis Rabat, Casablanca, Marrakech, Tanger, Kénitra ou toute autre ville du Maroc. Comme les cours sont à distance, les enfants vivant à l'étranger peuvent également participer. Medinova Academy fait partie de Medinova Studio, un studio marocain spécialisé dans le développement de jeux vidéo et les technologies numériques. L'Academy associe apprentissage de la programmation, exercices pratiques et réalisation de projets pour permettre aux jeunes apprenants de passer progressivement de la découverte du code à la création de leurs propres projets.",
+    sections: [
+      {
+        heading: "Pourquoi apprendre la programmation en anglais au Maroc ?",
+        body: "Pour de nombreuses familles internationales et expatriées vivant au Maroc, trouver des activités extrascolaires adaptées aux enfants et dispensées entièrement en anglais peut être difficile. Certaines familles recherchent également une formation technologique en anglais pour leurs enfants qui suivent déjà une scolarité internationale ou bilingue. Les cours de programmation pour enfants en anglais permettent alors d'apprendre directement les concepts informatiques dans une langue que l'enfant maîtrise déjà.",
+        bullets: [
+          "aux familles expatriées anglophones vivant au Maroc",
+          "aux familles internationales installées au Maroc",
+          "aux parents marocains qui recherchent des cours de programmation en anglais",
+          "aux enfants qui souhaitent découvrir la programmation dès leur plus jeune âge",
+          "aux familles qui préfèrent une formation en ligne plutôt qu'une école de programmation physique",
+        ],
+        bodyAfter: "Medinova Academy s'adresse notamment à ces familles et propose une formation en ligne accessible depuis le domicile.",
+      },
+      {
+        heading: "Pourquoi apprendre la programmation en anglais ?",
+        body: "L'anglais occupe une place importante dans le monde de la technologie et de la programmation. De nombreux outils de développement, tutoriels, documentations techniques et communautés de développeurs utilisent l'anglais. Pour un enfant qui est déjà à l'aise dans cette langue, apprendre la programmation directement en anglais peut donc faciliter l'accès à de nombreuses ressources technologiques. Chez Medinova Academy, il ne s'agit pas de suivre un cours d'anglais. Il s'agit d'apprendre la programmation en anglais.",
+        bodyAfter: "L'enfant peut ainsi se concentrer sur la logique, la résolution de problèmes, la programmation et la création de projets tout en découvrant progressivement le vocabulaire technique utilisé dans le domaine informatique.",
+      },
+      {
+        heading: "Des cours de programmation en ligne et en direct",
+        body: "Les cours de Medinova Academy sont entièrement à distance. Les enfants peuvent donc apprendre depuis leur domicile, sans avoir besoin de se déplacer dans une école de programmation. Les cours sont en direct, et non simplement constitués de vidéos préenregistrées. Les apprenants suivent les explications, mettent les concepts en pratique et travaillent sur leurs projets au cours de leur parcours. L'apprentissage peut suivre une logique simple : Apprendre puis Pratiquer puis Créer puis Améliorer.",
+        bodyAfter: "L'enfant découvre un nouveau concept, l'utilise dans des exercices, puis l'applique dans un projet. Ce format en ligne permet aux familles de participer depuis différentes régions du Maroc tout en restant accessible aux familles qui vivent à l'étranger.",
+      },
+      {
+        heading: "Que peuvent apprendre les enfants chez Medinova Academy ?",
+        body: "Medinova Academy propose plusieurs parcours liés à la programmation et aux technologies numériques. Le choix du cours dépend notamment de l'âge de l'enfant, de ses centres d'intérêt et de son expérience précédente. Ci-dessous les parcours principaux — tous enseignés en direct et en anglais.",
+      },
+      {
+        heading: "Scratch pour enfants",
+        body: "Scratch offre une première approche visuelle de la programmation. Les enfants peuvent utiliser des blocs de programmation pour créer des projets interactifs et découvrir progressivement des concepts tels que les séquences, les boucles, les conditions et les variables.",
+        bodyAfter: "Scratch permet également d'explorer la création de jeux et les histoires interactives. Pour un enfant qui découvre la programmation, cette approche permet de comprendre les bases du code en créant directement des projets qu'il peut voir fonctionner.",
+        image: "/images/academy/scratch.webp",
+        imageAlt: "Cours Scratch pour enfants à Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Création de jeux avec Roblox",
+        body: "Les enfants qui aiment les jeux vidéo peuvent découvrir la programmation avec Roblox Studio. Roblox permet de combiner créativité, conception de jeux et programmation afin de créer des expériences interactives.",
+        bodyAfter: "Selon le niveau du cours, les apprenants peuvent travailler avec Roblox Studio et le langage Lua pour comprendre comment le code peut contrôler des objets, des interactions et des éléments de gameplay. Pour les enfants qui jouent déjà à Roblox, la création de leurs propres expériences peut être une manière concrète de découvrir ce qui se passe derrière un jeu.",
+        image: "/images/academy/roblox.webp",
+        imageAlt: "Cours Roblox pour enfants à Medinova Academy",
+        imagePosition: "right",
+      },
+      {
+        heading: "Programmation Python",
+        body: "Python permet aux apprenants de passer progressivement à la programmation textuelle. Les enfants peuvent commencer à écrire du véritable code et découvrir des concepts comme les variables, les conditions, les boucles, les fonctions et la résolution de problèmes.",
+        bodyAfter: "Python constitue également une base intéressante pour les apprenants qui souhaitent continuer à développer leurs compétences en programmation au-delà des environnements de programmation visuelle.",
+        image: "/images/academy/python.webp",
+        imageAlt: "Cours Python pour enfants à Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Développement web",
+        body: "Les enfants intéressés par les sites internet peuvent découvrir comment les pages et applications web sont créées.",
+        bullets: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        bodyAfter: "L'objectif est d'utiliser ces technologies dans des projets pratiques plutôt que de simplement mémoriser des définitions ou de la syntaxe.",
+        image: "/images/academy/web-development.webp",
+        imageAlt: "Cours développement web pour enfants à Medinova Academy",
+        imagePosition: "right",
+      },
+      {
+        heading: "Unity et C#",
+        body: "Pour les apprenants qui souhaitent aller plus loin dans le développement de jeux vidéo, Unity et C# permettent de découvrir un environnement de développement plus avancé. Les élèves peuvent apprendre les bases de la programmation en C# tout en utilisant Unity pour créer des projets de jeux en 2D et en 3D.",
+        bodyAfter: "Selon leur niveau, les projets peuvent permettre d'explorer la programmation du gameplay, les interactions et différents systèmes de jeu.",
+        image: "/images/academy/unity.webp",
+        imageAlt: "Cours Unity et C# pour enfants à Medinova Academy",
+        imagePosition: "left",
+      },
+      {
+        heading: "Apprendre en créant des projets",
+        body: "Apprendre la programmation devient plus concret lorsque l'enfant peut utiliser ses connaissances pour créer quelque chose. Chez Medinova Academy, l'approche par projets permet aux apprenants d'appliquer les concepts étudiés dans des réalisations pratiques.",
+        bodyAfter: "Un élève peut créer un projet interactif avec Scratch, développer une expérience Roblox, programmer un projet en Python, créer un site web ou développer un jeu avec Unity. Les projets permettent également aux enfants de voir concrètement leurs progrès au fur et à mesure qu'ils développent leurs compétences. L'objectif n'est pas uniquement de terminer des leçons. Il s'agit progressivement d'apprendre à comprendre un problème, rechercher des solutions, écrire du code et transformer une idée en projet fonctionnel.",
+      },
+      {
+        heading: "Apprendre avec un véritable studio de développement",
+        body: "Medinova Academy est opérée par Medinova Studio, un studio marocain actif dans le développement de jeux vidéo et les technologies numériques. Cette connexion avec un studio de développement donne à l'Academy une orientation pratique. Les apprenants découvrent la programmation dans le contexte de projets numériques tels que les jeux vidéo, les sites web et les applications.",
+        bodyAfter: "Pour les enfants qui s'intéressent à la technologie ou au développement de jeux, cela permet de faire le lien entre l'apprentissage de la programmation et la création de projets numériques.",
+      },
+      {
+        heading: "Cours de programmation en ligne pour enfants au Maroc",
+        body: "Les familles à la recherche de cours de programmation pour enfants au Maroc peuvent rejoindre Medinova Academy à distance. Les enfants qui vivent à Rabat, Casablanca, Marrakech, Tanger, Kénitra ou dans d'autres villes marocaines peuvent suivre les cours depuis leur domicile.",
+        bodyAfter: "Il n'est donc pas nécessaire de se déplacer dans une école de programmation physique. Les familles peuvent accéder à des cours de programmation en direct en ligne lorsqu'un cours et un horaire adaptés sont disponibles. Ce format peut être particulièrement intéressant pour les familles qui recherchent des cours de programmation en anglais au Maroc, sans être limitées aux établissements disponibles dans leur ville.",
+      },
+      {
+        heading: "Cours de programmation pour enfants expatriés et familles internationales",
+        body: "Medinova Academy est également adaptée aux familles qui souhaitent que leurs enfants apprennent les technologies en anglais. Pour les familles expatriées vivant au Maroc, les cours en ligne permettent d'accéder à une formation en programmation dispensée en anglais sans devoir trouver une école physique proposant ce type d'enseignement à proximité.",
+        bodyAfter: "Le format à distance ne limite pas non plus les cours au Maroc. Les familles vivant dans d'autres pays peuvent également participer lorsque le cours et l'horaire correspondent à leurs besoins.",
+      },
+      {
+        heading: "Mon enfant doit-il déjà savoir programmer ?",
+        body: "Pas nécessairement. Medinova Academy propose différentes possibilités d'apprentissage selon le niveau et l'expérience de l'apprenant. Le choix du cours dépend notamment de l'âge, des centres d'intérêt et de l'expérience précédente de l'enfant.",
+        bodyAfter: "Un enfant qui aime créer des jeux peut être intéressé par Roblox ou Unity, tandis qu'un autre peut préférer l'approche visuelle de Scratch ou la programmation textuelle avec Python. Les parents peuvent échanger avec Medinova Academy afin d'identifier le parcours correspondant le mieux au profil de leur enfant.",
+      },
+      {
+        heading: "Comment fonctionne la séance d'essai gratuite ?",
+        body: "Avant de commencer des cours réguliers, il peut être utile pour l'enfant de découvrir directement le fonctionnement des cours en ligne. Medinova Academy propose une séance d'essai gratuite aux apprenants intéressés. Le processus est simple :",
+        steps: [
+          "Contactez Medinova Academy et indiquez l'âge et les centres d'intérêt de votre enfant.",
+          "Échangez sur son expérience actuelle et sur le cours qui pourrait lui correspondre.",
+          "Participez à une séance d'essai gratuite.",
+          "Si l'enfant souhaite continuer, il peut être ajouté au groupe d'apprenants correspondant.",
+          "Les cours réguliers peuvent commencer lorsque le groupe approprié est prêt.",
+        ],
+        bodyAfter: "La séance d'essai permet aux parents et aux enfants de découvrir le fonctionnement des cours avant de commencer un programme régulier.",
+      },
+      {
+        heading: "Questions fréquentes",
+        body: "Réponses aux questions les plus fréquentes des parents concernant les cours de programmation en anglais au Maroc.",
+      },
+      {
+        heading: "Les cours de programmation sont-ils enseignés en anglais ?",
+        body: "Oui. Les cours concernés par ce programme sont enseignés en anglais et sont donc adaptés aux familles anglophones et internationales.",
+      },
+      {
+        heading: "Les cours sont-ils entièrement en ligne ?",
+        body: "Oui. Medinova Academy propose des cours de programmation en direct à distance, que les enfants peuvent suivre depuis leur domicile.",
+      },
+      {
+        heading: "Mon enfant habite au Maroc. Peut-il participer ?",
+        body: "Oui. Les enfants vivant à Rabat, Casablanca, Marrakech, Tanger, Kénitra et dans d'autres régions du Maroc peuvent participer lorsque le cours et l'horaire appropriés sont disponibles.",
+      },
+      {
+        heading: "Un enfant vivant à l'étranger peut-il participer ?",
+        body: "Oui. Le format en ligne permet également aux familles vivant hors du Maroc de participer lorsque le cours et l'horaire correspondent à leurs besoins.",
+      },
+      {
+        heading: "À partir de quel âge peut-on commencer ?",
+        body: "Medinova Academy propose des possibilités d'apprentissage à partir de 7 ans, avec différents cours adaptés aux âges et niveaux des apprenants.",
+      },
+      {
+        heading: "Mon enfant doit-il avoir une expérience en programmation ?",
+        body: "Pas nécessairement. Certaines options conviennent aux débutants, tandis que d'autres peuvent être plus adaptées aux enfants ayant déjà une expérience en programmation.",
+      },
+      {
+        heading: "Quel cours choisir pour commencer ?",
+        body: "Il n'existe pas un seul cours adapté à tous les enfants. Scratch, Roblox, Python, le développement web et Unity et C# proposent des expériences différentes. L'âge, les centres d'intérêt et l'expérience de l'enfant doivent être pris en compte.",
+      },
+      {
+        heading: "Comment participer à une séance d'essai ?",
+        body: "Contactez Medinova Academy pour discuter des besoins de votre enfant et organiser une séance d'essai gratuite.",
+      },
+      {
+        heading: "Commencer la programmation en ligne en anglais",
+        body: "Pour les familles au Maroc qui recherchent des cours de programmation pour enfants en anglais, Medinova Academy propose une solution d'apprentissage en ligne et en direct accessible depuis la maison. Le même format à distance permet également aux apprenants situés en dehors du Maroc de participer lorsque les conditions sont adaptées. De Scratch et Roblox à Python, au développement web et à Unity et C#, les enfants peuvent découvrir différents domaines de la technologie et trouver celui qui correspond le mieux à leurs intérêts.",
+        bodyAfter: "Découvrez Medinova Academy et contactez-nous pour organiser une séance d'essai gratuite pour votre enfant.",
+      },
+    ],
+    course: {
+      slug: "scratch",
+      label: "Scratch pour Enfants (7+)",
+      body: "Programmation visuelle avec Scratch dès 7 ans — logique, histoires et jeux en anglais, en direct depuis le Maroc ou à distance.",
+    },
+    related: ["coding-courses-for-kids-in-morocco-online-and-live", "what-age-should-kids-start-coding", "what-is-scratch"],
+  },
 ];
 
 const AR: BlogPost[] = [
@@ -1336,6 +1708,172 @@ const AR: BlogPost[] = [
       slug: "digital-essentials",
       label: "أساسيات الحاسوب (7+)",
       body: "أساسيات الحاسوب وWord وExcel وPowerPoint والاستخدام الآمن للإنترنت — أساس كل مسار آخر (7+).",
+    },
+    related: ["what-age-should-kids-start-coding", "what-is-scratch"],
+  },
+  {
+    slug: "english-coding-classes-for-kids-in-morocco",
+    title: "دروس البرمجة للأطفال في المغرب باللغة الإنجليزية | أكاديمية Medinova",
+    description:
+      "دروس برمجة للأطفال في المغرب باللغة الإنجليزية، مباشرة عبر الإنترنت. Scratch وRoblox وPython وتطوير المواقع وUnity مع أكاديمية Medinova.",
+    date: "2026-09-16",
+    category: "أكاديمية Medinova",
+    readingTime: "8 دقائق قراءة",
+    hero: HERO["english-coding-classes-for-kids-in-morocco"],
+    heroAlt: "أطفال يتابعون دروس برمجة مباشرة عبر الإنترنت باللغة الإنجليزية",
+    intro:
+      "هل تبحث عن دروس البرمجة للأطفال في المغرب يتم تقديمها باللغة الإنجليزية؟ تقدم أكاديمية Medinova دروسًا مباشرة في البرمجة للأطفال ابتداءً من سن 7 سنوات، عبر الإنترنت وباللغة الإنجليزية. سواء كان طفلك يعيش في الرباط أو الدار البيضاء أو مراكش أو طنجة أو القنيطرة أو في مدينة أخرى داخل المغرب، يمكنه متابعة الدروس من المنزل. وبما أن الدروس تُقدَّم عن بُعد، يمكن أيضًا للأطفال المقيمين خارج المغرب المشاركة فيها. أكاديمية Medinova هي جزء من Medinova Studio، وهو استوديو مغربي يعمل في مجال تطوير الألعاب والتكنولوجيا الرقمية. تجمع الأكاديمية بين التعليم المباشر والتطبيق العملي وإنجاز المشاريع، لمساعدة الأطفال على الانتقال من فهم أساسيات البرمجة إلى إنشاء مشاريعهم الخاصة.",
+    sections: [
+      {
+        heading: "لماذا يبحث الآباء في المغرب عن دروس البرمجة باللغة الإنجليزية؟",
+        body: "قد يكون العثور على أنشطة تعليمية إضافية مناسبة للأطفال ويتم تقديمها بالكامل باللغة الإنجليزية أمرًا صعبًا بالنسبة لبعض العائلات الدولية والمغتربين المقيمين في المغرب. كما تبحث بعض العائلات المغربية عن تعليم البرمجة باللغة الإنجليزية لأطفالها، خصوصًا عندما يكون الطفل معتادًا على الدراسة باللغة الإنجليزية أو يدرس في مؤسسة تعليمية دولية أو ثنائية اللغة. توفر أكاديمية Medinova خيارًا عبر الإنترنت للعائلات التي تبحث عن دروس البرمجة للأطفال باللغة الإنجليزية في المغرب.",
+        bullets: [
+          "العائلات الناطقة بالإنجليزية والمقيمة في المغرب",
+          "العائلات الدولية والمغتربين المقيمين في المغرب",
+          "الآباء المغاربة الذين يبحثون عن تعليم البرمجة باللغة الإنجليزية",
+          "الأطفال الذين يرغبون في اكتشاف البرمجة والتكنولوجيا في سن مبكرة",
+          "العائلات التي تفضل التعلم عن بُعد بدلًا من الالتحاق بأكاديمية برمجة حضورية",
+        ],
+        bodyAfter: "وتناسب هذه الدروس بشكل خاص هذه العائلات.",
+      },
+      {
+        heading: "لماذا يتعلم الطفل البرمجة باللغة الإنجليزية؟",
+        body: "تحتل اللغة الإنجليزية مكانة مهمة في عالم التكنولوجيا والبرمجة. فالعديد من أدوات البرمجة والوثائق التقنية والدروس التعليمية والمجتمعات التقنية تستخدم اللغة الإنجليزية. وبالنسبة للطفل الذي يجيد الإنجليزية بالفعل، فإن تعلم البرمجة باللغة نفسها يمكن أن يساعده على فهم المصطلحات التقنية والتعامل مع العديد من المصادر المتاحة على الإنترنت. لكن الهدف في أكاديمية Medinova ليس تدريس اللغة الإنجليزية من خلال البرمجة. الهدف هو تعليم البرمجة باللغة الإنجليزية.",
+        bodyAfter: "وبذلك يستطيع الطفل التركيز على المنطق وحل المشكلات والبرمجة وإنشاء المشاريع، مع اكتساب المفردات التقنية المستخدمة في مجال التكنولوجيا.",
+      },
+      {
+        heading: "دروس برمجة مباشرة عبر الإنترنت من المنزل",
+        body: "تُقدَّم دورات البرمجة في أكاديمية Medinova عن بُعد، مما يسمح للأطفال بالتعلم من المنزل دون الحاجة إلى التنقل إلى أكاديمية حضورية. الدروس مباشرة وليست مجرد فيديوهات مسجلة. يتابع المتعلم الشرح، ويطبق المفاهيم الجديدة، ويعمل على المشاريع خلال عملية التعلم. يمكن أن يسير التعلم وفق خطوات بسيطة: تعلّم ثم طبّق ثم أنشئ ثم طوّر.",
+        bodyAfter: "يتعلم الطفل مفهومًا جديدًا، ثم يستخدمه في تمارين عملية، وبعد ذلك يطبقه لإنشاء مشروع. كما يتيح التعليم عبر الإنترنت للعائلات في مختلف مناطق المغرب الوصول إلى الدروس، مع إمكانية مشاركة الأطفال المقيمين خارج المغرب عندما تتوفر الدورة والموعد المناسبان.",
+      },
+      {
+        heading: "ماذا يمكن للأطفال أن يتعلموا في أكاديمية Medinova؟",
+        body: "توفر أكاديمية Medinova مجموعة من مسارات تعلم البرمجة والتكنولوجيا للأطفال. ويعتمد اختيار الدورة المناسبة على عمر الطفل واهتماماته ومستوى خبرته السابقة. فيما يلي المسارات الأساسية — جميعها مباشرة وباللغة الإنجليزية.",
+      },
+      {
+        heading: "Scratch للأطفال",
+        body: "يوفر Scratch طريقة مرئية ومبسطة لاكتشاف أساسيات البرمجة. يستخدم الأطفال كتل البرمجة لإنشاء مشاريع تفاعلية، ويتعرفون تدريجيًا على مفاهيم مثل التسلسل والتكرار والشروط والمتغيرات.",
+        bodyAfter: "كما يمكن استخدام Scratch لإنشاء الألعاب والقصص التفاعلية. وبالنسبة للطفل الذي يكتشف البرمجة للمرة الأولى، تساعد هذه الطريقة على فهم كيفية عمل التعليمات البرمجية من خلال إنشاء مشاريع يمكنه رؤيتها وتجربتها بنفسه.",
+        image: "/images/academy/scratch.webp",
+        imageAlt: "دروس Scratch للأطفال في أكاديمية Medinova",
+        imagePosition: "left",
+      },
+      {
+        heading: "تطوير الألعاب باستخدام Roblox",
+        body: "يمكن للأطفال المهتمين بالألعاب اكتشاف البرمجة من خلال Roblox Studio. يتيح Roblox الجمع بين الإبداع وتصميم الألعاب والبرمجة لإنشاء تجارب تفاعلية.",
+        bodyAfter: "وبحسب مستوى الدورة، يمكن للمتعلمين استخدام Roblox Studio وبرمجة Lua لفهم كيفية استخدام التعليمات البرمجية للتحكم في العناصر والتفاعلات وأجزاء مختلفة من اللعبة. وبالنسبة للأطفال الذين يستمتعون بلعب Roblox، فإن إنشاء تجاربهم الخاصة يمكن أن يكون طريقة عملية لاكتشاف البرمجة.",
+        image: "/images/academy/roblox.webp",
+        imageAlt: "دروس تطوير ألعاب Roblox للأطفال في أكاديمية Medinova",
+        imagePosition: "right",
+      },
+      {
+        heading: "برمجة Python",
+        body: "تقدم Python للأطفال البرمجة النصية، حيث يبدأ المتعلم في كتابة التعليمات البرمجية بدلًا من الاعتماد فقط على بيئات البرمجة المرئية. يمكن للمتعلمين اكتشاف مفاهيم مثل المتغيرات والشروط والحلقات والدوال وحل المشكلات.",
+        bodyAfter: "كما توفر Python أساسًا جيدًا للمتعلمين الذين يرغبون في مواصلة تطوير مهاراتهم في البرمجة والانتقال إلى مشاريع أكثر تقدمًا.",
+        image: "/images/academy/python.webp",
+        imageAlt: "دروس Python للأطفال في أكاديمية Medinova",
+        imagePosition: "left",
+      },
+      {
+        heading: "تطوير المواقع",
+        body: "يمكن للأطفال المهتمين بالمواقع الإلكترونية اكتشاف كيفية إنشاء صفحات الويب وتطبيقات الويب.",
+        bullets: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        bodyAfter: "ويركز التعلم على استخدام هذه التقنيات في مشاريع عملية، وليس فقط على حفظ التعريفات أو قواعد الكتابة البرمجية.",
+        image: "/images/academy/web-development.webp",
+        imageAlt: "دروس تطوير المواقع للأطفال في أكاديمية Medinova",
+        imagePosition: "right",
+      },
+      {
+        heading: "Unity و C#",
+        body: "بالنسبة للأطفال المهتمين بتطوير الألعاب، توفر Unity وC# فرصة لاكتشاف بيئة أكثر تقدمًا لتطوير الألعاب. يمكن للمتعلمين تعلم البرمجة باستخدام C# مع استخدام Unity لإنشاء مشاريع ألعاب ثنائية وثلاثية الأبعاد.",
+        bodyAfter: "وبحسب مستوى المتعلم، يمكن للمشاريع أن تتناول البرمجة الخاصة بطريقة اللعب والتفاعلات وأنظمة الألعاب المختلفة.",
+        image: "/images/academy/unity.webp",
+        imageAlt: "دروس Unity وC# للأطفال في أكاديمية Medinova",
+        imagePosition: "left",
+      },
+      {
+        heading: "تعلم البرمجة من خلال المشاريع",
+        body: "يصبح تعلم البرمجة أكثر وضوحًا عندما يستطيع الطفل استخدام ما تعلمه لإنشاء شيء خاص به. في أكاديمية Medinova، تساعد طريقة التعلم القائمة على المشاريع المتعلمين على تطبيق المفاهيم البرمجية من خلال أعمال عملية.",
+        bodyAfter: "قد يقوم المتعلم بإنشاء مشروع تفاعلي باستخدام Scratch، أو تطوير تجربة في Roblox، أو كتابة برنامج باستخدام Python، أو إنشاء موقع إلكتروني، أو تطوير لعبة باستخدام Unity. تمنح المشاريع الطفل هدفًا عمليًا للعمل عليه، كما تساعده على رؤية تطوره مع مرور الوقت. فالهدف ليس فقط إنهاء الدروس، بل تطوير القدرة تدريجيًا على فهم المشكلة، وتجربة الحلول، وكتابة التعليمات البرمجية، وتحويل الفكرة إلى مشروع يعمل.",
+      },
+      {
+        heading: "تعلم البرمجة من خلال استوديو حقيقي لتطوير الألعاب والتكنولوجيا",
+        body: "أكاديمية Medinova تابعة لـ Medinova Studio، وهو استوديو مغربي يعمل في مجال تطوير الألعاب والتكنولوجيا الرقمية. يساعد هذا الارتباط بالاستوديو على إعطاء التعليم توجهًا عمليًا. يتعلم الأطفال البرمجة في سياق مشاريع رقمية مثل الألعاب والمواقع والتطبيقات.",
+        bodyAfter: "وبالنسبة للأطفال المهتمين بالتكنولوجيا أو تطوير الألعاب، يساعد ذلك على الربط بين تعلم البرمجة وإنشاء مشاريع رقمية خاصة بهم.",
+      },
+      {
+        heading: "دورات البرمجة للأطفال عبر الإنترنت في المغرب",
+        body: "يمكن للعائلات التي تبحث عن دروس البرمجة للأطفال في المغرب الالتحاق بأكاديمية Medinova عن بُعد. وبما أن الدروس تُقدَّم عبر الإنترنت، يمكن للأطفال في الرباط والدار البيضاء ومراكش وطنجة والقنيطرة وغيرها من المدن المغربية المشاركة من المنزل.",
+        bodyAfter: "لا يحتاج الطفل إلى التنقل إلى مدرسة برمجة حضورية. ويمكن للعائلات الوصول إلى تعليم البرمجة المباشر عبر الإنترنت عندما تتوفر الدورة والجدول المناسبان. ويكون هذا الخيار مفيدًا بشكل خاص للعائلات التي تبحث عن تعليم البرمجة باللغة الإنجليزية في المغرب ولا تريد أن تقتصر خياراتها على المؤسسات الموجودة في منطقتها.",
+      },
+      {
+        heading: "دروس البرمجة للأطفال من العائلات الدولية والمغتربين",
+        body: "تم تصميم أكاديمية Medinova لتكون مناسبة للعائلات التي ترغب في أن يتعلم أطفالها التكنولوجيا باللغة الإنجليزية. بالنسبة للعائلات الأجنبية والمغتربين المقيمين في المغرب، يوفر التعلم عبر الإنترنت إمكانية الوصول إلى تعليم البرمجة باللغة الإنجليزية دون الحاجة إلى العثور على مدرسة حضورية تقدم هذا النوع من التعليم بالقرب منهم.",
+        bodyAfter: "كما أن التعليم عن بُعد لا يقتصر على المغرب. يمكن للعائلات المقيمة في بلدان أخرى أيضًا المشاركة عندما تكون الدورة والموعد المناسبان متاحين.",
+      },
+      {
+        heading: "هل يحتاج طفلي إلى معرفة سابقة بالبرمجة؟",
+        body: "ليس بالضرورة. توفر أكاديمية Medinova خيارات تعليمية لمتعلمين بمستويات مختلفة من الخبرة. ويعتمد اختيار نقطة البداية المناسبة على عمر الطفل واهتماماته وخبرته السابقة في البرمجة.",
+        bodyAfter: "قد يهتم الطفل الذي يحب الألعاب بـ Roblox أو Unity، بينما قد يفضل طفل آخر الطريقة المرئية التي يقدمها Scratch أو البرمجة النصية باستخدام Python. يمكن للآباء التواصل مع أكاديمية Medinova لمناقشة اهتمامات الطفل وخبرته واختيار الدورة المناسبة له.",
+      },
+      {
+        heading: "كيف تعمل الحصة التجريبية المجانية؟",
+        body: "قبل البدء في دورة منتظمة، من المفيد أن يحصل الطفل على فرصة للتعرف على طريقة التعلم أولًا. تقدم أكاديمية Medinova حصة تجريبية مجانية للمتعلمين المهتمين. العملية بسيطة:",
+        steps: [
+          "تواصل مع أكاديمية Medinova وأخبرنا بعمر طفلك واهتماماته.",
+          "ناقش خبرته الحالية والدورة التي قد تكون مناسبة له.",
+          "شارك في الحصة التجريبية المجانية.",
+          "إذا رغب الطفل في الاستمرار، يمكن إضافته إلى مجموعة المتعلمين المناسبة.",
+          "تبدأ الدروس المنتظمة عندما تصبح المجموعة المناسبة جاهزة.",
+        ],
+        bodyAfter: "تتيح الحصة التجريبية للطفل ووالديه التعرف على طريقة عمل الدروس قبل الالتزام ببرنامج منتظم.",
+      },
+      {
+        heading: "الأسئلة الشائعة",
+        body: "إجابات على الأسئلة الأكثر شيوعًا حول دروس البرمجة باللغة الإنجليزية في المغرب.",
+      },
+      {
+        heading: "هل يتم تدريس البرمجة باللغة الإنجليزية؟",
+        body: "نعم. يتم تقديم دورات البرمجة ضمن هذا البرنامج باللغة الإنجليزية، مما يجعلها مناسبة للعائلات الناطقة بالإنجليزية والعائلات الدولية.",
+      },
+      {
+        heading: "هل الدروس عبر الإنترنت؟",
+        body: "نعم. تقدم أكاديمية Medinova دروس برمجة مباشرة عن بُعد يمكن للأطفال متابعتها من المنزل.",
+      },
+      {
+        heading: "هل يمكن للأطفال في المغرب المشاركة؟",
+        body: "نعم. يمكن للأطفال في الرباط والدار البيضاء ومراكش وطنجة والقنيطرة وغيرها من مناطق المغرب المشاركة عندما تتوفر الدورة والموعد المناسبان.",
+      },
+      {
+        heading: "هل يمكن لطفل يعيش خارج المغرب المشاركة؟",
+        body: "نعم. بما أن الدروس تُقدَّم عن بُعد، يمكن للعائلات خارج المغرب المشاركة أيضًا عندما يكون موعد الدورة مناسبًا.",
+      },
+      {
+        heading: "ما العمر المناسب لبدء تعلم البرمجة؟",
+        body: "توفر أكاديمية Medinova فرصًا لتعلم البرمجة ابتداءً من سن 7 سنوات، مع وجود دورات مختلفة تناسب أعمارًا ومستويات مختلفة.",
+      },
+      {
+        heading: "هل يحتاج طفلي إلى خبرة سابقة في البرمجة؟",
+        body: "ليس بالضرورة. توجد خيارات مناسبة للمبتدئين، بينما قد تكون بعض الدورات الأخرى أكثر ملاءمة للمتعلمين الذين لديهم خبرة سابقة.",
+      },
+      {
+        heading: "ما الدورة المناسبة لطفلي؟",
+        body: "لا توجد دورة واحدة مناسبة لجميع الأطفال. يقدم Scratch وRoblox وPython وتطوير المواقع وUnity وC# تجارب تعليمية مختلفة. لذلك ينبغي مراعاة عمر الطفل واهتماماته وخبرته السابقة عند اختيار نقطة البداية.",
+      },
+      {
+        heading: "كيف يمكن لطفلي تجربة إحدى الدورات؟",
+        body: "يمكنك التواصل مع أكاديمية Medinova لمناقشة اهتمامات طفلك وترتيب حصة تجريبية مجانية.",
+      },
+      {
+        heading: "ابدأ تعلم البرمجة عبر الإنترنت باللغة الإنجليزية",
+        body: "بالنسبة للعائلات في المغرب التي تبحث عن دروس البرمجة للأطفال باللغة الإنجليزية، توفر أكاديمية Medinova خيارًا للتعلم المباشر عبر الإنترنت من المنزل. كما يسمح هذا النموذج عن بُعد للأطفال المقيمين خارج المغرب بالمشاركة عندما تتوفر الدورة والموعد المناسبان. من Scratch وRoblox إلى Python وتطوير المواقع وUnity وC#، يمكن للأطفال اكتشاف مجالات مختلفة من التكنولوجيا ومعرفة المجال الذي يناسب اهتماماتهم.",
+        bodyAfter: "اكتشف أكاديمية Medinova وتواصل معنا لترتيب حصة تجريبية مجانية لطفلك.",
+      },
+    ],
+    course: {
+      slug: "scratch",
+      label: "Scratch للأطفال (7+)",
+      body: "برمجة مرئية بـ Scratch ابتداءً من 7 سنوات — منطق وقصص وألعاب باللغة الإنجليزية، مباشرة عبر الإنترنت من المغرب أو عن بُعد.",
     },
     related: ["what-age-should-kids-start-coding", "what-is-scratch"],
   },
