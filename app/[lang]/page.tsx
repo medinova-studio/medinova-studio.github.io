@@ -15,7 +15,10 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
-  return buildPageMetadata(lang as Lang, "/");
+  return {
+    ...buildPageMetadata(lang as Lang, "/"),
+    other: { "facebook-domain-verification": "wqln9uez3l7avnk66723b3d9zfkrci" },
+  };
 }
 
 export default async function Home() {
