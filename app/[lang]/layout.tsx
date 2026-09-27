@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Head from "next/head";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
@@ -60,6 +61,9 @@ export default async function RootLayout({
 
   return (
     <html lang={l} dir={isRTL ? "rtl" : "ltr"} className="scroll-smooth">
+      <Head>
+        <meta name="facebook-domain-verification" content="wqln9uez3l7avnk66723b3d9zfkrci" />
+      </Head>
       <body
         className={`${geist.variable} ${jakarta.variable} ${geistMono.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
       >
