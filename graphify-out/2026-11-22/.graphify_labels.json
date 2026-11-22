@@ -1,10 +1,9 @@
 {
-  "0": "game-development/page.tsx",
+  "0": "useLang",
   "1": "compilerOptions",
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "useLang",
   "6": "academy/page.tsx",
   "7": "vercel.json",
   "8": "graphify.js",
@@ -27,8 +26,9 @@
   "25": "og.tsx",
   "26": "optimize-images.mjs",
   "27": "generate-icons.mjs",
+  "28": "Footer.tsx",
   "30": "blog/[slug]/page.tsx",
-  "31": "LanguageContext.tsx",
+  "31": "i18n.ts",
   "32": "next",
   "33": "next-sitemap"
 }

@@ -48,14 +48,14 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1795372540.9791439,
-    "seen": 1795372591.2885265,
-    "ast_hash": "b1c8376014e6b53dec6110b902202f45",
+    "mtime": 1795375854.3931522,
+    "seen": 1795377390.4177735,
+    "ast_hash": "ba6472145025846367e0b877d3f2a766",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1795373035.1194377,
-    "seen": 1795373599.4487083,
+    "mtime": 1795378166.579214,
+    "seen": 1795378345.564107,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -114,8 +114,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1791389470.1078591,
-    "seen": 1791389528.0041008,
+    "mtime": 1795378391.4098153,
+    "seen": 1795378406.9316237,
     "ast_hash": "57c028273e9cc265d8c6fc708f1f8bf6",
     "semantic_hash": ""
   },
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795375018.2128284,
-    "seen": 1795375470.5851061,
+    "mtime": 1795378179.7069323,
+    "seen": 1795378345.5643084,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -720,9 +720,9 @@
     "semantic_hash": ""
   },
   "components/LanguageSuggestion.tsx": {
-    "mtime": 1787502018.768744,
-    "seen": 1791234832.2580142,
-    "ast_hash": "03497dfd27c9be52883efa9a3423b07a",
+    "mtime": 1795378129.1380332,
+    "seen": 1795378154.3543463,
+    "ast_hash": "f0278d85c13d481f845ad3c4cd52554c",
     "semantic_hash": ""
   },
   "scripts/generate-icons.mjs": {
@@ -870,15 +870,15 @@
     "semantic_hash": ""
   },
   "components/CookieConsent.tsx": {
-    "mtime": 1795372248.3768778,
-    "seen": 1795372397.6956084,
-    "ast_hash": "40b16296f2b5a00130b9cceebb9ec853",
+    "mtime": 1795378137.9199314,
+    "seen": 1795378154.3543255,
+    "ast_hash": "df67791d430764d50c697c228eafa6d2",
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795375440.036857,
-    "seen": 1795375470.5850286,
-    "ast_hash": "d34e6d63249a8c44674e95a45b02c38a",
+    "mtime": 1795378327.4233258,
+    "seen": 1795378345.564084,
+    "ast_hash": "8ca8ae8d8fbd0c484385cf0230e4ce39",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795375412.0863595,
-    "seen": 1795375470.5850365,
-    "ast_hash": "a7cfc7611847abca2e2f85d0ab4fde0c",
+    "mtime": 1795378364.8127184,
+    "seen": 1795378406.9315274,
+    "ast_hash": "8246f4a9a1fb31495449a8c8a66df09d",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -927,6 +927,120 @@
     "mtime": 1795375432.2285235,
     "seen": 1795375470.5851364,
     "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-leonida-pc-project.svg": {
+    "mtime": 1795377347.8518028,
+    "seen": 1795377390.417881,
+    "ast_hash": "b0c6e6dc5b3ebdba0c4aacdc56e87e1b",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-06-55-618Z.yml": {
+    "mtime": 1795378015.620592,
+    "seen": 1795378154.3544962,
+    "ast_hash": "cf82e476a5e1ebb95d25a95574967f02",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-07-18-212Z.yml": {
+    "mtime": 1795378038.214123,
+    "seen": 1795378154.3544981,
+    "ast_hash": "ad5346e07327eab78df40a2c6a29bebe",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-07-45-386Z.yml": {
+    "mtime": 1795378065.388461,
+    "seen": 1795378154.3544996,
+    "ast_hash": "ba15c102bf2536c3619d6aa1a1ba91d8",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-08-00-041Z.yml": {
+    "mtime": 1795378080.0456755,
+    "seen": 1795378154.354501,
+    "ast_hash": "ffa0ac25d3363dd47fbfafb1bc733cb8",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-08-29-701Z.yml": {
+    "mtime": 1795378109.7032418,
+    "seen": 1795378154.354503,
+    "ast_hash": "be5344d080b71816388e30f4e7d5433c",
+    "semantic_hash": ""
+  },
+  "mobile-en-article-overlay.png": {
+    "mtime": 1795378086.1670506,
+    "seen": 1795378154.354537,
+    "ast_hash": "73928f52c5a763b2e1e792fe6489107a",
+    "semantic_hash": ""
+  },
+  "mobile-en-article.png": {
+    "mtime": 1795378111.9065306,
+    "seen": 1795378154.354539,
+    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
+    "semantic_hash": ""
+  },
+  "mobile-en-blog-production.png": {
+    "mtime": 1795378069.891909,
+    "seen": 1795378154.3545408,
+    "ast_hash": "9c956abcd05483357a921634636118e8",
+    "semantic_hash": ""
+  },
+  "mobile-en-blog.png": {
+    "mtime": 1795378021.2758162,
+    "seen": 1795378154.3545423,
+    "ast_hash": "e55ae1b3125e57cd993fae18c2f2e6f5",
+    "semantic_hash": ""
+  },
+  "mobile-en-gta-port.png": {
+    "mtime": 1795378040.8728137,
+    "seen": 1795378154.3545442,
+    "ast_hash": "43264e540ef7e45439023d66f0fd012f",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-09-48-283Z.yml": {
+    "mtime": 1795378188.2854893,
+    "seen": 1795378345.5642774,
+    "ast_hash": "ea688048081a6cb4c985421d85fd3073",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-10-06-579Z.yml": {
+    "mtime": 1795378206.5823662,
+    "seen": 1795378345.5642798,
+    "ast_hash": "97bc04faff902cf37f3c0aa06bacdac6",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-10-17-335Z.yml": {
+    "mtime": 1795378217.3376193,
+    "seen": 1795378345.564282,
+    "ast_hash": "a091dd2d331e923c986a3b10b4826b63",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-10-29-066Z.yml": {
+    "mtime": 1795378229.0687673,
+    "seen": 1795378345.5642836,
+    "ast_hash": "253d0fdf93304febd4b56a1eed95d7ea",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-11-22T20-10-35-206Z.yml": {
+    "mtime": 1795378235.2085378,
+    "seen": 1795378345.5642855,
+    "ast_hash": "f5df405310dedb400cbafc681d6ca2ad",
+    "semantic_hash": ""
+  },
+  "gta-port-cover-mobile.png": {
+    "mtime": 1795378237.6500523,
+    "seen": 1795378345.5643148,
+    "ast_hash": "bad97c51583f964b136febe94d2c1af0",
+    "semantic_hash": ""
+  },
+  "mobile-cookie-after-language.png": {
+    "mtime": 1795378231.7522647,
+    "seen": 1795378345.5643167,
+    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
+    "semantic_hash": ""
+  },
+  "mobile-en-article-production.png": {
+    "mtime": 1795378197.6594596,
+    "seen": 1795378345.5643208,
+    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
     "semantic_hash": ""
   }
 }

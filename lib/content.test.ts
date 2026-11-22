@@ -74,7 +74,7 @@ describe("content catalog consistency", () => {
           expect(post?.hero).toBe("/images/blog/gta-6-editions-guide.svg");
           expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
         } else if (slug === "gta-6-online-multiplayer-status") {
-          expect(post?.hero).toBe("/images/blog/gta-6-single-player-guide.svg");
+          expect(post?.hero).toBe("/images/blog/gta-6-online-multiplayer-status.svg");
           expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
         } else if (slug === "gta-6-leonida-pc-recompilation-project") {
           expect(post?.hero).toBe("/images/blog/gta-6-leonida-pc-project.svg");
@@ -83,9 +83,17 @@ describe("content catalog consistency", () => {
           expect(post?.sources?.some((source) => source.url === "https://github.com/ItsNotRexed/Leonida")).toBe(true);
           if (lang === "en") {
             expect(post?.title).toBe("GTA 6 PC Port: What Leonida Can (and Can’t) Do Yet");
+            expect(post?.category).toBe("GTA 6 Updates");
+            expect(post?.intro).toContain("The Leonida project");
+          } else if (lang === "fr") {
+            expect(post?.category).toBe("Actualités GTA 6");
+            expect(post?.intro).toContain("Le projet Leonida");
+          } else {
+            expect(post?.category).toBe("أخبار GTA 6");
+            expect(post?.intro).toContain("لفت مشروع Leonida");
           }
         } else {
-          expect(post?.hero).toMatch(/^https:\/\/i\.ytimg\.com\/vi\/.+\/maxresdefault\.jpg$/);
+          expect(post?.hero).toBe(`/images/blog/${slug}.svg`);
           expect(post?.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
           expect(post?.videoTitle).toBeTruthy();
         }

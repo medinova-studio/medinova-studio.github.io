@@ -54,8 +54,8 @@
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1795373035.1194377,
-    "seen": 1795373599.4487083,
+    "mtime": 1795378166.579214,
+    "seen": 1795378345.564107,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
@@ -114,8 +114,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1791389470.1078591,
-    "seen": 1791389528.0041008,
+    "mtime": 1795378391.4098153,
+    "seen": 1795378406.9316237,
     "ast_hash": "57c028273e9cc265d8c6fc708f1f8bf6",
     "semantic_hash": ""
   },
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795375494.704181,
-    "seen": 1795377390.4178474,
+    "mtime": 1795378797.0941582,
+    "seen": 1795378828.5982513,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -720,9 +720,9 @@
     "semantic_hash": ""
   },
   "components/LanguageSuggestion.tsx": {
-    "mtime": 1787502018.768744,
-    "seen": 1791234832.2580142,
-    "ast_hash": "03497dfd27c9be52883efa9a3423b07a",
+    "mtime": 1795378129.1380332,
+    "seen": 1795378154.3543463,
+    "ast_hash": "f0278d85c13d481f845ad3c4cd52554c",
     "semantic_hash": ""
   },
   "scripts/generate-icons.mjs": {
@@ -870,15 +870,15 @@
     "semantic_hash": ""
   },
   "components/CookieConsent.tsx": {
-    "mtime": 1795372248.3768778,
-    "seen": 1795372397.6956084,
-    "ast_hash": "40b16296f2b5a00130b9cceebb9ec853",
+    "mtime": 1795378137.9199314,
+    "seen": 1795378154.3543255,
+    "ast_hash": "df67791d430764d50c697c228eafa6d2",
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795377340.95528,
-    "seen": 1795377390.417762,
-    "ast_hash": "25e29c7610376469bff3492fa38cb7c5",
+    "mtime": 1795378708.5602257,
+    "seen": 1795378828.598154,
+    "ast_hash": "b40f67ea452fc98a2fbb1997161018fc",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795377372.6977918,
-    "seen": 1795377390.4177718,
-    "ast_hash": "d7f233138a0cd906f388d947c6ba0aa7",
+    "mtime": 1795378805.4246135,
+    "seen": 1795378828.5981646,
+    "ast_hash": "767f692d180826bc7e9edc479a645572",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -923,16 +923,40 @@
     "ast_hash": "ed1344eb19c1d71d4d237aa9190ac303",
     "semantic_hash": ""
   },
-  "public/images/blog/gta-6-single-player-guide.svg": {
-    "mtime": 1795375432.2285235,
-    "seen": 1795375470.5851364,
-    "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
+  "public/images/blog/gta-6-leonida-pc-project.svg": {
+    "mtime": 1795378766.3800356,
+    "seen": 1795378828.5982983,
+    "ast_hash": "b9af5648f312da8d69498d2cb370956f",
     "semantic_hash": ""
   },
-  "public/images/blog/gta-6-leonida-pc-project.svg": {
-    "mtime": 1795377347.8518028,
-    "seen": 1795377390.417881,
-    "ast_hash": "b0c6e6dc5b3ebdba0c4aacdc56e87e1b",
+  "public/images/blog/gta-6-beginners-tips.svg": {
+    "mtime": 1795378766.3590357,
+    "seen": 1795378828.5982895,
+    "ast_hash": "7c15a82ae775a3b36a38bb9971d05c28",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-online-multiplayer-status.svg": {
+    "mtime": 1795378766.3710365,
+    "seen": 1795378828.5983014,
+    "ast_hash": "b4b4e758872d1b3a3c64afa41a362a04",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-pc-port-news.svg": {
+    "mtime": 1795378766.1899042,
+    "seen": 1795378828.598304,
+    "ast_hash": "c66be6d771b0093e7530fed36df4cb1e",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-price-in-morocco.svg": {
+    "mtime": 1795378813.5421336,
+    "seen": 1795378828.5983055,
+    "ast_hash": "fd2b4c2252ca67483d82ec398f01ad63",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-ps5-vs-xbox-performance.svg": {
+    "mtime": 1795378766.1940055,
+    "seen": 1795378828.5983071,
+    "ast_hash": "dbf9bc5a5b0fda0ff0ab9dfe4a8f7cf2",
     "semantic_hash": ""
   }
 }

@@ -5,6 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Cookie } from "lucide-react";
 import { COOKIE_CONSENT_KEY } from "@/components/ConsentAnalytics";
+import {
+  LANGUAGE_PROMPT_DISMISSED_EVENT,
+  LANGUAGE_PROMPT_KEY,
+} from "@/components/LanguageSuggestion";
 
 const COPY = {
   en: {
@@ -38,14 +42,34 @@ export default function CookieConsent() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    queueMicrotask(() => {
+    const syncConsent = () => {
       try {
         const saved = window.localStorage.getItem(COOKIE_CONSENT_KEY);
         setOpen(saved !== "accepted" && saved !== "essential" && saved !== "declined");
       } catch {
         setOpen(true);
       }
-    });
+    };
+
+    try {
+      const languageChosen = document.cookie
+        .split(";")
+        .some((cookie) => cookie.trim().startsWith("medinova-lang="));
+      if (
+        window.localStorage.getItem(LANGUAGE_PROMPT_KEY) ||
+        languageChosen
+      ) {
+        syncConsent();
+        return;
+      }
+    } catch {
+      syncConsent();
+      return;
+    }
+
+    window.addEventListener(LANGUAGE_PROMPT_DISMISSED_EVENT, syncConsent);
+    return () =>
+      window.removeEventListener(LANGUAGE_PROMPT_DISMISSED_EVENT, syncConsent);
   }, []);
 
   const save = (value: "accepted" | "essential") => {

@@ -6,7 +6,8 @@ import { useLang } from "@/lib/LanguageContext";
 import { LANGS, Lang } from "@/lib/i18n";
 import { trackEvent } from "@/lib/analytics";
 
-const FLAG_KEY = "medinova-lang-prompted";
+export const LANGUAGE_PROMPT_KEY = "medinova-lang-prompted";
+export const LANGUAGE_PROMPT_DISMISSED_EVENT = "medinova-language-prompt-dismissed";
 
 /** Native names — readable in their own language, no translation needed. */
 const NATIVE_LABELS: Record<Lang, string> = {
@@ -48,7 +49,7 @@ export default function LanguageSuggestion() {
 
   useEffect(() => {
     try {
-      if (window.localStorage.getItem(FLAG_KEY) || hasLangCookie()) return;
+      if (window.localStorage.getItem(LANGUAGE_PROMPT_KEY) || hasLangCookie()) return;
       // Client-only detection: must run after mount to stay SSR/hydration-safe.
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setSuggested(detectLang());
@@ -62,10 +63,11 @@ export default function LanguageSuggestion() {
   const dismiss = useCallback(() => {
     setOpen(false);
     try {
-      window.localStorage.setItem(FLAG_KEY, "1");
+      window.localStorage.setItem(LANGUAGE_PROMPT_KEY, "1");
     } catch {
       /* ignore */
     }
+    window.dispatchEvent(new Event(LANGUAGE_PROMPT_DISMISSED_EVENT));
     trackEvent("language_prompt_dismissed");
   }, []);
 
@@ -95,10 +97,11 @@ export default function LanguageSuggestion() {
 
   const choose = (l: Lang) => {
     try {
-      window.localStorage.setItem(FLAG_KEY, "1");
+      window.localStorage.setItem(LANGUAGE_PROMPT_KEY, "1");
     } catch {
       /* ignore */
     }
+    window.dispatchEvent(new Event(LANGUAGE_PROMPT_DISMISSED_EVENT));
     trackEvent("language_prompt_choice", { lang: l });
     setOpen(false);
     setLang(l);
