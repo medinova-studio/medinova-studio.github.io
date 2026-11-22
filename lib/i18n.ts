@@ -196,6 +196,9 @@ export type Translation = {
     badge: string;
     title: string;
     subtitle: string;
+    learningCategory: string;
+    gamingCategory: string;
+    articleContents: string;
     readMore: string;
     backLabel: string;
     breadcrumbHome: string;
@@ -517,6 +520,9 @@ export const translations: Record<Lang, Translation> = {
       title: "Guides for Parents, Learners & the Curious",
       subtitle:
         "Practical articles on kids' coding, game development and digital skills — written by the people who build and teach every day.",
+      learningCategory: "Coding, Education & Game Development",
+      gamingCategory: "Gaming Guides",
+      articleContents: "In this guide",
       readMore: "Read article",
       backLabel: "Back to blog",
       breadcrumbHome: "Home",
@@ -1439,6 +1445,9 @@ export const translations: Record<Lang, Translation> = {
       title: "Des Guides pour les Parents, Apprenants & Curieux",
       subtitle:
         "Des articles pratiques sur le code, le développement de jeux et les compétences numériques — écrits par ceux qui construisent et enseignent chaque jour.",
+      learningCategory: "Code, éducation et développement de jeux",
+      gamingCategory: "Guides de jeux vidéo",
+      articleContents: "Dans ce guide",
       readMore: "Lire l'article",
       backLabel: "Retour au blog",
       breadcrumbHome: "Accueil",
@@ -2365,6 +2374,9 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
       title: "أدلة للآباء والمتعلمين والمهتمين",
       subtitle:
         "مقالات عملية حول برمجة الأطفال وتطوير الألعاب والمهارات الرقمية — بقلم من يبنون ويعلّمون كل يوم.",
+      learningCategory: "البرمجة والتعليم وتطوير الألعاب",
+      gamingCategory: "أدلة الألعاب",
+      articleContents: "في هذا الدليل",
       readMore: "اقرأ المقال",
       backLabel: "العودة إلى المدونة",
       breadcrumbHome: "الرئيسية",

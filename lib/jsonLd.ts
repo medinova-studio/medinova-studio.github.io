@@ -299,17 +299,22 @@ export function articleSchema(
     url: string;
     image: string;
     datePublished: string;
+    dateModified?: string;
+    inLanguage?: string;
   }
 ) {
+  const image = data.image.startsWith("http")
+    ? data.image
+    : `${SITE_URL}${data.image}`;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: data.title,
     description: data.description,
-    image: `${SITE_URL}${data.image}`,
+    image,
     datePublished: data.datePublished,
-    dateModified: data.datePublished,
-    inLanguage: "en",
+    dateModified: data.dateModified ?? data.datePublished,
+    inLanguage: data.inLanguage ?? "en",
     author: { "@id": FOUNDER_ID },
     publisher: { "@id": ORG_ID },
     mainEntityOfPage: data.url,

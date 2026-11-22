@@ -1,4 +1,5 @@
 import type { Lang } from "@/lib/i18n";
+import { GTA_ARTICLES } from "@/lib/gtaBlog";
 
 export type BlogSection = {
   heading: string;
@@ -24,6 +25,10 @@ export type BlogPost = {
   sections: BlogSection[];
   course?: { slug: string; label: string; body: string };
   related?: string[];
+  sources?: { label: string; url: string }[];
+  videoId?: string;
+  videoTitle?: string;
+  updatedAt?: string;
 };
 
 const HERO = {
@@ -1880,9 +1885,9 @@ const AR: BlogPost[] = [
 ];
 
 export const BLOG_POSTS: Record<Lang, BlogPost[]> = {
-  en: EN,
-  fr: FR,
-  ar: AR,
+  en: [...EN, ...GTA_ARTICLES.en],
+  fr: [...FR, ...GTA_ARTICLES.fr],
+  ar: [...AR, ...GTA_ARTICLES.ar],
 };
 
 export function blogPostsFor(lang: Lang): BlogPost[] {
@@ -1893,4 +1898,60 @@ export function blogPostBySlug(lang: Lang, slug: string): BlogPost | undefined {
   return BLOG_POSTS[lang].find((p) => p.slug === slug);
 }
 
-export const ALL_BLOG_SLUGS = EN.map((p) => p.slug);
+const RELATED_STOP_WORDS = new Set([
+  "about", "after", "and", "are", "avec", "been", "before", "but", "chez",
+  "dans", "des", "for", "from", "how", "les", "more", "not", "our", "pour",
+  "the", "this", "une", "what", "when", "where", "which", "with", "your",
+  "على", "إلى", "التي", "الذي", "في", "من", "هذا", "هذه",
+]);
+
+function relatedTerms(value: string): Set<string> {
+  return new Set(
+    (value.toLocaleLowerCase().match(/[\p{L}\p{N}]{3,}/gu) ?? []).filter(
+      (term) => !RELATED_STOP_WORDS.has(term)
+    )
+  );
+}
+
+export function relatedBlogPostsFor(
+  lang: Lang,
+  post: BlogPost,
+  limit = 3
+): BlogPost[] {
+  const isGamingPost = post.slug.startsWith("gta-6-");
+  const posts = BLOG_POSTS[lang].filter(
+    (candidate) =>
+      candidate.slug !== post.slug &&
+      candidate.slug.startsWith("gta-6-") === isGamingPost
+  );
+  const explicit = new Set(post.related ?? []);
+  const postTitleTerms = relatedTerms(post.title);
+  const postContentTerms = relatedTerms(`${post.title} ${post.description}`);
+
+  return posts
+    .map((candidate, index) => {
+      const candidateTitleTerms = relatedTerms(candidate.title);
+      const candidateContentTerms = relatedTerms(
+        `${candidate.title} ${candidate.description}`
+      );
+      const titleOverlap = [...postTitleTerms].filter((term) =>
+        candidateTitleTerms.has(term)
+      ).length;
+      const contentOverlap = [...postContentTerms].filter((term) =>
+        candidateContentTerms.has(term)
+      ).length;
+      const score =
+        (explicit.has(candidate.slug) ? 100 : 0) +
+        (candidate.related?.includes(post.slug) ? 60 : 0) +
+        (candidate.category === post.category ? 30 : 0) +
+        titleOverlap * 8 +
+        contentOverlap * 2;
+
+      return { post: candidate, index, score };
+    })
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, limit)
+    .map(({ post: candidate }) => candidate);
+}
+
+export const ALL_BLOG_SLUGS = BLOG_POSTS.en.map((p) => p.slug);

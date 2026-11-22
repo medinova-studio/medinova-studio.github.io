@@ -48,21 +48,21 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1791391528.599061,
-    "seen": 1791393073.378385,
-    "ast_hash": "423b0067c8981aae8c875c957fefe973",
+    "mtime": 1795372540.9791439,
+    "seen": 1795372591.2885265,
+    "ast_hash": "b1c8376014e6b53dec6110b902202f45",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1791389342.0877693,
-    "seen": 1791389444.3430674,
+    "mtime": 1795373035.1194377,
+    "seen": 1795373599.4487083,
     "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
     "semantic_hash": ""
   },
   "next.config.mjs": {
-    "mtime": 1795369422.6951277,
-    "seen": 1795369500.0336235,
-    "ast_hash": "3179363b8e575ee951274c485954d4fa",
+    "mtime": 1795374122.4679036,
+    "seen": 1795374181.5684927,
+    "ast_hash": "c789bd514a7b06037824ef48f8786513",
     "semantic_hash": ""
   },
   "package.json": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795369733.5104482,
-    "seen": 1795369746.2454216,
+    "mtime": 1795373733.0946243,
+    "seen": 1795374181.5685546,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -366,9 +366,9 @@
     "semantic_hash": ""
   },
   "lib/jsonLd.ts": {
-    "mtime": 1791231232.6525998,
-    "seen": 1791234832.258094,
-    "ast_hash": "3b70da3bbcff1baca933f36a7a49d6e1",
+    "mtime": 1795371268.33559,
+    "seen": 1795371449.7433143,
+    "ast_hash": "c63856f05fc25e0a23cf35d869cf4b05",
     "semantic_hash": ""
   },
   "components/HomeHero.tsx": {
@@ -504,9 +504,9 @@
     "semantic_hash": ""
   },
   "app/[lang]/layout.tsx": {
-    "mtime": 1795369709.5713458,
-    "seen": 1795369746.245253,
-    "ast_hash": "2e7d25e8d459ccb59d5ad71bc2e5cd88",
+    "mtime": 1795372171.117969,
+    "seen": 1795372226.387698,
+    "ast_hash": "c3c02db32e6cef2322787116739b80c4",
     "semantic_hash": ""
   },
   "app/[lang]/not-found.tsx": {
@@ -678,21 +678,21 @@
     "semantic_hash": ""
   },
   "app/[lang]/blog/[slug]/page.tsx": {
-    "mtime": 1789593766.354765,
-    "seen": 1791234832.257975,
-    "ast_hash": "cefbdf7131c319ec1660876e17c0848b",
+    "mtime": 1795374122.4154494,
+    "seen": 1795374181.5683146,
+    "ast_hash": "47dcdeaac2037b047b687f3a365adf70",
     "semantic_hash": ""
   },
   "app/[lang]/blog/page.tsx": {
-    "mtime": 1787239047.8639014,
-    "seen": 1791234832.2579765,
-    "ast_hash": "94f3d4e93b92bb39ada7b07a503cb278",
+    "mtime": 1795373559.2205129,
+    "seen": 1795373599.448547,
+    "ast_hash": "048445432cc4a6a4612d6d8b5be49dd8",
     "semantic_hash": ""
   },
   "lib/blog.ts": {
-    "mtime": 1789593033.852825,
-    "seen": 1791234832.2580667,
-    "ast_hash": "e7879c6b146df69200b990c84f56f9a0",
+    "mtime": 1795372365.8801396,
+    "seen": 1795372397.6957214,
+    "ast_hash": "25e5b6b6428c692dfd7b103913739a05",
     "semantic_hash": ""
   },
   "lib/courses.ts": {
@@ -864,21 +864,21 @@
     "semantic_hash": ""
   },
   "components/ConsentAnalytics.tsx": {
-    "mtime": 1795369356.0264122,
-    "seen": 1795369500.0335207,
-    "ast_hash": "4a3ec0fc25056c7bd0762aeb0b12e053",
+    "mtime": 1795372179.1620736,
+    "seen": 1795372226.3877304,
+    "ast_hash": "94339cee854e720adb1a5bc295a95593",
     "semantic_hash": ""
   },
   "components/CookieConsent.tsx": {
-    "mtime": 1795369463.0539472,
-    "seen": 1795369500.0335245,
-    "ast_hash": "54c2b946d7487de334a4aa089166aa52",
+    "mtime": 1795372248.3768778,
+    "seen": 1795372397.6956084,
+    "ast_hash": "40b16296f2b5a00130b9cceebb9ec853",
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795369376.4537504,
-    "seen": 1795369500.0336037,
-    "ast_hash": "073b0dbecb6b6756adc737c1a9afee28",
+    "mtime": 1795374132.5465913,
+    "seen": 1795374181.5684638,
+    "ast_hash": "7390fd69c57c3dd0e02d13f2b421bab6",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -897,6 +897,18 @@
     "mtime": 1791569774.3633387,
     "seen": 1795369500.0336595,
     "ast_hash": "1742781d43076c9743dcf29dfef11b32",
+    "semantic_hash": ""
+  },
+  "lib/gtaBlog.ts": {
+    "mtime": 1795374211.9991286,
+    "seen": 1795374235.0148525,
+    "ast_hash": "116a50956a25e46a9680cfdbd344c422",
+    "semantic_hash": ""
+  },
+  "public/images/games/block-shooter-cannon-3-in-1.jpg": {
+    "mtime": 1795373906.0715055,
+    "seen": 1795374181.5686033,
+    "ast_hash": "8b9b7d1dbd193567bc311cc6603aba20",
     "semantic_hash": ""
   }
 }

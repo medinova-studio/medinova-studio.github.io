@@ -36,6 +36,53 @@ export default async function BlogPage({ params }: PageProps) {
   const l = lang as Lang;
   const t = translations[l].blog;
   const posts = blogPostsFor(l);
+  const learningPosts = posts.filter((post) => !post.slug.startsWith("gta-6-"));
+  const gamingPosts = posts.filter((post) => post.slug.startsWith("gta-6-"));
+
+  const renderPosts = (items: typeof posts) => (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {items.map((post) => (
+        <Link
+          key={post.slug}
+          href={`/${l}/blog/${post.slug}`}
+          className="group flex flex-col rounded-2xl border border-hairline bg-surface-1 overflow-hidden shadow-[0_12px_32px_rgba(20,21,26,0.05)] transition-all duration-300 hover:border-hairline-strong hover:-translate-y-0.5"
+        >
+          <div className="relative aspect-[16/9] bg-navy overflow-hidden">
+            <Image
+              src={post.hero}
+              alt={post.title}
+              fill
+              sizes="(min-width:1024px) 30vw, (min-width:640px) 50vw, 100vw"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
+            />
+          </div>
+          <div className="flex flex-col flex-1 p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                {post.category}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary-soft px-2.5 py-1 text-xs font-semibold text-primary">
+                <Clock className="w-3.5 h-3.5" />
+                {post.readingTime}
+              </span>
+            </div>
+            <h2 className="font-display text-xl font-bold text-ink leading-snug group-hover:text-primary transition-colors">
+              {post.title}
+            </h2>
+            <p className="mt-3 text-[15px] text-ink-subtle leading-relaxed">
+              {post.description}
+            </p>
+            <div className="mt-5 pt-4 border-t border-hairline">
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:gap-2.5">
+                {t.readMore}
+                <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+              </span>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
 
   return (
     <main className="min-h-screen">
@@ -51,54 +98,53 @@ export default async function BlogPage({ params }: PageProps) {
           <p className="mt-5 max-w-2xl text-base sm:text-lg text-ink-subtle leading-relaxed">
             {t.subtitle}
           </p>
+          <nav
+            aria-label={l === "fr" ? "Rubriques du blog" : l === "ar" ? "أقسام المدونة" : "Blog sections"}
+            className="mt-7 flex flex-wrap gap-3"
+          >
+            <a
+              href="#learning-articles-heading"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-hairline bg-surface-1 px-4 py-2 text-sm font-semibold text-ink-subtle transition-colors hover:border-primary/40 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
+              {t.learningCategory}
+              <span className="rounded-full bg-surface-2 px-2 py-0.5 text-xs text-ink-tertiary">
+                {learningPosts.length}
+              </span>
+            </a>
+            <a
+              href="#gaming-articles-heading"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-4 py-2 text-sm font-semibold text-primary transition-colors hover:border-primary/40 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
+              {t.gamingCategory}
+              <span className="rounded-full bg-surface-1/80 px-2 py-0.5 text-xs text-primary">
+                {gamingPosts.length}
+              </span>
+            </a>
+          </nav>
         </div>
       </section>
 
       <section className="relative border-t border-hairline">
-        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/${l}/blog/${post.slug}`}
-                className="group flex flex-col rounded-2xl border border-hairline bg-surface-1 overflow-hidden shadow-[0_12px_32px_rgba(20,21,26,0.05)] transition-all duration-300 hover:border-hairline-strong hover:-translate-y-0.5"
-              >
-                <div className="relative aspect-[16/9] bg-navy overflow-hidden">
-                  <Image
-                    src={post.hero}
-                    alt={post.title}
-                    fill
-                    sizes="(min-width:1024px) 30vw, (min-width:640px) 50vw, 100vw"
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.05]"
-                  />
-                </div>
-                <div className="flex flex-col flex-1 p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-                      {post.category}
-                    </span>
-                    <span className="hidden sm:inline w-px h-3.5 bg-hairline-strong" />
-                    <span className="inline-flex items-center gap-1.5 text-xs text-ink-tertiary">
-                      <Clock className="w-3.5 h-3.5" />
-                      {post.readingTime}
-                    </span>
-                  </div>
-                  <h2 className="font-display text-xl font-bold text-ink leading-snug group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="mt-3 text-[15px] text-ink-subtle leading-relaxed">
-                    {post.description}
-                  </p>
-                  <div className="mt-5 pt-4 border-t border-hairline">
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:gap-2.5">
-                      {t.readMore}
-                      <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-16 sm:py-20 space-y-16">
+          <section aria-labelledby="learning-articles-heading">
+            <h2
+              id="learning-articles-heading"
+              className="mb-7 font-display text-2xl sm:text-3xl font-bold text-ink tracking-tight"
+            >
+              {t.learningCategory}
+            </h2>
+            {renderPosts(learningPosts)}
+          </section>
+
+          <section aria-labelledby="gaming-articles-heading">
+            <h2
+              id="gaming-articles-heading"
+              className="mb-7 font-display text-2xl sm:text-3xl font-bold text-ink tracking-tight"
+            >
+              {t.gamingCategory}
+            </h2>
+            {renderPosts(gamingPosts)}
+          </section>
         </div>
       </section>
     </main>

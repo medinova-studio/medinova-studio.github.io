@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./../globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
@@ -59,14 +58,6 @@ export default async function RootLayout({
 
   return (
     <html lang={l} dir={isRTL ? "rtl" : "ltr"} className="scroll-smooth">
-      <head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2808001096523138"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        />
-      </head>
       <body
         className={`${geist.variable} ${jakarta.variable} ${geistMono.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
       >

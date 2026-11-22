@@ -1,27 +1,32 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Cookie } from "lucide-react";
 import { COOKIE_CONSENT_KEY } from "@/components/ConsentAnalytics";
 
 const COPY = {
   en: {
-    text: "We use analytics and advertising cookies to improve the site and measure campaigns.",
-    accept: "Accept",
-    decline: "Decline",
-    manage: "Cookie settings",
+    title: "Your privacy matters",
+    text: "Essential cookies keep this site working. With your permission, analytics and advertising cookies help us understand site use and improve our campaigns.",
+    privacy: "Privacy policy",
+    essential: "Essential only",
+    acceptAll: "Accept all",
   },
   fr: {
-    text: "Nous utilisons des cookies d'analyse et de publicité pour améliorer le site et mesurer les campagnes.",
-    accept: "Accepter",
-    decline: "Refuser",
-    manage: "Paramètres des cookies",
+    title: "Votre vie privée compte",
+    text: "Les cookies essentiels assurent le fonctionnement du site. Avec votre accord, les cookies d’analyse et de publicité nous aident à comprendre son utilisation et à améliorer nos campagnes.",
+    privacy: "Politique de confidentialité",
+    essential: "Essentiels uniquement",
+    acceptAll: "Tout accepter",
   },
   ar: {
-    text: "نستخدم ملفات تعريف الارتباط للتحليلات والإعلانات لتحسين الموقع وقياس الحملات.",
-    accept: "قبول",
-    decline: "رفض",
-    manage: "إعدادات ملفات تعريف الارتباط",
+    title: "خصوصيتكم تهمنا",
+    text: "تساعد ملفات تعريف الارتباط الأساسية الموقع على العمل. وبموافقتكم، تساعدنا ملفات التحليلات والإعلانات على فهم استخدام الموقع وتحسين حملاتنا.",
+    privacy: "سياسة الخصوصية",
+    essential: "الأساسية فقط",
+    acceptAll: "قبول الكل",
   },
 } as const;
 
@@ -30,70 +35,78 @@ export default function CookieConsent() {
   const firstSegment = pathname?.split("/").filter(Boolean)[0];
   const lang = firstSegment === "fr" || firstSegment === "ar" ? firstSegment : "en";
   const copy = COPY[lang];
-  const [choice, setChoice] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     queueMicrotask(() => {
       try {
         const saved = window.localStorage.getItem(COOKIE_CONSENT_KEY);
-        setChoice(saved);
-        setOpen(!saved);
+        setOpen(saved !== "accepted" && saved !== "essential" && saved !== "declined");
       } catch {
         setOpen(true);
       }
     });
   }, []);
 
-  const save = (value: "accepted" | "declined") => {
+  const save = (value: "accepted" | "essential") => {
     try {
       window.localStorage.setItem(COOKIE_CONSENT_KEY, value);
     } catch {
       // Consent controls remain usable even if storage is unavailable.
     }
-    setChoice(value);
     setOpen(false);
     window.dispatchEvent(new Event("medinova-consent-changed"));
   };
 
+  if (!open) return null;
+
   return (
-    <>
-      {open && (
-        <aside
-          role="dialog"
-          aria-label={copy.manage}
-          className="fixed bottom-4 left-4 right-4 z-[70] mx-auto max-w-3xl rounded-2xl border border-hairline-strong bg-surface-1 p-4 shadow-[0_16px_48px_rgba(16,26,51,0.18)] sm:bottom-6 sm:p-5"
-        >
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-xl text-sm leading-relaxed text-ink-subtle">{copy.text}</p>
-            <div className="flex shrink-0 gap-2">
-              <button
-                type="button"
-                onClick={() => save("declined")}
-                className="rounded-md border border-hairline bg-surface-1 px-4 py-2 text-sm font-semibold text-ink hover:bg-surface-2"
+    <aside
+      role="dialog"
+      aria-labelledby="cookie-consent-title"
+      className="fixed inset-x-4 bottom-4 z-[70] mx-auto max-w-4xl overflow-hidden rounded-xl border border-hairline bg-surface-1 shadow-[0_16px_48px_rgba(16,26,51,0.18)] sm:bottom-6"
+    >
+      <div className="h-1 bg-primary" />
+      <div className="flex flex-col gap-5 p-5 sm:p-6 md:flex-row md:items-center md:justify-between">
+        <div className="flex gap-4">
+          <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-primary/20 bg-primary-soft text-primary sm:flex">
+            <Cookie className="h-5 w-5" aria-hidden="true" />
+          </span>
+          <div>
+            <h2
+              id="cookie-consent-title"
+              className="font-display text-base font-bold text-ink"
+            >
+              {copy.title}
+            </h2>
+            <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-ink-subtle">
+              {copy.text}{" "}
+              <Link
+                href={`/${lang}/privacy`}
+                className="font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:text-primary-hover"
               >
-                {copy.decline}
-              </button>
-              <button
-                type="button"
-                onClick={() => save("accepted")}
-                className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-primary-hover"
-              >
-                {copy.accept}
-              </button>
-            </div>
+                {copy.privacy}
+              </Link>
+            </p>
           </div>
-        </aside>
-      )}
-      {choice && (
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="fixed bottom-3 left-3 z-[60] hidden rounded-md border border-hairline bg-surface-1 px-3 py-2 text-xs font-semibold text-ink-subtle shadow sm:block"
-        >
-          {copy.manage}
-        </button>
-      )}
-    </>
+        </div>
+        <div className="flex shrink-0 flex-col-reverse gap-2 sm:flex-row md:flex-col lg:flex-row">
+          <button
+            type="button"
+            onClick={() => save("essential")}
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-hairline-strong bg-surface-1 px-4 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-surface-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+          >
+            {copy.essential}
+          </button>
+          <button
+            type="button"
+            onClick={() => save("accepted")}
+            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-[0_4px_14px_rgba(36,85,230,0.22)] transition-colors hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+          >
+            {copy.acceptAll}
+          </button>
+        </div>
+      </div>
+    </aside>
   );
 }
