@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 
@@ -67,9 +68,11 @@ export default function Footer() {
           {/* Brand & parent company */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link href={`/${lang}`} aria-label="Medinova Studio" className="inline-block">
-              <img
+              <Image
                 src="/images/logo.svg"
                 alt="Medinova Studio logo"
+                width={100}
+                height={36}
                 className="h-9 w-auto object-contain"
               />
             </Link>

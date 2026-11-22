@@ -10,6 +10,7 @@ export default function AnnouncementBar() {
         <p className="text-xs sm:text-[13px] font-medium text-primary leading-relaxed">
           {t.academy.announcement}
         </p>
+        {/* Give visitors a chance to understand the learning paths before the enquiry form. */}
         <a
           href="#courses"
           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md bg-primary text-white text-[11px] font-semibold hover:bg-primary-hover active:scale-[0.98] transition-all whitespace-nowrap"

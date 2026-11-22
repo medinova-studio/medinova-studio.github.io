@@ -1,0 +1,19 @@
+[     400ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3100/en/_vercel/insights/script.js:0
+[     401ms] [LOG] [Vercel Web Analytics] Failed to load script from /_vercel/insights/script.js. Be sure to enable Web Analytics for your project and deploy again. See https://vercel.com/docs/analytics/quickstart for more information. @ http://localhost:3100/_next/static/chunks/1yq8fqqke_osq.js:10
+[     512ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3100/en/_vercel/speed-insights/script.js:0
+[     523ms] [LOG] [Vercel Speed Insights] Failed to load script from /_vercel/speed-insights/script.js. Please check if any content blockers are enabled and try again. @ http://localhost:3100/_next/static/chunks/1yq8fqqke_osq.js:10
+[ 7924277ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Facademy%2Ffounder.webp&w=640&q=75:0
+[ 7924277ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Fgames%2Fzombies-warzone%2Fscreenshot1.webp&w=750&q=75:0
+[ 7924277ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Facademy%2Fmge-booth.webp&w=750&q=75:0
+[ 7924289ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Fgames%2Fpharaohs-guardian%2Fscreenshot1.webp&w=640&q=75:0
+[ 7924290ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Fgames%2Fchameleon-outbreak%2Fscreenshot1.webp&w=640&q=75:0
+[ 7924290ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Fgames%2Fsniper-elimination%2Fscreenshot1.webp&w=640&q=75:0
+[ 7924290ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/image?url=%2Fimages%2Fgames%2Fblitz-combat%2Fscreenshot1.webp&w=640&q=75:0
+[ 7924304ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/en?_rsc=RuOUPGK5yCHng-65:0
+[ 7924305ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/en/who-we-are?_rsc=RuOUPGK5yCHng-65:0
+[ 7924305ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/en/blog?_rsc=RuOUPGK5yCHng-65:0
+[ 7924306ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/en/academy?_rsc=RuOUPGK5yCHng-65:0
+[ 8978754ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en/_vercel/insights/script.js:0
+[ 8978763ms] [LOG] [Vercel Web Analytics] Failed to load script from /_vercel/insights/script.js. Be sure to enable Web Analytics for your project and deploy again. See https://vercel.com/docs/analytics/quickstart for more information. @ http://localhost:3000/_next/static/chunks/1yq8fqqke_osq.js:10
+[ 8978862ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/en/_vercel/speed-insights/script.js:0
+[ 8978862ms] [LOG] [Vercel Speed Insights] Failed to load script from /_vercel/speed-insights/script.js. Please check if any content blockers are enabled and try again. @ http://localhost:3000/_next/static/chunks/1yq8fqqke_osq.js:10

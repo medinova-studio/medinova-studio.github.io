@@ -1,4 +1,6 @@
-import { translations } from "@/lib/i18n";
+import { translations, type Lang } from "@/lib/i18n";
+import { COURSE_SLUGS } from "@/lib/courses";
+import { PRICING } from "@/lib/pricing";
 
 export const SITE_URL = "https://www.medinovastudio.com";
 
@@ -15,19 +17,12 @@ const sameAs = [
   "https://medinova.itch.io/",
 ];
 
-const COURSE_SLUGS: Record<string, string> = {
-  "Digital Essentials": "digital-essentials",
-  Scratch: "scratch",
-  Python: "python",
-  "Roblox Game Development": "roblox",
-  "Unity & C# Game Development": "unity-csharp",
-  "Web Development": "web-development",
-  "Creative Design": "creative-design",
-};
-
-export function courseSlug(name: string): string {
-  return COURSE_SLUGS[name] ?? name.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-}
+/**
+ * Course titles are no longer mapped back to slugs anywhere. `academyNode` used
+ * to call `courseSlug(course.name)` to rebuild a URL from a display name, which
+ * silently produced a broken URL for any locale whose names are not English.
+ * Course identity now flows from the `COURSE_SLUGS` key itself.
+ */
 
 function personNode() {
   return {
@@ -103,13 +98,14 @@ function orgNode() {
   };
 }
 
-function academyNode() {
-  const t = translations.en.academy;
+function academyNode(lang: Lang) {
+  const t = translations[lang].academy;
+  const academyUrl = `${SITE_URL}/${lang}/academy`;
   return {
     "@type": "EducationalOrganization",
     "@id": ACADEMY_ID,
     name: "Medinova Academy",
-    url: `${SITE_URL}/academy`,
+    url: academyUrl,
     parentOrganization: { "@id": ORG_ID },
     description:
       "Practical technology and coding education for learners aged 7+, taught live online by the founder of Medinova Studio. Courses in digital essentials, Scratch, Python, Roblox, Unity & C#, web development and creative design.",
@@ -121,8 +117,12 @@ function academyNode() {
       addressCountry: "MA",
     },
     areaServed: ["MA"],
-    hasCourse: t.courses.items.map((course) => {
-      const courseUrl = `${SITE_URL}/en/academy/courses/${courseSlug(course.name)}`;
+    // Offers the real monthly and term prices. Previously every course was
+    // advertised with no price at all, which reads as free or unpriced to
+    // consumers and search engines alike.
+    hasCourse: COURSE_SLUGS.map((slug) => {
+      const course = t.courses.items[slug];
+      const courseUrl = `${SITE_URL}/${lang}/academy/courses/${slug}`;
       return {
         "@type": "Course",
         "@id": courseUrl,
@@ -131,22 +131,38 @@ function academyNode() {
         url: courseUrl,
         provider: { "@id": ORG_ID },
         typicalAgeRange: course.age,
+        inLanguage: lang,
         hasCourseInstance: {
           "@type": "CourseInstance",
           courseMode: "Online",
-          courseWorkload: "Live instructor-led classes",
-          inLanguage: ["en", "fr", "ar"],
-        },
-        offers: {
-          "@type": "Offer",
-          category: "Enrollment",
-          availability: "InStock",
+          courseWorkload: `Live instructor-led ${PRICING.sessionMinutes}-minute sessions in small groups`,
+          instructor: { "@id": FOUNDER_ID },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Monthly",
+              category: "Enrollment",
+              availability: "InStock",
+              price: String(PRICING.monthly),
+              priceCurrency: PRICING.currency,
+              url: academyUrl,
+            },
+            {
+              "@type": "Offer",
+              name: "3 months",
+              category: "Enrollment",
+              availability: "InStock",
+              price: String(PRICING.term),
+              priceCurrency: PRICING.currency,
+              url: academyUrl,
+            },
+          ],
         },
       };
     }),
-    hasCredential: t.courses.items.map((course) => ({
+    hasCredential: COURSE_SLUGS.map((slug) => ({
       "@type": "EducationalOccupationalCredential",
-      name: `Certificate of Completion — ${course.name}`,
+      name: `Certificate of Completion — ${t.courses.items[slug].name}`,
       credentialCategory: "certificate",
     })),
   };
@@ -214,8 +230,8 @@ export function webSiteSchema() {
   return { "@context": "https://schema.org", ...webSiteNode() };
 }
 
-export function academySchema() {
-  return { "@context": "https://schema.org", ...academyNode() };
+export function academySchema(lang: Lang = "en") {
+  return { "@context": "https://schema.org", ...academyNode(lang) };
 }
 
 export function personSchema() {
@@ -249,16 +265,29 @@ export function courseSchema(
     hasCourseInstance: {
       "@type": "CourseInstance",
       courseMode: "Online",
-      courseWorkload: "Live instructor-led classes",
+      courseWorkload: `Live instructor-led ${PRICING.sessionMinutes}-minute sessions in small groups`,
       location: { "@type": "VirtualLocation" },
-      offers: {
-        "@type": "Offer",
-        category: "Enrollment",
-        availability: "InStock",
-        price: "0",
-        priceCurrency: "MAD",
-        description: "Free trial class — enrollment details via WhatsApp",
-      },
+      // Both real plans are listed. The previous single `price: "0"` offer
+      // contradicted the paid nature of the course and misrepresented it to
+      // search engines as free.
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Monthly",
+          category: "Enrollment",
+          availability: "InStock",
+          price: String(PRICING.monthly),
+          priceCurrency: PRICING.currency,
+        },
+        {
+          "@type": "Offer",
+          name: "3 months",
+          category: "Enrollment",
+          availability: "InStock",
+          price: String(PRICING.term),
+          priceCurrency: PRICING.currency,
+        },
+      ],
     },
   };
 }

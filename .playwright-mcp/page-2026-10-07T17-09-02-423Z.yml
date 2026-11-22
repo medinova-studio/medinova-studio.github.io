@@ -1,0 +1,459 @@
+- generic [ref=f17e1]:
+  - banner [ref=f17e2]:
+    - navigation "Primary" [ref=f17e3]:
+      - generic [ref=f17e5]:
+        - link "Medinova Studio" [ref=f17e6] [cursor=pointer]:
+          - /url: /en
+          - img "Medinova Studio logo" [ref=f17e7]
+        - generic [ref=f17e8]:
+          - button "Our Solutions" [ref=f17e10] [cursor=pointer]
+          - link "Games & Portfolio" [ref=f17e13] [cursor=pointer]:
+            - /url: /en#portfolio
+          - link "Who We Are" [ref=f17e14] [cursor=pointer]:
+            - /url: /en/who-we-are
+          - link "Blog" [ref=f17e15] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=f17e16]:
+            - button "Switch to FR" [ref=f17e17] [cursor=pointer]: FR
+            - button "Switch to EN" [ref=f17e18] [cursor=pointer]: EN
+            - button "Switch to AR" [ref=f17e19] [cursor=pointer]: AR
+          - link "Discover the Tracks" [ref=f17e20] [cursor=pointer]:
+            - /url: /en/academy#courses
+    - generic [ref=f17e22]:
+      - generic [ref=f17e23]: Medinova Academy
+      - link "Our Work" [ref=f17e24] [cursor=pointer]:
+        - /url: /en/academy#work
+      - link "Courses" [ref=f17e25] [cursor=pointer]:
+        - /url: /en/academy#courses
+      - link "Pricing" [ref=f17e26] [cursor=pointer]:
+        - /url: /en/academy#pricing
+      - link "FAQ" [ref=f17e27] [cursor=pointer]:
+        - /url: /en/academy#faq
+      - generic [ref=f17e28]: Live online • 7+
+  - generic [ref=f17e31]:
+    - generic [ref=f17e33]:
+      - paragraph [ref=f17e34]: Live instructor-led classes for learners aged 7+ · English, French & Arabic
+      - link "Explore learning paths" [ref=f17e35] [cursor=pointer]:
+        - /url: "#courses"
+    - generic [ref=f17e38]:
+      - generic [ref=f17e39]: Online Coding Academy · Ages 7+ · Rabat, Morocco
+      - heading "Online Coding & Game Development Courses for Kids in Morocco" [level=1] [ref=f17e41]
+      - paragraph [ref=f17e42]: Learn coding, game development and digital skills live online with Medinova Studio — from Rabat, Casablanca and everywhere in Morocco. Practical, project-based classes for learners aged 7+, taught by the founder of an active game studio.
+      - link "See what your child can learn" [ref=f17e44] [cursor=pointer]:
+        - /url: "#courses"
+      - generic [ref=f17e45]:
+        - paragraph [ref=f17e52]:
+          - generic [ref=f17e53]: Learners aged 7+
+          - generic [ref=f17e54]: Courses matched to every age and level
+        - paragraph [ref=f17e60]:
+          - generic [ref=f17e61]: English · French · Arabic
+          - generic [ref=f17e62]: Classes in three languages
+        - paragraph [ref=f17e67]:
+          - generic [ref=f17e68]: Live & project-based
+          - generic [ref=f17e69]: Instructor-led with real projects
+    - generic [ref=f17e72]:
+      - generic [ref=f17e73]:
+        - generic [ref=f17e74]: Why Medinova Academy
+        - heading "Learn Through Application and Real Projects" [level=2] [ref=f17e76]
+      - generic [ref=f17e77]:
+        - generic [ref=f17e78]:
+          - heading "Learn by Doing, Not Just Watching" [level=3] [ref=f17e84]
+          - paragraph [ref=f17e85]: Don't just watch lessons. Apply what you learn, experiment with your ideas, and build real projects that sharpen your skills.
+        - generic [ref=f17e86]:
+          - heading "Turn Knowledge Into Projects" [level=3] [ref=f17e90]
+          - paragraph [ref=f17e91]: Every new skill is a chance to build something. Keep and grow your work to shape a portfolio that shows what you can actually do.
+        - generic [ref=f17e92]:
+          - heading "Learn From Real Industry Experience" [level=3] [ref=f17e98]
+          - paragraph [ref=f17e99]: Learn directly from the founder of Medinova Studio and gain from the experience of a studio that actively develops games, digital technology and shipped projects.
+    - generic [ref=f17e101]:
+      - generic [ref=f17e102]:
+        - generic [ref=f17e103]: Explore Our Courses
+        - heading "Explore Our Courses" [level=2] [ref=f17e105]
+        - paragraph [ref=f17e106]: Not sure where to start? Tell us your child's age and we'll recommend a suitable course. Every path turns curiosity into practical skills and projects.
+      - generic [ref=f17e107]:
+        - article [ref=f17e108]:
+          - link [ref=f17e109] [cursor=pointer]:
+            - /url: /en/academy/courses/digital-essentials
+            - img "Digital Essentials" [ref=f17e110]
+          - generic [ref=f17e111]:
+            - generic [ref=f17e112]:
+              - link "Digital Essentials" [ref=f17e113] [cursor=pointer]:
+                - /url: /en/academy/courses/digital-essentials
+              - generic [ref=f17e114]: Recommended age 7+
+            - paragraph [ref=f17e119]: Build essential digital skills for everyday life, including computer basics, Word, Excel, PowerPoint, internet use and more.
+            - paragraph [ref=f17e120]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e122] [cursor=pointer]:
+              - /url: /en/academy/courses/digital-essentials
+        - article [ref=f17e125]:
+          - link [ref=f17e126] [cursor=pointer]:
+            - /url: /en/academy/courses/scratch
+            - img "Scratch" [ref=f17e127]
+          - generic [ref=f17e128]:
+            - generic [ref=f17e129]:
+              - link "Scratch" [ref=f17e130] [cursor=pointer]:
+                - /url: /en/academy/courses/scratch
+              - generic [ref=f17e131]: Recommended age 7+
+            - paragraph [ref=f17e136]: Build logical thinking and problem-solving skills through visual programming. Children learn the fundamentals of algorithms, sequencing, mathematics and computational thinking while creating their own interactive stories, animations and games.
+            - paragraph [ref=f17e137]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e139] [cursor=pointer]:
+              - /url: /en/academy/courses/scratch
+        - article [ref=f17e142]:
+          - link [ref=f17e143] [cursor=pointer]:
+            - /url: /en/academy/courses/python
+            - img "Python" [ref=f17e144]
+          - generic [ref=f17e145]:
+            - generic [ref=f17e146]:
+              - link "Python" [ref=f17e147] [cursor=pointer]:
+                - /url: /en/academy/courses/python
+              - generic [ref=f17e148]: Recommended age 11+
+            - paragraph [ref=f17e153]: Develop structured thinking, problem-solving and programming skills through Python. Learners turn ideas into working programs, games and practical applications while building a strong foundation for more advanced technology.
+            - paragraph [ref=f17e154]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e156] [cursor=pointer]:
+              - /url: /en/academy/courses/python
+        - article [ref=f17e159]:
+          - link [ref=f17e160] [cursor=pointer]:
+            - /url: /en/academy/courses/roblox
+            - img "Roblox Game Development" [ref=f17e161]
+          - generic [ref=f17e162]:
+            - generic [ref=f17e163]:
+              - link "Roblox Game Development" [ref=f17e164] [cursor=pointer]:
+                - /url: /en/academy/courses/roblox
+              - generic [ref=f17e165]: Recommended age 9+
+            - paragraph [ref=f17e170]: Develop creativity, spatial thinking and problem-solving skills by designing and building interactive 3D worlds. Learners explore game design and programming while creating their own Roblox experiences.
+            - paragraph [ref=f17e171]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e173] [cursor=pointer]:
+              - /url: /en/academy/courses/roblox
+        - article [ref=f17e176]:
+          - link [ref=f17e177] [cursor=pointer]:
+            - /url: /en/academy/courses/unity-csharp
+            - img "Unity & C# Game Development" [ref=f17e178]
+          - generic [ref=f17e179]:
+            - generic [ref=f17e180]:
+              - link "Unity & C# Game Development" [ref=f17e181] [cursor=pointer]:
+                - /url: /en/academy/courses/unity-csharp
+              - generic [ref=f17e182]: Recommended age 12+
+            - paragraph [ref=f17e187]: Develop advanced problem-solving, logical thinking and programming skills through professional game development. Learners use Unity and C# to design mechanics, build 2D and 3D games, and turn their ideas into playable projects.
+            - paragraph [ref=f17e188]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e190] [cursor=pointer]:
+              - /url: /en/academy/courses/unity-csharp
+        - article [ref=f17e193]:
+          - link [ref=f17e194] [cursor=pointer]:
+            - /url: /en/academy/courses/web-development
+            - img "Web Development" [ref=f17e195]
+          - generic [ref=f17e196]:
+            - generic [ref=f17e197]:
+              - link "Web Development" [ref=f17e198] [cursor=pointer]:
+                - /url: /en/academy/courses/web-development
+              - generic [ref=f17e199]: Recommended age 11+
+            - paragraph [ref=f17e204]: Learn how websites work while developing creativity, logical thinking and problem-solving skills. Learners start with HTML, CSS and JavaScript, then progress to PHP and MySQL to build websites connected to real databases.
+            - paragraph [ref=f17e205]: 300 MAD/month · 800 MADfor 3 months
+            - generic [ref=f17e206]:
+              - generic [ref=f17e207]:
+                - generic [ref=f17e208]: Progression
+                - generic [ref=f17e210]: StarterPro
+              - generic [ref=f17e213]:
+                - generic [ref=f17e214]:
+                  - paragraph [ref=f17e215]: Starter
+                  - list [ref=f17e216]:
+                    - listitem [ref=f17e217]: HTML
+                    - listitem [ref=f17e219]: CSS
+                    - listitem [ref=f17e221]: JavaScript
+                - generic [ref=f17e223]:
+                  - paragraph [ref=f17e224]: Pro
+                  - list [ref=f17e225]:
+                    - listitem [ref=f17e226]: PHP
+                    - listitem [ref=f17e228]: MySQL
+                    - listitem [ref=f17e230]: Backend & databases
+            - link "View course details" [ref=f17e233] [cursor=pointer]:
+              - /url: /en/academy/courses/web-development
+        - article [ref=f17e236]:
+          - link [ref=f17e237] [cursor=pointer]:
+            - /url: /en/academy/courses/creative-design
+            - img "Creative Design" [ref=f17e238]
+          - generic [ref=f17e239]:
+            - generic [ref=f17e240]:
+              - link "Creative Design" [ref=f17e241] [cursor=pointer]:
+                - /url: /en/academy/courses/creative-design
+              - generic [ref=f17e242]: Recommended age 10+
+            - paragraph [ref=f17e247]: Develop creativity, visual communication and digital production skills. Learners explore 3D creation, photo editing and video editing while turning their ideas into original digital projects.
+            - paragraph [ref=f17e248]: 300 MAD/month · 800 MADfor 3 months
+            - link "View course details" [ref=f17e250] [cursor=pointer]:
+              - /url: /en/academy/courses/creative-design
+    - generic [ref=f17e254]:
+      - generic [ref=f17e255]:
+        - generic [ref=f17e256]: How We Teach
+        - heading "How We Teach" [level=2] [ref=f17e258]
+      - generic [ref=f17e259]:
+        - generic [ref=f17e260]:
+          - generic [ref=f17e261]: "01"
+          - heading "Learn" [level=3] [ref=f17e267]
+          - paragraph [ref=f17e268]: Live instruction with practical explanations and demonstrations.
+        - generic [ref=f17e269]:
+          - generic [ref=f17e270]: "02"
+          - heading "Practice" [level=3] [ref=f17e276]
+          - paragraph [ref=f17e277]: Exercises and guided activities help learners apply each new concept.
+        - generic [ref=f17e278]:
+          - generic [ref=f17e279]: "03"
+          - heading "Create" [level=3] [ref=f17e286]
+          - paragraph [ref=f17e287]: Learners build real projects throughout the course.
+        - generic [ref=f17e288]:
+          - generic [ref=f17e289]: "04"
+          - heading "Showcase" [level=3] [ref=f17e295]
+          - paragraph [ref=f17e296]: Complete projects become part of their portfolio, followed by a certificate after course completion.
+      - generic [ref=f17e297]:
+        - paragraph [ref=f17e298]: A complete learning experience
+        - list [ref=f17e299]:
+          - listitem [ref=f17e300]: Live 1h30 sessions in small groups
+          - listitem [ref=f17e303]: One session per week
+          - listitem [ref=f17e306]: Learning materials
+          - listitem [ref=f17e309]: Exercises
+          - listitem [ref=f17e312]: Community support
+    - generic [ref=f17e317]:
+      - figure "Mounir Abbotti — Founder of Medinova Studio & Lead Developer." [ref=f17e319]:
+        - img "Mounir Abbotti — Founder of Medinova Studio & Lead Developer." [ref=f17e321]
+      - generic [ref=f17e324]:
+        - generic [ref=f17e325]: The Founder
+        - heading "Learn directly from the founder of Medinova Studio" [level=2] [ref=f17e327]
+        - paragraph [ref=f17e328]: Learners are taught by Mounir Abbotti, founder and lead developer of Medinova Studio — an active game development and technology studio with published games and real projects. Instead of following pre-recorded lessons, learners learn from someone who designs, builds and ships technology every day.
+    - generic [ref=f17e330]:
+      - generic [ref=f17e331]:
+        - generic [ref=f17e332]: Our Work
+        - heading "Backed by a real studio that ships real projects" [level=2] [ref=f17e334]
+        - paragraph [ref=f17e335]: Medinova Academy is a program by Medinova Studio, an active game development and technology studio. The projects below are Medinova Studio projects — real published work, not student projects.
+      - generic [ref=f17e336]:
+        - img "Creator of 'Zombies WarZone' on Roblox — over 1,000,000 games played worldwide." [ref=f17e338]
+        - generic [ref=f17e339]:
+          - generic [ref=f17e340]: Medinova Studio on Roblox
+          - heading "Creator of 'Zombies WarZone' on Roblox — over 1,000,000 games played worldwide." [level=3] [ref=f17e347]
+          - link "Play on Roblox" [ref=f17e348] [cursor=pointer]:
+            - /url: https://www.roblox.com/games/11927988329/
+      - generic [ref=f17e352]:
+        - generic [ref=f17e353]:
+          - generic [ref=f17e354]: Morocco Gaming Expo
+          - heading "Booth C38 — Morocco Gaming Expo" [level=3] [ref=f17e357]
+          - paragraph [ref=f17e358]: Showcasing our published games to the public at Morocco's national gaming event.
+        - img "Booth C38 — Morocco Gaming Expo" [ref=f17e360]
+      - generic [ref=f17e361]:
+        - paragraph [ref=f17e362]: Medinova Studio projects — Published on the App Store
+        - generic [ref=f17e363]:
+          - generic [ref=f17e364]:
+            - 'img "Pharaoh''s Guardian: Mummies" [ref=f17e366]'
+            - paragraph [ref=f17e367]: "Pharaoh's Guardian: Mummies"
+          - generic [ref=f17e368]:
+            - 'img "Chameleon Outbreak: Camo Hunt" [ref=f17e370]'
+            - paragraph [ref=f17e371]: "Chameleon Outbreak: Camo Hunt"
+          - generic [ref=f17e372]:
+            - img "Sniper Elimination Challenge" [ref=f17e374]
+            - paragraph [ref=f17e375]: Sniper Elimination Challenge
+          - generic [ref=f17e376]:
+            - img "Blitz Combat Race" [ref=f17e378]
+            - paragraph [ref=f17e379]: Blitz Combat Race
+      - link "Explore the studio's full portfolio" [ref=f17e381] [cursor=pointer]:
+        - /url: /en/game-development
+    - generic [ref=f17e386]:
+      - generic [ref=f17e387]:
+        - generic [ref=f17e388]: Simple, transparent pricing
+        - heading "Live 1:30 sessions in small groups — one per week" [level=2] [ref=f17e389]
+        - paragraph [ref=f17e390]: The same price for every course, at every level. Start month to month, or commit to three months and save 100 MAD.
+        - paragraph [ref=f17e391]: Classes follow Morocco's school year (September to June, about 9 months) and pause during school holidays. Ask us how holiday breaks affect your plan and start date.
+      - generic [ref=f17e392]:
+        - article [ref=f17e393]:
+          - generic [ref=f17e394]:
+            - heading "Monthly" [level=3] [ref=f17e396]
+            - generic [ref=f17e398]:
+              - generic [ref=f17e399]: 300 MAD
+              - generic [ref=f17e400]: /month
+            - generic [ref=f17e401]:
+              - generic [ref=f17e402]:
+                - term [ref=f17e403]: Session length
+                - definition [ref=f17e404]: 1:30
+              - generic [ref=f17e406]:
+                - term [ref=f17e407]: Frequency
+                - definition [ref=f17e408]: 4 live sessions of 1:30
+              - generic [ref=f17e410]:
+                - term [ref=f17e411]: Effective price per session
+                - definition [ref=f17e412]: 75 MAD
+            - link "Ask us which option fits" [ref=f17e413] [cursor=pointer]:
+              - /url: "#cta"
+        - article [ref=f17e414]:
+          - generic [ref=f17e415]:
+            - generic [ref=f17e416]:
+              - heading "3 months" [level=3] [ref=f17e417]
+              - generic [ref=f17e418]: Most popular
+              - generic [ref=f17e419]: Save 100 MAD
+            - generic [ref=f17e420]:
+              - generic [ref=f17e421]:
+                - generic [ref=f17e422]: 800 MAD
+                - generic [ref=f17e423]: for 3 months
+              - paragraph [ref=f17e424]: 900 MAD
+            - generic [ref=f17e425]:
+              - generic [ref=f17e426]:
+                - term [ref=f17e427]: Session length
+                - definition [ref=f17e428]: 1:30
+              - generic [ref=f17e430]:
+                - term [ref=f17e431]: Frequency
+                - definition [ref=f17e432]: 12 live sessions of 1:30
+              - generic [ref=f17e434]:
+                - term [ref=f17e435]: Effective price per session
+                - definition [ref=f17e436]: 67 MAD
+            - link "Ask us which option fits" [ref=f17e437] [cursor=pointer]:
+              - /url: "#cta"
+      - generic [ref=f17e438]:
+        - heading "Every plan includes" [level=3] [ref=f17e439]
+        - list [ref=f17e440]:
+          - listitem [ref=f17e441]: Live 1:30 sessions in small groups
+          - listitem [ref=f17e444]: One session per week
+          - listitem [ref=f17e447]: English, French & Arabic
+          - listitem [ref=f17e450]: Learning materials and exercises
+          - listitem [ref=f17e453]: Community support
+          - listitem [ref=f17e456]: Certificate of completion
+          - listitem [ref=f17e459]: A free trial class before enrolling
+        - paragraph [ref=f17e462]: A free trial class before enrolling — no commitment.
+    - generic [ref=f17e465]:
+      - generic [ref=f17e466]:
+        - generic [ref=f17e467]: Frequently Asked Questions
+        - heading "Have questions?" [level=2] [ref=f17e468]
+        - paragraph [ref=f17e469]: Answers to the most asked questions from parents and learners.
+      - generic [ref=f17e470]:
+        - generic [ref=f17e471]:
+          - button "What age can my child start?" [expanded] [ref=f17e472] [cursor=pointer]
+          - region "What age can my child start?" [ref=f17e476]:
+            - paragraph [ref=f17e478]: Our Academy starts from age 7+. Each course has its own recommended age range, so learners can choose a program suited to their age and experience.
+        - generic [ref=f17e479]:
+          - button "Does my child need previous experience?" [ref=f17e480] [cursor=pointer]
+          - region "Does my child need previous experience?":
+            - paragraph [ref=f17e484]: No. Several courses are designed for complete beginners. For more advanced courses, previous knowledge may be recommended.
+        - generic [ref=f17e485]:
+          - button "Which languages are the classes available in?" [ref=f17e486] [cursor=pointer]
+          - region "Which languages are the classes available in?":
+            - paragraph [ref=f17e490]: Classes are available in English, French and Arabic, depending on the learner's language level and the course group.
+        - generic [ref=f17e491]:
+          - button "Are the classes online or in person?" [ref=f17e492] [cursor=pointer]
+          - region "Are the classes online or in person?":
+            - paragraph [ref=f17e496]: Classes are conducted live with an instructor, online in small groups. One 1h30 session is held per week, with times agreed together.
+        - generic [ref=f17e497]:
+          - button "Can my child try a class before enrolling?" [ref=f17e498] [cursor=pointer]
+          - region "Can my child try a class before enrolling?":
+            - paragraph [ref=f17e502]: Yes. We offer a free trial lesson before enrollment. This allows the learner and parent to see how the class works before making a commitment.
+        - generic [ref=f17e503]:
+          - button "What will my child actually learn?" [ref=f17e504] [cursor=pointer]
+          - region "What will my child actually learn?":
+            - paragraph [ref=f17e508]: Our courses focus on practical technology skills, problem-solving, logical thinking and creativity. Students learn by building projects rather than simply watching lessons.
+        - generic [ref=f17e509]:
+          - button "Will my child receive a certificate?" [ref=f17e510] [cursor=pointer]
+          - region "Will my child receive a certificate?":
+            - paragraph [ref=f17e514]: Yes. Students receive a Certificate of Completion after successfully completing their course and final project.
+        - generic [ref=f17e515]:
+          - button "Will my child have projects to show?" [ref=f17e516] [cursor=pointer]
+          - region "Will my child have projects to show?":
+            - paragraph [ref=f17e520]: Yes. Students build projects throughout their course and finish with work they can keep as part of their digital portfolio.
+        - generic [ref=f17e521]:
+          - button "What support is available outside the live class?" [ref=f17e522] [cursor=pointer]
+          - region "What support is available outside the live class?":
+            - paragraph [ref=f17e526]: Students receive learning materials, exercises and support through the Academy community, where they can ask questions and receive guidance.
+        - generic [ref=f17e527]:
+          - button "How much do the courses cost?" [ref=f17e528] [cursor=pointer]
+          - region "How much do the courses cost?":
+            - paragraph [ref=f17e532]: "The same price for every course: 300 MAD per month, or 800 MAD for three months — saving 100 MAD compared with paying month to month. One session of 1h30 per week is included in both."
+        - generic [ref=f17e533]:
+          - button "How do I book a trial?" [ref=f17e534] [cursor=pointer]
+          - region "How do I book a trial?":
+            - paragraph [ref=f17e538]: Click Book a Free Trial and contact us through WhatsApp. We'll discuss the learner's age, interests and language before arranging the appropriate trial session.
+    - generic [ref=f17e541]:
+      - generic [ref=f17e542]:
+        - generic [ref=f17e543]: Course recommendation
+        - heading "Let's find the right course for your child" [level=2] [ref=f17e544]
+        - paragraph [ref=f17e545]: Share your name and your child's age. We'll recommend a suitable starting point and explain the next steps on WhatsApp.
+      - generic [ref=f17e546]:
+        - generic [ref=f17e547]:
+          - generic [ref=f17e548]: Your name
+          - textbox "Your name" [ref=f17e549]:
+            - /placeholder: Parent or guardian name
+        - generic [ref=f17e550]:
+          - generic [ref=f17e551]: Your child's age
+          - spinbutton "Your child's age" [ref=f17e552]
+        - button "Continue on WhatsApp" [ref=f17e553] [cursor=pointer]
+        - paragraph [ref=f17e556]: We don't save your details on this website. They will appear in a WhatsApp draft; review it and tap Send to contact us.
+  - contentinfo [ref=f17e557]:
+    - generic [ref=f17e559]:
+      - generic [ref=f17e560]:
+        - link "Medinova Studio" [ref=f17e561] [cursor=pointer]:
+          - /url: /en
+          - img "Medinova Studio logo" [ref=f17e562]
+        - paragraph [ref=f17e563]: High-converting digital systems, custom game development, and tech education.
+        - paragraph [ref=f17e564]: Rabat, Morocco 🇲🇦
+        - 'link "Contact & Support: contact@medinovastudio.com" [ref=f17e568] [cursor=pointer]':
+          - /url: mailto:contact@medinovastudio.com
+      - generic [ref=f17e572]:
+        - heading "B2B Growth Agency" [level=3] [ref=f17e573]
+        - list [ref=f17e574]:
+          - listitem [ref=f17e575]:
+            - link "High-Converting Web Platforms" [ref=f17e576] [cursor=pointer]:
+              - /url: /en/agency#solutions
+          - listitem [ref=f17e577]:
+            - link "AI & Autonomous Acquisition Systems" [ref=f17e578] [cursor=pointer]:
+              - /url: /en/agency#growth-framework
+          - listitem [ref=f17e579]:
+            - link "Meta Ads & Performance Marketing" [ref=f17e580] [cursor=pointer]:
+              - /url: /en/agency#packages
+          - listitem [ref=f17e581]:
+            - link "Diagnostic Frameworks & Retainers" [ref=f17e582] [cursor=pointer]:
+              - /url: /en/agency#faq
+        - link "Book a Strategy Call" [ref=f17e583] [cursor=pointer]:
+          - /url: /en/agency#contact
+      - generic [ref=f17e586]:
+        - heading "Game Dev & Interactive Tech" [level=3] [ref=f17e587]
+        - list [ref=f17e588]:
+          - listitem [ref=f17e589]:
+            - link "Commercial Titles & WebGL Games" [ref=f17e590] [cursor=pointer]:
+              - /url: /en/game-development#portfolio
+          - listitem [ref=f17e591]:
+            - link "Custom AR/VR & Spatial Tech" [ref=f17e592] [cursor=pointer]:
+              - /url: /en/game-development#services
+          - listitem [ref=f17e593]:
+            - link "Serious Games & Educational Simulations" [ref=f17e594] [cursor=pointer]:
+              - /url: /en/game-development#portfolio
+          - listitem [ref=f17e595]:
+            - link "Web Portal Publishing" [ref=f17e596] [cursor=pointer]:
+              - /url: /en#contact
+      - generic [ref=f17e597]:
+        - heading "Medinova Academy" [level=3] [ref=f17e598]
+        - list [ref=f17e599]:
+          - listitem [ref=f17e600]:
+            - link "Youth & Adult Coding Tracks" [ref=f17e601] [cursor=pointer]:
+              - /url: /en/academy#courses
+          - listitem [ref=f17e602]:
+            - link "Scratch, Python & Unity C# Curricula" [ref=f17e603] [cursor=pointer]:
+              - /url: /en/academy#work
+          - listitem [ref=f17e604]:
+            - link "Printable Certified Modules & QR Verification" [ref=f17e605] [cursor=pointer]:
+              - /url: /en/academy#courses
+          - listitem [ref=f17e606]:
+            - link "Student Project Showcase" [ref=f17e607] [cursor=pointer]:
+              - /url: /en/academy#faq
+          - listitem [ref=f17e608]:
+            - link "Blog" [ref=f17e609] [cursor=pointer]:
+              - /url: /en/blog
+      - generic [ref=f17e610]:
+        - heading "Trust, Legal & Compliance" [level=3] [ref=f17e611]
+        - list [ref=f17e612]:
+          - listitem [ref=f17e613]:
+            - link "Privacy Policy" [ref=f17e614] [cursor=pointer]:
+              - /url: /en/privacy
+          - listitem [ref=f17e615]:
+            - link "Terms of Service" [ref=f17e616] [cursor=pointer]:
+              - /url: /en/terms
+        - paragraph [ref=f17e617]: Tarifs indiqués Hors Taxes (HT). TVA (20%) applicable selon la réglementation en vigueur.
+        - generic [ref=f17e618]:
+          - link "LinkedIn" [ref=f17e619] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/medinova-studio/
+          - link "Instagram" [ref=f17e622] [cursor=pointer]:
+            - /url: https://www.instagram.com/medinova.studio
+          - link "YouTube" [ref=f17e625] [cursor=pointer]:
+            - /url: https://www.youtube.com/@MedinovaStudio
+          - link "itch.io" [ref=f17e628] [cursor=pointer]:
+            - /url: https://medinova.itch.io/
+    - generic [ref=f17e632]:
+      - paragraph [ref=f17e633]: © 2026 Medinova Studio. All rights reserved.
+      - paragraph [ref=f17e634]: Rabat, Morocco 🇲🇦
+  - alert [ref=f17e635]

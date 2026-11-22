@@ -233,10 +233,12 @@ export function BrandCard({
       >
         <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
           {logo && (
+            // eslint-disable-next-line @next/next/no-img-element -- OG/Satori requires a direct SVG image source
             <img
               src={logo}
               width={48}
               height={38}
+              alt="Medinova Studio"
               style={{ objectFit: "contain" }}
             />
           )}

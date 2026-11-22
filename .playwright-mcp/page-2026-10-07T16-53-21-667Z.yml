@@ -1,0 +1,459 @@
+- generic [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - navigation "Primary" [ref=f3e3]:
+      - generic [ref=f3e5]:
+        - link "Medinova Studio" [ref=f3e6] [cursor=pointer]:
+          - /url: /ar
+          - img "Medinova Studio logo" [ref=f3e7]
+        - generic [ref=f3e8]:
+          - button "خدماتنا" [ref=f3e10] [cursor=pointer]
+          - link "الألعاب والمعرض" [ref=f3e13] [cursor=pointer]:
+            - /url: /ar#portfolio
+          - link "من نحن" [ref=f3e14] [cursor=pointer]:
+            - /url: /ar/who-we-are
+          - link "المدونة" [ref=f3e15] [cursor=pointer]:
+            - /url: /ar/blog
+          - generic [ref=f3e16]:
+            - button "Switch to FR" [ref=f3e17] [cursor=pointer]: FR
+            - button "Switch to EN" [ref=f3e18] [cursor=pointer]: EN
+            - button "Switch to AR" [ref=f3e19] [cursor=pointer]: AR
+          - link "اكتشف المسارات" [ref=f3e20] [cursor=pointer]:
+            - /url: /ar/academy#courses
+    - generic [ref=f3e22]:
+      - generic [ref=f3e23]: Medinova Academy
+      - link "أعمالنا" [ref=f3e24] [cursor=pointer]:
+        - /url: /ar/academy#work
+      - link "الدورات" [ref=f3e25] [cursor=pointer]:
+        - /url: /ar/academy#courses
+      - link "الأسعار" [ref=f3e26] [cursor=pointer]:
+        - /url: /ar/academy#pricing
+      - link "الأسئلة الشائعة" [ref=f3e27] [cursor=pointer]:
+        - /url: /ar/academy#faq
+      - generic [ref=f3e28]: مباشر عبر الإنترنت • 7+
+  - generic [ref=f3e31]:
+    - generic [ref=f3e33]:
+      - paragraph [ref=f3e34]: حصص مباشرة للمتعلمين من سن 7 سنوات فما فوق · الإنجليزية، الفرنسية والعربية
+      - link "اكتشف المسارات التعليمية" [ref=f3e35] [cursor=pointer]:
+        - /url: "#courses"
+    - generic [ref=f3e38]:
+      - generic [ref=f3e39]: 💻 حصص عن بُعد في البرمجة والذكاء الاصطناعي · من سن 7 سنوات فما فوق
+      - heading "دورات برمجة وتطوير ألعاب للأطفال — عبر الإنترنت في المغرب" [level=1] [ref=f3e41]
+      - paragraph [ref=f3e42]: تعلّم البرمجة وتطوير الألعاب والمهارات الرقمية مباشرة عبر الإنترنت مع Medinova Studio — من الرباط والدار البيضاء وكل مكان في المغرب. حصص عملية قائمة على المشاريع للمتعلمين من سن 7 سنوات، يدرّسها مؤسس استوديو ألعاب نشط.
+      - link "اكتشف ما يمكن لطفلك تعلمه" [ref=f3e44] [cursor=pointer]:
+        - /url: "#courses"
+      - generic [ref=f3e45]:
+        - paragraph [ref=f3e52]:
+          - generic [ref=f3e53]: من سن 7 سنوات فما فوق
+          - generic [ref=f3e54]: مسارات تناسب مختلف الأعمار والمستويات
+        - paragraph [ref=f3e60]:
+          - generic [ref=f3e61]: الإنجليزية · الفرنسية · العربية
+          - generic [ref=f3e62]: حصص بثلاث لغات
+        - paragraph [ref=f3e67]:
+          - generic [ref=f3e68]: حصص مباشرة ومشاريع عملية
+          - generic [ref=f3e69]: تعلّم بالممارسة بإشراف المدرّب
+    - generic [ref=f3e72]:
+      - generic [ref=f3e73]:
+        - generic [ref=f3e74]: لماذا أكاديمية Medinova
+        - heading "تعلّم من خلال التطبيق والمشاريع" [level=2] [ref=f3e76]
+      - generic [ref=f3e77]:
+        - generic [ref=f3e78]:
+          - heading "تعلّم بالممارسة، لا بالمشاهدة" [level=3] [ref=f3e84]
+          - paragraph [ref=f3e85]: لا تكتفِ بمشاهدة الدروس. طبّق ما تتعلمه، وجرّب أفكارك، وأنشئ مشاريع حقيقية تساعدك على تطوير مهاراتك.
+        - generic [ref=f3e86]:
+          - heading "حوّل المعرفة إلى مشاريع" [level=3] [ref=f3e90]
+          - paragraph [ref=f3e91]: كل مهارة جديدة هي فرصة لإنشاء مشروع. احتفظ بأعمالك وطوّرها لتشكّل ملف أعمال يعكس ما تستطيع فعليًا.
+        - generic [ref=f3e92]:
+          - heading "تعلّم من خبرة حقيقية في المجال" [level=3] [ref=f3e98]
+          - paragraph [ref=f3e99]: تعلّم مباشرة من مؤسس Medinova Studio، واستفد من خبرة استوديو يعمل فعليًا في تطوير الألعاب والتقنيات الرقمية وإطلاق منتجات ومشاريع حقيقية.
+    - generic [ref=f3e101]:
+      - generic [ref=f3e102]:
+        - generic [ref=f3e103]: استكشف دوراتنا
+        - heading "استكشف دوراتنا" [level=2] [ref=f3e105]
+        - paragraph [ref=f3e106]: لست متأكدًا من أين تبدأ؟ أخبرنا بعمر طفلك وسنوصي بدورة مناسبة له. تساعده المسارات العملية على تحويل فضوله إلى مهارات ومشاريع حقيقية.
+      - generic [ref=f3e107]:
+        - article [ref=f3e108]:
+          - link [ref=f3e109] [cursor=pointer]:
+            - /url: /ar/academy/courses/digital-essentials
+            - img "المهارات الرقمية الأساسية" [ref=f3e110]
+          - generic [ref=f3e111]:
+            - generic [ref=f3e112]:
+              - link "المهارات الرقمية الأساسية" [ref=f3e113] [cursor=pointer]:
+                - /url: /ar/academy/courses/digital-essentials
+              - generic [ref=f3e114]: الفئة العمرية المقترحة 7+
+            - paragraph [ref=f3e119]: "بناء المهارات الرقمية الأساسية للحياة اليومية: أساسيات استخدام الحاسوب وWord وExcel وPowerPoint والإنترنت وغيرها من المهارات الرقمية الأساسية."
+            - paragraph [ref=f3e120]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e122] [cursor=pointer]:
+              - /url: /ar/academy/courses/digital-essentials
+        - article [ref=f3e125]:
+          - link [ref=f3e126] [cursor=pointer]:
+            - /url: /ar/academy/courses/scratch
+            - img "Scratch" [ref=f3e127]
+          - generic [ref=f3e128]:
+            - generic [ref=f3e129]:
+              - link "Scratch" [ref=f3e130] [cursor=pointer]:
+                - /url: /ar/academy/courses/scratch
+              - generic [ref=f3e131]: الفئة العمرية المقترحة 7+
+            - paragraph [ref=f3e136]: تطوير التفكير المنطقي ومهارات حل المشكلات عبر البرمجة المرئية. يتعلم المتعلمون أساسيات الخوارزميات والتسلسل والتفكير الحاسوبي، مع إنشاء قصص تفاعلية ورسوم متحركة وألعاب خاصة بهم.
+            - paragraph [ref=f3e137]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e139] [cursor=pointer]:
+              - /url: /ar/academy/courses/scratch
+        - article [ref=f3e142]:
+          - link [ref=f3e143] [cursor=pointer]:
+            - /url: /ar/academy/courses/python
+            - img "Python" [ref=f3e144]
+          - generic [ref=f3e145]:
+            - generic [ref=f3e146]:
+              - link "Python" [ref=f3e147] [cursor=pointer]:
+                - /url: /ar/academy/courses/python
+              - generic [ref=f3e148]: الفئة العمرية المقترحة 11+
+            - paragraph [ref=f3e153]: تطوير التفكير المنطقي ومهارات حل المشكلات والبرمجة عبر لغة Python. يحوّل المتعلمون أفكارهم إلى برامج وألعاب وتطبيقات عملية، مع بناء أساس متين للمستويات الأكثر تقدمًا.
+            - paragraph [ref=f3e154]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e156] [cursor=pointer]:
+              - /url: /ar/academy/courses/python
+        - article [ref=f3e159]:
+          - link [ref=f3e160] [cursor=pointer]:
+            - /url: /ar/academy/courses/roblox
+            - img "تطوير ألعاب Roblox" [ref=f3e161]
+          - generic [ref=f3e162]:
+            - generic [ref=f3e163]:
+              - link "تطوير ألعاب Roblox" [ref=f3e164] [cursor=pointer]:
+                - /url: /ar/academy/courses/roblox
+              - generic [ref=f3e165]: الفئة العمرية المقترحة 9+
+            - paragraph [ref=f3e170]: تطوير الإبداع والتفكير المكاني ومهارات حل المشكلات من خلال تصميم وبناء عوالم ثلاثية الأبعاد تفاعلية. يستكشف المتعلمون تصميم الألعاب والبرمجة أثناء إنشاء تجارب Roblox خاصة بهم.
+            - paragraph [ref=f3e171]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e173] [cursor=pointer]:
+              - /url: /ar/academy/courses/roblox
+        - article [ref=f3e176]:
+          - link [ref=f3e177] [cursor=pointer]:
+            - /url: /ar/academy/courses/unity-csharp
+            - img "تطوير الألعاب باستخدام Unity وC#" [ref=f3e178]
+          - generic [ref=f3e179]:
+            - generic [ref=f3e180]:
+              - link "تطوير الألعاب باستخدام Unity وC#" [ref=f3e181] [cursor=pointer]:
+                - /url: /ar/academy/courses/unity-csharp
+              - generic [ref=f3e182]: الفئة العمرية المقترحة 12+
+            - paragraph [ref=f3e187]: تطوير مهارات متقدمة في البرمجة والتفكير المنطقي وحل المشكلات من خلال تطوير الألعاب بطريقة احترافية. يستخدم المتعلمون Unity وC# لتصميم آليات اللعب وبناء ألعاب ثنائية وثلاثية الأبعاد، وتحويل أفكارهم إلى مشاريع تفاعلية.
+            - paragraph [ref=f3e188]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e190] [cursor=pointer]:
+              - /url: /ar/academy/courses/unity-csharp
+        - article [ref=f3e193]:
+          - link [ref=f3e194] [cursor=pointer]:
+            - /url: /ar/academy/courses/web-development
+            - img "تطوير الويب" [ref=f3e195]
+          - generic [ref=f3e196]:
+            - generic [ref=f3e197]:
+              - link "تطوير الويب" [ref=f3e198] [cursor=pointer]:
+                - /url: /ar/academy/courses/web-development
+              - generic [ref=f3e199]: الفئة العمرية المقترحة 11+
+            - paragraph [ref=f3e204]: فهم كيفية عمل المواقع الإلكترونية مع تطوير الإبداع والتفكير المنطقي ومهارات حل المشكلات. يبدأ المتعلمون بـ HTML وCSS وJavaScript، ثم يتقدمون إلى PHP وMySQL لبناء مواقع مرتبطة بقواعد بيانات حقيقية.
+            - paragraph [ref=f3e205]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - generic [ref=f3e206]:
+              - generic [ref=f3e207]:
+                - generic [ref=f3e208]: مسار التعلّم
+                - generic [ref=f3e210]: المستوى الأساسيالمستوى المتقدم
+              - generic [ref=f3e213]:
+                - generic [ref=f3e214]:
+                  - paragraph [ref=f3e215]: المستوى الأساسي
+                  - list [ref=f3e216]:
+                    - listitem [ref=f3e217]: HTML
+                    - listitem [ref=f3e219]: CSS
+                    - listitem [ref=f3e221]: JavaScript
+                - generic [ref=f3e223]:
+                  - paragraph [ref=f3e224]: المستوى المتقدم
+                  - list [ref=f3e225]:
+                    - listitem [ref=f3e226]: PHP
+                    - listitem [ref=f3e228]: MySQL
+                    - listitem [ref=f3e230]: الواجهة الخلفية وقواعد البيانات
+            - link "عرض تفاصيل الدورة" [ref=f3e233] [cursor=pointer]:
+              - /url: /ar/academy/courses/web-development
+        - article [ref=f3e236]:
+          - link [ref=f3e237] [cursor=pointer]:
+            - /url: /ar/academy/courses/creative-design
+            - img "التصميم الإبداعي" [ref=f3e238]
+          - generic [ref=f3e239]:
+            - generic [ref=f3e240]:
+              - link "التصميم الإبداعي" [ref=f3e241] [cursor=pointer]:
+                - /url: /ar/academy/courses/creative-design
+              - generic [ref=f3e242]: الفئة العمرية المقترحة 10+
+            - paragraph [ref=f3e247]: تطوير الإبداع والتواصل البصري ومهارات الإنتاج الرقمي. يستكشف المتعلمون النمذجة ثلاثية الأبعاد وتحرير الصور ومونتاج الفيديو، مع تحويل أفكارهم إلى مشاريع رقمية أصلية.
+            - paragraph [ref=f3e248]: 300 درهم/شهرياً · 800 درهملثلاثة أشهر
+            - link "عرض تفاصيل الدورة" [ref=f3e250] [cursor=pointer]:
+              - /url: /ar/academy/courses/creative-design
+    - generic [ref=f3e254]:
+      - generic [ref=f3e255]:
+        - generic [ref=f3e256]: كيف نعلّم
+        - heading "كيف نعلّم؟" [level=2] [ref=f3e258]
+      - generic [ref=f3e259]:
+        - generic [ref=f3e260]:
+          - generic [ref=f3e261]: "01"
+          - heading "التعلّم" [level=3] [ref=f3e267]
+          - paragraph [ref=f3e268]: حصص مباشرة تجمع بين الشرح الواضح والتطبيق العملي والأمثلة التوضيحية.
+        - generic [ref=f3e269]:
+          - generic [ref=f3e270]: "02"
+          - heading "التطبيق" [level=3] [ref=f3e276]
+          - paragraph [ref=f3e277]: تمارين وأنشطة عملية تساعد المتعلم على تطبيق كل مفهوم جديد.
+        - generic [ref=f3e278]:
+          - generic [ref=f3e279]: "03"
+          - heading "تطوير المشاريع" [level=3] [ref=f3e286]
+          - paragraph [ref=f3e287]: يستخدم المتعلم ما تعلّمه لبناء مشاريع حقيقية وتطوير أفكاره الخاصة.
+        - generic [ref=f3e288]:
+          - generic [ref=f3e289]: "04"
+          - heading "ملف الأعمال" [level=3] [ref=f3e295]
+          - paragraph [ref=f3e296]: يحتفظ المتعلم بمشاريعه ويطوّرها ضمن ملف أعماله، ويحصل على شهادة إتمام الدورة بعد إكمال البرنامج والمشروع النهائي.
+      - generic [ref=f3e297]:
+        - paragraph [ref=f3e298]: تجربة تعلّم متكاملة
+        - list [ref=f3e299]:
+          - listitem [ref=f3e300]: حصص مباشرة مدة كل منها 1:30 في مجموعات صغيرة
+          - listitem [ref=f3e303]: حصة واحدة أسبوعياً
+          - listitem [ref=f3e306]: مواد تعليمية
+          - listitem [ref=f3e309]: تمارين
+          - listitem [ref=f3e312]: دعم المجتمع
+    - generic [ref=f3e317]:
+      - figure "منير عبوطي — مؤسس Medinova Studio والمطور الرئيسي." [ref=f3e319]:
+        - img "منير عبوطي — مؤسس Medinova Studio والمطور الرئيسي." [ref=f3e321]
+      - generic [ref=f3e324]:
+        - generic [ref=f3e325]: المؤسس
+        - heading "تعلّم مباشرة من مؤسس Medinova Studio" [level=2] [ref=f3e327]
+        - paragraph [ref=f3e328]: يتعلم المتعلمون بإشراف مباشر من منير عبوطي، مؤسس Medinova Studio والمطور الرئيسي فيها. Medinova Studio استوديو يعمل فعليًا في تطوير الألعاب والتقنيات الرقمية، وله ألعاب منشورة ومشاريع حقيقية. وبدلًا من الاعتماد على دروس مسجلة فقط، يتعلم المتعلمون من شخص يعمل فعليًا على تصميم وتطوير وإطلاق الألعاب والتقنيات.
+    - generic [ref=f3e330]:
+      - generic [ref=f3e331]:
+        - generic [ref=f3e332]: أعمالنا
+        - heading "تعلّم داخل استوديو حقيقي ينفّذ مشاريع حقيقية" [level=2] [ref=f3e334]
+        - paragraph [ref=f3e335]: أكاديمية Medinova هي برنامج تعليمي من Medinova Studio، وهو استوديو يعمل فعليًا في تطوير الألعاب والتقنيات التفاعلية. المشاريع المعروضة أدناه هي مشاريع Medinova Studio — أعمال حقيقية منشورة، وليست مشاريع طلاب.
+      - generic [ref=f3e336]:
+        - img "مطوّر لعبة Zombies WarZone على Roblox — أكثر من مليون زيارة للعبة حول العالم." [ref=f3e338]
+        - generic [ref=f3e339]:
+          - generic [ref=f3e340]: Medinova Studio على Roblox
+          - heading "مطوّر لعبة Zombies WarZone على Roblox — أكثر من مليون زيارة للعبة حول العالم." [level=3] [ref=f3e347]
+          - link "جرّب اللعبة على Roblox" [ref=f3e348] [cursor=pointer]:
+            - /url: https://www.roblox.com/games/11927988329/
+      - generic [ref=f3e352]:
+        - generic [ref=f3e353]:
+          - generic [ref=f3e354]: المعرض المغربي للألعاب
+          - heading "الجناح C38 — المعرض المغربي للألعاب" [level=3] [ref=f3e357]
+          - paragraph [ref=f3e358]: عرض ألعابنا المنشورة للجمهور في فعالية الألعاب الوطنية بالمغرب.
+        - img "الجناح C38 — المعرض المغربي للألعاب" [ref=f3e360]
+      - generic [ref=f3e361]:
+        - paragraph [ref=f3e362]: مشاريع Medinova Studio — منشورة على App Store
+        - generic [ref=f3e363]:
+          - generic [ref=f3e364]:
+            - 'img "Pharaoh''s Guardian: Mummies" [ref=f3e366]'
+            - paragraph [ref=f3e367]: "Pharaoh's Guardian: Mummies"
+          - generic [ref=f3e368]:
+            - 'img "Chameleon Outbreak: Camo Hunt" [ref=f3e370]'
+            - paragraph [ref=f3e371]: "Chameleon Outbreak: Camo Hunt"
+          - generic [ref=f3e372]:
+            - img "Sniper Elimination Challenge" [ref=f3e374]
+            - paragraph [ref=f3e375]: Sniper Elimination Challenge
+          - generic [ref=f3e376]:
+            - img "Blitz Combat Race" [ref=f3e378]
+            - paragraph [ref=f3e379]: Blitz Combat Race
+      - link "استكشف معرض أعمال الاستوديو بالكامل" [ref=f3e381] [cursor=pointer]:
+        - /url: /ar/game-development
+    - generic [ref=f3e386]:
+      - generic [ref=f3e387]:
+        - generic [ref=f3e388]: أسعار بسيطة وواضحة
+        - heading "حصص مباشرة مدتها 1:30 في مجموعات صغيرة — حصة واحدة أسبوعياً" [level=2] [ref=f3e389]
+        - paragraph [ref=f3e390]: نفس السعر لجميع الدورات وجميع المستويات. ابدأ بالشهر، أو التزم لثلاثة أشهر ووفّر 100 درهم.
+        - paragraph [ref=f3e391]: تتبع الحصص السنة الدراسية في المغرب (من شتنبر إلى يونيو، نحو 9 أشهر) وتتوقف خلال العطل المدرسية. اسألنا عن تأثير العطل على الباقة وموعد البداية.
+      - generic [ref=f3e392]:
+        - article [ref=f3e393]:
+          - generic [ref=f3e394]:
+            - heading "شهري" [level=3] [ref=f3e396]
+            - generic [ref=f3e398]:
+              - generic [ref=f3e399]: 300 درهم
+              - generic [ref=f3e400]: /شهرياً
+            - generic [ref=f3e401]:
+              - generic [ref=f3e402]:
+                - term [ref=f3e403]: مدة الحصة
+                - definition [ref=f3e404]: 1:30
+              - generic [ref=f3e406]:
+                - term [ref=f3e407]: التكرار
+                - definition [ref=f3e408]: 4 حصص مباشرة مدة كل منها 1:30
+              - generic [ref=f3e410]:
+                - term [ref=f3e411]: السعر الفعلي للحصة
+                - definition [ref=f3e412]: 75 درهم
+            - link "استشرنا لاختيار الأنسب" [ref=f3e413] [cursor=pointer]:
+              - /url: "#cta"
+        - article [ref=f3e414]:
+          - generic [ref=f3e415]:
+            - generic [ref=f3e416]:
+              - heading "3 أشهر" [level=3] [ref=f3e417]
+              - generic [ref=f3e418]: الأكثر اختياراً
+              - generic [ref=f3e419]: وفّر 100 درهم
+            - generic [ref=f3e420]:
+              - generic [ref=f3e421]:
+                - generic [ref=f3e422]: 800 درهم
+                - generic [ref=f3e423]: لثلاثة أشهر
+              - paragraph [ref=f3e424]: 900 درهم
+            - generic [ref=f3e425]:
+              - generic [ref=f3e426]:
+                - term [ref=f3e427]: مدة الحصة
+                - definition [ref=f3e428]: 1:30
+              - generic [ref=f3e430]:
+                - term [ref=f3e431]: التكرار
+                - definition [ref=f3e432]: 12 حصص مباشرة مدة كل منها 1:30
+              - generic [ref=f3e434]:
+                - term [ref=f3e435]: السعر الفعلي للحصة
+                - definition [ref=f3e436]: 67 درهم
+            - link "استشرنا لاختيار الأنسب" [ref=f3e437] [cursor=pointer]:
+              - /url: "#cta"
+      - generic [ref=f3e438]:
+        - heading "كل الباقات تشمل" [level=3] [ref=f3e439]
+        - list [ref=f3e440]:
+          - listitem [ref=f3e441]: حصص مباشرة مدة كل منها 1:30 في مجموعات صغيرة
+          - listitem [ref=f3e444]: حصة واحدة أسبوعياً
+          - listitem [ref=f3e447]: الإنجليزية والفرنسية والعربية
+          - listitem [ref=f3e450]: مواد وتمارين الدروس
+          - listitem [ref=f3e453]: دعم المجتمع
+          - listitem [ref=f3e456]: شهادة إتمام
+          - listitem [ref=f3e459]: حصة تجريبية مجانية قبل التسجيل
+        - paragraph [ref=f3e462]: حصة تجريبية مجانية قبل التسجيل — دون أي التزام.
+    - generic [ref=f3e465]:
+      - generic [ref=f3e466]:
+        - generic [ref=f3e467]: الأسئلة الشائعة
+        - heading "هل لديك استفسار؟" [level=2] [ref=f3e468]
+        - paragraph [ref=f3e469]: إجابات عن الأسئلة الأكثر شيوعًا لدى أولياء الأمور والمتعلمين.
+      - generic [ref=f3e470]:
+        - generic [ref=f3e471]:
+          - button "في أي عمر يمكن البدء؟" [expanded] [ref=f3e472] [cursor=pointer]
+          - region "في أي عمر يمكن البدء؟" [ref=f3e476]:
+            - paragraph [ref=f3e478]: تبدأ برامج الأكاديمية من سن 7 سنوات فما فوق، مع اختلاف الفئة العمرية المقترحة حسب الدورة ومستوى المتعلم.
+        - generic [ref=f3e479]:
+          - button "هل أحتاج إلى خبرة سابقة؟" [ref=f3e480] [cursor=pointer]
+          - region "هل أحتاج إلى خبرة سابقة؟":
+            - paragraph [ref=f3e484]: لا، تتوفر دورات للمبتدئين تمامًا، بينما قد تتطلب الدورات الأكثر تقدمًا بعض المعرفة السابقة.
+        - generic [ref=f3e485]:
+          - button "بأي لغات تتوفر الحصص؟" [ref=f3e486] [cursor=pointer]
+          - region "بأي لغات تتوفر الحصص؟":
+            - paragraph [ref=f3e490]: الحصص متاحة باللغة الإنجليزية والفرنسية والعربية، وتُقدم بلغة المتعلم ووليّ أمره.
+        - generic [ref=f3e491]:
+          - button "هل الحصص عبر الإنترنت أم حضورياً؟" [ref=f3e492] [cursor=pointer]
+          - region "هل الحصص عبر الإنترنت أم حضورياً؟":
+            - paragraph [ref=f3e496]: الحصص مباشرة مع مدرّب، وتتم عن بُعد ضمن مجموعات صغيرة. وتُعقد حصة واحدة أسبوعياً، وتُحدَّد المواعيد بالاتفاق.
+        - generic [ref=f3e497]:
+          - button "كم تكلف الدورات؟" [ref=f3e498] [cursor=pointer]
+          - region "كم تكلف الدورات؟":
+            - paragraph [ref=f3e502]: "نفس السعر لجميع الدورات: 300 درهم شهرياً، أو 800 درهم لثلاثة أشهر — أي توفير 100 درهم مقارنة بالدفع الشهري. حصة واحدة مدتها 1:30 أسبوعياً مشمولة في الصيغتين."
+        - generic [ref=f3e503]:
+          - button "هل يمكنني تجربة حصة قبل التسجيل؟" [ref=f3e504] [cursor=pointer]
+          - region "هل يمكنني تجربة حصة قبل التسجيل؟":
+            - paragraph [ref=f3e508]: نعم. كل الباقات تشمل حصة تجريبية مجانية قبل التسجيل، ليتعرف المتعلم ووليّ الأمر على طريقة عمل الحصة قبل اتخاذ القرار.
+        - generic [ref=f3e509]:
+          - button "ماذا سيتعلم المتعلم فعليًا؟" [ref=f3e510] [cursor=pointer]
+          - region "ماذا سيتعلم المتعلم فعليًا؟":
+            - paragraph [ref=f3e514]: تتمحور دوراتنا حول المهارات التقنية العملية، وحل المشكلات، والتفكير المنطقي، والإبداع، عبر مشاريع حقيقية وليس مجرد متابعة الدروس.
+        - generic [ref=f3e515]:
+          - button "هل يحصل المتعلم على شهادة؟" [ref=f3e516] [cursor=pointer]
+          - region "هل يحصل المتعلم على شهادة؟":
+            - paragraph [ref=f3e520]: نعم. يحصل المتعلم على شهادة إتمام الدورة بعد إكمالها والمشروع النهائي بنجاح.
+        - generic [ref=f3e521]:
+          - button "هل سيكون لدى المتعلم مشاريع يعرضها؟" [ref=f3e522] [cursor=pointer]
+          - region "هل سيكون لدى المتعلم مشاريع يعرضها؟":
+            - paragraph [ref=f3e526]: نعم. يبني المتعلم مشاريع طوال الدورة ويضيفها إلى ملف أعماله، ليعرضها كإنجازات حقيقية.
+        - generic [ref=f3e527]:
+          - button "ما الدعم المتاح خارج الحصة المباشرة؟" [ref=f3e528] [cursor=pointer]
+          - region "ما الدعم المتاح خارج الحصة المباشرة؟":
+            - paragraph [ref=f3e532]: يحصل المتعلمون على مواد تعليمية وتمارين عملية ومتابعة منتظمة، لمساعدتهم على التقدم خارج أوقات الحصص.
+        - generic [ref=f3e533]:
+          - button "كيف أحجز حصة تجريبية؟" [ref=f3e534] [cursor=pointer]
+          - region "كيف أحجز حصة تجريبية؟":
+            - paragraph [ref=f3e538]: اضغط على «احجز حصة تجريبية مجانية» وتواصل معنا عبر WhatsApp. سنناقش عمر المتعلم واهتماماته ولغته قبل ترتيب الحصة المناسبة.
+    - generic [ref=f3e541]:
+      - generic [ref=f3e542]:
+        - generic [ref=f3e543]: توصية بالدورة
+        - heading "لنجد الدورة المناسبة لطفلك" [level=2] [ref=f3e544]
+        - paragraph [ref=f3e545]: أخبرنا باسمك وعمر طفلك. سنوصي ببداية مناسبة ونشرح لك الخطوات التالية عبر WhatsApp.
+      - generic [ref=f3e546]:
+        - generic [ref=f3e547]:
+          - generic [ref=f3e548]: اسمك
+          - textbox "اسمك" [ref=f3e549]:
+            - /placeholder: اسم ولي الأمر
+        - generic [ref=f3e550]:
+          - generic [ref=f3e551]: عمر طفلك
+          - spinbutton "عمر طفلك" [ref=f3e552]
+        - button "المتابعة عبر WhatsApp" [ref=f3e553] [cursor=pointer]
+        - paragraph [ref=f3e556]: لا نحفظ بياناتك على هذا الموقع. ستظهر في مسودة رسالة على WhatsApp؛ راجعها واضغط على إرسال للتواصل معنا.
+  - contentinfo [ref=f3e557]:
+    - generic [ref=f3e559]:
+      - generic [ref=f3e560]:
+        - link "Medinova Studio" [ref=f3e561] [cursor=pointer]:
+          - /url: /ar
+          - img "Medinova Studio logo" [ref=f3e562]
+        - paragraph [ref=f3e563]: منصات ويب مصممة لزيادة التحويلات، وتطوير ألعاب مخصصة، وتعليم تقني.
+        - paragraph [ref=f3e564]: الرباط، المغرب 🇲🇦
+        - 'link "تواصل ودعم: contact@medinovastudio.com" [ref=f3e568] [cursor=pointer]':
+          - /url: mailto:contact@medinovastudio.com
+      - generic [ref=f3e572]:
+        - heading "وكالة النمو B2B" [level=3] [ref=f3e573]
+        - list [ref=f3e574]:
+          - listitem [ref=f3e575]:
+            - link "منصات ويب مصممة لزيادة التحويلات" [ref=f3e576] [cursor=pointer]:
+              - /url: /ar/agency#solutions
+          - listitem [ref=f3e577]:
+            - link "أنظمة اكتساب ذاتية بالذكاء الاصطناعي" [ref=f3e578] [cursor=pointer]:
+              - /url: /ar/agency#growth-framework
+          - listitem [ref=f3e579]:
+            - link "إعلانات ميتا والتسويق بالأداء" [ref=f3e580] [cursor=pointer]:
+              - /url: /ar/agency#packages
+          - listitem [ref=f3e581]:
+            - link "تحليل الأداء وخطط النمو والاشتراكات الشهرية" [ref=f3e582] [cursor=pointer]:
+              - /url: /ar/agency#faq
+        - link "احجز مكالمة استراتيجية" [ref=f3e583] [cursor=pointer]:
+          - /url: /ar/agency#contact
+      - generic [ref=f3e586]:
+        - heading "تطوير الألعاب والتقنية التفاعلية" [level=3] [ref=f3e587]
+        - list [ref=f3e588]:
+          - listitem [ref=f3e589]:
+            - link "ألعاب تجارية وألعاب WebGL" [ref=f3e590] [cursor=pointer]:
+              - /url: /ar/game-development#portfolio
+          - listitem [ref=f3e591]:
+            - link "تقنية AR/VR مخصصة وتقنيات مكانية" [ref=f3e592] [cursor=pointer]:
+              - /url: /ar/game-development#services
+          - listitem [ref=f3e593]:
+            - link "ألعاب تعليمية ومحاكاة تربوية" [ref=f3e594] [cursor=pointer]:
+              - /url: /ar/game-development#portfolio
+          - listitem [ref=f3e595]:
+            - link "تطوير ونشر بوابات الويب" [ref=f3e596] [cursor=pointer]:
+              - /url: /ar#contact
+      - generic [ref=f3e597]:
+        - heading "أكاديمية Medinova" [level=3] [ref=f3e598]
+        - list [ref=f3e599]:
+          - listitem [ref=f3e600]:
+            - link "دورات البرمجة والتقنية من سن 7 سنوات" [ref=f3e601] [cursor=pointer]:
+              - /url: /ar/academy#courses
+          - listitem [ref=f3e602]:
+            - link "مسارات البرمجة باستخدام Scratch وPython وUnity وC#" [ref=f3e603] [cursor=pointer]:
+              - /url: /ar/academy#work
+          - listitem [ref=f3e604]:
+            - link "شهادة إتمام الدورة" [ref=f3e605] [cursor=pointer]:
+              - /url: /ar/academy#courses
+          - listitem [ref=f3e606]:
+            - link "ملف أعمال المتعلمين" [ref=f3e607] [cursor=pointer]:
+              - /url: /ar/academy#faq
+          - listitem [ref=f3e608]:
+            - link "المدونة" [ref=f3e609] [cursor=pointer]:
+              - /url: /ar/blog
+      - generic [ref=f3e610]:
+        - heading "الثقة، القانون والامتثال" [level=3] [ref=f3e611]
+        - list [ref=f3e612]:
+          - listitem [ref=f3e613]:
+            - link "سياسة الخصوصية" [ref=f3e614] [cursor=pointer]:
+              - /url: /ar/privacy
+          - listitem [ref=f3e615]:
+            - link "شروط الخدمة" [ref=f3e616] [cursor=pointer]:
+              - /url: /ar/terms
+        - paragraph [ref=f3e617]: الأسعار المعروضة خارج الضريبة (HT). تُطبَّق ضريبة القيمة المضافة (20%) وفقاً للأنظمة المعمول بها.
+        - generic [ref=f3e618]:
+          - link "LinkedIn" [ref=f3e619] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/medinova-studio/
+          - link "Instagram" [ref=f3e622] [cursor=pointer]:
+            - /url: https://www.instagram.com/medinova.studio
+          - link "YouTube" [ref=f3e625] [cursor=pointer]:
+            - /url: https://www.youtube.com/@MedinovaStudio
+          - link "itch.io" [ref=f3e628] [cursor=pointer]:
+            - /url: https://medinova.itch.io/
+    - generic [ref=f3e632]:
+      - paragraph [ref=f3e633]: © 2026 Medinova Studio. جميع الحقوق محفوظة.
+      - paragraph [ref=f3e634]: الرباط، المغرب 🇲🇦
+  - alert [ref=f3e635]

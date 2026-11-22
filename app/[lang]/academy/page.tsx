@@ -5,10 +5,12 @@ import Why from "@/components/academy/Why";
 import Founder from "@/components/academy/Founder";
 import Work from "@/components/academy/Work";
 import Courses from "@/components/academy/Courses";
+import Pricing from "@/components/academy/Pricing";
 import Teaching from "@/components/academy/Teaching";
 import FAQ from "@/components/academy/FAQ";
 import FinalCta from "@/components/academy/FinalCta";
-import WhatsAppWidget from "@/components/WhatsAppWidget";
+import StickyCta from "@/components/academy/StickyCta";
+import ViewContent from "@/components/analytics/ViewContent";
 import JsonLd from "@/components/JsonLd";
 import {
   academySchema,
@@ -39,14 +41,16 @@ export default async function AcademyPage({
       <AnnouncementBar />
       <Hero />
       <Why />
-      <Founder />
-      <Work />
       <Courses />
       <Teaching />
+      <Founder />
+      <Work />
+      <Pricing leadCapture />
       <FAQ />
-      <FinalCta />
-      <WhatsAppWidget />
-      <JsonLd data={academySchema()} />
+      <FinalCta leadCapture />
+      <StickyCta />
+      <ViewContent contentName="Medinova Academy" contentType="product_list" />
+      <JsonLd data={academySchema(l)} />
       <JsonLd data={faqSchema(translations[l].academy.faq.items)} />
       <JsonLd
         data={breadcrumbSchema([

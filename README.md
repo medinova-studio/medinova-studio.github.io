@@ -8,7 +8,7 @@ Marketing site for **Medinova Studio** — a Moroccan independent game studio & 
 - **Styling**: Tailwind CSS 3.4 · `class-variance-authority` · `tailwind-merge`
 - **Forms**: `react-hook-form` + `zod`
 - **Email**: Resend (`app/api/contact/route.ts`)
-- **Animations**: `motion` · **Icons**: `lucide-react`
+- **Animations**: CSS reveal effects · **Icons**: `lucide-react`
 - **SEO**: `next-sitemap` (sitemap.xml + robots.txt)
 
 ## Pages
@@ -37,7 +37,12 @@ Create `.env.local` with your Resend key for the contact form:
 
 ```
 RESEND_API_KEY=re_...
+NEXT_PUBLIC_FB_PIXEL_ID=2538688703272985
 ```
+
+Optional analytics IDs should be configured through the hosting provider's
+environment variables. Analytics and advertising scripts remain blocked until
+the visitor accepts the cookie consent prompt.
 
 ## Scripts
 

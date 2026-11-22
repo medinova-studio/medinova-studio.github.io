@@ -1,0 +1,806 @@
+{
+  ".opencode/opencode.json": {
+    "mtime": 1786546503.6473672,
+    "seen": 1791234832.2579553,
+    "ast_hash": "470a50eaa6d46f86827f5131cdd2b76a",
+    "semantic_hash": ""
+  },
+  ".opencode/plugins/graphify.js": {
+    "mtime": 1786472758.6222668,
+    "seen": 1791234832.2579625,
+    "ast_hash": "b33d000860642c6f4907a877e0387a21",
+    "semantic_hash": ""
+  },
+  "components/Contact.tsx": {
+    "mtime": 1787502307.467617,
+    "seen": 1791234832.258,
+    "ast_hash": "b19c8f88a7c08eb6556b30a15193e2a2",
+    "semantic_hash": ""
+  },
+  "components/Footer.tsx": {
+    "mtime": 1789046935.2555492,
+    "seen": 1791234832.258003,
+    "ast_hash": "390bf782118a16b41979bfb6ff6e4e36",
+    "semantic_hash": ""
+  },
+  "components/Hero.tsx": {
+    "mtime": 1787065695.9911897,
+    "seen": 1791234832.2580078,
+    "ast_hash": "46a9023cff34ad08d3b9b5fd61106c0d",
+    "semantic_hash": ""
+  },
+  "components/Navbar.tsx": {
+    "mtime": 1791231717.505797,
+    "seen": 1791234832.2580156,
+    "ast_hash": "93b63e3af99df02928b73ee45fbd8804",
+    "semantic_hash": ""
+  },
+  "components/Portfolio.tsx": {
+    "mtime": 1787502602.8772285,
+    "seen": 1791234832.2580173,
+    "ast_hash": "3b01478e3502bb97e7245a19df0332d8",
+    "semantic_hash": ""
+  },
+  "lib/LanguageContext.tsx": {
+    "mtime": 1787236134.7631795,
+    "seen": 1791234832.2580624,
+    "ast_hash": "1b7c1c8fad211a27229f2c8d69fab0d9",
+    "semantic_hash": ""
+  },
+  "lib/i18n.ts": {
+    "mtime": 1791234608.5050282,
+    "seen": 1791234832.2580926,
+    "ast_hash": "1d191ad36c689ddfdf9ad1b1894a45fb",
+    "semantic_hash": ""
+  },
+  "next-env.d.ts": {
+    "mtime": 1791234766.512827,
+    "seen": 1791234832.2581074,
+    "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
+    "semantic_hash": ""
+  },
+  "next.config.mjs": {
+    "mtime": 1786472758.6691055,
+    "seen": 1791234832.2581103,
+    "ast_hash": "f53bf377566882e87c2a1687e6c30d77",
+    "semantic_hash": "f53bf377566882e87c2a1687e6c30d77"
+  },
+  "package.json": {
+    "mtime": 1787502501.3079486,
+    "seen": 1791234832.258112,
+    "ast_hash": "8ff8b9c279a7529f100793bc022b238a",
+    "semantic_hash": ""
+  },
+  "postcss.config.mjs": {
+    "mtime": 1786472758.6691055,
+    "seen": 1791234832.2581136,
+    "ast_hash": "d1283e7566e136247b268494a6a545eb",
+    "semantic_hash": "d1283e7566e136247b268494a6a545eb"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1787502408.9151433,
+    "seen": 1791234832.2581325,
+    "ast_hash": "8b74cf38dca4fc72d5b86958f2aec4d3",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1786472758.7785592,
+    "seen": 1791234832.2581341,
+    "ast_hash": "b1b7e39d622a43890711fb854634bf42",
+    "semantic_hash": ""
+  },
+  "vercel.json": {
+    "mtime": 1786472758.7785592,
+    "seen": 1791234832.2581353,
+    "ast_hash": "4a4e976aa10e5854d62962ddb1288a24",
+    "semantic_hash": "4a4e976aa10e5854d62962ddb1288a24"
+  },
+  "components/GameServices.tsx": {
+    "mtime": 1787501270.8182259,
+    "seen": 1791234832.2580063,
+    "ast_hash": "dbb412e2e22b8146205ed4059b0d38f4",
+    "semantic_hash": ""
+  },
+  "components/TechStackBar.tsx": {
+    "mtime": 1786478356.0308912,
+    "seen": 1791234832.2580187,
+    "ast_hash": "367feaa99980344e20e7b231556210db",
+    "semantic_hash": ""
+  },
+  ".roo/skills/web-deployment-diagnostics/SKILL.md": {
+    "mtime": 1786472758.6222668,
+    "seen": 1791234832.2581398,
+    "ast_hash": "4d6ee8f19cc525d86a4941cabb69f9ce",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1786472758.6222668,
+    "seen": 1791234832.2581415,
+    "ast_hash": "57c028273e9cc265d8c6fc708f1f8bf6",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1787502465.1969433,
+    "seen": 1791234832.258143,
+    "ast_hash": "b1f2f03999403852baf11f1e282082dc",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1787490563.6371255,
+    "seen": 1791234832.2581441,
+    "ast_hash": "120f85e787009a47f61d91a2c9a5ca39",
+    "semantic_hash": ""
+  },
+  "opencode.ai/DESIGN.md": {
+    "mtime": 1786472758.6691055,
+    "seen": 1791234832.2581458,
+    "ast_hash": "ed5837cac4cb2b3eb5d36f652e60df90",
+    "semantic_hash": ""
+  },
+  "components/Founder.tsx": {
+    "mtime": 1787235224.5346584,
+    "seen": 1791234832.2580044,
+    "ast_hash": "c54afeeb504de16fcf7883dabb759195",
+    "semantic_hash": ""
+  },
+  "app/api/contact/route.ts": {
+    "mtime": 1787502121.2415133,
+    "seen": 1791234832.2579963,
+    "ast_hash": "3e562b040b995dd772b05d6b9f5537ba",
+    "semantic_hash": ""
+  },
+  "public/images/logo.svg": {
+    "mtime": 1786472758.7785592,
+    "seen": 1791234832.2582047,
+    "ast_hash": "43b44eee273487d418f3d476a4f0e7d1",
+    "semantic_hash": ""
+  },
+  "components/academy/AnnouncementBar.tsx": {
+    "mtime": 1791231692.0126736,
+    "seen": 1791234832.258023,
+    "ast_hash": "2e23c24178a9110e694fc4779fb6ad87",
+    "semantic_hash": ""
+  },
+  "components/academy/FAQ.tsx": {
+    "mtime": 1791231580.1968935,
+    "seen": 1791234832.2580261,
+    "ast_hash": "4d1dd64fc16d2d4991c0d0d18775c165",
+    "semantic_hash": ""
+  },
+  "components/academy/Hero.tsx": {
+    "mtime": 1791231776.3009818,
+    "seen": 1791234832.2580307,
+    "ast_hash": "c42fabd5b35eeb0e567fce25db32c2b3",
+    "semantic_hash": ""
+  },
+  "lib/academy.ts": {
+    "mtime": 1791234530.8321984,
+    "seen": 1791234832.2580638,
+    "ast_hash": "377e43491be04b77bc1984ac6116e033",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/screenshot1.webp": {
+    "mtime": 1786472758.716015,
+    "seen": 1791234832.2581797,
+    "ast_hash": "c5f2c2a327de36b8c30e1cb2d3f11d87",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/screenshot1.webp": {
+    "mtime": 1786472758.7316246,
+    "seen": 1791234832.2581856,
+    "ast_hash": "3624e7f169ca2fd2b6bd51f5f9ef2151",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/screenshot1.webp": {
+    "mtime": 1786472758.7472649,
+    "seen": 1791234832.2581937,
+    "ast_hash": "cfb95cbbe82f77df2ccb338379709228",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot1.webp": {
+    "mtime": 1787235206.772,
+    "seen": 1791234832.2581952,
+    "ast_hash": "b03d3d6d8599d19eff97ad14e37c6c9a",
+    "semantic_hash": ""
+  },
+  "public/images/games/zombies-warzone/screenshot1.webp": {
+    "mtime": 1786472758.7628908,
+    "seen": 1791234832.2582006,
+    "ast_hash": "498e7dd2f67cd7a88a8739078956ddf4",
+    "semantic_hash": ""
+  },
+  "public/images/games/zombies-warzone/screenshot2.webp": {
+    "mtime": 1786472758.7628908,
+    "seen": 1791234832.258202,
+    "ast_hash": "403170483c7626ebdba6de5cdc12258f",
+    "semantic_hash": ""
+  },
+  "public/images/games/zombies-warzone/screenshot3.webp": {
+    "mtime": 1786472758.7785592,
+    "seen": 1791234832.2582035,
+    "ast_hash": "7d079b28eec3700be522b898386ce351",
+    "semantic_hash": ""
+  },
+  "eslint.config.mjs": {
+    "mtime": 1786473793.4180644,
+    "seen": 1791234832.2580607,
+    "ast_hash": "78f8f6cf5e355f37cf7839dec6a29262",
+    "semantic_hash": ""
+  },
+  "lib/cn.ts": {
+    "mtime": 1786473865.7738805,
+    "seen": 1791234832.2580864,
+    "ast_hash": "d9837f38cc05303254571985e3164050",
+    "semantic_hash": ""
+  },
+  "next-sitemap.config.js": {
+    "mtime": 1787502517.0046365,
+    "seen": 1791234832.2581089,
+    "ast_hash": "7b96e3616d597d58d83f57e81c697ff0",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1791234812.189734,
+    "seen": 1791234832.258149,
+    "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
+    "semantic_hash": ""
+  },
+  "components/ui/Button.tsx": {
+    "mtime": 1786538379.206745,
+    "seen": 1791234832.2580578,
+    "ast_hash": "11b387528a98f872c4cf432d82733bfb",
+    "semantic_hash": ""
+  },
+  "components/ui/Reveal.tsx": {
+    "mtime": 1786544236.936985,
+    "seen": 1791234832.2580593,
+    "ast_hash": "4ae465e78262be57ca8ddbd14826171d",
+    "semantic_hash": ""
+  },
+  "components/WhatsAppIcon.tsx": {
+    "mtime": 1786530015.7059004,
+    "seen": 1791234832.2580202,
+    "ast_hash": "fc822f78ca35b5ed73cfea1631353cc5",
+    "semantic_hash": ""
+  },
+  "components/WhatsAppWidget.tsx": {
+    "mtime": 1787247334.046121,
+    "seen": 1791234832.2580216,
+    "ast_hash": "cd89f0234f506f10b8a4d9b908447547",
+    "semantic_hash": ""
+  },
+  "components/growth/CTABanner.tsx": {
+    "mtime": 1787060099.3006773,
+    "seen": 1791234832.258042,
+    "ast_hash": "9ca311a855a11427bd548fb6dba1b418",
+    "semantic_hash": ""
+  },
+  "components/growth/FAQ.tsx": {
+    "mtime": 1786543233.4143553,
+    "seen": 1791234832.258045,
+    "ast_hash": "b7844c07cd51be8b8c29aa64fbdb8ad5",
+    "semantic_hash": ""
+  },
+  "components/growth/Hero.tsx": {
+    "mtime": 1787065698.365484,
+    "seen": 1791234832.2580469,
+    "ast_hash": "29a75c360e856b273d298e051f44ccaf",
+    "semantic_hash": ""
+  },
+  "components/growth/Pillars.tsx": {
+    "mtime": 1786815810.075857,
+    "seen": 1791234832.2580485,
+    "ast_hash": "f2a5d42973524a67d63b45c1dc6aa4e8",
+    "semantic_hash": ""
+  },
+  "components/growth/Pricing.tsx": {
+    "mtime": 1787060114.8511386,
+    "seen": 1791234832.2580502,
+    "ast_hash": "aeda362925c6ac15d41a78d360e6d128",
+    "semantic_hash": ""
+  },
+  "components/growth/Process.tsx": {
+    "mtime": 1786815825.671065,
+    "seen": 1791234832.2580516,
+    "ast_hash": "dd63df0792a751888fcd609459284a08",
+    "semantic_hash": ""
+  },
+  "components/growth/SectionHeader.tsx": {
+    "mtime": 1787062448.7427268,
+    "seen": 1791234832.258053,
+    "ast_hash": "bac6aeaa6e4c55a4f52dc203f535d859",
+    "semantic_hash": ""
+  },
+  "components/growth/Terms.tsx": {
+    "mtime": 1786543223.7726388,
+    "seen": 1791234832.2580545,
+    "ast_hash": "58b57675d31768d7bd25518f099abaef",
+    "semantic_hash": ""
+  },
+  "app/api/agency-contact/route.ts": {
+    "mtime": 1787502193.1999485,
+    "seen": 1791234832.2579944,
+    "ast_hash": "8bda111d6e774f89d03e161dcc7977dc",
+    "semantic_hash": ""
+  },
+  "components/growth/ContactSection.tsx": {
+    "mtime": 1787502307.5144458,
+    "seen": 1791234832.2580438,
+    "ast_hash": "13930799f5296b0ede1bc3cf3922cd41",
+    "semantic_hash": ""
+  },
+  "components/layout/SiteChrome.tsx": {
+    "mtime": 1789047648.5606272,
+    "seen": 1791234832.258056,
+    "ast_hash": "352a0849f1f2ff45008283e5812006eb",
+    "semantic_hash": ""
+  },
+  "lib/escapeHtml.test.ts": {
+    "mtime": 1786621810.4061944,
+    "seen": 1791234832.2580893,
+    "ast_hash": "715cf256ce7ec3d7541c416d5dd23dc3",
+    "semantic_hash": ""
+  },
+  "lib/escapeHtml.ts": {
+    "mtime": 1786621807.9695487,
+    "seen": 1791234832.258091,
+    "ast_hash": "1328d9e4ccdd05f66635605e136c008f",
+    "semantic_hash": ""
+  },
+  "vitest.config.ts": {
+    "mtime": 1786621823.6672912,
+    "seen": 1791234832.258137,
+    "ast_hash": "4debc4c827f57e329366c43df65b823e",
+    "semantic_hash": ""
+  },
+  "lib/og.tsx": {
+    "mtime": 1787237173.703244,
+    "seen": 1791234832.258101,
+    "ast_hash": "3494c78e75c06e5538f74819c2220b27",
+    "semantic_hash": ""
+  },
+  "components/About.tsx": {
+    "mtime": 1787062448.6940536,
+    "seen": 1791234832.257998,
+    "ast_hash": "132b3d8bf38ae419e5c52f18d29e87ab",
+    "semantic_hash": ""
+  },
+  "components/JsonLd.tsx": {
+    "mtime": 1786815602.4504995,
+    "seen": 1791234832.2580128,
+    "ast_hash": "c046c9e057b434b93773165e2532e8e9",
+    "semantic_hash": ""
+  },
+  "lib/jsonLd.ts": {
+    "mtime": 1791231232.6525998,
+    "seen": 1791234832.258094,
+    "ast_hash": "3b70da3bbcff1baca933f36a7a49d6e1",
+    "semantic_hash": ""
+  },
+  "components/HomeHero.tsx": {
+    "mtime": 1787493780.7537408,
+    "seen": 1791234832.2580094,
+    "ast_hash": "bdc41dae790fbf24bc4d386cff92280f",
+    "semantic_hash": ""
+  },
+  "components/Hub.tsx": {
+    "mtime": 1787237083.2795112,
+    "seen": 1791234832.258011,
+    "ast_hash": "9e8aecd037e1ac163617b5dfb32b5b4f",
+    "semantic_hash": ""
+  },
+  "components/academy/Courses.tsx": {
+    "mtime": 1791232088.6269534,
+    "seen": 1791234832.2580247,
+    "ast_hash": "c61d8b17a2836464516842a7d2111ff4",
+    "semantic_hash": ""
+  },
+  "components/academy/FinalCta.tsx": {
+    "mtime": 1791231822.5064368,
+    "seen": 1791234832.2580278,
+    "ast_hash": "c0ac36a336422a84986a1b9311d426d6",
+    "semantic_hash": ""
+  },
+  "components/academy/Founder.tsx": {
+    "mtime": 1791231580.2269974,
+    "seen": 1791234832.258029,
+    "ast_hash": "65b79f8dbe95c4d01d6be355897e8aaf",
+    "semantic_hash": ""
+  },
+  "components/academy/Teaching.tsx": {
+    "mtime": 1791231580.2239954,
+    "seen": 1791234832.2580352,
+    "ast_hash": "1b768e17e1777e7d87596eccb54c3c82",
+    "semantic_hash": ""
+  },
+  "components/academy/Why.tsx": {
+    "mtime": 1791231580.230666,
+    "seen": 1791234832.2580364,
+    "ast_hash": "dec3b53929cf83a61dec6332348a6b54",
+    "semantic_hash": ""
+  },
+  "components/academy/Work.tsx": {
+    "mtime": 1791231580.2189975,
+    "seen": 1791234832.2580388,
+    "ast_hash": "54d018f326b8b0d4b4c40a34ab498d19",
+    "semantic_hash": ""
+  },
+  "public/images/academy/creative-design.webp": {
+    "mtime": 1787053922.4820495,
+    "seen": 1791234832.2581549,
+    "ast_hash": "39bf1e3a09b15d6568e82b0af8dbf801",
+    "semantic_hash": ""
+  },
+  "public/images/academy/digital-essentials.webp": {
+    "mtime": 1787056586.8519158,
+    "seen": 1791234832.2581563,
+    "ast_hash": "8fa00df2664d681d6d416b822154584e",
+    "semantic_hash": ""
+  },
+  "public/images/academy/python.webp": {
+    "mtime": 1787055965.9192722,
+    "seen": 1791234832.2581625,
+    "ast_hash": "cb1a1fba4b56e8f655e68c70d1e8436b",
+    "semantic_hash": ""
+  },
+  "public/images/academy/roblox.webp": {
+    "mtime": 1787054051.256169,
+    "seen": 1791234832.258164,
+    "ast_hash": "8a82ff20bd2691ccfce2859f7b3eb62f",
+    "semantic_hash": ""
+  },
+  "public/images/academy/scratch.webp": {
+    "mtime": 1787056427.4284785,
+    "seen": 1791234832.2581658,
+    "ast_hash": "e5522c98bb13fc8f72e994757e31f45c",
+    "semantic_hash": ""
+  },
+  "public/images/academy/unity.webp": {
+    "mtime": 1787054111.30528,
+    "seen": 1791234832.2581673,
+    "ast_hash": "65b1cded535dff4d9c5104cd2e525d9a",
+    "semantic_hash": ""
+  },
+  "public/images/academy/web-development.webp": {
+    "mtime": 1787053977.1221194,
+    "seen": 1791234832.2581685,
+    "ast_hash": "17fc7bf911aa5d6d1d8e5884f15f135e",
+    "semantic_hash": ""
+  },
+  "public/images/zellige.svg": {
+    "mtime": 1787065669.562509,
+    "seen": 1791234832.2582061,
+    "ast_hash": "dac723c0c5fd38684faf717943d9beb6",
+    "semantic_hash": ""
+  },
+  "app/[lang]/academy/opengraph-image.tsx": {
+    "mtime": 1787237252.202669,
+    "seen": 1791234832.2579677,
+    "ast_hash": "3bfdc062aa73fa83f19266da263c2777",
+    "semantic_hash": ""
+  },
+  "app/[lang]/academy/page.tsx": {
+    "mtime": 1791231466.5211341,
+    "seen": 1791234832.2579696,
+    "ast_hash": "04adbc70004d2d6540a11670cc68e8e4",
+    "semantic_hash": ""
+  },
+  "app/[lang]/agency/opengraph-image.tsx": {
+    "mtime": 1787237262.4766896,
+    "seen": 1791234832.2579713,
+    "ast_hash": "35f951a7679f4d6a2c389bad71d914fd",
+    "semantic_hash": ""
+  },
+  "app/[lang]/agency/page.tsx": {
+    "mtime": 1789046856.0580218,
+    "seen": 1791234832.2579732,
+    "ast_hash": "461842d8e0f0813815cdcf08f98a6539",
+    "semantic_hash": ""
+  },
+  "app/[lang]/game-development/opengraph-image.tsx": {
+    "mtime": 1787237263.8285375,
+    "seen": 1791234832.2579784,
+    "ast_hash": "89b7f654c4f200508092cfab9ef44c19",
+    "semantic_hash": ""
+  },
+  "app/[lang]/game-development/page.tsx": {
+    "mtime": 1787501783.5679977,
+    "seen": 1791234832.2579799,
+    "ast_hash": "b2fed827a4f5ca17f6bd5829db65f3fd",
+    "semantic_hash": ""
+  },
+  "app/[lang]/layout.tsx": {
+    "mtime": 1790517629.1980343,
+    "seen": 1791234832.2579818,
+    "ast_hash": "066eb56eaf682411e93e749e395d60ca",
+    "semantic_hash": ""
+  },
+  "app/[lang]/not-found.tsx": {
+    "mtime": 1787237152.5932777,
+    "seen": 1791234832.2579832,
+    "ast_hash": "eb548e09541902cb7222e69d0414fe34",
+    "semantic_hash": ""
+  },
+  "app/[lang]/opengraph-image.tsx": {
+    "mtime": 1787237243.6113303,
+    "seen": 1791234832.257985,
+    "ast_hash": "bb73414ec0d699cc8c4dd77ddce5c70a",
+    "semantic_hash": ""
+  },
+  "app/[lang]/page.tsx": {
+    "mtime": 1790517538.4187531,
+    "seen": 1791234832.2579868,
+    "ast_hash": "6da9b47978da854433f47cb4b5ae44d7",
+    "semantic_hash": ""
+  },
+  "app/[lang]/privacy/page.tsx": {
+    "mtime": 1787501724.691745,
+    "seen": 1791234832.2579887,
+    "ast_hash": "6d68f2b7b046eaae23c4a3819af6aa3c",
+    "semantic_hash": ""
+  },
+  "app/[lang]/terms/page.tsx": {
+    "mtime": 1787501709.9462655,
+    "seen": 1791234832.25799,
+    "ast_hash": "16b18a18e78cb408ad6bdfcf843a66ee",
+    "semantic_hash": ""
+  },
+  "app/[lang]/who-we-are/opengraph-image.tsx": {
+    "mtime": 1787237265.443205,
+    "seen": 1791234832.2579913,
+    "ast_hash": "2f17b5b872f3a4ec92dd53118894d8d3",
+    "semantic_hash": ""
+  },
+  "app/[lang]/who-we-are/page.tsx": {
+    "mtime": 1787501746.4740052,
+    "seen": 1791234832.257993,
+    "ast_hash": "3c1d70cc2042067704075a5a07e51d66",
+    "semantic_hash": ""
+  },
+  "lib/metadata.ts": {
+    "mtime": 1790512343.4693809,
+    "seen": 1791234832.2580993,
+    "ast_hash": "c3335f98bc0062f48fe8061c2a52b81c",
+    "semantic_hash": ""
+  },
+  "middleware.ts": {
+    "mtime": 1787493337.0881593,
+    "seen": 1791234832.2581058,
+    "ast_hash": "dd53cba67b0339e0b4a03cf0b260a09a",
+    "semantic_hash": ""
+  },
+  "scripts/fix-sitemap.mjs": {
+    "mtime": 1787237592.5847392,
+    "seen": 1791234832.2581282,
+    "ast_hash": "4a2dd481ca364ee207772c3580dc0513",
+    "semantic_hash": ""
+  },
+  "scripts/optimize-images.mjs": {
+    "mtime": 1787235189.358286,
+    "seen": 1791234832.2581313,
+    "ast_hash": "64334bfea0a79f4d5b6d4c3c3ffdf14e",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1787239505.1748974,
+    "seen": 1791234832.2581472,
+    "ast_hash": "aa4508eed37b5ea50417f1f5fda77904",
+    "semantic_hash": ""
+  },
+  "public/images/Founder.webp": {
+    "mtime": 1787235202.076,
+    "seen": 1791234832.2581532,
+    "ast_hash": "b7fa831249c20520f81a386327ade6bb",
+    "semantic_hash": ""
+  },
+  "public/images/academy/founder.webp": {
+    "mtime": 1787235201.045,
+    "seen": 1791234832.2581577,
+    "ast_hash": "b7fa831249c20520f81a386327ade6bb",
+    "semantic_hash": ""
+  },
+  "public/images/academy/mge-booth.webp": {
+    "mtime": 1787235201.916,
+    "seen": 1791234832.2581594,
+    "ast_hash": "ae4f616e8fdf2fb383a734e68bdc1417",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot (3).webp": {
+    "mtime": 1787235202.575,
+    "seen": 1791234832.2581747,
+    "ast_hash": "ee8bdc6343a6a5a5908a7983cfbce10f",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot (4).webp": {
+    "mtime": 1787235203.118,
+    "seen": 1791234832.2581766,
+    "ast_hash": "458514b031a55165a2170a6cb066fbea",
+    "semantic_hash": ""
+  },
+  "public/images/games/blitz-combat/2064x2752-screenshot.webp": {
+    "mtime": 1787235203.681,
+    "seen": 1791234832.258178,
+    "ast_hash": "b29266701625d88aabd69d359b93ac97",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/1284x2778-screenshot (5).webp": {
+    "mtime": 1787235204.009,
+    "seen": 1791234832.258181,
+    "ast_hash": "755cb6ecfbe049f04b700d6067ada055",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/1284x2778-screenshot (6).webp": {
+    "mtime": 1787235204.328,
+    "seen": 1791234832.2581828,
+    "ast_hash": "e0b824f02c085a2779b1fd0cf06877e4",
+    "semantic_hash": ""
+  },
+  "public/images/games/chameleon-outbreak/2064x2752-screenshot (10).webp": {
+    "mtime": 1787235204.725,
+    "seen": 1791234832.2581842,
+    "ast_hash": "416601534ffe4cd494a38d239736870d",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (1).webp": {
+    "mtime": 1787235205.076,
+    "seen": 1791234832.2581875,
+    "ast_hash": "b1d220b4fd1e0827ce6a2a2c64123bcd",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (2).webp": {
+    "mtime": 1787235205.47,
+    "seen": 1791234832.258189,
+    "ast_hash": "cb0d6867117187842e691a02e9899b59",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot (6).webp": {
+    "mtime": 1787235205.902,
+    "seen": 1791234832.2581906,
+    "ast_hash": "a48ef18e28ee5b8ef936ce8b67341d60",
+    "semantic_hash": ""
+  },
+  "public/images/games/pharaohs-guardian/2752x2064-screenshot.webp": {
+    "mtime": 1787235206.517,
+    "seen": 1791234832.2581918,
+    "ast_hash": "3bc0580fe2ea066d090a698630b1e5e1",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot2.webp": {
+    "mtime": 1787235207.098,
+    "seen": 1791234832.2581966,
+    "ast_hash": "ded15278278fe9e3b54c81350506585c",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot3.webp": {
+    "mtime": 1787235207.41,
+    "seen": 1791234832.258198,
+    "ast_hash": "a58c3e137882da0cac1dba2a66bd4c70",
+    "semantic_hash": ""
+  },
+  "public/images/games/sniper-elimination/screenshot4.webp": {
+    "mtime": 1787235207.701,
+    "seen": 1791234832.2581992,
+    "ast_hash": "50fb20eee205acdf9269cb5b6eaf1a22",
+    "semantic_hash": ""
+  },
+  "app/[lang]/academy/courses/[slug]/page.tsx": {
+    "mtime": 1791231835.0143592,
+    "seen": 1791234832.2579653,
+    "ast_hash": "0bc4ec249e5fa73063bf464af8e6722f",
+    "semantic_hash": ""
+  },
+  "app/[lang]/blog/[slug]/page.tsx": {
+    "mtime": 1789593766.354765,
+    "seen": 1791234832.257975,
+    "ast_hash": "cefbdf7131c319ec1660876e17c0848b",
+    "semantic_hash": ""
+  },
+  "app/[lang]/blog/page.tsx": {
+    "mtime": 1787239047.8639014,
+    "seen": 1791234832.2579765,
+    "ast_hash": "94f3d4e93b92bb39ada7b07a503cb278",
+    "semantic_hash": ""
+  },
+  "lib/blog.ts": {
+    "mtime": 1789593033.852825,
+    "seen": 1791234832.2580667,
+    "ast_hash": "e7879c6b146df69200b990c84f56f9a0",
+    "semantic_hash": ""
+  },
+  "lib/courses.ts": {
+    "mtime": 1787238523.599103,
+    "seen": 1791234832.2580879,
+    "ast_hash": "4af674fbf848d57eced8d050d9abf020",
+    "semantic_hash": ""
+  },
+  "components/FacebookPixel.tsx": {
+    "mtime": 1787243851.6133244,
+    "seen": 1791234832.2580013,
+    "ast_hash": "69ae4084fb8112b8853de2cfc1114c87",
+    "semantic_hash": ""
+  },
+  "components/analytics/WhatsAppCta.tsx": {
+    "mtime": 1791231433.6380465,
+    "seen": 1791234832.2580407,
+    "ast_hash": "abe164b62036f527d013ec7b93e8b7a5",
+    "semantic_hash": ""
+  },
+  "lib/analytics.ts": {
+    "mtime": 1787247302.463754,
+    "seen": 1791234832.2580655,
+    "ast_hash": "d540bc565d17c0e6f2ce802cde35fc50",
+    "semantic_hash": ""
+  },
+  "components/LanguageSuggestion.tsx": {
+    "mtime": 1787502018.768744,
+    "seen": 1791234832.2580142,
+    "ast_hash": "03497dfd27c9be52883efa9a3423b07a",
+    "semantic_hash": ""
+  },
+  "scripts/generate-icons.mjs": {
+    "mtime": 1787493644.6635768,
+    "seen": 1791234832.2581296,
+    "ast_hash": "13031acdb1ed0423c994134a665c2906",
+    "semantic_hash": ""
+  },
+  "app/apple-icon.png": {
+    "mtime": 1787493662.668,
+    "seen": 1791234832.2581503,
+    "ast_hash": "50bf6815b96371a6106503ee3955e078",
+    "semantic_hash": ""
+  },
+  "app/icon.png": {
+    "mtime": 1787493662.645,
+    "seen": 1791234832.2581518,
+    "ast_hash": "dd94458969dd7041cec99e1540b08c23",
+    "semantic_hash": ""
+  },
+  "public/images/flags/fr.svg": {
+    "mtime": 1787497300.431665,
+    "seen": 1791234832.2581704,
+    "ast_hash": "348ad62f3469cdf68fae460f38fbb05a",
+    "semantic_hash": ""
+  },
+  "public/images/flags/gb.svg": {
+    "mtime": 1787497300.2839298,
+    "seen": 1791234832.2581718,
+    "ast_hash": "f0487cd502c5e2dbdee5be26ffa835c9",
+    "semantic_hash": ""
+  },
+  "public/images/flags/sa.svg": {
+    "mtime": 1787497300.59686,
+    "seen": 1791234832.2581732,
+    "ast_hash": "17dafda32905cd26662c3e0ea0cdf5a2",
+    "semantic_hash": ""
+  },
+  "components/academy/Pricing.tsx": {
+    "mtime": 1791231380.1656144,
+    "seen": 1791234832.258032,
+    "ast_hash": "7a6edf526afab103172db1f3c56fa303",
+    "semantic_hash": ""
+  },
+  "lib/pricing.test.ts": {
+    "mtime": 1791234623.2094054,
+    "seen": 1791234832.2581024,
+    "ast_hash": "ce38d7a2eaca0100f1e7176ea2a8c154",
+    "semantic_hash": ""
+  },
+  "lib/pricing.ts": {
+    "mtime": 1791230249.3817368,
+    "seen": 1791234832.2581043,
+    "ast_hash": "4c3eff765315b1e12d857843394bb092",
+    "semantic_hash": ""
+  },
+  ".playwright-mcp/page-2026-10-05T21-11-48-859Z.yml": {
+    "mtime": 1791234708.8613648,
+    "seen": 1791234832.2581384,
+    "ast_hash": "061340390427b61b030a4349d478b330",
+    "semantic_hash": ""
+  },
+  "public/images/academy/online-coding-classes-kids-english.jpg": {
+    "mtime": 1789588455.6053295,
+    "seen": 1791234832.2581608,
+    "ast_hash": "d6f4d7ffed17bcaeb5abe34949751427",
+    "semantic_hash": ""
+  }
+}

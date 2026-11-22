@@ -12,14 +12,15 @@ import {
 } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import Teaching from "@/components/academy/Teaching";
+import Pricing from "@/components/academy/Pricing";
 import FAQ from "@/components/academy/FAQ";
 import FinalCta from "@/components/academy/FinalCta";
-import WhatsAppWidget from "@/components/WhatsAppWidget";
-import WhatsAppCta from "@/components/analytics/WhatsAppCta";
+import StickyCta from "@/components/academy/StickyCta";
+import ViewContent from "@/components/analytics/ViewContent";
+import { PRICING } from "@/lib/pricing";
 import { courseSchema, breadcrumbSchema } from "@/lib/jsonLd";
 import { alternatesFor } from "@/lib/metadata";
 import { translations, type Lang } from "@/lib/i18n";
-import { ACADEMY_WHATSAPP_MESSAGE } from "@/lib/academy";
 import { COURSE_CATALOG, COURSE_SLUGS, isCourseSlug } from "@/lib/courses";
 
 const COURSE_IMAGES: Record<string, string> = {
@@ -73,9 +74,9 @@ export async function generateMetadata({
       siteName: "Medinova Studio",
       title: detail.meta.title,
       description: detail.meta.description,
-      images: [
-        `https://www.medinovastudio.com/images/academy/${slug}.webp`,
-      ],
+      // Resolved through the same slug-keyed map the page renders from, so the
+      // Unity course no longer requests a non-existent `unity-csharp.webp`.
+      images: [`https://www.medinovastudio.com${COURSE_IMAGES[slug]}`],
     },
     alternates,
   };
@@ -89,9 +90,8 @@ export default async function CoursePage({ params }: PageProps) {
 
   const t = translations[l].academy;
   const detail = COURSE_CATALOG[l][slug];
-  const index = COURSE_SLUGS.indexOf(slug);
-  const course = t.courses.items[index];
-  const localizedName = t.courses.items[index]?.name ?? slug;
+  const course = t.courses.items[slug];
+  const localizedName = course.name;
 
   const crumb = `/${l}/academy/courses/${slug}`;
   const otherCourses = COURSE_SLUGS.filter((s) => s !== slug);
@@ -155,13 +155,12 @@ export default async function CoursePage({ params }: PageProps) {
                 </span>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <WhatsAppCta
-                  message={ACADEMY_WHATSAPP_MESSAGE}
-                  source={`course-${slug}`}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-white text-sm font-semibold shadow-lg shadow-primary/25 hover:bg-primary-hover active:scale-[0.98] transition-all"
+                <Link
+                  href="#cta"
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white shadow-[0_4px_14px_rgba(36,85,230,0.28)] transition-colors hover:bg-primary-hover"
                 >
-                  {t.finalCta.cta}
-                </WhatsAppCta>
+                  {t.leadForm.cta}
+                </Link>
                 <Link
                   href={`/${l}/academy#courses`}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-surface-1 border border-hairline text-ink text-sm font-medium hover:bg-surface-2 hover:border-hairline-strong active:scale-[0.98] transition-all"
@@ -242,9 +241,16 @@ export default async function CoursePage({ params }: PageProps) {
         </div>
       </section>
 
+      <Pricing courseName={localizedName} leadCapture />
       <Teaching />
       <FAQ />
-      <FinalCta />
+      <FinalCta courseName={localizedName} leadCapture />
+      <StickyCta />
+      <ViewContent
+        contentName={localizedName}
+        contentId={slug}
+        value={PRICING.monthly}
+      />
 
       {/* Other courses */}
       <section className="relative border-t border-hairline">
@@ -262,7 +268,7 @@ export default async function CoursePage({ params }: PageProps) {
                 <div className="relative aspect-[16/9] bg-navy">
                   <Image
                     src={COURSE_IMAGES[s]}
-                    alt={t.courses.items[COURSE_SLUGS.indexOf(s)]?.name ?? s}
+                    alt={t.courses.items[s].name}
                     fill
                     sizes="(min-width:1024px) 30vw, (min-width:640px) 50vw, 100vw"
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
@@ -270,11 +276,10 @@ export default async function CoursePage({ params }: PageProps) {
                 </div>
                 <div className="p-5">
                   <h3 className="font-display text-lg font-bold text-ink leading-snug group-hover:text-primary transition-colors">
-                    {t.courses.items[COURSE_SLUGS.indexOf(s)]?.name ?? s}
+                    {t.courses.items[s].name}
                   </h3>
                   <p className="mt-1.5 text-sm text-ink-tertiary">
-                    {t.courses.agesLabel}{" "}
-                    {t.courses.items[COURSE_SLUGS.indexOf(s)]?.age}
+                    {t.courses.agesLabel} {t.courses.items[s].age}
                   </p>
                 </div>
               </Link>
@@ -283,7 +288,6 @@ export default async function CoursePage({ params }: PageProps) {
         </div>
       </section>
 
-      <WhatsAppWidget />
       <JsonLd
         data={courseSchema(l, slug, {
           name: localizedName,

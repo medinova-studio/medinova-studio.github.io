@@ -11,7 +11,7 @@ export default function Founder() {
   return (
     <section
       id="founder"
-      className="relative py-16 sm:py-20 border-t border-hairline"
+      className="relative scroll-mt-28 py-16 sm:py-20 border-t border-hairline"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">

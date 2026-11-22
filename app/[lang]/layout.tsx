@@ -1,13 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./../globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import SiteChrome from "@/components/layout/SiteChrome";
 import JsonLd from "@/components/JsonLd";
-import FacebookPixel from "@/components/FacebookPixel";
+import ConsentAnalytics from "@/components/ConsentAnalytics";
+import CookieConsent from "@/components/CookieConsent";
 import { graphSchema } from "@/lib/jsonLd";
 import { buildPageMetadata } from "@/lib/metadata";
 import { LANGS, Lang, RTL_LANGS } from "@/lib/i18n";
@@ -60,6 +59,14 @@ export default async function RootLayout({
 
   return (
     <html lang={l} dir={isRTL ? "rtl" : "ltr"} className="scroll-smooth">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2808001096523138"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body
         className={`${geist.variable} ${jakarta.variable} ${geistMono.variable} bg-canvas text-ink-subtle font-sans antialiased overflow-x-hidden`}
       >
@@ -67,10 +74,8 @@ export default async function RootLayout({
           <SiteChrome>{children}</SiteChrome>
         </LanguageProvider>
         <JsonLd data={graphSchema()} />
-        <GoogleAnalytics gaId="G-PMBCHDX0MS" />
-        <Analytics />
-        <SpeedInsights />
-        <FacebookPixel />
+        <ConsentAnalytics />
+        <CookieConsent />
       </body>
     </html>
   );

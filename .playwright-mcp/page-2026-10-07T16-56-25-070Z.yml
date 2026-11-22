@@ -1,0 +1,459 @@
+- generic [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - navigation "Primary" [ref=f5e3]:
+      - generic [ref=f5e5]:
+        - link "Medinova Studio" [ref=f5e6] [cursor=pointer]:
+          - /url: /fr
+          - img "Medinova Studio logo" [ref=f5e7]
+        - generic [ref=f5e8]:
+          - button "Nos Solutions" [ref=f5e10] [cursor=pointer]
+          - link "Jeux & Portfolio" [ref=f5e13] [cursor=pointer]:
+            - /url: /fr#portfolio
+          - link "Qui Sommes-Nous" [ref=f5e14] [cursor=pointer]:
+            - /url: /fr/who-we-are
+          - link "Blog" [ref=f5e15] [cursor=pointer]:
+            - /url: /fr/blog
+          - generic [ref=f5e16]:
+            - button "Switch to FR" [ref=f5e17] [cursor=pointer]: FR
+            - button "Switch to EN" [ref=f5e18] [cursor=pointer]: EN
+            - button "Switch to AR" [ref=f5e19] [cursor=pointer]: AR
+          - link "Découvrir les Parcours" [ref=f5e20] [cursor=pointer]:
+            - /url: /fr/academy#courses
+    - generic [ref=f5e22]:
+      - generic [ref=f5e23]: Medinova Academy
+      - link "Nos Réalisations" [ref=f5e24] [cursor=pointer]:
+        - /url: /fr/academy#work
+      - link "Cours" [ref=f5e25] [cursor=pointer]:
+        - /url: /fr/academy#courses
+      - link "Tarifs" [ref=f5e26] [cursor=pointer]:
+        - /url: /fr/academy#pricing
+      - link "FAQ" [ref=f5e27] [cursor=pointer]:
+        - /url: /fr/academy#faq
+      - generic [ref=f5e28]: En direct en ligne • 7+
+  - generic [ref=f5e31]:
+    - generic [ref=f5e33]:
+      - paragraph [ref=f5e34]: Cours en direct pour les apprenants dès 7 ans · Anglais, Français & Arabe
+      - link "Découvrir les parcours" [ref=f5e35] [cursor=pointer]:
+        - /url: "#courses"
+    - generic [ref=f5e38]:
+      - generic [ref=f5e39]: Académie de code en ligne · dès 7 ans · Rabat, Maroc
+      - heading "Cours de codage et de développement de jeux pour enfants — en ligne au Maroc" [level=1] [ref=f5e41]
+      - paragraph [ref=f5e42]: Apprenez le codage, le développement de jeux et les compétences numériques en direct avec Medinova Studio — depuis Rabat, Casablanca et partout au Maroc. Des classes pratiques et basées sur des projets pour les apprenants dès 7 ans, animées par le fondateur d'un studio de jeux actif.
+      - link "Découvrir ce que votre enfant peut apprendre" [ref=f5e44] [cursor=pointer]:
+        - /url: "#courses"
+      - generic [ref=f5e45]:
+        - paragraph [ref=f5e52]:
+          - generic [ref=f5e53]: Apprenants dès 7 ans
+          - generic [ref=f5e54]: Des cours adaptés à chaque âge et niveau
+        - paragraph [ref=f5e60]:
+          - generic [ref=f5e61]: Anglais · Français · Arabe
+          - generic [ref=f5e62]: Des cours en trois langues
+        - paragraph [ref=f5e67]:
+          - generic [ref=f5e68]: En direct & par projets
+          - generic [ref=f5e69]: Animés par un instructeur avec de vrais projets
+    - generic [ref=f5e72]:
+      - generic [ref=f5e73]:
+        - generic [ref=f5e74]: Pourquoi Medinova Academy
+        - heading "Apprendre en pratiquant, grâce à de vrais projets" [level=2] [ref=f5e76]
+      - generic [ref=f5e77]:
+        - generic [ref=f5e78]:
+          - heading "Apprendre en pratiquant, pas en regardant" [level=3] [ref=f5e84]
+          - paragraph [ref=f5e85]: Ne vous contentez pas de regarder des cours. Appliquez ce que vous apprenez, expérimentez vos idées et réalisez de vrais projets pour faire progresser vos compétences.
+        - generic [ref=f5e86]:
+          - heading "Transformer le savoir en projets" [level=3] [ref=f5e90]
+          - paragraph [ref=f5e91]: Chaque nouvelle compétence est une occasion de construire un projet. Conservez et faites évoluer vos réalisations pour constituer un portfolio qui reflète ce que vous savez vraiment faire.
+        - generic [ref=f5e92]:
+          - heading "Apprendre d'une expérience concrète du métier" [level=3] [ref=f5e98]
+          - paragraph [ref=f5e99]: Apprenez directement auprès du fondateur de Medinova Studio et bénéficiez de l'expérience d'un studio qui développe réellement des jeux, des technologies numériques et des projets lancés.
+    - generic [ref=f5e101]:
+      - generic [ref=f5e102]:
+        - generic [ref=f5e103]: Découvrir Nos Cours
+        - heading "Découvrir Nos Cours" [level=2] [ref=f5e105]
+        - paragraph [ref=f5e106]: Vous ne savez pas par où commencer ? Indiquez l'âge de votre enfant et nous vous recommanderons un cours adapté. Chaque parcours transforme sa curiosité en compétences pratiques et en projets.
+      - generic [ref=f5e107]:
+        - article [ref=f5e108]:
+          - link [ref=f5e109] [cursor=pointer]:
+            - /url: /fr/academy/courses/digital-essentials
+            - img "Essentiels Numériques" [ref=f5e110]
+          - generic [ref=f5e111]:
+            - generic [ref=f5e112]:
+              - link "Essentiels Numériques" [ref=f5e113] [cursor=pointer]:
+                - /url: /fr/academy/courses/digital-essentials
+              - generic [ref=f5e114]: Âge recommandé 7+
+            - paragraph [ref=f5e119]: "Acquérir les compétences numériques essentielles du quotidien : informatique de base, Word, Excel, PowerPoint, navigation sur Internet et plus encore."
+            - paragraph [ref=f5e120]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e122] [cursor=pointer]:
+              - /url: /fr/academy/courses/digital-essentials
+        - article [ref=f5e125]:
+          - link [ref=f5e126] [cursor=pointer]:
+            - /url: /fr/academy/courses/scratch
+            - img "Scratch" [ref=f5e127]
+          - generic [ref=f5e128]:
+            - generic [ref=f5e129]:
+              - link "Scratch" [ref=f5e130] [cursor=pointer]:
+                - /url: /fr/academy/courses/scratch
+              - generic [ref=f5e131]: Âge recommandé 7+
+            - paragraph [ref=f5e136]: Développer la logique et la résolution de problèmes grâce à la programmation visuelle. Les enfants apprennent les bases des algorithmes, du séquencement, des mathématiques et de la pensée informatique tout en créant leurs propres histoires interactives, animations et jeux.
+            - paragraph [ref=f5e137]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e139] [cursor=pointer]:
+              - /url: /fr/academy/courses/scratch
+        - article [ref=f5e142]:
+          - link [ref=f5e143] [cursor=pointer]:
+            - /url: /fr/academy/courses/python
+            - img "Python" [ref=f5e144]
+          - generic [ref=f5e145]:
+            - generic [ref=f5e146]:
+              - link "Python" [ref=f5e147] [cursor=pointer]:
+                - /url: /fr/academy/courses/python
+              - generic [ref=f5e148]: Âge recommandé 11+
+            - paragraph [ref=f5e153]: Développer une pensée structurée, la résolution de problèmes et des compétences de programmation grâce à Python. Les apprenants transforment leurs idées en programmes fonctionnels, en jeux et en applications pratiques, tout en construisant des bases solides pour des technologies plus avancées.
+            - paragraph [ref=f5e154]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e156] [cursor=pointer]:
+              - /url: /fr/academy/courses/python
+        - article [ref=f5e159]:
+          - link [ref=f5e160] [cursor=pointer]:
+            - /url: /fr/academy/courses/roblox
+            - img "Développement de Jeux Roblox" [ref=f5e161]
+          - generic [ref=f5e162]:
+            - generic [ref=f5e163]:
+              - link "Développement de Jeux Roblox" [ref=f5e164] [cursor=pointer]:
+                - /url: /fr/academy/courses/roblox
+              - generic [ref=f5e165]: Âge recommandé 9+
+            - paragraph [ref=f5e170]: Développer la créativité, la pensée spatiale et la résolution de problèmes en concevant et en construisant des mondes 3D interactifs. Les apprenants explorent le game design et la programmation tout en créant leurs propres expériences Roblox.
+            - paragraph [ref=f5e171]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e173] [cursor=pointer]:
+              - /url: /fr/academy/courses/roblox
+        - article [ref=f5e176]:
+          - link [ref=f5e177] [cursor=pointer]:
+            - /url: /fr/academy/courses/unity-csharp
+            - img "Développement de Jeux Unity & C#" [ref=f5e178]
+          - generic [ref=f5e179]:
+            - generic [ref=f5e180]:
+              - link "Développement de Jeux Unity & C#" [ref=f5e181] [cursor=pointer]:
+                - /url: /fr/academy/courses/unity-csharp
+              - generic [ref=f5e182]: Âge recommandé 12+
+            - paragraph [ref=f5e187]: Développer des compétences avancées de résolution de problèmes, de logique et de programmation grâce au développement de jeux professionnel. Les apprenants utilisent Unity et C# pour concevoir des mécaniques, créer des jeux 2D et 3D et transformer leurs idées en projets jouables.
+            - paragraph [ref=f5e188]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e190] [cursor=pointer]:
+              - /url: /fr/academy/courses/unity-csharp
+        - article [ref=f5e193]:
+          - link [ref=f5e194] [cursor=pointer]:
+            - /url: /fr/academy/courses/web-development
+            - img "Développement Web" [ref=f5e195]
+          - generic [ref=f5e196]:
+            - generic [ref=f5e197]:
+              - link "Développement Web" [ref=f5e198] [cursor=pointer]:
+                - /url: /fr/academy/courses/web-development
+              - generic [ref=f5e199]: Âge recommandé 11+
+            - paragraph [ref=f5e204]: Comprendre le fonctionnement des sites web tout en développant créativité, logique et résolution de problèmes. Les apprenants commencent par HTML, CSS et JavaScript, puis progressent vers PHP et MySQL pour construire des sites connectés à de vraies bases de données.
+            - paragraph [ref=f5e205]: 300 DH/mois · 800 DHpour 3 mois
+            - generic [ref=f5e206]:
+              - generic [ref=f5e207]:
+                - generic [ref=f5e208]: Progression
+                - generic [ref=f5e210]: StarterPro
+              - generic [ref=f5e213]:
+                - generic [ref=f5e214]:
+                  - paragraph [ref=f5e215]: Starter
+                  - list [ref=f5e216]:
+                    - listitem [ref=f5e217]: HTML
+                    - listitem [ref=f5e219]: CSS
+                    - listitem [ref=f5e221]: JavaScript
+                - generic [ref=f5e223]:
+                  - paragraph [ref=f5e224]: Pro
+                  - list [ref=f5e225]:
+                    - listitem [ref=f5e226]: PHP
+                    - listitem [ref=f5e228]: MySQL
+                    - listitem [ref=f5e230]: Backend & bases de données
+            - link "Voir le détail du cours" [ref=f5e233] [cursor=pointer]:
+              - /url: /fr/academy/courses/web-development
+        - article [ref=f5e236]:
+          - link [ref=f5e237] [cursor=pointer]:
+            - /url: /fr/academy/courses/creative-design
+            - img "Design Créatif" [ref=f5e238]
+          - generic [ref=f5e239]:
+            - generic [ref=f5e240]:
+              - link "Design Créatif" [ref=f5e241] [cursor=pointer]:
+                - /url: /fr/academy/courses/creative-design
+              - generic [ref=f5e242]: Âge recommandé 10+
+            - paragraph [ref=f5e247]: Développer la créativité, la communication visuelle et les compétences de production numérique. Les apprenants explorent la création 3D, la retouche photo et le montage vidéo tout en transformant leurs idées en projets numériques originaux.
+            - paragraph [ref=f5e248]: 300 DH/mois · 800 DHpour 3 mois
+            - link "Voir le détail du cours" [ref=f5e250] [cursor=pointer]:
+              - /url: /fr/academy/courses/creative-design
+    - generic [ref=f5e254]:
+      - generic [ref=f5e255]:
+        - generic [ref=f5e256]: Comment Nous Enseignons
+        - heading "Comment Nous Enseignons" [level=2] [ref=f5e258]
+      - generic [ref=f5e259]:
+        - generic [ref=f5e260]:
+          - generic [ref=f5e261]: "01"
+          - heading "Apprendre" [level=3] [ref=f5e267]
+          - paragraph [ref=f5e268]: Des cours en direct avec des explications pratiques et des démonstrations.
+        - generic [ref=f5e269]:
+          - generic [ref=f5e270]: "02"
+          - heading "Pratiquer" [level=3] [ref=f5e276]
+          - paragraph [ref=f5e277]: Des exercices et des activités guidées aident les apprenants à appliquer chaque nouvelle notion.
+        - generic [ref=f5e278]:
+          - generic [ref=f5e279]: "03"
+          - heading "Créer" [level=3] [ref=f5e286]
+          - paragraph [ref=f5e287]: Les apprenants construisent de vrais projets tout au long du cours.
+        - generic [ref=f5e288]:
+          - generic [ref=f5e289]: "04"
+          - heading "Présenter" [level=3] [ref=f5e295]
+          - paragraph [ref=f5e296]: Les projets terminés rejoignent leur portfolio, suivis d'un certificat à la fin du cours.
+      - generic [ref=f5e297]:
+        - paragraph [ref=f5e298]: Une expérience d'apprentissage complète
+        - list [ref=f5e299]:
+          - listitem [ref=f5e300]: Séances live de 1h30 en petits groupes
+          - listitem [ref=f5e303]: Une séance par semaine
+          - listitem [ref=f5e306]: Supports de cours
+          - listitem [ref=f5e309]: Exercices
+          - listitem [ref=f5e312]: Accompagnement communautaire
+    - generic [ref=f5e317]:
+      - figure "Mounir Abbotti — Fondateur de Medinova Studio & Développeur principal." [ref=f5e319]:
+        - img "Mounir Abbotti — Fondateur de Medinova Studio & Développeur principal." [ref=f5e321]
+      - generic [ref=f5e324]:
+        - generic [ref=f5e325]: Le Fondateur
+        - heading "Apprendre directement du fondateur de Medinova Studio" [level=2] [ref=f5e327]
+        - paragraph [ref=f5e328]: Les apprenants sont accompagnés par Mounir Abbotti, fondateur et développeur principal de Medinova Studio — un studio actif de développement de jeux et de technologies avec des jeux publiés et des projets réels. Plutôt que de suivre des leçons préenregistrées, les apprenants apprennent auprès de quelqu'un qui conçoit, construit et livre de la technologie chaque jour.
+    - generic [ref=f5e330]:
+      - generic [ref=f5e331]:
+        - generic [ref=f5e332]: Notre Travail
+        - heading "Soutenu par un vrai studio qui livre de vrais projets" [level=2] [ref=f5e334]
+        - paragraph [ref=f5e335]: Medinova Academy est un programme de Medinova Studio, un studio actif de développement de jeux et de technologies. Les projets ci-dessous sont des projets de Medinova Studio — un travail réel publié, pas des projets d'élèves.
+      - generic [ref=f5e336]:
+        - img "Créateur de \"Zombies WarZone\" sur Roblox — plus de 1,000,000 de parties jouées dans le monde." [ref=f5e338]
+        - generic [ref=f5e339]:
+          - generic [ref=f5e340]: Medinova Studio sur Roblox
+          - heading "Créateur de \"Zombies WarZone\" sur Roblox — plus de 1,000,000 de parties jouées dans le monde." [level=3] [ref=f5e347]
+          - link "Jouer sur Roblox" [ref=f5e348] [cursor=pointer]:
+            - /url: https://www.roblox.com/games/11927988329/
+      - generic [ref=f5e352]:
+        - generic [ref=f5e353]:
+          - generic [ref=f5e354]: Morocco Gaming Expo
+          - heading "Stand C38 — Morocco Gaming Expo" [level=3] [ref=f5e357]
+          - paragraph [ref=f5e358]: Présentation de nos jeux publiés au public lors de l'événement national du jeu vidéo au Maroc.
+        - img "Stand C38 — Morocco Gaming Expo" [ref=f5e360]
+      - generic [ref=f5e361]:
+        - paragraph [ref=f5e362]: Projets de Medinova Studio — Publiés sur l'App Store
+        - generic [ref=f5e363]:
+          - generic [ref=f5e364]:
+            - 'img "Pharaoh''s Guardian: Mummies" [ref=f5e366]'
+            - paragraph [ref=f5e367]: "Pharaoh's Guardian: Mummies"
+          - generic [ref=f5e368]:
+            - 'img "Chameleon Outbreak: Camo Hunt" [ref=f5e370]'
+            - paragraph [ref=f5e371]: "Chameleon Outbreak: Camo Hunt"
+          - generic [ref=f5e372]:
+            - img "Sniper Elimination Challenge" [ref=f5e374]
+            - paragraph [ref=f5e375]: Sniper Elimination Challenge
+          - generic [ref=f5e376]:
+            - img "Blitz Combat Race" [ref=f5e378]
+            - paragraph [ref=f5e379]: Blitz Combat Race
+      - link "Découvrir le portfolio complet du studio" [ref=f5e381] [cursor=pointer]:
+        - /url: /fr/game-development
+    - generic [ref=f5e386]:
+      - generic [ref=f5e387]:
+        - generic [ref=f5e388]: Des tarifs simples et transparents
+        - heading "Des séances live de 1h30 en petits groupes — une par semaine" [level=2] [ref=f5e389]
+        - paragraph [ref=f5e390]: Le même tarif pour tous les cours et tous les niveaux. Commencez au mois, ou engagez-vous sur trois mois et économisez 100 DH.
+        - paragraph [ref=f5e391]: Les cours suivent l'année scolaire au Maroc (de septembre à juin, environ 9 mois) et s'interrompent pendant les vacances scolaires. Demandez-nous comment ces pauses influencent votre forfait et la date de début.
+      - generic [ref=f5e392]:
+        - article [ref=f5e393]:
+          - generic [ref=f5e394]:
+            - heading "Mensuel" [level=3] [ref=f5e396]
+            - generic [ref=f5e398]:
+              - generic [ref=f5e399]: 300 DH
+              - generic [ref=f5e400]: /mois
+            - generic [ref=f5e401]:
+              - generic [ref=f5e402]:
+                - term [ref=f5e403]: Durée de la séance
+                - definition [ref=f5e404]: 1h30
+              - generic [ref=f5e406]:
+                - term [ref=f5e407]: Fréquence
+                - definition [ref=f5e408]: 4 séances live de 1h30
+              - generic [ref=f5e410]:
+                - term [ref=f5e411]: Prix effectif par séance
+                - definition [ref=f5e412]: 75 DH
+            - link "Demander conseil" [ref=f5e413] [cursor=pointer]:
+              - /url: "#cta"
+        - article [ref=f5e414]:
+          - generic [ref=f5e415]:
+            - generic [ref=f5e416]:
+              - heading "3 mois" [level=3] [ref=f5e417]
+              - generic [ref=f5e418]: Le plus choisi
+              - generic [ref=f5e419]: Économisez 100 DH
+            - generic [ref=f5e420]:
+              - generic [ref=f5e421]:
+                - generic [ref=f5e422]: 800 DH
+                - generic [ref=f5e423]: pour 3 mois
+              - paragraph [ref=f5e424]: 900 DH
+            - generic [ref=f5e425]:
+              - generic [ref=f5e426]:
+                - term [ref=f5e427]: Durée de la séance
+                - definition [ref=f5e428]: 1h30
+              - generic [ref=f5e430]:
+                - term [ref=f5e431]: Fréquence
+                - definition [ref=f5e432]: 12 séances live de 1h30
+              - generic [ref=f5e434]:
+                - term [ref=f5e435]: Prix effectif par séance
+                - definition [ref=f5e436]: 67 DH
+            - link "Demander conseil" [ref=f5e437] [cursor=pointer]:
+              - /url: "#cta"
+      - generic [ref=f5e438]:
+        - heading "Tous les forfaits incluent" [level=3] [ref=f5e439]
+        - list [ref=f5e440]:
+          - listitem [ref=f5e441]: Des séances live de 1h30 en petits groupes
+          - listitem [ref=f5e444]: Une séance par semaine
+          - listitem [ref=f5e447]: Anglais, Français & Arabe
+          - listitem [ref=f5e450]: Matériaux et exercices de cours
+          - listitem [ref=f5e453]: Support communautaire
+          - listitem [ref=f5e456]: Certificat de fin de cours
+          - listitem [ref=f5e459]: Une séance d'essai gratuite avant l'inscription
+        - paragraph [ref=f5e462]: Une séance d'essai gratuite avant l'inscription — sans engagement.
+    - generic [ref=f5e465]:
+      - generic [ref=f5e466]:
+        - generic [ref=f5e467]: Questions Fréquentes
+        - heading "Vous avez des questions ?" [level=2] [ref=f5e468]
+        - paragraph [ref=f5e469]: Les réponses aux questions les plus posées par les parents et les apprenants.
+      - generic [ref=f5e470]:
+        - generic [ref=f5e471]:
+          - button "À quel âge mon enfant peut-il commencer ?" [expanded] [ref=f5e472] [cursor=pointer]
+          - region "À quel âge mon enfant peut-il commencer ?" [ref=f5e476]:
+            - paragraph [ref=f5e478]: Notre Académie accueille les apprenants dès 7 ans. Chaque cours a sa propre tranche d'âge recommandée, afin que chacun choisisse un programme adapté à son âge et à son expérience.
+        - generic [ref=f5e479]:
+          - button "Mon enfant a-t-il besoin d'une expérience préalable ?" [ref=f5e480] [cursor=pointer]
+          - region "Mon enfant a-t-il besoin d'une expérience préalable ?":
+            - paragraph [ref=f5e484]: Non. Plusieurs cours sont conçus pour les grands débutants. Pour les cours plus avancés, des connaissances préalables peuvent être recommandées.
+        - generic [ref=f5e485]:
+          - button "Dans quelles langues sont dispensés les cours ?" [ref=f5e486] [cursor=pointer]
+          - region "Dans quelles langues sont dispensés les cours ?":
+            - paragraph [ref=f5e490]: Les cours sont disponibles en anglais, en français et en arabe, selon le niveau de langue de l'apprenant et le groupe du cours.
+        - generic [ref=f5e491]:
+          - button "Les cours sont-ils en ligne ou en présentiel ?" [ref=f5e492] [cursor=pointer]
+          - region "Les cours sont-ils en ligne ou en présentiel ?":
+            - paragraph [ref=f5e496]: Les cours sont dispensés en direct avec un instructeur, en ligne et en petits groupes. Une séance de 1h30 est proposée chaque semaine, à un horaire convenu ensemble.
+        - generic [ref=f5e497]:
+          - button "Mon enfant peut-il essayer un cours avant de s'inscrire ?" [ref=f5e498] [cursor=pointer]
+          - region "Mon enfant peut-il essayer un cours avant de s'inscrire ?":
+            - paragraph [ref=f5e502]: Oui. Nous proposons un cours d'essai gratuit avant l'inscription. Cela permet à l'apprenant et au parent de voir comment se déroule le cours avant de s'engager.
+        - generic [ref=f5e503]:
+          - button "Qu'est-ce que mon enfant va réellement apprendre ?" [ref=f5e504] [cursor=pointer]
+          - region "Qu'est-ce que mon enfant va réellement apprendre ?":
+            - paragraph [ref=f5e508]: Nos cours se concentrent sur les compétences technologiques pratiques, la résolution de problèmes, la logique et la créativité. Les élèves apprennent en construisant des projets plutôt qu'en regardant simplement des leçons.
+        - generic [ref=f5e509]:
+          - button "Mon enfant recevra-t-il un certificat ?" [ref=f5e510] [cursor=pointer]
+          - region "Mon enfant recevra-t-il un certificat ?":
+            - paragraph [ref=f5e514]: Oui. Les élèves reçoivent un certificat de réussite après avoir terminé avec succès leur cours et leur projet final.
+        - generic [ref=f5e515]:
+          - button "Mon enfant aura-t-il des projets à montrer ?" [ref=f5e516] [cursor=pointer]
+          - region "Mon enfant aura-t-il des projets à montrer ?":
+            - paragraph [ref=f5e520]: Oui. Les élèves construisent des projets tout au long de leur cours et terminent avec des travaux qu'ils peuvent garder dans leur portfolio numérique.
+        - generic [ref=f5e521]:
+          - button "Quel accompagnement est disponible en dehors des cours en direct ?" [ref=f5e522] [cursor=pointer]
+          - region "Quel accompagnement est disponible en dehors des cours en direct ?":
+            - paragraph [ref=f5e526]: Les élèves reçoivent des supports de cours, des exercices et un accompagnement via la communauté de l'Académie, où ils peuvent poser des questions et recevoir des conseils.
+        - generic [ref=f5e527]:
+          - button "Combien coûtent les cours ?" [ref=f5e528] [cursor=pointer]
+          - region "Combien coûtent les cours ?":
+            - paragraph [ref=f5e532]: "Le même tarif pour tous les cours : 300 DH par mois, ou 800 DH pour trois mois — soit 100 DH d'économie par rapport au paiement mensuel. Une séance de 1h30 par semaine est incluse dans les deux formules."
+        - generic [ref=f5e533]:
+          - button "Comment réserver un essai ?" [ref=f5e534] [cursor=pointer]
+          - region "Comment réserver un essai ?":
+            - paragraph [ref=f5e538]: Cliquez sur Réserver un Essai Gratuit et contactez-nous via WhatsApp. Nous discuterons de l'âge, des centres d'intérêt et de la langue de l'apprenant avant d'organiser la séance d'essai adaptée.
+    - generic [ref=f5e541]:
+      - generic [ref=f5e542]:
+        - generic [ref=f5e543]: Recommandation de cours
+        - heading "Trouvons le cours adapté à votre enfant" [level=2] [ref=f5e544]
+        - paragraph [ref=f5e545]: Indiquez votre nom et l'âge de votre enfant. Nous vous recommanderons un point de départ adapté et vous expliquerons la suite sur WhatsApp.
+      - generic [ref=f5e546]:
+        - generic [ref=f5e547]:
+          - generic [ref=f5e548]: Votre nom
+          - textbox "Votre nom" [ref=f5e549]:
+            - /placeholder: Nom du parent ou tuteur
+        - generic [ref=f5e550]:
+          - generic [ref=f5e551]: Âge de votre enfant
+          - spinbutton "Âge de votre enfant" [ref=f5e552]
+        - button "Continuer sur WhatsApp" [ref=f5e553] [cursor=pointer]
+        - paragraph [ref=f5e556]: Nous n'enregistrons pas vos informations sur ce site. Elles apparaîtront dans un brouillon WhatsApp ; vérifiez-le puis appuyez sur Envoyer pour nous contacter.
+  - contentinfo [ref=f5e557]:
+    - generic [ref=f5e559]:
+      - generic [ref=f5e560]:
+        - link "Medinova Studio" [ref=f5e561] [cursor=pointer]:
+          - /url: /fr
+          - img "Medinova Studio logo" [ref=f5e562]
+        - paragraph [ref=f5e563]: Systèmes digitaux à forte conversion, développement de jeux sur mesure et éducation tech.
+        - paragraph [ref=f5e564]: Rabat, Maroc 🇲🇦
+        - 'link "Contact & Support: contact@medinovastudio.com" [ref=f5e568] [cursor=pointer]':
+          - /url: mailto:contact@medinovastudio.com
+      - generic [ref=f5e572]:
+        - heading "Agence de Croissance B2B" [level=3] [ref=f5e573]
+        - list [ref=f5e574]:
+          - listitem [ref=f5e575]:
+            - link "Plateformes Web à forte conversion" [ref=f5e576] [cursor=pointer]:
+              - /url: /fr/agency#solutions
+          - listitem [ref=f5e577]:
+            - link "Systèmes d'acquisition autonomes par IA" [ref=f5e578] [cursor=pointer]:
+              - /url: /fr/agency#growth-framework
+          - listitem [ref=f5e579]:
+            - link "Méta Ads & Performance Marketing" [ref=f5e580] [cursor=pointer]:
+              - /url: /fr/agency#packages
+          - listitem [ref=f5e581]:
+            - link "Cadres de diagnostic & Retainers" [ref=f5e582] [cursor=pointer]:
+              - /url: /fr/agency#faq
+        - link "Réserver un appel stratégique" [ref=f5e583] [cursor=pointer]:
+          - /url: /fr/agency#contact
+      - generic [ref=f5e586]:
+        - heading "Game Dev & Tech Interactive" [level=3] [ref=f5e587]
+        - list [ref=f5e588]:
+          - listitem [ref=f5e589]:
+            - link "Titres commerciaux & Jeux WebGL" [ref=f5e590] [cursor=pointer]:
+              - /url: /fr/game-development#portfolio
+          - listitem [ref=f5e591]:
+            - link "AR/VR sur mesure & Tech spatiale" [ref=f5e592] [cursor=pointer]:
+              - /url: /fr/game-development#services
+          - listitem [ref=f5e593]:
+            - link "Serious Games & Simulations éducatives" [ref=f5e594] [cursor=pointer]:
+              - /url: /fr/game-development#portfolio
+          - listitem [ref=f5e595]:
+            - link "Publication de portails web" [ref=f5e596] [cursor=pointer]:
+              - /url: /fr#contact
+      - generic [ref=f5e597]:
+        - heading "Académie Medinova" [level=3] [ref=f5e598]
+        - list [ref=f5e599]:
+          - listitem [ref=f5e600]:
+            - link "Parcours de code pour jeunes & adultes" [ref=f5e601] [cursor=pointer]:
+              - /url: /fr/academy#courses
+          - listitem [ref=f5e602]:
+            - link "Curriculums Scratch, Python & Unity C#" [ref=f5e603] [cursor=pointer]:
+              - /url: /fr/academy#work
+          - listitem [ref=f5e604]:
+            - link "Modules certifiés imprimables & QR" [ref=f5e605] [cursor=pointer]:
+              - /url: /fr/academy#courses
+          - listitem [ref=f5e606]:
+            - link "Vitrine des projets étudiants" [ref=f5e607] [cursor=pointer]:
+              - /url: /fr/academy#faq
+          - listitem [ref=f5e608]:
+            - link "Blog" [ref=f5e609] [cursor=pointer]:
+              - /url: /fr/blog
+      - generic [ref=f5e610]:
+        - heading "Confiance, Légal & Conformité" [level=3] [ref=f5e611]
+        - list [ref=f5e612]:
+          - listitem [ref=f5e613]:
+            - link "Politique de confidentialité" [ref=f5e614] [cursor=pointer]:
+              - /url: /fr/privacy
+          - listitem [ref=f5e615]:
+            - link "Conditions d'utilisation" [ref=f5e616] [cursor=pointer]:
+              - /url: /fr/terms
+        - paragraph [ref=f5e617]: Tarifs indiqués Hors Taxes (HT). TVA (20%) applicable selon la réglementation en vigueur.
+        - generic [ref=f5e618]:
+          - link "LinkedIn" [ref=f5e619] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/medinova-studio/
+          - link "Instagram" [ref=f5e622] [cursor=pointer]:
+            - /url: https://www.instagram.com/medinova.studio
+          - link "YouTube" [ref=f5e625] [cursor=pointer]:
+            - /url: https://www.youtube.com/@MedinovaStudio
+          - link "itch.io" [ref=f5e628] [cursor=pointer]:
+            - /url: https://medinova.itch.io/
+    - generic [ref=f5e632]:
+      - paragraph [ref=f5e633]: © 2026 Medinova Studio. Tous droits réservés.
+      - paragraph [ref=f5e634]: Rabat, Maroc 🇲🇦
+  - alert [ref=f5e635]

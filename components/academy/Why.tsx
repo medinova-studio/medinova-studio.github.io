@@ -12,7 +12,7 @@ export default function Why() {
   return (
     <section
       id="why"
-      className="relative py-16 sm:py-20 border-t border-hairline"
+      className="relative scroll-mt-28 py-16 sm:py-20 border-t border-hairline"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-14">

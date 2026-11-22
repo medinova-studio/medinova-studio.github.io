@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Gamepad2, GraduationCap, TrendingUp, Sparkles, ArrowRight, Menu, X } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
@@ -98,9 +99,10 @@ export default function Navbar() {
   ];
 
   const academyAnchors = [
-    { href: `/${lang}/academy#work`, label: "Our Work" },
-    { href: `/${lang}/academy#courses`, label: "Courses" },
-    { href: `/${lang}/academy#faq`, label: "FAQ" },
+    { href: `/${lang}/academy#work`, label: t.academy.nav.work },
+    { href: `/${lang}/academy#courses`, label: t.academy.nav.courses },
+    { href: `/${lang}/academy#pricing`, label: t.academy.nav.pricing },
+    { href: `/${lang}/academy#faq`, label: t.academy.nav.faq },
   ];
 
   const gameDevAnchors = [
@@ -135,7 +137,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-14">
             {/* Brand */}
             <Link href={`/${lang}`} className="flex items-center flex-shrink-0" aria-label="Medinova Studio">
-              <img src="/images/logo.svg" alt="Medinova Studio logo" className="h-9 w-auto object-contain" />
+              <Image src="/images/logo.svg" alt="Medinova Studio logo" width={100} height={36} className="h-9 w-auto object-contain" priority />
             </Link>
 
             {/* Desktop */}
@@ -339,7 +341,11 @@ export default function Navbar() {
               {subAnchors && (
                 <>
                   <span className="px-3 pt-4 pb-1 text-[11px] font-semibold uppercase tracking-wider text-ink-tertiary">
-                    {isAgency ? "Agency Sections" : isAcademy ? "Academy Sections" : "Game Dev Sections"}
+                    {isAgency
+                      ? t.nav.subBar.sectionsAgency
+                      : isAcademy
+                      ? t.nav.subBar.sectionsAcademy
+                      : t.nav.subBar.sectionsGameDev}
                   </span>
                   <div className="grid grid-cols-2 gap-1.5 px-1">
                     {subAnchors.map((a) => (
@@ -380,7 +386,11 @@ export default function Navbar() {
             ))}
             <span className="ml-auto hidden lg:inline-flex items-center gap-2 text-xs text-ink-tertiary">
               <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
-              {isAgency ? "Available for new projects" : isAcademy ? "Live online • 7+" : "Unity C# • WebGL"}
+              {isAgency
+                ? t.nav.subBar.statusAgency
+                : isAcademy
+                ? t.nav.subBar.statusAcademy
+                : t.nav.subBar.statusGameDev}
             </span>
           </div>
         </div>

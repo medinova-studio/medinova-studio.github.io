@@ -1,3 +1,5 @@
+import type { CourseSlug } from "@/lib/courses";
+
 export type Lang = "en" | "fr" | "ar";
 
 export const LANGS: Lang[] = ["fr", "en", "ar"];
@@ -19,6 +21,7 @@ export const DATE_LOCALES: Record<Lang, string> = {
 export type AcademyTranslation = {
   announcement: string;
   announcementCta: string;
+  nav: { work: string; courses: string; pricing: string; faq: string };
   hero: {
     badge: string;
     headline: string;
@@ -59,12 +62,21 @@ export type AcademyTranslation = {
     agesLabel: string;
     progressionLabel: string;
     viewLabel: string;
-    items: {
-      name: string;
-      age: string;
-      desc: string;
-      levels?: { label: string; topics: string[] }[];
-    }[];
+    /**
+     * Keyed by `CourseSlug` rather than a positional array. A positional array
+     * silently paired each card with `COURSE_SLUGS[i]` and `COURSE_IMAGES[i]`,
+     * so any reorder or omission would attach the wrong image and wrong link to
+     * a course without raising a type error.
+     */
+    items: Record<
+      CourseSlug,
+      {
+        name: string;
+        age: string;
+        desc: string;
+        levels?: { label: string; topics: string[] }[];
+      }
+    >;
   };
   breadcrumb: { home: string; academy: string };
   onlineLabel: string;
@@ -72,6 +84,31 @@ export type AcademyTranslation = {
   outcomesTitle: string;
   courseDetailsTitle: string;
   moreCoursesTitle: string;
+  pricing: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    academicYearNote: string;
+    monthlyLabel: string;
+    termLabel: string;
+    perMonth: string;
+    termTotal: string;
+    featured: string;
+    saveBadge: string;
+    monthlySessions: string;
+    perSessionLabel: string;
+    termSessions: string;
+    includesTitle: string;
+    includes: string[];
+    ctaMonthly: string;
+    ctaTerm: string;
+    ctaMonthlyLead: string;
+    ctaTermLead: string;
+    trialNote: string;
+    sessionLengthLabel: string;
+    frequencyLabel: string;
+    stickyNote: string;
+  };
   teaching: {
     badge: string;
     title: string;
@@ -85,6 +122,21 @@ export type AcademyTranslation = {
     cta: string;
     scarcity: string;
   };
+  leadForm: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    cta: string;
+    parentName: string;
+    parentNamePlaceholder: string;
+    studentAge: string;
+    studentAgePlaceholder: string;
+    submit: string;
+    note: string;
+    requiredName: string;
+    invalidAge: string;
+    whatsappMessage: string;
+  };
   faq: {
     badge: string;
     title: string;
@@ -97,6 +149,16 @@ export type AcademyTranslation = {
     aria: string;
     quickQuestion: string;
     cta: string;
+    trialMessage: string;
+    monthlyMessage: string;
+    termMessage: string;
+    /**
+     * Variants used when no course is in scope — the academy index and the
+     * floating widget. Without these, the course-scoped templates produced
+     * nonsense such as "for the Explore Our Courses course".
+     */
+    monthlyGeneralMessage: string;
+    termGeneralMessage: string;
   };
 };
 
@@ -116,6 +178,17 @@ export type Translation = {
     subAcademy: string;
     subAcademyDesc: string;
     blog: string;
+    /**
+     * Section heading and status pill for the navbar sub-bar.
+     */
+    subBar: {
+      sectionsAgency: string;
+      sectionsAcademy: string;
+      sectionsGameDev: string;
+      statusAgency: string;
+      statusAcademy: string;
+      statusGameDev: string;
+    };
   };
   blog: {
     metaTitle: string;
@@ -421,6 +494,20 @@ export const translations: Record<Lang, Translation> = {
       subAcademy: "Medinova Academy",
       subAcademyDesc: "Coding tracks for kids & adults",
       blog: "Blog",
+      /**
+       * Labels for the navbar sub-bar: the section heading above the anchor
+       * grid and the status pill at its trailing edge. Both were hardcoded
+       * English, which left French and Arabic visitors with localized anchor
+       * links sitting beside an English heading.
+       */
+      subBar: {
+        sectionsAgency: "Agency Sections",
+        sectionsAcademy: "Academy Sections",
+        sectionsGameDev: "Game Dev Sections",
+        statusAgency: "Available for new projects",
+        statusAcademy: "Live online • 7+",
+        statusGameDev: "Unity C# • WebGL",
+      },
     },
     blog: {
       metaTitle: "Coding Blog for Kids & Parents | Medinova Studio",
@@ -928,15 +1015,16 @@ export const translations: Record<Lang, Translation> = {
     academy: {
       announcement:
         "Live instructor-led classes for learners aged 7+ · English, French & Arabic",
-      announcementCta: "Book a Free Trial",
+      announcementCta: "Explore learning paths",
+      nav: { work: "Our Work", courses: "Courses", pricing: "Pricing", faq: "FAQ" },
       hero: {
         badge: "Online Coding Academy · Ages 7+ · Rabat, Morocco",
         headline:
           "Online Coding & Game Development Courses for Kids in Morocco",
         subheadline:
           "Learn coding, game development and digital skills live online with Medinova Studio — from Rabat, Casablanca and everywhere in Morocco. Practical, project-based classes for learners aged 7+, taught by the founder of an active game studio.",
-        cta: "Book a Free Trial",
-        scarcity: "Limited spots — book early",
+        cta: "See what your child can learn",
+        scarcity: "",
         trust: [
           {
             title: "Learners aged 7+",
@@ -1003,42 +1091,42 @@ export const translations: Record<Lang, Translation> = {
         badge: "Explore Our Courses",
         title: "Explore Our Courses",
         intro:
-          "From digital skills and coding to game development, web development and creative design, learners can explore technology through practical, project-based learning.",
+          "Not sure where to start? Tell us your child's age and we'll recommend a suitable course. Every path turns curiosity into practical skills and projects.",
         agesLabel: "Recommended age",
         progressionLabel: "Progression",
         viewLabel: "View course details",
-        items: [
-          {
+        items: {
+          "digital-essentials": {
             name: "Digital Essentials",
             age: "7+",
             desc:
               "Build essential digital skills for everyday life, including computer basics, Word, Excel, PowerPoint, internet use and more.",
           },
-          {
+          scratch: {
             name: "Scratch",
             age: "7+",
             desc:
               "Build logical thinking and problem-solving skills through visual programming. Children learn the fundamentals of algorithms, sequencing, mathematics and computational thinking while creating their own interactive stories, animations and games.",
           },
-          {
+          python: {
             name: "Python",
             age: "11+",
             desc:
               "Develop structured thinking, problem-solving and programming skills through Python. Learners turn ideas into working programs, games and practical applications while building a strong foundation for more advanced technology.",
           },
-          {
+          roblox: {
             name: "Roblox Game Development",
             age: "9+",
             desc:
               "Develop creativity, spatial thinking and problem-solving skills by designing and building interactive 3D worlds. Learners explore game design and programming while creating their own Roblox experiences.",
           },
-          {
+          "unity-csharp": {
             name: "Unity & C# Game Development",
             age: "12+",
             desc:
               "Develop advanced problem-solving, logical thinking and programming skills through professional game development. Learners use Unity and C# to design mechanics, build 2D and 3D games, and turn their ideas into playable projects.",
           },
-          {
+          "web-development": {
             name: "Web Development",
             age: "11+",
             desc:
@@ -1054,15 +1142,50 @@ export const translations: Record<Lang, Translation> = {
               },
             ],
           },
-          {
+          "creative-design": {
             name: "Creative Design",
             age: "10+",
             desc:
               "Develop creativity, visual communication and digital production skills. Learners explore 3D creation, photo editing and video editing while turning their ideas into original digital projects.",
           },
-        ],
+        },
       },
       breadcrumb: { home: "Home", academy: "Medinova Academy" },
+      pricing: {
+        badge: "Simple, transparent pricing",
+        title: "Live {length} sessions in small groups — one per week",
+        subtitle:
+          "The same price for every course, at every level. Start month to month, or commit to three months and save {saving}.",
+        academicYearNote:
+          "Classes follow Morocco's school year (September to June, about 9 months) and pause during school holidays. Ask us how holiday breaks affect your plan and start date.",
+        monthlyLabel: "Monthly",
+        termLabel: "3 months",
+        perMonth: "/month",
+        termTotal: "for 3 months",
+        featured: "Most popular",
+        saveBadge: "Save {saving}",
+        monthlySessions: "{count} live sessions of {length}",
+        perSessionLabel: "Effective price per session",
+        termSessions: "{count} live sessions of {length}",
+        includesTitle: "Every plan includes",
+        includes: [
+          "Live {length} sessions in small groups",
+          "One session per week",
+          "English, French & Arabic",
+          "Learning materials and exercises",
+          "Community support",
+          "Certificate of completion",
+          "A free trial class before enrolling",
+        ],
+        ctaMonthly: "Start monthly",
+        ctaTerm: "Start 3 months",
+        ctaMonthlyLead: "Ask us which option fits",
+        ctaTermLead: "Ask us which option fits",
+        trialNote: "A free trial class before enrolling — no commitment.",
+        sessionLengthLabel: "Session length",
+        frequencyLabel: "Frequency",
+        stickyNote: "From {price}/month · live {length} sessions weekly",
+      },
       onlineLabel: "Live online classes",
       viewAllLabel: "View all courses",
       outcomesTitle: "What You'll Learn",
@@ -1091,7 +1214,8 @@ export const translations: Record<Lang, Translation> = {
           },
         ],
         model: [
-          "Live classes",
+          "Live 1h30 sessions in small groups",
+          "One session per week",
           "Learning materials",
           "Exercises",
           "Community support",
@@ -1102,7 +1226,24 @@ export const translations: Record<Lang, Translation> = {
         subtitle:
           "Book a free trial and discover which learning path is right for you.",
         cta: "Book a Free Trial",
-        scarcity: "Next cohort starts soon — only a few spots left.",
+        scarcity: "",
+      },
+      leadForm: {
+        badge: "Course recommendation",
+        title: "Let's find the right course for your child",
+        subtitle:
+          "Share your name and your child's age. We'll recommend a suitable starting point and explain the next steps on WhatsApp.",
+        cta: "Get a course recommendation",
+        parentName: "Your name",
+        parentNamePlaceholder: "Parent or guardian name",
+        studentAge: "Your child's age",
+        studentAgePlaceholder: "For example, 9",
+        submit: "Continue on WhatsApp",
+        note: "We don't save your details on this website. They will appear in a WhatsApp draft; review it and tap Send to contact us.",
+        requiredName: "Please enter your name.",
+        invalidAge: "Please enter a valid age.",
+        whatsappMessage:
+          "Hello, my name is {name}. My child is {age} years old. Could you recommend the right course for them at Medinova Academy?",
       },
       faq: {
         badge: "Frequently Asked Questions",
@@ -1124,7 +1265,7 @@ export const translations: Record<Lang, Translation> = {
           },
           {
             q: "Are the classes online or in person?",
-            a: "Classes are conducted live with an instructor. We can offer online learning, with the exact format depending on the group and schedule.",
+            a: "Classes are conducted live with an instructor, online in small groups. One 1h30 session is held per week, with times agreed together.",
           },
           {
             q: "Can my child try a class before enrolling?",
@@ -1147,6 +1288,10 @@ export const translations: Record<Lang, Translation> = {
             a: "Students receive learning materials, exercises and support through the Academy community, where they can ask questions and receive guidance.",
           },
           {
+            q: "How much do the courses cost?",
+            a: "The same price for every course: 300 MAD per month, or 800 MAD for three months — saving 100 MAD compared with paying month to month. One session of 1h30 per week is included in both.",
+          },
+          {
             q: "How do I book a trial?",
             a: "Click Book a Free Trial and contact us through WhatsApp. We'll discuss the learner's age, interests and language before arranging the appropriate trial session.",
           },
@@ -1159,6 +1304,16 @@ export const translations: Record<Lang, Translation> = {
         aria: "Chat on WhatsApp",
         quickQuestion: "Quick question via WhatsApp",
         cta: "Book a Free Trial",
+        trialMessage:
+          "Hello, I would like to book a free trial lesson at Medinova Academy for the {course} course.",
+        monthlyMessage:
+          "Hello, I would like to start the Monthly plan ({price}/month) at Medinova Academy for the {course} course.",
+        termMessage:
+          "Hello, I would like to start the 3-Month plan ({price} for 3 months) at Medinova Academy for the {course} course.",
+        monthlyGeneralMessage:
+          "Hello, I would like to start the Monthly plan ({price}/month) at Medinova Academy. Could you tell me which course is right for my child?",
+        termGeneralMessage:
+          "Hello, I would like to start the 3-Month plan ({price} for 3 months) at Medinova Academy. Could you tell me which course is right for my child?",
       },
     },
     common: {
@@ -1267,6 +1422,14 @@ export const translations: Record<Lang, Translation> = {
       subAcademy: "Académie Medinova",
       subAcademyDesc: "Parcours de code pour enfants & adultes",
       blog: "Blog",
+      subBar: {
+        sectionsAgency: "Sections Agency",
+        sectionsAcademy: "Sections Académie",
+        sectionsGameDev: "Sections Game Dev",
+        statusAgency: "Disponible pour de nouveaux projets",
+        statusAcademy: "En direct en ligne • 7+",
+        statusGameDev: "Unity C# • WebGL",
+      },
     },
     blog: {
       metaTitle: "Blog Code pour Enfants & Parents | Medinova Studio",
@@ -1774,15 +1937,16 @@ export const translations: Record<Lang, Translation> = {
     academy: {
       announcement:
         "Cours en direct pour les apprenants dès 7 ans · Anglais, Français & Arabe",
-      announcementCta: "Réserver un Essai Gratuit",
+      announcementCta: "Découvrir les parcours",
+      nav: { work: "Nos Réalisations", courses: "Cours", pricing: "Tarifs", faq: "FAQ" },
       hero: {
         badge: "Académie de code en ligne · dès 7 ans · Rabat, Maroc",
         headline:
           "Cours de codage et de développement de jeux pour enfants — en ligne au Maroc",
         subheadline:
           "Apprenez le codage, le développement de jeux et les compétences numériques en direct avec Medinova Studio — depuis Rabat, Casablanca et partout au Maroc. Des classes pratiques et basées sur des projets pour les apprenants dès 7 ans, animées par le fondateur d'un studio de jeux actif.",
-        cta: "Réserver un Essai Gratuit",
-        scarcity: "Places limitées — réservez tôt",
+        cta: "Découvrir ce que votre enfant peut apprendre",
+        scarcity: "",
         trust: [
           {
             title: "Apprenants dès 7 ans",
@@ -1850,42 +2014,42 @@ export const translations: Record<Lang, Translation> = {
         badge: "Découvrir Nos Cours",
         title: "Découvrir Nos Cours",
         intro:
-          "Des compétences numériques et de la programmation au développement de jeux, au développement web et au design créatif, les apprenants peuvent explorer la technologie grâce à un apprentissage pratique basé sur des projets.",
+          "Vous ne savez pas par où commencer ? Indiquez l'âge de votre enfant et nous vous recommanderons un cours adapté. Chaque parcours transforme sa curiosité en compétences pratiques et en projets.",
         agesLabel: "Âge recommandé",
         progressionLabel: "Progression",
         viewLabel: "Voir le détail du cours",
-        items: [
-          {
+        items: {
+          "digital-essentials": {
             name: "Essentiels Numériques",
             age: "7+",
             desc:
               "Acquérir les compétences numériques essentielles du quotidien : informatique de base, Word, Excel, PowerPoint, navigation sur Internet et plus encore.",
           },
-          {
+          scratch: {
             name: "Scratch",
             age: "7+",
             desc:
               "Développer la logique et la résolution de problèmes grâce à la programmation visuelle. Les enfants apprennent les bases des algorithmes, du séquencement, des mathématiques et de la pensée informatique tout en créant leurs propres histoires interactives, animations et jeux.",
           },
-          {
+          python: {
             name: "Python",
             age: "11+",
             desc:
               "Développer une pensée structurée, la résolution de problèmes et des compétences de programmation grâce à Python. Les apprenants transforment leurs idées en programmes fonctionnels, en jeux et en applications pratiques, tout en construisant des bases solides pour des technologies plus avancées.",
           },
-          {
+          roblox: {
             name: "Développement de Jeux Roblox",
             age: "9+",
             desc:
               "Développer la créativité, la pensée spatiale et la résolution de problèmes en concevant et en construisant des mondes 3D interactifs. Les apprenants explorent le game design et la programmation tout en créant leurs propres expériences Roblox.",
           },
-          {
+          "unity-csharp": {
             name: "Développement de Jeux Unity & C#",
             age: "12+",
             desc:
               "Développer des compétences avancées de résolution de problèmes, de logique et de programmation grâce au développement de jeux professionnel. Les apprenants utilisent Unity et C# pour concevoir des mécaniques, créer des jeux 2D et 3D et transformer leurs idées en projets jouables.",
           },
-          {
+          "web-development": {
             name: "Développement Web",
             age: "11+",
             desc:
@@ -1901,15 +2065,52 @@ export const translations: Record<Lang, Translation> = {
               },
             ],
           },
-          {
+          "creative-design": {
             name: "Design Créatif",
             age: "10+",
             desc:
               "Développer la créativité, la communication visuelle et les compétences de production numérique. Les apprenants explorent la création 3D, la retouche photo et le montage vidéo tout en transformant leurs idées en projets numériques originaux.",
           },
-        ],
+        },
       },
       breadcrumb: { home: "Accueil", academy: "Medinova Academy" },
+      pricing: {
+        badge: "Des tarifs simples et transparents",
+        title: "Des séances live de {length} en petits groupes — une par semaine",
+        subtitle:
+          "Le même tarif pour tous les cours et tous les niveaux. Commencez au mois, ou engagez-vous sur trois mois et économisez {saving}.",
+        academicYearNote:
+          "Les cours suivent l'année scolaire au Maroc (de septembre à juin, environ 9 mois) et s'interrompent pendant les vacances scolaires. Demandez-nous comment ces pauses influencent votre forfait et la date de début.",
+        monthlyLabel: "Mensuel",
+        termLabel: "3 mois",
+        perMonth: "/mois",
+        termTotal: "pour 3 mois",
+        featured: "Le plus choisi",
+        saveBadge: "Économisez {saving}",
+        monthlySessions: "{count} séances live de {length}",
+        perSessionLabel: "Prix effectif par séance",
+        termSessions: "{count} séances live de {length}",
+        includesTitle: "Tous les forfaits incluent",
+        includes: [
+          "Des séances live de {length} en petits groupes",
+          "Une séance par semaine",
+          "Anglais, Français & Arabe",
+          "Matériaux et exercices de cours",
+          "Support communautaire",
+          "Certificat de fin de cours",
+          "Une séance d'essai gratuite avant l'inscription",
+        ],
+        ctaMonthly: "Commencer Mensuel",
+        ctaTerm: "Commencer 3 mois",
+        ctaMonthlyLead: "Demander conseil",
+        ctaTermLead: "Demander conseil",
+        trialNote:
+          "Une séance d'essai gratuite avant l'inscription — sans engagement.",
+        sessionLengthLabel: "Durée de la séance",
+        frequencyLabel: "Fréquence",
+        stickyNote:
+          "À partir de {price}/mois · séances live de {length} par semaine",
+      },
       onlineLabel: "Cours en ligne en direct",
       viewAllLabel: "Voir tous les cours",
       outcomesTitle: "Ce Que Vous Allez Apprendre",
@@ -1938,7 +2139,8 @@ export const translations: Record<Lang, Translation> = {
           },
         ],
         model: [
-          "Cours en direct",
+          "Séances live de 1h30 en petits groupes",
+          "Une séance par semaine",
           "Supports de cours",
           "Exercices",
           "Accompagnement communautaire",
@@ -1949,7 +2151,24 @@ export const translations: Record<Lang, Translation> = {
         subtitle:
           "Réservez un essai gratuit et découvrez quel parcours d'apprentissage vous convient.",
         cta: "Réserver un Essai Gratuit",
-        scarcity: "La prochaine cohorte commence bientôt — il ne reste que quelques places.",
+        scarcity: "",
+      },
+      leadForm: {
+        badge: "Recommandation de cours",
+        title: "Trouvons le cours adapté à votre enfant",
+        subtitle:
+          "Indiquez votre nom et l'âge de votre enfant. Nous vous recommanderons un point de départ adapté et vous expliquerons la suite sur WhatsApp.",
+        cta: "Obtenir une recommandation",
+        parentName: "Votre nom",
+        parentNamePlaceholder: "Nom du parent ou tuteur",
+        studentAge: "Âge de votre enfant",
+        studentAgePlaceholder: "Par exemple : 9",
+        submit: "Continuer sur WhatsApp",
+        note: "Nous n'enregistrons pas vos informations sur ce site. Elles apparaîtront dans un brouillon WhatsApp ; vérifiez-le puis appuyez sur Envoyer pour nous contacter.",
+        requiredName: "Veuillez saisir votre nom.",
+        invalidAge: "Veuillez saisir un âge valide.",
+        whatsappMessage:
+          "Bonjour, je m'appelle {name}. Mon enfant a {age} ans. Pourriez-vous me recommander le cours qui lui conviendrait à Medinova Academy ?",
       },
       faq: {
         badge: "Questions Fréquentes",
@@ -1970,8 +2189,8 @@ export const translations: Record<Lang, Translation> = {
             a: "Les cours sont disponibles en anglais, en français et en arabe, selon le niveau de langue de l'apprenant et le groupe du cours.",
           },
           {
-            q: "Les cours sont-ils en ligne ou en présentiel ?",
-            a: "Les cours sont dispensés en direct avec un instructeur. Nous pouvons proposer un apprentissage en ligne, le format exact dépendant du groupe et de l'emploi du temps.",
+q: "Les cours sont-ils en ligne ou en présentiel ?",
+            a: "Les cours sont dispensés en direct avec un instructeur, en ligne et en petits groupes. Une séance de 1h30 est proposée chaque semaine, à un horaire convenu ensemble.",
           },
           {
             q: "Mon enfant peut-il essayer un cours avant de s'inscrire ?",
@@ -1994,6 +2213,10 @@ export const translations: Record<Lang, Translation> = {
             a: "Les élèves reçoivent des supports de cours, des exercices et un accompagnement via la communauté de l'Académie, où ils peuvent poser des questions et recevoir des conseils.",
           },
           {
+            q: "Combien coûtent les cours ?",
+            a: "Le même tarif pour tous les cours : 300 DH par mois, ou 800 DH pour trois mois — soit 100 DH d'économie par rapport au paiement mensuel. Une séance de 1h30 par semaine est incluse dans les deux formules.",
+          },
+          {
             q: "Comment réserver un essai ?",
             a: "Cliquez sur Réserver un Essai Gratuit et contactez-nous via WhatsApp. Nous discuterons de l'âge, des centres d'intérêt et de la langue de l'apprenant avant d'organiser la séance d'essai adaptée.",
           },
@@ -2006,6 +2229,16 @@ export const translations: Record<Lang, Translation> = {
         aria: "Discuter sur WhatsApp",
         quickQuestion: "Question rapide via WhatsApp",
         cta: "Réserver un Essai Gratuit",
+        trialMessage:
+          "Bonjour, je souhaite réserver une séance d'essai gratuite à Medinova Academy pour le cours {course}.",
+        monthlyMessage:
+          "Bonjour, je souhaite commencer le forfait Mensuel ({price}/mois) à Medinova Academy pour le cours {course}.",
+        termMessage:
+          "Bonjour, je souhaite commencer le forfait 3 Mois ({price} pour 3 mois) à Medinova Academy pour le cours {course}.",
+        monthlyGeneralMessage:
+          "Bonjour, je souhaite commencer le forfait Mensuel ({price}/mois) à Medinova Academy. Quel cours convient le mieux à mon enfant ?",
+        termGeneralMessage:
+          "Bonjour, je souhaite commencer le forfait 3 Mois ({price} pour 3 mois) à Medinova Academy. Quel cours convient le mieux à mon enfant ?",
       },
     },
     common: {
@@ -2115,6 +2348,14 @@ export const translations: Record<Lang, Translation> = {
       subAcademy: "أكاديمية Medinova",
       subAcademyDesc: "دورات برمجة وتقنية من سن 7 سنوات",
       blog: "المدونة",
+      subBar: {
+        sectionsAgency: "أقسام الوكالة",
+        sectionsAcademy: "أقسام الأكاديمية",
+        sectionsGameDev: "أقسام تطوير الألعاب",
+        statusAgency: "متاح لمشاريع جديدة",
+        statusAcademy: "مباشر عبر الإنترنت • 7+",
+        statusGameDev: "Unity C# • WebGL",
+      },
     },
     blog: {
       metaTitle: "مدونة البرمجة للأطفال والآباء | Medinova Studio",
@@ -2616,13 +2857,14 @@ export const translations: Record<Lang, Translation> = {
     academy: {
       announcement:
         "حصص مباشرة للمتعلمين من سن 7 سنوات فما فوق · الإنجليزية، الفرنسية والعربية",
-      announcementCta: "احجز حصة تجريبية مجانية",
+      announcementCta: "اكتشف المسارات التعليمية",
+      nav: { work: "أعمالنا", courses: "الدورات", pricing: "الأسعار", faq: "الأسئلة الشائعة" },
       hero: {
         badge: "💻 حصص عن بُعد في البرمجة والذكاء الاصطناعي · من سن 7 سنوات فما فوق",
         headline: "دورات برمجة وتطوير ألعاب للأطفال — عبر الإنترنت في المغرب",
         subheadline:
           "تعلّم البرمجة وتطوير الألعاب والمهارات الرقمية مباشرة عبر الإنترنت مع Medinova Studio — من الرباط والدار البيضاء وكل مكان في المغرب. حصص عملية قائمة على المشاريع للمتعلمين من سن 7 سنوات، يدرّسها مؤسس استوديو ألعاب نشط.",
-        cta: "احجز حصة تجريبية مجانية",
+        cta: "اكتشف ما يمكن لطفلك تعلمه",
         scarcity: "",
         trust: [
           {
@@ -2690,42 +2932,42 @@ export const translations: Record<Lang, Translation> = {
         badge: "استكشف دوراتنا",
         title: "استكشف دوراتنا",
         intro:
-          "من المهارات الرقمية والبرمجة إلى تطوير الألعاب وتطوير الويب والتصميم الإبداعي، يمكن للمتعلمين استكشاف التقنية من خلال تعلّم عملي قائم على المشاريع.",
+          "لست متأكدًا من أين تبدأ؟ أخبرنا بعمر طفلك وسنوصي بدورة مناسبة له. تساعده المسارات العملية على تحويل فضوله إلى مهارات ومشاريع حقيقية.",
         agesLabel: "الفئة العمرية المقترحة",
         progressionLabel: "مسار التعلّم",
         viewLabel: "عرض تفاصيل الدورة",
-        items: [
-          {
+        items: {
+          "digital-essentials": {
             name: "المهارات الرقمية الأساسية",
             age: "7+",
             desc:
               "بناء المهارات الرقمية الأساسية للحياة اليومية: أساسيات استخدام الحاسوب وWord وExcel وPowerPoint والإنترنت وغيرها من المهارات الرقمية الأساسية.",
           },
-          {
+          scratch: {
             name: "Scratch",
             age: "7+",
             desc:
               "تطوير التفكير المنطقي ومهارات حل المشكلات عبر البرمجة المرئية. يتعلم المتعلمون أساسيات الخوارزميات والتسلسل والتفكير الحاسوبي، مع إنشاء قصص تفاعلية ورسوم متحركة وألعاب خاصة بهم.",
           },
-          {
+          python: {
             name: "Python",
             age: "11+",
             desc:
               "تطوير التفكير المنطقي ومهارات حل المشكلات والبرمجة عبر لغة Python. يحوّل المتعلمون أفكارهم إلى برامج وألعاب وتطبيقات عملية، مع بناء أساس متين للمستويات الأكثر تقدمًا.",
           },
-          {
+          roblox: {
             name: "تطوير ألعاب Roblox",
             age: "9+",
             desc:
               "تطوير الإبداع والتفكير المكاني ومهارات حل المشكلات من خلال تصميم وبناء عوالم ثلاثية الأبعاد تفاعلية. يستكشف المتعلمون تصميم الألعاب والبرمجة أثناء إنشاء تجارب Roblox خاصة بهم.",
           },
-          {
+          "unity-csharp": {
             name: "تطوير الألعاب باستخدام Unity وC#",
             age: "12+",
             desc:
               "تطوير مهارات متقدمة في البرمجة والتفكير المنطقي وحل المشكلات من خلال تطوير الألعاب بطريقة احترافية. يستخدم المتعلمون Unity وC# لتصميم آليات اللعب وبناء ألعاب ثنائية وثلاثية الأبعاد، وتحويل أفكارهم إلى مشاريع تفاعلية.",
           },
-          {
+          "web-development": {
             name: "تطوير الويب",
             age: "11+",
             desc:
@@ -2741,15 +2983,50 @@ export const translations: Record<Lang, Translation> = {
               },
             ],
           },
-          {
+          "creative-design": {
             name: "التصميم الإبداعي",
             age: "10+",
             desc:
               "تطوير الإبداع والتواصل البصري ومهارات الإنتاج الرقمي. يستكشف المتعلمون النمذجة ثلاثية الأبعاد وتحرير الصور ومونتاج الفيديو، مع تحويل أفكارهم إلى مشاريع رقمية أصلية.",
           },
-        ],
+        },
       },
       breadcrumb: { home: "الرئيسية", academy: "أكاديمية Medinova" },
+      pricing: {
+        badge: "أسعار بسيطة وواضحة",
+        title: "حصص مباشرة مدتها {length} في مجموعات صغيرة — حصة واحدة أسبوعياً",
+        subtitle:
+          "نفس السعر لجميع الدورات وجميع المستويات. ابدأ بالشهر، أو التزم لثلاثة أشهر ووفّر {saving}.",
+        academicYearNote:
+          "تتبع الحصص السنة الدراسية في المغرب (من شتنبر إلى يونيو، نحو 9 أشهر) وتتوقف خلال العطل المدرسية. اسألنا عن تأثير العطل على الباقة وموعد البداية.",
+        monthlyLabel: "شهري",
+        termLabel: "3 أشهر",
+        perMonth: "/شهرياً",
+        termTotal: "لثلاثة أشهر",
+        featured: "الأكثر اختياراً",
+        saveBadge: "وفّر {saving}",
+        monthlySessions: "{count} حصص مباشرة مدة كل منها {length}",
+        perSessionLabel: "السعر الفعلي للحصة",
+        termSessions: "{count} حصص مباشرة مدة كل منها {length}",
+        includesTitle: "كل الباقات تشمل",
+        includes: [
+          "حصص مباشرة مدة كل منها {length} في مجموعات صغيرة",
+          "حصة واحدة أسبوعياً",
+          "الإنجليزية والفرنسية والعربية",
+          "مواد وتمارين الدروس",
+          "دعم المجتمع",
+          "شهادة إتمام",
+          "حصة تجريبية مجانية قبل التسجيل",
+        ],
+        ctaMonthly: "ابدأ بالاشتراك الشهري",
+        ctaTerm: "ابدأ باشتراك 3 أشهر",
+        ctaMonthlyLead: "استشرنا لاختيار الأنسب",
+        ctaTermLead: "استشرنا لاختيار الأنسب",
+        trialNote: "حصة تجريبية مجانية قبل التسجيل — دون أي التزام.",
+        sessionLengthLabel: "مدة الحصة",
+        frequencyLabel: "التكرار",
+        stickyNote: "ابتداءً من {price} في الشهر · حصص مباشرة بطول {length} أسبوعياً",
+      },
       onlineLabel: "فصول مباشرة عبر الإنترنت",
       viewAllLabel: "عرض جميع الدورات",
       outcomesTitle: "ماذا ستتعلم",
@@ -2777,18 +3054,37 @@ export const translations: Record<Lang, Translation> = {
             desc: "يحتفظ المتعلم بمشاريعه ويطوّرها ضمن ملف أعماله، ويحصل على شهادة إتمام الدورة بعد إكمال البرنامج والمشروع النهائي.",
           },
         ],
-        model: [
-          "حصص مباشرة",
+model: [
+          "حصص مباشرة مدة كل منها 1:30 في مجموعات صغيرة",
+          "حصة واحدة أسبوعياً",
           "مواد تعليمية",
           "تمارين",
-          "دعم ومتابعة",
+          "دعم المجتمع",
         ],
       },
       finalCta: {
         title: "هل أنت مستعد للبدء؟",
-        subtitle: "احجز حصة تجريبية مجانية وتعرّف على المسار التعليمي الأنسب لك.",
+        subtitle:
+          "احجز حصة تجريبية مجانية وتعرّف على المسار التعليمي الأنسب لك.",
         cta: "احجز حصة تجريبية مجانية",
         scarcity: "",
+      },
+      leadForm: {
+        badge: "توصية بالدورة",
+        title: "لنجد الدورة المناسبة لطفلك",
+        subtitle:
+          "أخبرنا باسمك وعمر طفلك. سنوصي ببداية مناسبة ونشرح لك الخطوات التالية عبر WhatsApp.",
+        cta: "اطلب توصية بالدورة",
+        parentName: "اسمك",
+        parentNamePlaceholder: "اسم ولي الأمر",
+        studentAge: "عمر طفلك",
+        studentAgePlaceholder: "مثال: 9",
+        submit: "المتابعة عبر WhatsApp",
+        note: "لا نحفظ بياناتك على هذا الموقع. ستظهر في مسودة رسالة على WhatsApp؛ راجعها واضغط على إرسال للتواصل معنا.",
+        requiredName: "يرجى إدخال اسمك.",
+        invalidAge: "يرجى إدخال عمر صحيح.",
+        whatsappMessage:
+          "السلام عليكم، اسمي {name}. عمر طفلي {age} سنة. هل يمكنكم اقتراح الدورة المناسبة له في Medinova Academy؟",
       },
       faq: {
         badge: "الأسئلة الشائعة",
@@ -2810,11 +3106,15 @@ export const translations: Record<Lang, Translation> = {
           },
           {
             q: "هل الحصص عبر الإنترنت أم حضورياً؟",
-            a: "الحصص مباشرة مع مدرّب. يمكن التعلّم عن بُعد، ويعتمد الشكل الدقيق على المجموعة والجدول الزمني المتفق عليه.",
+            a: "الحصص مباشرة مع مدرّب، وتتم عن بُعد ضمن مجموعات صغيرة. وتُعقد حصة واحدة أسبوعياً، وتُحدَّد المواعيد بالاتفاق.",
+          },
+          {
+            q: "كم تكلف الدورات؟",
+            a: "نفس السعر لجميع الدورات: 300 درهم شهرياً، أو 800 درهم لثلاثة أشهر — أي توفير 100 درهم مقارنة بالدفع الشهري. حصة واحدة مدتها 1:30 أسبوعياً مشمولة في الصيغتين.",
           },
           {
             q: "هل يمكنني تجربة حصة قبل التسجيل؟",
-            a: "نعم. نقدم حصة تجريبية مجانية قبل التسجيل، ليتعرف المتعلم ووليّ الأمر على طريقة عمل الحصة قبل اتخاذ القرار.",
+            a: "نعم. كل الباقات تشمل حصة تجريبية مجانية قبل التسجيل، ليتعرف المتعلم ووليّ الأمر على طريقة عمل الحصة قبل اتخاذ القرار.",
           },
           {
             q: "ماذا سيتعلم المتعلم فعليًا؟",
@@ -2845,6 +3145,16 @@ export const translations: Record<Lang, Translation> = {
         aria: "تواصل معنا عبر WhatsApp",
         quickQuestion: "سؤال سريع عبر WhatsApp",
         cta: "احجز حصة تجريبية مجانية",
+        trialMessage:
+          "السلام عليكم، أود حجز حصة تجريبية مجانية في Medinova Academy لدورة {course}.",
+        monthlyMessage:
+          "السلام عليكم، أود الاشتراك في الباقة الشهرية ({price}/شهرياً) في Medinova Academy لدورة {course}.",
+        termMessage:
+          "السلام عليكم، أود الاشتراك في باقة 3 أشهر ({price} لثلاثة أشهر) في Medinova Academy لدورة {course}.",
+        monthlyGeneralMessage:
+          "السلام عليكم، أود الاشتراك في الباقة الشهرية ({price}/شهرياً) في Medinova Academy. ما هي الدورة المناسبة لابني؟",
+        termGeneralMessage:
+          "السلام عليكم، أود الاشتراك في باقة 3 أشهر ({price} لثلاثة أشهر) في Medinova Academy. ما هي الدورة المناسبة لابني؟",
       },
     },
     common: {
