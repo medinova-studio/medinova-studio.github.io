@@ -117,6 +117,14 @@ const GTA_MEDIA: Record<string, GtaMedia> = {
       ar: "رسم لشاشة لعبة فردية ومؤشر جهاز غير متصل بالإنترنت",
     },
   },
+  "gta-6-leonida-pc-recompilation-project": {
+    hero: "/images/blog/gta-6-leonida-pc-project.svg",
+    heroAlt: {
+      en: "Original illustration about the community Leonida PC recompilation project",
+      fr: "Illustration originale du projet communautaire de recompilation PC Leonida",
+      ar: "رسم أصلي عن مشروع Leonida المجتمعي لإعادة تجميع اللعبة للحاسوب",
+    },
+  },
 };
 
 function withGtaMedia(posts: GtaDraft[], lang: Lang): BlogPost[] {
@@ -201,6 +209,16 @@ const sources = {
     { label: "PlayStation — Grand Theft Auto VI player and offline details", url: PLAYSTATION },
     { label: "Rockstar Games — Grand Theft Auto VI", url: PC_VIDEO },
   ],
+  leonida: [
+    { label: "Leonida project repository and status", url: "https://github.com/ItsNotRexed/Leonida" },
+    { label: "Leonida repository releases", url: "https://github.com/ItsNotRexed/Leonida/releases" },
+    { label: "Xbox2Windows research project", url: "https://github.com/R0Y00/Xbox2Windows" },
+    { label: "GTA VI PC port coordination hub", url: "https://github.com/fishingpvalues/gta6-pc-port-hub" },
+    { label: "PortWatch VI community tracker", url: "https://github.com/4lwayz/portwatch-vi" },
+    { label: "Hacker News discussion", url: "https://news.ycombinator.com/item?id=50595168" },
+    { label: "Reddit discussion shared by readers", url: "https://www.reddit.com/r/FitGirlRepack/comments/1y258g2/leonida_recomilation_tool_for_gta_vi/" },
+    { label: "Rockstar Games — Grand Theft Auto VI", url: PC_VIDEO },
+  ],
 };
 
 const EXTRA_SECTIONS: Record<Lang, Record<string, BlogSection[]>> = {
@@ -277,8 +295,67 @@ const EXTRA_SECTIONS: Record<Lang, Record<string, BlogSection[]>> = {
           "A redeemable game code is issued for a specific platform, region, and product, so a screenshot or a string of characters cannot establish that it is genuine or unused. We found search results using giveaway language, but did not find verifiable official rules from a major creator that let us responsibly list an active GTA 6 prize. That can change; check the creator's verified channels and the official storefront for current information. We will only add a named promotion when its source, terms, prize, and status can be confirmed. Until then, treat claims of a universal GTA 6 free-code generator as unverified, and never enter an account password to test one.",
       },
     ],
+    "gta-6-leonida-pc-recompilation-project": [
+      {
+        heading: "What is the Leonida project?",
+        body:
+          "Leonida is a community-led, open-source project that describes itself as a static recompilation effort for the Xbox Series version of Grand Theft Auto VI. The broad goal is to make the console version run natively on Windows by recreating or translating parts of the platform environment. This is different from Rockstar shipping an official Windows edition: Leonida is an independent effort, and its repository is not a Rockstar product or endorsement. The project is technically ambitious, but an active GitHub page or impressive technical work does not by itself mean the game is playable.",
+      },
+      {
+        heading: "What the project says is complete—and what is not",
+        body:
+          "The repository's own status section is unusually clear: it labels the work early and says the game does not boot, with no story mode or playable build. It reports progress on research and tools for parts of the console graphics and asset pipeline, but describes important runtime and graphics compatibility work as incomplete or not yet tested against the actual game executable. These are the developers' own progress claims, not an independent review or a demonstration that the whole game runs. The practical headline is therefore not “GTA 6 is now playable on PC”; it is “a community project is working on pieces of a difficult compatibility problem.”",
+      },
+      {
+        heading: "Another GTA VI-specific effort: Xbox2Windows",
+        body:
+          "Xbox2Windows also explicitly studies recompiling Xbox Series code for Windows. Its repository documents source-built test programs and selected shader experiments, but says the GTA VI executable was absent from the package it inspected; full-game startup and frame rate remain unverified. These experiments are meaningful engineering progress, but they are not evidence that GTA VI itself boots. A test program or a translated shader can validate one component without demonstrating a working game.",
+      },
+      {
+        heading: "What the trackers and other Xbox projects actually represent",
+        body:
+          "The GTA VI PC Port Hub and PortWatch VI are community-maintained indexes and trackers, not ports or downloadable game builds. The hub lists wider Xbox-to-Windows compatibility projects; some demonstrate other titles or test programs, but that does not make them GTA VI ports. Their status summaries are useful leads, not independent verification. In the repositories we reviewed, Leonida and Xbox2Windows are the efforts that explicitly describe GTA VI recompilation work, and neither reports a playable build. This is a scoped research snapshot, not proof that no additional projects exist elsewhere.",
+      },
+      {
+        heading: "The repository is source code, not a ready-made PC game",
+        body:
+          "Leonida's README says the repository does not include GTA VI, product keys, or a compiled executable, and that the project does not provide a way to obtain them. The README describes a user-supplied game copy as a prerequisite and says the project does not decrypt the game or work around its protections. The GitHub releases page was empty when we checked it. That means there is no official Leonida download that can be described as a playable PC port. The project's GPL-3.0 repository license applies to its listed project code; it should not be confused with permission to redistribute Rockstar's game, game files, or other protected assets.",
+      },
+      {
+        heading: "What the Hacker News and Reddit links establish",
+        body:
+          "The Hacker News page is a discussion thread about the GitHub project, not a test result. Comments include speculation about leaks and PC release timing, as well as opinions on how difficult PC support can be; those comments do not verify a leak, authorize access to game files, or prove that a port works. The Reddit link shared in r/FitGirlRepack is also a community post, not an official Rockstar statement. We could not independently retrieve its contents during this research, so we are not treating its claims as confirmed facts. A link appearing in a forum—or an upvote count—does not establish who built a project, what files it uses, or whether the result runs.",
+      },
+      {
+        heading: "Why turning a console game into a PC release is difficult",
+        body:
+          "A native PC release has to work across a broad range of processors, graphics cards, drivers, memory configurations, displays, and input devices. Console-specific operating-system services and graphics behavior also need equivalents, while performance and stability must be tested across real hardware. A technically promising translation layer may solve individual problems without completing the full game, user interface, save behavior, shader pipeline, or quality assurance. In other words, “some components are implemented” and “a complete, stable PC version is ready” are very different milestones. This is why the project's own no-boot status matters more than a viral headline.",
+      },
+      {
+        heading: "How to follow the project without mistaking it for an official port",
+        body:
+          "Use the project's GitHub README and issue tracker for its stated status, and look for a reproducible demonstration before believing a claim that the game boots. Check whether a release actually exists and whether it is published by the project's maintainers. Do not treat a third-party executable, repack, or leaked-file link as an official release; avoid running unknown software or sharing account credentials. Rockstar's GTA VI page is the place to verify officially announced platforms. As of the page checked for this article, it lists PlayStation 5 and Xbox Series X|S; it does not announce Leonida or an official Windows port.",
+      },
+      {
+        heading: "Bottom line",
+        body:
+          "Leonida is a real, publicly visible community code project with ambitious goals, but its own documentation says GTA VI does not boot and no playable build is provided. It may be worth following as a technical experiment, not as a way to play the game today. The GitHub project license does not make GTA VI open source, and community discussion is not proof of permission, a leak, or a successful PC release. We will update this article if the maintainers publish a working demonstration or Rockstar announces an official PC version.",
+      },
+    ],
   },
   fr: {
+    "gta-6-leonida-pc-recompilation-project": [
+      {
+        heading: "Une deuxième initiative liée à GTA VI : Xbox2Windows",
+        body:
+          "Xbox2Windows étudie également la recompilation de code Xbox Series vers Windows. Son dépôt décrit des programmes de test compilés depuis les sources et des expériences sur certains shaders, mais précise que l'exécutable de GTA VI était absent du package examiné ; le démarrage du jeu complet et sa fréquence d'images restent non vérifiés. Ces expériences représentent un travail d'ingénierie intéressant, mais ne prouvent pas que GTA VI démarre. Un programme de test ou un shader traduit valide un composant, pas un jeu fonctionnel.",
+      },
+      {
+        heading: "Ce que représentent les trackers et autres projets Xbox",
+        body:
+          "GTA VI PC Port Hub et PortWatch VI sont des index et trackers communautaires, pas des portages ni des jeux à télécharger. Le hub recense des projets plus généraux de compatibilité Xbox-Windows ; certains font tourner d'autres jeux ou des programmes de test, ce qui ne les transforme pas en portages de GTA VI. Leurs résumés sont des pistes utiles, pas une vérification indépendante. Dans les dépôts examinés, Leonida et Xbox2Windows décrivent explicitement un travail de recompilation de GTA VI, et aucun n'annonce de version jouable. Cette recherche est un état des lieux ciblé, pas la preuve qu'aucun autre projet n'existe.",
+      },
+    ],
     "gta-6-pc-port-news": [
       {
         heading: "Distinguer une annonce PC réelle d'une rumeur",
@@ -353,6 +430,18 @@ const EXTRA_SECTIONS: Record<Lang, Record<string, BlogSection[]>> = {
     ],
   },
   ar: {
+    "gta-6-leonida-pc-recompilation-project": [
+      {
+        heading: "جهد آخر يخص GTA VI: مشروع Xbox2Windows",
+        body:
+          "يدرس مشروع Xbox2Windows أيضًا إعادة تجميع شيفرة Xbox Series لتعمل على Windows. يوثق مستودعه برامج اختبار بُنيت من المصدر وتجارب على بعض المظللات الرسومية، لكنه يقول إن الملف التنفيذي للعبة GTA VI لم يكن موجودًا في الحزمة التي فحصها؛ لذلك لم يتم التحقق من تشغيل اللعبة كاملة أو معدل إطاراتها. هذه تجارب هندسية مهمة، لكنها لا تثبت أن GTA VI تعمل. نجاح برنامج اختبار أو ترجمة مظلل واحد يثبت مكوّنًا محددًا فقط، لا تشغيل اللعبة.",
+      },
+      {
+        heading: "ما طبيعة مواقع التتبع ومشاريع Xbox الأخرى؟",
+        body:
+          "يعد كل من GTA VI PC Port Hub وPortWatch VI فهارس ومتابعات يديرها المجتمع، وليسا نسخة منقولة أو لعبة قابلة للتنزيل. يسرد مركز المتابعة مشاريع أوسع لتوافق Xbox مع Windows؛ وبعضها يشغّل ألعابًا أخرى أو برامج اختبار، وهذا لا يجعلها محاولات لتشغيل GTA VI. ملخصاتها مفيدة للعثور على معلومات، لكنها ليست تحققًا مستقلًا. في المستودعات التي راجعناها، يصف Leonida وXbox2Windows صراحةً عملًا لإعادة تجميع GTA VI، ولم يعلن أي منهما عن نسخة قابلة للعب. هذا بحث محدد النطاق وليس دليلًا على عدم وجود مشاريع أخرى في أماكن مختلفة.",
+      },
+    ],
     "gta-6-pc-port-news": [
       {
         heading: "كيف تميّز إعلان الحاسوب الحقيقي عن الشائعة؟",
@@ -759,6 +848,57 @@ const EN: GtaDraft[] = [
     related: ["gta-6-beginners-tips", "gta-6-ps5-vs-xbox-performance"],
     sources: sources.online,
   },
+  {
+    slug: "gta-6-leonida-pc-recompilation-project",
+    title: "GTA 6 PC Port: What Leonida Can (and Can’t) Do Yet",
+    description:
+      "A look at Leonida, Xbox2Windows, and other community efforts to run GTA VI on Windows—and what their own status reports say about whether the game actually boots.",
+    date: UPDATED,
+    updatedAt: UPDATED,
+    category: "Actualités GTA 6",
+    readingTime: "7 min de lecture",
+    intro:
+      "Le projet Leonida a fait parler de lui sur GitHub et Hacker News comme tentative communautaire de faire tourner Grand Theft Auto VI sur PC. Il faut distinguer l'ambition technique de l'état réel du projet. Au moment où nous avons consulté son dépôt, le README indiquait que le jeu ne démarrait pas et qu'aucune version jouable n'était fournie. Voici ce que les sources permettent de vérifier, ce qui relève de la discussion en ligne et pourquoi il ne s'agit pas d'un portage PC officiel de Rockstar.",
+    sections: [
+      {
+        heading: "Qu'est-ce que le projet Leonida ?",
+        body:
+          "Leonida est un projet communautaire open source qui se décrit comme un effort de recompilation statique de la version Xbox Series de GTA VI. Son objectif général est de faire fonctionner cette version console nativement sous Windows en recréant ou en traduisant certaines parties de l'environnement de la plateforme. Ce n'est pas une édition Windows publiée par Rockstar : Leonida est un projet indépendant, sans affiliation ni validation officielle. Une page GitHub active ou des travaux techniques impressionnants ne signifient pas que le jeu est jouable.",
+      },
+      {
+        heading: "Ce que le projet dit avoir accompli — et ce qui manque",
+        body:
+          "La section d'état du dépôt est explicite : le projet est encore précoce et le jeu ne démarre pas ; il n'y a ni mode histoire ni version jouable. Les développeurs indiquent avoir avancé sur l'analyse et les outils liés à certaines parties du traitement graphique et des ressources de la console, mais décrivent des travaux importants de compatibilité du runtime et des graphismes comme incomplets ou non testés avec l'exécutable réel du jeu. Ce sont les indications de l'équipe, pas un examen indépendant ni une démonstration que le jeu complet fonctionne. Le titre exact n'est donc pas « GTA 6 est jouable sur PC », mais « un projet communautaire travaille sur certains éléments d'un problème de compatibilité complexe ».",
+      },
+      {
+        heading: "Le dépôt n'est pas un jeu PC prêt à télécharger",
+        body:
+          "Le README de Leonida précise que le dépôt ne contient ni GTA VI, ni clé de produit, ni exécutable compilé et qu'il n'explique pas comment les obtenir. Il décrit une copie du jeu fournie par l'utilisateur comme prérequis, tout en indiquant que le projet ne déchiffre pas le jeu et ne contourne pas ses protections. La page des versions GitHub était vide lors de notre vérification. Il n'existe donc pas de téléchargement Leonida officiel que l'on puisse présenter comme un portage PC jouable. La licence GPL-3.0 indiquée pour le dépôt concerne le code du projet ; elle ne vaut pas autorisation de redistribuer le jeu Rockstar, ses fichiers ou ses ressources protégées.",
+      },
+      {
+        heading: "Ce que prouvent les liens Hacker News et Reddit",
+        body:
+          "La page Hacker News est une discussion au sujet du dépôt GitHub, pas un test du jeu. Des commentaires spéculent sur des fuites ou une sortie PC et d'autres évoquent la difficulté du support PC ; ils ne vérifient ni fuite, ni autorisation d'accéder aux fichiers du jeu, ni portage fonctionnel. Le lien Reddit partagé dans r/FitGirlRepack est également une publication communautaire, pas une déclaration de Rockstar. Nous n'avons pas pu consulter son contenu indépendamment pendant cette recherche et ne présentons donc pas ses affirmations comme des faits. Un lien de forum ou un nombre de votes ne confirme ni l'auteur d'un projet, ni les fichiers utilisés, ni le démarrage du jeu.",
+      },
+      {
+        heading: "Pourquoi adapter un jeu console au PC est difficile",
+        body:
+          "Une édition PC doit fonctionner sur une grande variété de processeurs, cartes graphiques, pilotes, configurations mémoire, écrans et périphériques. Les services propres au système console et le comportement graphique doivent également trouver des équivalents, puis la stabilité et les performances doivent être testées sur du matériel réel. Une couche de traduction prometteuse peut résoudre certains problèmes sans achever le jeu, l'interface, les sauvegardes, le rendu des shaders ou le contrôle qualité. « Certains composants sont implémentés » et « une version PC complète et stable est prête » sont donc deux étapes très différentes. L'indication du dépôt selon laquelle le jeu ne démarre pas est plus importante qu'un titre viral.",
+      },
+      {
+        heading: "Suivre le projet sans le confondre avec un portage officiel",
+        body:
+          "Pour connaître l'état annoncé, consultez le README et le suivi des problèmes du projet, et cherchez une démonstration reproductible avant de croire qu'il démarre. Vérifiez qu'une version existe réellement et qu'elle provient des mainteneurs du projet. Ne prenez pas un exécutable tiers, un repack ou un lien vers des fichiers divulgués pour une sortie officielle ; évitez d'exécuter des logiciels inconnus et de partager vos identifiants. La page GTA VI de Rockstar reste la référence pour les plateformes officiellement annoncées. Lors de notre consultation, elle indiquait PlayStation 5 et Xbox Series X|S, sans annoncer Leonida ni édition Windows officielle.",
+      },
+      {
+        heading: "En bref",
+        body:
+          "Leonida est un véritable projet communautaire de code, public et ambitieux, mais sa propre documentation indique que GTA VI ne démarre pas et qu'aucune version jouable n'est fournie. Le projet peut être intéressant à suivre comme expérience technique, pas comme moyen de jouer aujourd'hui. La licence du code Leonida ne rend pas GTA VI open source, et les discussions de communauté ne prouvent ni autorisation, ni fuite, ni portage PC réussi. Nous mettrons cet article à jour si les mainteneurs publient une démonstration fonctionnelle ou si Rockstar annonce une version PC officielle.",
+      },
+    ],
+    related: ["gta-6-pc-port-news", "gta-6-online-multiplayer-status"],
+    sources: sources.leonida,
+  },
 ];
 
 const FR: GtaDraft[] = [
@@ -1092,6 +1232,57 @@ const FR: GtaDraft[] = [
     related: ["gta-6-beginners-tips", "gta-6-ps5-vs-xbox-performance"],
     sources: sources.online,
   },
+  {
+    slug: "gta-6-leonida-pc-recompilation-project",
+    title: "Portage PC de GTA 6 : ce que Leonida peut (et ne peut pas) faire",
+    description:
+      "Découvrez Leonida, Xbox2Windows et d'autres travaux communautaires pour exécuter GTA VI sous Windows, ainsi que l'état réel annoncé par leurs auteurs.",
+    date: UPDATED,
+    updatedAt: UPDATED,
+    category: "Actualités GTA 6",
+    readingTime: "7 min de lecture",
+    intro:
+      "Le projet Leonida a fait parler de lui sur GitHub et Hacker News comme tentative communautaire de faire tourner Grand Theft Auto VI sur PC. Il faut distinguer l'ambition technique de l'état réel du projet. Au moment où nous avons consulté son dépôt, le README indiquait que le jeu ne démarrait pas et qu'aucune version jouable n'était fournie. Voici ce que les sources permettent de vérifier, ce qui relève de la discussion en ligne et pourquoi il ne s'agit pas d'un portage PC officiel de Rockstar.",
+    sections: [
+      {
+        heading: "Qu'est-ce que le projet Leonida ?",
+        body:
+          "Leonida est un projet communautaire open source qui se décrit comme un effort de recompilation statique de la version Xbox Series de GTA VI. Son objectif général est de faire fonctionner cette version console nativement sous Windows en recréant ou en traduisant certaines parties de l'environnement de la plateforme. Ce n'est pas une édition Windows publiée par Rockstar : Leonida est un projet indépendant, sans affiliation ni validation officielle. Une page GitHub active ou des travaux techniques impressionnants ne signifient pas que le jeu est jouable.",
+      },
+      {
+        heading: "Ce que le projet dit avoir accompli — et ce qui manque",
+        body:
+          "La section d'état du dépôt est explicite : le projet est encore précoce et le jeu ne démarre pas ; il n'y a ni mode histoire ni version jouable. Les développeurs indiquent avoir avancé sur l'analyse et les outils liés à certaines parties du traitement graphique et des ressources de la console, mais décrivent des travaux importants de compatibilité du runtime et des graphismes comme incomplets ou non testés avec l'exécutable réel du jeu. Ce sont les indications de l'équipe, pas un examen indépendant ni une démonstration que le jeu complet fonctionne. Le titre exact n'est donc pas « GTA 6 est jouable sur PC », mais « un projet communautaire travaille sur certains éléments d'un problème de compatibilité complexe ».",
+      },
+      {
+        heading: "Le dépôt n'est pas un jeu PC prêt à télécharger",
+        body:
+          "Le README de Leonida précise que le dépôt ne contient ni GTA VI, ni clé de produit, ni exécutable compilé et qu'il n'explique pas comment les obtenir. Il décrit une copie du jeu fournie par l'utilisateur comme prérequis, tout en indiquant que le projet ne déchiffre pas le jeu et ne contourne pas ses protections. La page des versions GitHub était vide lors de notre vérification. Il n'existe donc pas de téléchargement Leonida officiel que l'on puisse présenter comme un portage PC jouable. La licence GPL-3.0 indiquée pour le dépôt concerne le code du projet ; elle ne vaut pas autorisation de redistribuer le jeu Rockstar, ses fichiers ou ses ressources protégées.",
+      },
+      {
+        heading: "Ce que prouvent les liens Hacker News et Reddit",
+        body:
+          "La page Hacker News est une discussion au sujet du dépôt GitHub, pas un test du jeu. Des commentaires spéculent sur des fuites ou une sortie PC et d'autres évoquent la difficulté du support PC ; ils ne vérifient ni fuite, ni autorisation d'accéder aux fichiers du jeu, ni portage fonctionnel. Le lien Reddit partagé dans r/FitGirlRepack est également une publication communautaire, pas une déclaration de Rockstar. Nous n'avons pas pu consulter son contenu indépendamment pendant cette recherche et ne présentons donc pas ses affirmations comme des faits. Un lien de forum ou un nombre de votes ne confirme ni l'auteur d'un projet, ni les fichiers utilisés, ni le démarrage du jeu.",
+      },
+      {
+        heading: "Pourquoi adapter un jeu console au PC est difficile",
+        body:
+          "Une édition PC doit fonctionner sur une grande variété de processeurs, cartes graphiques, pilotes, configurations mémoire, écrans et périphériques. Les services propres au système console et le comportement graphique doivent également trouver des équivalents, puis la stabilité et les performances doivent être testées sur du matériel réel. Une couche de traduction prometteuse peut résoudre certains problèmes sans achever le jeu, l'interface, les sauvegardes, le rendu des shaders ou le contrôle qualité. « Certains composants sont implémentés » et « une version PC complète et stable est prête » sont donc deux étapes très différentes. L'indication du dépôt selon laquelle le jeu ne démarre pas est plus importante qu'un titre viral.",
+      },
+      {
+        heading: "Suivre le projet sans le confondre avec un portage officiel",
+        body:
+          "Pour connaître l'état annoncé, consultez le README et le suivi des problèmes du projet, et cherchez une démonstration reproductible avant de croire qu'il démarre. Vérifiez qu'une version existe réellement et qu'elle provient des mainteneurs du projet. Ne prenez pas un exécutable tiers, un repack ou un lien vers des fichiers divulgués pour une sortie officielle ; évitez d'exécuter des logiciels inconnus et de partager vos identifiants. La page GTA VI de Rockstar reste la référence pour les plateformes officiellement annoncées. Lors de notre consultation, elle indiquait PlayStation 5 et Xbox Series X|S, sans annoncer Leonida ni édition Windows officielle.",
+      },
+      {
+        heading: "En bref",
+        body:
+          "Leonida est un véritable projet communautaire de code, public et ambitieux, mais sa propre documentation indique que GTA VI ne démarre pas et qu'aucune version jouable n'est fournie. Le projet peut être intéressant à suivre comme expérience technique, pas comme moyen de jouer aujourd'hui. La licence du code Leonida ne rend pas GTA VI open source, et les discussions de communauté ne prouvent ni autorisation, ni fuite, ni portage PC réussi. Nous mettrons cet article à jour si les mainteneurs publient une démonstration fonctionnelle ou si Rockstar annonce une version PC officielle.",
+      },
+    ],
+    related: ["gta-6-pc-port-news", "gta-6-online-multiplayer-status"],
+    sources: sources.leonida,
+  },
 ];
 
 const AR: GtaDraft[] = [
@@ -1424,6 +1615,57 @@ const AR: GtaDraft[] = [
     ],
     related: ["gta-6-beginners-tips", "gta-6-ps5-vs-xbox-performance"],
     sources: sources.online,
+  },
+  {
+    slug: "gta-6-leonida-pc-recompilation-project",
+    title: "هل وصل منفذ GTA 6 للحاسوب؟ ما يستطيع Leonida فعله وما لا يستطيع",
+    description:
+      "نستعرض مشروعي Leonida وXbox2Windows ومحاولات المجتمع لتشغيل GTA VI على Windows، وما تقوله تقاريرهما عن إمكانية تشغيل اللعبة فعليًا.",
+    date: UPDATED,
+    updatedAt: UPDATED,
+    category: "أخبار GTA 6",
+    readingTime: "7 دقائق قراءة",
+    intro:
+      "لفت مشروع Leonida الأنظار على GitHub وHacker News بوصفه محاولة مجتمعية لتشغيل Grand Theft Auto VI على الحاسوب. لكن ينبغي التمييز بين طموح المشروع وحالته الفعلية. عند مراجعة مستودعه، ذكر ملف README أن اللعبة لا تبدأ وأنه لا توجد نسخة قابلة للعب. نلخص هنا ما يمكن التحقق منه، وما يبقى مجرد نقاش على الإنترنت، ولماذا لا يمثل المشروع إصدارًا رسميًا من Rockstar للحاسوب.",
+    sections: [
+      {
+        heading: "ما مشروع Leonida؟",
+        body:
+          "Leonida مشروع مجتمعي مفتوح المصدر يصف نفسه بأنه جهد لإعادة التجميع الثابت لنسخة Xbox Series من GTA VI. هدفه العام هو محاولة تشغيل نسخة الأجهزة المنزلية على Windows عبر إعادة إنشاء أو ترجمة أجزاء من بيئة المنصة. وهذا يختلف عن إصدار رسمي للحاسوب من Rockstar؛ فـLeonida مشروع مستقل ولا يمثل تأييدًا رسميًا. وجود صفحة GitHub نشطة أو عمل تقني طموح لا يعني أن اللعبة أصبحت قابلة للعب.",
+      },
+      {
+        heading: "ما الذي يقول المشروع إنه أنجزه وما الذي لم يكتمل؟",
+        body:
+          "توضح صفحة حالة المستودع أن المشروع لا يزال في مرحلة مبكرة وأن اللعبة لا تعمل؛ فلا يوجد نمط قصة أو إصدار قابل للعب. ويذكر المطورون تقدمًا في الأبحاث والأدوات المتعلقة ببعض أجزاء الرسوميات وموارد نسخة الأجهزة المنزلية، لكنهم يصفون أجزاء مهمة من توافق بيئة التشغيل والرسوميات بأنها غير مكتملة أو لم تُختبر بعد مع الملف التنفيذي الفعلي للعبة. هذه تقارير المشروع عن نفسه، وليست مراجعة مستقلة أو عرضًا يثبت تشغيل اللعبة كاملة. لذلك فالخلاصة ليست «أصبحت GTA 6 قابلة للعب على الحاسوب»، بل «يعمل مشروع مجتمعي على بعض أجزاء مشكلة توافق معقدة».",
+      },
+      {
+        heading: "المستودع ليس لعبة حاسوب جاهزة للتنزيل",
+        body:
+          "يقول ملف README الخاص بـLeonida إن المستودع لا يحتوي على GTA VI أو مفاتيح اللعبة أو ملف تنفيذي جاهز، ولا يشرح كيفية الحصول عليها. كما يذكر أن المشروع يتطلب نسخة يملكها المستخدم، ويقول إنه لا يفك تشفير اللعبة ولا يتجاوز وسائل الحماية. كانت صفحة إصدارات GitHub فارغة عند التحقق. لذلك لا يوجد تنزيل رسمي من Leonida يمكن وصفه بأنه نسخة حاسوب قابلة للعب. وترخيص GPL-3.0 الظاهر للمستودع يخص كود المشروع المدرج فيه؛ ولا يعني السماح بإعادة توزيع لعبة Rockstar أو ملفاتها أو أصولها المحمية.",
+      },
+      {
+        heading: "ما الذي تثبته روابط Hacker News وReddit؟",
+        body:
+          "صفحة Hacker News نقاش حول مستودع GitHub وليست اختبارًا للعبة. تتضمن التعليقات تكهنات بشأن التسريبات وموعد نسخة الحاسوب وآراء حول صعوبة دعم أجهزة الحاسوب؛ لكنها لا تثبت وجود تسريب أو إذن باستخدام ملفات اللعبة أو نجاح تشغيل نسخة للحاسوب. ورابط Reddit الذي أرسلته في مجتمع r/FitGirlRepack هو منشور مجتمعي أيضًا وليس تصريحًا من Rockstar. لم نتمكن من قراءة محتواه بشكل مستقل أثناء البحث، لذلك لا نعرض ادعاءاته على أنها حقائق مؤكدة. وجود رابط في منتدى أو ارتفاع عدد الأصوات لا يثبت هوية المطورين أو الملفات المستخدمة أو أن اللعبة تعمل.",
+      },
+      {
+        heading: "لماذا يصعب نقل لعبة أجهزة منزلية إلى الحاسوب؟",
+        body:
+          "يحتاج إصدار الحاسوب إلى العمل على معالجات وبطاقات رسوميات وتعريفات وذاكرة وشاشات وأجهزة تحكم متعددة. كما يجب توفير بدائل لخدمات نظام الأجهزة المنزلية وسلوك الرسوميات، ثم اختبار الأداء والاستقرار على أجهزة فعلية. قد تحل طبقة ترجمة واعدة بعض المشكلات دون أن تكمل اللعبة أو الواجهة أو حفظ التقدم أو مسار الرسوميات أو ضمان الجودة. لذا فإن «تنفيذ بعض المكونات» و«جاهزية نسخة كاملة ومستقرة للحاسوب» مرحلتان مختلفتان تمامًا. ولهذا تهم حالة المشروع التي تقول إن اللعبة لا تبدأ أكثر من العنوان المنتشر.",
+      },
+      {
+        heading: "كيف تتابع المشروع دون اعتباره إصدارًا رسميًا؟",
+        body:
+          "لمعرفة الحالة التي يعلنها المشروع، راجع README وقائمة المشكلات في GitHub وابحث عن عرض يمكن تكراره قبل تصديق أن اللعبة تعمل. تحقق من وجود إصدار فعلي وأنه صادر عن القائمين على المشروع. لا تعتبر ملفًا تنفيذيًا من طرف ثالث أو نسخة Repack أو رابط ملفات مسربة إصدارًا رسميًا؛ وتجنب تشغيل البرامج المجهولة أو مشاركة بيانات حسابك. تبقى صفحة GTA VI لدى Rockstar المرجع للمنصات المعلنة رسميًا. عند مراجعتها، كانت تذكر PlayStation 5 وXbox Series X|S دون الإعلان عن Leonida أو نسخة Windows رسمية.",
+      },
+      {
+        heading: "الخلاصة",
+        body:
+          "Leonida مشروع كود مجتمعي حقيقي ومعلن وطموح، لكن توثيقه نفسه يقول إن GTA VI لا تعمل وإنه لا يوفر نسخة قابلة للعب. قد يكون المشروع جديرًا بالمتابعة كتجربة تقنية، لكنه ليس طريقة للعب اليوم. ترخيص كود Leonida لا يجعل GTA VI مفتوحة المصدر، ونقاشات المجتمع لا تثبت وجود إذن أو تسريب أو إصدار ناجح للحاسوب. سنحدّث المقال إذا نشر القائمون عرضًا يعمل أو أعلنت Rockstar عن نسخة رسمية للحاسوب.",
+      },
+    ],
+    related: ["gta-6-pc-port-news", "gta-6-online-multiplayer-status"],
+    sources: sources.leonida,
   },
 ];
 

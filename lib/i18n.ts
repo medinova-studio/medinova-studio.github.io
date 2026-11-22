@@ -521,7 +521,7 @@ export const translations: Record<Lang, Translation> = {
       subtitle:
         "Practical articles on kids' coding, game development and digital skills — written by the people who build and teach every day.",
       learningCategory: "Coding, Education & Game Development",
-      gamingCategory: "Gaming Guides",
+      gamingCategory: "Gaming News",
       articleContents: "In this guide",
       readMore: "Read article",
       backLabel: "Back to blog",
@@ -1446,7 +1446,7 @@ export const translations: Record<Lang, Translation> = {
       subtitle:
         "Des articles pratiques sur le code, le développement de jeux et les compétences numériques — écrits par ceux qui construisent et enseignent chaque jour.",
       learningCategory: "Code, éducation et développement de jeux",
-      gamingCategory: "Guides de jeux vidéo",
+      gamingCategory: "Actualités gaming",
       articleContents: "Dans ce guide",
       readMore: "Lire l'article",
       backLabel: "Retour au blog",
@@ -2375,7 +2375,7 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
       subtitle:
         "مقالات عملية حول برمجة الأطفال وتطوير الألعاب والمهارات الرقمية — بقلم من يبنون ويعلّمون كل يوم.",
       learningCategory: "البرمجة والتعليم وتطوير الألعاب",
-      gamingCategory: "أدلة الألعاب",
+      gamingCategory: "أخبار الألعاب",
       articleContents: "في هذا الدليل",
       readMore: "اقرأ المقال",
       backLabel: "العودة إلى المدونة",

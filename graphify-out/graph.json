@@ -1264,7 +1264,7 @@
       "file_type": "code",
       "norm_label": "withgtamedia()",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L122"
+      "source_location": "L130"
     },
     {
       "id": "lib_jsonld_articleschema",
@@ -5202,7 +5202,7 @@
       "file_type": "code",
       "norm_label": "ar",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L1097"
+      "source_location": "L1288"
     },
     {
       "id": "lib_gtablog_cover_art_reveal",
@@ -5224,7 +5224,7 @@
       "file_type": "code",
       "norm_label": "en",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L431"
+      "source_location": "L520"
     },
     {
       "id": "lib_gtablog_extended_look",
@@ -5246,7 +5246,7 @@
       "file_type": "code",
       "norm_label": "extra_sections",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L206"
+      "source_location": "L224"
     },
     {
       "id": "lib_gtablog_fr",
@@ -5257,7 +5257,7 @@
       "file_type": "code",
       "norm_label": "fr",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L764"
+      "source_location": "L904"
     },
     {
       "id": "lib_gtablog_gta_articles",
@@ -5268,7 +5268,7 @@
       "file_type": "code",
       "norm_label": "gta_articles",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L1430"
+      "source_location": "L1672"
     },
     {
       "id": "lib_gtablog_gta_media",
@@ -5312,7 +5312,7 @@
       "file_type": "code",
       "norm_label": "sources",
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L159"
+      "source_location": "L167"
     },
     {
       "id": "lib_gtablog_thumbnails",
@@ -11811,6 +11811,18 @@
     },
     {
       "source": "lib_content_test",
+      "target": "lib_i18n_translations",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/content.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_content_test",
       "target": "lib_blog_all_blog_slugs",
       "relation": "imports",
       "_origin": "ast",
@@ -14944,6 +14956,18 @@
     },
     {
       "source": "lib_content_test",
+      "target": "lib_i18n",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/content.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_content_test",
       "target": "lib_blog",
       "relation": "imports_from",
       "_origin": "ast",
@@ -17675,7 +17699,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L1097",
+      "source_location": "L1288",
       "weight": 1.0
     },
     {
@@ -17686,18 +17710,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L122",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_gtablog",
-      "target": "lib_gtablog_gta_articles",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/gtaBlog.ts",
-      "source_location": "L1430",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -17708,18 +17721,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L159",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
       "source": "lib_gtablog",
-      "target": "lib_gtablog_extra_sections",
+      "target": "lib_gtablog_gta_articles",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L206",
+      "source_location": "L1672",
       "weight": 1.0
     },
     {
@@ -17731,6 +17744,17 @@
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_gtablog",
+      "target": "lib_gtablog_extra_sections",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/gtaBlog.ts",
+      "source_location": "L224",
       "weight": 1.0
     },
     {
@@ -17779,17 +17803,6 @@
     },
     {
       "source": "lib_gtablog",
-      "target": "lib_gtablog_en",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/gtaBlog.ts",
-      "source_location": "L431",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_gtablog",
       "target": "lib_gtablog_gta_media",
       "relation": "contains",
       "_origin": "ast",
@@ -17812,6 +17825,17 @@
     },
     {
       "source": "lib_gtablog",
+      "target": "lib_gtablog_en",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/gtaBlog.ts",
+      "source_location": "L520",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_gtablog",
       "target": "lib_gtablog_gtamedia",
       "relation": "contains",
       "_origin": "ast",
@@ -17829,7 +17853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/gtaBlog.ts",
-      "source_location": "L764",
+      "source_location": "L904",
       "weight": 1.0
     },
     {
@@ -20021,5 +20045,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3684e84f95876103492c3932304bb17efcdb09ea"
+  "built_at_commit": "52fce25042219852902d3dd971eba23acee235eb"
 }

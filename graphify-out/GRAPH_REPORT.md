@@ -1,16 +1,16 @@
 # Graph Report - medinova-studio.github.io  (2026-11-22)
 
 ## Corpus Check
-- 101 files · ~293,774 words
+- 101 files · ~298,174 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 586 nodes · 1142 edges · 32 communities (20 shown, 7 thin omitted)
+- 586 nodes · 1144 edges · 32 communities (20 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3684e84f`
+- Built from commit: `52fce250`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -50,7 +50,7 @@
 4. `trackEvent()` - 17 edges
 5. `compilerOptions` - 16 edges
 6. `Button()` - 15 edges
-7. `translations` - 14 edges
+7. `translations` - 15 edges
 8. `breadcrumbSchema()` - 13 edges
 9. `Reveal()` - 12 edges
 10. `trackLeadOnce()` - 12 edges

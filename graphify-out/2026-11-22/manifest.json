@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795374352.307585,
-    "seen": 1795374989.8305213,
+    "mtime": 1795375018.2128284,
+    "seen": 1795375470.5851061,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -876,9 +876,9 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795374980.8919425,
-    "seen": 1795374989.8304367,
-    "ast_hash": "6d1d25d04068b768271493965debf31c",
+    "mtime": 1795375440.036857,
+    "seen": 1795375470.5850286,
+    "ast_hash": "d34e6d63249a8c44674e95a45b02c38a",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795374955.4680529,
-    "seen": 1795374989.8304484,
-    "ast_hash": "640fdce3c0bf9dd27a296307706f2fc9",
+    "mtime": 1795375412.0863595,
+    "seen": 1795375470.5850365,
+    "ast_hash": "a7cfc7611847abca2e2f85d0ab4fde0c",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -915,6 +915,18 @@
     "mtime": 1795374964.603646,
     "seen": 1795374989.830548,
     "ast_hash": "ba82f5fd7f5de6ccf4e00c00d0df7a48",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-editions-guide.svg": {
+    "mtime": 1795375422.4257174,
+    "seen": 1795375470.5851324,
+    "ast_hash": "ed1344eb19c1d71d4d237aa9190ac303",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-single-player-guide.svg": {
+    "mtime": 1795375432.2285235,
+    "seen": 1795375470.5851364,
+    "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
     "semantic_hash": ""
   }
 }

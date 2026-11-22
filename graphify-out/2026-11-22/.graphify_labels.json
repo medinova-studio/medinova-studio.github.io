@@ -1,10 +1,10 @@
 {
-  "0": "useLang",
+  "0": "game-development/page.tsx",
   "1": "compilerOptions",
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "ConsentAnalytics.tsx",
+  "5": "useLang",
   "6": "academy/page.tsx",
   "7": "vercel.json",
   "8": "graphify.js",
@@ -27,16 +27,8 @@
   "25": "og.tsx",
   "26": "optimize-images.mjs",
   "27": "generate-icons.mjs",
-  "28": "gtaBlog.ts",
-  "29": "LanguageSuggestion.tsx",
-  "30": "blog.ts",
-  "31": "i18n.ts",
+  "30": "blog/[slug]/page.tsx",
+  "31": "LanguageContext.tsx",
   "32": "next",
-  "33": "next-sitemap",
-  "34": "buildPageMetadata",
-  "35": "layout.tsx",
-  "36": "blog/page.tsx",
-  "37": "blog/[slug]/page.tsx",
-  "38": "who-we-are/page.tsx",
-  "39": "Footer.tsx"
+  "33": "next-sitemap"
 }

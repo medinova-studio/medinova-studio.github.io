@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1795372540.9791439,
-    "seen": 1795372591.2885265,
-    "ast_hash": "b1c8376014e6b53dec6110b902202f45",
+    "mtime": 1795375854.3931522,
+    "seen": 1795377390.4177735,
+    "ast_hash": "ba6472145025846367e0b877d3f2a766",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795375018.2128284,
-    "seen": 1795375470.5851061,
+    "mtime": 1795375494.704181,
+    "seen": 1795377390.4178474,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -876,9 +876,9 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795375440.036857,
-    "seen": 1795375470.5850286,
-    "ast_hash": "d34e6d63249a8c44674e95a45b02c38a",
+    "mtime": 1795377340.95528,
+    "seen": 1795377390.417762,
+    "ast_hash": "25e29c7610376469bff3492fa38cb7c5",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795375412.0863595,
-    "seen": 1795375470.5850365,
-    "ast_hash": "a7cfc7611847abca2e2f85d0ab4fde0c",
+    "mtime": 1795377372.6977918,
+    "seen": 1795377390.4177718,
+    "ast_hash": "d7f233138a0cd906f388d947c6ba0aa7",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -927,6 +927,12 @@
     "mtime": 1795375432.2285235,
     "seen": 1795375470.5851364,
     "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-leonida-pc-project.svg": {
+    "mtime": 1795377347.8518028,
+    "seen": 1795377390.417881,
+    "ast_hash": "b0c6e6dc5b3ebdba0c4aacdc56e87e1b",
     "semantic_hash": ""
   }
 }

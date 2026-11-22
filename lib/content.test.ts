@@ -7,6 +7,7 @@ import {
 } from "@/lib/blog";
 import { COURSE_CATALOG, COURSE_SLUGS, isCourseSlug } from "@/lib/courses";
 import { alternatesFor } from "@/lib/metadata";
+import { translations } from "@/lib/i18n";
 
 describe("content catalog consistency", () => {
   it("has every course in every locale", () => {
@@ -36,6 +37,7 @@ describe("content catalog consistency", () => {
       "gta-6-giveaways-free-codes",
       "gta-6-editions-standard-vs-ultimate",
       "gta-6-online-multiplayer-status",
+      "gta-6-leonida-pc-recompilation-project",
     ];
     for (const lang of ["en", "fr", "ar"] as const) {
       expect(BLOG_POSTS[lang].slice(-gtaSlugs.length).map((post) => post.slug)).toEqual(gtaSlugs);
@@ -74,6 +76,14 @@ describe("content catalog consistency", () => {
         } else if (slug === "gta-6-online-multiplayer-status") {
           expect(post?.hero).toBe("/images/blog/gta-6-single-player-guide.svg");
           expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
+        } else if (slug === "gta-6-leonida-pc-recompilation-project") {
+          expect(post?.hero).toBe("/images/blog/gta-6-leonida-pc-project.svg");
+          expect(post?.videoId).toBeUndefined();
+          expect(post?.sources?.some((source) => source.url === "https://github.com/R0Y00/Xbox2Windows")).toBe(true);
+          expect(post?.sources?.some((source) => source.url === "https://github.com/ItsNotRexed/Leonida")).toBe(true);
+          if (lang === "en") {
+            expect(post?.title).toBe("GTA 6 PC Port: What Leonida Can (and Can’t) Do Yet");
+          }
         } else {
           expect(post?.hero).toMatch(/^https:\/\/i\.ytimg\.com\/vi\/.+\/maxresdefault\.jpg$/);
           expect(post?.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
@@ -107,6 +117,12 @@ describe("content catalog consistency", () => {
         ).toBe(true);
       }
     }
+  });
+
+  it("labels the localized gaming blog section as gaming news", () => {
+    expect(translations.en.blog.gamingCategory).toBe("Gaming News");
+    expect(translations.fr.blog.gamingCategory).toBe("Actualités gaming");
+    expect(translations.ar.blog.gamingCategory).toBe("أخبار الألعاب");
   });
 
   it("builds consistent hreflang alternates", () => {
