@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795373733.0946243,
-    "seen": 1795374181.5685546,
+    "mtime": 1795374352.307585,
+    "seen": 1795374989.8305213,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -876,9 +876,9 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795374132.5465913,
-    "seen": 1795374181.5684638,
-    "ast_hash": "7390fd69c57c3dd0e02d13f2b421bab6",
+    "mtime": 1795374980.8919425,
+    "seen": 1795374989.8304367,
+    "ast_hash": "6d1d25d04068b768271493965debf31c",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,15 +900,21 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795374154.8844488,
-    "seen": 1795374181.5684736,
-    "ast_hash": "ef80277d5a27c5ef593a7e5335c5836e",
+    "mtime": 1795374955.4680529,
+    "seen": 1795374989.8304484,
+    "ast_hash": "640fdce3c0bf9dd27a296307706f2fc9",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
     "mtime": 1795373906.0715055,
     "seen": 1795374181.5686033,
     "ast_hash": "8b9b7d1dbd193567bc311cc6603aba20",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-giveaway-check.svg": {
+    "mtime": 1795374964.603646,
+    "seen": 1795374989.830548,
+    "ast_hash": "ba82f5fd7f5de6ccf4e00c00d0df7a48",
     "semantic_hash": ""
   }
 }

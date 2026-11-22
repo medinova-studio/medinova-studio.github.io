@@ -26,13 +26,16 @@ describe("content catalog consistency", () => {
     expect(new Set(ALL_BLOG_SLUGS).size).toBe(ALL_BLOG_SLUGS.length);
   });
 
-  it("includes the five GTA guides in every locale with sources and media", () => {
+  it("includes the GTA guides in every locale with localized sources and media", () => {
     const gtaSlugs = [
       "gta-6-pc-port-news",
       "gta-6-ps5-vs-xbox-performance",
       "gta-6-price-in-morocco",
       "gta-6-beginners-tips",
       "gta-6-hidden-locations-secrets",
+      "gta-6-giveaways-free-codes",
+      "gta-6-editions-standard-vs-ultimate",
+      "gta-6-online-multiplayer-status",
     ];
     for (const lang of ["en", "fr", "ar"] as const) {
       expect(BLOG_POSTS[lang].slice(-gtaSlugs.length).map((post) => post.slug)).toEqual(gtaSlugs);
@@ -43,10 +46,39 @@ describe("content catalog consistency", () => {
         const post = blogPostBySlug(lang, slug);
         expect(post).toBeDefined();
         expect(post?.sources?.length).toBeGreaterThan(0);
-        expect(post?.hero).toMatch(/^https:\/\/i\.ytimg\.com\/vi\/.+\/maxresdefault\.jpg$/);
-        expect(post?.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
-        expect(post?.videoTitle).toBeTruthy();
+        expect(post?.heroAlt).toBeTruthy();
         expect(post?.sections.length).toBeGreaterThanOrEqual(4);
+        const articleWords = [
+          post?.intro,
+          ...(post?.sections.flatMap((section) => [
+            section.heading,
+            section.body,
+            section.bodyAfter,
+            ...(section.bullets ?? []),
+            ...(section.steps ?? []),
+          ]) ?? []),
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .trim()
+          .split(/\s+/).length;
+        expect(articleWords).toBeGreaterThan(400);
+        if (slug === "gta-6-giveaways-free-codes") {
+          expect(post?.hero).toBe("/images/blog/gta-6-giveaway-check.svg");
+          expect(post?.videoId).toBeUndefined();
+          expect(post?.sources?.some((source) => source.url.includes("1620498"))).toBe(true);
+          expect(post?.title).toContain("GTA 6");
+        } else if (slug === "gta-6-editions-standard-vs-ultimate") {
+          expect(post?.hero).toBe("/images/blog/gta-6-editions-guide.svg");
+          expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
+        } else if (slug === "gta-6-online-multiplayer-status") {
+          expect(post?.hero).toBe("/images/blog/gta-6-single-player-guide.svg");
+          expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
+        } else {
+          expect(post?.hero).toMatch(/^https:\/\/i\.ytimg\.com\/vi\/.+\/maxresdefault\.jpg$/);
+          expect(post?.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
+          expect(post?.videoTitle).toBeTruthy();
+        }
       }
     }
   });
