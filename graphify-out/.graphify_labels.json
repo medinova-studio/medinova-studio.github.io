@@ -4,8 +4,7 @@
   "2": "dependencies",
   "3": "DESIGN.md",
   "4": "devDependencies",
-  "5": "metadata.ts",
-  "6": "courses/[slug]/page.tsx",
+  "6": "academy/page.tsx",
   "7": "vercel.json",
   "8": "graphify.js",
   "9": "next.config.mjs",
@@ -16,7 +15,7 @@
   "14": "Web Deployment Diagnostics",
   "15": "opencode.json",
   "16": "AGENTS.md",
-  "17": "academy/page.tsx",
+  "17": "jsonLd.ts",
   "18": "Handoff — Medinova Academy funnel audit + build",
   "19": "proxy.ts",
   "20": "agency-contact/route.ts",
@@ -28,12 +27,8 @@
   "26": "optimize-images.mjs",
   "27": "generate-icons.mjs",
   "28": "Footer.tsx",
-  "29": "i18n.ts",
   "30": "blog/[slug]/page.tsx",
-  "31": "LanguageSuggestion.tsx",
+  "31": "i18n.ts",
   "32": "next",
-  "33": "next-sitemap",
-  "34": "gtaBlog.ts",
-  "35": "who-we-are/page.tsx",
-  "36": "blog/page.tsx"
+  "33": "next-sitemap"
 }

@@ -876,9 +876,9 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795378708.5602257,
-    "seen": 1795378828.598154,
-    "ast_hash": "b40f67ea452fc98a2fbb1997161018fc",
+    "mtime": 1795379202.22791,
+    "seen": 1795379234.0359712,
+    "ast_hash": "c9271ce1bdec7e2ca247bc303ac08318",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795378805.4246135,
-    "seen": 1795378828.5981646,
-    "ast_hash": "767f692d180826bc7e9edc479a645572",
+    "mtime": 1795379202.2219,
+    "seen": 1795379234.0359814,
+    "ast_hash": "bd070c3f5a1c4211732fdf2ef077354c",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -929,34 +929,16 @@
     "ast_hash": "b9af5648f312da8d69498d2cb370956f",
     "semantic_hash": ""
   },
-  "public/images/blog/gta-6-beginners-tips.svg": {
-    "mtime": 1795378766.3590357,
-    "seen": 1795378828.5982895,
-    "ast_hash": "7c15a82ae775a3b36a38bb9971d05c28",
+  "public/images/blog/gta-6-leonida-repo.png": {
+    "mtime": 1795379189.9490912,
+    "seen": 1795379234.0360985,
+    "ast_hash": "5861de4f27c3c37f40089bb3dfd46294",
     "semantic_hash": ""
   },
-  "public/images/blog/gta-6-online-multiplayer-status.svg": {
-    "mtime": 1795378766.3710365,
-    "seen": 1795378828.5983014,
-    "ast_hash": "b4b4e758872d1b3a3c64afa41a362a04",
-    "semantic_hash": ""
-  },
-  "public/images/blog/gta-6-pc-port-news.svg": {
-    "mtime": 1795378766.1899042,
-    "seen": 1795378828.598304,
-    "ast_hash": "c66be6d771b0093e7530fed36df4cb1e",
-    "semantic_hash": ""
-  },
-  "public/images/blog/gta-6-price-in-morocco.svg": {
-    "mtime": 1795378813.5421336,
-    "seen": 1795378828.5983055,
-    "ast_hash": "fd2b4c2252ca67483d82ec398f01ad63",
-    "semantic_hash": ""
-  },
-  "public/images/blog/gta-6-ps5-vs-xbox-performance.svg": {
-    "mtime": 1795378766.1940055,
-    "seen": 1795378828.5983071,
-    "ast_hash": "dbf9bc5a5b0fda0ff0ab9dfe4a8f7cf2",
+  "public/images/blog/gta-6-single-player-guide.svg": {
+    "mtime": 1795379211.4370346,
+    "seen": 1795379234.0361009,
+    "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
     "semantic_hash": ""
   }
 }

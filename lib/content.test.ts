@@ -74,10 +74,10 @@ describe("content catalog consistency", () => {
           expect(post?.hero).toBe("/images/blog/gta-6-editions-guide.svg");
           expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
         } else if (slug === "gta-6-online-multiplayer-status") {
-          expect(post?.hero).toBe("/images/blog/gta-6-online-multiplayer-status.svg");
+          expect(post?.hero).toBe("/images/blog/gta-6-single-player-guide.svg");
           expect(post?.sources?.some((source) => source.url === "https://www.playstation.com/en-us/games/grand-theft-auto-vi/")).toBe(true);
         } else if (slug === "gta-6-leonida-pc-recompilation-project") {
-          expect(post?.hero).toBe("/images/blog/gta-6-leonida-pc-project.svg");
+          expect(post?.hero).toBe("/images/blog/gta-6-leonida-repo.png");
           expect(post?.videoId).toBeUndefined();
           expect(post?.sources?.some((source) => source.url === "https://github.com/R0Y00/Xbox2Windows")).toBe(true);
           expect(post?.sources?.some((source) => source.url === "https://github.com/ItsNotRexed/Leonida")).toBe(true);
@@ -93,7 +93,7 @@ describe("content catalog consistency", () => {
             expect(post?.intro).toContain("لفت مشروع Leonida");
           }
         } else {
-          expect(post?.hero).toBe(`/images/blog/${slug}.svg`);
+          expect(post?.hero).toMatch(/^https:\/\/i\.ytimg\.com\/vi\/.+\/maxresdefault\.jpg$/);
           expect(post?.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
           expect(post?.videoTitle).toBeTruthy();
         }

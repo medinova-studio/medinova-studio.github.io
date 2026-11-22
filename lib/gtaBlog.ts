@@ -34,53 +34,62 @@ const LAUNCH_TRAILER = {
   id: "rz1B4B2yBZY",
   title: "Grand Theft Auto VI Launch Trailer",
 };
+
+const THUMBNAILS = {
+  coverArtReveal: `https://i.ytimg.com/vi/${COVER_ART_REVEAL.id}/maxresdefault.jpg`,
+  extendedLook: `https://i.ytimg.com/vi/${EXTENDED_LOOK.id}/maxresdefault.jpg`,
+  outNow: `https://i.ytimg.com/vi/${OUT_NOW.id}/maxresdefault.jpg`,
+  launchTrailer: `https://i.ytimg.com/vi/${LAUNCH_TRAILER.id}/maxresdefault.jpg`,
+  trailer2: "https://i.ytimg.com/vi/VQRLujxTm3c/maxresdefault.jpg",
+};
+
 const GTA_MEDIA: Record<string, GtaMedia> = {
   "gta-6-pc-port-news": {
-    hero: "/images/blog/gta-6-pc-port-news.svg",
+    hero: THUMBNAILS.coverArtReveal,
     heroAlt: {
-      en: "Illustration of a PC gaming setup with an open-world scene and an unconfirmed platform status",
-      fr: "Illustration d'un PC de jeu avec un monde ouvert et un statut de plateforme non confirmé",
-      ar: "رسم توضيحي لحاسوب ألعاب يعرض عالمًا مفتوحًا مع حالة غير مؤكدة لإصدار الحاسوب",
+      en: "Official Grand Theft Auto VI cover art reveal by Rockstar Games",
+      fr: "Révélation officielle de la jaquette de Grand Theft Auto VI par Rockstar Games",
+      ar: "الكشف الرسمي عن غلاف Grand Theft Auto VI من Rockstar Games",
     },
     videoId: COVER_ART_REVEAL.id,
     videoTitle: COVER_ART_REVEAL.title,
   },
   "gta-6-ps5-vs-xbox-performance": {
-    hero: "/images/blog/gta-6-ps5-vs-xbox-performance.svg",
+    hero: THUMBNAILS.extendedLook,
     heroAlt: {
-      en: "Illustration comparing two consoles, controllers, and performance graphs",
-      fr: "Illustration comparant deux consoles, leurs manettes et des graphiques de performances",
-      ar: "رسم توضيحي يقارن بين جهازَي ألعاب ووحدات التحكم ومخططات الأداء",
+      en: "Official Grand Theft Auto VI extended look by Rockstar Games",
+      fr: "Aperçu prolongé officiel de Grand Theft Auto VI par Rockstar Games",
+      ar: "عرض رسمي مطوّل للعبة Grand Theft Auto VI من Rockstar Games",
     },
     videoId: EXTENDED_LOOK.id,
     videoTitle: EXTENDED_LOOK.title,
   },
   "gta-6-price-in-morocco": {
-    hero: "/images/blog/gta-6-price-in-morocco.svg",
+    hero: THUMBNAILS.outNow,
     heroAlt: {
-      en: "Illustration of a Moroccan regional game-store listing being checked for its price",
-      fr: "Illustration de la vérification du prix d'un jeu sur une boutique régionale marocaine",
-      ar: "رسم توضيحي للتحقق من سعر لعبة في متجر مغربي إقليمي",
+      en: "Official Grand Theft Auto VI out now video by Rockstar Games",
+      fr: "Vidéo officielle de sortie de Grand Theft Auto VI par Rockstar Games",
+      ar: "فيديو الإطلاق الرسمي للعبة Grand Theft Auto VI من Rockstar Games",
     },
     videoId: OUT_NOW.id,
     videoTitle: OUT_NOW.title,
   },
   "gta-6-beginners-tips": {
-    hero: "/images/blog/gta-6-beginners-tips.svg",
+    hero: THUMBNAILS.launchTrailer,
     heroAlt: {
-      en: "Illustration of a controller, beginner checklist, and open-world map",
-      fr: "Illustration d'une manette, d'une liste de conseils pour débutants et d'une carte ouverte",
-      ar: "رسم توضيحي لوحدة تحكم وقائمة نصائح للمبتدئين وخريطة عالم مفتوح",
+      en: "Official Grand Theft Auto VI launch trailer by Rockstar Games",
+      fr: "Bande-annonce de lancement officielle de Grand Theft Auto VI par Rockstar Games",
+      ar: "المقطع الدعائي الرسمي لإطلاق Grand Theft Auto VI من Rockstar Games",
     },
     videoId: LAUNCH_TRAILER.id,
     videoTitle: LAUNCH_TRAILER.title,
   },
   "gta-6-hidden-locations-secrets": {
-    hero: "/images/blog/gta-6-hidden-locations-secrets.svg",
+    hero: THUMBNAILS.trailer2,
     heroAlt: {
-      en: "Illustration of a Leonida map with a magnifying glass and hidden collectible markers",
-      fr: "Illustration d'une carte de Leonida avec une loupe et des marqueurs de collectibles cachés",
-      ar: "رسم توضيحي لخريطة ليونيدا مع عدسة مكبرة وعلامات مقتنيات مخفية",
+      en: "Official Grand Theft Auto VI Trailer 2 by Rockstar Games",
+      fr: "Bande-annonce 2 officielle de Grand Theft Auto VI par Rockstar Games",
+      ar: "المقطع الدعائي الثاني الرسمي للعبة Grand Theft Auto VI من Rockstar Games",
     },
     videoId: "QdBZY2fkU-0",
     videoTitle: "Grand Theft Auto VI Trailer 1 — Rockstar Games",
@@ -102,19 +111,19 @@ const GTA_MEDIA: Record<string, GtaMedia> = {
     },
   },
   "gta-6-online-multiplayer-status": {
-    hero: "/images/blog/gta-6-online-multiplayer-status.svg",
+    hero: "/images/blog/gta-6-single-player-guide.svg",
     heroAlt: {
-      en: "Illustration separating a confirmed single-player experience from an unconfirmed online mode",
-      fr: "Illustration distinguant une expérience solo confirmée d'un mode en ligne non confirmé",
-      ar: "رسم توضيحي يميز بين تجربة فردية مؤكدة ونمط لعب عبر الإنترنت غير مؤكد",
+      en: "Illustration of a single-player game screen and offline console indicator",
+      fr: "Illustration d'un jeu solo et d'un indicateur de console hors ligne",
+      ar: "رسم لشاشة لعبة فردية ومؤشر جهاز غير متصل بالإنترنت",
     },
   },
   "gta-6-leonida-pc-recompilation-project": {
-    hero: "/images/blog/gta-6-leonida-pc-project.svg",
+    hero: "/images/blog/gta-6-leonida-repo.png",
     heroAlt: {
-      en: "Original illustration of the Leonida source-code project beside a game display marked not booting",
-      fr: "Illustration originale du code source de Leonida à côté d'un écran indiquant que le jeu ne démarre pas",
-      ar: "رسم أصلي لمشروع شيفرة Leonida بجانب شاشة لعبة تشير إلى أنها لا تعمل",
+      en: "Screenshot of the Leonida GTA 6 PC recompilation project on GitHub",
+      fr: "Capture d'écran du projet de recompilation PC de GTA 6 Leonida sur GitHub",
+      ar: "لقطة شاشة لمشروع إعادة تجميع GTA 6 للحاسوب Leonida على GitHub",
     },
   },
 };

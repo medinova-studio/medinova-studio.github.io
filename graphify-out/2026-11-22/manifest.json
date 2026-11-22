@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795378179.7069323,
-    "seen": 1795378345.5643084,
+    "mtime": 1795378797.0941582,
+    "seen": 1795378828.5982513,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -876,9 +876,9 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795378327.4233258,
-    "seen": 1795378345.564084,
-    "ast_hash": "8ca8ae8d8fbd0c484385cf0230e4ce39",
+    "mtime": 1795378708.5602257,
+    "seen": 1795378828.598154,
+    "ast_hash": "b40f67ea452fc98a2fbb1997161018fc",
     "semantic_hash": ""
   },
   "proxy.ts": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "lib/gtaBlog.ts": {
-    "mtime": 1795378364.8127184,
-    "seen": 1795378406.9315274,
-    "ast_hash": "8246f4a9a1fb31495449a8c8a66df09d",
+    "mtime": 1795378805.4246135,
+    "seen": 1795378828.5981646,
+    "ast_hash": "767f692d180826bc7e9edc479a645572",
     "semantic_hash": ""
   },
   "public/images/games/block-shooter-cannon-3-in-1.jpg": {
@@ -923,124 +923,40 @@
     "ast_hash": "ed1344eb19c1d71d4d237aa9190ac303",
     "semantic_hash": ""
   },
-  "public/images/blog/gta-6-single-player-guide.svg": {
-    "mtime": 1795375432.2285235,
-    "seen": 1795375470.5851364,
-    "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
-    "semantic_hash": ""
-  },
   "public/images/blog/gta-6-leonida-pc-project.svg": {
-    "mtime": 1795377347.8518028,
-    "seen": 1795377390.417881,
-    "ast_hash": "b0c6e6dc5b3ebdba0c4aacdc56e87e1b",
+    "mtime": 1795378766.3800356,
+    "seen": 1795378828.5982983,
+    "ast_hash": "b9af5648f312da8d69498d2cb370956f",
     "semantic_hash": ""
   },
-  ".playwright-mcp/page-2026-11-22T20-06-55-618Z.yml": {
-    "mtime": 1795378015.620592,
-    "seen": 1795378154.3544962,
-    "ast_hash": "cf82e476a5e1ebb95d25a95574967f02",
+  "public/images/blog/gta-6-beginners-tips.svg": {
+    "mtime": 1795378766.3590357,
+    "seen": 1795378828.5982895,
+    "ast_hash": "7c15a82ae775a3b36a38bb9971d05c28",
     "semantic_hash": ""
   },
-  ".playwright-mcp/page-2026-11-22T20-07-18-212Z.yml": {
-    "mtime": 1795378038.214123,
-    "seen": 1795378154.3544981,
-    "ast_hash": "ad5346e07327eab78df40a2c6a29bebe",
+  "public/images/blog/gta-6-online-multiplayer-status.svg": {
+    "mtime": 1795378766.3710365,
+    "seen": 1795378828.5983014,
+    "ast_hash": "b4b4e758872d1b3a3c64afa41a362a04",
     "semantic_hash": ""
   },
-  ".playwright-mcp/page-2026-11-22T20-07-45-386Z.yml": {
-    "mtime": 1795378065.388461,
-    "seen": 1795378154.3544996,
-    "ast_hash": "ba15c102bf2536c3619d6aa1a1ba91d8",
+  "public/images/blog/gta-6-pc-port-news.svg": {
+    "mtime": 1795378766.1899042,
+    "seen": 1795378828.598304,
+    "ast_hash": "c66be6d771b0093e7530fed36df4cb1e",
     "semantic_hash": ""
   },
-  ".playwright-mcp/page-2026-11-22T20-08-00-041Z.yml": {
-    "mtime": 1795378080.0456755,
-    "seen": 1795378154.354501,
-    "ast_hash": "ffa0ac25d3363dd47fbfafb1bc733cb8",
+  "public/images/blog/gta-6-price-in-morocco.svg": {
+    "mtime": 1795378813.5421336,
+    "seen": 1795378828.5983055,
+    "ast_hash": "fd2b4c2252ca67483d82ec398f01ad63",
     "semantic_hash": ""
   },
-  ".playwright-mcp/page-2026-11-22T20-08-29-701Z.yml": {
-    "mtime": 1795378109.7032418,
-    "seen": 1795378154.354503,
-    "ast_hash": "be5344d080b71816388e30f4e7d5433c",
-    "semantic_hash": ""
-  },
-  "mobile-en-article-overlay.png": {
-    "mtime": 1795378086.1670506,
-    "seen": 1795378154.354537,
-    "ast_hash": "73928f52c5a763b2e1e792fe6489107a",
-    "semantic_hash": ""
-  },
-  "mobile-en-article.png": {
-    "mtime": 1795378111.9065306,
-    "seen": 1795378154.354539,
-    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
-    "semantic_hash": ""
-  },
-  "mobile-en-blog-production.png": {
-    "mtime": 1795378069.891909,
-    "seen": 1795378154.3545408,
-    "ast_hash": "9c956abcd05483357a921634636118e8",
-    "semantic_hash": ""
-  },
-  "mobile-en-blog.png": {
-    "mtime": 1795378021.2758162,
-    "seen": 1795378154.3545423,
-    "ast_hash": "e55ae1b3125e57cd993fae18c2f2e6f5",
-    "semantic_hash": ""
-  },
-  "mobile-en-gta-port.png": {
-    "mtime": 1795378040.8728137,
-    "seen": 1795378154.3545442,
-    "ast_hash": "43264e540ef7e45439023d66f0fd012f",
-    "semantic_hash": ""
-  },
-  ".playwright-mcp/page-2026-11-22T20-09-48-283Z.yml": {
-    "mtime": 1795378188.2854893,
-    "seen": 1795378345.5642774,
-    "ast_hash": "ea688048081a6cb4c985421d85fd3073",
-    "semantic_hash": ""
-  },
-  ".playwright-mcp/page-2026-11-22T20-10-06-579Z.yml": {
-    "mtime": 1795378206.5823662,
-    "seen": 1795378345.5642798,
-    "ast_hash": "97bc04faff902cf37f3c0aa06bacdac6",
-    "semantic_hash": ""
-  },
-  ".playwright-mcp/page-2026-11-22T20-10-17-335Z.yml": {
-    "mtime": 1795378217.3376193,
-    "seen": 1795378345.564282,
-    "ast_hash": "a091dd2d331e923c986a3b10b4826b63",
-    "semantic_hash": ""
-  },
-  ".playwright-mcp/page-2026-11-22T20-10-29-066Z.yml": {
-    "mtime": 1795378229.0687673,
-    "seen": 1795378345.5642836,
-    "ast_hash": "253d0fdf93304febd4b56a1eed95d7ea",
-    "semantic_hash": ""
-  },
-  ".playwright-mcp/page-2026-11-22T20-10-35-206Z.yml": {
-    "mtime": 1795378235.2085378,
-    "seen": 1795378345.5642855,
-    "ast_hash": "f5df405310dedb400cbafc681d6ca2ad",
-    "semantic_hash": ""
-  },
-  "gta-port-cover-mobile.png": {
-    "mtime": 1795378237.6500523,
-    "seen": 1795378345.5643148,
-    "ast_hash": "bad97c51583f964b136febe94d2c1af0",
-    "semantic_hash": ""
-  },
-  "mobile-cookie-after-language.png": {
-    "mtime": 1795378231.7522647,
-    "seen": 1795378345.5643167,
-    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
-    "semantic_hash": ""
-  },
-  "mobile-en-article-production.png": {
-    "mtime": 1795378197.6594596,
-    "seen": 1795378345.5643208,
-    "ast_hash": "74d67bb1d215afac1f206f01a6fae185",
+  "public/images/blog/gta-6-ps5-vs-xbox-performance.svg": {
+    "mtime": 1795378766.1940055,
+    "seen": 1795378828.5983071,
+    "ast_hash": "dbf9bc5a5b0fda0ff0ab9dfe4a8f7cf2",
     "semantic_hash": ""
   }
 }
