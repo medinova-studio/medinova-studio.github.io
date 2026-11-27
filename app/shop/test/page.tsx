@@ -10,7 +10,6 @@ type TestResult =
 
 const ERROR_MESSAGES: Record<string, string> = {
   invalid_lead_data: "تحقق من الاسم ورقم الهاتف والمدينة والكمية.",
-  test_rate_limited: "انتظر 30 ثانية قبل إجراء اختبار آخر.",
   sheet_headers_mismatch:
     "عناوين الأعمدة لا تطابق القالب. تأكد أن العناوين موجودة في الصف الأول، كل عنوان في عمود منفصل، وأن التبويب اسمه Orders.",
   google_sheets_config_missing:

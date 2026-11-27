@@ -9,17 +9,6 @@ import {
 
 export const runtime = "nodejs";
 
-function getClientIp(request: Request): string {
-  return (
-    request.headers.get("x-real-ip")?.trim() ||
-    request.headers.get("x-forwarded-for")?.split(",").pop()?.trim() ||
-    "unknown"
-  );
-}
-
-const recentTests = new Map<string, number>();
-const TEST_COOLDOWN_MS = 30_000;
-
 function isServiceAccountCredentials(
   value: unknown
 ): value is { client_email: string; private_key: string } {
@@ -34,15 +23,6 @@ function isServiceAccountCredentials(
 }
 
 export async function POST(request: Request) {
-  if (process.env.VERCEL_ENV === "production") {
-    return NextResponse.json({ error: "not_found" }, { status: 404 });
-  }
-
-  const origin = request.headers.get("origin");
-  if (origin && new URL(origin).host !== new URL(request.url).host) {
-    return NextResponse.json({ error: "forbidden" }, { status: 403 });
-  }
-
   let requestBody: unknown;
   try {
     requestBody = await request.json();
@@ -54,17 +34,6 @@ export async function POST(request: Request) {
   if (!parsedLead.success) {
     return NextResponse.json({ error: "invalid_lead_data" }, { status: 400 });
   }
-
-  const now = Date.now();
-  const ip = getClientIp(request);
-  const previousTest = recentTests.get(ip);
-  if (previousTest && now - previousTest < TEST_COOLDOWN_MS) {
-    return NextResponse.json(
-      { error: "test_rate_limited" },
-      { status: 429 }
-    );
-  }
-  recentTests.set(ip, now);
 
   const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
@@ -120,6 +89,7 @@ export async function POST(request: Request) {
       );
     }
 
+    const now = Date.now();
     const orderId = `TEST-${now}`;
     const appendResponse = await sheets.spreadsheets.values.append({
       spreadsheetId,
