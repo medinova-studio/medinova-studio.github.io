@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Gamepad2, GraduationCap, TrendingUp, Sparkles, ArrowRight, Menu, X } from "lucide-react";
+import { Gamepad2, GraduationCap, TrendingUp, ShoppingBag, Sparkles, ArrowRight, Menu, X } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 import { LANGS, LANG_LABELS, Lang } from "@/lib/i18n";
 import Button from "@/components/ui/Button";
@@ -25,6 +25,7 @@ export default function Navbar() {
   const isAgency = section === "agency";
   const isAcademy = section === "academy";
   const isGameDev = section === "game-development";
+  const isShop = section === "shop";
 
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -87,9 +88,23 @@ export default function Navbar() {
       label: t.nav.subAcademy,
       desc: t.nav.subAcademyDesc,
     },
+    {
+      href: `/${lang}/shop`,
+      icon: ShoppingBag,
+      label: t.nav.shop,
+      desc: t.shop.navDescription,
+    },
   ];
 
-  const activeProduct = isGameDev ? products[0].href : isAgency ? products[1].href : isAcademy ? products[2].href : null;
+  const activeProduct = isGameDev
+    ? products[0].href
+    : isAgency
+      ? products[1].href
+      : isAcademy
+        ? products[2].href
+        : isShop
+          ? products[3].href
+          : null;
 
   const agencyAnchors = [
     { href: `/${lang}/agency#growth-framework`, label: t.agency.nav.links.framework },
@@ -117,6 +132,7 @@ export default function Navbar() {
     { href: `/${lang}/game-development#services`, label: t.nav.services },
     { href: `/${lang}/who-we-are`, label: t.nav.about },
     { href: `/${lang}/blog`, label: t.nav.blog },
+    { href: `/${lang}/shop`, label: t.nav.shop },
   ];
 
   const cta = isAgency

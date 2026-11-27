@@ -28,6 +28,7 @@ export function proxy(request: NextRequest) {
     pathname === "/sitemap.xml" ||
     pathname.startsWith("/sitemap-") ||
     pathname === "/llms.txt" ||
+    pathname === "/shop/test" ||
     /\.(png|jpe?g|webp|svg|ico|txt|xml|json|woff2?)$/i.test(pathname)
   ) {
     return NextResponse.next();

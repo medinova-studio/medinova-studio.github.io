@@ -1,6 +1,6 @@
 "use client";
 
-import { Gamepad2, TrendingUp, GraduationCap } from "lucide-react";
+import { Gamepad2, TrendingUp, GraduationCap, ShoppingBag } from "lucide-react";
 import { useLang } from "@/lib/LanguageContext";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
@@ -20,6 +20,11 @@ const HUBS = (lang: string) => [
     key: "academy",
     href: `/${lang}/academy`,
     icon: GraduationCap,
+  },
+  {
+    key: "shop",
+    href: `/${lang}/shop`,
+    icon: ShoppingBag,
   },
 ] as const;
 
@@ -44,7 +49,7 @@ export default function Hub() {
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-3 gap-4 lg:gap-5 items-stretch">
+        <div className="grid gap-4 md:grid-cols-2 lg:gap-5 xl:grid-cols-4 items-stretch">
           {hubs.map((h, i) => {
             const Icon = h.icon;
             const data = t.hub[h.key];

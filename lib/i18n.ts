@@ -178,6 +178,7 @@ export type Translation = {
     subAcademy: string;
     subAcademyDesc: string;
     blog: string;
+    shop: string;
     /**
      * Section heading and status pill for the navbar sub-bar.
      */
@@ -204,6 +205,22 @@ export type Translation = {
     breadcrumbHome: string;
     courseTitle: string;
     relatedTitle: string;
+  };
+  shop: {
+    metaTitle: string;
+    metaDescription: string;
+    navDescription: string;
+    badge: string;
+    title: string;
+    subtitle: string;
+    emptyTitle: string;
+    emptyDescription: string;
+    productDetails: string;
+    priceLabel: string;
+    marketLabel: string;
+    shippingIncluded: string;
+    orderFormUnavailable: string;
+    backToShop: string;
   };
   hero: {
     badge: string;
@@ -291,6 +308,7 @@ export type Translation = {
     gameDev: { title: string; desc: string };
     agency: { title: string; desc: string };
     academy: { title: string; desc: string };
+    shop: { title: string; desc: string };
   };
   agency: {
     nav: {
@@ -497,6 +515,7 @@ export const translations: Record<Lang, Translation> = {
       subAcademy: "Medinova Academy",
       subAcademyDesc: "Coding tracks for kids & adults",
       blog: "Blog",
+      shop: "Shop",
       /**
        * Labels for the navbar sub-bar: the section heading above the anchor
        * grid and the status pill at its trailing edge. Both were hardcoded
@@ -528,6 +547,25 @@ export const translations: Record<Lang, Translation> = {
       breadcrumbHome: "Home",
       courseTitle: "Related course",
       relatedTitle: "Keep reading",
+    },
+    shop: {
+      metaTitle: "Shop | Medinova Studio",
+      metaDescription:
+        "Explore products from Medinova Studio, with availability and delivery options shown for each item.",
+      navDescription: "Explore products available for delivery.",
+      badge: "Medinova Shop",
+      title: "Products from Medinova",
+      subtitle:
+        "A growing shop from Medinova Studio. Our first products for Libya are being prepared.",
+      emptyTitle: "Our first products are on the way",
+      emptyDescription:
+        "We are preparing the first products for delivery in Libya. Check back soon.",
+      productDetails: "Product details",
+      priceLabel: "Price",
+      marketLabel: "Available in",
+      shippingIncluded: "Free shipping included",
+      orderFormUnavailable: "Ordering will open when product details are confirmed.",
+      backToShop: "Back to shop",
     },
     hero: {
       badge: "Available for Unity C#, AR/VR & Game Dev Contracts",
@@ -687,10 +725,10 @@ export const translations: Record<Lang, Translation> = {
         ctaSecondary: "Hire Our Studio",
       },
       section: {
-        badge: "One Studio, Three Engines",
+        badge: "One Studio, Four Ventures",
         title: "What We Do",
         subtitle:
-          "Three specialised divisions under one roof — game development, B2B growth, and coding education.",
+          "Four specialist divisions under one roof — game development, B2B growth, coding education, and commerce.",
         cta: "Explore",
       },
       gameDev: {
@@ -704,6 +742,10 @@ export const translations: Record<Lang, Translation> = {
       academy: {
         title: "Medinova Academy",
         desc: "Certified coding tracks in Scratch, Python, and Unity C# with verifiable QR-code diplomas.",
+      },
+      shop: {
+        title: "Medinova Shop",
+        desc: "A growing collection of products with clear pricing and delivery details.",
       },
     },
     pillars: {
@@ -1428,6 +1470,7 @@ export const translations: Record<Lang, Translation> = {
       subAcademy: "Académie Medinova",
       subAcademyDesc: "Parcours de code pour enfants & adultes",
       blog: "Blog",
+      shop: "Boutique",
       subBar: {
         sectionsAgency: "Sections Agency",
         sectionsAcademy: "Sections Académie",
@@ -1453,6 +1496,25 @@ export const translations: Record<Lang, Translation> = {
       breadcrumbHome: "Accueil",
       courseTitle: "Cours associé",
       relatedTitle: "À lire ensuite",
+    },
+    shop: {
+      metaTitle: "Boutique | Medinova Studio",
+      metaDescription:
+        "Découvrez les produits de Medinova Studio, avec les pays desservis et les options de livraison indiqués pour chaque article.",
+      navDescription: "Découvrez les produits disponibles à la livraison.",
+      badge: "Boutique Medinova",
+      title: "Les produits Medinova",
+      subtitle:
+        "Une boutique en développement par Medinova Studio. Nos premiers produits pour la Libye sont en préparation.",
+      emptyTitle: "Nos premiers produits arrivent bientôt",
+      emptyDescription:
+        "Nous préparons les premiers produits à livrer en Libye. Revenez bientôt.",
+      productDetails: "Détails du produit",
+      priceLabel: "Prix",
+      marketLabel: "Disponible en",
+      shippingIncluded: "Livraison gratuite incluse",
+      orderFormUnavailable: "Les commandes ouvriront une fois les détails confirmés.",
+      backToShop: "Retour à la boutique",
     },
     hero: {
       badge: "Disponible pour contrats Unity C#, AR/VR & Game Dev",
@@ -1612,10 +1674,10 @@ export const translations: Record<Lang, Translation> = {
         ctaSecondary: "Engager le Studio",
       },
       section: {
-        badge: "Un Studio, Trois Moteurs",
+        badge: "Un Studio, Quatre Activités",
         title: "Ce Que Nous Faisons",
         subtitle:
-          "Trois divisions spécialisées sous un même toit — développement de jeux, croissance B2B et éducation au code.",
+          "Quatre activités spécialisées sous un même toit — jeux vidéo, croissance B2B, formation au code et commerce.",
         cta: "Explorer",
       },
       gameDev: {
@@ -1629,6 +1691,10 @@ export const translations: Record<Lang, Translation> = {
       academy: {
         title: "Académie Medinova",
         desc: "Parcours de code certifiés en Scratch, Python et Unity C# avec diplômes vérifiables par QR code.",
+      },
+      shop: {
+        title: "Boutique Medinova",
+        desc: "Une sélection de produits en préparation, avec des informations claires sur les prix et la livraison.",
       },
     },
     pillars: {
@@ -2357,6 +2423,7 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
       subAcademy: "أكاديمية Medinova",
       subAcademyDesc: "دورات برمجة وتقنية من سن 7 سنوات",
       blog: "المدونة",
+      shop: "المتجر",
       subBar: {
         sectionsAgency: "أقسام الوكالة",
         sectionsAcademy: "أقسام الأكاديمية",
@@ -2382,6 +2449,25 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
       breadcrumbHome: "الرئيسية",
       courseTitle: "الدورة المرتبطة",
       relatedTitle: "اقرأ أيضاً",
+    },
+    shop: {
+      metaTitle: "المتجر | استوديو Medinova",
+      metaDescription:
+        "اكتشف منتجات استوديو Medinova مع توضيح البلدان المتاحة وخيارات التوصيل لكل منتج.",
+      navDescription: "اكتشف المنتجات المتاحة للتوصيل.",
+      badge: "متجر Medinova",
+      title: "منتجات Medinova",
+      subtitle:
+        "متجر جديد من استوديو Medinova. نجهز منتجاتنا الأولى للتوصيل في ليبيا.",
+      emptyTitle: "منتجاتنا الأولى قادمة قريباً",
+      emptyDescription:
+        "نجهز المنتجات الأولى للتوصيل في ليبيا. ترقبوا جديدنا قريباً.",
+      productDetails: "تفاصيل المنتج",
+      priceLabel: "السعر",
+      marketLabel: "متوفر في",
+      shippingIncluded: "التوصيل المجاني مشمول",
+      orderFormUnavailable: "سيبدأ الطلب بعد تأكيد تفاصيل المنتجات.",
+      backToShop: "العودة إلى المتجر",
     },
     hero: {
       badge: "متاحون لعقود Unity C# وAR/VR وتطوير الألعاب",
@@ -2538,9 +2624,9 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
         ctaSecondary: "تواصل مع الاستوديو",
       },
       section: {
-        badge: "استوديو واحد، ثلاثة محركات",
+        badge: "استوديو واحد، أربعة مجالات",
         title: "ماذا نقدم",
-        subtitle: "ثلاثة أقسام متخصصة تحت سقف واحد — تطوير الألعاب، نمو B2B، وتعليم البرمجة.",
+        subtitle: "أربعة مجالات متخصصة تحت سقف واحد — تطوير الألعاب، ونمو الأعمال، وتعليم البرمجة، والتجارة.",
         cta: "استكشف",
       },
       gameDev: {
@@ -2554,6 +2640,10 @@ q: "Les cours sont-ils en ligne ou en présentiel ?",
       academy: {
         title: "أكاديمية Medinova",
         desc: "دورات برمجة وتقنية في Scratch وPython وUnity وC#، بحصص مباشرة وتعلّم قائم على المشاريع.",
+      },
+      shop: {
+        title: "متجر Medinova",
+        desc: "مجموعة منتجات قيد الإعداد مع معلومات واضحة عن الأسعار والتوصيل.",
       },
     },
     pillars: {

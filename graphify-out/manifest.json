@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1795369418.5576563,
-    "seen": 1795369500.0335422,
-    "ast_hash": "c3887d03e3b8aa4335d09af179282c95",
+    "mtime": 1795706594.9888804,
+    "seen": 1795706760.2772284,
+    "ast_hash": "4114faa4ca69b09934b9a1e4e92265e1",
     "semantic_hash": ""
   },
   "components/Portfolio.tsx": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "lib/i18n.ts": {
-    "mtime": 1795375854.3931522,
-    "seen": 1795377390.4177735,
-    "ast_hash": "ba6472145025846367e0b877d3f2a766",
+    "mtime": 1795706613.8241653,
+    "seen": 1795706760.2773097,
+    "ast_hash": "37e114072c02f1a166973260a67db748",
     "semantic_hash": ""
   },
   "next-env.d.ts": {
@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787502501.3079486,
-    "seen": 1791234832.258112,
-    "ast_hash": "8ff8b9c279a7529f100793bc022b238a",
+    "mtime": 1795806407.243689,
+    "seen": 1795806587.5659587,
+    "ast_hash": "5b5585101f58fe5341e9ecba91538fde",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -234,14 +234,14 @@
     "semantic_hash": ""
   },
   "next-sitemap.config.js": {
-    "mtime": 1787502517.0046365,
-    "seen": 1791234832.2581089,
-    "ast_hash": "7b96e3616d597d58d83f57e81c697ff0",
+    "mtime": 1795806569.7279944,
+    "seen": 1795806587.5659552,
+    "ast_hash": "94679eec51f5785afdfb37a2629f7616",
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1795378797.0941582,
-    "seen": 1795378828.5982513,
+    "mtime": 1795807351.0147684,
+    "seen": 1795807363.4498808,
     "ast_hash": "2f3eb077b3c22f83d0d4cbcc72cbfee9",
     "semantic_hash": ""
   },
@@ -378,9 +378,9 @@
     "semantic_hash": ""
   },
   "components/Hub.tsx": {
-    "mtime": 1787237083.2795112,
-    "seen": 1791234832.258011,
-    "ast_hash": "9e8aecd037e1ac163617b5dfb32b5b4f",
+    "mtime": 1795706594.9888804,
+    "seen": 1795706760.2772224,
+    "ast_hash": "c80b5c3426109bf15b4fe27163c4751a",
     "semantic_hash": ""
   },
   "components/academy/Courses.tsx": {
@@ -876,15 +876,15 @@
     "semantic_hash": ""
   },
   "lib/content.test.ts": {
-    "mtime": 1795379202.22791,
-    "seen": 1795379234.0359712,
-    "ast_hash": "c9271ce1bdec7e2ca247bc303ac08318",
+    "mtime": 1795379255.1185825,
+    "seen": 1795706760.2772996,
+    "ast_hash": "34039c285bcc51902808d2ebe9bb2e11",
     "semantic_hash": ""
   },
   "proxy.ts": {
-    "mtime": 1795369334.9129725,
-    "seen": 1795369500.0336285,
-    "ast_hash": "66dca67cdad6b4e8e8fcf2d99ea08918",
+    "mtime": 1795806569.724996,
+    "seen": 1795806587.565962,
+    "ast_hash": "04638fa61313ea92c4538c6d54c5d75e",
     "semantic_hash": ""
   },
   "vitest.config.mts": {
@@ -939,6 +939,90 @@
     "mtime": 1795379211.4370346,
     "seen": 1795379234.0361009,
     "ast_hash": "559bad6abdf03004f7aae5f405a79bd7",
+    "semantic_hash": ""
+  },
+  "app/[lang]/shop/[slug]/page.tsx": {
+    "mtime": 1795706639.0070677,
+    "seen": 1795706760.2771857,
+    "ast_hash": "dd04f55674850f6bc8d1cd0136b896cc",
+    "semantic_hash": ""
+  },
+  "app/[lang]/shop/page.tsx": {
+    "mtime": 1795706638.943137,
+    "seen": 1795706760.2771883,
+    "ast_hash": "7c2c3e054fa6a025afe272d4a3959896",
+    "semantic_hash": ""
+  },
+  "components/shop/ProductPageTemplate.tsx": {
+    "mtime": 1795706638.8633747,
+    "seen": 1795706760.2772818,
+    "ast_hash": "4328a53a1f58009117f537e588e5b5f2",
+    "semantic_hash": ""
+  },
+  "lib/shop.ts": {
+    "mtime": 1795706775.4471283,
+    "seen": 1795706810.135344,
+    "ast_hash": "96baf52e9a04361c64468485759c31f2",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-beginners-tips.svg": {
+    "mtime": 1795379289.0439084,
+    "seen": 1795706760.277431,
+    "ast_hash": "7c15a82ae775a3b36a38bb9971d05c28",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-online-multiplayer-status.svg": {
+    "mtime": 1795379289.0459082,
+    "seen": 1795706760.2774413,
+    "ast_hash": "b4b4e758872d1b3a3c64afa41a362a04",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-pc-port-news.svg": {
+    "mtime": 1795379289.0464146,
+    "seen": 1795706760.2774432,
+    "ast_hash": "c66be6d771b0093e7530fed36df4cb1e",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-price-in-morocco.svg": {
+    "mtime": 1795379289.0464146,
+    "seen": 1795706760.2774448,
+    "ast_hash": "fd2b4c2252ca67483d82ec398f01ad63",
+    "semantic_hash": ""
+  },
+  "public/images/blog/gta-6-ps5-vs-xbox-performance.svg": {
+    "mtime": 1795379289.0474167,
+    "seen": 1795706760.2774465,
+    "ast_hash": "dbf9bc5a5b0fda0ff0ab9dfe4a8f7cf2",
+    "semantic_hash": ""
+  },
+  "app/api/shop/test-order/route.ts": {
+    "mtime": 1795807299.9674282,
+    "seen": 1795807363.4497025,
+    "ast_hash": "bdf2090941cdb31c84c715ca457bc4cb",
+    "semantic_hash": ""
+  },
+  "app/shop/layout.tsx": {
+    "mtime": 1795806447.4385781,
+    "seen": 1795806587.5658212,
+    "ast_hash": "6b398ff4c319f28d138252859e20b4bf",
+    "semantic_hash": ""
+  },
+  "app/shop/test/page.tsx": {
+    "mtime": 1795807299.9624293,
+    "seen": 1795807363.4497066,
+    "ast_hash": "6f7d3b485a8ded5c2477314c4d942518",
+    "semantic_hash": ""
+  },
+  "lib/shopTestOrder.test.ts": {
+    "mtime": 1795807300.030794,
+    "seen": 1795807363.4498243,
+    "ast_hash": "dba48350c9a2c402158b38bf03505c70",
+    "semantic_hash": ""
+  },
+  "lib/shopTestOrder.ts": {
+    "mtime": 1795807299.981306,
+    "seen": 1795807363.4498258,
+    "ast_hash": "2a6329fd88473ce905789297feede7a4",
     "semantic_hash": ""
   }
 }
